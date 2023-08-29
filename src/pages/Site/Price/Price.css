@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+* {
+  font-family: "Montserrat";
+}
+
+.prices {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.prices .price_heading {
+  padding: 120px 10px 120px 10px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(243, 247, 243, 0.6352941176);
+}
+.prices .price_heading ul {
+  padding: 20px 0px 20px 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prices .price_heading ul .iconss {
+  font-size: 23px;
+}
+.prices .price_heading ul li .home {
+  color: #737b73;
+}
+.prices .price_heading ul li .contact {
+  color: #0000ff;
+}
+.prices .price_heading ul a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.prices .price_heading .lines {
+  width: 5%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #0000ff;
+}
+.prices .price_heading h2 {
+  padding: 15px 0px 10px 0px;
+  font-size: 40px;
+}
+.prices .price_heading p {
+  color: #737b73;
+  font-size: 18px;
+  padding: 10px;
+}
+.prices .prices__menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.prices .prices__menu button {
+  height: 40px;
+  width: 200px;
+  background-color: rgba(255, 240, 240, 0);
+  border: none;
+  font-size: 18px;
+  color: rgb(193, 193, 193);
+  font-family: Montserrat;
+  transition: 0.3s;
+  padding: 0 !important;
+  cursor: pointer;
+}
+.prices .prices__menu button:active {
+  color: #0000ff;
+  border-bottom: 1px solid #0000ff;
+  padding: 0 !important;
+}
+.prices .prices__menu button:hover {
+  color: #0000ff;
+}
+.prices .prices__cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.prices .prices__cards .prices__card__width {
+  width: 27%;
+}
+.prices .prices__cards .prices__card__width .prices__card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px rgb(207, 207, 207) solid;
+  padding: 20px;
+  padding-left: 25px;
+  border-radius: 5px;
+}
+.prices .prices__cards .prices__card__width .prices__card h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.prices .prices__cards .prices__card__width .prices__card hr {
+  background-color: rgb(242, 244, 245);
+  border: none;
+  height: 1px;
+  width: 100%;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__price {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__price span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__price h4 {
+  font-size: 35px;
+  padding-left: 5px;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__price p {
+  font-size: 14px;
+  color: rgb(209, 211, 212);
+  margin-top: 16px;
+  margin-left: 4px;
+  font-weight: 500;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__card__text {
+  margin-top: 20px;
+  padding: 5px;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__card__text ul li {
+  display: flex;
+  margin-bottom: 18px;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__card__text ul li .prices__check__icon {
+  color: #0000ff;
+  font-size: 16px;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__card__text ul li p {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.prices .prices__cards .prices__card__width .prices__card .prices__card__text ul li .ikon {
+  color: #0000FF;
+}
+.prices .prices__cards .prices__card__width .prices__card button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 170px;
+  background-color: #0000ff;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.prices .prices__cards .prices__card__width .prices__card button:hover {
+  background-color: #3d3dfa;
+}
+
+.prices .prices__cards .prices__card__width .prices__card button {
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 280px) and (max-width: 993px) {
+  .prices .prices__cards .prices__card__width {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .prices {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .prices__card h3 {
+    text-align: center;
+  }
+  .prices__card .prices__price {
+    text-align: center;
+  }
+  .prices .prices__cards .prices__card__width .prices__card .prices__price {
+    justify-content: center;
+  }
+  .prices .prices__cards .prices__card__width .prices__card .prices__card__text ul li p {
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  .prices .prices__cards .prices__card__width .prices__card button {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .prices-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .prices .prices__cards .prices__card__width .prices__card {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=Price.css.map */

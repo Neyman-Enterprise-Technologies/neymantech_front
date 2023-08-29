@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home__about {
+  background-color: #f9f9fc;
+  padding: 4px 0px 0px 0px;
+  width: 100%;
+}
+.home__about__content {
+  padding: 120px 10px 120px 10px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.home__about__content ul {
+  padding: 20px 0px 20px 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__about__content ul .iconss {
+  font-size: 23px;
+}
+.home__about__content ul li .home {
+  color: #737b73;
+}
+.home__about__content ul li .about {
+  color: #0000ff;
+}
+.home__about__content ul a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.home__about__content .lines {
+  width: 5%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #0000ff;
+}
+.home__about__content h2 {
+  padding: 15px 0px 10px 0px;
+  font-size: 40px;
+}
+
+.aboutpage {
+  width: 100%;
+  padding: 20px 0px 40px 0px;
+}
+.aboutpage__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0px 36px 0px;
+}
+.aboutpage__top__left {
+  width: 545px;
+  height: 492px;
+}
+.aboutpage__top__left img {
+  width: 545px;
+  height: 492px;
+}
+.aboutpage__top__right {
+  width: 600px;
+  height: 492px;
+  padding: 10px 30px 5px 30px;
+}
+.aboutpage__top__right ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+.aboutpage__top__right ul li {
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9fc;
+  width: 240px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 11px;
+}
+.aboutpage__top__right ul li .ikon {
+  color: #0000ff;
+  border-radius: 3px;
+  font-size: 23px;
+}
+.aboutpage__top__right .spanteg {
+  font-size: 19px;
+  padding: 6px;
+  color: #0000ff;
+}
+.aboutpage__top__right span {
+  font-size: 19px;
+  padding: 6px;
+}
+.aboutpage__top__right h2 {
+  font-size: 35px;
+  padding: 6px 0px 5px 0px;
+}
+.aboutpage__top__right p {
+  color: #737b73;
+  font-size: 19px;
+  line-height: 1.6;
+  padding: 6px 0px 27px 0px;
+}
+.aboutpage__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+.aboutpage__bottom__left {
+  width: 373px;
+  height: 355px;
+}
+.aboutpage__bottom__left h2 {
+  padding: 10px 0px 10px 20px;
+}
+.aboutpage__bottom__left .aboutline {
+  width: 90%;
+  background-color: lightgray;
+  height: 0.1px;
+  margin: 0 auto;
+}
+.aboutpage__bottom__left p {
+  color: #737b73;
+  padding: 10px 23px 0px 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.aboutpage__bottom__left ul {
+  list-style: none;
+  padding: 20px;
+}
+.aboutpage__bottom__left ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.aboutpage__bottom__left ul li span {
+  font-size: 19px;
+  padding: 6px;
+}
+.aboutpage__bottom__left ul li .ikonabout {
+  color: rgba(115, 123, 115, 0.5490196078);
+}
+.aboutpage__bottom__left ul li .ikonabout:hover {
+  color: #0000ff;
+}
+.aboutpage__bottom__middle {
+  width: 373px;
+  height: 355px;
+}
+.aboutpage__bottom__middle h2 {
+  padding: 10px 0px 10px 20px;
+}
+.aboutpage__bottom__middle .aboutline {
+  width: 90%;
+  background-color: lightgray;
+  height: 0.1px;
+  margin: 0 auto;
+}
+.aboutpage__bottom__middle p {
+  color: #737b73;
+  padding: 10px 23px 0px 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.aboutpage__bottom__middle ul {
+  list-style: none;
+  padding: 20px;
+}
+.aboutpage__bottom__middle ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.aboutpage__bottom__middle ul li span {
+  font-size: 19px;
+  padding: 6px;
+}
+.aboutpage__bottom__middle ul li .ikonabout {
+  color: rgba(115, 123, 115, 0.5490196078);
+}
+.aboutpage__bottom__middle ul li .ikonabout:hover {
+  color: #0000ff;
+}
+.aboutpage__bottom__middle ul__cards {
+  padding-bottom: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.aboutpage__bottom__middle ul__cards__card {
+  width: 361px;
+  height: 497px;
+}
+.aboutpage__bottom__middle ul__cards__card img {
+  width: 360px;
+  height: 370px;
+  overflow: hidden;
+}
+.aboutpage__bottom__middle ul__cards__card img:hover {
+  transform: scale(1.3);
+  transition: 1.3s;
+}
+.aboutpage__bottom__middle ul__cards__card__content {
+  width: 100%;
+  height: 120px;
+  background-color: #F9F9FC;
+  padding: 15px 0px 0px 0px;
+  margin: 0 auto;
+}
+.aboutpage__bottom__middle ul__cards__card__content h3 {
+  text-align: center;
+  padding: 10px;
+}
+.aboutpage__bottom__middle ul__cards__card__content span {
+  color: #0000FF;
+  margin-left: 110px;
+}/*# sourceMappingURL=About.css.map */
