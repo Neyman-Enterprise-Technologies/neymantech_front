@@ -1,4 +1,134 @@
-.footer {
+// .container {
+//   max-width: 1320px;
+//   width: 100%;
+//   // background-color: red;
+// }
+.footer{
+  position: relative;
+  width: 100%;
+height: 50rem;
+  background-color: #212529;
+  padding: 3rem 0;
+  // display: flex;
+  // flex-direction: column;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  &__contactInfoCol{
+    padding: 0.625rem 0;
+    position: absolute;
+  
+
+// background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-between;
+  
+
+
+    h2{
+     text-align: start;
+      font-size: 2rem;
+      color: white;
+      margin-bottom: .8rem;
+    }
+    
+  }
+  &__headerandBorderBottom{
+    position: relative;
+       width: 100%;
+      }
+  &__contactContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    p{
+      font-size: 1.5rem;
+      color: #e4e4e4;
+      margin-bottom: 1px;
+    }
+    a{
+      font-size: 2rem;
+      color: white;
+      font-weight: 900;
+      transition: all 0.3s;
+ &:hover{
+  color: #fa7070;
+ }
+    }
+    
+  }
+
+
+
+  &__iconContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+   height: 50px;
+   
+    
+  }
+ 
+
+  &__QuickLinksCol{
+    position: absolute;
+    width: 30%;
+  }
+ 
+  &__devider{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+  background-color: #616161;
+&::before{
+  position: absolute;
+  content: '';
+  width: 5rem;
+  height: 1px;
+  background-color: white;
+}
+
+  }
+  &__phoneContainer{
+    display: flex;
+    gap: 1rem;
+  }
+  &__phoneIcon{
+ 
+     font-size: 50px;
+    color: #fa7070;
+  }
+  &__phoneInfo{
+    width: 80%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+p{
+  font-size: 20px;
+}
+  }
+  &__SocialMediaCont{
+   width: 200px;
+   height: 100px;
+    
+  }
+  .facebook
+  {
+    font-size: 50px;
+  }
+
+}
+
+/* .footer {
   width: 100%;
   background-color: #212529;
 
@@ -233,4 +363,4 @@
       margin: 0 auto;
     }
   }
-}
+} */
