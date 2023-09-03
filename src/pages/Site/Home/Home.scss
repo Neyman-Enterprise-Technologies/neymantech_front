@@ -11,7 +11,8 @@ $TextColor: #737b9a;
 .container {
   max-width: 1320px;
   width: 100%;
- margin: 0 auto;
+  margin: 0 auto;
+  //  background-color: red;
 }
 
 /* digital marketing style start */
@@ -40,6 +41,7 @@ $TextColor: #737b9a;
         line-height: 1.6rem;
         font-size: 1rem;
         font-weight: 900;
+        width: 32rem;
       }
       & .readMore-btn {
         position: relative;
@@ -166,9 +168,7 @@ $TextColor: #737b9a;
       height: 100%;
       object-fit: cover;
     }
-    
   }
-  
 }
 
 /* digital marketing style end */
@@ -181,9 +181,10 @@ $TextColor: #737b9a;
   justify-content: space-between;
   gap: 1rem;
 
+
   & .left {
     position: relative;
-    width: 50%;
+    // width: 50%;
     & img {
       // position: absolute;
       object-fit: cover;
@@ -194,7 +195,7 @@ $TextColor: #737b9a;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 50%;
+    // width: 50%;
     & .readMore-btn {
       position: relative;
 
@@ -782,14 +783,13 @@ $TextColor: #737b9a;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 1.875rem;
     &__card {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
       display: flex;
       align-items: flex-end;
       box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
       transition: 0.5s ease-in-out;
-
       width: 25rem;
       height: 31.25rem;
       position: relative;
@@ -812,14 +812,6 @@ $TextColor: #737b9a;
         & .description {
           font-size: 1.5rem;
           line-height: 2rem;
-        }
-
-        & .info-btn {
-          padding: 0.625rem 1.25rem;
-          border-radius: 1.25rem;
-          color: $TextColor;
-          background-color: #fff;
-          cursor: pointer;
         }
       }
 
@@ -959,7 +951,6 @@ $TextColor: #737b9a;
         position: absolute;
         object-fit: cover;
         width: 100%;
-        
       }
 
       img {
@@ -992,32 +983,32 @@ $TextColor: #737b9a;
   }
 }
 
-@media screen and (max-width: 993px) {
-  .home__blogs__cards__card {
-    width: 90% !important;
-    max-width: 28.125rem;
-  }
+// @media screen and (max-width: 993px) {
+//   .home__blogs__cards__card {
+//     width: 90% !important;
+//     max-width: 28.125rem;
+//   }
 
-  .home__blogs {
-    &__content {
-      padding: 5rem 0.625rem 0.625rem 0.625rem;
-      width: 100%;
-      margin: auto;
-      text-align: center;
-    }
+//   .home__blogs {
+//     &__content {
+//       padding: 5rem 0.625rem 0.625rem 0.625rem;
+//       width: 100%;
+//       margin: auto;
+//       text-align: center;
+//     }
 
-    &__cards {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap !important;
-      gap: 1.25rem;
-      padding: 0;
-      width: 90%;
-      margin: 0 auto;
-    }
-  }
-}
+//     &__cards {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-wrap: wrap !important;
+//       gap: 1.25rem;
+//       padding: 0;
+//       width: 90%;
+//       margin: 0 auto;
+//     }
+//   }
+// }
 
 .home__feedback {
   background-color: #f9f9fc;
@@ -1045,31 +1036,31 @@ $TextColor: #737b9a;
   }
 }
 
-@media screen and (max-width: 993px) {
-  .home__feedback {
-    width: 100%;
+// @media screen and (max-width: 993px) {
+//   .home__feedback {
+//     width: 100%;
 
-    &__content {
-      padding: 30px 20px 10px 20px;
-      width: 100%;
-      margin: auto;
-      text-align: center;
+//     &__content {
+//       padding: 30px 20px 10px 20px;
+//       width: 100%;
+//       margin: auto;
+//       text-align: center;
 
-      h2 {
-        padding: 15px 0px 70px 0px;
-        font-size: 30px;
-        font-family: 'Montserrat', sans-serif;
-      }
+//       h2 {
+//         padding: 15px 0px 70px 0px;
+//         font-size: 30px;
+//         font-family: 'Montserrat', sans-serif;
+//       }
 
-      p {
-        color: #737b73;
-        font-size: 18px;
-        color: #0000ff;
-        font-family: 'Montserrat', sans-serif;
-      }
-    }
-  }
-}
+//       p {
+//         color: #737b73;
+//         font-size: 18px;
+//         color: #0000ff;
+//         font-family: 'Montserrat', sans-serif;
+//       }
+//     }
+//   }
+// }
 
 .scroll-to-top {
   position: fixed;
@@ -1087,14 +1078,15 @@ $TextColor: #737b9a;
   opacity: 0.8;
 }
 
-@media screen and (max-width: 993px) {
-  .slider1__content {
-    top: 10%;
-    width: 100% !important;
-  }
-}
+// @media screen and (max-width: 993px) {
+//   .slider1__content {
+//     top: 10%;
+//     width: 100% !important;
+//   }
+// }
 
 // ///////////////////////////////////////////////////////////////////////////
+//** home blogs  component start */
 article {
   --img-scale: 1.001;
 
@@ -1114,11 +1106,11 @@ article {
     inset-block: 0;
     inset-inline: 0;
     cursor: pointer;
-    content: "";
+    content: '';
   }
   & h2 {
     margin: 0 0 18px 0;
-    
+
     font-size: 1.9rem;
     letter-spacing: 0.06em;
     color: var(--title-color);
@@ -1129,20 +1121,18 @@ article {
     padding: 0;
     aspect-ratio: 14/ 9;
     overflow: hidden;
-    
   }
-  & img{
+  & img {
     max-width: 100%;
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.4s ease-in-out;
-    
   }
   .article-body {
     padding: 24px;
   }
 
-  & .read-more{
+  & .read-more {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -1150,7 +1140,6 @@ article {
   }
   & .read-more:focus {
     outline: 1px dotted #28666e;
-    
   }
   & .read-more .icon {
     min-width: 24px;
@@ -1161,15 +1150,15 @@ article {
     opacity: var(--link-icon-opacity);
     transition: all 0.3s;
   }
-  
 }
 article:has(:hover, :focus) {
-  --img-scale: 1.1 ;
---title-color: #28666e;
+  --img-scale: 1.1;
+  --title-color: #28666e;
   --link-icon-translate: 0;
   --link-icon-opacity: 1;
-  
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   & img {
     transform: rotate(3deg) scale(var(--img-scale));
   }
@@ -1179,13 +1168,131 @@ article:has(:hover, :focus) {
 *::before,
 *::after {
   box-sizing: border-box;
- 
 }
 .articles {
   display: grid;
   max-width: 1200px;
-margin-inline: auto;
+  margin-inline: auto;
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
+}
+
+//** home blogs  component end */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+    // background-color: green;
+  }
+ 
+
+}
+// ************************* @media screen and (max-width: 992px)
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .home__works {
+    &__cards {
+      &__card {
+        width: 33rem;
+        height: 39.25rem;
+
+        & .info {
+          & .description {
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+          & .heading {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  //digital marketing media max-992px start
+
+  .digital-marketing-container {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .digital-marketing-container .right {
+    width: 100%;
+    height: 450px;
+  }
+
+  .digital-marketing-container .right img {
+    position: absolute;
+    object-fit: scale-down;
+    width: 100%;
+  }
+
+  .digital-marketing-container .left {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .marketing-cards-container {
+    position: relative;
+    width: 100%;
+    gap: 50px;
+  }
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card,
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .right-cards-container
+    .card {
+    padding: 1.5rem 26rem 1.5rem 1.5rem;
+  }
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card:hover,
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .right-cards-container
+    .card:hover {
+    box-shadow: inset 38rem 0 0 0 #0000ff;
+  }
+
+  .digital-marketing-container .left .top-container p {
+    width: 110ch;
+  }
+
+  //digital marketing media max-992px end
+
+  /////////////////////////////////////////////////////
+  //Web Design Development section  media max-992 start
+  .web-design-section {
+    flex-direction: column;
+  }
+  .web-design-section .left {
+    width: 100%;
+  }
+  .web-design-section .right {
+    width: 100%;
+  }
+
+  .web-design-section .right .cards-container .left-cards-container .card,
+  .web-design-section .right .cards-container .right-cards-container .card {
+    padding: 1.5rem 26rem 1.5rem 1.5rem;
+  }
+  .web-design-section .right .cards-container .left-cards-container .card:hover,
+  .web-design-section
+    .right
+    .cards-container
+    .right-cards-container
+    .card:hover {
+    box-shadow: inset 50rem 0 0 0 #0000ff;
+  }
 }

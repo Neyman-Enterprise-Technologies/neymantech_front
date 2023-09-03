@@ -37,8 +37,8 @@ export default function Home() {
           </div>
           <MySlider />
 
-          <div className='container'>
-            <div className='home__service'>
+          <div className='home__service'>
+            <div className='container'>
               <div className='home__service__content'>
                 <h2 id='services' className='services' name='services'>
                   {' '}
@@ -64,69 +64,69 @@ export default function Home() {
                   </div>
                 </Link>
                 <Link to={'/service'}>
-                <div className='home__service__cards__card'>
-                  <div className='home__service__cards__card__icon'>
-                    <AiOutlineGlobal className='icon1' />
+                  <div className='home__service__cards__card'>
+                    <div className='home__service__cards__card__icon'>
+                      <AiOutlineGlobal className='icon1' />
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
                   </div>
-                  <h3>IT Consultancy</h3>
-                  <p>
-                    &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                    error sit voluptatem accusantium &nbsp; doloremque
-                    laudantium
-                  </p>
-                </div>
                 </Link>
                 <Link to={'/service'}>
-                <div className='home__service__cards__card'>
-                  <div className='home__service__cards__card__icon'>
-                    <BsDisplay className='icon1' />
+                  <div className='home__service__cards__card'>
+                    <div className='home__service__cards__card__icon'>
+                      <BsDisplay className='icon1' />
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
                   </div>
-                  <h3>IT Consultancy</h3>
-                  <p>
-                    &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                    error sit voluptatem accusantium &nbsp; doloremque
-                    laudantium
-                  </p>
-                </div>
                 </Link>
                 <Link to={'/service'}>
-                <div className='home__service__cards__card'>
-                  <div className='home__service__cards__card__icon'>
-                    <AiOutlineGlobal className='icon1' />
+                  <div className='home__service__cards__card'>
+                    <div className='home__service__cards__card__icon'>
+                      <AiOutlineGlobal className='icon1' />
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
                   </div>
-                  <h3>IT Consultancy</h3>
-                  <p>
-                    &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                    error sit voluptatem accusantium &nbsp; doloremque
-                    laudantium
-                  </p>
-                </div>
                 </Link>
                 <Link to={'/service'}>
-                <div className='home__service__cards__card'>
-                  <div className='home__service__cards__card__icon'>
-                    <AiOutlineGlobal className='icon1' />
+                  <div className='home__service__cards__card'>
+                    <div className='home__service__cards__card__icon'>
+                      <AiOutlineGlobal className='icon1' />
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
                   </div>
-                  <h3>IT Consultancy</h3>
-                  <p>
-                    &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                    error sit voluptatem accusantium &nbsp; doloremque
-                    laudantium
-                  </p>
-                </div>
                 </Link>
                 <Link to={'/service'}>
-                <div className='home__service__cards__card'>
-                  <div className='home__service__cards__card__icon'>
-                    <AiOutlineGlobal className='icon1' />
+                  <div className='home__service__cards__card'>
+                    <div className='home__service__cards__card__icon'>
+                      <AiOutlineGlobal className='icon1' />
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
                   </div>
-                  <h3>IT Consultancy</h3>
-                  <p>
-                    &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                    error sit voluptatem accusantium &nbsp; doloremque
-                    laudantium
-                  </p>
-                </div>
                 </Link>
               </div>
             </div>
@@ -296,9 +296,11 @@ export default function Home() {
                 <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png'></img>
               </div>
             </div>
-            {/* digital marketing section end */}
-            {/* web-design-section start */}
-            <div className='web-design-section'>
+          </div>
+          {/* digital marketing section end */}
+          {/* web-design-section start */}
+            <div className='container'>
+          <div className='web-design-section'>
               <div className='left'>
                 <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service2-1.png'></img>
               </div>
@@ -348,8 +350,8 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {/* web-design-section start */}
           </div>
+          {/* web-design-section start */}
 
           {/* <div className="home__video">
             <div className="home__video__content">
@@ -401,9 +403,9 @@ export default function Home() {
                     <p className='description'>
                       Designing a Better Cinema Experience
                     </p>
-                    <Link to='' className='info-btn'>
+                    {/* <Link to='' className='info-btn'>
                       Case Study
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className='home__works__cards__card'>
@@ -413,9 +415,12 @@ export default function Home() {
                     <p className='description'>
                       Designing a Better Cinema Experience
                     </p>
-                    <Link to='' className='info-btn'>
+                    {/* <Link to='' 
+                    
+                    
+                    Name='info-btn'>
                       Case Study
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className='home__works__cards__card'>
@@ -425,9 +430,9 @@ export default function Home() {
                     <p className='description'>
                       Designing a Better Cinema Experience
                     </p>
-                    <Link to='' className='info-btn'>
+                    {/* <Link to='' className='info-btn'>
                       Case Study
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className='home__works__cards__card'>
@@ -437,9 +442,9 @@ export default function Home() {
                     <p className='description'>
                       Designing a Better Cinema Experience
                     </p>
-                    <Link to='' className='info-btn'>
+                    {/* <Link to='' className='info-btn'>
                       Case Study
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className='home__works__cards__card'>
@@ -449,9 +454,9 @@ export default function Home() {
                     <p className='description'>
                       Designing a Better Cinema Experience
                     </p>
-                    <Link to='' className='info-btn'>
+                    {/* <Link to='' className='info-btn'>
                       Case Study
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className='home__works__cards__card'>
@@ -461,9 +466,9 @@ export default function Home() {
                     <p className='description'>
                       Designing a Better Cinema Experience
                     </p>
-                    <Link to='' className='info-btn'>
+                    {/* <Link to='' className='info-btn'>
                       Case Study
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -479,10 +484,11 @@ export default function Home() {
           </div>
 
           <div className='home__blogs'>
-            <div className='home__blogs__content'>
-              <h2>Latest news</h2>
-            </div>
-            {/* <div className='home__blogs__cards'>
+            <div className='container'>
+              <div className='home__blogs__content'>
+                <h2>Latest news</h2>
+              </div>
+              {/* <div className='home__blogs__cards'>
               <div className='home__blogs__cards__card'>
                 <div className='home__blogs__cards__card__img'>
                   <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1-530x430.jpg'></img>
@@ -521,98 +527,99 @@ export default function Home() {
               </div>
  
             </div> */}
-            <section className='articles'>
-              <article>
-                <div className='article-wrapper'>
-                  <figure>
-                    <img src='/src/images/blog-image1.jpg' alt='' />
-                  </figure>
-                  <div className='article-body'>
-                    <h2>How To Use Music To Boost Your Business</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                      do eiusmod tempor incididunt.
-                    </p>
-                    <Link to='' className='read-more'>
-                      Read more{' '}
-                      <span class='sr-only'>about this is some title</span>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        class='icon'
-                        viewBox='0 0 20 20'
-                        fill='currentColor'
-                      >
-                        <path
-                          fill-rule='evenodd'
-                          d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
-                          clip-rule='evenodd'
-                        />
-                      </svg>
-                    </Link>
+              <section className='articles'>
+                <article>
+                  <div className='article-wrapper'>
+                    <figure>
+                      <img src='/src/images/blog-image1.jpg' alt='' />
+                    </figure>
+                    <div className='article-body'>
+                      <h2>How To Use Music To Boost Your Business</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
+                        sed do eiusmod tempor incididunt.
+                      </p>
+                      <Link to='' className='read-more'>
+                        Read more{' '}
+                        <span class='sr-only'>about this is some title</span>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fill-rule='evenodd'
+                            d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
+                            clip-rule='evenodd'
+                          />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </article>
-              <article>
-                <div className='article-wrapper'>
-                  <figure>
-                    <img src='/src/images/blog-image-2.jpg' alt='' />
-                  </figure>
-                  <div className='article-body'>
-                    <h2>The Rise Of Marketing and Why You Need It</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                      do eiusmod tempor incididunt.
-                    </p>
-                    <Link to='' className='read-more'>
-                      Read more{' '}
-                      <span class='sr-only'>about this is some title</span>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        class='icon'
-                        viewBox='0 0 20 20'
-                        fill='currentColor'
-                      >
-                        <path
-                          fill-rule='evenodd'
-                          d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
-                          clip-rule='evenodd'
-                        />
-                      </svg>
-                    </Link>
+                </article>
+                <article>
+                  <div className='article-wrapper'>
+                    <figure>
+                      <img src='/src/images/blog-image-2.jpg' alt='' />
+                    </figure>
+                    <div className='article-body'>
+                      <h2>The Rise Of Marketing and Why You Need It</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
+                        sed do eiusmod tempor incididunt.
+                      </p>
+                      <Link to='' className='read-more'>
+                        Read more{' '}
+                        <span class='sr-only'>about this is some title</span>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fill-rule='evenodd'
+                            d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
+                            clip-rule='evenodd'
+                          />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </article>
-              <article>
-                <div className='article-wrapper'>
-                  <figure>
-                    <img src='/src/images/blog-image-3.jpg' alt='' />
-                  </figure>
-                  <div className='article-body'>
-                    <h2>How To Boost Your Digital Marketing Agency</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                      do eiusmod tempor incididunt.
-                    </p>
-                    <Link to='' className='read-more'>
-                      Read more{' '}
-                      <span class='sr-only'>about this is some title</span>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        class='icon'
-                        viewBox='0 0 20 20'
-                        fill='currentColor'
-                      >
-                        <path
-                          fill-rule='evenodd'
-                          d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
-                          clip-rule='evenodd'
-                        />
-                      </svg>
-                    </Link>
+                </article>
+                <article>
+                  <div className='article-wrapper'>
+                    <figure>
+                      <img src='/src/images/blog-image-3.jpg' alt='' />
+                    </figure>
+                    <div className='article-body'>
+                      <h2>How To Boost Your Digital Marketing Agency</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
+                        sed do eiusmod tempor incididunt.
+                      </p>
+                      <Link to='' className='read-more'>
+                        Read more{' '}
+                        <span class='sr-only'>about this is some title</span>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fill-rule='evenodd'
+                            d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
+                            clip-rule='evenodd'
+                          />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </section>
+                </article>
+              </section>
+            </div>
           </div>
         </section>
       )}

@@ -6,7 +6,7 @@
 .footer {
   position: relative;
   background-color: #212529;
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -250,6 +250,12 @@
   .footer__galleries {
     height: 15rem;
   }
+  .footer__left {
+    width: 60%;
+  }
+  .footer__right {
+    width: 40%;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -257,9 +263,16 @@
   }
   .footer__top {
     flex-direction: column;
+    gap: 6rem;
+  }
+  .footer__headerandBorderBottom {
+    margin-bottom: 2rem;
   }
   .footer__headerandBorderBottom h2 {
     font-size: 2.5rem;
+  }
+  .footer__bottomUnderscore {
+    margin-bottom: 2rem;
   }
   .footer__bottomUnderscore h2 {
     font-size: 2.5rem;
@@ -279,8 +292,14 @@
   .footer__quickLinksContainer a {
     font-size: 2rem;
   }
+  .footer__left {
+    width: 30%;
+  }
+  .footer__right {
+    width: 70%;
+  }
   .footer__galleries {
-    height: 380px;
+    height: 50rem;
   }
   .footer__galleryContainer {
     width: 100%;
@@ -297,5 +316,16 @@
   .footer__copyrightRight {
     font-size: 1.8rem;
     line-height: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 90% !important;
+  }
+  .footer__left {
+    width: 25%;
+  }
+  .footer__right {
+    width: 75%;
   }
 }/*# sourceMappingURL=Footer.css.map */
