@@ -173,11 +173,13 @@ export default function Faq() {
             <div className='faqHeader'>
            
            
-            <div className='faqTitle'>
+          <div className="container">
+          <div className='faqTitle'>
                 <h2>
                   F<span>A</span>Q
                 </h2>
               </div>
+          </div>
               <div className='faqLinks'>
                 <Link to='/home' className='homeLink'>
                   Home
@@ -196,7 +198,8 @@ export default function Faq() {
                 successful communication.
               </p>
             </div>
-            <div className='faqsContainer'>
+    <div className="container">
+    <div className='faqsContainer'>
               <div className='faqs'>
                 {faqs1.map((faq, i) => (
                   <Accordion faq={faq} index={i} toggleFAQ1={toggleFAQ1} />
@@ -208,8 +211,10 @@ export default function Faq() {
                 ))}
               </div>
             </div>
+    </div>
           </div>
-          <div className='faqSection-2'>
+         <div className='container'>
+         <div className='faqSection-2'>
             <div className='faqTitleBottom'>
               <p className='about-description'>Contact Us</p>
               <h2>Do you have any questions?</h2>
@@ -242,6 +247,7 @@ export default function Faq() {
             </div>
           </div>
 
+         </div>
           {/* <Accordion
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
