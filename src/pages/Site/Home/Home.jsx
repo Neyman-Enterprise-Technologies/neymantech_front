@@ -5,6 +5,7 @@ import './Home.scss'
 import MySlider from '../../../Components/MySlider/MySlider'
 import Loading from '../../../Components/Loading/Loading'
 import { animateScroll as scroll, Element as ScrollElement } from 'react-scroll'
+import { BiSolidBadgeCheck } from 'react-icons/bi';
 import { TbMessages } from 'react-icons/Tb'
 import { CgScrollV } from 'react-icons/Cg'
 import { AiOutlineGlobal } from 'react-icons/Ai'
@@ -54,6 +55,7 @@ export default function Home() {
                   <div className='home__service__cards__card'>
                     <div className='home__service__cards__card__icon'>
                       <TbMessages className='icon1' />
+                      <BiSolidBadgeCheck className='badge'/>
                     </div>
                     <h3>IT Consultancy</h3>
                     <p>
@@ -67,6 +69,7 @@ export default function Home() {
                   <div className='home__service__cards__card'>
                     <div className='home__service__cards__card__icon'>
                       <AiOutlineGlobal className='icon1' />
+                      <BiSolidBadgeCheck className='badge'/>
                     </div>
                     <h3>IT Consultancy</h3>
                     <p>
@@ -80,6 +83,7 @@ export default function Home() {
                   <div className='home__service__cards__card'>
                     <div className='home__service__cards__card__icon'>
                       <BsDisplay className='icon1' />
+                      <BiSolidBadgeCheck className='badge'/>
                     </div>
                     <h3>IT Consultancy</h3>
                     <p>
@@ -93,6 +97,7 @@ export default function Home() {
                   <div className='home__service__cards__card'>
                     <div className='home__service__cards__card__icon'>
                       <AiOutlineGlobal className='icon1' />
+                      <BiSolidBadgeCheck className='badge'/>
                     </div>
                     <h3>IT Consultancy</h3>
                     <p>
@@ -106,6 +111,7 @@ export default function Home() {
                   <div className='home__service__cards__card'>
                     <div className='home__service__cards__card__icon'>
                       <AiOutlineGlobal className='icon1' />
+                      <BiSolidBadgeCheck className='badge'/>
                     </div>
                     <h3>IT Consultancy</h3>
                     <p>
@@ -119,6 +125,7 @@ export default function Home() {
                   <div className='home__service__cards__card'>
                     <div className='home__service__cards__card__icon'>
                       <AiOutlineGlobal className='icon1' />
+                      <BiSolidBadgeCheck className='badge'/>
                     </div>
                     <h3>IT Consultancy</h3>
                     <p>
