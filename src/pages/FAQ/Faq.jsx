@@ -213,7 +213,7 @@ export default function Faq() {
             </div>
     </div>
           </div>
-         <div className='container'>
+          <div className='container'>b
          <div className='faqSection-2'>
             <div className='faqTitleBottom'>
               <p className='about-description'>Contact Us</p>
