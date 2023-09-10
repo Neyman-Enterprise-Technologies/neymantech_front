@@ -211,9 +211,10 @@ export default function Faq() {
                 ))}
               </div>
             </div>
+            <div>Salam</div>
     </div>
           </div>
-          <div className='container'>b
+          <div className='container'>
          <div className='faqSection-2'>
             <div className='faqTitleBottom'>
               <p className='about-description'>Contact Us</p>
