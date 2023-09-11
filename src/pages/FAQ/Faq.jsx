@@ -211,7 +211,7 @@ export default function Faq() {
                 ))}
               </div>
             </div>
-            <div>Salam</div>
+           
     </div>
           </div>
           <div className='container'>

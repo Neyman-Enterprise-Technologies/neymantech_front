@@ -110,14 +110,12 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 1.875rem;
+    // height: 1.875rem;
     width: 100%;
-    background-color: green;
-    gap: 10px;
+
+    gap: 3px;
   }
-  &__socialMediaLinks {
-    background-color: red;
-  }
+  
   &__socialIcon {
     font-size: 16px;
   }
@@ -258,7 +256,7 @@
       a{
         font-size: 1.4rem;
       }
-     
+    
 
     }
      &__galleries{
@@ -273,6 +271,10 @@
       width: 40%;
      
     }
+    // &__socialMediaContainer{
+    //   // width: 100%;
+    //   align-self: flex-start;
+    // }
    
   }
 
@@ -361,6 +363,15 @@ width: 100%;
     font-size: 1.8rem;
     line-height: 3rem;
   }
+  // &__socialMediaContainer{
+  
+  //   // align-content: flex-start;
+  // }
+  &__socialMediaLinks{
+    display: inline-block;
+    width: 50px;
+  }
+
 }
 
 
