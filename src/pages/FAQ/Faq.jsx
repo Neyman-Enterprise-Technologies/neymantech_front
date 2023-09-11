@@ -231,14 +231,14 @@ export default function Faq() {
                 <div className='right'>
                   <form>
                     <div className='inputs'>
-                      <input type='text' />
-                      <input type='email' />
+                      <input type='text' placeholder='Name' />
+                      <input type='email' placeholder='Email'/>
                     </div>
                     <div className='inputs'>
-                      <input type='number' />
-                      <input type='Subject' />
+                      <input type='number' placeholder='Phone' />
+                      <input type='Subject' placeholder='Subject' />
                     </div>
-                    <textarea name='' id='' cols='30' rows='10'></textarea>
+                    <textarea name='' id=''   placeholder='Your Message'></textarea>
                     <button>
                    <span>SEND MESSAGE</span>
                       </button>

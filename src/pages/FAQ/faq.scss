@@ -45,13 +45,16 @@ $TextColor: #7b83a3;
 
   gap: 2rem;
 }
-.faqSection-2 .section-2-content .right .inputs {
+.faqSection-2 .section-2-content .right form .inputs {
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
-// BUTTON HOVER EFFECT START
+.faqSection-2 .section-2-content .right form .inputs input{
+ padding:1.5rem;
+}
+//* BUTTON HOVER EFFECT START
 .faqSection-2 .section-2-content .right form button {
 	border: none;
   position: relative;
@@ -84,8 +87,8 @@ overflow: hidden;
 }
 
 
-// BUTTON HOVER EFFECT END
-// faq Section 2 end
+//* BUTTON HOVER EFFECT END
+//*faq Section 2 end
 .faqTitle {
   text-align: center;
   // margin: 6rem 0;
