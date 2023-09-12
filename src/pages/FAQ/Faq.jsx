@@ -1,132 +1,132 @@
-import * as React from 'react'
-import './faq.scss'
+import * as React from "react";
+import "./faq.scss";
 
-import Loading from '../../Components/Loading/Loading'
-import { useState, useEffect } from 'react'
-import Accordion from '../Accordion'
-import { Link } from 'react-router-dom'
-import { FaAngleRight } from 'react-icons/fa'
+import Loading from "../../Components/Loading/Loading";
+import { useState, useEffect } from "react";
+import Accordion from "../Accordion";
+import { Link } from "react-router-dom";
+import { FaAngleRight } from "react-icons/fa";
 
 export default function Faq() {
   const [faqs1, setfaqs1] = useState([
     {
-      question: 'Which material types can you work with?',
+      question: "Which material types can you work with?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Is smart lock required for instant apps?',
+      question: "Is smart lock required for instant apps?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Can I have multiple activities in a single feature?',
+      question: "Can I have multiple activities in a single feature?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Which material types can you work with?',
+      question: "Which material types can you work with?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Why choose our services in your business?',
+      question: "Why choose our services in your business?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'How to get start with us?',
+      question: "How to get start with us?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Why choose our services in your business?',
+      question: "Why choose our services in your business?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
-  ])
+  ]);
 
   const [faqs2, setfaqs2] = useState([
     {
-      question: 'Why choose our services in your business?',
+      question: "Why choose our services in your business?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Which material types can you work with?',
+      question: "Which material types can you work with?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Is smart lock required for instant apps?',
+      question: "Is smart lock required for instant apps?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Why choose our services in your business?',
+      question: "Why choose our services in your business?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
 
     {
-      question: 'Can I have multiple activities in a single feature?',
+      question: "Can I have multiple activities in a single feature?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'Which material types can you work with?',
+      question: "Which material types can you work with?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
     {
-      question: 'How to get start with us?',
+      question: "How to get start with us?",
       answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       open: false,
     },
-  ])
+  ]);
 
   const toggleFAQ1 = (index) => {
     setfaqs1(
       faqs1.map((faq, i) => {
         if (i === index) {
-          faq.open = !faq.open
+          faq.open = !faq.open;
         } else {
-          faq.open = false
+          faq.open = false;
         }
 
-        return faq
+        return faq;
       })
-    )
-  }
+    );
+  };
 
-  const [expanded, setExpanded] = React.useState('panel1')
+  const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false)
-  }
-  const [loading, setLoading] = useState(false)
+    setExpanded(newExpanded ? panel : false);
+  };
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true)
-    window.scrollTo({ top: 0 })
+    setLoading(true);
+    window.scrollTo({ top: 0 });
     setTimeout(() => {
-      setLoading(false)
-    }, 1000)
-  }, [])
+      setLoading(false);
+    }, 1000);
+  }, []);
   // const Accordion = styled((props) => (
   //   <MuiAccordion disableGutters elevation={0} square {...props} />
   // ))(({ theme }) => ({
@@ -168,87 +168,86 @@ export default function Faq() {
       {loading ? (
         <Loading />
       ) : (
-            <>
-        <div className='faqSection-1'>
-            <div className='faqHeader'>
-           
-           
-          <div className="container">
-          <div className='faqTitle'>
-                <h2>
-                  F<span>A</span>Q
-                </h2>
+        <>
+          <div className="faqSection-1">
+            <div className="faqHeader">
+              <div className="container">
+                <div className="faqTitle">
+                  <h2>
+                    F<span>A</span>Q
+                  </h2>
+                </div>
               </div>
-          </div>
-              <div className='faqLinks'>
-                <Link to='/home' className='homeLink'>
+              <div className="faqLinks">
+                <Link to="/home" className="homeLink">
                   Home
                 </Link>
-                <FaAngleRight className='angleIcon' />
-                <Link to='faq'>FAQ</Link>
+                <FaAngleRight className="angleIcon" />
+                <Link to="faq">FAQ</Link>
               </div>
-        
             </div>
-            <div className='faqTitleBottom'>
-              <p className='about-description'>ABOUT OUR SERVICES</p>
+            <div className="faqTitleBottom">
+              <p className="about-description">ABOUT OUR SERVICES</p>
               <h2>Frequently asked questions</h2>
-              <p className='faqDescription'>
+              <p className="faqDescription">
                 We believe brand interaction is key in communication. Real
                 innovations and a positive customer experience are the heart of
                 successful communication.
               </p>
             </div>
-    <div className="container">
-    <div className='faqsContainer'>
-              <div className='faqs'>
-                {faqs1.map((faq, i) => (
-                  <Accordion faq={faq} index={i} toggleFAQ1={toggleFAQ1} />
-                ))}
-              </div>
-              <div className='faqs'>
-                {faqs2.map((faq, i) => (
-                  <Accordion faq={faq} index={i} toggleFAQ2={toggleFAQ1} />
-                ))}
+            <div className="container">
+              <div className="faqsContainer">
+                <div className="faqs">
+                  {faqs1.map((faq, i) => (
+                    <Accordion faq={faq} index={i} toggleFAQ1={toggleFAQ1} />
+                  ))}
+                </div>
+                <div className="faqs">
+                  {faqs2.map((faq, i) => (
+                    <Accordion faq={faq} index={i} toggleFAQ2={toggleFAQ1} />
+                  ))}
+                </div>
               </div>
             </div>
-           
-    </div>
           </div>
-          <div className='container'>
-         <div className='faqSection-2'>
-            <div className='faqTitleBottom'>
-              <p className='about-description'>Contact Us</p>
-              <h2>Do you have any questions?</h2>
-              <p className='faqDescription'>
-                Real innovations and a positive customer experience are the
-                heart of successful communication. No fake products and
-                services.
-              </p>
-              <div className='section-2-content'>
-                <div className='left'>
-                  <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png' />
-                </div>
-                <div className='right'>
-                  <form>
-                    <div className='inputs'>
-                      <input type='text' placeholder='Name' />
-                      <input type='email' placeholder='Email'/>
-                    </div>
-                    <div className='inputs'>
-                      <input type='number' placeholder='Phone' />
-                      <input type='Subject' placeholder='Subject' />
-                    </div>
-                    <textarea name='' id=''   placeholder='Your Message'></textarea>
-                    <button>
-                   <span>SEND MESSAGE</span>
+          <div className="container">
+            <div className="faqSection-2">
+              <div className="faqTitleBottom">
+                <p className="about-description">Contact Us</p>
+                <h2>Do you have any questions?</h2>
+                <p className="faqDescription">
+                  Real innovations and a positive customer experience are the
+                  heart of successful communication. No fake products and
+                  services.
+                </p>
+                <div className="section-2-content">
+                  <div className="left">
+                    <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
+                  </div>
+                  <div className="right">
+                    <form>
+                      <div className="inputs">
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                      </div>
+                      <div className="inputs">
+                        <input type="number" placeholder="Phone" />
+                        <input type="Subject" placeholder="Subject" />
+                      </div>
+                      <textarea
+                        name=""
+                        id=""
+                        placeholder="Your Message"
+                      ></textarea>
+                      <button>
+                        <span>SEND MESSAGE</span>
                       </button>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-         </div>
           {/* <Accordion
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
@@ -584,5 +583,5 @@ export default function Faq() {
         </>
       )}
     </>
-  )
+  );
 }

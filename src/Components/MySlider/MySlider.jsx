@@ -9,7 +9,8 @@ function MySlider() {
   const sliderRef = useRef(null)
   return (
     <div className='slider-container'>
-      <Swiper
+      <div className="container">
+    <Swiper
         pagination={{
           dynamicBullets: true,
         }}
@@ -26,8 +27,8 @@ function MySlider() {
               alt='Slide 1'
             />
 
+          
               <div className='slider1__content'>
-            <div className='container'>
                 <h1>
                   Secure IT solutions<br></br> for a more secure environment!{' '}
                 </h1>
@@ -43,7 +44,7 @@ function MySlider() {
                   {' '}
                   <button>Get Started</button>
                 </Link>
-              </div>
+              
             </div>
           </div>
         </SwiperSlide>
@@ -82,7 +83,8 @@ function MySlider() {
               src='https://cdn.wallpapersafari.com/55/13/4KtLmN.jpg'
               alt='Slide 1'
             />
-            <div className='slider1__content'>
+          <div className="container">
+          <div className='slider1__content'>
               <h1>
                 Secure IT solutions<br></br> for a more secure environment!{' '}
               </h1>
@@ -100,8 +102,10 @@ function MySlider() {
               </Link>
             </div>
           </div>
+          </div>
         </SwiperSlide>
       </Swiper>
+    </div>
     </div>
   )
 }

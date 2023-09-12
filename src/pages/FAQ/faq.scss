@@ -126,7 +126,7 @@ overflow: hidden;
   padding-bottom: 1.2rem;
 }
 
-// fazqtitle bottom
+//faq Header start
 .faqHeader {
   background-color: #fafafc;
   padding: 10rem 0;
@@ -134,6 +134,7 @@ overflow: hidden;
   flex-direction: column;
   gap: 3rem;
 }
+//faq Header end
 
 .faqTitleBottom {
   display: flex;
@@ -141,6 +142,8 @@ overflow: hidden;
   gap: 1rem;
   padding: 10rem 0 5rem 0;
 }
+
+
 .faqTitleBottom .about-description {
   color: #0000ff;
   font-size: 1.2rem;
