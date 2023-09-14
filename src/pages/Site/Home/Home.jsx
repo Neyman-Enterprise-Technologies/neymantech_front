@@ -1,115 +1,147 @@
-import React, { useState } from 'react'
-import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import './Home.scss'
-import MySlider from '../../../Components/MySlider/MySlider'
-import Loading from '../../../Components/Loading/Loading'
-import { animateScroll as scroll } from 'react-scroll'
-import { TbMessages } from 'react-icons/Tb'
-import { CgScrollV } from 'react-icons/Cg'
-import { AiOutlineGlobal } from 'react-icons/Ai'
-import { BsFillPatchCheckFill, BsDisplay } from 'react-icons/Bs'
-import Carusel from '../../../Components/Carusel/Carusel'
+import React, { useState } from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Home.scss";
+import MySlider from "../../../Components/MySlider/MySlider";
+import Loading from "../../../Components/Loading/Loading";
+import {
+  animateScroll as scroll,
+  Element as ScrollElement,
+} from "react-scroll";
+import { BiSolidBadgeCheck } from "react-icons/bi";
+import { TbMessages } from "react-icons/Tb";
+import { CgScrollV } from "react-icons/Cg";
+import { AiOutlineGlobal } from "react-icons/Ai";
+import { BsFillPatchCheckFill, BsDisplay } from "react-icons/Bs";
+import Carusel from "../../../Components/Carusel/Carusel";
 export default function Home() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
-    setLoading(true)
-    window.scrollTo({ top: 0 })
+    setLoading(true);
+    window.scrollTo({ top: 0 });
     setTimeout(() => {
-      setLoading(false)
-    }, 1000)
-  }, [])
+      setLoading(false);
+    }, 1000);
+  }, []);
   const handleScrollToTop = () => {
-    scroll.scrollToTop()
-  }
-  const [showIcon, setShowIcon] = useState(false)
+    scroll.scrollToTop();
+  };
+  const [showIcon, setShowIcon] = useState(false);
   const handleIconClick = () => {
-    setShowIcon(false)
-  }
+    setShowIcon(false);
+  };
   return (
     <>
       {loading ? (
         <Loading />
       ) : (
         <section>
-          <div className='scroll-to-top' onClick={handleScrollToTop}>
+          <div className="scroll-to-top" onClick={handleScrollToTop}>
             <CgScrollV />
           </div>
           <MySlider />
 
-        <div className="container">
-        <div className='home__service'>
-            <div className='home__service__content'>
-              <h2>Our Services</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
-            </div>
-            <div className='home__service__cards'>
-              <div className='home__service__cards__card'>
-                <div className='home__service__cards__card__icon'>
-                  <TbMessages className='icon1' />
-                </div>
-                <h3>IT Consultancy</h3>
+          <div className="home__service">
+            <div className="container">
+              <div className="home__service__content">
+                <h2 id="services" className="services" name="services">
+                  {" "}
+                  Our Services
+                </h2>
                 <p>
-                  &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                  error sit voluptatem accusantium &nbsp; doloremque laudantium
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
               </div>
-              <div className='home__service__cards__card'>
-                <div className='home__service__cards__card__icon'>
-                  <AiOutlineGlobal className='icon1' />
-                </div>
-                <h3>IT Consultancy</h3>
-                <p>
-                  &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                  error sit voluptatem accusantium &nbsp; doloremque laudantium
-                </p>
-              </div>
-              <div className='home__service__cards__card'>
-                <div className='home__service__cards__card__icon'>
-                  <BsDisplay className='icon1' />
-                </div>
-                <h3>IT Consultancy</h3>
-                <p>
-                  &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                  error sit voluptatem accusantium &nbsp; doloremque laudantium
-                </p>
-              </div>
-              <div className='home__service__cards__card'>
-                <div className='home__service__cards__card__icon'>
-                  <AiOutlineGlobal className='icon1' />
-                </div>
-                <h3>IT Consultancy</h3>
-                <p>
-                  &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                  error sit voluptatem accusantium &nbsp; doloremque laudantium
-                </p>
-              </div>
-              <div className='home__service__cards__card'>
-                <div className='home__service__cards__card__icon'>
-                  <AiOutlineGlobal className='icon1' />
-                </div>
-                <h3>IT Consultancy</h3>
-                <p>
-                  &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                  error sit voluptatem accusantium &nbsp; doloremque laudantium
-                </p>
-              </div>
-              <div className='home__service__cards__card'>
-                <div className='home__service__cards__card__icon'>
-                  <AiOutlineGlobal className='icon1' />
-                </div>
-                <h3>IT Consultancy</h3>
-                <p>
-                  &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                  error sit voluptatem accusantium &nbsp; doloremque laudantium
-                </p>
+              <div className="home__service__cards">
+                <Link to={"/service"}>
+                  <div className="home__service__cards__card">
+                    <div className="home__service__cards__card__icon">
+                      <TbMessages className="icon1" />
+                      <BiSolidBadgeCheck className="badge" />
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
+                  </div>
+                </Link>
+                <Link to={"/service"}>
+                  <div className="home__service__cards__card">
+                    <div className="home__service__cards__card__icon">
+                      <AiOutlineGlobal className="icon1" />
+                      <BiSolidBadgeCheck className="badge" />
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
+                  </div>
+                </Link>
+                <Link to={"/service"}>
+                  <div className="home__service__cards__card">
+                    <div className="home__service__cards__card__icon">
+                      <BsDisplay className="icon1" />
+                      <BiSolidBadgeCheck className="badge" />
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
+                  </div>
+                </Link>
+                <Link to={"/service"}>
+                  <div className="home__service__cards__card">
+                    <div className="home__service__cards__card__icon">
+                      <AiOutlineGlobal className="icon1" />
+                      <BiSolidBadgeCheck className="badge" />
+                    </div>
+                    <h3>
+App Development</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
+                  </div>
+                </Link>
+                <Link to={"/service"}>
+                  <div className="home__service__cards__card">
+                    <div className="home__service__cards__card__icon">
+                      <AiOutlineGlobal className="icon1" />
+                      <BiSolidBadgeCheck className="badge" />
+                    </div>
+                    <h3>eCommerce Development</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
+                  </div>
+                </Link>
+                <Link to={"/service"}>
+                  <div className="home__service__cards__card">
+                    <div className="home__service__cards__card__icon">
+                      <AiOutlineGlobal className="icon1" />
+                      <BiSolidBadgeCheck className="badge" />
+                    </div>
+                    <h3>IT Solutions</h3>
+                    <p>
+                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
+                      error sit voluptatem accusantium &nbsp; doloremque
+                      laudantium
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
-        </div>
 
           {/* <div class="home__top">
             <div class="home__top__cards">
@@ -215,115 +247,122 @@ export default function Home() {
               </Link>
             </div>
           </div> */}
-          
-          <div className='container'>
+
+          <div className="container" id="cards">
             {/* digital marketing section start */}
-            <div className='digital-marketing-container'>
-              <div className='left'>
+            <div className="digital-marketing-container">
+              <div className="left">
                 {/* top-container start */}
-                <div className='top-container'>
+                <div className="top-container">
                   <h2>Digital Marketing</h2>
                   <p>
                     We believe brand interaction is key to communication. Real
                     innovations and positive customer experience are the heart
                     of success.
                   </p>
-                  <div className='marketing-cards-container'>
-                    <div className='left-cards-container'>
-                      <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
+                  <div className="marketing-cards-container">
+                    <div className="left-cards-container">
+                      <div className="card">
+                        <BsFillPatchCheckFill className="card-icon" />
+                        {""}
                         <p>SEO Marketing</p>
                       </div>
-                      <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />{' '}
+                      <div className="card">
+                        <BsFillPatchCheckFill className="card-icon" />{" "}
                         <p>SEO Marketing</p>
                       </div>
-                      <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />{' '}
+                      <div className="card">
+                        <BsFillPatchCheckFill className="card-icon" />{" "}
                         <p>SEO Marketing</p>
                       </div>
                     </div>
-                    <div className='right-cards-container'>
-                      <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
+                    <div className="right-cards-container">
+                      <div className="card">
+                        <BsFillPatchCheckFill className="card-icon" />
+                        {""}
                         <p>SEO Marketing</p>
                       </div>
-                      <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
+                      <div className="card">
+                        <BsFillPatchCheckFill className="card-icon" />
+                        {""}
                         <p>SEO Marketing</p>
                       </div>
-                      <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
+                      <div className="card">
+                        <BsFillPatchCheckFill className="card-icon" />
+                        {""}
                         <p>SEO Marketing</p>
                       </div>
                     </div>
                   </div>
-                  <Link className='readMore-btn'><span>READ MORE</span></Link>
+                  <Link className="readMore-btn">
+                    <span>READ MORE</span>
+                  </Link>
                 </div>
                 {/* top-container end */}
                 {/* bottom-container start */}
-                <div className='bottom-container'></div>
+                <div className="bottom-container"></div>
                 {/* bottom-container end */}
               </div>
-              <div className='right'>
-                <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png'></img>
+              <div className="right">
+                <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png"></img>
               </div>
             </div>
-             {/* digital marketing section end */}
-             {/* web-design-section start */}
-            <div className='web-design-section'>
-              <div className='left'>
-              <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service2-1.png"></img>
+          </div>
+          {/* digital marketing section end */}
+          {/* web-design-section start */}
+          <div className="container">
+            <div className="web-design-section">
+              <div className="left">
+                <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service2-1.png"></img>
               </div>
-              <div className='right'>
+              <div className="right">
                 <h2>Web Design & Development</h2>
-                <p>We believe brand interaction is key to communication. Real innovations and positive customer experience are the heart of success.</p>
+                <p>
+                  We believe brand interaction is key to communication. Real
+                  innovations and positive customer experience are the heart of
+                  success.
+                </p>
                 <div className="cards-container">
                   <div className="left-cards-container">
-                  <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
-                        <p>Responsive Design</p>
-                      </div>
-                      <div className='card'>
-                   
-                        <BsFillPatchCheckFill className='card-icon' />{' '}
-                        <p>Mobile App Development</p>
-                  
-                      </div>
-                      <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />{' '}
-                        <p>React Development</p>
-                      </div>
+                    <div className="card">
+                      <BsFillPatchCheckFill className="card-icon" />
+                      {""}
+                      <p>Responsive Design</p>
+                    </div>
+                    <div className="card">
+                      <BsFillPatchCheckFill className="card-icon" />{" "}
+                      <p>Mobile App Development</p>
+                    </div>
+                    <div className="card">
+                      <BsFillPatchCheckFill className="card-icon" />{" "}
+                      <p>React Development</p>
+                    </div>
                   </div>
                   <div className="right-cards-container">
-                  <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
-                        <p>UI / UX Design</p>
-                      </div>
-                  <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
-                        <p>Laravel Development</p>
-                      </div>
-                  <div className='card'>
-                        <BsFillPatchCheckFill className='card-icon' />
-                        {''}
-                        <p>Angular Development</p>
-                      </div>
+                    <div className="card">
+                      <BsFillPatchCheckFill className="card-icon" />
+                      {""}
+                      <p>UI / UX Design</p>
+                    </div>
+                    <div className="card">
+                      <BsFillPatchCheckFill className="card-icon" />
+                      {""}
+                      <p>Laravel Development</p>
+                    </div>
+                    <div className="card">
+                      <BsFillPatchCheckFill className="card-icon" />
+                      {""}
+                      <p>Angular Development</p>
+                    </div>
                   </div>
                 </div>
-                <Link className='readMore-btn'><span>READ MORE</span></Link>
+                <Link className="readMore-btn">
+                  <span>READ MORE</span>
+                </Link>
               </div>
             </div>
-              {/* web-design-section start */}
           </div>
-         
+          {/* web-design-section start */}
 
           {/* <div className="home__video">
             <div className="home__video__content">
@@ -358,81 +397,109 @@ export default function Home() {
             </div>
           </div> */}
 
-         <div className="container">
-         <div className='home__works'>
-            <div className='home__works__content'>
-              <h2>Our Latest works</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
-            </div>
-            <div className='home__works__cards'>
-              <div className='home__works__cards__card'>
-                <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg'></img>
-                <div className='info'>
-                  <p className='heading'>Development</p>
-                  <p className='description'>Designing a Better Cinema Experience</p>
-                  <Link to='' className='info-btn'>Case Study</Link>
-                </div>
+          <div className="container">
+            <div className="home__works">
+              <div className="home__works__content">
+                <h2>Our Latest works</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna.
+                </p>
               </div>
-              <div className='home__works__cards__card'>
-                <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work2-1.jpg'></img>
-                <div className='info'>
-                  <p className='heading'>Development</p>
-                  <p className='description'>Designing a Better Cinema Experience</p>
-                  <Link to='' className='info-btn'>Case Study</Link>
+              <div className="home__works__cards">
+                <div className="home__works__cards__card">
+                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
+                  <div className="info">
+                    <p className="heading">Development</p>
+                    <p className="description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
                 </div>
-              </div>
-              <div className='home__works__cards__card'>
-                <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work3-1.jpg'></img>
-                <div className='info'>
-                  <p className='heading'>Development</p>
-                  <p className='description'>Designing a Better Cinema Experience</p>
-                  <Link to='' className='info-btn'>Case Study</Link>
+                <div className="home__works__cards__card">
+                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work2-1.jpg"></img>
+                  <div className="info">
+                    <p className="heading">Development</p>
+                    <p className="description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' 
+                    
+                    
+                    Name='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
                 </div>
-              </div>
-              <div className='home__works__cards__card'>
-                <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work4-1.jpg'></img>
-                <div className='info'>
-                  <p className='heading'>Development</p>
-                  <p className='description'>Designing a Better Cinema Experience</p>
-                  <Link to='' className='info-btn'>Case Study</Link>
+                <div className="home__works__cards__card">
+                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work3-1.jpg"></img>
+                  <div className="info">
+                    <p className="heading">Development</p>
+                    <p className="description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
                 </div>
-              </div>
-              <div className='home__works__cards__card'>
-                <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work5-1.jpg'></img>
-                <div className='info'>
-                  <p className='heading'>Development</p>
-                  <p className='description'>Designing a Better Cinema Experience</p>
-                  <Link to='' className='info-btn'>Case Study</Link>
+                <div className="home__works__cards__card">
+                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work4-1.jpg"></img>
+                  <div className="info">
+                    <p className="heading">Development</p>
+                    <p className="description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
                 </div>
-              </div>
-              <div className='home__works__cards__card'>
-                <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work6-1.jpg'></img>
-                <div className='info'>
-                  <p className='heading'>Development</p>
-                  <p className='description'>Designing a Better Cinema Experience</p>
-                  <Link to='' className='info-btn'>Case Study</Link>
+                <div className="home__works__cards__card">
+                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work5-1.jpg"></img>
+                  <div className="info">
+                    <p className="heading">Development</p>
+                    <p className="description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
+                </div>
+                <div className="home__works__cards__card">
+                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work6-1.jpg"></img>
+                  <div className="info">
+                    <p className="heading">Development</p>
+                    <p className="description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-         </div>
 
-          <div className='home__feedback'>
-            <div className='home__feedback__content'>
+          <div className="home__feedback">
+            <div className="home__feedback__content">
               <p>Testinomials</p>
               <h2>Some lovely feedback from our clients</h2>
             </div>
             <Carusel />
           </div>
 
-          <div className='home__blogs'>
-            <div className='home__blogs__content'>
-              <h2>Latest news</h2>
-            </div>
-            {/* <div className='home__blogs__cards'>
+          <div className="home__blogs">
+            <div className="container">
+              <div className="home__blogs__content">
+                <h2>Latest news</h2>
+              </div>
+              {/* <div className='home__blogs__cards'>
               <div className='home__blogs__cards__card'>
                 <div className='home__blogs__cards__card__img'>
                   <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1-530x430.jpg'></img>
@@ -471,70 +538,102 @@ export default function Home() {
               </div>
  
             </div> */}
-<section className="articles">
-  <article>
-    <div className="article-wrapper">
-      <figure>
-        <img src="/src/images/blog-image1.jpg" alt="" />
-      </figure>
-      <div className="article-body">
-        <h2>How To Use Music To Boost Your Business</h2>
-        <p>
-        Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.
-        </p>
-        <Link to="" className="read-more">
-          Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </Link>
-      </div>
-    </div>
-  </article>
-  <article>
-
-    <div className="article-wrapper">
-      <figure>
-        <img src="/src/images/blog-image-2.jpg" alt="" />
-      </figure>
-      <div className="article-body">
-        <h2>The Rise Of Marketing and Why You Need It</h2>
-        <p>
-        Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.
-        </p>
-        <Link to="" className="read-more">
-          Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </Link>
-      </div>
-    </div>
-  </article>
-  <article>
-
-    <div className="article-wrapper">
-      <figure>
-        <img src="/src/images/blog-image-3.jpg" alt="" />
-      </figure>
-      <div className="article-body">
-        <h2>How To Boost Your Digital Marketing Agency</h2>
-        <p>
-        Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.
-        </p>
-        <Link to="" className="read-more">
-          Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </Link>
-      </div>
-    </div>
-  </article>
-</section>
+              <section className="articles">
+                <article>
+                  <div className="article-wrapper">
+                    <figure>
+                      <img src="/src/images/blog-image1.jpg" alt="" />
+                    </figure>
+                    <div className="article-body">
+                      <h2>How To Use Music To Boost Your Business</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
+                        sed do eiusmod tempor incididunt.
+                      </p>
+                      <Link to="" className="read-more">
+                        Read more{" "}
+                        <span class="sr-only">about this is some title</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <div className="article-wrapper">
+                    <figure>
+                      <img src="/src/images/blog-image-2.jpg" alt="" />
+                    </figure>
+                    <div className="article-body">
+                      <h2>The Rise Of Marketing and Why You Need It</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
+                        sed do eiusmod tempor incididunt.
+                      </p>
+                      <Link to="" className="read-more">
+                        Read more{" "}
+                        <span class="sr-only">about this is some title</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <div className="article-wrapper">
+                    <figure>
+                      <img src="/src/images/blog-image-3.jpg" alt="" />
+                    </figure>
+                    <div className="article-body">
+                      <h2>How To Boost Your Digital Marketing Agency</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
+                        sed do eiusmod tempor incididunt.
+                      </p>
+                      <Link to="" className="read-more">
+                        Read more{" "}
+                        <span class="sr-only">about this is some title</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              </section>
+            </div>
           </div>
         </section>
       )}
     </>
-  )
+  );
 }

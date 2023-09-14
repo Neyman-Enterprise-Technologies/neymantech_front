@@ -1,36 +1,34 @@
 
-#container {
-  max-width: 1320px;
+.container {
+  max-width: 1320px !important;
   width: 100%;
 // background-color: blue;
-
-
 }
 .slider1 {
   width: 100%;
-  height: 110vh;
-  position: relative;
+  height: 50vh;
+  // position: absolute;
 
   &__img {
     width: 100%;
-    height: 110vh;
-    object-fit: cover;
+    height: 100%;
+    // object-fit: cover;
 
   }
 
   &__content {
     position: absolute;
-    padding: 10px 60px 20px 170px;
-    left: 40;
-    width: 900px;
-    height: 500px;
+    // padding: 10px 60px 20px 170px;
+    // left: 40;
+    // width: 900px;
+    // height: 500px;
     // background-color: red;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
 
     h1 {
       padding: 17px;
-      font-size: 57px;
+      font-size: 3.5625rem;
     }
 
     p {
@@ -39,37 +37,39 @@
     }
 
     button {
-      background-color: #0000ff;
-      color: white;
-      padding: 15px 38px;
-      border: none;
-      border-radius: 5px;
-      font-size: 19px;
-      margin-left: 20px;
+      
+      position: relative;
+    display: inline-flex;
+    font-size: 0.9rem;
+    padding: 0.9375rem 1.875rem;
+    background-color: #0000ff;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 0.3rem;
     }
   }
 }
 
 .slider1__content {
   top: 10%;
-  left: 10%;
+  left: 0;
   padding: 0 !important;
 }
 
-@media screen and (max-width: 993px) {
-  .slider1 {
-    &__content {
+// @media screen and (max-width: 993px) {
+//   .slider1 {
+//     &__content {
 
-      top: 10%;
-      left: 0;
+//       top: 10%;
+//       left: 0;
 
-      h1 {
-        font-size: 40px;
-      }
+//       h1 {
+//         font-size: 40px;
+//       }
 
-      button {
-        font-size: 14px;
-      }
-    }
-  }
-}
+//       button {
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }

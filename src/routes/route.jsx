@@ -20,6 +20,10 @@ export const ROUTES = [
           element: < Home/>,
         },
         {
+          path: "/home",
+          element: < Home/>,
+        },
+        {
             path: "/about",
             element: < About/>,
           },  

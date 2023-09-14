@@ -3,49 +3,111 @@
   margin: 0;
   padding: 0;
 }
-.home__about {
-  background-color: #f9f9fc;
-  padding: 4px 0px 0px 0px;
-  width: 100%;
-  &__content {
-    padding: 120px 10px 120px 10px;
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    ul {
-      padding: 20px 0px 20px 0px;
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .iconss {
-        font-size: 23px;
-      }
-      li {
-        .home {
-          color: #737b73;
-        }
-        .about {
-          color: #0000ff;
-        }
-      }
-      a {
-        text-decoration: none;
-        font-size: 18px;
-      }
-    }
-    .lines {
-      width: 5%;
-      height: 3px;
-      margin: 0 auto;
-      background-color: #0000ff;
-    }
-    h2 {
-      padding: 15px 0px 10px 0px;
-      font-size: 40px;
-    }
+// .home__about {
+//   background-color: #f9f9fc;
+//   padding: 4px 0px 0px 0px;
+//   width: 100%;
+//   &__content {
+//     padding: 120px 10px 120px 10px;
+//     width: 40%;
+//     margin: auto;
+//     text-align: center;
+//     ul {
+//       padding: 20px 0px 20px 0px;
+//       list-style: none;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       .iconss {
+//         font-size: 23px;
+//       }
+//       li {
+//         .home {
+//           color: #737b73;
+//         }
+//         .about {
+//           color: #0000ff;
+//         }
+//       }
+//       a {
+//         text-decoration: none;
+//         font-size: 18px;
+//       }
+//     }
+//     .lines {
+//       width: 5%;
+//       height: 3px;
+//       margin: 0 auto;
+//       background-color: #0000ff;
+//     }
+//     h2 {
+//       padding: 15px 0px 10px 0px;
+//       font-size: 40px;
+//     }
+//   }
+// }
+
+
+//about header
+
+ .aboutHeader{
+    background-color: #fafafc;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
+.aboutTitle{
+ text-align: center;
 }
+.aboutTitle h2{
+  font-size: 2.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aboutTitle {
+  text-align: center;
+  // margin: 6rem 0;
+  // padding: 3rem 0;
+}
+.aboutTitle h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+.aboutLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+
+.aboutLinks a {
+  font-size: 1.3rem;
+  color: #0000ff;
+  font-weight: 500;
+}
+ .aboutLinks .aboutLink {
+  color: #737b9a;
+}
+
+.aboutLinks .angleIcon {
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  color: #737b9a;
+}
+.aboutTitle span {
+  border-bottom: 2px solid #f78da7;
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+}
+
+//about header
+
+
+
 .aboutpage {
   width: 100%;
   padding: 20px 0px 40px 0px;
