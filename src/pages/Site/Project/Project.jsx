@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Project.scss";
 import Loading from "../../../Components/Loading/Loading";
-import { Link } from "react-router-dom";
 import { BiChevronRight } from "react-icons/Bi";
+import { Link } from "react-router-dom";
 
 export default function Project() {
   const [loading, setLoading] = useState(false);
