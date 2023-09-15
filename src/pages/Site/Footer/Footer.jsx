@@ -3,7 +3,7 @@ import "./Footer.scss";
 import newlogo from "../../../images/logo.png";
 import { Link } from "react-router-dom";
 import { FaPhoneVolume } from "react-icons/fa";
-import { BiLogoGmail } from "react-icons/bi";
+// import { BiLogoGmail } from "react-icons/bi";
 import { SlSocialStumbleupon } from "react-icons/Sl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

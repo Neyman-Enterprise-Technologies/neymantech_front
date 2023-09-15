@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./Blogs.scss";
 import Loading from "../../../Components/Loading/Loading";
 // import { AiOutlineSearch } from "react-icons/ai";
-// import { BiChevronRight } from 'react-icons/Bi'
+import { BiChevronRight } from 'react-icons/Bi'
 import { Link } from 'react-router-dom';
 export default function Blogs() {
   const [loading, setLoading] = useState(false);
