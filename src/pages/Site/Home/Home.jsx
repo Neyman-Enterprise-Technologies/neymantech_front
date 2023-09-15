@@ -6,7 +6,7 @@ import MySlider from "../../../Components/MySlider/MySlider";
 import Loading from "../../../Components/Loading/Loading";
 import {
   animateScroll as scroll,
-  Element as ScrollElement,
+  Element as ScrollElement, 
 } from "react-scroll";
 import { BiSolidBadgeCheck } from "react-icons/Bi";
 import { TbMessages } from "react-icons/Tb";
