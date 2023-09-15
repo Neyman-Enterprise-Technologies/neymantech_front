@@ -7,8 +7,8 @@ import './Header.scss'
 //   FaLinkedin,
 // } from "react-icons/fa";
 // import { ImLocation2 } from "react-icons/Im";
-// import { BiPhoneCall } from "react-icons/Bi";
 import newlogo from '../../../images/logo.png'
+// import { BiPhoneCall } from "react-icons/Bi";
 import { Link, useNavigate } from 'react-router-dom'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll' 
 import * as Scroll from 'react-scroll' 

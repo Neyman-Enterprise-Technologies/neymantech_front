@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { AiFillCheckSquare, AiFillCheckCircle } from "react-icons/Ai";
 import Loading from "../../../Components/Loading/Loading";
 import { useEffect, useState } from "react";
-import Carusel1 from "../../../Components/Carusel1/Carusel1";
 import { FaAngleRight } from "react-icons/fa";
+import Carusel1 from "../../../Components/Carusel1/Carusel1";
 export default function About() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {

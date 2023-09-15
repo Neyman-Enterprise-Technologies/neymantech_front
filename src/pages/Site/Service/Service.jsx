@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Service.scss";
 import { Link } from "react-router-dom";
-import { BiChevronRight } from "react-icons/Bi";
 import { BsCheckLg } from "react-icons/Bs";
+import { BiChevronRight } from "react-icons/Bi";
 import firstSectionImg from "../../../images/about-img1-1-1.png";
 import secondSectionImg from "../../../images/why-choose-img1-1-1.png";
 import Loading from "../../../Components/Loading/Loading";

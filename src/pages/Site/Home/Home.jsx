@@ -8,8 +8,8 @@ import {
   animateScroll as scroll,
   Element as ScrollElement, 
 } from "react-scroll";
-import { BiSolidBadgeCheck } from "react-icons/Bi";
 import { TbMessages } from "react-icons/Tb";
+import { BiSolidBadgeCheck } from "react-icons/Bi";
 import { CgScrollV } from "react-icons/Cg";
 import { AiOutlineGlobal } from "react-icons/Ai";
 import { BsFillPatchCheckFill, BsDisplay } from "react-icons/Bs";

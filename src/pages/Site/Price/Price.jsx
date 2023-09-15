@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import "./Price.scss";
 import Loading from "../../../Components/Loading/Loading";
 import { Link } from "react-router-dom";
-// import { BsCheckCircle } from "react-icons/Bs";
 import { BiChevronRight } from "react-icons/Bi";
+// import { BsCheckCircle } from "react-icons/Bs";
 import { BsFillPatchCheckFill } from "react-icons/Bs";
 
 export default function Price() {
