@@ -1,55 +1,281 @@
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faqsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faqSection-2 .section-2-content {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.faqSection-2 .section-2-content .left {
+  width: 30%;
+  position: relative;
+}
+
+.faqSection-2 .section-2-content .left img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.faqSection-2 .section-2-content .right {
+  width: 70%;
+}
+
+.faqSection-2 .section-2-content .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.faqSection-2 .section-2-content .right form .inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+.faqSection-2 .section-2-content .right form .inputs input {
+  padding: 1.5rem;
+}
+
+.faqSection-2 .section-2-content .right form button {
+  border: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1rem;
+  padding: 0.9375rem 1.875rem;
+  background-color: #0000ff;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 0.3rem;
+}
+
+.faqSection-2 .section-2-content .right form button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  background: orange;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
+
+.faqSection-2 .section-2-content .right form button span {
+  position: relative;
+  z-index: 1;
+  font-weight: 900;
+}
+
+.faqSection-2 .section-2-content .right form button:hover::before {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.faqTitle {
+  text-align: center;
+}
+
+.faqTitle h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+
+.faqLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.faqLinks .homeLink {
+  color: #737b9a;
+}
+
+.faqLinks a {
+  font-size: 1.3rem;
+  color: #0000ff;
+  font-weight: 500;
+}
+
+.faqLinks .angleIcon {
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  color: #737b9a;
+}
+
+.faqTitle span {
+  border-bottom: 2px solid #f78da7;
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+}
+
+.faqHeader {
+  background-color: #fafafc;
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.faqTitleBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 10rem 0 5rem 0;
+}
+
+.faqTitleBottom .about-description {
+  color: #0000ff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.faqTitleBottom h2 {
+  font-size: 2.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.faqTitleBottom .faqDescription {
+  color: #737b9a;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  width: 60ch;
+}
+
 .faqs {
   width: 100%;
   max-width: 768px;
-  margin: 0 auto;
-  padding: 15px;
 }
 
 .faqs .faq {
   position: relative;
-  margin: 15px;
-  background-color: #FFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0.9375rem;
+  color: #737b9a;
+  font-weight: 500;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 .faqs .faq .faq-question {
   position: relative;
-  font-size: 15px;
+  cursor: pointer;
+  color: #1c1a1a;
+  font-size: 0.9375rem;
   font-weight: 900;
-  padding: 15px;
+  padding: 1.75rem;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  padding-left: 60px;
-  border-bottom: 1px solid rgb(231, 226, 226);
+  padding-left: 3.75rem;
+  border-bottom: 1px solid #e7e2e2;
 }
 
 .faqs .faq .faq-question::after {
-  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: '+';
   position: absolute;
+  font-size: 1.875rem;
+  color: white;
   top: 50%;
   left: 0px;
-  transform: translateY(-50%);
-  background-color: red;
-  width: 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #5252ad;
+  width: 3.125rem;
   height: 100%;
   background-image: url("./arrow-down-mint.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .faqs .faq .faq-answer {
+  padding-left: 0.9375rem;
+  font-size: 1rem;
   opacity: 0;
   max-height: 0;
   overflow-y: hidden;
-  transition: all 0.4s ease-out;
-}
-
-.faqs .faq.open .faq-question {
-  margin-bottom: 15px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .faqs .faq.open .faq-answer {
   max-height: 1000px;
   opacity: 1;
-}/*# sourceMappingURL=faq.css.map */
+  padding: 0.625rem 0.625rem 0.625rem 0.9375rem;
+  font-size: 1rem;
+}
+
+.faqs .faq.open .faq-question::after {
+  content: '-';
+  font-size: 1.875rem;
+  color: white;
+}
+/*# sourceMappingURL=faq.css.map */
