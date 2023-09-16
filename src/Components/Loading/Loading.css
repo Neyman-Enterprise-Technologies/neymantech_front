@@ -2,9 +2,15 @@
   width: 100%;
   height: 100vh;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #0000FF;
   top: 0;
   z-index: 999;
@@ -13,9 +19,16 @@
 .icon {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 50;
   background-color: #0000FF;
-}/*# sourceMappingURL=Loading.css.map */
+}
+/*# sourceMappingURL=Loading.css.map */

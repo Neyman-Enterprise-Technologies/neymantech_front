@@ -7,24 +7,31 @@
   width: 100%;
   height: 50vh;
 }
+
 .slider1__img {
   width: 100%;
   height: 100%;
 }
+
 .slider1__content {
   position: absolute;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .slider1__content h1 {
   padding: 17px;
   font-size: 3.5625rem;
 }
+
 .slider1__content p {
   color: gray;
   padding: 24px;
 }
+
 .slider1__content button {
   position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 0.9rem;
   padding: 0.9375rem 1.875rem;
@@ -38,4 +45,5 @@
   top: 10%;
   left: 0;
   padding: 0 !important;
-}/*# sourceMappingURL=MySlider.css.map */
+}
+/*# sourceMappingURL=MySlider.css.map */
