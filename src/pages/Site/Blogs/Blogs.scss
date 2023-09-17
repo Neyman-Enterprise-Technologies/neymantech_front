@@ -56,3 +56,73 @@
   padding-bottom: 1.2rem;
 }
 /* heading end */
+
+/* blogs */
+.blogs .left{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.blogs .left .card {
+  position: relative;
+  width: 60%;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 0 0 30px (rgb(188, 188, 202));
+}
+.blogs .left .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+.blogs .left .card:hover img {
+  transform: scale(1.2) rotate(5deg)
+}
+.blogs .left .card .bottom-content h2{
+  font-size: 1.8rem;
+}
+
+
+.blogs .left .card .bottom-content h2,
+.blogs .left .card .bottom-content p{
+  transition: transform 0.5s;
+  position: relative;
+  top: 1rem;
+  margin-bottom: 0.625rem;
+
+}
+.blogs .left .card:hover .bottom-content h2{
+  color: rgb(27, 27, 141);
+}
+.blogs .left .card:hover .bottom-content::after{
+ opacity: 1;
+  display: block;
+  transform: translateY(-10px);
+}
+
+
+.blogs .left .card:hover .bottom-content h2,
+.blogs .left .card:hover .bottom-content p{
+  transform: translateY(-2rem);
+}
+.blogs .left .card .bottom-content {
+  position: relative;
+padding: 2.5rem;
+  /* transition: transform 0.4s; */
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  color: #010211;
+ 
+}
+.blogs .left .card .bottom-content::after{
+  content: 'Reade more';
+  align-items: center;
+  position: absolute;
+cursor: pointer;
+opacity: 0;
+ transition: all .4s, opacity 0.5s;
+  color: #0000ff;
+  font-size: 1.5rem;
+}
