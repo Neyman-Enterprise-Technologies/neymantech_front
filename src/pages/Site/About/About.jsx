@@ -24,6 +24,7 @@ export default function About() {
         <Loading />
       ) : (
         <section>
+          
           <div className="aboutHeader">
             <div className="container">
               <div className="aboutTitle">
@@ -41,8 +42,8 @@ export default function About() {
             </div>
           </div>
 
-          {/* https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/about-img1-1-1.png */}
-
+         
+          {/* SECTION-1 START */}
           <div className="container">
             <div className="section-1">
               <div className="left">
@@ -92,89 +93,9 @@ export default function About() {
               </div>
             </div>
           </div>
+          {/* SECTION-1 END */}
 
-          {/* <div className="aboutpage__bottom">
-              <div className="aboutpage__bottom__left">
-                <h2>Our History</h2>
-                <div className="aboutline"></div>
-                <p>
-                  Real innovations and positive customer experience are the
-                  heart of successful communication.
-                </p>
-                <ul>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>Activate listening</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span> Brilliant minds</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>Better, best, wow!</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>Branding it better!</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="aboutpage__bottom__middle">
-                {" "}
-                <h2>Our Mission</h2>
-                <div className="aboutline"></div>
-                <p>
-                  Real innovations and positive customer experience are the
-                  heart of successful communication.
-                </p>
-                <ul>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span> Creating results</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span> Expect more </span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>Good thinking</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>In real we trust</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="aboutpage__bottom__right">
-                {" "}
-                <h2>Who we are</h2>
-                <div className="aboutline"></div>
-                <p>
-                  Real innovations and positive customer experience are the
-                  heart of successful communication.
-                </p>
-                <ul>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>Stay real always</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>We have you covered</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>We turn heads</span>
-                  </li>
-                  <li>
-                    <AiFillCheckCircle className="ikonabout" />
-                    <span>Your brand, promoted</span>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
+          {/* SECTION-2 START  */}
 
           <div className="container">
             <section className="section-2">
@@ -263,42 +184,7 @@ export default function About() {
               </div>
             </section>
           </div>
-
-          {/* <div className="about__team">
-            <div className="about__team__content">
-              <span>Our Team</span>
-              <h2>Meet our awesome team member</h2>
-            </div>
-            <div className="about__team__cards">
-              <div className="about__team__cards__card">
-                <div className="about__team__cards__card__img">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg"></img>
-                </div>
-                <div className="about__team__cards__card__content">
-                  <h3> Jhons Smith</h3>
-                  <span>Web Developers</span>
-                </div>
-              </div>
-              <div className="about__team__cards__card">
-                <div className="about__team__cards__card__img">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg"></img>
-                </div>
-                <div className="about__team__cards__card__content">
-                  <h3> Jhons Smith</h3>
-                  <span>Web Developers</span>
-                </div>
-              </div>
-              <div className="about__team__cards__card">
-                <div className="about__team__cards__card__img">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team3-1-1.jpg"></img>
-                </div>
-                <div className="about__team__cards__card__content">
-                  <h3> Jhons Smith</h3>
-                  <span>Web Developers</span>
-                </div>
-              </div>
-            </div>
-          </div> */}
+          {/* SECTION-2 END  */}
         </section>
       )}
     </>
