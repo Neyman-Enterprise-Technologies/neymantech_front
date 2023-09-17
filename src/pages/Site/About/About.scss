@@ -219,9 +219,82 @@
   font-weight: 500;
 }
 
-/** ABOUT SECTION-2 END*/
+/* ABOUT SECTION-2 END */
 
+/* ABOUT SECTION-3 START */
 
+.section-3{
+  display: flex;
+  width:100%;
+}
+
+/* left start */
+.section-3 .left{
+  padding-top: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+.section-3 .left .title{
+  font-size: 1.5rem;
+  color: blue;
+  font-weight: 500;
+  width: 100%;
+
+}
+.section-3 .left .header{
+  font-size: 2rem;
+    width: 100%;
+    padding-right: 10rem;
+}
+.section-3 .left .description{
+  padding-right: 10rem;
+  color: #737b9a;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+.section-3 .left .selected-title-container{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+.section-3 .left .selected-title-container .tick-icon{
+  font-size: 2rem;
+  color: #0000ff;
+}
+.section-3 .left .selected-title-container 
+ .selected-title{
+  position: relative;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.section-3 .left .selected-description{
+  padding-right: 10rem;
+  color: #737b9a;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* left end */
+/* right start */
+.section-3 .right{
+  width: 50%;
+}
+.section-3 .right img{
+  width: 100%;
+  object-fit: cover;
+}
+
+/* right end */
+
+/* ABOUT SECTION-3 END */
 
 .aboutCardsContainer {
   display: flex;
