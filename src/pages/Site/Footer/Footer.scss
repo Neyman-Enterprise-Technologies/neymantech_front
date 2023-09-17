@@ -110,14 +110,14 @@
     position: relative;
     display: flex;
     justify-content: center;
-    // height: 1.875rem;
+     /* height: 1.875rem; */
     width: 100%;
-
+padding-right: 6rem;
     gap: 3px;
   }
   
   &__socialIcon {
-    font-size: 16px;
+    font-size: 2rem;
   }
   &__linkdiv {
     position: relative;
@@ -271,10 +271,11 @@
       width: 40%;
      
     }
-    // &__socialMediaContainer{
-    //   // width: 100%;
-    //   align-self: flex-start;
-    // }
+     &__socialMediaContainer{
+     width: 100%;
+     
+      padding-right: 3rem;
+   }
    
   }
 
@@ -329,6 +330,7 @@ width: 100%;
   }
   &__quickLinksContainer{
     width: 100%;
+ 
     a{
       font-size: 2rem;
     }
@@ -363,10 +365,10 @@ width: 100%;
     font-size: 1.8rem;
     line-height: 3rem;
   }
-  // &__socialMediaContainer{
-  
-  //   // align-content: flex-start;
-  // }
+  &__socialMediaContainer{
+    padding-right: 60rem;
+ align-content: flex-start;
+   }
   &__socialMediaLinks{
     display: inline-block;
     width: 50px;

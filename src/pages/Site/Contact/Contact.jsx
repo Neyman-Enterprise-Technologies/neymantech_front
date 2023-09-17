@@ -3,7 +3,7 @@ import './Contact.scss'
 import { useState,useEffect } from 'react';
 import { MdOutlineMailOutline } from 'react-icons/Md';
 import {SlLocationPin } from 'react-icons/Sl';
-// import {BiChevronRight} from 'react-icons/bi'
+import {BiChevronRight} from 'react-icons/Bi'
 import {BsPhone} from 'react-icons/Bs'
 import { Link } from 'react-router-dom';
 import Loading from "../../../Components/Loading/Loading";
