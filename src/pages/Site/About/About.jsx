@@ -188,7 +188,10 @@ export default function About() {
                   </p>
                   <div className="cardListsContainer">
                     <div className="cardList">
-                     <div className="icon-container"> <AiFillCheckCircle className="list-icon" /></div>
+                      <div className="icon-container">
+                        {" "}
+                        <AiFillCheckCircle className="list-icon" />
+                      </div>
                       <p>Activate listening</p>
                     </div>
                     <div className="cardList">
@@ -206,7 +209,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="card">
-                  <h2>Our History</h2>
+                  <h2>Our Mission</h2>
                   <div className="devider"></div>
                   <p className="description">
                     Real innovations and positive customer experience are the
@@ -215,24 +218,24 @@ export default function About() {
                   <div className="cardListsContainer">
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Activate listening</p>
+                      <p>Creating results</p>
                     </div>
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Brilliant minds</p>
+                      <p>Expect more</p>
                     </div>
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Better, best, wow!</p>
+                      <p>Good thinking</p>
                     </div>
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Branding it better!</p>
+                      <p>In real we trust</p>
                     </div>
                   </div>
                 </div>
                 <div className="card">
-                  <h2>Our History</h2>
+                  <h2>Who we are</h2>
                   <div className="devider"></div>
                   <p className="description">
                     Real innovations and positive customer experience are the
@@ -241,19 +244,19 @@ export default function About() {
                   <div className="cardListsContainer">
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Activate listening</p>
+                      <p>Stay real always</p>
                     </div>
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Brilliant minds</p>
+                      <p>We have you covered</p>
                     </div>
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Better, best, wow!</p>
+                      <p>We turn heads</p>
                     </div>
                     <div className="cardList">
                       <AiFillCheckCircle className="list-icon" />
-                      <p>Branding it better!</p>
+                      <p>Your brand, promoted</p>
                     </div>
                   </div>
                 </div>
