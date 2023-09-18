@@ -8,6 +8,7 @@ import Project from "../pages/Site/Project/Project";
 import Service from "../pages/Site/Service/Service";
 import SiteRoot from "../pages/Site/SiteRoot/SiteRoot";
 import Faq from "../pages/FAQ/Faq";
+// import Pagination from "../Components/pagination/pagination";
 
 
 export const ROUTES = [
@@ -51,6 +52,10 @@ export const ROUTES = [
             path: "/faq",
             element: < Faq/>,
           },
+          {
+            path:"/paginate",
+            // element:<Pagination/>
+          }
       ],
     },
 ]
