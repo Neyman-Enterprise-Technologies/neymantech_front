@@ -103,32 +103,38 @@
 .blogs .left .card:hover .bottom-content::after {
   opacity: 1;
   display: block;
-  transform: translateY(-10px);
+  transform: translateY(-2rem);
 }
 
 .blogs .left .card:hover .bottom-content h2,
 .blogs .left .card:hover .bottom-content p {
-  transform: translateY(-2rem);
+  transform: translateY(-4rem);
+transition: all 0.8s;
 }
 .blogs .left .card .bottom-content {
   position: relative;
-  padding: 2.5rem;
-  /* transition: transform 0.4s; */
+  padding: 5rem 2.5rem;
+  transition: transform 0.7s;
   position: relative;
   z-index: 1;
   background-color: #fff;
   color: #010211;
 }
 .blogs .left .card .bottom-content::after {
+  position: relative;
   content: "Reade more";
   align-items: center;
+
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  transition: all 0.4s, opacity 0.5s;
+  transition: all 1s, opacity 0.7s;
   color: #0000ff;
+  font-weight: 500;
   font-size: 1.5rem;
 }
+
+
 
 /* right start */
 .blogs .right {
@@ -194,7 +200,7 @@
   cursor: pointer;
 }
 .blogs .right .recent-posts-container .post-details .details-img {
-  background-color: blue;
+
   width: 14.5rem;
   height: 7.25rem;
 }
@@ -257,7 +263,7 @@
   gap: 0.5rem;
   width: 100%;
   background-color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 5rem 1.5rem 1.5rem;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -270,7 +276,7 @@
 
 .blogs .right .tags-container .link-container{
  
-width: 100%;
+
   display: flex;
 
 gap: 0.5rem;
@@ -278,6 +284,7 @@ gap: 0.5rem;
 
 }
 .blogs .right .tags-container .link-container a{
+display: block;
   padding: 1rem 1rem;
   border: 1px solid #eeeeee;
   width: fit-content;
