@@ -360,6 +360,7 @@
 }
 
 .blogs .right .tags-container .link-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +368,7 @@
 }
 
 .blogs .right .tags-container .link-container a {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   border: 1px solid #eeeeee;
   width: -webkit-fit-content;
   width: -moz-fit-content;
