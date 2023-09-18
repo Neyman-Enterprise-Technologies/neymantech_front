@@ -258,12 +258,13 @@
 }
 
 .blogs .right .tags-container {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
   background-color: white;
-  padding: 1.5rem 5rem 1.5rem 1.5rem;
+  padding: 1.5rem rem 1.5rem 1.5rem;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -273,13 +274,18 @@
   border-bottom: 1px solid #eeeeee;
   padding: 1rem 0;
 }
+.blogs .right .tags-container .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
-.blogs .right .tags-container .link-container {
+.blogs .right .tags-container .tags .link-container {
   display: flex;
 
   gap: 0.5rem;
 }
-.blogs .right .tags-container .link-container a {
+.blogs .right .tags-container .tags .link-container a {
   display: block;
   padding: 1rem 1rem;
   border: 1px solid #eeeeee;
@@ -287,9 +293,80 @@
   font-weight: 600;
   transition: 0.5s;
 }
-.blogs .right .tags-container .link-container a:hover {
+.blogs .right .tags-container .tags .link-container a:hover {
   background-color: #0000ff;
   color: white;
 }
 
 /* right end */
+
+/* responsive design   for  992px */
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .blogs {
+    flex-direction: column;
+  }
+  .blogs .left {
+    width: 100%;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogs .right .recent-posts-container .post-details .description {
+    width: 100%;
+    /* padding: 2rem 0; */
+    align-self: flex-start;
+    padding-top: 0.8rem;
+  }
+  .blogs .right .tags-container .tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .blogs .right .search {
+    padding: 2rem;
+    width: 100%;
+  }
+  .blogs .right .search .input-button-container input::placeholder {
+    font-size: 2rem;
+  }
+  .blogs .right .recent-posts-container .post-details .description .date {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .blogs .right .recent-posts-container .post-details .description .title {
+    font-size: 1.8rem;
+  }
+
+  .blogs .right .recent-posts-container .post-details {
+    padding: 3rem 0;
+  }
+  .blogs .right .recent-posts-container .post-details .details-img {
+    width: 15rem;
+    height: 10rem;
+  }
+  .blogs .right .category-container p {
+    font-size: 2rem;
+  }
+  .blogs .right .category-container p::before {
+    width: 1rem;
+    height: 1rem;
+  }
+  .blogs .right .tags-container {
+flex-wrap: wrap;
+    gap: 2rem;
+
+
+    padding: 2rem 5rem 2rem 2rem;
+   
+}
+  .blogs .right .tags-container .tags .link-container a {
+    font-size: 1.5rem;
+   
+    padding: 1.5rem 2rem;
+   
+}
+}
