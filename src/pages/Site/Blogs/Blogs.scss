@@ -97,36 +97,45 @@
   top: 1rem;
   margin-bottom: 0.625rem;
 }
+.blogs .left .card .bottom-content p {
+  color: #737b9a;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
 .blogs .left .card:hover .bottom-content h2 {
   color: rgb(27, 27, 141);
 }
 .blogs .left .card:hover .bottom-content::after {
   opacity: 1;
   display: block;
-  transform: translateY(-10px);
+  transform: translateY(-1.5rem);
 }
 
 .blogs .left .card:hover .bottom-content h2,
 .blogs .left .card:hover .bottom-content p {
-  transform: translateY(-2rem);
+  transform: translateY(-4rem);
+  transition: all 0.8s;
 }
 .blogs .left .card .bottom-content {
   position: relative;
-  padding: 2.5rem;
-  /* transition: transform 0.4s; */
+  padding: 5rem 2.5rem;
+  transition: transform 0.7s;
   position: relative;
   z-index: 1;
   background-color: #fff;
   color: #010211;
 }
 .blogs .left .card .bottom-content::after {
+  position: relative;
   content: "Reade more";
   align-items: center;
+
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  transition: all 0.4s, opacity 0.5s;
+  transition: all 1s, opacity 0.7s;
   color: #0000ff;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
@@ -194,7 +203,6 @@
   cursor: pointer;
 }
 .blogs .right .recent-posts-container .post-details .details-img {
-  background-color: blue;
   width: 14.5rem;
   height: 7.25rem;
 }
@@ -249,44 +257,116 @@
   padding: 1rem 0;
 }
 
-
-.blogs .right .tags-container{
-
+.blogs .right .tags-container {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
   background-color: white;
-  padding: 1.5rem;
+  padding: 1.5rem rem 1.5rem 1.5rem;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-.blogs .right .tags-container .title{
+.blogs .right .tags-container .title {
   width: 100%;
   font-size: 2rem;
   border-bottom: 1px solid #eeeeee;
   padding: 1rem 0;
 }
+.blogs .right .tags-container .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
-.blogs .right .tags-container .link-container{
- 
-width: 100%;
+.blogs .right .tags-container .tags .link-container {
   display: flex;
 
-gap: 0.5rem;
-  
-
+  gap: 0.5rem;
 }
-.blogs .right .tags-container .link-container a{
+.blogs .right .tags-container .tags .link-container a {
+  display: block;
   padding: 1rem 1rem;
   border: 1px solid #eeeeee;
   width: fit-content;
   font-weight: 600;
   transition: 0.5s;
 }
-.blogs .right .tags-container .link-container a:hover{
+.blogs .right .tags-container .tags .link-container a:hover {
   background-color: #0000ff;
   color: white;
 }
 
 /* right end */
+
+/* responsive design   for  992px */
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .blogs {
+    flex-direction: column;
+  }
+  .blogs .left {
+    width: 100%;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogs .right .recent-posts-container .post-details .description {
+    width: 100%;
+    /* padding: 2rem 0; */
+    align-self: flex-start;
+    padding-top: 0.8rem;
+  }
+  .blogs .right .tags-container .tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .blogs .right .search {
+    padding: 2rem;
+    width: 100%;
+  }
+  .blogs .right .search .input-button-container input::placeholder {
+    font-size: 2rem;
+  }
+  .blogs .right .recent-posts-container .post-details .description .date {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .blogs .right .recent-posts-container .post-details .description .title {
+    font-size: 1.8rem;
+  }
+
+  .blogs .right .recent-posts-container .post-details {
+    padding: 3rem 0;
+  }
+  .blogs .right .recent-posts-container .post-details .details-img {
+    width: 15rem;
+    height: 10rem;
+  }
+  .blogs .right .category-container p {
+    font-size: 2rem;
+  }
+  .blogs .right .category-container p::before {
+    width: 1rem;
+    height: 1rem;
+  }
+  .blogs .right .tags-container {
+flex-wrap: wrap;
+    gap: 2rem;
+
+
+    padding: 2rem 5rem 2rem 2rem;
+   
+}
+  .blogs .right .tags-container .tags .link-container a {
+    font-size: 1.5rem;
+   
+    padding: 1.5rem 2rem;
+   
+}
+}

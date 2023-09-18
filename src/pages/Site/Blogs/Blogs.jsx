@@ -176,7 +176,8 @@ export default function Blogs() {
                 </div>
                 <div className="tags-container">
                   <h2 className="title">Tags</h2>
-                  <div className="link-container">
+              <div className="tags">
+              <div className="link-container">
                   <Link to="#">Agency</Link>
                   <Link to="#">Boost</Link>
                   <Link to="#">Buisness</Link>
@@ -194,6 +195,7 @@ export default function Blogs() {
                   <Link to="#">Tips</Link>
 
                   </div>
+              </div>
                 </div>
               </div>
             </section>
