@@ -1,10 +1,12 @@
-
 import React, { useEffect, useState } from "react";
 import "./Blogs.scss";
-import { BiChevronRight } from 'react-icons/Bi'
+
 import Loading from "../../../Components/Loading/Loading";
-// import { AiOutlineSearch } from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import { AiOutlineSearch } from "react-icons/Ai";
+import { Link } from "react-router-dom";
+import { FaAngleRight } from "react-icons/fa";
+// import Pagination from "../../../Components/pagination/pagination";
+
 export default function Blogs() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -20,95 +22,185 @@ export default function Blogs() {
         <Loading />
       ) : (
         <div>
-          <div className='blog_heading'>
-            <h2>Blogs</h2>
-            <div className='lines'></div>
-            <ul><li><Link className='home' to='/'>Home</Link></li><BiChevronRight className='iconss' /><li><Link className='contact' to='/blogs'>Blogs</Link></li></ul>
+          {/* heading start */}
+          <div className="blogHeader">
+            <div className="container">
+              <div className="blogTitle">
+                <h2>
+                  B<span>lo</span>g
+                </h2>
+              </div>
+            </div>
+            <div className="blogLinks">
+              <Link to="/home" className="blogLink">
+                Home
+              </Link>
+              <FaAngleRight className="angleIcon" />
+              <Link to="blog">Blog</Link>
+            </div>
           </div>
-          <div className="blogs">
+          {/* heading end */}
 
-            <div className="blogs__cards__column">
-              <div className="blogs__card__width">
-                <div className="blogs__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1.jpg" />
-                  <div className="hidden-overflow">
-                    <h3>How to use music to boost your business</h3>
+          <div className="container">
+            <section className="blogs">
+              <div className="left">
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="blogs__card__width">
-                <div className="blogs__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1.jpg" />
-                  <div className="hidden-overflow">
-                    <h3>How to use music to boost your business</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <div className="right">
+                <div className="search">
+                  <div className="input-button-container">
+                    <input type="text" placeholder="search..." />
+                    <div className="search-icon-container">
+                      <AiOutlineSearch className="search-icon" />
+                    </div>
+                  </div>
+                </div>
+                <div className="recent-posts-container">
+                  <h2>Recent Posts</h2>
+
+                  <div className="post-details">
+                    <div className="details-img">
+                      <img
+                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="description">
+                      <p className="date">April 25,2020</p>
+                      <p className="title">
+                        Making Peace With The Feast Or Famine Of Freelancing
+                      </p>
+                    </div>
+                  </div>
+                  <div className="post-details">
+                    <div className="details-img">
+                      <img
+                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="description">
+                      <p className="date">April 25,2020</p>
+                      <p className="title">
+                        Making Peace With The Feast Or Famine Of Freelancing
+                      </p>
+                    </div>
+                  </div>
+                  <div className="post-details">
+                    <div className="details-img">
+                      <img
+                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="description">
+                      <p className="date">April 25,2020</p>
+                      <p className="title">
+                        Making Peace With The Feast Or Famine Of Freelancing
+                      </p>
+                    </div>
+                  </div>
+                  <div className="post-details">
+                    <div className="details-img">
+                      <img
+                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="description">
+                      <p className="date">April 25,2020</p>
+                      <p className="title">
+                        Making Peace With The Feast Or Famine Of Freelancing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="category-container">
+                  <h2 className="title">Categories</h2>
+                  <div className="category-list-container">
+                    <p>Business</p>
+                    <p>Digital</p>
+                    <p>Family</p>
+                    <p>Machine Learning</p>
+                    <p>Marketing</p>
+                    <p>Music</p>
+                    <p>Security</p>
+                  </div>
+                </div>
+                <div className="tags-container">
+                  <h2 className="title">Tags</h2>
+                  <div className="link-container">
+                  <Link to="#">Agency</Link>
+                  <Link to="#">Boost</Link>
+                  <Link to="#">Buisness</Link>
+
+                  </div>
+                  <div className="link-container">
+                  <Link to="#">Famly</Link>
+                  <Link to="#">Marketing</Link>
+                  <Link to="#">Music</Link>
+
+                  </div>
+                  <div className="link-container">
+                  <Link to="#">Need</Link>
+                  <Link to="#">Package</Link>
+                  <Link to="#">Tips</Link>
+
                   </div>
                 </div>
               </div>
-              <div className="blogs__card__width">
-                <div className="blogs__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1.jpg" />
-                  <div className="hidden-overflow">
-                    <h3>How to use music to boost your business</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="blogs__card__width">
-                <div className="blogs__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1.jpg" />
-                  <div className="hidden-overflow">
-                    <h3>How to use music to boost your business</h3>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="blogs__mini__cards__column">
-              <div className="blogs__search">
-                <input placeholder="Search" />
-                {/* <AiOutlineSearch className="blogs__search__icon" /> */}
-              </div>
-              <div className="blogs__mini__cards">
-                <h4>Recent posts</h4>
-                <hr />
-                <div className="blogs__mini__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1.jpg" />
-                  <div className="blogs__mini__card__content">
-                    <p>April 25, 2020</p>
-                    <h4>Making Peace With The Feast Or Famine</h4>
-                  </div>
-                </div>
-                <hr />
-                <div className="blogs__mini__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1.jpg" />
-                  <div className="blogs__mini__card__content">
-                    <p>April 25, 2020</p>
-                    <h4>Making Peace With The Feast Or </h4>
-                  </div>
-                </div>
-                <hr />
-                <div className="blogs__mini__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1.jpg" />
-                  <div className="blogs__mini__card__content">
-                    <p>April 25, 2020</p>
-                    <h4>Making Peace With The Feast Or </h4>
-                  </div>
-                </div>
-                <hr />
-              </div>
-            </div>
+            </section>
           </div>
+          {/* <Pagination/> */}
         </div>
-
       )}
     </>
   );
 }
-
-
