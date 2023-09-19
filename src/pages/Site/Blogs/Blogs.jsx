@@ -44,6 +44,7 @@ export default function Blogs() {
           <div className="container">
             <section className="blogs">
               <div className="left">
+                <div className="cards-container">
                 <div className="card">
                   <img
                     src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1-730x400.jpg"
@@ -91,6 +92,107 @@ export default function Blogs() {
                       do eiusmod tempor incididunt.
                     </p>
                   </div>
+                </div>
+                </div>
+                <div className="cards-container">
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                </div>
+                <div className="cards-container">
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <img
+                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1-730x400.jpg"
+                    alt=""
+                  />
+
+                  <div className="bottom-content">
+                    <h2>
+                      Making Peace With The Feast Or Famine Of Freelancing
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
+                      do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
                 </div>
               </div>
               <div className="right">
