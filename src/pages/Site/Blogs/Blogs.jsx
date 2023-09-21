@@ -5,7 +5,7 @@ import Loading from "../../../Components/Loading/Loading";
 import { AiOutlineSearch } from "react-icons/Ai";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
-import { Pagination } from "@mui/material";
+
 
 // import Pagination from "../../../Components/pagination/pagination";
 
@@ -345,6 +345,7 @@ export default function Blogs() {
               </div>
             </section>
           </div>
+   
         </div>
       )}
     </>

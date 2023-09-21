@@ -11,6 +11,7 @@
   margin: 0 auto;
 }
 
+/* header links start */
 .aboutHeader {
   background-color: #fafafc;
   padding: 10rem 0;
@@ -75,6 +76,7 @@
   padding-bottom: 1.2rem;
 }
 
+/* header links end */
 /* section 1 start*/
 .section-1 {
   display: -webkit-box;
