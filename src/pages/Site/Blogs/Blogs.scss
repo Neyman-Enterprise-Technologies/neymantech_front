@@ -88,7 +88,8 @@ align-self: flex-start;
   /* align-self: flex-start; */
   border: 1px solid #ddd;
   overflow: hidden;
-  box-shadow: 0 0 30px (rgb(188, 188, 202));
+  transition: 0.4s all;
+ 
 }
 .blogs .left .card img {
   width: 100%;
@@ -112,6 +113,9 @@ margin-bottom: 0.625rem;
   color: #737b9a;
   font-size: 0.8rem;
   font-weight: 500;
+}
+.blogs .left .card:hover{
+  box-shadow: 0 0 20px (rgb(136, 136, 153));
 }
 .blogs .left .card:hover .bottom-content h2 {
   color: rgb(27, 27, 141);

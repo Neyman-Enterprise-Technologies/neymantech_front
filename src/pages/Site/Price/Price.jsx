@@ -87,7 +87,7 @@ export default function Price() {
                 </div>
                </div>
                <div className="cardsContainer__devider"></div>
-               <button>get Started</button>
+               <a className="cardsContainer__link">Get Started</a>
               </div>
               <div className="cardsContainer__card">
                 <h2 className="cardsContainer__cardHeader secondHeader">Starter</h2>
