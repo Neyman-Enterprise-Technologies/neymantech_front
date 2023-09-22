@@ -5,9 +5,35 @@ import Loading from "../../../Components/Loading/Loading";
 import { AiOutlineSearch } from "react-icons/Ai";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
+import BlogList from "../../../Components/BlogList";
+
 // import Pagination from "../../../Components/pagination/pagination";
 
 export default function Blogs() {
+  //r
+  const [blogs, setBlogs] = useState(null);
+  const [error, setError] = useState(null);
+  useEffect(() => {
+    fetch("http://localhost:8000/BlogsCards")
+      .then((res) => {
+        if (!res.ok) {
+          throw Error("Melumat tapilmadi");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+        console.log(data);
+
+        setError(null);
+      })
+      .catch((err) => {
+        setError(err.message);
+      });
+  }, []);
+
+  //r
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -44,54 +70,12 @@ export default function Blogs() {
           <div className="container">
             <section className="blogs">
               <div className="left">
-                <div className="card">
-                  <img
-                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1-730x400.jpg"
-                    alt=""
-                  />
+                {/* BlogList Component start */}
 
-                  <div className="bottom-content">
-                    <h2>
-                      Making Peace With The Feast Or Famine Of Freelancing
-                    </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                      do eiusmod tempor incididunt.
-                    </p>
-                  </div>
-                </div>
-                <div className="card">
-                  <img
-                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1-730x400.jpg"
-                    alt=""
-                  />
+                {error && <div>{error}</div>}
+                {blogs && <BlogList blogs={blogs} />}
 
-                  <div className="bottom-content">
-                    <h2>
-                      Making Peace With The Feast Or Famine Of Freelancing
-                    </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                      do eiusmod tempor incididunt.
-                    </p>
-                  </div>
-                </div>
-                <div className="card">
-                  <img
-                    src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1-730x400.jpg"
-                    alt=""
-                  />
-
-                  <div className="bottom-content">
-                    <h2>
-                      Making Peace With The Feast Or Famine Of Freelancing
-                    </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                      do eiusmod tempor incididunt.
-                    </p>
-                  </div>
-                </div>
+                {/* BlogList Component end */}
               </div>
               <div className="right">
                 <div className="search">
@@ -176,31 +160,27 @@ export default function Blogs() {
                 </div>
                 <div className="tags-container">
                   <h2 className="title">Tags</h2>
-              <div className="tags">
-              <div className="link-container">
-                  <Link to="#">Agency</Link>
-                  <Link to="#">Boost</Link>
-                  <Link to="#">Buisness</Link>
-
+                  <div className="tags">
+                    <div className="link-container">
+                      <Link to="#">Agency</Link>
+                      <Link to="#">Boost</Link>
+                      <Link to="#">Buisness</Link>
+                    </div>
+                    <div className="link-container">
+                      <Link to="#">Famly</Link>
+                      <Link to="#">Marketing</Link>
+                      <Link to="#">Music</Link>
+                    </div>
+                    <div className="link-container">
+                      <Link to="#">Need</Link>
+                      <Link to="#">Package</Link>
+                      <Link to="#">Tips</Link>
+                    </div>
                   </div>
-                  <div className="link-container">
-                  <Link to="#">Famly</Link>
-                  <Link to="#">Marketing</Link>
-                  <Link to="#">Music</Link>
-
-                  </div>
-                  <div className="link-container">
-                  <Link to="#">Need</Link>
-                  <Link to="#">Package</Link>
-                  <Link to="#">Tips</Link>
-
-                  </div>
-              </div>
                 </div>
               </div>
             </section>
           </div>
-          {/* <Pagination/> */}
         </div>
       )}
     </>

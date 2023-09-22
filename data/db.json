@@ -1,0 +1,67 @@
+{
+  "BlogsCards":[
+    {
+      "id": 1,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
+      "title": " Making Peace With The Feast Or Famine Of Freelancing-1",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-1."
+    },
+    {
+      "id": 2,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-2",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-2."
+    },
+    {
+      "id": 3,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-3",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt-3."
+    },
+    {
+      "id": 4,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-4",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-4"
+    },
+    {
+      "id": 5,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-5",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-5."
+    },
+    {
+      "id": 6,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-6",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.-6"
+    },
+    {
+      "id": 7,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-7",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-7."
+    },
+    {
+      "id": 8,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-8",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-8"
+    },
+    {
+      "id": 9,
+      "imgSrc":
+        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
+      "title": "Making Peace With The Feast Or Famine Of Freelancing-9",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-9."
+    }
+  ]
+}

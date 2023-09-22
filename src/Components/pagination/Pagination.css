@@ -1,0 +1,27 @@
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.page-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.page-item.active {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+/*# sourceMappingURL=Pagination.css.map */
