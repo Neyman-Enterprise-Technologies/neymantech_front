@@ -6,33 +6,13 @@ import { AiOutlineSearch } from "react-icons/Ai";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 import BlogList from "../../../Components/BlogList";
+import UseFetch from "../../../UseFetch";
 
 // import Pagination from "../../../Components/pagination/pagination";
 
 export default function Blogs() {
-  //r
-  const [blogs, setBlogs] = useState(null);
-  const [error, setError] = useState(null);
-  useEffect(() => {
-    fetch("http://localhost:8000/BlogsCards")
-      .then((res) => {
-        if (!res.ok) {
-          throw Error("Melumat tapilmadi");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setBlogs(data);
-        console.log(data);
-
-        setError(null);
-      })
-      .catch((err) => {
-        setError(err.message);
-      });
-  }, []);
-
-  //r
+  const {data:blogs, error} = UseFetch('http://localhost:8000/BlogsCards')
+ 
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
