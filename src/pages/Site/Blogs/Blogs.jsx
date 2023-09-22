@@ -12,17 +12,29 @@ import BlogList from "../../../Components/BlogList";
 export default function Blogs() {
   //r
   const [blogs, setBlogs] = useState(null);
+  const [error, setError] = useState(null);
   useEffect(() => {
-     fetch('http://localhost:8000/BlogsCards')
-    .then((res) => res.json())
-    .then((data) => {
-      setBlogs(data)
-    })
-  },[])
+    fetch("http://localhost:8000/BlogsCards")
+      .then((res) => {
+        if (!res.ok) {
+          throw Error("Melumat tapilmadi");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+        console.log(data);
+
+        setError(null);
+      })
+      .catch((err) => {
+        setError(err.message);
+      });
+  }, []);
+
   //r
 
-  
-const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
     window.scrollTo({ top: 0 });
@@ -58,10 +70,12 @@ const [loading, setLoading] = useState(false);
           <div className="container">
             <section className="blogs">
               <div className="left">
+                {/* BlogList Component start */}
 
-                {/* BlogList Component */}
-             {blogs && <BlogList blogs={blogs}/>}
-               
+                {error && <div>{error}</div>}
+                {blogs && <BlogList blogs={blogs} />}
+
+                {/* BlogList Component end */}
               </div>
               <div className="right">
                 <div className="search">
