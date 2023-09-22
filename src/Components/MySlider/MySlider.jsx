@@ -8,8 +8,8 @@ import { Pagination } from 'swiper/modules'
 function MySlider() {
   const sliderRef = useRef(null)
   return (
+      
     <div className='slider-container'>
-      <div className="container">
     <Swiper
         pagination={{
           dynamicBullets: true,
@@ -19,7 +19,9 @@ function MySlider() {
         autoplay={{ delay: 3000 }}
         onSwiper={(swiper) => (sliderRef.current = swiper)}
       >
-        <SwiperSlide>
+
+ 
+       <SwiperSlide>
           <div className='slider1'>
             <img
               className='slider1__img'
@@ -27,7 +29,7 @@ function MySlider() {
               alt='Slide 1'
             />
 
-          
+
               <div className='slider1__content'>
                 <h1>
                   Secure IT solutions<br></br> for a more secure environment!{' '}
@@ -45,10 +47,16 @@ function MySlider() {
                   <button>Get Started</button>
                 </Link>
               
+     
             </div>
           </div>
+          
         </SwiperSlide>
+     
+        
+    
         <SwiperSlide>
+          
           <div className='slider1'>
             <img
               className='slider1__img'
@@ -76,6 +84,8 @@ function MySlider() {
           </div>
           </div>
         </SwiperSlide>
+      
+    
         <SwiperSlide>
           <div className='slider1'>
             <img
@@ -104,9 +114,10 @@ function MySlider() {
           </div>
           </div>
         </SwiperSlide>
+
       </Swiper>
     </div>
-    </div>
+  
   )
 }
 
