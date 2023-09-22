@@ -120,8 +120,8 @@ export default function Price() {
                 </div>
                </div>
                 
-              
-            
+               <div className="cardsContainer__devider"></div>
+               <a className="cardsContainer__link--pink-underline">Get Started</a>
               </div>
               <div className="cardsContainer__card">
                 <h2 className="cardsContainer__cardHeader thirdHeader">Extended</h2>
@@ -153,8 +153,8 @@ export default function Price() {
                   <TiTick className="cardsContainer__tick-icon"/>
                 </div>
                </div>
-              
-               
+               <div className="cardsContainer__devider"></div>
+               <a className="cardsContainer__link--orange-underline">Get Started</a>
               </div>
         
           </div>

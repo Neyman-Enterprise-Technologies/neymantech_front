@@ -91,13 +91,20 @@ align-self: flex-start;
   transition: 0.4s all;
  
 }
-.blogs .left .card img {
+.blogs .left .card .cardImgContainer{
+  width: 300px;
+  height:130px;
+
+}
+.blogs .left .card .cardImgContainer img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
+
+
   transition: transform 0.3s;
 }
-.blogs .left .card:hover img {
+.blogs .left .card:hover .cardImgContainer img {
   transform: scale(1.2) rotate(5deg);
 }
 .blogs .left .card .bottom-content h2 {
@@ -325,18 +332,23 @@ gap: 0.5rem;
   .container {
     max-width: 720px !important;
   }
-  .blogs {
+  /* .blogs {
     flex-direction: column;
-  }
+    flex-wrap: wrap;
+  } */
   .blogs .left {
     width: 100%;
   }
-  .blogs .right {
+
+  .blogs .left .card {
+
+    width: calc(100% /2.050);
+  }
+  /* .blogs .right {
     width: 100%;
   }
-  .blogs .left .card{
-    width: 49.3%;
-  }
+   */
+
   .blogs .left .card .bottom-content{
     width: 100%;
     padding: 1.5rem 1.3rem;
@@ -350,13 +362,13 @@ gap: 0.5rem;
   {
     font-size: 12px;
   }
-  .blogs .right .recent-posts-container .post-details .description {
+  /* .blogs .right .recent-posts-container .post-details .description {
     width: 100%;
-    /* padding: 2rem 0; */
+
     align-self: flex-start;
     padding-top: 0.8rem;
-  }
-  .blogs .right .tags-container .tags {
+  } */
+  /* .blogs .right .tags-container .tags {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -393,32 +405,30 @@ gap: 0.5rem;
   .blogs .right .category-container p::before {
     width: 1rem;
     height: 1rem;
-  }
-  .blogs .right .tags-container {
+  } */
+  /* .blogs .right .tags-container {
   
    flex-wrap: wrap;
     gap: 2.5rem;
 padding: 2rem 5rem 2rem 2rem;
    
-}
-.blogs .right .tags-container .title{
+} */
+/* .blogs .right .tags-container .title{
   padding-bottom: 3rem;
-}
-  .blogs .right .tags-container .tags .link-container a {
+} */
+  /* .blogs .right .tags-container .tags .link-container a {
     font-size: 1.5rem;
    
     padding: 1.5rem 2rem;
    
-}
+} */
 }
 
 @media screen and (max-width: 768px) {
   .container {
     max-width: 540px !important;
   }
-  .blogs .left .card{
-    width: calc(80% /1.64);
-  }
+ 
   .blogs .left .card .bottom-content h2{
     font-size: 13px;
     
