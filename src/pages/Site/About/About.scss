@@ -112,13 +112,14 @@
   align-items: center;
   gap: 1rem;
   box-shadow: inset 0 0 0 0 #0000ff;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.2s;
   padding: 0.5rem;
   background-color: #f8faff;
   border-radius: 0.5rem;
 }
 .section-1 .right .cards-container .card:hover {
   box-shadow: inset 50rem 0 0 0 #0000ff;
+  transition: ease-out 0.8s;
 }
 .section-1 .right .cards-container .card:hover p {
   color: #fafafc;

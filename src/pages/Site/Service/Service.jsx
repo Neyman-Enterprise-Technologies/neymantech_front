@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Service.scss";
 import { Link } from "react-router-dom";
 import { BsCheckLg } from "react-icons/Bs";
-import { BiChevronRight } from "react-icons/Bi";
+
 import firstSectionImg from "../../../images/about-img1-1-1.png";
 import secondSectionImg from "../../../images/why-choose-img1-1-1.png";
 import Loading from "../../../Components/Loading/Loading";
+import { FaAngleRight } from "react-icons/fa";
 
 export default function Service() {
   const [loading, setLoading] = useState(false);
@@ -22,95 +23,58 @@ export default function Service() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="service">
-          <div className="service_heading">
-            <h2>Services</h2>
-            <div className="lines"></div>
-            <ul>
-              <li>
-                <Link className="home" to="/">
-                  Home
-                </Link>
-              </li>
-              <BiChevronRight className="iconss" />
-              <li>
-                <Link className="contact" to="/service">
-                  Services
-                </Link>
-              </li>
-            </ul>
+   
+         <div className="service">
+          {/* heading start */}
+          <div className="serviceHeader">
+            <div className="container">
+              <div className="serviceTitle">
+                <h2>
+                  Ser<span>vi</span>ces
+                </h2>
+              </div>
+            </div>
+            <div className="serviceLinks">
+              <Link to="/home" className="serviceLink">
+                Home
+              </Link>
+              <FaAngleRight className="angleIcon" />
+              <Link to="service">Services</Link>
+            </div>
           </div>
-          <div className="service_first_section">
-            <div className="service_first_section_content">
-              <h5>DIGITAL MARKETING</h5>
-              <h3>Creative solutions, creative results</h3>
-              <p>
+          {/* heading end */}
+         
+            {/* first section start*/}
+         <div className="container">
+         <div className="firstSection">
+            <div className="firstSection__textContent">
+              <p className="firstSection__header">WHY CHOOSE US</p>
+              <p className="firstSection__title">
+                The key to your motivation and success
+              </p>
+              <p className="firstSection__description">
                 We believe brand interaction is key in communication. Real
                 innovations and a positive customer experience are the heart of
                 successful communication.
               </p>
-              <div className="service_first_section_content_list">
-                <div className="service_first_section_content_list_item">
-                  <BsCheckLg className="service_check_icon" />{" "}
-                  <p>Core Development</p>
-                </div>
-                <p>
-                  No fake products and services. The customer is king, their
-                  lives and needs are the inspiration.
-                </p>
+              <div className="firstSection__ListTtitleContainer">
+                <BsCheckLg className="firstSection__list-title-icon" />
+                <p className="firstSection__list-title-description">Core Development</p>
               </div>
-              <div className="service_first_section_content_list">
-                <div className="service_first_section_content_list_item">
-                  <BsCheckLg className="service_check_icon" />{" "}
-                  <p>Core Development</p>
-                </div>
-                <p>
-                  {" "}
-                  No fake products and services. The customer is king, their
-                  lives and needs are the inspiration.
-                </p>
+              <div className="firstSection__ListTtitleContainer">
+                <BsCheckLg className="firstSection__list-title-icon" />
+                <p className="firstSection__list-title-description">Define Your Choices</p>
               </div>
             </div>
-            <div className="service_first_section_img">
+            <div className="firstSection__imgContainer">
               <img src={firstSectionImg} />
             </div>
           </div>
-          <div className="service_first_section">
-            <div className="service_first_section_img">
-              <img src={secondSectionImg} />
-            </div>
-            <div className="service_first_section_content">
-              <h5>DIGITAL MARKETING</h5>
-              <h3>Creative solutions, creative results</h3>
-              <p>
-                We believe brand interaction is key in communication. Real
-                innovations and a positive customer experience are the heart of
-                successful communication.
-              </p>
-              <div className="service_first_section_content_list">
-                <div className="service_first_section_content_list_item">
-                  <BsCheckLg className="service_check_icon" />{" "}
-                  <p>Core Development</p>
-                </div>
-                <p>
-                  No fake products and services. The customer is king, their
-                  lives and needs are the inspiration.
-                </p>
-              </div>
-              <div className="service_first_section_content_list">
-                <div className="service_first_section_content_list_item">
-                  <BsCheckLg className="service_check_icon" />{" "}
-                  <p>Core Development</p>
-                </div>
-                <p>
-                  {" "}
-                  No fake products and services. The customer is king, their
-                  lives and needs are the inspiration.
-                </p>
-              </div>
-            </div>
-          </div>
+         </div>
+            {/* first section end */}
         </div>
+
+        
       )}
     </>
   );

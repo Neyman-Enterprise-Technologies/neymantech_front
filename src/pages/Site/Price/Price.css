@@ -80,6 +80,7 @@
 /* price HeaderLink */
 /* header start */
 .header {
+  padding: 4rem 0 0 0;
   width: 40%;
   margin: auto;
   text-align: center;
@@ -106,6 +107,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .cardsContainer__cardContainer {
@@ -114,6 +118,8 @@
 
 .cardsContainer__card {
   /* background-color: gray; */
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,15 +127,24 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 27%;
+  width: 350px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
+  padding-bottom: 1.5rem;
+}
+
+.cardsContainer__card:hover {
+  -webkit-transform: translateY(-0.625rem);
+          transform: translateY(-0.625rem);
+  -webkit-box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .cardsContainer__cardHeader {
@@ -158,7 +173,7 @@
 
 .cardsContainer__price::before {
   content: "$";
-  left: -0.9em;
+  left: -1.1em;
   bottom: 2.5em;
   position: absolute;
   font-size: 1rem;
@@ -166,11 +181,11 @@
 }
 
 .cardsContainer__price::after {
-  content: "/mo";
+  content: "/ mo";
   font-size: 1rem;
   color: #737b9a;
   position: absolute;
-  right: -2.3rem;
+  right: -2.8rem;
   bottom: 2.5rem;
 }
 
@@ -196,7 +211,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .cardsContainer__items {
@@ -209,6 +224,104 @@
 .cardsContainer__tick-icon {
   font-size: 2rem;
   color: limegreen;
+}
+
+.cardsContainer__link {
+  position: relative;
+  display: inline-block;
+  color: blue;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.cardsContainer__link--orange-underline {
+  position: relative;
+  display: inline-block;
+  color: orange;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.cardsContainer__link--pink-underline {
+  position: relative;
+  display: inline-block;
+  color: #f78da7;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.cardsContainer__link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: blue;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.cardsContainer__link:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardsContainer {
+    width: 100%;
+  }
+  .cardsContainer__card {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cardsContainer {
+    width: 100%;
+  }
+  .cardsContainer__card {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+  }
 }
 
 /* cards container end */

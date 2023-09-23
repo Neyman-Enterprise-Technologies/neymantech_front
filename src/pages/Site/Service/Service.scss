@@ -1,4 +1,4 @@
-.service {
+/* .service {
   .service_heading {
     padding: 120px 10px 120px 10px;
     width: 100%;
@@ -137,4 +137,140 @@
         }
       }
 
+} */
+
+/* R start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* heading start */
+.serviceHeader {
+  background-color: #f6f6f6;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.serviceTitle {
+  text-align: center;
+}
+
+.serviceTitle {
+  text-align: center;
+}
+.serviceTitle h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+.serviceLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.serviceLinks a {
+  font-size: 1.3rem;
+  color: #0000ff;
+  font-weight: 500;
+}
+.serviceLinks .serviceLink {
+  color: #737b9a;
+}
+
+.serviceLinks .angleIcon {
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  color: #737b9a;
+}
+.serviceTitle span {
+  border-bottom: 2px solid #f78da7;
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+}
+/* heading end */
+
+
+/* first section start */
+.firstSection{
+  display: flex;
+  width: 100%;
+  padding-bottom: 5rem;
+  &__textContent{
+    padding-top: 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   }
+  &__header{
+    font-size: 1.5rem;
+    color: blue;
+    font-weight: 500;
+    width: 100%;
+  }
+  &__title{
+    font-size: 2rem;
+    width: 100%;
+    padding-right: 10rem;
+}
+  
+  &__description{
+    padding-right: 10rem;
+    color: #737b9a;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+  }
+  &__ListTtitleContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+
+  }
+  &__list-title-icon{
+    font-size: 2rem;
+    color: #0000ff;
+  }
+  &__list-title-description{
+    position: relative;
+    font-size: 1.5rem;
+    width: 100%;
+}
+  
+
+  &__imgContainer{
+    width: 50%;
+    img{
+      width: 100%;
+    object-fit: cover;
+    }
+  }
+ 
+}
+/* first section end */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .firstSection {
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    padding-bottom: 5rem;
+
+  }
+}
+
+
+/* R end */
+

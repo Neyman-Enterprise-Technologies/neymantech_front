@@ -359,7 +359,7 @@
 }
 
 .web-design-section .right .cards-container .left-cards-container .card p {
-  width: 15ch;
+  width: 20ch;
 }
 
 .web-design-section .right .cards-container .left-cards-container .card .card-icon {
@@ -368,8 +368,8 @@
 }
 
 .web-design-section .right .cards-container .left-cards-container .card:hover {
-  -webkit-box-shadow: inset 18.75rem 0 0 0 #0000ff;
-          box-shadow: inset 18.75rem 0 0 0 #0000ff;
+  -webkit-box-shadow: inset 30rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 #0000ff;
 }
 
 .web-design-section .right .cards-container .left-cards-container .card:hover .card-icon {
@@ -411,10 +411,9 @@
           box-shadow: inset 0 0 0 0 #0000ff;
   -webkit-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
-}
-
-.web-design-section .right .cards-container .right-cards-container .card p {
-  width: 12ch;
+  /*   & p {
+            width: 12ch;
+          } */
 }
 
 .web-design-section .right .cards-container .right-cards-container .card .card-icon {
@@ -423,8 +422,8 @@
 }
 
 .web-design-section .right .cards-container .right-cards-container .card:hover {
-  -webkit-box-shadow: inset 18.75rem 0 0 0 #0000ff;
-          box-shadow: inset 18.75rem 0 0 0 #0000ff;
+  -webkit-box-shadow: inset 20rem 0 0 0 #0000ff;
+          box-shadow: inset 20rem 0 0 0 #0000ff;
 }
 
 .web-design-section .right .cards-container .right-cards-container .card:hover .card-icon {
@@ -958,8 +957,8 @@ article .read-more::after {
 
 article h2 {
   margin: 0 0 18px 0;
-  font-size: 1.9rem;
-  letter-spacing: 0.06em;
+  font-size: 1.7rem;
+  /* letter-spacing: 0.06em; */
   color: var(--title-color);
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
@@ -1053,6 +1052,16 @@ article:has(:hover, :focus) img {
     max-width: 960px !important;
     
   } */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+  .home__works__cards__card {
+    /* width: 33rem; */
+    height: 37rem;
+  }
+}
+
 /* @media screen and (max-width: 992px) */
 @media screen and (max-width: 992px) {
   .container {

@@ -13,6 +13,7 @@
 
 /* heading start */
 .blogHeader {
+  background-color: #f6f6f6;
   padding: 10rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +83,7 @@
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
+  padding: 2rem 0;
 }
 
 .blogs .left {
@@ -112,25 +114,30 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
-  width: calc(100% /3.1);
+  width: calc(100% / 3.1);
   /* align-self: flex-start; */
   border: 1px solid #ddd;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 30px #bcbcca;
-          box-shadow: 0 0 30px #bcbcca;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
 }
 
-.blogs .left .card img {
+.blogs .left .card .cardImgContainer {
+  height: 200px;
+}
+
+.blogs .left .card .cardImgContainer img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.blogs .left .card:hover img {
+.blogs .left .card:hover .cardImgContainer img {
   -webkit-transform: scale(1.2) rotate(5deg);
           transform: scale(1.2) rotate(5deg);
 }
@@ -152,6 +159,11 @@
   color: #737b9a;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+.blogs .left .card:hover {
+  -webkit-box-shadow: 0 0 10px #888899;
+          box-shadow: 0 0 10px #888899;
 }
 
 .blogs .left .card:hover .bottom-content h2 {
@@ -231,6 +243,7 @@
 
 .blogs .right .search .input-button-container input {
   padding: 9px;
+  outline: none;
 }
 
 .blogs .right .search .input-button-container .search-icon-container {
@@ -255,6 +268,7 @@
 .search-icon {
   color: white;
   font-size: 1.5625rem;
+  cursor: pointer;
 }
 
 .blogs .right .recent-posts-container {
@@ -335,7 +349,7 @@
 
 .blogs .right .category-container p {
   position: relative;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   font-weight: 600;
   display: block;
   margin-left: 1.5rem;
@@ -350,7 +364,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.1rem;
+  top: 0.4rem;
   left: -2.5rem;
 }
 
@@ -387,7 +401,7 @@
 }
 
 .blogs .right .tags-container .tags {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,7 +438,12 @@
 }
 
 /* right end */
-/* responsive design   for  992px */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .container {
     max-width: 720px !important;
@@ -434,22 +453,24 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .blogs .left {
     width: 100%;
   }
+  .blogs .left .card {
+    width: calc(100% / 2.05);
+  }
   .blogs .right {
     width: 100%;
-  }
-  .blogs .left .card {
-    width: 49.3%;
   }
   .blogs .left .card .bottom-content {
     width: 100%;
     padding: 1.5rem 1.3rem;
   }
   .blogs .left .card .bottom-content h2 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .blogs .left .card .bottom-content p,
   .blogs .left .card .bottom-content::after {
@@ -457,7 +478,6 @@
   }
   .blogs .right .recent-posts-container .post-details .description {
     width: 100%;
-    /* padding: 2rem 0; */
     -ms-flex-item-align: start;
         align-self: flex-start;
     padding-top: 0.8rem;
@@ -471,8 +491,11 @@
         flex-wrap: wrap;
   }
   .blogs .right .search {
-    padding: 2rem;
+    padding: 3rem;
     width: 100%;
+  }
+  .blogs .right .recent-posts-container {
+    padding: 3rem;
   }
   .blogs .right .search .input-button-container input::-webkit-input-placeholder {
     font-size: 2rem;
@@ -496,28 +519,39 @@
   .blogs .right .recent-posts-container .post-details {
     padding: 3rem 0;
   }
+  .blogs .right .recent-posts-container h2 {
+    font-size: 2rem;
+  }
   .blogs .right .recent-posts-container .post-details .details-img {
     width: 15rem;
     height: 10rem;
   }
+  .blogs .right .category-container {
+    padding: 3rem;
+  }
   .blogs .right .category-container .title {
     padding-bottom: 3rem;
+    font-size: 2rem;
   }
   .blogs .right .category-container p {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-left: 50px;
   }
   .blogs .right .category-container p::before {
     width: 1rem;
     height: 1rem;
+    top: 0.5rem;
+    left: -50px;
   }
   .blogs .right .tags-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 2.5rem;
-    padding: 2rem 5rem 2rem 2rem;
+    padding: 3rem 2rem 3rem 3rem;
   }
   .blogs .right .tags-container .title {
     padding-bottom: 3rem;
+    font-size: 2rem;
   }
   .blogs .right .tags-container .tags .link-container a {
     font-size: 1.5rem;
@@ -529,19 +563,43 @@
   .container {
     max-width: 540px !important;
   }
-  .blogs .left .card {
-    width: calc(80% /1.64);
+  .blogs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .blogs .left .card .bottom-content h2 {
-    font-size: 13px;
+  .blogs .right {
+    width: 100%;
   }
-  .blogs .left .card .bottom-content p,
-  .blogs .left .card .bottom-content::after {
-    font-size: 9px;
+  .blogs .left .cards-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogs .left .cards-container .card {
+    width: 100%;
+  }
+  .blogs .left .card .cardImgContainer {
+    height: 300px;
+  }
+  .blogs .right .recent-posts-container .post-details .description .title {
+    width: 100%;
   }
   .blogs .left .card .bottom-content {
     width: 100%;
     padding: 2rem 1rem;
+  }
+  .blogs .right .category-container p {
+    font-size: 1.5rem;
+  }
+  .blogs .right .category-container p::before {
+    top: 0.4rem;
   }
 }
 /*# sourceMappingURL=Blogs.css.map */

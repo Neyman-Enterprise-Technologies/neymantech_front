@@ -872,7 +872,24 @@ article:has(:hover, :focus) {
     
   } */
  
+  @media screen and (max-width: 1200px){
+    .container{
+      max-width: 960px !important;
 
+    }
+
+    .home__works{
+      &__cards {
+        &__card {
+          /* width: 33rem; */
+          height: 37rem;
+        }
+      }
+  
+    }
+
+
+  }
 
  /* @media screen and (max-width: 992px) */
 @media screen and (max-width: 992px) {
