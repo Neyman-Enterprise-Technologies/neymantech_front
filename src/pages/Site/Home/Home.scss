@@ -21,7 +21,7 @@
 /* digital marketing style start */
 .digital-marketing-container {
   width: 100%;
-  padding: 5rem 0 7rem 0;
+  /* padding: 5rem 0 7rem 0; */
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -32,9 +32,12 @@
     width: 50%;
      /* background-color: yellow; */
     & .top-container {
+     
+      width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+
+
       gap: 2rem;
       & h2 {
         font-size: 2rem;
@@ -44,7 +47,8 @@
         line-height: 1.6rem;
         font-size: 1rem;
         font-weight: 900;
-        width: 31rem;
+        /* padding-right: 2rem; */
+        /* width: 31rem; */
       }
 
       /* /button hovering effect start */
@@ -84,6 +88,7 @@
     }
     & .marketing-cards-container {
       display: flex;
+      justify-content: space-between;
 
       gap: 1rem;
       & .right-cards-container {
@@ -365,7 +370,7 @@
 
   &__cards {
  
-    padding: 1.875rem 5.625rem;
+    /* padding: 1.875rem 5.625rem; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -390,7 +395,8 @@
      gap: 1rem;
      align-items: center;
      justify-content: center;
-      width: 25rem;
+      width: 29rem;
+   
       height: 20rem;
       background-color: white;
       border-radius: 0.4375rem;
@@ -921,6 +927,8 @@ article:has(:hover, :focus) {
     position: relative;
     flex-direction: column;
     margin-bottom: 5rem;
+   width: 100%;
+
   }
   .digital-marketing-container .right {
     width: 100%;
@@ -1000,3 +1008,14 @@ article:has(:hover, :focus) {
     box-shadow: inset 50rem 0 0 0 #0000ff;
   }
 }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .home__service{
+    &__cards{
+      justify-content: center;
+    }
+  }
+}
+    
