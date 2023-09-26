@@ -11,6 +11,7 @@
 
 /* heading start */
 .blogHeader {
+  background-color: #f6f6f6;
   padding: 10rem 0;
   display: flex;
   flex-direction: column;
@@ -60,6 +61,7 @@
 .blogs {
   display: flex;
   gap: 3rem;
+  padding: 2rem 0;
 }
 .blogs .left {
   position: relative;
@@ -69,6 +71,7 @@
 }
 .blogs .left .cards-container {
   /* background-color: red; */
+ 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -113,7 +116,7 @@
   font-weight: 500;
 }
 .blogs .left .card:hover {
-  box-shadow: 0 0 20px (rgb(136, 136, 153));
+  box-shadow: 0 3px 20px 0(rgb(210, 210, 219));
 }
 .blogs .left .card:hover .bottom-content h2 {
   color: rgb(27, 27, 141);
@@ -249,7 +252,7 @@
 }
 .blogs .right .category-container p {
   position: relative;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   font-weight: 600;
   display: block;
   margin-left: 1.5rem;
@@ -264,7 +267,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.1rem;
+  top: 0.4rem;
   left: -2.5rem;
 }
 .blogs .right .category-container .title {
@@ -353,6 +356,7 @@
   .blogs .left .card .bottom-content::after {
     font-size: 12px;
   }
+  
   .blogs .right .recent-posts-container .post-details .description {
     width: 100%;
     align-self: flex-start;
@@ -402,16 +406,18 @@
   
   .blogs .right .category-container p {
     font-size: 1.6rem;
+    margin-left: 50px;
   }
   .blogs .right .category-container p::before {
     width: 1rem;
     height: 1rem;
-    top: 0.7rem;
+    top: 0.5rem;
+    left: -50px;
   }
   .blogs .right .tags-container {
     flex-wrap: wrap;
     gap: 2.5rem;
-    padding: 3rem 5rem 3rem 3rem;
+    padding: 3rem 2rem 3rem 3rem;
   }
   .blogs .right .tags-container .title {
     padding-bottom: 3rem;

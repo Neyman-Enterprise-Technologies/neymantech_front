@@ -160,8 +160,8 @@
   gap: 1rem;
   -webkit-box-shadow: inset 0 0 0 0 #0000ff;
           box-shadow: inset 0 0 0 0 #0000ff;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
   padding: 0.5rem;
   background-color: #f8faff;
   border-radius: 0.5rem;
@@ -170,6 +170,8 @@
 .section-1 .right .cards-container .card:hover {
   -webkit-box-shadow: inset 50rem 0 0 0 #0000ff;
           box-shadow: inset 50rem 0 0 0 #0000ff;
+  -webkit-transition: ease-out 0.8s;
+  transition: ease-out 0.8s;
 }
 
 .section-1 .right .cards-container .card:hover p {
@@ -441,6 +443,19 @@
 
 .aboutCardsContainer__list .listIcon {
   background-color: red;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    background-color: yellow;
+  }
+  .team-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-content: center;
+  }
 }
 
 /* Responsive design   for 992  */

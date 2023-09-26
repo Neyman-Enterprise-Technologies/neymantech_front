@@ -6,7 +6,7 @@ import MySlider from "../../../Components/MySlider/MySlider";
 import Loading from "../../../Components/Loading/Loading";
 import {
   animateScroll as scroll,
-  Element as ScrollElement, 
+  Element as ScrollElement,
 } from "react-scroll";
 import { TbMessages } from "react-icons/Tb";
 import { BiSolidBadgeCheck } from "react-icons/Bi";
@@ -53,6 +53,7 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
               </div>
+              {/* SERVICE CARDS START */}
               <div className="home__service__cards">
                 <Link to={"/service"}>
                   <div className="home__service__cards__card">
@@ -102,8 +103,7 @@ export default function Home() {
                       <AiOutlineGlobal className="icon1" />
                       <BiSolidBadgeCheck className="badge" />
                     </div>
-                    <h3>
-App Development</h3>
+                    <h3>App Development</h3>
                     <p>
                       &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
                       error sit voluptatem accusantium &nbsp; doloremque
@@ -140,6 +140,7 @@ App Development</h3>
                   </div>
                 </Link>
               </div>
+                {/* SERVICE CARDS END */}
             </div>
           </div>
 

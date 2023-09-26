@@ -11,7 +11,7 @@ import UseFetch from "../../../UseFetch";
 // import Pagination from "../../../Components/pagination/pagination";
 
 export default function Blogs() {
-  const {data:blogs, error} = UseFetch('http://localhost:8000/BlogsCards')
+  const {data:blogs, error} = UseFetch('http://127.0.0.1:8000/blog_api/blog/')
  
 
   const [loading, setLoading] = useState(false);

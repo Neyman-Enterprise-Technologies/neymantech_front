@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Project.scss";
 import Loading from "../../../Components/Loading/Loading";
-import { BiChevronRight } from "react-icons/Bi";
+// import { BiChevronRight } from "react-icons/Bi";
+import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Project() {
@@ -20,104 +21,114 @@ export default function Project() {
         <Loading />
       ) : (
         <div className="projects">
-          <div className="projects_heading">
-        <h2>Projects</h2>
-        <div className="lines"></div>
-        <ul>
-          <li>
-            <Link className="home" to="/">
-              Home
-            </Link>
-          </li>
-          <BiChevronRight className="iconss" />
-          <li>
-            <Link className="contact" to="/project">
-              Projects
-            </Link>
-          </li>
-        </ul>
-      </div>
-         <div className="projects__section">
-         <div className="projects__categories">
-            <div className="projects__categories__content">
-              <h4>Veb dizayn xidmeti</h4>
-              <div className="projects__ps">
-                <hr /> <p>Veb sayt dizayni</p>
-              </div>
-              <div className="projects__ps">
-                <hr /> <p>Veb sayt dizayni</p>
-              </div>
-              <div className="projects__ps">
-                <hr /> <p>Veb sayt dizayni</p>
+          {/*   HEADER LINK START  */}
+          <div className="projectHeaderLink">
+            <div className="container">
+              <div className="projectTitle">
+                <h2>
+                  Pro<span>je</span>cts
+                </h2>
               </div>
             </div>
-            <hr className="projects__content__border" />
-            <div className="projects__categories__content">
-              <h4>Veb dizayn xidmeti</h4>
-              <div className="projects__ps">
-                <hr /> <p>Veb sayt dizayni</p>
-              </div>
-              <div className="projects__ps">
-                <hr /> <p>Veb sayt dizayni</p>
-              </div>
-              <div className="projects__ps">
-                <hr /> <p>Veb sayt dizayni</p>
-              </div>
+            <div className="projectLinks">
+              <Link to="/home" className="projectLink">
+                Home
+              </Link>
+              <FaAngleRight className="angleIcon" />
+              <Link to="about">Projects</Link>
             </div>
-            <hr className="projects__content__border" />
+          </div>
+          {/*  HEADER LINK END  */}
+          {/*  HEADER START */}
+          <div className="projectHeader">
+            <h2 className="projectTitle">Our latest works</h2>
+            <p className="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
 
-          </div>
-          <div className="projects__cards">
-            <div className="projects__card__width">
-              <div className="projects__card">
-                <div className="projects__card__img">
-                  <img src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fHww&w=1000&q=80" />
-                  <div className="projects__card__up__content">
-                    <p>Development</p>
-                    <h4>Building Awesome Design</h4>
-                    <button>Case study</button>
+         {/*  CARDS CONTAINER START */}
+      
+              
+             <div className="container">
+             <div className="project-cards-container">
+                <div className="project-cards-container__card">
+                  <img className="project-cards-container__image"  src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"/>
+                  <div className="project-cards-container__info">
+                    <p className="project-cards-container__heading">Development</p>
+                    <p className="project-cards-container__description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
+                </div>
+                <div className="project-cards-container__card">
+                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work4-1.jpg"></img>
+                  <div className="project-cards-container__info">
+                    <p className="project-cards-container__heading">Development</p>
+                    <p className="project-cards-container__description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
+                </div>
+                <div className="project-cards-container__card">
+                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
+                  <div className="project-cards-container__info">
+                    <p className="project-cards-container__heading">Development</p>
+                    <p className="project-cards-container__description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
+                </div>
+                <div className="project-cards-container__card">
+                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
+                  <div className="project-cards-container__info">
+                    <p className="project-cards-container__heading">Development</p>
+                    <p className="project-cards-container__description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
+                </div>
+                <div className="project-cards-container__card">
+                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work5-1.jpg"></img>
+                  <div className="project-cards-container__info">
+                    <p className="project-cards-container__heading">Development</p>
+                    <p className="project-cards-container__description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
+                  </div>
+                </div>
+                <div className="project-cards-container__card">
+                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
+                  <div className="project-cards-container__info">
+                    <p className="project-cards-container__heading">Development</p>
+                    <p className="project-cards-container__description">
+                      Designing a Better Cinema Experience
+                    </p>
+                    {/* <Link to='' className='info-btn'>
+                      Case Study
+                    </Link> */}
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="projects__card__width">
-              <div className="projects__card">
-                <div className="projects__card__img">
-                  <img src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fHww&w=1000&q=80" />
-                  <div className="projects__card__up__content">
-                    <p>Development</p>
-                    <h4>Building Awesome Design</h4>
-                    <button>Case study</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="projects__card__width">
-              <div className="projects__card">
-                <div className="projects__card__img">
-                  <img src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fHww&w=1000&q=80" />
-                  <div className="projects__card__up__content">
-                    <p>Development</p>
-                    <h4>Building Awesome Design</h4>
-                    <button>Case study</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="projects__card__width">
-              <div className="projects__card">
-                <div className="projects__card__img">
-                  <img src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fHww&w=1000&q=80" />
-                  <div className="projects__card__up__content">
-                    <p>Development</p>
-                    <h4>Building Awesome Design</h4>
-                    <button>Case study</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         </div>
+             </div>
+           
+          {/*  HEADER END */}
         </div>
       )}
     </>
