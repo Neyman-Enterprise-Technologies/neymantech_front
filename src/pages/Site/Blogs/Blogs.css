@@ -162,8 +162,8 @@
 }
 
 .blogs .left .card:hover {
-  -webkit-box-shadow: 0 0 10px #888899;
-          box-shadow: 0 0 10px #888899;
+  -webkit-box-shadow: 0 3px 20px 0 #d2d2db;
+          box-shadow: 0 3px 20px 0 #d2d2db;
 }
 
 .blogs .left .card:hover .bottom-content h2 {
