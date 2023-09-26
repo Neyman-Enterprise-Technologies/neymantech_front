@@ -803,7 +803,7 @@ article {
   & h2 {
     margin: 0 0 18px 0;
 
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     /* letter-spacing: 0.06em; */
     color: var(--title-color);
     transition: color 0.3s ease-out;
@@ -863,7 +863,7 @@ article:has(:hover, :focus) {
 }
 .articles {
   display: grid;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-inline: auto;
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
