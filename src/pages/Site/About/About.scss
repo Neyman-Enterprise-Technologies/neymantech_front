@@ -324,6 +324,22 @@
   }
 }
 
+@media screen and (max-width:1200px){
+  .container{
+    max-width: 960px;
+    /* background-color: yellow; */
+
+  }
+
+  .team-container{
+    justify-content: center;
+   justify-content: center;
+
+
+  }
+}
+
+
 /* Responsive design   for 992  */
 
 @media screen and (max-width: 992px) {

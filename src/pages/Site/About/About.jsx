@@ -13,7 +13,15 @@ import {
   BsFillCheckSquareFill,
   BsFillPatchCheckFill,
 } from "react-icons/Bs";
+import Team from "../../../Components/Team/Team";
+import UseFetch from "../../../UseFetch";
+import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
 export default function About() {
+  const { data: teAm, error } = UseFetch("http://localhost:8000/team");
+  const { data: aboutSection1 } = UseFetch(
+    "http://localhost:8000/aboutSection1"
+  );
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -28,6 +36,7 @@ export default function About() {
         <Loading />
       ) : (
         <section>
+          {/* ABOUT HEADER START */}
           <div className="aboutHeader">
             <div className="container">
               <div className="aboutTitle">
@@ -44,56 +53,11 @@ export default function About() {
               <Link to="about">About Us</Link>
             </div>
           </div>
+          {/* ABOUT HEADER END */}
 
           {/* SECTION-1 START */}
           <div className="container">
-            <div className="section-1">
-              <div className="left">
-                <img
-                  src=" https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/about-img1-1-1.png"
-                  alt=""
-                />
-              </div>
-              <div className="right">
-                <p className="title">About us</p>
-                <h2 className="header">We are digital explorers </h2>
-                <p className="description">
-                  We believe brand interaction is key in communication. Real
-                  innovations and a positive customer experience are the heart
-                  of successful communication.
-                </p>
-                <div className="cards-container">
-                  <div className="left-cards-container">
-                    <div className="card">
-                      <BsFillCheckSquareFill className="icon-about" />
-                      <p>SEO Marketing</p>
-                    </div>
-                    <div className="card">
-                      <BsFillCheckSquareFill className="icon-about" />
-                      <p>SEO Marketing</p>
-                    </div>
-                    <div className="card">
-                      <BsFillCheckSquareFill className="icon-about" />
-                      <p>SEO Marketing</p>
-                    </div>
-                  </div>
-                  <div className="right-cards-container">
-                    <div className="card">
-                      <BsFillCheckSquareFill className="icon-about" />
-                      <p>SEO Marketing</p>
-                    </div>
-                    <div className="card">
-                      <BsFillCheckSquareFill className="icon-about" />
-                      <p>SEO Marketing</p>
-                    </div>
-                    <div className="card">
-                      <BsFillCheckSquareFill className="icon-about" />
-                      <p>SEO Marketing</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {aboutSection1 && <AboutSection1 aboutSection1={aboutSection1} />}
           </div>
           {/* SECTION-1 END */}
 
@@ -188,39 +152,52 @@ export default function About() {
           {/* SECTION-2 END  */}
 
           {/* SECTION-3 START */}
-       <div className="container">
-       <section className="section-3">
-            <div className="left">
-              <p className="title">WHY CHOOSE US</p>
-              <h2 className="header">The key to your motivation and success</h2>
-              <p className="description">
-                We believe brand interaction is key in communication. Real
-                innovations and a positive customer experience are the heart of
-                successful communication.
-              </p>
-              <div className="selected-title-container">
-                <BsCheckLg className="tick-icon" />
-                <h2 className="selected-title"> Core Development</h2>
+          <div className="container">
+            <section className="section-3">
+              <div className="left">
+                <p className="title">WHY CHOOSE US</p>
+                <h2 className="header">
+                  The key to your motivation and success
+                </h2>
+                <p className="description">
+                  We believe brand interaction is key in communication. Real
+                  innovations and a positive customer experience are the heart
+                  of successful communication.
+                </p>
+                <div className="selected-title-container">
+                  <BsCheckLg className="tick-icon" />
+                  <h2 className="selected-title"> Core Development</h2>
+                </div>
+                <p className="selected-description">
+                  No fake products and services. The customer is king, their
+                  lives and needs are the inspiration.
+                </p>
+                <div className="selected-title-container">
+                  <BsCheckLg className="tick-icon" />
+                  <h2 className="selected-title"> Define Your Choices</h2>
+                </div>
+                <p className="selected-description">
+                  No fake products and services. The customer is king, their
+                  lives and needs are the inspiration.
+                </p>
               </div>
-              <p className="selected-description">
-                No fake products and services. The customer is king, their lives
-                and needs are the inspiration.
-              </p>
-              <div className="selected-title-container">
-                <BsCheckLg className="tick-icon" />
-                <h2 className="selected-title">  Define Your Choices</h2>
+              <div className="right">
+                <img
+                  src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/why-choose-img1-1-1.png"
+                  alt=""
+                />
               </div>
-              <p className="selected-description">
-                No fake products and services. The customer is king, their lives
-                and needs are the inspiration.
-              </p>
-            </div>
-            <div className="right">
-              <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/why-choose-img1-1-1.png" alt="" />
-            </div>
-          </section>
-       </div>
+            </section>
+            {/* SECTION-3 END */}
+          </div>
           {/* SECTION-3 END */}
+          {/* SECTION-4 START */}
+
+         <div className="container">
+         {error && <div>{error}</div>}
+          {teAm && <Team team={teAm} />}
+         </div>
+          {/* SECTION-4 END */}
         </section>
       )}
     </>
