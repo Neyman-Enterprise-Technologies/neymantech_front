@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import "./Home.scss";
 import MySlider from "../../../Components/MySlider/MySlider";
 import Loading from "../../../Components/Loading/Loading";
@@ -14,7 +15,12 @@ import { CgScrollV } from "react-icons/Cg";
 import { AiOutlineGlobal } from "react-icons/Ai";
 import { BsFillPatchCheckFill, BsDisplay } from "react-icons/Bs";
 import Carusel from "../../../Components/Carusel/Carusel";
+import ServiceCards from "../../../Components/ServiceCards/ServiceCards";
+import UseFetch from "../../../UseFetch";
 export default function Home() {
+  const { data: serviceCards, error } = UseFetch(
+    "http://localhost:8000/serviceCards"
+  );
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -30,6 +36,7 @@ export default function Home() {
   const handleIconClick = () => {
     setShowIcon(false);
   };
+
   return (
     <>
       {loading ? (
@@ -54,7 +61,11 @@ export default function Home() {
                 </p>
               </div>
               {/* SERVICE CARDS START */}
-              <div className="home__service__cards">
+              {serviceCards && <ServiceCards servicecards={serviceCards} />}
+              {error && <div>{error}</div>}
+              {/*  */}
+
+              {/* <div className="home__service__cards">
                 <Link to={"/service"}>
                   <div className="home__service__cards__card">
                     <div className="home__service__cards__card__icon">
@@ -139,8 +150,8 @@ export default function Home() {
                     </p>
                   </div>
                 </Link>
-              </div>
-                {/* SERVICE CARDS END */}
+              </div> */}
+              {/* SERVICE CARDS END */}
             </div>
           </div>
 

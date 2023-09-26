@@ -373,7 +373,7 @@
     /* padding: 1.875rem 5.625rem; */
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.25rem;
@@ -436,6 +436,7 @@
       }
 
       p {
+ padding: 0.5rem 1rem;
         color: #737b73;
         font-size: 0.9375rem;
         line-height: 1.6;
