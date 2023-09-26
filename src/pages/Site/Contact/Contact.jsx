@@ -4,6 +4,7 @@ import { useState,useEffect } from 'react';
 import { MdOutlineMailOutline } from 'react-icons/Md';
 import {SlLocationPin } from 'react-icons/Sl';
 import {BiChevronRight} from 'react-icons/Bi'
+import { FaAngleRight } from "react-icons/fa";
 import {BsPhone} from 'react-icons/Bs'
 import { Link } from 'react-router-dom';
 import Loading from "../../../Components/Loading/Loading";
@@ -24,11 +25,24 @@ export default function Contact() {
       ):(
          <section>
          <div className='home__contact'>
-         <div className='home__contact__content'>
-           <h2>Contact</h2>
-           <div className='lines'></div>
-            <ul><li><Link className='home' to='/'>Home</Link></li><BiChevronRight className='iconss'/><li><Link className='contact' to='/contact'>Contact</Link></li></ul>
-         </div>
+         {/*   HEADER LINK START  */}
+         <div className="projectHeaderLink">
+            <div className="container">
+              <div className="projectTitle">
+                <h2>
+                  Con<span>t</span>act
+                </h2>
+              </div>
+            </div>
+            <div className="projectLinks">
+              <Link to="/home" className="projectLink">
+                Home
+              </Link>
+              <FaAngleRight className="angleIcon" />
+              <Link to="contact">Contact</Link>
+            </div>
+          </div>
+          {/*  HEADER LINK END  */}
          <div className='home__contact__cards'>
           <div className='home__contact__cards__card'>
              <div className='home__contact__cards__card__icon'>
