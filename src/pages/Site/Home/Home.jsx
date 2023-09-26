@@ -53,6 +53,7 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
               </div>
+              {/* SERVICE CARDS START */}
               <div className="home__service__cards">
                 <Link to={"/service"}>
                   <div className="home__service__cards__card">
@@ -139,6 +140,7 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
+                {/* SERVICE CARDS END */}
             </div>
           </div>
 
