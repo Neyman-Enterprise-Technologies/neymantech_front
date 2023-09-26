@@ -11,7 +11,7 @@ const ServiceCards = ({servicecards}) => {
     <div className="home__service__cards">
       {servicecards.map((card) => (
      
-        <Link to={"/service"}>
+        <Link to={"/service"} key={card.id}>
           <div className="home__service__cards__card">
           <div className="home__service__cards__card__icon">
           <TbMessages className="icon1" />
