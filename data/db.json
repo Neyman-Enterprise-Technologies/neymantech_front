@@ -107,5 +107,42 @@
       "card5": "Seo Marketing-5",
       "card6": "Seo Marketing-6"
     }
-  }
+  },
+  "serviceCards": [
+    {
+      "id": 1,
+
+      "title": "IT Consulting1",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+    },
+    {
+      "id": 2,
+      "title": "IT Consulting2",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.222"
+    },
+    {
+      "id": 3,
+
+      "title": "IT Consulting3",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+    },
+    {
+      "id": 4,
+
+      "title": "IT Consulting4",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+    },
+    {
+      "id": 5,
+
+      "title": "IT Consulting5",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+    },
+    {
+      "id": 6,
+
+      "title": "IT Consulting6",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+    }
+  ]
 }
