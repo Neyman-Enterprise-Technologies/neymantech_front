@@ -1,67 +1,111 @@
 {
-  "BlogsCards":[
+  "BlogsCards": [
     {
       "id": 1,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
       "title": " Making Peace With The Feast Or Famine Of Freelancing-1",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-1."
     },
     {
       "id": 2,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-2",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-2."
     },
     {
       "id": 3,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-3",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt-3."
     },
     {
       "id": 4,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-4",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-4"
     },
     {
       "id": 5,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-5",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-5."
     },
     {
       "id": 6,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-6",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.-6"
     },
     {
       "id": 7,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-7",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-7."
     },
     {
       "id": 8,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-8",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-8"
     },
     {
       "id": 9,
-      "imgSrc":
-        "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
       "title": "Making Peace With The Feast Or Famine Of Freelancing-9",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-9."
     }
-  ]
+  ],
+  "team": [
+    {
+      "id": 1,
+      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
+      "name": "John Smith",
+      "job": "Web Developer"
+    },
+    {
+      "id": 2,
+      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
+      "name": "Lucy Eva",
+      "job": "Manager"
+    },
+    {
+      "id": 3,
+      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
+      "name": "Jason Roy",
+      "job": "Graphic Designer"
+    },
+    {
+      "id": 4,
+      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
+      "name": "Lucy Eva",
+      "job": "Manager"
+    },
+    {
+      "id": 5,
+      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
+      "name": "John Smith",
+      "job": "Web Developer"
+    },
+    {
+      "id": 3,
+      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
+      "name": "Jason Roy",
+      "job": "Graphic Designer"
+    }
+  ],
+  "aboutSection1": {
+    "id": 1,
+    "img": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/about-img1-1-1.png",
+    "title": "ABOUT US",
+    "header": "We are digital explorers",
+    "description": "We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication.",
+    "cards": {
+      "card1": "Seo Marketing-1",
+      "card2": "Seo Marketing-2",
+      "card3": "Seo Marketing-3",
+      "card4": "Seo Marketing-4",
+      "card5": "Seo Marketing-5",
+      "card6": "Seo Marketing-6"
+    }
+  }
 }

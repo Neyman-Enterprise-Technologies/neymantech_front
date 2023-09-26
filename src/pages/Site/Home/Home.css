@@ -17,7 +17,7 @@
 /* digital marketing style start */
 .digital-marketing-container {
   width: 100%;
-  padding: 5rem 0 7rem 0;
+  /* padding: 5rem 0 7rem 0; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +41,7 @@
 }
 
 .digital-marketing-container .left .top-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,9 +49,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   gap: 2rem;
   /* /button hovering effect start */
   /* button hovering effect end */
@@ -65,7 +63,8 @@
   line-height: 1.6rem;
   font-size: 1rem;
   font-weight: 900;
-  width: 31rem;
+  /* padding-right: 2rem; */
+  /* width: 31rem; */
 }
 
 .digital-marketing-container .left .top-container .readMore-btn {
@@ -110,6 +109,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 1rem;
 }
 
@@ -464,7 +466,7 @@
 }
 
 .home__service__cards {
-  padding: 1.875rem 5.625rem;
+  /* padding: 1.875rem 5.625rem; */
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,7 +512,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 25rem;
+  width: 29rem;
   height: 20rem;
   background-color: white;
   border-radius: 0.4375rem;
@@ -1086,6 +1088,7 @@ article:has(:hover, :focus) img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 5rem;
+    width: 100%;
   }
   .digital-marketing-container .right {
     width: 100%;
@@ -1161,6 +1164,17 @@ article:has(:hover, :focus) img {
 .card:hover {
     -webkit-box-shadow: inset 50rem 0 0 0 #0000ff;
             box-shadow: inset 50rem 0 0 0 #0000ff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .home__service__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=Home.css.map */
