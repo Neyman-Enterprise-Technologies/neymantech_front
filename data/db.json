@@ -163,6 +163,7 @@
     }
   },
   "webDesignSecHome": {
+    "id": 1,
     "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service2-1.png",
     "title": "Web Design-db",
     "description": "We believe brand interaction is key to communication. Real innovations and positive customer experience are the heart of success.db-2",
@@ -178,5 +179,43 @@
         { "id": 6, "name": "Angular.db" }
       ]
     }
-  }
+  },
+  "latestWorkCardInHome": [
+    {
+      "id": 1,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg",
+      "title": "Development-db-1",
+      "description": "Designing a Better Cinema Experience-db-1"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work2-1.jpg",
+      "title": "Web Development-db-2",
+      "description": "Designing a Better Cinema Experience-db-2"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work3-1.jpg",
+      "title": "eCommerce-db-3",
+      "description": "Designing a Better Cinema Experience-db3"
+    },
+    {
+      "id": 4,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work4-1.jpg",
+      "title": "Development-db-4",
+      "description": "Designing a Better Cinema Experience-db-4"
+    },
+    {
+      "id": 5,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work5-1.jpg",
+      "title": "Angular-db-5",
+      "description": "Designing a Better Cinema Experience-db-5"
+    },
+    {
+      "id": 6,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work6-1.jpg",
+      "title": "Development-db-6",
+      "description": "Designing a Better Cinema Experience-db-6"
+    }
+  ]
 }

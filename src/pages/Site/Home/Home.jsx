@@ -19,6 +19,7 @@ import ServiceCards from "../../../Components/Home/ServiceCards/ServiceCards";
 import UseFetch from "../../../UseFetch";
 import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
 import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
+import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 export default function Home() {
   const { data: serviceCards, error } = UseFetch(
     "http://localhost:8001/serviceCards"
@@ -28,6 +29,9 @@ export default function Home() {
   );
   const { data: webDesignSecHome } = UseFetch(
     "http://localhost:8001/webDesignSecHome"
+  );
+  const { data: latestWorkCardInHome } = UseFetch(
+    "http://localhost:8001/latestWorkCardInHome"
   );
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -72,12 +76,9 @@ export default function Home() {
               {serviceCards && <ServiceCards servicecards={serviceCards} />}
               {error && <div>{error}</div>}
               {/*  */}
-
-              
             </div>
           </div>
 
-          
           <div className="container" id="cards">
             {digitalMarketingSecInHome && (
               <DijitalMarketingSecInHome
@@ -127,90 +128,11 @@ export default function Home() {
 
           <div className="container">
             <div className="home__works">
-              <div className="home__works__content">
-                <h2>Our Latest works</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
-              </div>
-              <div className="home__works__cards">
-                <div className="home__works__cards__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
-                  <div className="info">
-                    <p className="heading">Development</p>
-                    <p className="description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
-                  </div>
-                </div>
-                <div className="home__works__cards__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work2-1.jpg"></img>
-                  <div className="info">
-                    <p className="heading">Development</p>
-                    <p className="description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    {/* <Link to='' 
-                    
-                    
-                    Name='info-btn'>
-                      Case Study
-                    </Link> */}
-                  </div>
-                </div>
-                <div className="home__works__cards__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work3-1.jpg"></img>
-                  <div className="info">
-                    <p className="heading">Development</p>
-                    <p className="description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
-                  </div>
-                </div>
-                <div className="home__works__cards__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work4-1.jpg"></img>
-                  <div className="info">
-                    <p className="heading">Development</p>
-                    <p className="description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
-                  </div>
-                </div>
-                <div className="home__works__cards__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work5-1.jpg"></img>
-                  <div className="info">
-                    <p className="heading">Development</p>
-                    <p className="description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
-                  </div>
-                </div>
-                <div className="home__works__cards__card">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work6-1.jpg"></img>
-                  <div className="info">
-                    <p className="heading">Development</p>
-                    <p className="description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
-                  </div>
-                </div>
-              </div>
+              {latestWorkCardInHome && (
+                <LatestWorkCardInHome
+                  latestWorkCardInHome={latestWorkCardInHome}
+                />
+              )}
             </div>
           </div>
 
