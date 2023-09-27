@@ -31,9 +31,9 @@ const WebDesignSecHome = ({ webDesignSecHome }) => {
            
           </div>
         </div>
-        <Link className="readMore-btn">
+        {/* <Link className="readMore-btn">
           <span>READ MORE</span>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

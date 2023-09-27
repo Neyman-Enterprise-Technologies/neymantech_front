@@ -27,9 +27,9 @@ const DijitalMarketingSecInHome = ({ digitalMarketingSecInHome }) => {
               ))}
             </div>
           </div>
-          <Link className="readMore-btn">
+          {/* <Link className="readMore-btn">
             <span>READ MORE</span>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="right">{<img src={digitalMarketingSecInHome.imgSrc} />}</div>

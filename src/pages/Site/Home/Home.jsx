@@ -20,6 +20,7 @@ import UseFetch from "../../../UseFetch";
 import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
 import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
+import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 export default function Home() {
   const { data: serviceCards, error } = UseFetch(
     "http://localhost:8001/serviceCards"
@@ -33,6 +34,7 @@ export default function Home() {
   const { data: latestWorkCardInHome } = UseFetch(
     "http://localhost:8001/latestWorkCardInHome"
   );
+  const {data:latestNews} = UseFetch("http://localhost:8001/latestNews")
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -188,8 +190,11 @@ export default function Home() {
               </div>
  
             </div> */}
-              <section className="articles">
-                <article>
+              <div className="container">
+                <div className="cards-wrapper">
+              {latestNews && <LatestNews latestNews={latestNews}/>}
+              </div>
+                {/* <article>
                   <div className="article-wrapper">
                     <figure>
                       <img src="/src/images/blog-image1.jpg" alt="" />
@@ -218,8 +223,9 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                </article>
-                <article>
+                </article> */}
+                {/* <article>
+                  {latestNews && <LatestNews latestNews={latestNews}/>}
                   <div className="article-wrapper">
                     <figure>
                       <img src="/src/images/blog-image-2.jpg" alt="" />
@@ -248,8 +254,8 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                </article>
-                <article>
+                </article> */}
+                {/* <article>
                   <div className="article-wrapper">
                     <figure>
                       <img src="/src/images/blog-image-3.jpg" alt="" />
@@ -278,8 +284,8 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                </article>
-              </section>
+                </article> */}
+              </div>
             </div>
           </div>
         </section>

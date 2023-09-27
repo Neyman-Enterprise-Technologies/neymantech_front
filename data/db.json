@@ -217,5 +217,25 @@
       "title": "Development-db-6",
       "description": "Designing a Better Cinema Experience-db-6"
     }
+  ],
+  "latestNews": [
+    {
+      "id": 1,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1-530x430.jpg",
+      "title": "How To Use Music To Boost Your Business-1.db",
+      "description": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-1-db"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1-530x430.jpg",
+      "title": "The Rise Of Marketing and Why You Need It-2-db",
+      "description": "dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-2-db"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-10-1-1-530x430.jpg",
+      "title": "How To Use Music To Boost Your Business-3-db",
+      "description": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-3-db"
+    }
   ]
 }
