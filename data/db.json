@@ -144,5 +144,39 @@
       "title": "IT Consulting6",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
     }
-  ]
+  ],
+  "digitalMarketingSecInHome": {
+    "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png",
+    "title": "DijitalMarketing db",
+    "description": "We believe brand interaction is key to communication. Real innovations and positive customer experience are the heart of success.db",
+    "cardNames": {
+      "leftCards": [
+        { "id": 1, "name": "Seo M-1.db" },
+        { "id": 2, "name": "Seo M-2.db" },
+        { "id": 3, "name": "Seo M-3.db" }
+      ],
+      "rightCards": [
+        { "id": 4, "name": "Seo M-4.db" },
+        { "id": 5, "name": "Seo M-5.db" },
+        { "id": 6, "name": "Seo 6.db" }
+      ]
+    }
+  },
+  "digitalMarketing": {
+    "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png",
+    "title": "DijitalMarketing db",
+    "description": "We believe brand interaction is key to communication. Real innovations and positive customer experience are the heart of success.db",
+    "cardNames": {
+      "leftCards": [
+        { "id": 1, "name": "Seo M-1.db" },
+        { "id": 2, "name": "Seo M-2.db" },
+        { "id": 3, "name": "Seo M-3.db" }
+      ],
+      "rightCards": [
+        { "id": 4, "name": "Seo M-4.db" },
+        { "id": 5, "name": "Seo M-5.db" },
+        { "id": 6, "name": "Seo 6.db" }
+      ]
+    }
+  }
 }

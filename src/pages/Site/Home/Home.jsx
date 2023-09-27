@@ -17,9 +17,13 @@ import { BsFillPatchCheckFill, BsDisplay } from "react-icons/Bs";
 import Carusel from "../../../Components/Carusel/Carusel";
 import ServiceCards from "../../../Components/ServiceCards/ServiceCards";
 import UseFetch from "../../../UseFetch";
+import DijitalMarketingSecInHome from "../../../Components/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
 export default function Home() {
   const { data: serviceCards, error } = UseFetch(
-    "http://localhost:8000/serviceCards"
+    "http://localhost:8001/serviceCards"
+  );
+  const { data: digitalMarketingSecInHome } = UseFetch(
+    " http://localhost:8001/digitalMarketing"
   );
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -262,63 +266,11 @@ export default function Home() {
 
           <div className="container" id="cards">
             {/* digital marketing section start */}
-            <div className="digital-marketing-container">
-              <div className="left">
-                {/* top-container start */}
-                <div className="top-container">
-                  <h2>Digital Marketing</h2>
-                  <p>
-                    We believe brand interaction is key to communication. Real
-                    innovations and positive customer experience are the heart
-                    of success.
-                  </p>
-                  <div className="marketing-cards-container">
-                    <div className="left-cards-container">
-                      <div className="card">
-                        <BsFillPatchCheckFill className="card-icon" />
-                        {""}
-                        <p>SEO Marketing</p>
-                      </div>
-                      <div className="card">
-                        <BsFillPatchCheckFill className="card-icon" />{" "}
-                        <p>SEO Marketing</p>
-                      </div>
-                      <div className="card">
-                        <BsFillPatchCheckFill className="card-icon" />{" "}
-                        <p>SEO Marketing</p>
-                      </div>
-                    </div>
-                    <div className="right-cards-container">
-                      <div className="card">
-                        <BsFillPatchCheckFill className="card-icon" />
-                        {""}
-                        <p>SEO Marketing</p>
-                      </div>
-                      <div className="card">
-                        <BsFillPatchCheckFill className="card-icon" />
-                        {""}
-                        <p>SEO Marketing</p>
-                      </div>
-                      <div className="card">
-                        <BsFillPatchCheckFill className="card-icon" />
-                        {""}
-                        <p>SEO Marketing</p>
-                      </div>
-                    </div>
-                  </div>
-                  <Link className="readMore-btn">
-                    <span>READ MORE</span>
-                  </Link>
-                </div>
-                {/* top-container end */}
-                {/* bottom-container start */}
-                <div className="bottom-container"></div>
-                {/* bottom-container end */}
-              </div>
-              <div className="right">
-                <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png"></img>
-              </div>
-            </div>
+            {digitalMarketingSecInHome && (
+              <DijitalMarketingSecInHome
+                digitalMarketingSecInHome={digitalMarketingSecInHome}
+              />
+            )}
           </div>
           {/* digital marketing section end */}
           {/* web-design-section start */}
