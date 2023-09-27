@@ -59,90 +59,90 @@
     {
       "id": 1,
       "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
-      "name": "John Smith",
-      "job": "Web Developer"
+      "name": "John Smith-db",
+      "job": "Web Developer-db"
     },
     {
       "id": 2,
       "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
-      "name": "Lucy Eva",
-      "job": "Manager"
+      "name": "Lucy Eva-db",
+      "job": "Manager-db"
     },
     {
       "id": 3,
       "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
-      "name": "Jason Roy",
-      "job": "Graphic Designer"
+      "name": "Jason Roy-db",
+      "job": "Graphic Designer-db"
     },
     {
       "id": 4,
       "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
-      "name": "Lucy Eva",
-      "job": "Manager"
+      "name": "Lucy Eva-db",
+      "job": "Manager-db"
     },
     {
       "id": 5,
       "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
-      "name": "John Smith",
-      "job": "Web Developer"
+      "name": "John Smith-db",
+      "job": "Web Developer-db"
     },
     {
       "id": 3,
       "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
-      "name": "Jason Roy",
-      "job": "Graphic Designer"
+      "name": "Jason Roy-db",
+      "job": "Graphic Designer-db"
     }
   ],
   "aboutSection1": {
     "id": 1,
     "img": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/about-img1-1-1.png",
-    "title": "ABOUT US",
-    "header": "We are digital explorers",
-    "description": "We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication.",
+    "title": "ABOUT US-db",
+    "header": "We are digital explorers-db",
+    "description": "We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication.-db",
     "cards": {
-      "card1": "Seo Marketing-1",
-      "card2": "Seo Marketing-2",
-      "card3": "Seo Marketing-3",
-      "card4": "Seo Marketing-4",
-      "card5": "Seo Marketing-5",
-      "card6": "Seo Marketing-6"
+      "card1": "Seo Marketing-1-db",
+      "card2": "Seo Marketing-2-db",
+      "card3": "Seo Marketing-3-db",
+      "card4": "Seo Marketing-4-db",
+      "card5": "Seo Marketing-5-db",
+      "card6": "Seo Marketing-6-db"
     }
   },
   "serviceCards": [
     {
       "id": 1,
 
-      "title": "IT Consulting1",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+      "title": "IT Consulting1-db",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111.-db"
     },
     {
       "id": 2,
-      "title": "IT Consulting2",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.222"
+      "title": "IT Consulting2-db",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.222-db"
     },
     {
       "id": 3,
 
-      "title": "IT Consulting3",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+      "title": "IT Consulting3-db",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111.-db"
     },
     {
       "id": 4,
 
-      "title": "IT Consulting4",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+      "title": "IT Consulting4-db",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111.-db"
     },
     {
       "id": 5,
 
-      "title": "IT Consulting5",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+      "title": "IT Consulting5-db",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111.-db"
     },
     {
       "id": 6,
 
-      "title": "IT Consulting6",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111."
+      "title": "IT Consulting6-db",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium111.-db"
     }
   ],
   "digitalMarketingSecInHome": {
@@ -162,20 +162,20 @@
       ]
     }
   },
-  "digitalMarketing": {
-    "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png",
-    "title": "DijitalMarketing db",
-    "description": "We believe brand interaction is key to communication. Real innovations and positive customer experience are the heart of success.db",
+  "webDesignSecHome": {
+    "imgSrc": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service2-1.png",
+    "title": "Web Design-db",
+    "description": "We believe brand interaction is key to communication. Real innovations and positive customer experience are the heart of success.db-2",
     "cardNames": {
       "leftCards": [
-        { "id": 1, "name": "Seo M-1.db" },
-        { "id": 2, "name": "Seo M-2.db" },
-        { "id": 3, "name": "Seo M-3.db" }
+        { "id": 1, "name": "Res Desi.db" },
+        { "id": 2, "name": "Mob APp.db" },
+        { "id": 3, "name": "React Dev-3.db" }
       ],
       "rightCards": [
-        { "id": 4, "name": "Seo M-4.db" },
-        { "id": 5, "name": "Seo M-5.db" },
-        { "id": 6, "name": "Seo 6.db" }
+        { "id": 4, "name": "UI/UX-4.db" },
+        { "id": 5, "name": "Laravel.db" },
+        { "id": 6, "name": "Angular.db" }
       ]
     }
   }
