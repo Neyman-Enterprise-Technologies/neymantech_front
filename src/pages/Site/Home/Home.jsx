@@ -15,15 +15,19 @@ import { CgScrollV } from "react-icons/Cg";
 import { AiOutlineGlobal } from "react-icons/Ai";
 import { BsFillPatchCheckFill, BsDisplay } from "react-icons/Bs";
 import Carusel from "../../../Components/Carusel/Carusel";
-import ServiceCards from "../../../Components/ServiceCards/ServiceCards";
+import ServiceCards from "../../../Components/Home/ServiceCards/ServiceCards";
 import UseFetch from "../../../UseFetch";
-import DijitalMarketingSecInHome from "../../../Components/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
+import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
+import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
 export default function Home() {
   const { data: serviceCards, error } = UseFetch(
     "http://localhost:8001/serviceCards"
   );
   const { data: digitalMarketingSecInHome } = UseFetch(
-    " http://localhost:8001/digitalMarketing"
+    "http://localhost:8001/digitalMarketingSecInHome"
+  );
+  const { data: webDesignSecHome } = UseFetch(
+    "http://localhost:8001/webDesignSecHome"
   );
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -69,264 +73,24 @@ export default function Home() {
               {error && <div>{error}</div>}
               {/*  */}
 
-              {/* <div className="home__service__cards">
-                <Link to={"/service"}>
-                  <div className="home__service__cards__card">
-                    <div className="home__service__cards__card__icon">
-                      <TbMessages className="icon1" />
-                      <BiSolidBadgeCheck className="badge" />
-                    </div>
-                    <h3>IT Consultancy</h3>
-                    <p>
-                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                      error sit voluptatem accusantium &nbsp; doloremque
-                      laudantium
-                    </p>
-                  </div>
-                </Link>
-                <Link to={"/service"}>
-                  <div className="home__service__cards__card">
-                    <div className="home__service__cards__card__icon">
-                      <AiOutlineGlobal className="icon1" />
-                      <BiSolidBadgeCheck className="badge" />
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>
-                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                      error sit voluptatem accusantium &nbsp; doloremque
-                      laudantium
-                    </p>
-                  </div>
-                </Link>
-                <Link to={"/service"}>
-                  <div className="home__service__cards__card">
-                    <div className="home__service__cards__card__icon">
-                      <BsDisplay className="icon1" />
-                      <BiSolidBadgeCheck className="badge" />
-                    </div>
-                    <h3>Digital Marketing</h3>
-                    <p>
-                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                      error sit voluptatem accusantium &nbsp; doloremque
-                      laudantium
-                    </p>
-                  </div>
-                </Link>
-                <Link to={"/service"}>
-                  <div className="home__service__cards__card">
-                    <div className="home__service__cards__card__icon">
-                      <AiOutlineGlobal className="icon1" />
-                      <BiSolidBadgeCheck className="badge" />
-                    </div>
-                    <h3>App Development</h3>
-                    <p>
-                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                      error sit voluptatem accusantium &nbsp; doloremque
-                      laudantium
-                    </p>
-                  </div>
-                </Link>
-                <Link to={"/service"}>
-                  <div className="home__service__cards__card">
-                    <div className="home__service__cards__card__icon">
-                      <AiOutlineGlobal className="icon1" />
-                      <BiSolidBadgeCheck className="badge" />
-                    </div>
-                    <h3>eCommerce Development</h3>
-                    <p>
-                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                      error sit voluptatem accusantium &nbsp; doloremque
-                      laudantium
-                    </p>
-                  </div>
-                </Link>
-                <Link to={"/service"}>
-                  <div className="home__service__cards__card">
-                    <div className="home__service__cards__card__icon">
-                      <AiOutlineGlobal className="icon1" />
-                      <BiSolidBadgeCheck className="badge" />
-                    </div>
-                    <h3>IT Solutions</h3>
-                    <p>
-                      &nbsp; Sed ut perspiciatis unde omnis iste<br></br> natus
-                      error sit voluptatem accusantium &nbsp; doloremque
-                      laudantium
-                    </p>
-                  </div>
-                </Link>
-              </div> */}
-              {/* SERVICE CARDS END */}
+              
             </div>
           </div>
 
-          {/* <div class="home__top">
-            <div class="home__top__cards">
-              <div class="card ">
-                <div className="dg-market">
-                  <h2>Digital Marketing</h2>
-                  <p>
-                    We believe brand interaction is key to communication. Real
-                    innovations<br></br> and positive customer experience are
-                    the heart of success.
-                  </p>
-                </div>
-                <ul>
-                  <li>
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>SEO Marketing</span>
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Facebook Marketing</span>{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Social Marketing</span>
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Email Marketing</span>
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Data Marketing</span>{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Youtube Marketing</span>
-                  </li>
-                </ul>
-                <Link to="/" className="button-href">
-                {" "}
-                <button>Read More</button>
-              </Link>
-              </div>
-              <div class="card first-home-card">
-                <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service2-1.png"></img>
-              </div>
-            </div>
-
-            <div class="home__top__cards">
-              <div class="card">
-                <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service1-1.png"></img>
-              </div>
-              <div class="card second-home-card">
-                {" "}
-                <div className="dg-market">
-                  <h2>Web design & development</h2>
-                  <p>
-                    We believe brand interaction is key to communication. Real
-                    innovations<br></br> and positive customer experience are
-                    the heart of success.
-                  </p>
-                </div>
-                <ul>
-                  <li>
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Responsive Design</span>
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Mobile App Developer</span>{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>React Development</span>
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>UI/UX Design</span>
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Data Marketing</span>{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    <BsFillPatchCheckFill className="ikon" />{" "}
-                    <span>Angular Developer</span>
-                  </li>
-                </ul>
-              </div>
-              <Link to="/" className="button-href">
-                {" "}
-                <button>Read More</button>
-              </Link>
-            </div>
-          </div> */}
-
+          
           <div className="container" id="cards">
-            {/* digital marketing section start */}
             {digitalMarketingSecInHome && (
               <DijitalMarketingSecInHome
                 digitalMarketingSecInHome={digitalMarketingSecInHome}
               />
             )}
           </div>
-          {/* digital marketing section end */}
-          {/* web-design-section start */}
+
           <div className="container">
-            <div className="web-design-section">
-              <div className="left">
-                <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/it-service2-1.png"></img>
-              </div>
-              <div className="right">
-                <h2>Web Design & Development</h2>
-                <p>
-                  We believe brand interaction is key to communication. Real
-                  innovations and positive customer experience are the heart of
-                  success.
-                </p>
-                <div className="cards-container">
-                  <div className="left-cards-container">
-                    <div className="card">
-                      <BsFillPatchCheckFill className="card-icon" />
-                      {""}
-                      <p>Responsive Design</p>
-                    </div>
-                    <div className="card">
-                      <BsFillPatchCheckFill className="card-icon" />{" "}
-                      <p>Mobile App Development</p>
-                    </div>
-                    <div className="card">
-                      <BsFillPatchCheckFill className="card-icon" />{" "}
-                      <p>React Development</p>
-                    </div>
-                  </div>
-                  <div className="right-cards-container">
-                    <div className="card">
-                      <BsFillPatchCheckFill className="card-icon" />
-                      {""}
-                      <p>UI / UX Design</p>
-                    </div>
-                    <div className="card">
-                      <BsFillPatchCheckFill className="card-icon" />
-                      {""}
-                      <p>Laravel Development</p>
-                    </div>
-                    <div className="card">
-                      <BsFillPatchCheckFill className="card-icon" />
-                      {""}
-                      <p>Angular Development</p>
-                    </div>
-                  </div>
-                </div>
-                <Link className="readMore-btn">
-                  <span>READ MORE</span>
-                </Link>
-              </div>
-            </div>
+            {webDesignSecHome && (
+              <WebDesignSecHome webDesignSecHome={webDesignSecHome} />
+            )}
           </div>
-          {/* web-design-section start */}
 
           {/* <div className="home__video">
             <div className="home__video__content">

@@ -21,7 +21,7 @@
 /* digital marketing style start */
 .digital-marketing-container {
   width: 100%;
-  /* padding: 5rem 0 7rem 0; */
+  padding: 5rem 0 5rem 0;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -255,7 +255,7 @@
       gap: 1rem;
 
       & .left-cards-container {
-        width: 50%;
+        /* width: 50%; */
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
@@ -272,9 +272,9 @@
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.5s;
 
-          & p {
+          /* & p {
             width: 20ch;
-          }
+          } */
           & .card-icon {
             color: #0000ff;
             font-size: 1.2rem;
@@ -301,7 +301,7 @@
       & .right-cards-container {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        /* width: 50%; */
          /* background-color: yellow; */
         gap: 0.6rem;
 
@@ -348,7 +348,7 @@
   width: 100%;
 
   &__content {
-    padding: 5rem 0.625rem 0.625rem 0.625rem;
+    padding: 5rem 0.625rem 5rem 0.625rem;
     width: 40%;
     margin: auto;
     text-align: center;
@@ -373,7 +373,7 @@
     /* padding: 1.875rem 5.625rem; */
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.25rem;
@@ -887,6 +887,7 @@ article:has(:hover, :focus) {
 
     .home__works{
       &__cards {
+        justify-content: center;
         &__card {
           /* width: 33rem; */
           height: 37rem;
@@ -905,9 +906,11 @@ article:has(:hover, :focus) {
   }
   .home__works {
     &__cards {
+      justify-content: center;
       &__card {
         width: 33rem;
         height: 39.25rem;
+        
 
         & .info {
           & .description {
@@ -1003,6 +1006,7 @@ article:has(:hover, :focus) {
   .web-design-section .right .cards-container .left-cards-container .card:hover,
   .web-design-section
     .right
+
     .cards-container
     .right-cards-container
     .card:hover {
