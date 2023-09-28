@@ -1,8 +1,3 @@
-
-
-
-
-
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -15,7 +10,7 @@
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-   /* background-color: red; */
+  /* background-color: red; */
 }
 
 /* digital marketing style start */
@@ -25,18 +20,16 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-   /* background-color: blue; */
+  /* background-color: blue; */
   & .left {
     display: flex;
     flex-direction: column;
     width: 50%;
-     /* background-color: yellow; */
+    /* background-color: yellow; */
     & .top-container {
-     
       width: 100%;
       display: flex;
       flex-direction: column;
-
 
       gap: 2rem;
       & h2 {
@@ -70,21 +63,21 @@
       }
 
       & .readMore-btn::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
         width: 0px;
         height: 0px;
         background: orange;
-         /* border-radius: 20%; */
+        /* border-radius: 20%; */
         transition: width 0.5s, height 0.5s;
       }
       & .readMore-btn:hover::before {
         width: 18.75rem;
         height: 18.75rem;
       }
-            /* button hovering effect end */
+      /* button hovering effect end */
     }
     & .marketing-cards-container {
       display: flex;
@@ -103,7 +96,7 @@
           background-color: #f8faff;
           padding: 1rem 5rem 1rem 1rem;
           gap: 0.75rem;
-           /* font-size: 0.5rem; */
+          /* font-size: 0.5rem; */
           font-weight: 700;
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
@@ -174,9 +167,9 @@
     position: relative;
     width: 50%;
     & img {
-      position: absolute;
-       width: 100%;
-      /* height: 100%; */
+      /* position: absolute; */
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
@@ -192,10 +185,9 @@
   justify-content: space-between;
   gap: 1rem;
 
-
   & .left {
     position: relative;
-     /* width: 50%; */
+    /* width: 50%; */
     & img {
       /* position: absolute; */
       object-fit: cover;
@@ -206,14 +198,14 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-     /* width: 50%; */
+    /* width: 50%; */
     & .readMore-btn {
       position: relative;
 
       font-size: 0.9rem;
       padding: 0.9375rem 30px;
       background-color: #0000ff;
-       /* background: #737b73; */
+      /* background: #737b73; */
       overflow: hidden;
       color: #fff;
       border-radius: 0.3rem;
@@ -225,7 +217,7 @@
     }
 
     & .readMore-btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -259,7 +251,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
-         /* background-color: red; */
+        /* background-color: red; */
         & .card {
           display: flex;
           align-items: center;
@@ -282,32 +274,27 @@
         }
         & .card:hover {
           box-shadow: inset 30rem 0 0 0 #0000ff;
-      
 
           & .card-icon {
             color: white;
             font-size: 1.2rem;
           }
 
-        
-
-         
           & p {
             color: #fff;
           }
         }
-       
       }
       & .right-cards-container {
         display: flex;
         flex-direction: column;
         /* width: 50%; */
-         /* background-color: yellow; */
+        /* background-color: yellow; */
         gap: 0.6rem;
 
         & .card {
           display: flex;
-       
+
           align-items: center;
           background-color: #f8faff;
           padding: 1rem 5rem 1rem 1rem;
@@ -317,7 +304,7 @@
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.5s;
-        /*   & p {
+          /*   & p {
             width: 12ch;
           } */
           & .card-icon {
@@ -352,24 +339,25 @@
     width: 40%;
     margin: auto;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 
     h2 {
       padding: 0.9375rem 0rem 0rem 0rem;
       font-size: 2.5rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
 
     p {
       color: #737b73;
       font-size: 1.125rem;
       padding: 0.625rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.6rem;
+      font-weight: 900;
     }
   }
 
   &__cards {
- 
     /* padding: 1.875rem 5.625rem; */
     width: 100%;
     display: flex;
@@ -377,7 +365,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1.25rem;
-    a{
+    a {
       margin: 0px;
     }
 
@@ -390,17 +378,17 @@
 
     &__card {
       transition: 0.6s ease;
-     display: flex;
-     flex-direction: column;
-     gap: 1rem;
-     align-items: center;
-     justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
       width: 29rem;
-   
+
       height: 20rem;
       background-color: white;
       border-radius: 0.4375rem;
-      padding: .5rem ;
+      padding: 0.5rem;
 
       &__icon {
         position: relative;
@@ -409,14 +397,13 @@
         /* background-color: #f9f9fc; */
         background-color: #ececff;
         border-radius: 50%;
-      
-     
-       .badge{
-        position: absolute;
-        font-size: 1.5rem;
-        bottom: 3.3rem;
-        color: #0000ff;
-       }
+
+        .badge {
+          position: absolute;
+          font-size: 1.5rem;
+          bottom: 3.3rem;
+          color: #0000ff;
+        }
 
         .icon1 {
           color: #0000ff;
@@ -429,19 +416,19 @@
       h3 {
         text-align: center;
         padding: 0.625rem;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 1.5rem;
         color: black;
       }
 
       p {
- padding: 0.5rem 1rem;
+        padding: 0.5rem 1rem;
         color: #737b73;
         font-size: 0.9375rem;
         line-height: 1.6;
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
       }
     }
   }
@@ -453,17 +440,13 @@
   justify-content: center;
 }
 
-
-
 .dg-market {
   width: 100%;
 }
 
-
-
 .home__top__cards {
   a {
-     /* border: solid; */
+    /* border: solid; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -473,8 +456,6 @@
 .first-home-card {
   justify-content: flex-end;
 }
-
-
 
 /* .home__video {
   width: 100%;
@@ -557,37 +538,47 @@
   animation: rotateAnimation 10s linear infinite;
 } */
 
-
-
 .home__works {
-  color: #737b9a;
   line-height: 1.6rem;
   font-size: 1rem;
   font-weight: 900;
+  &__header {
+    text-align: center;
+    padding: 2rem 0;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #737b9a;
+      width: 50%;
+    }
+  }
 
-   /* background-color: #f9f9fc; */
-   /* padding: 4px 0px 20px 0px; */
-   /* width: 100%; */
+  /* background-color: #f9f9fc; */
+  /* padding: 4px 0px 20px 0px; */
+  /* width: 100%; */
 
   &__content {
-     /* padding: 80px 10px 10px 10px; */
-     /* width: 40%; */
+    /* padding: 80px 10px 10px 10px; */
+    /* width: 40%; */
     margin: auto;
     line-height: 3rem;
     text-align: center;
 
     h2 {
       color: black;
-       /* padding: 15px 0px 0px 0px; */
+      /* padding: 15px 0px 0px 0px; */
       font-size: 2rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
 
     p {
       color: #737b9a;
       font-size: 1.125rem;
       padding: 0.625rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
   }
 
@@ -597,6 +588,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1.875rem;
+    padding: 3rem 0;
     &__card {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
       display: flex;
@@ -644,7 +636,7 @@
       transform: translateY(5px);
     }
     &__card::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -663,14 +655,13 @@
   }
 }
 
-
 .home__blogs {
   background-color: #f9f9fc;
   padding: 0.25rem 0rem 5.625rem 0rem;
   width: 100%;
 
   &__content {
-    padding: 5rem 0.625rem ;
+    padding: 5rem 0.625rem;
     width: 40%;
     margin: auto;
     text-align: center;
@@ -678,7 +669,7 @@
     h2 {
       padding: 15px 0px 0px 0px;
       font-size: 2.5rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
   }
 
@@ -717,13 +708,13 @@
 
         h2 {
           padding: 1.25rem 1.875rem;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
         }
 
         p {
           color: #737b73;
           padding: 0.625rem 1.875rem;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
 
           font-size: 1.125rem;
         }
@@ -731,7 +722,6 @@
     }
   }
 }
-
 
 .home__feedback {
   background-color: #f9f9fc;
@@ -748,7 +738,7 @@
     h2 {
       padding: 15px 0px 70px 0px;
       font-size: 2.5rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
 
     p {
@@ -756,11 +746,10 @@
       font-size: 2rem;
       color: #0000ff;
       font-weight: 500;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
   }
 }
-
 
 .scroll-to-top {
   position: fixed;
@@ -778,7 +767,6 @@
   opacity: 0.8;
 }
 
-
 /* home blogs  component start  */
 article {
   --img-scale: 1.001;
@@ -788,7 +776,7 @@ article {
   --link-icon-opacity: 0;
 
   position: relative;
-   /* border-radius: 16px; */
+  /* border-radius: 16px; */
   box-shadow: none;
   background: #fff;
   transform-origin: center;
@@ -799,7 +787,7 @@ article {
     inset-block: 0;
     inset-inline: 0;
     cursor: pointer;
-    content: '';
+    content: "";
   }
   & h2 {
     margin: 0 0 18px 0;
@@ -878,28 +866,24 @@ article:has(:hover, :focus) {
     max-width: 960px !important;
     
   } */
- 
-  @media screen and (max-width: 1200px){
-    .container{
-      max-width: 960px !important;
 
-    }
-
-    .home__works{
-      &__cards {
-        justify-content: center;
-        &__card {
-          /* width: 33rem; */
-          height: 37rem;
-        }
-      }
-  
-    }
-
-
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
   }
 
- /* @media screen and (max-width: 992px) */
+  .home__works {
+    &__cards {
+      justify-content: center;
+      &__card {
+        /* width: 33rem; */
+        height: 37rem;
+      }
+    }
+  }
+}
+
+/* @media screen and (max-width: 992px) */
 @media screen and (max-width: 992px) {
   .container {
     max-width: 720px !important;
@@ -910,7 +894,6 @@ article:has(:hover, :focus) {
       &__card {
         width: 33rem;
         height: 39.25rem;
-        
 
         & .info {
           & .description {
@@ -931,20 +914,17 @@ article:has(:hover, :focus) {
     position: relative;
     flex-direction: column;
     margin-bottom: 5rem;
-   width: 100%;
-
+    width: 100%;
   }
   .digital-marketing-container .right {
     width: 100%;
     height: 450px;
-
   }
 
   .digital-marketing-container .right img {
     position: absolute;
     object-fit: scale-down;
     width: 100%;
-   
   }
 
   .digital-marketing-container .left {
@@ -988,7 +968,6 @@ article:has(:hover, :focus) {
 
   /* digital marketing media max-992px end */
 
-
   /* Web Design Development section  media max-992 start */
   .web-design-section {
     flex-direction: column;
@@ -1008,7 +987,6 @@ article:has(:hover, :focus) {
   .web-design-section .right .cards-container .left-cards-container .card:hover,
   .web-design-section
     .right
-
     .cards-container
     .right-cards-container
     .card:hover {
@@ -1019,10 +997,9 @@ article:has(:hover, :focus) {
   .container {
     max-width: 540px !important;
   }
-  .home__service{
-    &__cards{
+  .home__service {
+    &__cards {
       justify-content: center;
     }
   }
 }
-    

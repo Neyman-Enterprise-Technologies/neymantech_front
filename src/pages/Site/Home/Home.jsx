@@ -95,6 +95,10 @@ export default function Home() {
 
           <div className="container">
             <div className="home__works">
+              <div className="home__works__header">
+                <h2>Our latest works</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              </div>
               {latestWorkCardInHome && (
                 <LatestWorkCardInHome
                   latestWorkCardInHome={latestWorkCardInHome}
