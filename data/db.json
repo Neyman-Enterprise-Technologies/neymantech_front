@@ -237,5 +237,28 @@
       "title": "How To Use Music To Boost Your Business-3-db",
       "description": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-3-db"
     }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "title": "Email Here-db",
+      "contactType1": "admin@varn.com-db",
+      "contactType2": "hello@varn.com-db",
+      "icon":"MdOutlineMarkEmailRead"
+    },
+    {
+      "id": 2,
+      "title": "Location Here-db",
+      "contactType1": "2750 Quadra Street Victoria Road-db",
+      "contactType2": ", New York, Canada-db",
+      "icon":"ImLocation"
+    },
+    {
+      "id": 3,
+      "title": "Phone Here-db",
+      "contactType1": "+123 456 7890-db",
+      "contactType2": ", +241 452 4526",
+      "icon":"BsFillTelephoneFill"
+    }
   ]
 }

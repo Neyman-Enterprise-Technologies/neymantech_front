@@ -1,4 +1,19 @@
-.team-container {
+
+.teamSection .teamHeaderContainer{
+  text-align: center;
+  padding: 2rem 0;
+}
+.teamSection .teamHeaderContainer p{
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: blue;
+  font-weight: 500;
+}
+.teamSection .teamHeaderContainer h2{
+  font-size: 2.5rem;
+  width: 35%;
+}
+.teamSection .team-container {
   display: flex;
   width: 100%;
   justify-content: space-between;

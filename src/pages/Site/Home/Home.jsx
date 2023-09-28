@@ -22,19 +22,15 @@ import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesig
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 export default function Home() {
-  const { data: serviceCards, error } = UseFetch(
-    "http://localhost:8001/serviceCards"
-  );
-  const { data: digitalMarketingSecInHome } = UseFetch(
-    "http://localhost:8001/digitalMarketingSecInHome"
-  );
-  const { data: webDesignSecHome } = UseFetch(
-    "http://localhost:8001/webDesignSecHome"
-  );
-  const { data: latestWorkCardInHome } = UseFetch(
-    "http://localhost:8001/latestWorkCardInHome"
-  );
-  const {data:latestNews} = UseFetch("http://localhost:8001/latestNews")
+
+  const apiUrl = import.meta.env.VITE_API_URL;
+
+  
+  const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
+  const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}digitalMarketingSecInHome`);
+  const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
+  const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
+  const {data:latestNews} = UseFetch(`${apiUrl}latestNews`)
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -95,38 +91,7 @@ export default function Home() {
             )}
           </div>
 
-          {/* <div className="home__video">
-            <div className="home__video__content">
-              <div className="home__video__content__tegs">
-                <h2>
-                  Why choose us to watch<br></br> this video more!
-                </h2>
-                <p>
-                  No fake products and services. The customer is king, their
-                  lives and needs are the<br></br> inspiration.
-                </p>
-                <Link to="/contact" className="button-href">
-                  <button>Contact Us</button>
-                </Link>
-              </div>
-              <div className="home__video__content__videoteg">
-                {showIcon && (
-                  <div className="icon4" onClick={handleIconClick}>
-                    &#9658;
-                  </div>
-                )}
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/HhX0PWeePTk"
-                  title="none"
-                  frameborder="none"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div> */}
+        
 
           <div className="container">
             <div className="home__works">

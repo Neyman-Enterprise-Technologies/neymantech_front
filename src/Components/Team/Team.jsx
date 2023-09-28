@@ -2,6 +2,11 @@ import "./Team.scss"
 
 const Team = ({ team }) => {
   return (
+    <section className="teamSection">
+    <div className="teamHeaderContainer">
+       <p>OUR TEAM</p>
+       <h2>Meet our awesome team member</h2>
+    </div>
     <div className="team-container">
       {team.map((member) => (
         <div className="team-container__cardContainer" key={member.id}>
@@ -15,6 +20,7 @@ const Team = ({ team }) => {
         </div>
       ))}
     </div>
+    </section>
   );
 };
 

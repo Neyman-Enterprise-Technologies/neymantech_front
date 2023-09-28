@@ -4,8 +4,14 @@ import Loading from "../../../Components/Loading/Loading";
 // import { BiChevronRight } from "react-icons/Bi";
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import UseFetch from "../../../UseFetch";
+
 
 export default function Project() {
+const apiUrl = import.meta.env.VITE_API_URL;
+const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}/latestWorkCardInHome`)
+
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -53,6 +59,8 @@ export default function Project() {
               
              <div className="container">
              <div className="project-cards-container">
+            {latestWorkCardInHome && <LatestWorkCardInHome/>}
+
                 <div className="project-cards-container__card">
                   <img className="project-cards-container__image"  src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"/>
                   <div className="project-cards-container__info">

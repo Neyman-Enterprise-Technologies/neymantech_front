@@ -5,13 +5,14 @@ import Loading from "../../../Components/Loading/Loading";
 import { AiOutlineSearch } from "react-icons/Ai";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
-import BlogList from "../../../Components/BlogList";
+import BlogList from "../../../Components/BlogList/BlogList";
 import UseFetch from "../../../UseFetch";
 
 // import Pagination from "../../../Components/pagination/pagination";
 
 export default function Blogs() {
-  const {data:blogs, error} = UseFetch('http://127.0.0.1:8000/blog_api/blog/')
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog`)
  
 
   const [loading, setLoading] = useState(false);

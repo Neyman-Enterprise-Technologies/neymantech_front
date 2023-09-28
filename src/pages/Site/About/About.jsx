@@ -17,9 +17,8 @@ import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
 import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
 export default function About() {
-  const { data: teAm, error } = UseFetch("http://127.0.0.1:8000/our_team/");
-  const { data: aboutSection1 } = UseFetch("http://localhost:8000/aboutSection1"
-  );
+  const { data: teAm, error } = UseFetch(" http://localhost:8001/team");
+  const { data: aboutSection1 } = UseFetch("http://localhost:8001/aboutSection1");
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
