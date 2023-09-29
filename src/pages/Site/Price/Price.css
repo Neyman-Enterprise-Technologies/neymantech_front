@@ -49,9 +49,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  /* width: fit-content; */
   gap: 0.5rem;
 }
 
@@ -273,6 +271,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
   .cardsContainer {
     width: 100%;
   }

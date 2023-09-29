@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from "react";
-import "./Blogs.scss";
-
-import Loading from "../../../Components/Loading/Loading";
-import { AiOutlineSearch } from "react-icons/Ai";
+import { useParams } from "react-router-dom";
+import UseFetch from "../../UseFetch";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
-import BlogList from "../../../Components/BlogList/BlogList";
-import UseFetch from "../../../UseFetch";
+import { AiOutlineSearch } from "react-icons/Ai";
+import Loading from "../../Components/Loading/Loading";
+import "./BlogDetails.scss";
 
-// import Pagination from "../../../Components/pagination/pagination";
-
-export default function Blogs() {
+const BlogDetails = () => {
+  const { id } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
-  const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog/`)
-  // const {data:blogs, error} = UseFetch(`${apiUrl}blogs`)
- 
+  const { data: blog, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
+  // const { data: blog, error } = UseFetch("http://localhost:8001/blog/" + id);
 
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     window.scrollTo({ top: 0 });
@@ -31,33 +29,52 @@ export default function Blogs() {
       ) : (
         <div>
           {/* heading start */}
-          <div className="blogHeader">
-            <div className="container">
+
+          {/* heading end */}
+
+          <div className="blogDetailsHeader">
+         
+         
               <div className="blogTitle">
                 <h2>
-                  B<span>lo</span>g
+                The Rise Of Marketin<span>g</span>And Why You Need It
                 </h2>
               </div>
-            </div>
+           
             <div className="blogLinks">
               <Link to="/home" className="blogLink">
                 Home
               </Link>
               <FaAngleRight className="angleIcon" />
-              <Link to="blog">Blog</Link>
+              <Link to="blog" className="blogLink">Blog</Link>
+              <FaAngleRight  className="angleIcon" />
+              <Link to="blog">The Rise Of Marketing And Why You Need It</Link>
+              
             </div>
+        
           </div>
-          {/* heading end */}
-
-          <div className="container">
-            <section className="blogs">
+           <div className="container">
+           <section className="blogDetails">
               <div className="left">
-                {/* BlogList Component start */}
+                {/* BlogDetails Component start */}
 
                 {error && <div>{error}</div>}
-                {blogs && <BlogList blogs={blogs} />}
+                {blog && (
+                  <div className="cards-container">
+                    <div className="card">
+                      <div className="cardImgContainer">
+                        {/* r */}
+                        <img src={blog.photo} />
+                      </div>
+                      <div className="bottom-content">
+                        {/* <h2>{blog.title}</h2> */}
+                        <p>{blog.long_descriptions}</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
-                {/* BlogList Component end */}
+                {/* BlogDetails Component end */}
               </div>
               <div className="right">
                 <div className="search">
@@ -162,9 +179,12 @@ export default function Blogs() {
                 </div>
               </div>
             </section>
-          </div>
+           </div>
+          
         </div>
       )}
     </>
   );
-}
+};
+
+export default BlogDetails;
