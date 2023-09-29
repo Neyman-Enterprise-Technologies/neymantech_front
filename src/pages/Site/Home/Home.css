@@ -697,7 +697,7 @@
 .home__works__header p {
   font-size: 1.125rem;
   color: #737b9a;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .home__works__content {
