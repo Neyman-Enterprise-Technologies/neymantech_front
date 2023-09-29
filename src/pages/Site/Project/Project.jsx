@@ -5,6 +5,7 @@ import Loading from "../../../Components/Loading/Loading";
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import UseFetch from "../../../UseFetch";
+import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
 
 export default function Project() {
@@ -59,80 +60,68 @@ const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}/latestWorkCardInHome`)
               
              <div className="container">
              <div className="project-cards-container">
-            {latestWorkCardInHome && <LatestWorkCardInHome/>}
+            {latestWorkCardInHome && <LatestWorkCardInHome latestWorkCardInHome={latestWorkCardInHome}/>}
 
-                <div className="project-cards-container__card">
+                {/* <div className="project-cards-container__card">
                   <img className="project-cards-container__image"  src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"/>
                   <div className="project-cards-container__info">
                     <p className="project-cards-container__heading">Development</p>
                     <p className="project-cards-container__description">
                       Designing a Better Cinema Experience
                     </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
+                   
                   </div>
-                </div>
-                <div className="project-cards-container__card">
+                </div> */}
+                {/* <div className="project-cards-container__card">
                   <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work4-1.jpg"></img>
                   <div className="project-cards-container__info">
                     <p className="project-cards-container__heading">Development</p>
                     <p className="project-cards-container__description">
                       Designing a Better Cinema Experience
                     </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
+                    
                   </div>
-                </div>
-                <div className="project-cards-container__card">
+                </div> */}
+                {/* <div className="project-cards-container__card">
                   <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
                   <div className="project-cards-container__info">
                     <p className="project-cards-container__heading">Development</p>
                     <p className="project-cards-container__description">
                       Designing a Better Cinema Experience
                     </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
+                   
                   </div>
-                </div>
-                <div className="project-cards-container__card">
+                </div> */}
+                {/* <div className="project-cards-container__card">
                   <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
                   <div className="project-cards-container__info">
                     <p className="project-cards-container__heading">Development</p>
                     <p className="project-cards-container__description">
                       Designing a Better Cinema Experience
                     </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
+                   
                   </div>
-                </div>
-                <div className="project-cards-container__card">
+                </div> */}
+                {/* <div className="project-cards-container__card">
                   <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work5-1.jpg"></img>
                   <div className="project-cards-container__info">
                     <p className="project-cards-container__heading">Development</p>
                     <p className="project-cards-container__description">
                       Designing a Better Cinema Experience
                     </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
+                    
                   </div>
-                </div>
-                <div className="project-cards-container__card">
+                </div> */}
+                {/* <div className="project-cards-container__card">
                   <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
                   <div className="project-cards-container__info">
                     <p className="project-cards-container__heading">Development</p>
                     <p className="project-cards-container__description">
                       Designing a Better Cinema Experience
                     </p>
-                    {/* <Link to='' className='info-btn'>
-                      Case Study
-                    </Link> */}
+                    
                   </div>
-                </div>
+                </div> */}
               </div>
              </div>
            

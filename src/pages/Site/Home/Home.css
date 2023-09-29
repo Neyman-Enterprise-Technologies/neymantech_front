@@ -88,7 +88,7 @@
 }
 
 .digital-marketing-container .left .top-container .readMore-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -231,9 +231,9 @@
 }
 
 .digital-marketing-container .right img {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -294,7 +294,7 @@
 }
 
 .web-design-section .right .readMore-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -448,20 +448,22 @@
   width: 40%;
   margin: auto;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home__service__content h2 {
   padding: 0.9375rem 0rem 0rem 0rem;
   font-size: 2.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home__service__content p {
   color: #737b73;
   font-size: 1.125rem;
   padding: 0.625rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6rem;
+  /* font-weight: 900; */
 }
 
 .home__service__cards {
@@ -515,7 +517,7 @@
   height: 20rem;
   background-color: white;
   border-radius: 0.4375rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .home__service__cards__card__icon {
@@ -544,7 +546,7 @@
 .home__service__cards__card h3 {
   text-align: center;
   padding: 0.625rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: black;
@@ -556,7 +558,7 @@
   font-size: 0.9375rem;
   line-height: 1.6;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .button-href {
@@ -674,13 +676,28 @@
   animation: rotateAnimation 10s linear infinite;
 } */
 .home__works {
-  color: #737b9a;
   line-height: 1.6rem;
   font-size: 1rem;
-  font-weight: 900;
+  /* font-weight: 900; */
   /* background-color: #f9f9fc; */
   /* padding: 4px 0px 20px 0px; */
   /* width: 100%; */
+}
+
+.home__works__header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.home__works__header h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home__works__header p {
+  font-size: 1rem;
+  color: #737b9a;
+width: 50%;
 }
 
 .home__works__content {
@@ -695,14 +712,14 @@
   color: black;
   /* padding: 15px 0px 0px 0px; */
   font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home__works__content p {
   color: #737b9a;
   font-size: 1.125rem;
   padding: 0.625rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home__works__cards {
@@ -718,6 +735,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1.875rem;
+  padding: 3rem 0;
 }
 
 .home__works__cards__card {
@@ -790,7 +808,7 @@
 }
 
 .home__works__cards__card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -826,7 +844,7 @@
 .home__blogs__content h2 {
   padding: 15px 0px 0px 0px;
   font-size: 2.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home__blogs__cards {
@@ -876,13 +894,13 @@
 
 .home__blogs__cards__card__content h2 {
   padding: 1.25rem 1.875rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home__blogs__cards__card__content p {
   color: #737b73;
   padding: 0.625rem 1.875rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
 }
 
@@ -903,7 +921,7 @@
 .home__feedback__content h2 {
   padding: 15px 0px 70px 0px;
   font-size: 2.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home__feedback__content p {
@@ -911,7 +929,7 @@
   font-size: 2rem;
   color: #0000ff;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .scroll-to-top {
@@ -954,7 +972,7 @@ article .read-more::after {
   inset-block: 0;
   inset-inline: 0;
   cursor: pointer;
-  content: '';
+  content: "";
 }
 
 article h2 {

@@ -22,15 +22,16 @@ import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesig
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 export default function Home() {
-
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  
   const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
-  const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}digitalMarketingSecInHome`);
+  const { data: digitalMarketingSecInHome } = UseFetch(
+    `${apiUrl}digitalMarketingSecInHome`
+  );
   const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
+  // const { data: latestWorkCardInHome } = UseFetch("http://127.0.0.1:8000/service_api/last_works/");
   const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const {data:latestNews} = UseFetch(`${apiUrl}latestNews`)
+  const { data: latestNews } = UseFetch(`${apiUrl}latestNews`);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -91,13 +92,14 @@ export default function Home() {
             )}
           </div>
 
-        
-
           <div className="container">
             <div className="home__works">
               <div className="home__works__header">
                 <h2>Our latest works</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna.
+                </p>
               </div>
               {latestWorkCardInHome && (
                 <LatestWorkCardInHome
@@ -161,8 +163,8 @@ export default function Home() {
             </div> */}
               <div className="container">
                 <div className="cards-wrapper">
-              {latestNews && <LatestNews latestNews={latestNews}/>}
-              </div>
+                  {latestNews && <LatestNews latestNews={latestNews} />}
+                </div>
                 {/* <article>
                   <div className="article-wrapper">
                     <figure>

@@ -11,11 +11,11 @@ const Team = ({ team }) => {
       {team.map((member) => (
         <div className="team-container__cardContainer" key={member.id}>
           <div className="team-container__profile-container">
-            <img src={member.memberProfile} alt="" />
+            <img src={member.image} alt="" />
           </div>
           <div className="team-container__profile-details">
-            <p className="team-container__name">{member.name}</p>
-            <p className="team-container__job">{member.job}</p>
+            <p className="team-container__name">{member.fullname}</p>
+            <p className="team-container__job">{member.position}</p>
           </div>
         </div>
       ))}
