@@ -4,7 +4,7 @@ const BlogList = ({ blogs }) => {
       {blogs.map((blog) => (
         <div className="card" key={blog.id}>
           <div className="cardImgContainer">
-          
+          {/* r */}
             <img src={blog.photo} />
           </div>
           <div className="bottom-content">
