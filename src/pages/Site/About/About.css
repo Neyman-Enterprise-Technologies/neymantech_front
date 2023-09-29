@@ -448,7 +448,7 @@
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
   .team-container {
     -webkit-box-pack: center;

@@ -114,20 +114,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1.875rem;
-}
-
-.project-cards-container__card:hover::before {
-  opacity: 1;
-}
-
-.project-cards-container__card:hover {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-}
-
-.project-cards-container__card:hover .info {
-  -webkit-transform: translateY(-80px);
-          transform: translateY(-80px);
+  padding: 3rem 0;
 }
 
 .project-cards-container__card {
@@ -139,8 +126,8 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   width: 28%;
@@ -149,18 +136,12 @@
   text-align: center;
 }
 
-.project-cards-container__card img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.project-cards-container__card:hover::before {
+  opacity: 1;
 }
 
-.project-cards-container__card__card::before {
-  content: '';
+.project-cards-container__card::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -174,6 +155,16 @@
   transition: 0.5s all;
   opacity: 0.2;
   cursor: pointer;
+}
+
+.project-cards-container__card:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.project-cards-container__card:hover .project-cards-container__info {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
 }
 
 .project-cards-container__info {
@@ -206,5 +197,40 @@
   line-height: 2rem;
 }
 
+.project-cards-container__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* PROJECT CARDS END */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+  .project-cards-container__card {
+    height: 37rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .project-cards-container__card {
+    width: 33rem;
+    height: 39.25rem;
+  }
+  .project-cards-container__description {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .project-cards-container__heading {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=Project.css.map */
