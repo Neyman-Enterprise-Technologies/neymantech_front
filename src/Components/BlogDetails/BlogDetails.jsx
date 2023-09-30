@@ -10,8 +10,8 @@ import "./BlogDetails.scss";
 const BlogDetails = () => {
   const { id } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
-  const { data: blog, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
-  // const { data: blog, error } = UseFetch("http://localhost:8001/blog/" + id);
+  // const { data: blog, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
+  const { data: blog, error } = UseFetch("http://localhost:8001/blog/" + id);
 
   const [loading, setLoading] = useState(false);
 

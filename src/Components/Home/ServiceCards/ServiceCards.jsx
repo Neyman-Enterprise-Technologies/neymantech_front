@@ -17,8 +17,8 @@ const ServiceCards = ({servicecards}) => {
           <TbMessages className="icon1" />
           <BiSolidBadgeCheck className="badge" />
           </div>
-          <h3>{card.title}</h3>
-          <p>{card.description}</p>
+          <h3>{card.property_name}</h3>
+          <p>{card.package}</p>
           </div>
         </Link>
 
