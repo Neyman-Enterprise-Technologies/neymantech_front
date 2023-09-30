@@ -1,7 +1,15 @@
+
 import { Link } from "react-router-dom";
 
+
+
 const BlogList = ({ blogs }) => {
-  return (
+
+
+// const [searchCard, setSearchCard] = useState("")
+// console.log(searchCard);
+ 
+return (
     <div className="cards-container">
       {blogs.map((blog) => (
         <Link to={`/blogs/${blog.id}`} key={blog.id}>
@@ -12,7 +20,7 @@ const BlogList = ({ blogs }) => {
           </div>
           <div className="bottom-content">
             <h2>{blog.title}</h2>
-            <p>{blog.short_descriptions}</p>
+            {/* <p>{blog.short_descriptions}</p> */}
           </div>
         </div>
         </Link>

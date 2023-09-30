@@ -13,8 +13,21 @@ import UseFetch from "../../../UseFetch";
 export default function Blogs() {
   const apiUrl = import.meta.env.VITE_API_URL;
   // const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog/`)
-  const {data:blogs, error} = UseFetch(`${apiUrl}blogs`)
- 
+  const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
+
+  const [searchCard, setSearchCard] = useState("");
+
+  
+ /*   select by category start*/
+ const [selectedCategory, setSelectedCategory] = useState(null);
+
+ const filteredBlogs = selectedCategory ? blogs.filter((blog) => blog.category === selectedCategory) : blogs;
+
+ const handleCategoryClick = (category) => {
+   setSelectedCategory(category);
+ };
+ /*   select by category end*/
+
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -55,14 +68,26 @@ export default function Blogs() {
                 {/* BlogList Component start */}
 
                 {error && <div>{error}</div>}
-                {blogs && <BlogList blogs={blogs} />}
+                {blogs && filteredBlogs && (
+                  <BlogList
+                    blogs={blogs.filter((item) => {
+                      return searchCard.toLowerCase() === ""
+                        ? item
+                        : item.title.toLowerCase().includes(searchCard);
+                    })}
+                  />
+                )}
 
                 {/* BlogList Component end */}
               </div>
               <div className="right">
                 <div className="search">
                   <div className="input-button-container">
-                    <input type="text" placeholder="search..." />
+                    <input
+                      type="text"
+                      placeholder="search..."
+                      onChange={(e) => setSearchCard(e.target.value)}
+                    />
                     <div className="search-icon-container">
                       <AiOutlineSearch className="search-icon" />
                     </div>
@@ -71,73 +96,37 @@ export default function Blogs() {
                 <div className="recent-posts-container">
                   <h2>Recent Posts</h2>
 
-                  <div className="post-details">
-                    <div className="details-img">
-                      <img
-                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="description">
-                      <p className="date">April 25,2020</p>
-                      <p className="title">
-                        Making Peace With The Feast Or Famine Of Freelancing
-                      </p>
-                    </div>
-                  </div>
-                  <div className="post-details">
-                    <div className="details-img">
-                      <img
-                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="description">
-                      <p className="date">April 25,2020</p>
-                      <p className="title">
-                        Making Peace With The Feast Or Famine Of Freelancing
-                      </p>
-                    </div>
-                  </div>
-                  <div className="post-details">
-                    <div className="details-img">
-                      <img
-                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="description">
-                      <p className="date">April 25,2020</p>
-                      <p className="title">
-                        Making Peace With The Feast Or Famine Of Freelancing
-                      </p>
-                    </div>
-                  </div>
-                  <div className="post-details">
-                    <div className="details-img">
-                      <img
-                        src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="description">
-                      <p className="date">April 25,2020</p>
-                      <p className="title">
-                        Making Peace With The Feast Or Famine Of Freelancing
-                      </p>
-                    </div>
-                  </div>
+                  {blogs &&
+                    blogs
+                      .filter((filtered) => {
+                        return searchCard.toLowerCase() === ""
+                          ? blogs
+                          : filtered.title.toLowerCase().includes(searchCard);
+                      })
+                      .map((blog) => (
+                        <Link to={`/blogs/${blog.id}`} key={blog.id}>
+                          <div className="post-details">
+                            <div className="details-img">
+                              <img src={blog.photo} alt="" />
+                            </div>
+                            <div className="description">
+                              <p className="date">{blog.date}</p>
+                              <p className="title">{blog.title}</p>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
                 </div>
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                    <p>Business</p>
-                    <p>Digital</p>
-                    <p>Family</p>
-                    <p>Machine Learning</p>
-                    <p>Marketing</p>
-                    <p>Music</p>
-                    <p>Security</p>
+                    <p onClick={() => handleCategoryClick("Business")}>Business</p>
+                    <p onClick={() => handleCategoryClick("Digital")}>Digital</p>
+                    <p onClick={() => handleCategoryClick("Digital")}>Family</p>
+                    <p onClick={() => handleCategoryClick("Machine Learning")}>Machine Learning</p>
+                    <p onClick={() => handleCategoryClick("Marketing")}>Marketing</p>
+                    <p onClick={() => handleCategoryClick("Music")}>Music</p>
+                    <p onClick={() => handleCategoryClick("Security")}>Security</p>
                   </div>
                 </div>
                 <div className="tags-container">

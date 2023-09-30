@@ -11,9 +11,16 @@ const BlogDetails = () => {
   const { id } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: blog, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
-  const { data: blog, error } = UseFetch("http://localhost:8001/blog/" + id);
+  const { data: blogs, error } = UseFetch(`${apiUrl}blogs/${id}`);
 
   const [loading, setLoading] = useState(false);
+
+  // card filter
+  const [searchCard, setSearchCard] = useState("")
+  console.log(searchCard);
+
+
+
 
   useEffect(() => {
     setLoading(true);
@@ -59,16 +66,16 @@ const BlogDetails = () => {
                 {/* BlogDetails Component start */}
 
                 {error && <div>{error}</div>}
-                {blog && (
+                {blogs &&  (
                   <div className="cards-container">
                     <div className="card">
                       <div className="cardImgContainer">
                         {/* r */}
-                        <img src={blog.photo} />
+                        <img src={blogs.photo} />
                       </div>
                       <div className="bottom-content">
-                        {/* <h2>{blog.title}</h2> */}
-                        <p>{blog.long_descriptions}</p>
+                        <h2>{blogs.title}</h2>
+                        {/* <p>{blogs.long_descriptions}</p> */}
                       </div>
                     </div>
                   </div>
@@ -79,7 +86,7 @@ const BlogDetails = () => {
               <div className="right">
                 <div className="search">
                   <div className="input-button-container">
-                    <input type="text" placeholder="search..." />
+                    <input type="text" placeholder="search..."/>
                     <div className="search-icon-container">
                       <AiOutlineSearch className="search-icon" />
                     </div>
