@@ -463,7 +463,7 @@
   padding: 0.625rem;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6rem;
-  /* font-weight: 900; */
+  font-weight: 900;
 }
 
 .home__service__cards {
@@ -678,7 +678,7 @@
 .home__works {
   line-height: 1.6rem;
   font-size: 1rem;
-  /* font-weight: 900; */
+  font-weight: 900;
   /* background-color: #f9f9fc; */
   /* padding: 4px 0px 20px 0px; */
   /* width: 100%; */
@@ -690,14 +690,16 @@
 }
 
 .home__works__header h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .home__works__header p {
-  font-size: 1rem;
+  text-align: center;
+  font-size: 1.125rem;
   color: #737b9a;
-width: 50%;
+  /* width: 50%; */
+  
 }
 
 .home__works__content {

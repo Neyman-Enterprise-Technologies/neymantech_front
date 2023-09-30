@@ -8,6 +8,7 @@ import Project from "../pages/Site/Project/Project";
 import Service from "../pages/Site/Service/Service";
 import SiteRoot from "../pages/Site/SiteRoot/SiteRoot";
 import Faq from "../pages/FAQ/Faq";
+import BlogDetails from "../Components/BlogDetails/BlogDetails";
 // import Pagination from "../Components/pagination/pagination";
 
 
@@ -39,6 +40,10 @@ export const ROUTES = [
           {
             path: "/blogs",
             element: < Blogs/>,
+          },
+          {
+            path: "/blogs/:id",
+            element: < BlogDetails/>,
           },
           {
             path: "/project",

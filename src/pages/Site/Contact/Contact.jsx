@@ -14,7 +14,8 @@ import UseFetch from "../../../UseFetch";
 export default function Contact() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  const { data: contact } = UseFetch(`${apiUrl}contact`);
+  // const { data: services } = UseFetch(`${apiUrl}core_api/contact`);
+  const { data: services } = UseFetch(`${apiUrl}contact`);
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -51,26 +52,30 @@ export default function Contact() {
             {/*  HEADER LINK END  */}
 
             <div className="container">
-              {contact && (
+              {services && (
                 <div className="contactCardContainer">
-                  {contact.map(({icon,title,contactType1,contactType2,id}) => (
+                  {services.map(({fullname,email,phone_number,id,service,}) => (
                     <div className="card" key={id}>
                       <div className="icon-container">
-                      {icon === "MdOutlineMarkEmailRead" && (
-                          <MdOutlineMarkEmailRead className="contactIcon" />
+                      <MdOutlineMarkEmailRead className="contactIcon" />
+                          {/* <ImLocation className="contactIcon" />
+                          <BsFillTelephoneFill className="contactIcon" /> */}
+               
+                      {/* {icon === "MdOutlineMarkEmailRead" && (
+                        
                         )}
                         {icon === "ImLocation" && (
                           <ImLocation className="contactIcon" />
                         )}
                         {icon === "BsFillTelephoneFill" && (
                           <BsFillTelephoneFill className="contactIcon" />
-                        )}
+                        )} */}
                       </div>
-                      <h2 className="title">{title}</h2>
+                      <h2 className="title">{fullname}</h2>
 
                       <div className="descriptionContainer">
-                        <p className="contact-type">{contactType1}</p>
-                        <p className="contact-type">{contactType2}</p>
+                        <p className="contact-type">{phone_number}</p>
+                        <p className="contact-type">{service}</p>
                       </div>
                     </div>
                   ))}

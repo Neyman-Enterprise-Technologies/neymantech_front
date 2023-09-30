@@ -3,58 +3,68 @@
     {
       "id": 1,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
-      "title": " Making Peace With The Feast Or Famine Of Freelancing-1",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-1."
+      "title": " Making-1 Peace With The Feast Or Famine Of Freelancing-1",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-1.",
+      "category":"business"
     },
     {
       "id": 2,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-2",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-2."
+      "title": "Making-1 Peace With The Feast Or Famine Of Freelancing-2",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-2.",
+      "category":"Digital"
     },
     {
       "id": 3,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-3",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt-3."
+      "title": "Making-1 Peace With The Feast Or Famine Of Freelancing-3",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt-3.",
+      "category":"Family"
     },
     {
       "id": 4,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-4",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-4"
+      "title": "Making-2 Peace With The Feast Or Famine Of Freelancing-4",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-4",
+      "category":"Machine Learning"
     },
     {
       "id": 5,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-5",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-5."
+      "title": "Making-2 Peace With The Feast Or Famine Of Freelancing-5",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-5.",
+      "category":"Marketing"
     },
     {
       "id": 6,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-6",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.-6"
+      "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-6",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.-6",
+      "category":"Music"
     },
     {
       "id": 7,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-7",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-7."
+      "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-7",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-7.",
+      "category":"Security"
     },
     {
       "id": 8,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-8",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-8"
+      "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-8",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-8",
+      "category":"Security"
     },
     {
       "id": 9,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
-      "title": "Making Peace With The Feast Or Famine Of Freelancing-9",
-      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-9."
+      "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-9",
+      "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-9.",
+      "category":"Security"
     }
   ],
+
   "team": [
     {
       "id": 1,
@@ -244,21 +254,21 @@
       "title": "Email Here-db",
       "contactType1": "admin@varn.com-db",
       "contactType2": "hello@varn.com-db",
-      "icon":"MdOutlineMarkEmailRead"
+      "icon": "MdOutlineMarkEmailRead"
     },
     {
       "id": 2,
       "title": "Location Here-db",
       "contactType1": "2750 Quadra Street Victoria Road-db",
       "contactType2": ", New York, Canada-db",
-      "icon":"ImLocation"
+      "icon": "ImLocation"
     },
     {
       "id": 3,
       "title": "Phone Here-db",
       "contactType1": "+123 456 7890-db",
       "contactType2": ", +241 452 4526",
-      "icon":"BsFillTelephoneFill"
+      "icon": "BsFillTelephoneFill"
     }
   ]
 }
