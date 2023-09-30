@@ -6,8 +6,8 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
           <img src={card.imgSrc} />
           {/* <img src={card.photo} /> */}
           <div className="info">
-            {/* <p className="heading">{card.title}</p> */}
-            <p className="heading">{card.company_name}</p>
+            <p className="heading">{card.title}</p>
+            {/* <p className="heading">{card.company_name}</p> */}
             <p className="description">{card.description}</p>
           </div>
         </div>

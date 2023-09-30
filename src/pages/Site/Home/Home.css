@@ -695,6 +695,7 @@
 }
 
 .home__works__header p {
+  text-align: center;
   font-size: 1.125rem;
   color: #737b9a;
   /* width: 50%; */
