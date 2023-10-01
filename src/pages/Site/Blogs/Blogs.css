@@ -81,7 +81,7 @@
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 
 .blogs .left {
@@ -358,6 +358,10 @@
   margin-left: 1.5rem;
   margin-bottom: 0.7rem;
   cursor: pointer;
+}
+
+.blogs .right .category-container p:hover {
+  color: #0000ff;
 }
 
 .blogs .right .category-container p::before {

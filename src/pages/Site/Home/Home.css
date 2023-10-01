@@ -445,7 +445,7 @@
 
 .home__service__content {
   padding: 5rem 0.625rem 5rem 0.625rem;
-  width: 40%;
+  /* width: 40%; */
   margin: auto;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -695,11 +695,10 @@
 }
 
 .home__works__header p {
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.125rem;
   color: #737b9a;
   /* width: 50%; */
-  
 }
 
 .home__works__content {

@@ -12,7 +12,7 @@ const DijitalMarketingSecInHome = ({ digitalMarketingSecInHome }) => {
           <div className="marketing-cards-container">
             <div className="left-cards-container">
               {digitalMarketingSecInHome.cardNames.leftCards.map((card) => (
-                <div className="card">
+                <div className="card" key={card.id}>
                   <BsFillPatchCheckFill className="card-icon" />
                   <p>{card.name}</p>
                 </div>
@@ -20,7 +20,7 @@ const DijitalMarketingSecInHome = ({ digitalMarketingSecInHome }) => {
             </div>
             <div className="right-cards-container">
               {digitalMarketingSecInHome.cardNames.rightCards.map((card) => (
-                <div className="card">
+                <div className="card" key={card.id}>
                   <BsFillPatchCheckFill className="card-icon" />
                   <p>{card.name}</p>
                 </div>
@@ -32,7 +32,7 @@ const DijitalMarketingSecInHome = ({ digitalMarketingSecInHome }) => {
           </Link> */}
         </div>
       </div>
-      <div className="right">{<img src={digitalMarketingSecInHome.imgSrc} />}</div>
+      <div className="right"><img src={digitalMarketingSecInHome.imgSrc} /></div>
     </div>
   );
 };
