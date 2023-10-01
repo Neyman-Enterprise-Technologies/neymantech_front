@@ -12,7 +12,7 @@ const WebDesignSecHome = ({ webDesignSecHome }) => {
         <div className="cards-container">
           <div className="left-cards-container">
             {webDesignSecHome.cardNames.leftCards.map((card) => (
-              <div className="card">
+              <div className="card" key={card.id}>
                 <BsFillPatchCheckFill className="card-icon" />
                 {""}
                 <p>{card.name}</p>
@@ -22,7 +22,7 @@ const WebDesignSecHome = ({ webDesignSecHome }) => {
           <div className="right-cards-container">
 
           {webDesignSecHome.cardNames.rightCards.map((card) => (
-              <div className="card">
+              <div className="card" key={card.id}>
               <BsFillPatchCheckFill className="card-icon" />
               {""}
               <p>{card.name}</p>

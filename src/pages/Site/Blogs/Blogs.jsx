@@ -68,13 +68,14 @@ export default function Blogs() {
                 {/* BlogList Component start */}
 
                 {error && <div>{error}</div>}
-                {blogs && filteredBlogs && (
+                {blogs && (
                   <BlogList
                     blogs={blogs.filter((item) => {
                       return searchCard.toLowerCase() === ""
                         ? item
                         : item.title.toLowerCase().includes(searchCard);
                     })}
+                    filteredBlogs= {filteredBlogs}
                   />
                 )}
 
@@ -88,6 +89,7 @@ export default function Blogs() {
                       placeholder="search..."
                       onChange={(e) => setSearchCard(e.target.value)}
                     />
+                  
                     <div className="search-icon-container">
                       <AiOutlineSearch className="search-icon" />
                     </div>
