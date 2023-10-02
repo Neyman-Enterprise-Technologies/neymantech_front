@@ -5,63 +5,63 @@
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
       "title": " Making-1 Peace With The Feast Or Famine Of Freelancing-1",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-1.",
-      "category":"business"
+      "category": "business"
     },
     {
       "id": 2,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making-1 Peace With The Feast Or Famine Of Freelancing-2",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-2.",
-      "category":"Digital"
+      "category": "Digital"
     },
     {
       "id": 3,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
       "title": "Making-1 Peace With The Feast Or Famine Of Freelancing-3",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt-3.",
-      "category":"Family"
+      "category": "Family"
     },
     {
       "id": 4,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making-2 Peace With The Feast Or Famine Of Freelancing-4",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-4",
-      "category":"Machine Learning"
+      "category": "Machine Learning"
     },
     {
       "id": 5,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
       "title": "Making-2 Peace With The Feast Or Famine Of Freelancing-5",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-5.",
-      "category":"Marketing"
+      "category": "Marketing"
     },
     {
       "id": 6,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-6",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.-6",
-      "category":"Music"
+      "category": "Music"
     },
     {
       "id": 7,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg",
       "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-7",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-7.",
-      "category":"Security"
+      "category": "Security"
     },
     {
       "id": 8,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg",
       "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-8",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt.-8",
-      "category":"Security"
+      "category": "Security"
     },
     {
       "id": 9,
       "photo": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg",
       "title": "Making-3 Peace With The Feast Or Famine Of Freelancing-9",
       "decription": "Lorem ipsum dolor sit amet, constetur adipiscing elit,sed do eiusmod tempor incididunt-9.",
-      "category":"Security"
+      "category": "Security"
     }
   ],
 
@@ -271,11 +271,42 @@
       "icon": "BsFillTelephoneFill"
     }
   ],
-  "priceCards":[
-    {"title":"Basic-db1", "price":"39-db1","serviceItems":["1 Projects-1","Email Support-1","Phone Support-1","Article Promotion-1","Editorial Services-1","Profile Management-1"]},
-    {"title":"Basic-db2", "price":"39-db2","serviceItems":["1 Projects-2","Email Support-2","Phone Support-2","Article Promotion-2","Editorial Services-2","Profile Management-2"]},
-    {"title":"Basic-db3", "price":"39-db3","serviceItems":["1 Projects-3","Email Support-3","Phone Support-3","Article Promotion-3","Editorial Services-3","Profile Management-3"]}
-    
-    
+  "priceCards": [
+    {
+      "title": "Basic-db1",
+      "price": "39-db1",
+      "serviceItems": [
+        "1 Projects-1",
+        "Email Support-1",
+        "Phone Support-1",
+        "Article Promotion-1",
+        "Editorial Services-1",
+        "Profile Management-1"
+      ]
+    },
+    {
+      "title": "Basic-db2",
+      "price": "39-db2",
+      "serviceItems": [
+        "1 Projects-2",
+        "Email Support-2",
+        "Phone Support-2",
+        "Article Promotion-2",
+        "Editorial Services-2",
+        "Profile Management-2"
+      ]
+    },
+    {
+      "title": "Basic-db3",
+      "price": "39-db3",
+      "serviceItems": [
+        "1 Projects-3",
+        "Email Support-3",
+        "Phone Support-3",
+        "Article Promotion-3",
+        "Editorial Services-3",
+        "Profile Management-3"
+      ]
+    }
   ]
 }
