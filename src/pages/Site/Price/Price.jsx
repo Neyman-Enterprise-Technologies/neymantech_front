@@ -10,7 +10,7 @@ import UseFetch from "../../../UseFetch";
 
 export default function Price() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  const {data:priceCards, error} = UseFetch(`${apiUrl}priceCards`)
+  const {data:priceCards} = UseFetch(`${apiUrl}priceCards`)
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
