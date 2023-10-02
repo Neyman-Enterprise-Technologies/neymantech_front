@@ -274,6 +274,7 @@
   "priceCards":[
     {"title":"Basic-db1", "price":"39-db1","serviceItems":["1 Projects-1","Email Support-1","Phone Support-1","Article Promotion-1","Editorial Services-1","Profile Management-1"]},
     {"title":"Basic-db2", "price":"39-db2","serviceItems":["1 Projects-2","Email Support-2","Phone Support-2","Article Promotion-2","Editorial Services-2","Profile Management-2"]},
+    {"title":"Basic-db3", "price":"39-db3","serviceItems":["1 Projects-3","Email Support-3","Phone Support-3","Article Promotion-3","Editorial Services-3","Profile Management-3"]}
     
     
   ]
