@@ -59,7 +59,7 @@ export default function Price() {
           {/*  cards container start */}
 
           <div className="cardsContainer">
-            {priceCards && priceCards.map(({title,price}) => {
+            {priceCards && priceCards.map(({title,price,serviceItems}) => {
              <div className="cardsContainer__card">
              <h2 className="cardsContainer__cardHeader">{title}</h2>
              <p className="cardsContainer__price">{price}</p>
