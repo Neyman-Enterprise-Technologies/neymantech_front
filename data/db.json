@@ -270,5 +270,9 @@
       "contactType2": ", +241 452 4526",
       "icon": "BsFillTelephoneFill"
     }
+  ],
+  "priceCards":[
+    {"title":"Basic-db", "price":"39-db","serviceItems":["1 Projects","Email Support","Phone Support","Article Promotion","Editorial Services","Profile Management"]},
+    
   ]
 }

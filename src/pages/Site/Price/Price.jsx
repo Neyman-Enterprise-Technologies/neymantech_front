@@ -55,6 +55,8 @@ export default function Price() {
           {/*  cards container start */}
         
          <div className="cardsContainer">
+
+          
          
               <div className="cardsContainer__card">
                 <h2 className="cardsContainer__cardHeader">Basic</h2>
