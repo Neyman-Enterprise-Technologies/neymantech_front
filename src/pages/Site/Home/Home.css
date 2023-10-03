@@ -141,10 +141,12 @@
   /* font-size: 0.5rem; */
   font-weight: 700;
   border-radius: 0.2rem;
+  /* box-shadow: inset 0 0 0 0 #0000ff;
+          transition: ease-out 0.5s; */
   -webkit-box-shadow: inset 0 0 0 0 #0000ff;
           box-shadow: inset 0 0 0 0 #0000ff;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
 }
 
 .digital-marketing-container .left .marketing-cards-container .right-cards-container .card p {
@@ -158,8 +160,11 @@
 }
 
 .digital-marketing-container .left .marketing-cards-container .right-cards-container .card:hover {
-  -webkit-box-shadow: inset 18.75rem 0 0 0 #0000ff;
-          box-shadow: inset 18.75rem 0 0 0 #0000ff;
+  /* box-shadow: inset 18.75rem 0 0 0 #0000ff; */
+  -webkit-box-shadow: inset 50rem 0 0 0 #0000ff;
+          box-shadow: inset 50rem 0 0 0 #0000ff;
+  -webkit-transition: ease-out 0.8s;
+  transition: ease-out 0.8s;
 }
 
 .digital-marketing-container .left .marketing-cards-container .right-cards-container .card:hover .card-icon {
@@ -198,8 +203,8 @@
   border-radius: 0.2rem;
   -webkit-box-shadow: inset 0 0 0 0 #0000ff;
           box-shadow: inset 0 0 0 0 #0000ff;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p {
@@ -356,8 +361,8 @@
   border-radius: 0.2rem;
   -webkit-box-shadow: inset 0 0 0 0 #0000ff;
           box-shadow: inset 0 0 0 0 #0000ff;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
   /* & p {
             width: 20ch;
           } */
@@ -410,8 +415,8 @@
   border-radius: 0.2rem;
   -webkit-box-shadow: inset 0 0 0 0 #0000ff;
           box-shadow: inset 0 0 0 0 #0000ff;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
   /*   & p {
             width: 12ch;
           } */
@@ -445,7 +450,7 @@
 
 .home__service__content {
   padding: 5rem 0.625rem 5rem 0.625rem;
-  /* width: 40%; */
+  width: 40%;
   margin: auto;
   text-align: center;
   font-family: "Montserrat", sans-serif;

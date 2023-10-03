@@ -89,6 +89,7 @@
         flex-direction: column;
         gap: 0.6rem;
         & .card {
+       
           overflow: hidden;
           position: relative;
           display: flex;
@@ -99,8 +100,10 @@
           /* font-size: 0.5rem; */
           font-weight: 700;
           border-radius: 0.2rem;
+          /* box-shadow: inset 0 0 0 0 #0000ff;
+          transition: ease-out 0.5s; */
           box-shadow: inset 0 0 0 0 #0000ff;
-          transition: ease-out 0.5s;
+          transition: ease-out 0.2s;
 
           & p {
             font-size: 1rem;
@@ -113,7 +116,9 @@
         }
 
         & .card:hover {
-          box-shadow: inset 18.75rem 0 0 0 #0000ff;
+          /* box-shadow: inset 18.75rem 0 0 0 #0000ff; */
+          box-shadow: inset 50rem 0 0 0 #0000ff;
+          transition: ease-out 0.8s;
 
           & .card-icon {
             color: white;
@@ -139,7 +144,7 @@
           font-weight: 700;
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
-          transition: ease-out 0.5s;
+          transition: ease-out 0.2s;
 
           & p {
             width: 12ch;
@@ -151,7 +156,6 @@
         }
         & .card:hover {
           box-shadow: inset 18.75rem 0 0 0 #0000ff;
-          
 
           & .card-icon {
             color: white;
@@ -263,7 +267,7 @@
           font-weight: 700;
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
-          transition: ease-out 0.5s;
+          transition: ease-out 0.2s;
 
           /* & p {
             width: 20ch;
@@ -304,7 +308,7 @@
           font-weight: 700;
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
-          transition: ease-out 0.5s;
+          transition: ease-out 0.2s;
           /*   & p {
             width: 12ch;
           } */
