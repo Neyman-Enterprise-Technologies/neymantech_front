@@ -8,9 +8,13 @@ import { FaAngleRight } from "react-icons/fa";
 import BlogList from "../../../Components/BlogList/BlogList";
 import UseFetch from "../../../UseFetch";
 
+
 // import Pagination from "../../../Components/pagination/pagination";
 
 export default function Blogs() {
+
+
+
   const apiUrl = import.meta.env.VITE_API_URL;
   // const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog/`)
   const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
