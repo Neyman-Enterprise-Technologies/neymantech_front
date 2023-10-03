@@ -7,7 +7,7 @@ const BlogList = ({ blogs }) => {
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPage] = useState(9);
+  const [postsPerPage, setPostsPage] = useState(6);
 
   useEffect(() => {
     const fetchPosts = async () => {
