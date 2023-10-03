@@ -1,39 +1,48 @@
-import React, { useState } from 'react';
-// import Pagination from './Pagination/Pagination';
+import { Link } from "react-router-dom";
 import "./Pagination.scss"
 
-function App() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5; // Number of items to display per page
-  const totalItems = 50; // Total number of items
+const Pagination = ({ postsPerPage, totalPosts,paginate,currentPage }) => {
+  const pageNumbers = [];
 
-  const onPageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
-  const renderData = () => {
-    // Replace this with your data fetching logic
-    const data = Array.from({ length: totalItems }, (_, i) => `Item ${i + 1}`);
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-
-    return data.slice(startIndex, endIndex).map((item, index) => (
-      <div key={index}>{item}</div>
-    ));
-  };
+  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+    pageNumbers.push(i);
+  }
 
   return (
-    <div className="App">
-      <h1>Pagination Example</h1>
-      {renderData()}
-      <Pagination
-        itemsPerPage={itemsPerPage}
-        totalItems={totalItems}
-        currentPage={currentPage}
-        onPageChange={onPageChange}
-      />
-    </div>
+    <nav className="pagination-container">
+    <ul className="pagination">
+    {currentPage > 1 && (
+          <li className="page-item">
+            <a
+              onClick={() => paginate(currentPage - 1)}
+              href="#"
+              className="page-link"
+            >
+              Prev
+            </a>
+          </li>
+        )}
+      {pageNumbers.map((number) => (
+        <li key={number} className="page-item">
+          <a onClick={() => paginate(number)} href="#" className="page-link">
+            {number}
+          </a>
+        </li>
+      ))}
+      {currentPage < pageNumbers.length && (
+          <li className="page-item">
+            <a
+              onClick={() => paginate(currentPage + 1)}
+              href="#"
+              className="page-link"
+            >
+              Next
+            </a>
+          </li>
+        )}
+    </ul>
+    </nav>
   );
-}
+};
 
-export default App;
+export default Pagination;

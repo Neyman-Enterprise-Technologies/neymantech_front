@@ -954,6 +954,8 @@ article:has(:hover, :focus) {
     .right-cards-container
     .card {
     padding: 1.5rem 26rem 1.5rem 1.5rem;
+    transition: ease-out 0.2s;
+    box-shadow: inset 0 0 0 0 #0000ff;
   }
   .digital-marketing-container
     .left
@@ -966,6 +968,7 @@ article:has(:hover, :focus) {
     .right-cards-container
     .card:hover {
     box-shadow: inset 38rem 0 0 0 #0000ff;
+    transition:ease-out 5s ;
   }
 
   .digital-marketing-container .left .top-container p {

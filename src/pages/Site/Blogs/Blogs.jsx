@@ -17,17 +17,17 @@ export default function Blogs() {
 
   const [searchCard, setSearchCard] = useState("");
 
-  
- /*   select by category start*/
- const [selectedCategory, setSelectedCategory] = useState(null);
+  /*   select by category start*/
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
- const filteredBlogs = selectedCategory ? blogs.filter((blog) => blog.category === selectedCategory) : blogs;
+  const filteredBlogs = selectedCategory
+    ? blogs.filter((blog) => blog.category === selectedCategory)
+    : blogs;
 
- const handleCategoryClick = (category) => {
-   setSelectedCategory(category);
- };
- /*   select by category end*/
-
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+  /*   select by category end*/
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -75,7 +75,7 @@ export default function Blogs() {
                         ? item
                         : item.title.toLowerCase().includes(searchCard);
                     })}
-                    filteredBlogs= {filteredBlogs}
+                    filteredBlogs={filteredBlogs}
                   />
                 )}
 
@@ -89,46 +89,111 @@ export default function Blogs() {
                       placeholder="search..."
                       onChange={(e) => setSearchCard(e.target.value)}
                     />
-                  
+
                     <div className="search-icon-container">
                       <AiOutlineSearch className="search-icon" />
                     </div>
                   </div>
                 </div>
-                <div className="recent-posts-container">
-                  <h2>Recent Posts</h2>
 
-                  {blogs &&
-                    blogs
-                      .filter((filtered) => {
-                        return searchCard.toLowerCase() === ""
-                          ? blogs
-                          : filtered.title.toLowerCase().includes(searchCard);
-                      })
-                      .map((blog) => (
-                        <Link to={`/blogs/${blog.id}`} key={blog.id}>
-                          <div className="post-details">
-                            <div className="details-img">
-                              <img src={blog.photo} alt="" />
-                            </div>
-                            <div className="description">
-                              <p className="date">{blog.date}</p>
-                              <p className="title">{blog.title}</p>
-                            </div>
+                {/* {blogs && 
+                        <Link to={`/blogs/${blogs.id}`} >
+                        <div className="post-details">
+                          <div className="details-img">
+                            <img src={blogs.photo} alt="" />
                           </div>
-                        </Link>
-                      ))}
-                </div>
+                          <div className="description">
+                            <p className="date">{blogs.date}</p>
+                            <p className="title">{blogs.title}</p>
+                          </div>
+                        </div>
+                      </Link>
+                      
+                      } */}
+                {blogs && (
+                  <div className="recent-posts-container">
+                    <h2>Recent Posts</h2>
+                    <Link to={`/blogs/${blogs.id}`}>
+                      <div className="post-details">
+                        <div className="details-img">
+                          <img
+                            src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div className="description">
+                          <p className="date">April 25,2020</p>
+                          <p className="title">
+                            Making Peace With The Feast Or Famine Of Freelancing
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+                    <div className="post-details">
+                      <div className="details-img">
+                        <img
+                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="description">
+                        <p className="date">April 25,2020</p>
+                        <p className="title">
+                          Making Peace With The Feast Or Famine Of Freelancing
+                        </p>
+                      </div>
+                    </div>
+                    <div className="post-details">
+                      <div className="details-img">
+                        <img
+                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="description">
+                        <p className="date">April 25,2020</p>
+                        <p className="title">
+                          Making Peace With The Feast Or Famine Of Freelancing
+                        </p>
+                      </div>
+                    </div>
+                    <div className="post-details">
+                      <div className="details-img">
+                        <img
+                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="description">
+                        <p className="date">April 25,2020</p>
+                        <p className="title">
+                          Making Peace With The Feast Or Famine Of Freelancing
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                    <p onClick={() => handleCategoryClick("Business")}>Business</p>
-                    <p onClick={() => handleCategoryClick("Digital")}>Digital</p>
+                    <p onClick={() => handleCategoryClick("Business")}>
+                      Business
+                    </p>
+                    <p onClick={() => handleCategoryClick("Digital")}>
+                      Digital
+                    </p>
                     <p onClick={() => handleCategoryClick("Digital")}>Family</p>
-                    <p onClick={() => handleCategoryClick("Machine Learning")}>Machine Learning</p>
-                    <p onClick={() => handleCategoryClick("Marketing")}>Marketing</p>
+                    <p onClick={() => handleCategoryClick("Machine Learning")}>
+                      Machine Learning
+                    </p>
+                    <p onClick={() => handleCategoryClick("Marketing")}>
+                      Marketing
+                    </p>
                     <p onClick={() => handleCategoryClick("Music")}>Music</p>
-                    <p onClick={() => handleCategoryClick("Security")}>Security</p>
+                    <p onClick={() => handleCategoryClick("Security")}>
+                      Security
+                    </p>
                   </div>
                 </div>
                 <div className="tags-container">
