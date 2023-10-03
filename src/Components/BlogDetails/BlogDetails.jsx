@@ -34,6 +34,7 @@ const BlogDetails = ({handleCategoryClick}) => {
     }, 1000);
   }, []);
   return (
+    
     <>
       {loading ? (
         <Loading />

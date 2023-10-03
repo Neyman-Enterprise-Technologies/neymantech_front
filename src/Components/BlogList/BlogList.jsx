@@ -4,24 +4,16 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs }) => {
-
+  const [loading, setLoading] = useState(false);
   
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(5);
+  const [postsPerPage] = useState(3);
 
-  useEffect(() => {
-    
-    const fetchPosts = async () => {
-      const res = await axios.get(`${apiUrl}blogs`);
-      setPosts(res.data);
-    };
-    fetchPosts();
-  }, []);
-  console.log(posts);
+ 
 
   /*   Get Current posts */
   const indexOfLastPost = currentPage * postsPerPage;
@@ -31,8 +23,25 @@ const BlogList = ({ blogs }) => {
   //Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  useEffect(() => {
+    
+    const fetchPosts = async () => {
+      const res = await axios.get(`${apiUrl}blogs`);
+      setPosts(res.data);
+    };
+    fetchPosts();
+    setLoading(true);
+    window.scrollTo({ top: 0 });
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+  console.log(posts);
+
   return (
     <>
+    
+    
       <div className="cards-container">
         {currentPosts.map((blog) => (
           <Link to={`/blogs/${blog.id}`} key={blog.id}>
