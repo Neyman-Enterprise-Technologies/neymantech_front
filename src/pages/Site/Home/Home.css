@@ -1154,6 +1154,10 @@ article:has(:hover, :focus) img {
 .right-cards-container
 .card {
     padding: 1.5rem 26rem 1.5rem 1.5rem;
+    -webkit-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    -webkit-box-shadow: inset 0 0 0 0 #0000ff;
+            box-shadow: inset 0 0 0 0 #0000ff;
   }
   .digital-marketing-container
 .left
@@ -1167,6 +1171,8 @@ article:has(:hover, :focus) img {
 .card:hover {
     -webkit-box-shadow: inset 38rem 0 0 0 #0000ff;
             box-shadow: inset 38rem 0 0 0 #0000ff;
+    -webkit-transition: ease-out 5s;
+    transition: ease-out 5s;
   }
   .digital-marketing-container .left .top-container p {
     width: 110ch;
