@@ -261,6 +261,13 @@
           align-items: center;
   background-color: blue;
   width: 4rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.blogs .right .search .input-button-container .search-icon-container:hover {
+  cursor: pointer;
+  background-color: #f78da7;
 }
 
 .blogs
