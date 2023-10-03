@@ -4,14 +4,17 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs }) => {
+
+  
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(15);
+  const [postsPerPage] = useState(5);
 
   useEffect(() => {
+    
     const fetchPosts = async () => {
       const res = await axios.get(`${apiUrl}blogs`);
       setPosts(res.data);
@@ -50,6 +53,7 @@ const BlogList = ({ blogs }) => {
         postsPerPage={postsPerPage}
         totalPosts={posts.length}
         paginate={paginate}
+        currentPage={currentPage}
       />
     </>
   );
