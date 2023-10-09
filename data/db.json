@@ -180,39 +180,39 @@
   "team": [
     {
       "id": 1,
-      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
-      "name": "John Smith-db",
-      "job": "Web Developer-db"
+      "image": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
+      "fullName": "John Smith-db",
+      "position": "Web Developer-db"
     },
     {
       "id": 2,
-      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
-      "name": "Lucy Eva-db",
-      "job": "Manager-db"
+      "image": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
+      "fullName": "Lucy Eva-db",
+      "position": "Manager-db"
     },
     {
       "id": 3,
-      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
-      "name": "Jason Roy-db",
-      "job": "Graphic Designer-db"
+      "image": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
+      "fullName": "Jason Roy-db",
+      "position": "Graphic Designer-db"
     },
     {
       "id": 4,
-      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
-      "name": "Lucy Eva-db",
-      "job": "Manager-db"
+      "image": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team4-1-1.jpg",
+      "fullName": "Lucy Eva-db",
+      "position": "Manager-db"
     },
     {
       "id": 5,
-      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
-      "name": "John Smith-db",
-      "job": "Web Developer-db"
+      "image": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team1-1-1.jpg",
+      "fullName": "John Smith-db",
+      "position": "Web Developer-db"
     },
     {
       "id": 3,
-      "memberProfile": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
-      "name": "Jason Roy-db",
-      "job": "Graphic Designer-db"
+      "image": "https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/team2-1-1.jpg",
+      "fullName": "Jason Roy-db",
+      "position": "Graphic Designer-db"
     }
   ],
   "aboutSection1": {
