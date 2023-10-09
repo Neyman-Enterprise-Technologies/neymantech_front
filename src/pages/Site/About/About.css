@@ -123,6 +123,9 @@
 .section-1 .right .header {
   font-size: 2rem;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
 }
 
 .section-1 .right .description {
@@ -161,7 +164,7 @@
           box-shadow: inset 0 0 0 0 #0000ff;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #f8faff;
   border-radius: 0.5rem;
 }
