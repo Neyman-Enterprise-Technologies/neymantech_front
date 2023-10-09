@@ -36,8 +36,10 @@ export default function Home() {
   const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
   // const { data: webDesignSecHome } = UseFetch(`${apiUrl}`);
   
-  // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}service_api/last_works/}`);
+    //*HOME - OUR LATEST WORK -4
   const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
+  // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}service_api/last_works/}`);
+  
   const { data: latestNews } = UseFetch(`${apiUrl}latestNews`);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
