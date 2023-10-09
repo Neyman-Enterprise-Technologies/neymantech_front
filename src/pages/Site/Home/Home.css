@@ -740,9 +740,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1097,7 +1096,7 @@ article:has(:hover, :focus) img {
   }
   .home__works__cards__card {
     /* width: 33rem; */
-    height: 37rem;
+    height: 30rem;
   }
 }
 

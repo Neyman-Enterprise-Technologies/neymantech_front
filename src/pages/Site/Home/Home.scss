@@ -596,7 +596,7 @@
 
   &__cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.875rem;
@@ -889,7 +889,7 @@ article:has(:hover, :focus) {
       justify-content: center;
       &__card {
         /* width: 33rem; */
-        height: 37rem;
+        height: 30rem;
       }
     }
   }
