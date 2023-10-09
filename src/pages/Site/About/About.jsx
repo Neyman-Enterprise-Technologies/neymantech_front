@@ -17,7 +17,11 @@ import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
 import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
 export default function About() {
-  const { data: teAm, error } = UseFetch("http://127.0.0.1:8000/core_api/our_team/");
+
+  const apiUrl = import.meta.env.VITE_API_URL;
+
+  const { data: team, error } = UseFetch("http://localhost:8001/team");
+  // const { data: teAm, error } = UseFetch(`${apiUrl}our_team`);
   const { data: aboutSection1 } = UseFetch("http://localhost:8001/aboutSection1");
 
   const [loading, setLoading] = useState(false);
@@ -193,7 +197,7 @@ export default function About() {
 
          <div className="container">
          {error && <div>{error}</div>}
-          {teAm && <Team team={teAm} />}
+          {team && <Team team={team} />}
          </div>
           {/* SECTION-4 END */}
         </section>

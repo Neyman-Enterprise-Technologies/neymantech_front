@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 const UseFetch = (url) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
-  
+
   useEffect(() => {
     fetch(url)
       .then((res) => {
         if (!res.ok) {
           throw Error("Melumat tapilmadi");
         }
+
         return res.json();
       })
       .then((data) => {
@@ -21,6 +22,6 @@ const UseFetch = (url) => {
         setError(err.message);
       });
   }, [url]);
-  return {data, error}
-}
-export default UseFetch
+  return { data, error };
+};
+export default UseFetch;
