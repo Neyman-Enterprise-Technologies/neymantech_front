@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { BiSolidBadgeCheck } from "react-icons/Bi";
 import { TbMessages } from "react-icons/Tb";
+import UseFetch from "../../../UseFetch";
 
 const ServiceCards = ({servicecards}) => {
+
 
  
 
@@ -17,8 +19,10 @@ const ServiceCards = ({servicecards}) => {
           <TbMessages className="icon1" />
           <BiSolidBadgeCheck className="badge" />
           </div>
-          <h3>{card.property_name}</h3>
-          <p>{card.package}</p>
+          {/* <h3>{card.property_name}</h3> */}
+          <h3>{card.title}</h3>
+          {/* <p>{card.package}</p> */}
+          <p>{card.description}</p>
           </div>
         </Link>
 

@@ -91,7 +91,6 @@
         gap: 0.6rem;
         width: 50%;
         & .card {
-       
           overflow: hidden;
           position: relative;
           display: flex;
@@ -102,8 +101,7 @@
           /* font-size: 0.5rem; */
           font-weight: 700;
           border-radius: 0.2rem;
-          /* box-shadow: inset 0 0 0 0 #0000ff;
-          transition: ease-out 0.5s; */
+          
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.2s;
 
@@ -120,7 +118,7 @@
         & .card:hover {
           /* box-shadow: inset 18.75rem 0 0 0 #0000ff; */
           box-shadow: inset 50rem 0 0 0 #0000ff;
-          transition: ease-out 0.8s;
+          transition: ease-out 0.7s;
 
           & .card-icon {
             color: white;
@@ -147,6 +145,7 @@
           font-weight: 700;
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
+
           transition: ease-out 0.2s;
 
           & p {
@@ -158,7 +157,8 @@
           }
         }
         & .card:hover {
-          box-shadow: inset 18.75rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 #0000ff;
+          transition: ease-out 0.7s;
 
           & .card-icon {
             color: white;
@@ -224,7 +224,6 @@
       position: relative;
       z-index: 1;
     }
-
     & .readMore-btn::before {
       content: "";
       position: absolute;
@@ -233,7 +232,6 @@
       width: 0px;
       height: 0px;
       background: orange;
-
       transition: width 0.5s, height 0.5s;
     }
     & .readMore-btn:hover::before {
@@ -272,6 +270,7 @@
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.2s;
+         
 
           /* & p {
             width: 20ch;
@@ -283,6 +282,8 @@
         }
         & .card:hover {
           box-shadow: inset 30rem 0 0 0 #0000ff;
+          transition: ease-out 0.7s;
+         
 
           & .card-icon {
             color: white;
@@ -303,7 +304,6 @@
 
         & .card {
           display: flex;
-
           align-items: center;
           background-color: #f8faff;
           padding: 1rem 5rem 1rem 1rem;
@@ -313,6 +313,7 @@
           border-radius: 0.2rem;
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.2s;
+
           /*   & p {
             width: 12ch;
           } */
@@ -322,7 +323,8 @@
           }
         }
         & .card:hover {
-          box-shadow: inset 20rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 #0000ff;
+          transition: ease-out 0.7s;
 
           & .card-icon {
             color: white;
@@ -972,7 +974,7 @@ article:has(:hover, :focus) {
     .right-cards-container
     .card:hover {
     box-shadow: inset 38rem 0 0 0 #0000ff;
-    transition:ease-out 5s ;
+    transition: ease-out 5s;
   }
 
   .digital-marketing-container .left .top-container p {

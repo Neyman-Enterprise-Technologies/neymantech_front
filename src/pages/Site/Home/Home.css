@@ -41,6 +41,7 @@
 }
 
 .digital-marketing-container .left .top-container {
+  padding-top: 3rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,7 +50,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   /* /button hovering effect start */
   /* button hovering effect end */
 }
@@ -124,6 +125,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.6rem;
+  width: 50%;
 }
 
 .digital-marketing-container .left .marketing-cards-container .right-cards-container .card {
@@ -141,8 +143,6 @@
   /* font-size: 0.5rem; */
   font-weight: 700;
   border-radius: 0.2rem;
-  /* box-shadow: inset 0 0 0 0 #0000ff;
-          transition: ease-out 0.5s; */
   -webkit-box-shadow: inset 0 0 0 0 #0000ff;
           box-shadow: inset 0 0 0 0 #0000ff;
   -webkit-transition: ease-out 0.2s;
@@ -163,8 +163,8 @@
   /* box-shadow: inset 18.75rem 0 0 0 #0000ff; */
   -webkit-box-shadow: inset 50rem 0 0 0 #0000ff;
           box-shadow: inset 50rem 0 0 0 #0000ff;
-  -webkit-transition: ease-out 0.8s;
-  transition: ease-out 0.8s;
+  -webkit-transition: ease-out 0.7s;
+  transition: ease-out 0.7s;
 }
 
 .digital-marketing-container .left .marketing-cards-container .right-cards-container .card:hover .card-icon {
@@ -185,6 +185,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.6rem;
+  width: 50%;
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card {
@@ -217,8 +218,10 @@
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card:hover {
-  -webkit-box-shadow: inset 18.75rem 0 0 0 #0000ff;
-          box-shadow: inset 18.75rem 0 0 0 #0000ff;
+  -webkit-box-shadow: inset 30rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 #0000ff;
+  -webkit-transition: ease-out 0.7s;
+  transition: ease-out 0.7s;
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card:hover .card-icon {
@@ -277,7 +280,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  padding-top: 3rem;
   /* width: 50%; */
 }
 
@@ -334,7 +338,7 @@
 }
 
 .web-design-section .right .cards-container .left-cards-container {
-  /* width: 50%; */
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,6 +380,8 @@
 .web-design-section .right .cards-container .left-cards-container .card:hover {
   -webkit-box-shadow: inset 30rem 0 0 0 #0000ff;
           box-shadow: inset 30rem 0 0 0 #0000ff;
+  -webkit-transition: ease-out 0.7s;
+  transition: ease-out 0.7s;
 }
 
 .web-design-section .right .cards-container .left-cards-container .card:hover .card-icon {
@@ -395,7 +401,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* width: 50%; */
+  width: 50%;
   /* background-color: yellow; */
   gap: 0.6rem;
 }
@@ -428,8 +434,10 @@
 }
 
 .web-design-section .right .cards-container .right-cards-container .card:hover {
-  -webkit-box-shadow: inset 20rem 0 0 0 #0000ff;
-          box-shadow: inset 20rem 0 0 0 #0000ff;
+  -webkit-box-shadow: inset 30rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 #0000ff;
+  -webkit-transition: ease-out 0.7s;
+  transition: ease-out 0.7s;
 }
 
 .web-design-section .right .cards-container .right-cards-container .card:hover .card-icon {
