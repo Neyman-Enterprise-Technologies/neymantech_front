@@ -88,7 +88,7 @@
   padding: 4rem 0;
   display: flex;
  justify-content: space-between;
- 
+ gap: 10px;
 
   &__cardContainer {
     width: 100%;
@@ -100,10 +100,10 @@ transition: 0.5s all;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width:350px;
+    width:420px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
     padding-bottom: 1.5rem;
   }
@@ -156,7 +156,7 @@ transition: 0.5s all;
   &__cardContentContainer {
     gap: 1rem;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
   &__itemsContainer {
     display: flex;
@@ -195,7 +195,7 @@ transition: 0.5s all;
     &--pink-underline {
       position: relative;
       display: inline-block;
-      color: #f78da7;
+      color: #ff6289;
       font-size: 1.2rem;
       font-weight: 600;
       padding: 2rem 0 0.5rem 0;
@@ -249,7 +249,7 @@ transition: 0.5s all;
 @media screen and (max-width: 992px) {
  .cardsContainer {
     width: 100%;
-
+flex-wrap: wrap;
   &__card {
 
 transition: 0.5s all;

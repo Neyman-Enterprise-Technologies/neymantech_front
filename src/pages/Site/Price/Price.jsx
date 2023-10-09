@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
 import UseFetch from "../../../UseFetch";
+import PriceCard from "../../../Components/PriceCard/PriceCard";
 
-
-export default function Price() {
+export default function Price({ title }) {
   const apiUrl = import.meta.env.VITE_API_URL;
-  const {data:priceCards} = UseFetch(`${apiUrl}priceCards`)
+  const { data: priceCards } = UseFetch(`${apiUrl}priceCards`);
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -59,159 +60,17 @@ export default function Price() {
           {/*  cards container start */}
 
           <div className="cardsContainer">
-            {priceCards && priceCards.map(({title,price,serviceItems}) => {
-             <div className="cardsContainer__card">
-             <h2 className="cardsContainer__cardHeader">{title}</h2>
-             <p className="cardsContainer__price">{price}</p>
-             <div className="cardsContainer__devider"></div>
-             <div className="cardsContainer__cardContentContainer">
-            {/* {serviceItems.map((item) => {
-              <div className="cardsContainer__itemsContainer">
-              <p className="cardsContainer__items">{item[0]}</p>
-              <TiTick className="cardsContainer__tick-icon" />
-            </div>
-            })} */}
-             </div>
-               {/* <div className="cardsContainer__itemsContainer">
-                 <p className="cardsContainer__items">1 Projects</p>
-                 <TiTick className="cardsContainer__tick-icon" />
-               </div>
-               <div className="cardsContainer__itemsContainer">
-                 <p className="cardsContainer__items">Email Support</p>
-                 <TiTick className="cardsContainer__tick-icon" />
-               </div>
-               <div className="cardsContainer__itemsContainer">
-                 <p className="cardsContainer__items">Phone Support</p>
-                 <TiTick className="cardsContainer__tick-icon" />
-               </div>
-               <div className="cardsContainer__itemsContainer">
-                 <p className="cardsContainer__items">Article Promotion</p>
-                 <TiTick className="cardsContainer__tick-icon" />
-               </div>
-               <div className="cardsContainer__itemsContainer">
-                 <p className="cardsContainer__items">Editorial Services</p>
-                 <TiTick className="cardsContainer__tick-icon" />
-               </div>
-               <div className="cardsContainer__itemsContainer">
-                 <p className="cardsContainer__items">Profile Management</p>
-                 <TiTick className="cardsContainer__tick-icon" />
-               </div> */}
-            
-             <div className="cardsContainer__devider"></div>
-             <a className="cardsContainer__link">Get Started</a>
-           </div>
-            })}
-            </div>
-
-            {/* <div className="cardsContainer__card">
-              <h2 className="cardsContainer__cardHeader">Basic</h2>
-              <p className="cardsContainer__price">39.99</p>
-              <div className="cardsContainer__devider"></div>
-              <div className="cardsContainer__cardContentContainer">
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">1 Projects</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Email Support</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Phone Support</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Article Promotion</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Editorial Services</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Profile Management</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-              </div>
-              <div className="cardsContainer__devider"></div>
-              <a className="cardsContainer__link">Get Started</a>
-            </div> */}
-            {/* <div className="cardsContainer__card">
-              <h2 className="cardsContainer__cardHeader secondHeader">
-                Starter
-              </h2>
-              <p className="cardsContainer__price">39.99</p>
-              <div className="cardsContainer__devider"></div>
-              <div className="cardsContainer__cardContentContainer">
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">1 Projects</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Email Support</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Phone Support</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Article Promotion</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Editorial Services</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Profile Management</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-              </div>
-
-              <div className="cardsContainer__devider"></div>
-              <a className="cardsContainer__link--pink-underline">
-                Get Started
-              </a>
-            </div> */}
-            {/* <div className="cardsContainer__card">
-              <h2 className="cardsContainer__cardHeader thirdHeader">
-                Extended
-              </h2>
-              <p className="cardsContainer__price">39.99</p>
-              <div className="cardsContainer__devider"></div>
-              <div className="cardsContainer__cardContentContainer">
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">1 Projects</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Email Support</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Phone Support</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Article Promotion</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Editorial Services</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-                <div className="cardsContainer__itemsContainer">
-                  <p className="cardsContainer__items">Profile Management</p>
-                  <TiTick className="cardsContainer__tick-icon" />
-                </div>
-              </div>
-              <div className="cardsContainer__devider"></div>
-              <a className="cardsContainer__link--orange-underline">
-                Get Started
-              </a>
-            </div> */}
-    
+            {priceCards &&
+              priceCards.map((card) => (
+                <PriceCard
+                  title={card.title}
+                  price={card.price}
+                  serviceItems={card.serviceItems}
+                  color={card.color}
+                  key={card.id}
+                />
+              ))}
+          </div>
 
           {/*  cards container end */}
         </div>
