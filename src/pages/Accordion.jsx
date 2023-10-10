@@ -1,12 +1,13 @@
 import React from 'react'
 
-function Accordion ({faq, index, toggleFAQ1}) {
+function Accordion ({faq, index, toggleFAQ1,toggleFAQ2}) {
 	return (
 	<div>
 			<div
 			className={"faq " + (faq.open ? 'open' : '')}
 			key={index}
 			onClick={() => toggleFAQ1(index)}
+			// onClick={() => toggleFAQ2(index)}
 		>
 			<div className="faq-question">
 				{faq.question}
