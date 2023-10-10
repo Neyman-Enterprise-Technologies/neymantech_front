@@ -89,8 +89,9 @@
 .contactCardContainer .card .descriptionContainer .contact-type {
   font-size: 1rem;
   color: #8f8f8f;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   text-align: center;
+  font-weight: 500;
 }
 
 /* @media screen and (max-width:1200px){
