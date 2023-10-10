@@ -2,15 +2,22 @@ import React from "react";
 import "./Contact.scss";
 import "./Contact.scss";
 import { useState, useEffect } from "react";
-import { MdOutlineMailOutline, MdOutlineMarkEmailRead } from "react-icons/Md";
+import { MdOutlineMarkEmailRead } from "react-icons/Md";
 import { SlLocationPin } from "react-icons/Sl";
 import { BiChevronRight } from "react-icons/Bi";
 import { FaAngleRight } from "react-icons/fa";
-import {ImLocation} from "react-icons/im";
+import { ImLocation } from "react-icons/im";
 import { BsFillTelephoneFill, BsPhone } from "react-icons/Bs";
 import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import UseFetch from "../../../UseFetch";
+
+const contactCardsIconsObj = {
+  MdOutlineMarkEmailRead: <MdOutlineMarkEmailRead className="contactIcon"/>,
+  ImLocation: <ImLocation className="contactIcon" />,
+  BsFillTelephoneFill: <BsFillTelephoneFill className="contactIcon"/>,
+};
+
 export default function Contact() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -54,31 +61,21 @@ export default function Contact() {
             <div className="container">
               {services && (
                 <div className="contactCardContainer">
-                  {services.map(({fullname,email,phone_number,id,service,}) => (
-                    <div className="card" key={id}>
-                      <div className="icon-container">
-                      <MdOutlineMarkEmailRead className="contactIcon" />
-                          {/* <ImLocation className="contactIcon" />
-                          <BsFillTelephoneFill className="contactIcon" /> */}
-               
-                      {/* {icon === "MdOutlineMarkEmailRead" && (
-                        
-                        )}
-                        {icon === "ImLocation" && (
-                          <ImLocation className="contactIcon" />
-                        )}
-                        {icon === "BsFillTelephoneFill" && (
-                          <BsFillTelephoneFill className="contactIcon" />
-                        )} */}
-                      </div>
-                      <h2 className="title">{fullname}</h2>
+                  {services.map(
+                    ({ contactType2, title, id, contactType1,icon }) => (
+                      <div className="card" key={id}>
+                        <div className="icon-container">
+                       {contactCardsIconsObj[icon]}
+                        </div>
+                        <h2 className="title">{title}</h2>
 
-                      <div className="descriptionContainer">
-                        <p className="contact-type">{phone_number}</p>
-                        <p className="contact-type">{service}</p>
+                        <div className="descriptionContainer">
+                          <p className="contact-type">{contactType1}</p>
+                          <p className="contact-type">{contactType2}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </div>
               )}
             </div>
