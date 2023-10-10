@@ -7,12 +7,10 @@ import { Link } from "react-router-dom";
 import UseFetch from "../../../UseFetch";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
-
 export default function Project() {
-const apiUrl = import.meta.env.VITE_API_URL;
-// const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}`)
-const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}latestWorkCardInHome`)
-
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
+  // const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}`)
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -56,76 +54,18 @@ const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}latestWorkCardInHome`)
             </p>
           </div>
 
-         {/*  CARDS CONTAINER START */}
-      
-              
-             <div className="container">
-             <div className="project-cards-container">
-            {latestWorkCardInHome && <LatestWorkCardInHome latestWorkCardInHome={latestWorkCardInHome}/>}
+          {/*  CARDS CONTAINER START */}
 
-                {/* <div className="project-cards-container__card">
-                  <img className="project-cards-container__image"  src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"/>
-                  <div className="project-cards-container__info">
-                    <p className="project-cards-container__heading">Development</p>
-                    <p className="project-cards-container__description">
-                      Designing a Better Cinema Experience
-                    </p>
-                   
-                  </div>
-                </div> */}
-                {/* <div className="project-cards-container__card">
-                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work4-1.jpg"></img>
-                  <div className="project-cards-container__info">
-                    <p className="project-cards-container__heading">Development</p>
-                    <p className="project-cards-container__description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    
-                  </div>
-                </div> */}
-                {/* <div className="project-cards-container__card">
-                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
-                  <div className="project-cards-container__info">
-                    <p className="project-cards-container__heading">Development</p>
-                    <p className="project-cards-container__description">
-                      Designing a Better Cinema Experience
-                    </p>
-                   
-                  </div>
-                </div> */}
-                {/* <div className="project-cards-container__card">
-                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
-                  <div className="project-cards-container__info">
-                    <p className="project-cards-container__heading">Development</p>
-                    <p className="project-cards-container__description">
-                      Designing a Better Cinema Experience
-                    </p>
-                   
-                  </div>
-                </div> */}
-                {/* <div className="project-cards-container__card">
-                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work5-1.jpg"></img>
-                  <div className="project-cards-container__info">
-                    <p className="project-cards-container__heading">Development</p>
-                    <p className="project-cards-container__description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    
-                  </div>
-                </div> */}
-                {/* <div className="project-cards-container__card">
-                  <img className="project-cards-container__image" src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/work1-1.jpg"></img>
-                  <div className="project-cards-container__info">
-                    <p className="project-cards-container__heading">Development</p>
-                    <p className="project-cards-container__description">
-                      Designing a Better Cinema Experience
-                    </p>
-                    
-                  </div>
-                </div> */}
-              </div>
-             </div>
-           
+          <div className="container">
+            <div className="project-cards-container">
+              {latestWorkCardInHome && (
+                <LatestWorkCardInHome
+                  latestWorkCardInHome={latestWorkCardInHome}
+                />
+              )}
+            </div>
+          </div>
+
           {/*  HEADER END */}
         </div>
       )}

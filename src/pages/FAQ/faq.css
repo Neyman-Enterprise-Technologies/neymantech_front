@@ -130,9 +130,6 @@ faq Section 2 end */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   gap: 0.5rem;
 }
 
@@ -181,6 +178,9 @@ faq Section 2 end */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
   padding: 10rem 0 5rem 0;
 }

@@ -14,7 +14,7 @@ const Team = ({ team }) => {
             <img src={member.image} alt="" />
           </div>
           <div className="team-container__profile-details">
-            <p className="team-container__name">{member.fullName}</p>
+            <p className="team-container__name">{member.fullname}</p>
             <p className="team-container__job">{member.position}</p>
           </div>
         </div>

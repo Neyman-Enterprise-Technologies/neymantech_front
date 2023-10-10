@@ -24,14 +24,22 @@ import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  // const { data: serviceCards, error } = UseFetch(`${apiUrl}service_api/package_property/`);
+  //*HOME - SERVICECARDS- SECTION-1
   const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
+  // const { data: serviceCards, error } = UseFetch(`${apiUrl}service_api/package_property/`);
   
+  //*HOME - DIJITAL MARKETING- SECTION-2
   const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}digitalMarketingSecInHome`);
-  
+  // const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}`);
+    
+  //*HOME - WEB DESIGN SECTION- SECTION-3
   const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
-  // const { data: latestWorkCardInHome } = UseFetch("http://127.0.0.1:8000/service_api/last_works/");
+  // const { data: webDesignSecHome } = UseFetch(`${apiUrl}`);
+  
+ //*HOME - OUR LATEST WORK -4
   const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
+  // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}service_api/last_works/}`);
+  
   const { data: latestNews } = UseFetch(`${apiUrl}latestNews`);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
