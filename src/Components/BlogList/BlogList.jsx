@@ -8,8 +8,8 @@ const BlogList = ({ blogs }) => {
   const [loading, setLoading] = useState(false);
   
   const apiUrl = import.meta.env.VITE_API_URL;
-  /* const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
-  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);//////////// */   
+  //  const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
+  // const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -41,7 +41,10 @@ const BlogList = ({ blogs }) => {
       setLoading(false);
     }, 1000);
   }, []);
-  console.log(posts);
+
+
+
+
 
   return (
     <>

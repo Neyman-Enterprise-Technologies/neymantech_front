@@ -4,10 +4,12 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 import { AiOutlineSearch } from "react-icons/Ai";
+
+
 import Loading from "../../Components/Loading/Loading";
 import "./BlogDetails.scss";
 
-const BlogDetails = ({handleCategoryClick}) => {
+const BlogDetails = ({ handleCategoryClick }) => {
   const { id } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: blog, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
@@ -15,16 +17,7 @@ const BlogDetails = ({handleCategoryClick}) => {
 
   const [loading, setLoading] = useState(false);
 
-  // card filter
-  const [searchCard, setSearchCard] = useState("");
-  console.log(searchCard);
-  const [headertitle, setHeaderTitle] = useState("");
-
-
-
-
-
-  
+  // CARD FILTER
 
   useEffect(() => {
     setLoading(true);
@@ -34,43 +27,49 @@ const BlogDetails = ({handleCategoryClick}) => {
     }, 1000);
   }, []);
   return (
-    
     <>
       {loading ? (
         <Loading />
       ) : (
-        <div>
-          {/* heading start */}
-
-          {/* heading end */}
-          <div className="blogHeader">
-            <div className="blogDetailsHeader">
-              <div className="blogTitle">
-                <h2>
-                  The Rise Of Marketin<span>g</span>And Why You Need It
-                </h2>
-              </div>
-
-              <div className="blogLinks">
-                <Link to="/home" className="blogLink">
-                  Home
-                </Link>
-                <FaAngleRight className="angleIcon" />
-                <Link to="blog" className="blogLink">
-                  Blog
-                </Link>
-                <FaAngleRight className="angleIcon" />
-                <Link to="blog">The Rise Of Marketing And Why You Need It</Link>
-              </div>
-            </div>
-          </div>
-          <div className="container">
-            <section className="blogDetails">
-              <div className="left">
+      
+         
+        
+        <section className="blogDetails">
+           
+             
                 {/* BlogDetails Component start */}
 
                 {error && <div>{error}</div>}
                 {blogs && (
+                
+                
+               <div className="blogDetails-container">
+                    <div className="blogHeader">
+                    <div className="blogDetailsHeader">
+                      <div className="blogTitle">
+                        <h2>
+                          {/* The Rise Of Marketin<span>g</span>And Why You Need It */}
+                          {blogs.title}
+                        </h2>
+                      </div>
+        
+                      <div className="blogLinks">
+                        <Link to="/home" className="blogLink">
+                          Home
+                        </Link>
+                        <FaAngleRight className="angleIcon" />
+                        <Link to="blog" className="blogLink">
+                          Blog
+                        </Link>
+                        <FaAngleRight className="angleIcon" />
+                        <p to="blog">{blogs.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+              <div className="container">
+              <div className="right-left-container">
+                   <div className="left">
                   <div className="cards-container">
                     <div className="card">
                       <div className="cardImgContainer">
@@ -83,7 +82,7 @@ const BlogDetails = ({handleCategoryClick}) => {
                       </div>
                     </div>
                   </div>
-                )}
+               
 
                 {/* BlogDetails Component end */}
               </div>
@@ -159,13 +158,13 @@ const BlogDetails = ({handleCategoryClick}) => {
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                  <p onClick={() => handleCategoryClick("Business")}>Business</p>
-                    <p onClick={() => handleCategoryClick("Digital")}>Digital</p>
-                    <p onClick={() => handleCategoryClick("Digital")}>Family</p>
-                    <p onClick={() => handleCategoryClick("Machine Learning")}>Machine Learning</p>
-                    <p onClick={() => handleCategoryClick("Marketing")}>Marketing</p>
-                    <p onClick={() => handleCategoryClick("Music")}>Music</p>
-                    <p onClick={() => handleCategoryClick("Security")}>Security</p>
+                    <p>Business</p>
+                    <p>Digital</p>
+                    <p>Family</p>
+                    <p>Machine Learning</p>
+                    <p>Marketing</p>
+                    <p>Music</p>
+                    <p>Security</p>
                   </div>
                 </div>
                 <div className="tags-container">
@@ -189,11 +188,17 @@ const BlogDetails = ({handleCategoryClick}) => {
                   </div>
                 </div>
               </div>
+               </div>
+              </div>
+               </div>
+            
+            )}
+         
             </section>
-          </div>
-        </div>
-      )}
-    </>
+       
+          )
+          }
+          </>
   );
 };
 
