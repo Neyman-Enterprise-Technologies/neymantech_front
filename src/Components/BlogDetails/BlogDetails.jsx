@@ -78,6 +78,7 @@ const BlogDetails = ({ handleCategoryClick }) => {
                       </div>
                       <div className="bottom-content">
                         <h2>{blogs.title}</h2>
+                        <p>{blogs.description}</p>
                         {/* <p>{blogs.long_descriptions}</p> */}
                       </div>
                     </div>

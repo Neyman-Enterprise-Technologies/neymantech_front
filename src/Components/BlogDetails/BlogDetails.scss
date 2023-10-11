@@ -131,7 +131,7 @@
   transform: scale(1.2) rotate(5deg);
 } */
 .blogDetails .left .card .bottom-content h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .blogDetails .left .card .bottom-content h2,
@@ -141,8 +141,10 @@
 }
 .blogDetails .left .card .bottom-content p {
   color: #737b9a;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
+  padding: 3rem 0;
+  line-height: 2rem;
 }
 /* .blogDetails .left .card:hover {
   box-shadow: 0 3px 20px 0(rgb(210, 210, 219));

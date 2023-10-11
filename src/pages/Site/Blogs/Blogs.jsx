@@ -18,13 +18,7 @@ export default function Blogs() {
  
  
  
-  const [selectedCategory, setSelectedCategory] = useState("All"); // Default category is "All" to show all posts
-
-  const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
-  };
-
-  const filteredBlogs = selectedCategory === "All" ? blogs : blogs.filter(blog => blog.category === selectedCategory);
+ 
 
 
 
