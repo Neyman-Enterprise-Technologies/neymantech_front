@@ -15,18 +15,20 @@ export default function Blogs() {
   // const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog/`)
   const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
-  const [searchCard, setSearchCard] = useState("");
+ 
+ 
+ 
+  const [selectedCategory, setSelectedCategory] = useState("All"); // Default category is "All" to show all posts
 
-  /*   select by category start*/
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
-  const filteredBlogs = selectedCategory
-    ? blogs.filter((blog) => blog.category === selectedCategory)
-    : blogs;
-
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
   };
+
+  const filteredBlogs = selectedCategory === "All" ? blogs : blogs.filter(blog => blog.category === selectedCategory);
+
+
+
+ 
   /*   select by category end*/
 
   const [loading, setLoading] = useState(false);
@@ -70,12 +72,7 @@ export default function Blogs() {
                 {error && <div>{error}</div>}
                 {blogs && (
                   <BlogList
-                    blogs={blogs.filter((item) => {
-                      return searchCard.toLowerCase() === ""
-                        ? item
-                        : item.title.toLowerCase().includes(searchCard);
-                    })}
-                    filteredBlogs={filteredBlogs}
+               
                   />
                 )}
 
@@ -85,9 +82,11 @@ export default function Blogs() {
                 <div className="search">
                   <div className="input-button-container">
                     <input
+          
                       type="text"
                       placeholder="search..."
-                      onChange={(e) => setSearchCard(e.target.value)}
+                  
+                    
                     />
 
                     <div className="search-icon-container">
@@ -177,21 +176,21 @@ export default function Blogs() {
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                    <p onClick={() => handleCategoryClick("Business")}>
+                    <p>
                       Business
                     </p>
-                    <p onClick={() => handleCategoryClick("Digital")}>
+                    <p>
                       Digital
                     </p>
-                    <p onClick={() => handleCategoryClick("Digital")}>Family</p>
-                    <p onClick={() => handleCategoryClick("Machine Learning")}>
+                    <p >Family</p>
+                    <p >
                       Machine Learning
                     </p>
-                    <p onClick={() => handleCategoryClick("Marketing")}>
+                    <p>
                       Marketing
                     </p>
-                    <p onClick={() => handleCategoryClick("Music")}>Music</p>
-                    <p onClick={() => handleCategoryClick("Security")}>
+                    <p >Music</p>
+                    <p >
                       Security
                     </p>
                   </div>
