@@ -50,11 +50,16 @@
   margin-top: 0.1rem;
   color: #737b9a;
 }
-.blogTitle span {
+.blogTitle .blogTitleSpan{
+   border-bottom: 2px solid #f78da7;
+   font-size: 2.5rem;
+   padding-bottom: 1.2rem;
+}
+/* .blogTitle span {
   border-bottom: 2px solid #f78da7;
   font-size: 2.5rem;
   padding-bottom: 1.2rem;
-}
+} */
 /* heading end */
 
 /* blogs */

@@ -15,15 +15,13 @@ export default function Blogs() {
   // const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog/`)
   const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
- 
- 
- 
- 
-
-
-
- 
-  /*   select by category end*/
+  const [search, setSearch] = useState("");
+  const filteredBlogs = () => {
+    return blogs.filter((blog) =>
+      blog.title.toLowerCase().includes(search.toLowerCase())
+    );
+  };
+  
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -44,7 +42,7 @@ export default function Blogs() {
             <div className="container">
               <div className="blogTitle">
                 <h2>
-                  B<span>lo</span>g
+                  B<span className="blogTitleSpan">lo</span>g
                 </h2>
               </div>
             </div>
@@ -64,11 +62,7 @@ export default function Blogs() {
                 {/* BlogList Component start */}
 
                 {error && <div>{error}</div>}
-                {blogs && (
-                  <BlogList
-               
-                  />
-                )}
+                {blogs && <BlogList filteredBlogs={filteredBlogs} />}
 
                 {/* BlogList Component end */}
               </div>
@@ -76,11 +70,10 @@ export default function Blogs() {
                 <div className="search">
                   <div className="input-button-container">
                     <input
-          
+                      onChange={(e) => setSearch(e.target.value)}
+                      value={search}
                       type="text"
                       placeholder="search..."
-                  
-                    
                     />
 
                     <div className="search-icon-container">
@@ -170,23 +163,13 @@ export default function Blogs() {
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                    <p>
-                      Business
-                    </p>
-                    <p>
-                      Digital
-                    </p>
-                    <p >Family</p>
-                    <p >
-                      Machine Learning
-                    </p>
-                    <p>
-                      Marketing
-                    </p>
-                    <p >Music</p>
-                    <p >
-                      Security
-                    </p>
+                    <p>Business</p>
+                    <p>Digital</p>
+                    <p>Family</p>
+                    <p>Machine Learning</p>
+                    <p>Marketing</p>
+                    <p>Music</p>
+                    <p>Security</p>
                   </div>
                 </div>
                 <div className="tags-container">
