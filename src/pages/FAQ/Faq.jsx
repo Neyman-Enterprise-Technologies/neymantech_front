@@ -224,42 +224,7 @@ export default function Faq() {
             </div>
           </div>
           <div className="container">
-            <div className="faqSection-2">
-              <div className="faqTitleBottom">
-                <p className="about-description">Contact Us</p>
-                <h2>Do you have any questions?</h2>
-                <p className="faqDescription">
-                  Real innovations and a positive customer experience are the
-                  heart of successful communication. No fake products and
-                  services.
-                </p>
-                <div className="section-2-content">
-                  <div className="left">
-                    <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
-                  </div>
-                  <div className="right">
-                    <form>
-                      <div className="inputs">
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                      </div>
-                      <div className="inputs">
-                        <input type="number" placeholder="Phone" />
-                        <input type="Subject" placeholder="Subject" />
-                      </div>
-                      <textarea
-                        name=""
-                        id=""
-                        placeholder="Your Message"
-                      ></textarea>
-                      <button>
-                        <span>SEND MESSAGE</span>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
           
         </>

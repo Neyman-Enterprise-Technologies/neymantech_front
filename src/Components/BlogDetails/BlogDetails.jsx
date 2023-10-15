@@ -11,8 +11,9 @@ import "./BlogDetails.scss";
 const BlogDetails = ({ handleCategoryClick }) => {
   const { id } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
-  // const { data: blog, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
-  const { data: blogs, error } = UseFetch(`${apiUrl}blogs/${id}`);
+  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
+
+  // const { data: blogs, error } = UseFetch(`${apiUrl}blogs/${id}`);
 
   const [loading, setLoading] = useState(false);
 
@@ -81,8 +82,8 @@ const BlogDetails = ({ handleCategoryClick }) => {
                         </div>
                         <div className="bottom-content">
                           <h2>{blogs.title}</h2>
-                          <p>{blogs.description}</p>
-                          {/* <p>{blogs.long_descriptions}</p> */}
+                          {/* <p>{blogs.description}</p> */}
+                          <p>{blogs.long_descriptions}</p>
                         </div>
                       </div>
                     </div>
@@ -158,6 +159,27 @@ const BlogDetails = ({ handleCategoryClick }) => {
                         </div>
                       </div>
                     </div>
+                    {/* {blogs && (
+                  <div className="recent-posts-container">
+                    <h2>Recent Posts</h2>
+                    <Link to={`/blogs/${blogs.id}`}>
+                      {blogs.map((blog) => (
+                        <div className="post-details">
+                          <div className="details-img">
+                            <img src={blog.photo} alt="" />
+                          </div>
+                          <div className="description">
+                            <p className="date"></p>
+                            <p className="title">
+                              Making Peace With The Feast Or Famine Of
+                              Freelancing
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </Link>
+                  </div>
+                )} */}
                     <div className="category-container">
                       <h2 className="title">Categories</h2>
                       <div className="category-list-container">

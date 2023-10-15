@@ -12,8 +12,8 @@ import UseFetch from "../../../UseFetch";
 
 export default function Blogs() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  // const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog/`)
-  const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
+  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
+  // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
   const [search, setSearch] = useState("");
   const filteredBlogs = () => {
@@ -21,7 +21,6 @@ export default function Blogs() {
       blog.title.toLowerCase().includes(search.toLowerCase())
     );
   };
-  
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -82,81 +81,25 @@ export default function Blogs() {
                   </div>
                 </div>
 
-                {/* {blogs && 
-                        <Link to={`/blogs/${blogs.id}`} >
-                        <div className="post-details">
-                          <div className="details-img">
-                            <img src={blogs.photo} alt="" />
-                          </div>
-                          <div className="description">
-                            <p className="date">{blogs.date}</p>
-                            <p className="title">{blogs.title}</p>
-                          </div>
-                        </div>
-                      </Link>
-                      
-                      } */}
                 {blogs && (
                   <div className="recent-posts-container">
                     <h2>Recent Posts</h2>
                     <Link to={`/blogs/${blogs.id}`}>
-                      <div className="post-details">
-                        <div className="details-img">
-                          <img
-                            src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg"
-                            alt=""
-                          />
+                      {blogs.map((blog) => (
+                        <div className="post-details" key={blog.id}>
+                          <div className="details-img">
+                            <img src={blog.photo} alt="" />
+                          </div>
+                          <div className="description">
+                            <p className="date">April 25,2020</p>
+                            <p className="title">
+                              Making Peace With The Feast Or Famine Of
+                              Freelancing
+                            </p>
+                          </div>
                         </div>
-                        <div className="description">
-                          <p className="date">April 25,2020</p>
-                          <p className="title">
-                            Making Peace With The Feast Or Famine Of Freelancing
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </Link>
-                    <div className="post-details">
-                      <div className="details-img">
-                        <img
-                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="description">
-                        <p className="date">April 25,2020</p>
-                        <p className="title">
-                          Making Peace With The Feast Or Famine Of Freelancing
-                        </p>
-                      </div>
-                    </div>
-                    <div className="post-details">
-                      <div className="details-img">
-                        <img
-                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="description">
-                        <p className="date">April 25,2020</p>
-                        <p className="title">
-                          Making Peace With The Feast Or Famine Of Freelancing
-                        </p>
-                      </div>
-                    </div>
-                    <div className="post-details">
-                      <div className="details-img">
-                        <img
-                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="description">
-                        <p className="date">April 25,2020</p>
-                        <p className="title">
-                          Making Peace With The Feast Or Famine Of Freelancing
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 )}
 

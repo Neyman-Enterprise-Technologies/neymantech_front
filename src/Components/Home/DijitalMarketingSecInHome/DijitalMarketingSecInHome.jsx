@@ -32,7 +32,9 @@ const DijitalMarketingSecInHome = ({ digitalMarketingSecInHome }) => {
           </Link> */}
         </div>
       </div>
-      <div className="right"><img src={digitalMarketingSecInHome.imgSrc} /></div>
+      <div className="right">
+        <img src={digitalMarketingSecInHome.imgSrc} />
+      </div>
     </div>
   );
 };

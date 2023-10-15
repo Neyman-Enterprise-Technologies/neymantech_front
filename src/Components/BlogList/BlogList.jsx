@@ -4,18 +4,16 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import UseFetch from "../../UseFetch";
 
-const BlogList = ({ blogs }) => {
+const BlogList = () => {
   const [loading, setLoading] = useState(false);
-  
+
   const apiUrl = import.meta.env.VITE_API_URL;
   //  const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
-  // const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
+  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(6);
-
- 
 
   /*   Get Current posts */
   const indexOfLastPost = currentPage * postsPerPage;
@@ -26,11 +24,9 @@ const BlogList = ({ blogs }) => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   useEffect(() => {
-    
     const fetchPosts = async () => {
-      const res = await axios.get(`${apiUrl}blogs`);
-      // const res = await axios.get(`${apiUrl}blog_api/blog/`);
-      
+      // const res = await axios.get(`${apiUrl}blogs`);
+      const res = await axios.get(`${apiUrl}blog_api/blog/`);
 
       setPosts(res.data);
     };
@@ -42,14 +38,8 @@ const BlogList = ({ blogs }) => {
     }, 1000);
   }, []);
 
-
-
-
-
   return (
     <>
-    
-    
       <div className="cards-container">
         {currentPosts.map((blog) => (
           <Link to={`/blogs/${blog.id}`} key={blog.id}>
@@ -60,7 +50,7 @@ const BlogList = ({ blogs }) => {
               </div>
               <div className="bottom-content">
                 <h2>{blog.title}</h2>
-                {/* <p>{blog.short_descriptions}</p> */}
+                <p>{blog.short_descriptions}</p>
               </div>
             </div>
           </Link>

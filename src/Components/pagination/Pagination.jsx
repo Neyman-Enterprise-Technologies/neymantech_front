@@ -12,18 +12,27 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
     pageNumbers.push(i);
   }
 
+  const getLoader = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }
+
   return (
     <>
       {loading ? (
         <Loading />
       ) : (
-        <>
           <nav className="pagination-container">
             <ul className="pagination">
               {currentPage > 1 && (
                 <li className="page-item">
                   <a
-                    onClick={() => paginate(currentPage - 1)}
+                    onClick={() => {
+                      paginate(currentPage - 1)
+                      getLoader();
+                    }}
                     href="#"
                     className="page-link"
                   >
@@ -34,7 +43,10 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
               {pageNumbers.map((number) => (
                 <li key={number} className="page-item">
                   <a
-                    onClick={() => paginate(number)}
+                    onClick={() => {
+                      paginate(number)
+                      getLoader()
+                    }}
                     href="#"
                     className="page-link"
                   >
@@ -45,7 +57,10 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
               {currentPage < pageNumbers.length && (
                 <li className="page-item">
                   <a
-                    onClick={() => paginate(currentPage + 1)}
+                    onClick={() => {
+                      paginate(currentPage + 1)
+                      getLoader(true);
+                    }}
                     href="#"
                     className="page-link"
                   >
@@ -55,7 +70,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
               )}
             </ul>
           </nav>
-        </>
       )}
     </>
   );
