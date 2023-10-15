@@ -9,8 +9,8 @@ import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/
 
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  // const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}`)
+  // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
+  const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}service_api/last_works/`)
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {

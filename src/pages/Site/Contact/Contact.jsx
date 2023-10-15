@@ -21,26 +21,26 @@ const contactCardsIconsObj = {
 export default function Contact() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  // const { data: services } = UseFetch(`${apiUrl}core_api/contact`);
-  const { data: contact } = UseFetch(`${apiUrl}contact`);
+  const { data: contact } = UseFetch(`${apiUrl}core_api/contact`);
+  // const { data: contact } = UseFetch(`${apiUrl}contact`);
  
  
 
 
   /* FORM START */
-  const [inputName, setInputName] = useState("");
-  const [inputEmail, setInputEmail] = useState("");
-  const [inputPhone, setInputPhone] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone_number, setInputPhone] = useState("");
   const [inputSubject, setInputSubject] = useState("");
-  const [inputMessage, setInputMessage] = useState("")
+  const [message, setMessage] = useState("")
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputName && inputEmail && inputPhone && inputSubject&& inputMessage) {
-      fetch("http://localhost:8001/formContact", {
+    if (fullname && email && phone_number && inputSubject&& message) {
+      fetch(`${apiUrl}core_api/contact`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
-        body: JSON.stringify({ inputName ,inputEmail , inputPhone , inputSubject, inputMessage}),
+        body: JSON.stringify({ fullname ,email , phone_number , inputSubject, message}),
       });
     }
   }
@@ -127,15 +127,15 @@ export default function Contact() {
                           type="text"
                           placeholder="Name"
                           required
-                          value={inputName}
-                          onChange={(e) => setInputName(e.target.value)}
+                          value={fullname}
+                          onChange={(e) => setFullname(e.target.value)}
                         />
                         <input
                           type="email"
                           placeholder="Email"
                           required
-                          value={inputEmail}
-                          onChange={(e) => setInputEmail(e.target.value)}
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                       <div className="inputs">
@@ -143,7 +143,7 @@ export default function Contact() {
                           type="number"
                           placeholder="Phone"
                           required
-                          value={inputPhone}
+                          value={phone_number}
                           onChange={(e) => setInputPhone(e.target.value)}
                         />
                         <input
@@ -159,8 +159,8 @@ export default function Contact() {
                         id=""
                         required
                         placeholder="Your Message"
-                        value={inputMessage}
-                        onChange={(e) => setInputMessage(e.target.value)}
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
                       <button>
                         <span>SEND MESSAGE</span>
