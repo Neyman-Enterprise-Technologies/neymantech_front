@@ -85,7 +85,7 @@
 }
 
 .blogDetailsHeader .blogTitle span {
-  border-bottom: 2px solid #f78da7;
+  /* border-bottom: 2px solid #f78da7; */
   font-size: 2.5rem;
   padding-bottom: 1.2rem;
 }
@@ -185,7 +185,7 @@
   transform: scale(1.2) rotate(5deg);
 } */
 .blogDetails .left .card .bottom-content h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .blogDetails .left .card .bottom-content h2,
@@ -199,8 +199,10 @@
 
 .blogDetails .left .card .bottom-content p {
   color: #737b9a;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
+  padding: 3rem 0;
+  line-height: 2rem;
 }
 
 /* .blogDetails .left .card:hover {

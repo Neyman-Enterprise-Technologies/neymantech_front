@@ -1,5 +1,4 @@
-/* $PrimaryColor: #0000ff; */
-/* $TextColor: #7b83a3; */
+
 
 .container {
   max-width: 1320px;
@@ -18,42 +17,7 @@
 }
 
 
-.faqSection-2 .section-2-content {
-  padding-top: 4rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  width: 100%;
-}
-.faqSection-2 .section-2-content .left {
-  width: 30%;
-  position: relative;
-}
-.faqSection-2 .section-2-content .left img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: contain;
-}
-.faqSection-2 .section-2-content .right {
-  width: 70%;
-}
-.faqSection-2 .section-2-content .right form {
-  /* background-color: rgb(72, 6, 6); */
-  display: flex;
-  flex-direction: column;
 
-  gap: 2rem;
-}
-.faqSection-2 .section-2-content .right form .inputs {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-.faqSection-2 .section-2-content .right form .inputs input{
- padding:1.5rem;
-}
 /*  BUTTON HOVER EFFECT START
 .faqSection-2 .section-2-content .right form button {
 	border: none;

@@ -13,19 +13,45 @@ import Loading from "../../../Components/Loading/Loading";
 import UseFetch from "../../../UseFetch";
 
 const contactCardsIconsObj = {
-  MdOutlineMarkEmailRead: <MdOutlineMarkEmailRead className="contactIcon"/>,
+  MdOutlineMarkEmailRead: <MdOutlineMarkEmailRead className="contactIcon" />,
   ImLocation: <ImLocation className="contactIcon" />,
-  BsFillTelephoneFill: <BsFillTelephoneFill className="contactIcon"/>,
+  BsFillTelephoneFill: <BsFillTelephoneFill className="contactIcon" />,
 };
 
 export default function Contact() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
   // const { data: services } = UseFetch(`${apiUrl}core_api/contact`);
-  const { data: services } = UseFetch(`${apiUrl}contact`);
+  const { data: contact } = UseFetch(`${apiUrl}contact`);
+ 
+ 
+
+
+  /* FORM START */
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputPhone, setInputPhone] = useState("");
+  const [inputSubject, setInputSubject] = useState("");
+  const [inputMessage, setInputMessage] = useState("")
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (inputName && inputEmail && inputPhone && inputSubject&& inputMessage) {
+      fetch("http://localhost:8001/formContact", {
+        method: "POST",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify({ inputName ,inputEmail , inputPhone , inputSubject, inputMessage}),
+      });
+    }
+  }
+ 
+
+
+  /* FORM END */
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
+  
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
@@ -59,13 +85,13 @@ export default function Contact() {
             {/*  HEADER LINK END  */}
 
             <div className="container">
-              {services && (
+              {contact && (
                 <div className="contactCardContainer">
-                  {services.map(
-                    ({ contactType2, title, id, contactType1,icon }) => (
+                  {contact.map(
+                    ({ contactType2, title, id, contactType1, icon }) => (
                       <div className="card" key={id}>
                         <div className="icon-container">
-                       {contactCardsIconsObj[icon]}
+                          {contactCardsIconsObj[icon]}
                         </div>
                         <h2 className="title">{title}</h2>
 
@@ -78,6 +104,71 @@ export default function Contact() {
                   )}
                 </div>
               )}
+            </div>
+          </div>
+          <div className="container">
+            <div className="faqSection-2">
+              <div className="faqTitleBottom">
+                <p className="about-description">Contact Us</p>
+                <h2>Do you have any questions?</h2>
+                <p className="faqDescription">
+                  Real innovations and a positive customer experience are the
+                  heart of successful communication. No fake products and
+                  services.
+                </p>
+                <div className="section-2-content">
+                  <div className="left">
+                    <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
+                  </div>
+                  <div className="right">
+                    <form onSubmit={handleSubmit}>
+                      <div className="inputs">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          required
+                          value={inputName}
+                          onChange={(e) => setInputName(e.target.value)}
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          required
+                          value={inputEmail}
+                          onChange={(e) => setInputEmail(e.target.value)}
+                        />
+                      </div>
+                      <div className="inputs">
+                        <input
+                          type="number"
+                          placeholder="Phone"
+                          required
+                          value={inputPhone}
+                          onChange={(e) => setInputPhone(e.target.value)}
+                        />
+                        <input
+                          type="Subject"
+                          placeholder="Subject"
+                          required
+                          value={inputSubject}
+                          onChange={(e) => setInputSubject(e.target.value)}
+                        />
+                      </div>
+                      <textarea
+                        name=""
+                        id=""
+                        required
+                        placeholder="Your Message"
+                        value={inputMessage}
+                        onChange={(e) => setInputMessage(e.target.value)}
+                      ></textarea>
+                      <button>
+                        <span>SEND MESSAGE</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -12,24 +12,15 @@ import UseFetch from "../../../UseFetch";
 
 export default function Blogs() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  // const {data:blogs, error} = UseFetch(`${apiUrl}blog_api/blog/`)
-  const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
+  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
+  // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
- 
- 
- 
-  const [selectedCategory, setSelectedCategory] = useState("All"); // Default category is "All" to show all posts
-
-  const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
+  const [search, setSearch] = useState("");
+  const filteredBlogs = () => {
+    return blogs.filter((blog) =>
+      blog.title.toLowerCase().includes(search.toLowerCase())
+    );
   };
-
-  const filteredBlogs = selectedCategory === "All" ? blogs : blogs.filter(blog => blog.category === selectedCategory);
-
-
-
- 
-  /*   select by category end*/
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -50,7 +41,7 @@ export default function Blogs() {
             <div className="container">
               <div className="blogTitle">
                 <h2>
-                  B<span>lo</span>g
+                  B<span className="blogTitleSpan">lo</span>g
                 </h2>
               </div>
             </div>
@@ -70,11 +61,7 @@ export default function Blogs() {
                 {/* BlogList Component start */}
 
                 {error && <div>{error}</div>}
-                {blogs && (
-                  <BlogList
-               
-                  />
-                )}
+                {blogs && <BlogList filteredBlogs={filteredBlogs} />}
 
                 {/* BlogList Component end */}
               </div>
@@ -82,11 +69,10 @@ export default function Blogs() {
                 <div className="search">
                   <div className="input-button-container">
                     <input
-          
+                      onChange={(e) => setSearch(e.target.value)}
+                      value={search}
                       type="text"
                       placeholder="search..."
-                  
-                    
                     />
 
                     <div className="search-icon-container">
@@ -95,104 +81,38 @@ export default function Blogs() {
                   </div>
                 </div>
 
-                {/* {blogs && 
-                        <Link to={`/blogs/${blogs.id}`} >
-                        <div className="post-details">
-                          <div className="details-img">
-                            <img src={blogs.photo} alt="" />
-                          </div>
-                          <div className="description">
-                            <p className="date">{blogs.date}</p>
-                            <p className="title">{blogs.title}</p>
-                          </div>
-                        </div>
-                      </Link>
-                      
-                      } */}
                 {blogs && (
                   <div className="recent-posts-container">
                     <h2>Recent Posts</h2>
                     <Link to={`/blogs/${blogs.id}`}>
-                      <div className="post-details">
-                        <div className="details-img">
-                          <img
-                            src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg"
-                            alt=""
-                          />
+                      {blogs.map((blog) => (
+                        <div className="post-details" key={blog.id}>
+                          <div className="details-img">
+                            <img src={blog.photo} alt="" />
+                          </div>
+                          <div className="description">
+                            <p className="date">April 25,2020</p>
+                            <p className="title">
+                              Making Peace With The Feast Or Famine Of
+                              Freelancing
+                            </p>
+                          </div>
                         </div>
-                        <div className="description">
-                          <p className="date">April 25,2020</p>
-                          <p className="title">
-                            Making Peace With The Feast Or Famine Of Freelancing
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </Link>
-                    <div className="post-details">
-                      <div className="details-img">
-                        <img
-                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="description">
-                        <p className="date">April 25,2020</p>
-                        <p className="title">
-                          Making Peace With The Feast Or Famine Of Freelancing
-                        </p>
-                      </div>
-                    </div>
-                    <div className="post-details">
-                      <div className="details-img">
-                        <img
-                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="description">
-                        <p className="date">April 25,2020</p>
-                        <p className="title">
-                          Making Peace With The Feast Or Famine Of Freelancing
-                        </p>
-                      </div>
-                    </div>
-                    <div className="post-details">
-                      <div className="details-img">
-                        <img
-                          src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="description">
-                        <p className="date">April 25,2020</p>
-                        <p className="title">
-                          Making Peace With The Feast Or Famine Of Freelancing
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 )}
 
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                    <p>
-                      Business
-                    </p>
-                    <p>
-                      Digital
-                    </p>
-                    <p >Family</p>
-                    <p >
-                      Machine Learning
-                    </p>
-                    <p>
-                      Marketing
-                    </p>
-                    <p >Music</p>
-                    <p >
-                      Security
-                    </p>
+                    <p>Business</p>
+                    <p>Digital</p>
+                    <p>Family</p>
+                    <p>Machine Learning</p>
+                    <p>Marketing</p>
+                    <p>Music</p>
+                    <p>Security</p>
                   </div>
                 </div>
                 <div className="tags-container">
