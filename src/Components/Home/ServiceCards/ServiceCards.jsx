@@ -28,10 +28,10 @@ const ServiceCards = ({ servicecards }) => {
                 {iconComponents[card.icon]}
                 <BiSolidBadgeCheck className="badge" />
               </div>
-              {/* <h3>{card.property_name}</h3> */}
-              <h3>{card.title}</h3>
-              {/* <p>{card.package}</p> */}
-              <p>{card.description}</p>
+              <h3>{card.property_name}</h3>
+              {/* <h3>{card.title}</h3> */}
+              <p>{card.package}</p>
+              {/* <p>{card.description}</p> */}
             </div>
           </Link>
         ))}

@@ -20,8 +20,8 @@ export default function About() {
 
   const apiUrl = import.meta.env.VITE_API_URL;
 //*OUR TEAM SECTION-4
-  const { data: team, error } = UseFetch("http://localhost:8001/team");
-  // const { data: team, error } = UseFetch(`${apiUrl}core_api/our_team/`);
+  // const { data: team, error } = UseFetch("http://localhost:8001/team");
+  const { data: team, error } = UseFetch(`${apiUrl}core_api/our_team/`);
   
   //*ABOUTSECTION -1
   const { data: aboutSection1 } = UseFetch("http://localhost:8001/aboutSection1");
