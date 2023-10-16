@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Carusel.scss";
 
-
 const Carusel = ({ feedback }) => {
   return (
     <div>
@@ -30,9 +29,9 @@ const Carusel = ({ feedback }) => {
           },
         }}
       >
-        {feedback.map(({avatar,fullname, position, id, feedback}) => {
+        {feedback.map(({ avatar, fullname, id, position, feedback }) => (
           <SwiperSlide className="Slider" key={id}>
-            <p>{console.log(feedback)}</p>
+            <p>{feedback}</p>
             <div className="Slider__div">
               <div>
                 <img src={avatar} alt="Slide 1" />
@@ -42,8 +41,9 @@ const Carusel = ({ feedback }) => {
                 <span>{position}</span>
               </div>
             </div>
-          </SwiperSlide>;
-        })}
+          </SwiperSlide>
+        ))}
+
         {/* <SwiperSlide className="Slider">
           <p>“We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services.”</p>
           <div className="Slider__div">
