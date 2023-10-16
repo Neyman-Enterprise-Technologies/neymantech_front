@@ -147,6 +147,7 @@
 }
 
 .faqSection-2 .section-2-content .right form textarea {
+  font-size: 1.5rem;
   height: 300px;
   width: 100%;
   resize: none;

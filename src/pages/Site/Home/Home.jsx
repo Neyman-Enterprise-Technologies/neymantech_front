@@ -24,23 +24,34 @@ import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
+    //*CARUSEL
+    const { data: feedback, error:feedbackError } = UseFetch(`${apiUrl}core_api/feedback/`);
+
   //*HOME - SERVICECARDS- SECTION-1
   // const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
-  const { data: serviceCards, error } = UseFetch(`${apiUrl}service_api/package_property/`);
-  
+  const { data: serviceCards, error } = UseFetch(
+    `${apiUrl}service_api/package_property/`
+  );
+
   //*HOME - DIJITAL MARKETING- SECTION-2
-  const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}digitalMarketingSecInHome`);
+  const { data: digitalMarketingSecInHome } = UseFetch(
+    `${apiUrl}digitalMarketingSecInHome`
+  );
   // const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}`);
-    
+
   //*HOME - WEB DESIGN SECTION- SECTION-3
   const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
   // const { data: webDesignSecHome } = UseFetch(`${apiUrl}`);
-  
- //*HOME - OUR LATEST WORK -4
+
+  //*HOME - OUR LATEST WORK -4
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}service_api/last_works/}`);
-  
-  const { data: latestNews } = UseFetch(`${apiUrl}latestNews`);
+  const { data: latestWorkCardInHome } = UseFetch(
+    `${apiUrl}service_api/last_works/`
+  );
+
+
+
+  const { data: latestNews } = UseFetch(`${apiUrl}service_api/last_works/`);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -123,7 +134,7 @@ export default function Home() {
               <p>Testinomials</p>
               <h2>Some lovely feedback from our clients</h2>
             </div>
-            <Carusel />
+            {feedback && <Carusel feedback={feedback} />}
           </div>
 
           <div className="home__blogs">

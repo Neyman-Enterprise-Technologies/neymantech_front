@@ -26,6 +26,7 @@ export default function About() {
   //*ABOUTSECTION -1
   const { data: aboutSection1 } = UseFetch("http://localhost:8001/aboutSection1");
 
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);

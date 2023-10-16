@@ -101,22 +101,26 @@ const BlogDetails = ({ handleCategoryClick }) => {
                     </div>
                     <div className="recent-posts-container">
                       <h2>Recent Posts</h2>
-
-                      <div className="post-details">
-                        <div className="details-img">
-                          <img
-                            src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider1-1.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div className="description">
-                          <p className="date">April 25,2020</p>
-                          <p className="title">
-                            Making Peace With The Feast Or Famine Of Freelancing
-                          </p>
-                        </div>
-                      </div>
-                      <div className="post-details">
+{
+  blogs&& (
+    <div className="post-details">
+    <div className="details-img">
+      <img
+        src={blogs.photo}
+        alt=""
+      />
+    </div>
+    <div className="description">
+      <p className="date">April 25,2020</p>
+      <p className="title">
+        Making Peace With The Feast Or Famine Of Freelancing
+      </p>
+    </div>
+  </div>
+  )
+}
+                    
+                      {/* <div className="post-details">
                         <div className="details-img">
                           <img
                             src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg"
@@ -157,7 +161,7 @@ const BlogDetails = ({ handleCategoryClick }) => {
                             Making Peace With The Feast Or Famine Of Freelancing
                           </p>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                     {/* {blogs && (
                   <div className="recent-posts-container">
