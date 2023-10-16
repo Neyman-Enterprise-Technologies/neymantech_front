@@ -37,7 +37,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (fullname && email && phone_number && inputSubject&& message) {
-      fetch(`${apiUrl}core_api/contact`, {
+      fetch(`${apiUrl}core_api/contact/`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ fullname ,email , phone_number , inputSubject, message}),
