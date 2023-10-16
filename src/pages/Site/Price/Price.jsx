@@ -9,10 +9,6 @@ import UseFetch from "../../../UseFetch";
 import PriceCard from "../../../Components/PriceCard/PriceCard";
 
 export default function Price({ title }) {
-
- 
-
-
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: priceCards } = UseFetch(`${apiUrl}priceCards`);
   const { data: priceCards } = UseFetch(`${apiUrl}service_api/package/`);
@@ -29,8 +25,8 @@ export default function Price({ title }) {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
   return (
     <>
-    {loading ? (
-      <Loading />
+      {loading ? (
+        <Loading />
       ) : (
         <>
           {/*       headerLink start */}
@@ -74,16 +70,14 @@ export default function Price({ title }) {
                   serviceItems={card.serviceItems}
                   color="orange"
                   // color={card.color}
-                   
-              
+
                   key={card.id}
                 />
               ))}
           </div>
 
           {/*  cards container end */}
-        
-      </>
+        </>
       )}
     </>
   );
