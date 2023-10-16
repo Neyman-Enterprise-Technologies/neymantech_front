@@ -10,11 +10,11 @@ const LatestNews = ({ latestNews }) => {
       {latestNews.map((card) => (
         <div className="card" key={card.id}>
           <div className="cardImgContainer">
-            <img src={card.imgSrc} />
+            <img src={card.photo} />
           </div>
           <div className="bottom-content">
-            <h2>{card.title}</h2>
-            <p>{card.description}</p>
+            <h2>{card.company_name}</h2>
+            <p>{card.services_category}</p>
           </div>
         </div>
       ))}
