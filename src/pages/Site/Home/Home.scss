@@ -372,7 +372,7 @@
     /* padding: 1.875rem 5.625rem; */
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.25rem;
@@ -596,7 +596,7 @@
 
   &__cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.875rem;
