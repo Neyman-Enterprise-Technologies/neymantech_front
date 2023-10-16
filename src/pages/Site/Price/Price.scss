@@ -87,8 +87,22 @@
 .cardsContainer {
   padding: 4rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
+  &__pricePeriodContainer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: fit-content;
+    padding: 2rem;
+    gap: 0.5rem;
+  }
+  &__period,
+  &__exchangeRate {
+    color: #737b9a;
+    font-weight: 600;
+  }
 
   &__cardContainer {
     width: 100%;
@@ -128,25 +142,26 @@
 
   &__price {
     position: relative;
-    padding: 2rem 0;
+    top: 0.5rem;
+
     font-size: 2.5rem;
     font-weight: 600;
-    &::before {
+    /* &::before {
       content: "$";
       left: -1.1em;
       bottom: 2.5em;
       position: absolute;
       font-size: 1rem;
       color: #737b9a;
-    }
-    &::after {
+    } */
+    /* &::after {
       content: "/ mo";
       font-size: 1rem;
       color: #737b9a;
       position: absolute;
       right: -2.8rem;
       bottom: 2.5rem;
-    }
+    } */
   }
   &__devider {
     width: 100%;
@@ -165,7 +180,7 @@
     margin-bottom: 1.5rem;
   }
   &__items {
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
     color: #737b9a;
     font-size: 1.2rem;

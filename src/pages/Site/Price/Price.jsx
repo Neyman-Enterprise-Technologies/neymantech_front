@@ -10,7 +10,8 @@ import PriceCard from "../../../Components/PriceCard/PriceCard";
 
 export default function Price({ title }) {
   const apiUrl = import.meta.env.VITE_API_URL;
-  const { data: priceCards } = UseFetch(`${apiUrl}priceCards`);
+  // const { data: priceCards } = UseFetch(`${apiUrl}priceCards`);
+  const { data: priceCards } = UseFetch(`${apiUrl}service_api/package/`);
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -27,7 +28,7 @@ export default function Price({ title }) {
       {loading ? (
         <Loading />
       ) : (
-        <div className="container">
+        <>
           {/*       headerLink start */}
           <div className="priceHeader">
             <div className="container">
@@ -63,17 +64,20 @@ export default function Price({ title }) {
             {priceCards &&
               priceCards.map((card) => (
                 <PriceCard
-                  title={card.title}
+                  title={card.package_name}
                   price={card.price}
+                  period={card.price_period}
                   serviceItems={card.serviceItems}
-                  color={card.color}
+                  color="orange"
+                  // color={card.color}
+
                   key={card.id}
                 />
               ))}
           </div>
 
           {/*  cards container end */}
-        </div>
+        </>
       )}
     </>
   );
