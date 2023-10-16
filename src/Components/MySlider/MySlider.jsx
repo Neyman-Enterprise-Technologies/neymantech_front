@@ -23,8 +23,8 @@ function MySlider() {
         onSwiper={(swiper) => (sliderRef.current = swiper)}
       >
         {slider &&
-          slider.map(({slider_image,slider_header,content}) => (
-            <SwiperSlide>
+          slider.map(({slider_image,slider_header,content,id}) => (
+            <SwiperSlide key={id}>
               <div className="slider1">
                 <img
                   className="slider1__img"
