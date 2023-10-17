@@ -144,7 +144,7 @@ faq Section 2 end */
   line-height: 1.5rem;
   font-weight: 500;
   text-align: center;
-  width: 60ch;
+  /* width: 60ch; */
 }
 
 .faqs {
