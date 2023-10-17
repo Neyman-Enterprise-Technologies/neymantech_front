@@ -110,11 +110,12 @@ box-shadow: 0 0 20px 0 rgba(161, 155, 155, 0.2);
   resize: none;
   outline: none;
   padding: 1.5rem;
+  opacity: 0.4;
 }
 .faqSection-2 .section-2-content .right form textarea::placeholder{
   font-size: 1.2rem;
   font-weight: 500;
-  opacity: 0.4;
+
 }
 
 .faqSection-2 .section-2-content .right form .inputs input{
@@ -123,11 +124,12 @@ box-shadow: 0 0 20px 0 rgba(161, 155, 155, 0.2);
  padding:1.5rem;
  width: 100%;
  outline: none;
+ opacity: 0.4;
 }
 .faqSection-2 .section-2-content .right form .inputs input::placeholder{
   font-size: 1.2rem;
   font-weight: 500;
-  opacity: 0.4;
+
   
 }
 
