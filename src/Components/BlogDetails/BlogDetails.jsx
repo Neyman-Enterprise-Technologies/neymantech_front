@@ -12,6 +12,7 @@ const BlogDetails = ({ handleCategoryClick }) => {
   const { id } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
+  const { data: blog } = UseFetch(`${apiUrl}blog_api/blog/`);
 
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs/${id}`);
 
@@ -101,119 +102,38 @@ const BlogDetails = ({ handleCategoryClick }) => {
                     </div>
                     <div className="recent-posts-container">
                       <h2>Recent Posts</h2>
-{
-  blogs&& (
-    <div className="post-details">
-    <div className="details-img">
-      <img
-        src={blogs.photo}
-        alt=""
-      />
-    </div>
-    <div className="description">
-      <p className="date">April 25,2020</p>
-      <p className="title">
-        Making Peace With The Feast Or Famine Of Freelancing
-      </p>
-    </div>
-  </div>
-  )
-}
-                    
-                      {/* <div className="post-details">
-                        <div className="details-img">
-                          <img
-                            src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider2-1.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div className="description">
-                          <p className="date">April 25,2020</p>
-                          <p className="title">
-                            Making Peace With The Feast Or Famine Of Freelancing
-                          </p>
-                        </div>
-                      </div>
-                      <div className="post-details">
-                        <div className="details-img">
-                          <img
-                            src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/04/ml-slider3-1.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div className="description">
-                          <p className="date">April 25,2020</p>
-                          <p className="title">
-                            Making Peace With The Feast Or Famine Of Freelancing
-                          </p>
-                        </div>
-                      </div>
-                      <div className="post-details">
-                        <div className="details-img">
-                          <img
-                            src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-9-1-1.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div className="description">
-                          <p className="date">April 25,2020</p>
-                          <p className="title">
-                            Making Peace With The Feast Or Famine Of Freelancing
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* {blogs && (
-                  <div className="recent-posts-container">
-                    <h2>Recent Posts</h2>
-                    <Link to={`/blogs/${blogs.id}`}>
-                      {blogs.map((blog) => (
+                      {blogs && (
                         <div className="post-details">
                           <div className="details-img">
-                            <img src={blog.photo} alt="" />
+                            <img src={blogs.photo} alt="" />
                           </div>
                           <div className="description">
-                            <p className="date"></p>
-                            <p className="title">
-                              Making Peace With The Feast Or Famine Of
-                              Freelancing
+                            <p className="date">
+                              {blogs.created_at.slice(0, 10)}
                             </p>
+                            <p className="title">{blogs.short_descriptions}</p>
                           </div>
                         </div>
-                      ))}
-                    </Link>
-                  </div>
-                )} */}
+                      )}
+                    </div>
+
                     <div className="category-container">
                       <h2 className="title">Categories</h2>
                       <div className="category-list-container">
-                        <p>Business</p>
-                        <p>Digital</p>
-                        <p>Family</p>
-                        <p>Machine Learning</p>
-                        <p>Marketing</p>
-                        <p>Music</p>
-                        <p>Security</p>
+                        {blog&&blog.map((_blog) => (
+                          <p key={_blog.blog_category.id}>
+                            {_blog.blog_category.name}
+                          </p>
+                        ))}
                       </div>
                     </div>
                     <div className="tags-container">
                       <h2 className="title">Tags</h2>
                       <div className="tags">
-                        <div className="link-container">
-                          <Link to="#">Agency</Link>
-                          <Link to="#">Boost</Link>
-                          <Link to="#">Buisness</Link>
-                        </div>
-                        <div className="link-container">
-                          <Link to="#">Famly</Link>
-                          <Link to="#">Marketing</Link>
-                          <Link to="#">Music</Link>
-                        </div>
-                        <div className="link-container">
-                          <Link to="#">Need</Link>
-                          <Link to="#">Package</Link>
-                          <Link to="#">Tips</Link>
-                        </div>
+                      {blog &&
+                      blog.map(({ tag }) =>
+                        tag.map(({ name,id }) => <Link  key={id}> <p>{name}</p></Link>)
+                      )}
                       </div>
                     </div>
                   </div>
