@@ -43,73 +43,7 @@ const Carusel = ({ feedback }) => {
             </div>
           </SwiperSlide>
         ))}
-
-        {/* <SwiperSlide className="Slider">
-          <p>“We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services.”</p>
-          <div className="Slider__div">
-            <div><img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/client-image-2-1-1.jpg" alt="Slide 1" /></div>
-            <div><h3>James Ander Taylor</h3><span>Web Developer</span></div>
-          </div>
-        </SwiperSlide> */}
-        {/* <SwiperSlide className="Slider">
-          <p>“We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services.”</p>
-          <div className="Slider__div">
-            <div><img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/client-image-1-1-1.jpg" alt="Slide 2" /></div>
-            <div><h3>Sarah Taylor</h3><span>Designer</span></div>
-          </div>
-        </SwiperSlide> */}
-        {/* <SwiperSlide className="Slider">
-          <p>“We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services.”</p>
-          <div className="Slider__div">
-            <div><img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/client-image-3-1-1.jpg" alt="Slide 3" /></div>
-            <div><h3>Tom Anderson Taylor</h3><span>CEO at Google</span></div>
-          </div>
-        </SwiperSlide> */}
-        {/* <SwiperSlide className="Slider">
-        <p>“We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services.”</p>
-        <div className="Slider__div">
-          <div><img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/client-image-3-1-1.jpg" alt="Slide 3" /></div>
-          <div><h3>Tom Anderson Taylor</h3><span>CEO at Google</span></div>
-        </div>
-      </SwiperSlide> */}
-        {/* <SwiperSlide className="Slider">
-          <p>
-            “We believe brand interaction is key in communication. Real
-            innovations and a positive customer experience are the heart of
-            successful communication. No fake products and services.”
-          </p>
-          <div className="Slider__div">
-            <div>
-              <img
-                src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/client-image-3-1-1.jpg"
-                alt="Slide 3"
-              />
-            </div>
-            <div>
-              <h3>Tom Anderson Taylor</h3>
-              <span>CEO at Google</span>
-            </div>
-          </div>
-        </SwiperSlide>{" "} */}
-        {/* <SwiperSlide className="Slider">
-          <p>
-            “We believe brand interaction is key in communication. Real
-            innovations and a positive customer experience are the heart of
-            successful communication. No fake products and services.”
-          </p>
-          <div className="Slider__div">
-            <div>
-              <img
-                src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/client-image-3-1-1.jpg"
-                alt="Slide 3"
-              />
-            </div>
-            <div>
-              <h3>Tom Anderson Taylor</h3>
-              <span>CEO at Google</span>
-            </div>
-          </div>
-        </SwiperSlide> */}
+        
       </Swiper>
 
       {/* Sonraki üç slayt */}
