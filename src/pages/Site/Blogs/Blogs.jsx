@@ -15,12 +15,18 @@ export default function Blogs() {
   const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
+
+
+
+
+
+
   const [search, setSearch] = useState("");
-  const filteredBlogs = () => {
-    return blogs.filter((blog) =>
+  const filteredBlogs = blogs
+  ? blogs.filter((blog) =>
       blog.title.toLowerCase().includes(search.toLowerCase())
-    );
-  };
+    )
+  : [];
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -62,6 +68,8 @@ export default function Blogs() {
 
                 {error && <div>{error}</div>}
                 {blogs && <BlogList filteredBlogs={filteredBlogs} />}
+                {/* {blogs && <BlogList filteredBlogs={filteredBlogs} currentPage={currentPage} postsPerPage={postsPerPage}/>} */}
+                
 
                 {/* BlogList Component end */}
               </div>
@@ -91,10 +99,9 @@ export default function Blogs() {
                             <img src={blog.photo} alt="" />
                           </div>
                           <div className="description">
-                            <p className="date">April 25,2020</p>
+                            <p className="date">{blog.created_at.slice(0,10)}</p>
                             <p className="title">
-                              Making Peace With The Feast Or Famine Of
-                              Freelancing
+                             {blog.short_descriptions}
                             </p>
                           </div>
                         </div>
@@ -106,33 +113,23 @@ export default function Blogs() {
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                    <p>Business</p>
-                    <p>Digital</p>
-                    <p>Family</p>
-                    <p>Machine Learning</p>
-                    <p>Marketing</p>
-                    <p>Music</p>
-                    <p>Security</p>
+                  {blogs&&blogs.map((_blog) => (
+                          <p key={_blog.blog_category.id} onClick={() => handleCategoryClick(_blog.blog_category.name)}>
+                            {_blog.blog_category.name}
+                          </p>
+                        ))}
                   </div>
                 </div>
                 <div className="tags-container">
                   <h2 className="title">Tags</h2>
                   <div className="tags">
-                    <div className="link-container">
-                      <Link to="#">Agency</Link>
-                      <Link to="#">Boost</Link>
-                      <Link to="#">Buisness</Link>
-                    </div>
-                    <div className="link-container">
-                      <Link to="#">Famly</Link>
-                      <Link to="#">Marketing</Link>
-                      <Link to="#">Music</Link>
-                    </div>
-                    <div className="link-container">
-                      <Link to="#">Need</Link>
-                      <Link to="#">Package</Link>
-                      <Link to="#">Tips</Link>
-                    </div>
+
+                  {blogs &&
+                      blogs.map(({ tag }) =>
+                        tag.map(({ name,id }) => <Link  key={id}> <p>{name}</p></Link>)
+                      )}
+              
+                     
                   </div>
                 </div>
               </div>

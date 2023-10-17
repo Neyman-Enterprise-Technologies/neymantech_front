@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import UseFetch from "../../UseFetch";
 
-const BlogList = () => {
+const BlogList = ({ filteredBlogs }) => {
   const [loading, setLoading] = useState(false);
 
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -59,6 +59,7 @@ const BlogList = () => {
       <Pagination
         postsPerPage={postsPerPage}
         totalPosts={posts.length}
+        // totalPosts={filteredBlogs.length}
         paginate={paginate}
         currentPage={currentPage}
       />

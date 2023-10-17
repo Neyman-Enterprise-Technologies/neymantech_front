@@ -230,9 +230,12 @@ cursor: pointer;
 }
 
 .blogs .right .recent-posts-container .post-details {
-  width: 100%;
+  position: relative;
+  /* width: 100%; */
   display: flex;
-  justify-content: space-between;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* height: 8rem; */
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid #eeeeee;
@@ -240,13 +243,20 @@ cursor: pointer;
   cursor: pointer;
 }
 .blogs .right .recent-posts-container .post-details .details-img {
-  width: 13rem;
-  height: 5.5rem;
+  position: relative;
+  width: 30%;
+  height:5rem;
+  /* height: 5rem */
 }
 .blogs .right .recent-posts-container .post-details .details-img img {
+  /* position: absolute; */
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.blogs .right .recent-posts-container .post-details .description{
+  /* position: absolute; */
+  width: 60%;
 }
 
 .blogs .right .recent-posts-container .post-details .description .date {
@@ -315,29 +325,30 @@ cursor: pointer;
   padding: 1rem 0;
 }
 .blogs .right .tags-container .tags {
-  width: 90%;
+ 
+width: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.blogs .right .tags-container .tags .link-container {
-  display: flex;
-  gap: 0.5rem;
-}
-.blogs .right .tags-container .tags .link-container a {
+
+.blogs .right .tags-container .tags  p {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border: 1px solid #eeeeee;
   width: fit-content;
   font-weight: 600;
   transition: 0.5s;
   font-size: 0.7rem;
 }
-.blogs .right .tags-container .tags .link-container a:hover {
+.blogs .right .tags-container .tags  p:hover{
   background-color: #0000ff;
   color: white;
 }
+
+ 
 
 /* right end */
 
@@ -365,6 +376,15 @@ cursor: pointer;
   .blogs .left a {
 
     width: calc(100% / 2.05);
+  }
+  .blogs .right .tags-container .tags  p {
+    display: block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #eeeeee;
+    width: fit-content;
+    font-weight: 600;
+
+    font-size: 1.1rem;
   }
  
 
