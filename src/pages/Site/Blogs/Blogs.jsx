@@ -13,6 +13,7 @@ import UseFetch from "../../../UseFetch";
 export default function Blogs() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
+  
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
 
