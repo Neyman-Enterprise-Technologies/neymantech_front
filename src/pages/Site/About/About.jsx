@@ -16,6 +16,7 @@ import {
 import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
 import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
+import Partners from "../../../Components/Partners/Partners";
 export default function About() {
 
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -203,6 +204,12 @@ export default function About() {
           {team && <Team team={team} />}
          </div>
           {/* SECTION-4 END */}
+
+       
+   <div className="container">
+   <Partners/>
+   </div>
+     
         </section>
       )}
     </>
