@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-// import UseFetch from "../../UseFetch";
+import UseFetch from "../../UseFetch";
 import "./Partners.scss";
 
 const Partners = () => {
-  // const apiUrl = import.meta.env.VITE_API_URL;
-  // const { data: partners } = UseFetch(`${apiUrl}core_api/collaborator/`);
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const { data: partners } = UseFetch(`${apiUrl}core_api/collaborator/`);
 
   const [width, setWidth] = useState(0);
   const carousel = useRef();
@@ -27,15 +27,15 @@ const Partners = () => {
           dragConstraints={{ right: 0, left: -width }}
           className="inner-carousel"
         >
-          {/* {partners &&
+          {partners &&
             partners.map(({ name, logo }) => (
               <motion.div className="item" key={name}>
                 <img src={logo} alt="" />
                 <p className="companyName">{name}</p>
               </motion.div>
-            ))} */}
+            ))}
 
-          <motion.div className="item">
+          {/* <motion.div className="item">
             <img src="https://i.pinimg.com/736x/5f/2d/2a/5f2d2a3b2bd5c35c402366b101df4395--oil-company-logos-oil-companies.jpg"
               alt=""
             />
@@ -100,7 +100,7 @@ const Partners = () => {
               alt=""
             />
           <p className="companyName">bbbbbbbbbbbbbb</p>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </motion.div>
     </div>
