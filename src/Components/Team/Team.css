@@ -15,6 +15,7 @@
 }
 
 .teamSection .team-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,10 +23,53 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5rem 0;
   gap: 3rem;
+}
+
+.teamSection .team-container__socialContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.4rem;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border-radius: 4rem;
+  background-color: #fff;
+  bottom: 100px;
+  z-index: 1;
+  top: 3rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin-inline: auto;
+  opacity: 0;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.teamSection .team-container__teamSocialIcon {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1;
+  font-size: 25px;
+  color: blue;
+}
+
+.teamSection .team-container__teamSocialIcon:hover {
+  color: orange;
 }
 
 .teamSection .team-container__cardContainer {
@@ -45,6 +89,15 @@
           transform: translateY(-10px);
 }
 
+.teamSection .team-container__cardContainer:hover .team-container__socialContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
 .teamSection .team-container__cardContainer:hover .team-container__profile-details {
   background-color: blue;
 }
@@ -52,6 +105,10 @@
 .teamSection .team-container__cardContainer:hover:hover .team-container__name,
 .teamSection .team-container__cardContainer:hover:hover .team-container__job {
   color: white;
+}
+
+.teamSection .team-container__cardContainer:hover:hover .team-container__profile-container {
+  position: relative;
 }
 
 .teamSection .team-container__cardContainer:hover:hover .team-container__profile-container img {

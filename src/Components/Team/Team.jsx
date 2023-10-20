@@ -1,4 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Team.scss"
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Team = ({ team }) => {
   return (
@@ -11,8 +19,15 @@ const Team = ({ team }) => {
       {team.map((member) => (
         <div className="team-container__cardContainer" key={member.id}>
           <div className="team-container__profile-container">
+          <div className="team-container__socialContainer">
+          <Link to="#"><FontAwesomeIcon className="team-container__teamSocialIcon" icon={faFacebook}/></Link>
+          <Link to="#"><FontAwesomeIcon className="team-container__teamSocialIcon" icon={faInstagram}/></Link>
+          <Link to="#"><FontAwesomeIcon className="team-container__teamSocialIcon" icon={faLinkedin}/></Link>
+          <Link to="#"><FontAwesomeIcon className="team-container__teamSocialIcon" icon={faTwitter}/></Link>
+          </div>
             <img src={member.image} alt="" />
           </div>
+         
           <div className="team-container__profile-details">
             <p className="team-container__name">{member.fullname}</p>
             <p className="team-container__job">{member.position}</p>
