@@ -132,6 +132,9 @@ export default function Footer() {
                 <Link className="footer__footerLinks" to={"/price"}>
                   Pricing
                 </Link>
+                <Link className="footer__footerLinks" to={"/price"}>
+                  Subscribers
+                </Link>
                 {/* <Link className='footer__footerLinks' to={'/blogs'}>
                 Services
               </Link> */}

@@ -7,8 +7,9 @@ import Price from "../pages/Site/Price/Price";
 import Project from "../pages/Site/Project/Project";
 import Service from "../pages/Site/Service/Service";
 import SiteRoot from "../pages/Site/SiteRoot/SiteRoot";
-import Faq from "../pages/FAQ/Faq";
+// import Faq from "../pages/Site/Faq/Faq";
 import BlogDetails from "../Components/BlogDetails/BlogDetails";
+import Accordion from "../pages/Site/Accordion/Accordion"
 // import Pagination from "../Components/pagination/pagination";
 
 
@@ -55,7 +56,7 @@ export const ROUTES = [
           },
           {
             path: "/faq",
-            element: < Faq/>,
+            element: < Accordion/>,
           },
           {
             path:"/paginate",
