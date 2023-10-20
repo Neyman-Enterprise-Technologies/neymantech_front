@@ -13,20 +13,26 @@ import UseFetch from "../../../UseFetch";
 export default function Blogs() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
+
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
-
-
-
-
-
+//SEEARCH  CARD  BY TITLE START
 
   const [search, setSearch] = useState("");
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
+
   const filteredBlogs = blogs
-  ? blogs.filter((blog) =>
-      blog.title.toLowerCase().includes(search.toLowerCase())
-    )
-  : [];
+    ? blogs.filter((blog) =>
+        blog.title.toLowerCase().includes(search.toLowerCase())||
+        blog.blog_category.name.toLowerCase().includes(search.toLowerCase())
+      )
+    : [];
+
+    //SEARCH  CARD  BY TITLE END
+  
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -69,7 +75,6 @@ export default function Blogs() {
                 {error && <div>{error}</div>}
                 {blogs && <BlogList filteredBlogs={filteredBlogs} />}
                 {/* {blogs && <BlogList filteredBlogs={filteredBlogs} currentPage={currentPage} postsPerPage={postsPerPage}/>} */}
-                
 
                 {/* BlogList Component end */}
               </div>
@@ -77,7 +82,7 @@ export default function Blogs() {
                 <div className="search">
                   <div className="input-button-container">
                     <input
-                      onChange={(e) => setSearch(e.target.value)}
+                      onChange={handleSearch} 
                       value={search}
                       type="text"
                       placeholder="search..."
@@ -93,16 +98,16 @@ export default function Blogs() {
                   <div className="recent-posts-container">
                     <h2>Recent Posts</h2>
                     <Link to={`/blogs/${blogs.id}`}>
-                      {blogs.map((blog) => (
+                      {filteredBlogs.map((blog) => (
                         <div className="post-details" key={blog.id}>
                           <div className="details-img">
                             <img src={blog.photo} alt="" />
                           </div>
                           <div className="description">
-                            <p className="date">{blog.created_at.slice(0,10)}</p>
-                            <p className="title">
-                             {blog.short_descriptions}
+                            <p className="date">
+                              {blog.created_at.slice(0, 10)}
                             </p>
+                            <p className="title">{blog.short_descriptions}</p>
                           </div>
                         </div>
                       ))}
@@ -113,23 +118,31 @@ export default function Blogs() {
                 <div className="category-container">
                   <h2 className="title">Categories</h2>
                   <div className="category-list-container">
-                  {blogs&&blogs.map((_blog) => (
-                          <p key={_blog.blog_category.id} onClick={() => handleCategoryClick(_blog.blog_category.name)}>
-                            {_blog.blog_category.name}
-                          </p>
-                        ))}
+                    {blogs &&
+                      blogs.map((_blog) => (
+                        <p
+                          key={_blog.blog_category.id}
+                          onClick={() =>
+                            setSearch(_blog.blog_category.name)
+                          }
+                        >
+                          {_blog.blog_category.name}
+                        </p>
+                      ))}
                   </div>
                 </div>
                 <div className="tags-container">
                   <h2 className="title">Tags</h2>
                   <div className="tags">
-
-                  {blogs &&
+                    {blogs &&
                       blogs.map(({ tag }) =>
-                        tag.map(({ name,id }) => <Link  key={id}> <p>{name}</p></Link>)
+                        tag.map(({ name, id }) => (
+                          <Link key={id}>
+                            {" "}
+                            <p>{name}</p>
+                          </Link>
+                        ))
                       )}
-              
-                     
                   </div>
                 </div>
               </div>

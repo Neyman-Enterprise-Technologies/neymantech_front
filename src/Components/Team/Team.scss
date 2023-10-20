@@ -1,34 +1,72 @@
-
-.teamSection .teamHeaderContainer{
+.teamSection .teamHeaderContainer {
   text-align: center;
   padding: 5rem 0;
 }
-.teamSection .teamHeaderContainer p{
+.teamSection .teamHeaderContainer p {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   color: blue;
   font-weight: 500;
 }
-.teamSection .teamHeaderContainer h2{
+.teamSection .teamHeaderContainer h2 {
   font-size: 2.5rem;
-
 }
 .teamSection .team-container {
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 5rem 0;
   gap: 3rem;
+  &__socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 4rem;
+    background-color: #fff;
+    bottom: 100px;
+    z-index: 1;
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-inline: auto;
+    opacity: 0;
+    transition: all 0.6s;
+  }
+  &__teamSocialIcon {
+    transition: all 0.3s;
+    opacity: 1;
+    font-size: 22px;
+    color: rgb(60, 60, 205);
+  }
+  &__teamSocialIcon:hover {
+    color: orange;
+  }
+
   &__cardContainer {
     position: relative;
     width: 410px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.4s;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       transform: translateY(-10px);
     }
+    &:hover .team-container__socialContainer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+
     &:hover {
       .team-container__profile-details {
         background-color: blue;
@@ -38,6 +76,7 @@
         color: white;
       }
       &:hover .team-container__profile-container {
+        position: relative;
         & img {
           transform: scale(1.2);
         }
@@ -80,7 +119,3 @@
     font-weight: 500;
   }
 }
-
-
-
-

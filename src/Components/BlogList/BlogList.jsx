@@ -13,16 +13,20 @@ const BlogList = ({ filteredBlogs }) => {
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(6);
-
+  const postsPerPage = 6;
+  
   /*   Get Current posts */
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const [currentPosts, setCurrentPosts]= useState(posts.slice(indexOfFirstPost, indexOfLastPost))
 
   //Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  useEffect(()=>{
+      setCurrentPosts(filteredBlogs)
+  },[filteredBlogs])
+  
   useEffect(() => {
     const fetchPosts = async () => {
       // const res = await axios.get(`${apiUrl}blogs`);

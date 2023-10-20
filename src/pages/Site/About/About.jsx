@@ -16,16 +16,17 @@ import {
 import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
 import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
+import Partners from "../../../Components/Partners/Partners";
 export default function About() {
-
   const apiUrl = import.meta.env.VITE_API_URL;
-//*OUR TEAM SECTION-4
+  //*OUR TEAM SECTION-4
   // const { data: team, error } = UseFetch("http://localhost:8001/team");
   const { data: team, error } = UseFetch(`${apiUrl}core_api/our_team/`);
-  
-  //*ABOUTSECTION -1
-  const { data: aboutSection1 } = UseFetch("http://localhost:8001/aboutSection1");
 
+  //*ABOUTSECTION -1
+  const { data: aboutSection1 } = UseFetch(
+    "http://localhost:8001/aboutSection1"
+  );
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -198,11 +199,13 @@ export default function About() {
           {/* SECTION-3 END */}
           {/* SECTION-4 START */}
 
-         <div className="container">
-         {error && <div>{error}</div>}
-          {team && <Team team={team} />}
-         </div>
+          <div className="container">
+            {error && <div>{error}</div>}
+            {team && <Team team={team} />}
+          </div>
           {/* SECTION-4 END */}
+
+          <Partners />
         </section>
       )}
     </>
