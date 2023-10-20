@@ -26,7 +26,6 @@ const Team = ({ team }) => {
                     icon={faGithub}
                     className="team-container__teamSocialIcon"
                   />
-                
                 </Link>
                 <Link to={"https://www.facebook.com//"}>
                   <FontAwesomeIcon

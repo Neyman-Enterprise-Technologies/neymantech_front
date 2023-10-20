@@ -25,6 +25,7 @@ export default function Contact() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
   const { data: contact } = UseFetch(`${apiUrl}core_api/contact_card`);
+
   // const { data: contactUs } = UseFetch(`${apiUrl}core_api/contact`);
 
   // const { data: contact } = UseFetch(`${apiUrl}contact`);
@@ -101,36 +102,36 @@ export default function Contact() {
                   <div className="card">
                     <div className="icon-container">
                       {/* {contactCardsIconsObj[icon]} */}
-                      <MdOutlineMarkEmailRead />
+                      <MdOutlineMarkEmailRead  className="contactIcon" />
                     </div>
                     <h2 className="title">Email Here</h2>
 
                     <div className="descriptionContainer">
-                      <p className="contact-type"></p>
+                      <p className="contact-type">{contact[0].email}</p>
                       {/* <p className="phoneNumber"></p> */}
                     </div>
                   </div>
                   <div className="card">
                     <div className="icon-container">
                       {/* {contactCardsIconsObj[icon]} */}
-                      <ImLocation />
+                      <ImLocation  className="contactIcon"/>
                     </div>
                     <h2 className="title">Location</h2>
 
                     <div className="descriptionContainer">
-                      <p className="contact-type"></p>
+                      <p className="contact-type">{contact[0].location}</p>
                       {/* <p className="phoneNumber"></p> */}
                     </div>
                   </div>
                   <div className="card">
                     <div className="icon-container">
                       {/* {contactCardsIconsObj[icon]} */}
-                      <BsFillTelephoneFill />
+                      <BsFillTelephoneFill  className="contactIcon"/>
                     </div>
                     <h2 className="title">Phone Here</h2>
 
                     <div className="descriptionContainer">
-                      <p className="contact-type"></p>
+                      <p className="contact-type">{contact[0].phone}</p>
                       {/* <p className="phoneNumber"></p> */}
                     </div>
                   </div>
