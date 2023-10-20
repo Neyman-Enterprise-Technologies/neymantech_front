@@ -11,6 +11,8 @@ import { BsFillTelephoneFill, BsPhone } from "react-icons/Bs";
 import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import UseFetch from "../../../UseFetch";
+import { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const contactCardsIconsObj = {
   MdOutlineMarkEmailRead: <MdOutlineMarkEmailRead className="contactIcon" />,
@@ -19,39 +21,48 @@ const contactCardsIconsObj = {
 };
 
 export default function Contact() {
+  // console.log(contact.phone)
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  const { data: contact } = UseFetch(`${apiUrl}core_api/contact`);
-  // const { data: contact } = UseFetch(`${apiUrl}contact`);
- 
- 
+  const { data: contact } = UseFetch(`${apiUrl}core_api/contact_card`);
+  // const { data: contactUs } = UseFetch(`${apiUrl}core_api/contact`);
 
+  // const { data: contact } = UseFetch(`${apiUrl}contact`);
 
   /* FORM START */
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [phone_number, setInputPhone] = useState("");
-  const [inputSubject, setInputSubject] = useState("");
-  const [message, setMessage] = useState("")
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (fullname && email && phone_number && inputSubject&& message) {
+    if (fullname && email && phone_number && service && message) {
       fetch(`${apiUrl}core_api/contact/`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
-        body: JSON.stringify({ fullname ,email , phone_number , inputSubject, message}),
+        body: JSON.stringify({
+          fullname,
+          email,
+          phone_number,
+          service,
+          message,
+        }),
       });
+      setFullname("");
+      setEmail("");
+      setInputPhone("");
+      setService("");
+      setMessage("");
+      toast.success("your message was successfully sent");
     }
-  }
- 
-
+  };
 
   /* FORM END */
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-  
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
@@ -87,21 +98,42 @@ export default function Contact() {
             <div className="container">
               {contact && (
                 <div className="contactCardContainer">
-                  {contact.map(
-                    ({ contactType2, title, id, contactType1, icon }) => (
-                      <div className="card" key={id}>
-                        <div className="icon-container">
-                          {contactCardsIconsObj[icon]}
-                        </div>
-                        <h2 className="title">{title}</h2>
+                  <div className="card">
+                    <div className="icon-container">
+                      {/* {contactCardsIconsObj[icon]} */}
+                      <MdOutlineMarkEmailRead />
+                    </div>
+                    <h2 className="title">Email Here</h2>
 
-                        <div className="descriptionContainer">
-                          <p className="contact-type">{contactType1}</p>
-                          <p className="contact-type">{contactType2}</p>
-                        </div>
-                      </div>
-                    )
-                  )}
+                    <div className="descriptionContainer">
+                      <p className="contact-type"></p>
+                      {/* <p className="phoneNumber"></p> */}
+                    </div>
+                  </div>
+                  <div className="card">
+                    <div className="icon-container">
+                      {/* {contactCardsIconsObj[icon]} */}
+                      <ImLocation />
+                    </div>
+                    <h2 className="title">Location</h2>
+
+                    <div className="descriptionContainer">
+                      <p className="contact-type"></p>
+                      {/* <p className="phoneNumber"></p> */}
+                    </div>
+                  </div>
+                  <div className="card">
+                    <div className="icon-container">
+                      {/* {contactCardsIconsObj[icon]} */}
+                      <BsFillTelephoneFill />
+                    </div>
+                    <h2 className="title">Phone Here</h2>
+
+                    <div className="descriptionContainer">
+                      <p className="contact-type"></p>
+                      {/* <p className="phoneNumber"></p> */}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
@@ -140,7 +172,7 @@ export default function Contact() {
                       </div>
                       <div className="inputs">
                         <input
-                          type="number"
+                          type="text"
                           placeholder="Phone"
                           required
                           value={phone_number}
@@ -150,8 +182,8 @@ export default function Contact() {
                           type="Subject"
                           placeholder="Subject"
                           required
-                          value={inputSubject}
-                          onChange={(e) => setInputSubject(e.target.value)}
+                          value={service}
+                          onChange={(e) => setService(e.target.value)}
                         />
                       </div>
                       <textarea
@@ -165,6 +197,7 @@ export default function Contact() {
                       <button>
                         <span>SEND MESSAGE</span>
                       </button>
+                      <Toaster position="center" />
                     </form>
                   </div>
                 </div>
