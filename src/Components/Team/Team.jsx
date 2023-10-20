@@ -21,7 +21,7 @@ const Team = ({ team }) => {
           <div className="team-container__cardContainer" key={member.id}>
             <div className="team-container__profile-container">
               <div className="team-container__socialContainer">
-                <Link to={"https://www.facebook.com//"}>
+                <Link to={"https://github.com/"}>
                   <FontAwesomeIcon
                     icon={faGithub}
                     className="team-container__teamSocialIcon"
