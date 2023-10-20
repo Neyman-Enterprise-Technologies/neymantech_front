@@ -65,7 +65,7 @@
   transition: all 0.3s;
   opacity: 1;
   font-size: 22px;
-  color: blue;
+  color: #3c3ccd;
 }
 
 .teamSection .team-container__teamSocialIcon:hover {

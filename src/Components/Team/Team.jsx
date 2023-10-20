@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Team.scss";
 import {
   faFacebook,
+  faGithub,
   faInstagram,
   faLinkedin,
   faTwitter,
@@ -20,6 +21,13 @@ const Team = ({ team }) => {
           <div className="team-container__cardContainer" key={member.id}>
             <div className="team-container__profile-container">
               <div className="team-container__socialContainer">
+                <Link to={"https://www.facebook.com//"}>
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="team-container__teamSocialIcon"
+                  />
+                
+                </Link>
                 <Link to={"https://www.facebook.com//"}>
                   <FontAwesomeIcon
                     className="team-container__teamSocialIcon"
