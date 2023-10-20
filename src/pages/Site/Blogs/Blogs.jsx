@@ -16,12 +16,23 @@ export default function Blogs() {
 
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
+//SEEARCH  CARD  BY TITLE START
+
   const [search, setSearch] = useState("");
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
+
   const filteredBlogs = blogs
     ? blogs.filter((blog) =>
-        blog.title.toLowerCase().includes(search.toLowerCase())
+        blog.title.toLowerCase().includes(search.toLowerCase())||
+        blog.blog_category.name.toLowerCase().includes(search.toLowerCase())
       )
     : [];
+
+    //SEARCH  CARD  BY TITLE END
+  
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -71,7 +82,7 @@ export default function Blogs() {
                 <div className="search">
                   <div className="input-button-container">
                     <input
-                      onChange={(e) => setSearch(e.target.value)}
+                      onChange={handleSearch} 
                       value={search}
                       type="text"
                       placeholder="search..."
@@ -87,7 +98,7 @@ export default function Blogs() {
                   <div className="recent-posts-container">
                     <h2>Recent Posts</h2>
                     <Link to={`/blogs/${blogs.id}`}>
-                      {blogs.map((blog) => (
+                      {filteredBlogs.map((blog) => (
                         <div className="post-details" key={blog.id}>
                           <div className="details-img">
                             <img src={blog.photo} alt="" />
@@ -112,7 +123,7 @@ export default function Blogs() {
                         <p
                           key={_blog.blog_category.id}
                           onClick={() =>
-                            handleCategoryClick(_blog.blog_category.name)
+                            setSearch(_blog.blog_category.name)
                           }
                         >
                           {_blog.blog_category.name}
