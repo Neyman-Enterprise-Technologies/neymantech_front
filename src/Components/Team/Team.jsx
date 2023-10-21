@@ -20,38 +20,50 @@ const Team = ({ team }) => {
         {team.map((member) => (
           <div className="team-container__cardContainer" key={member.id}>
             <div className="team-container__profile-container">
-              <div className="team-container__socialContainer">
-                <Link to={"https://github.com/"}>
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className="team-container__teamSocialIcon"
-                  />
-                </Link>
-                <Link to={"https://www.facebook.com//"}>
-                  <FontAwesomeIcon
-                    className="team-container__teamSocialIcon"
-                    icon={faFacebook}
-                  />
-                </Link>
-                <Link to={"https://www.instagram.com//"}>
-                  <FontAwesomeIcon
-                    className="team-container__teamSocialIcon"
-                    icon={faInstagram}
-                  />
-                </Link>
-                <Link to={"https://www.instagram.com//"}>
-                  <FontAwesomeIcon
-                    className="team-container__teamSocialIcon"
-                    icon={faLinkedin}
-                  />
-                </Link>
-                <Link to={"https://twitter.com/"}>
-                  <FontAwesomeIcon
-                    className="team-container__teamSocialIcon"
-                    icon={faTwitter}
-                  />
-                </Link>
-              </div>
+              {member.github || member.facebook || member.instagram || member.linkedln || member.tweeter ? (
+                <div className="team-container__socialContainer">
+                  {member.github && (
+                    <Link to={member.github}>
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        className="team-container__teamSocialIcon"
+                      />
+                    </Link>
+                  )}
+                  {member.facebook && (
+                    <Link to={member.facebook}>
+                      <FontAwesomeIcon
+                        className="team-container__teamSocialIcon"
+                        icon={faFacebook}
+                      />
+                    </Link>
+                  )}
+                  {member.instagram && (
+                    <Link to={member.instagram}>
+                      <FontAwesomeIcon
+                        className="team-container__teamSocialIcon"
+                        icon={faInstagram}
+                      />
+                    </Link>
+                  )}
+                  {member.linkedln && (
+                    <Link to={member.linkedln}>
+                      <FontAwesomeIcon
+                        className="team-container__teamSocialIcon"
+                        icon={faLinkedin}
+                      />
+                    </Link>
+                  )}
+                  {member.tweeter && (
+                    <Link to={member.tweeter}>
+                      <FontAwesomeIcon
+                        className="team-container__teamSocialIcon"
+                        icon={faTwitter}
+                      />
+                    </Link>
+                  )}
+                </div>
+              ) : null}
               <img src={member.image} alt="" />
             </div>
 
