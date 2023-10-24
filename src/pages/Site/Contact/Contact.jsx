@@ -21,14 +21,9 @@ const contactCardsIconsObj = {
 };
 
 export default function Contact() {
-  // console.log(contact.phone)
   const apiUrl = import.meta.env.VITE_API_URL;
 
   const { data: contact } = UseFetch(`${apiUrl}core_api/contact_card`);
-
-  // const { data: contactUs } = UseFetch(`${apiUrl}core_api/contact`);
-
-  // const { data: contact } = UseFetch(`${apiUrl}contact`);
 
   /* FORM START */
   const [fullname, setFullname] = useState("");
@@ -102,7 +97,7 @@ export default function Contact() {
                   <div className="card">
                     <div className="icon-container">
                       {/* {contactCardsIconsObj[icon]} */}
-                      <MdOutlineMarkEmailRead  className="contactIcon" />
+                      <MdOutlineMarkEmailRead className="contactIcon" />
                     </div>
                     <h2 className="title">Email Here</h2>
 
@@ -114,7 +109,7 @@ export default function Contact() {
                   <div className="card">
                     <div className="icon-container">
                       {/* {contactCardsIconsObj[icon]} */}
-                      <ImLocation  className="contactIcon"/>
+                      <ImLocation className="contactIcon" />
                     </div>
                     <h2 className="title">Location</h2>
 
@@ -126,7 +121,7 @@ export default function Contact() {
                   <div className="card">
                     <div className="icon-container">
                       {/* {contactCardsIconsObj[icon]} */}
-                      <BsFillTelephoneFill  className="contactIcon"/>
+                      <BsFillTelephoneFill className="contactIcon" />
                     </div>
                     <h2 className="title">Phone Here</h2>
 
@@ -149,58 +144,58 @@ export default function Contact() {
                   heart of successful communication. No fake products and
                   services.
                 </p>
-                <div className="section-2-content">
-                  <div className="left">
-                    <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
-                  </div>
-                  <div className="right">
-                    <form onSubmit={handleSubmit}>
-                      <div className="inputs">
-                        <input
-                          type="text"
-                          placeholder="Name"
-                          required
-                          value={fullname}
-                          onChange={(e) => setFullname(e.target.value)}
-                        />
-                        <input
-                          type="email"
-                          placeholder="Email"
-                          required
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                        />
-                      </div>
-                      <div className="inputs">
-                        <input
-                          type="text"
-                          placeholder="Phone"
-                          required
-                          value={phone_number}
-                          onChange={(e) => setInputPhone(e.target.value)}
-                        />
-                        <input
-                          type="Subject"
-                          placeholder="Subject"
-                          required
-                          value={service}
-                          onChange={(e) => setService(e.target.value)}
-                        />
-                      </div>
-                      <textarea
-                        name=""
-                        id=""
+              </div>
+              <div className="section-2-content">
+                <div className="left">
+                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
+                </div>
+                <div className="right">
+                  <Toaster position="center" />
+                  <form onSubmit={handleSubmit}>
+                    <div className="inputs">
+                      <input
+                        type="text"
+                        placeholder="Name"
                         required
-                        placeholder="Your Message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                      ></textarea>
-                      <button>
-                        <span>SEND MESSAGE</span>
-                      </button>
-                      <Toaster position="center" />
-                    </form>
-                  </div>
+                        value={fullname}
+                        onChange={(e) => setFullname(e.target.value)}
+                      />
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <div className="inputs">
+                      <input
+                        type="text"
+                        placeholder="Phone"
+                        required
+                        value={phone_number}
+                        onChange={(e) => setInputPhone(e.target.value)}
+                      />
+                      <input
+                        type="Subject"
+                        placeholder="Subject"
+                        required
+                        value={service}
+                        onChange={(e) => setService(e.target.value)}
+                      />
+                    </div>
+                    <textarea
+                      name=""
+                      id=""
+                      required
+                      placeholder="Your Message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    ></textarea>
+                    <button>
+                      <span>SEND MESSAGE</span>
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
