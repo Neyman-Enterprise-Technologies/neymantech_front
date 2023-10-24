@@ -244,6 +244,12 @@
 .cardsContainer__tick-icon {
   font-size: 2rem;
   color: limegreen;
+  font-weight: 100;
+}
+
+.cardsContainer__notAveilble-icon {
+  font-size: 2rem;
+  color: red;
 }
 
 .cardsContainer__link {

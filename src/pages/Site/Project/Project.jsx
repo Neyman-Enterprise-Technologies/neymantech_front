@@ -5,12 +5,12 @@ import Loading from "../../../Components/Loading/Loading";
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import UseFetch from "../../../UseFetch";
-import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
+// import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}service_api/last_works/`)
+  // const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}service_api/last_works/`)
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {

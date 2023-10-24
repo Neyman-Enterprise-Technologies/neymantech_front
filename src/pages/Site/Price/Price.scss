@@ -115,7 +115,9 @@
     flex-wrap: wrap;
     align-items: center;
     width: 420px;
+    
     background-color: #fff;
+   
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -188,6 +190,11 @@
   &__tick-icon {
     font-size: 2rem;
     color: limegreen;
+    font-weight: 100;
+  }
+  &__notAveilble-icon{
+    font-size: 2rem;
+    color: red;
   }
   &__link {
     position: relative;
