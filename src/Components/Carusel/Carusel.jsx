@@ -31,7 +31,9 @@ const Carusel = ({ feedback }) => {
       >
         {feedback.map(({ avatar, fullname, id, position, feedback }) => (
           <SwiperSlide className="Slider" key={id}>
-            <p>{feedback}</p>
+          <div className="Slider__feedbackContainer">
+          <div className="Slider__feedback">{feedback}</div>
+          {/* <p className="Slider__feedback">fghjncvbjandfffffffffffffffffffffffffffffffffffffffffffffcccccccccccccccccccccvlsndvlnlnaldnlanlanljbvlkjsbvkjsbvljbsvlkjbslkvjbsv</p> */}
             <div className="Slider__div">
               <div>
                 <img src={avatar} alt="Slide 1" />
@@ -41,6 +43,7 @@ const Carusel = ({ feedback }) => {
                 <span>{position}</span>
               </div>
             </div>
+          </div>
           </SwiperSlide>
         ))}
         

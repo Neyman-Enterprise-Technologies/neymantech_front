@@ -1,7 +1,15 @@
 import { TiTick } from "react-icons/ti";
 import UseFetch from "../../UseFetch";
+import { AiOutlineClose } from "react-icons/ai";
 
-const PriceCard = ({ title, price, serviceItems, color, period }) => {
+const PriceCard = ({
+  title,
+  price,
+  property_name,
+  color,
+  period,
+  package_properties,
+}) => {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: priceProperty } = UseFetch(
     `${apiUrl}service_api/package_property/`
@@ -24,11 +32,16 @@ const PriceCard = ({ title, price, serviceItems, color, period }) => {
 
       <div className="cardsContainer__devider"></div>
       <div className="cardsContainer__cardContentContainer">
-        {priceProperty &&
-          priceProperty.map((item, index) => (
+        {package_properties &&
+          package_properties.map((item, index) => (
             <div className="cardsContainer__itemsContainer" key={index}>
               <p className="cardsContainer__items">{item.property_name}</p>
-              <TiTick className="cardsContainer__tick-icon" />
+              {item.is_active ? (
+                <TiTick className="cardsContainer__tick-icon" />
+              ) : (
+                <AiOutlineClose className="cardsContainer__notAveilble-icon" />
+              )}
+            
             </div>
           ))}
       </div>

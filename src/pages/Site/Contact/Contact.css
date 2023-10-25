@@ -17,9 +17,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -94,8 +94,38 @@
   font-weight: 500;
 }
 
+.faqSection-2 .faqTitleBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding: 5rem 0 0 0;
+}
+
+.faqSection-2 .faqTitleBottom .about-description {
+  color: blue;
+  font-size: 1.5rem;
+}
+
+.faqSection-2 .faqTitleBottom h2 {
+  font-size: 3rem;
+}
+
+.faqSection-2 .faqTitleBottom .faqDescription {
+  font-size: 1.3rem;
+  color: gray;
+}
+
 .faqSection-2 .section-2-content {
   padding-top: 4rem;
+  padding-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

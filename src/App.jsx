@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Components/AccordionItem/AccordionItem.scss"
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ROUTES } from './routes/route';
