@@ -4,32 +4,22 @@ const WebDesignSecHome = ({ webDesignSecHome }) => {
   return (
     <div className="web-design-section">
       <div className="left">
-        <img src={webDesignSecHome.imgSrc} />
+        <img src={webDesignSecHome[0].photo} />
       </div>
       <div className="right">
-        <h2>{webDesignSecHome.title}</h2>
-        <p>{webDesignSecHome.description}</p>
+        <h2>{webDesignSecHome[0].title}</h2>
+        <p>{webDesignSecHome[0].description}</p>
         <div className="cards-container">
           <div className="left-cards-container">
-            {webDesignSecHome.cardNames.leftCards.map((card) => (
+            {webDesignSecHome.map((card) => (
               <div className="card" key={card.id}>
                 <BsFillPatchCheckFill className="card-icon" />
                 {""}
-                <p>{card.name}</p>
+                <p>{card.title}</p>
               </div>
             ))}
           </div>
-          <div className="right-cards-container">
-
-          {webDesignSecHome.cardNames.rightCards.map((card) => (
-              <div className="card" key={card.id}>
-              <BsFillPatchCheckFill className="card-icon" />
-              {""}
-              <p>{card.name}</p>
-            </div>
-          ))}
-           
-          </div>
+        
         </div>
         {/* <Link className="readMore-btn">
           <span>READ MORE</span>
