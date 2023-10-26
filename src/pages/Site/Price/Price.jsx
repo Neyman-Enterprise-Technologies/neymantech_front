@@ -1,16 +1,14 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import "./Price.scss";
-import Loading from "../../../Components/Loading/Loading";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { FaAngleRight } from "react-icons/fa";
-import { TiTick } from "react-icons/ti";
-import UseFetch from "../../../UseFetch";
+import { Link } from "react-router-dom";
+import Loading from "../../../Components/Loading/Loading";
 import PriceCard from "../../../Components/PriceCard/PriceCard";
+import UseFetch from "../../../UseFetch";
+import "./Price.scss";
 
 export default function Price() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  // const { data: priceCards } = UseFetch(`${apiUrl}priceCards`);
+
   const { data: priceCards } = UseFetch(`${apiUrl}service_api/package/`);
 
   const [loading, setLoading] = useState(false);
@@ -22,7 +20,6 @@ export default function Price() {
     }, 1000);
   }, []);
 
-  // const [activeContentIndex, setActiveContentIndex] = useState(0);
   return (
     <>
       {loading ? (
@@ -58,8 +55,6 @@ export default function Price() {
           </div>
           {/*    header end*/}
 
-          {/*  cards container start */}
-
           <div className="cardsContainer">
             {priceCards &&
               priceCards.map((card) => (
@@ -69,15 +64,12 @@ export default function Price() {
                   period={card.price_period}
                   serviceItems={card.property_name}
                   color={card.color}
-                  package_properties={card.package_properties}
-                  // color={card.color}
-                  // is_active={card.is_active}
+                  property={card.package_properties}
+                  symbol={card.symbol}
                   key={card.id}
                 />
               ))}
           </div>
-
-          {/*  cards container end */}
         </>
       )}
     </>
