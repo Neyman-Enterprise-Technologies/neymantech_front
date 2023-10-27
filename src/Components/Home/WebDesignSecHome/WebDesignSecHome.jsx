@@ -4,11 +4,11 @@ const WebDesignSecHome = ({ webDesignSecHome }) => {
   return (
     <div className="web-design-section">
       <div className="left">
-        <img src={webDesignSecHome[0].photo} />
+        <img src={webDesignSecHome[1].photo} />
       </div>
       <div className="right">
-        <h2>{webDesignSecHome[0].title}</h2>
-        <p>{webDesignSecHome[0].description}</p>
+        <h2>{webDesignSecHome[1].title}</h2>
+        <p>{webDesignSecHome[1].description}</p>
         <div className="cards-container">
           <div className="left-cards-container">
             {webDesignSecHome.map((card) => (

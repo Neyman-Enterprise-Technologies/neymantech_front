@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { BiCart, BiListCheck, BiSolidBadgeCheck,BiSolidMegaphone } from "react-icons/Bi";
 import {BsLaptop} from "react-icons/Bs"
 
 import { TbMessages } from "react-icons/Tb";
-import UseFetch from "../../../UseFetch";
+// import UseFetch from "../../../UseFetch";
 import { AiOutlineMobile } from "react-icons/Ai";
 
 const iconComponents = {
@@ -17,20 +17,23 @@ const iconComponents = {
 
 };
 
-const ServiceCards = ({ servicecards }) => {
+const ServiceCards = ({ serviceCards }) => {
+
+const {id} = useParams
+
   return (
     <>
       <div className="home__service__cards">
-        {servicecards.map((card) => (
-          <Link to={"/service"} key={card.id}>
+        {serviceCards&&serviceCards.map((card) => (
+          <Link to={`/services_property/${card.id}`} key={card.id}>
             <div className="home__service__cards__card">
               <div className="home__service__cards__card__icon">
-                {iconComponents[card.icon]}
+                {iconComponents[card.logo]}
                 <BiSolidBadgeCheck className="badge" />
               </div>
-              <h3>{card.property_name}</h3>
+              <h3>{card.title}</h3>
               {/* <h3>{card.title}</h3> */}
-              <p>{card.package}</p>
+              <p>{card.content}</p>
               {/* <p>{card.description}</p> */}
             </div>
           </Link>
