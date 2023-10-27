@@ -8,8 +8,18 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+// const [loading, setLoading] = useState(false);
 
 const Team = ({ team }) => {
+  // useEffect(() => {
+  //   setLoading(true);
+  //   window.scrollTo({ top: 0 });
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1000);
+  // }, []);
+
   return (
     <section className="teamSection">
       <div className="teamHeaderContainer">

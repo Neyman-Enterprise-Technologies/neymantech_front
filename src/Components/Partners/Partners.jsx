@@ -29,7 +29,7 @@ const Partners = () => {
         >
           {partners &&
             partners.map(({ name, logo }) => (
-              <motion.div className="item" key={name}>
+              <motion.div className="itemmm" key={name}>
                 <img src={logo} alt="" />
                 <p className="companyName">{name}</p>
               </motion.div>

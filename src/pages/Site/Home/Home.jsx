@@ -1,57 +1,47 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
-import "./Home.scss";
-import MySlider from "../../../Components/MySlider/MySlider";
-import Loading from "../../../Components/Loading/Loading";
-import {
-  animateScroll as scroll,
-  Element as ScrollElement,
-} from "react-scroll";
-import { TbMessages } from "react-icons/Tb";
-import { BiSolidBadgeCheck } from "react-icons/Bi";
 import { CgScrollV } from "react-icons/Cg";
-import { AiOutlineGlobal } from "react-icons/Ai";
-import { BsFillPatchCheckFill, BsDisplay } from "react-icons/Bs";
+import {
+  animateScroll as scroll
+  
+} from "react-scroll";
 import Carusel from "../../../Components/Carusel/Carusel";
 import ServiceCards from "../../../Components/Home/ServiceCards/ServiceCards";
+import Loading from "../../../Components/Loading/Loading";
+import MySlider from "../../../Components/MySlider/MySlider";
 import UseFetch from "../../../UseFetch";
+import "./Home.scss";
 import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
 import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
-import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
-import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
+import { useParams } from "react-router-dom";
+// import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
-
+  const {id} = useParams()
     //*CARUSEL
     const { data: feedback, error:feedbackError } = UseFetch(`${apiUrl}core_api/feedback/`);
 
   //*HOME - SERVICECARDS- SECTION-1
   // const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
-  const { data: serviceCards, error } = UseFetch(
-    `${apiUrl}service_api/package_property/`
-  );
+  const { data: serviceCards, error } = UseFetch(`${apiUrl}/service_api/services`);
+
+
 
   //*HOME - DIJITAL MARKETING- SECTION-2
-  const { data: digitalMarketingSecInHome } = UseFetch(
-    `${apiUrl}digitalMarketingSecInHome`
-  );
-  // const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}`);
+  // const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}digitalMarketingSecInHome`);
+  const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}service_api/services_property`);
 
   //*HOME - WEB DESIGN SECTION- SECTION-3
-  const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
-  // const { data: webDesignSecHome } = UseFetch(`${apiUrl}`);
+  // const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
+  const { data: webDesignSecHome } = UseFetch(`${apiUrl}service_api/services_property/${id}`);
 
   //*HOME - OUR LATEST WORK -4
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const { data: latestWorkCardInHome } = UseFetch(
-    `${apiUrl}service_api/last_works/`
-  );
+  const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}service_api/last_works/`);
 
 
 
-  const { data: latestNews } = UseFetch(`${apiUrl}service_api/last_works/`);
+  // const { data: latestNews } = UseFetch(`${apiUrl}service_api/last_works/`);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -70,6 +60,7 @@ export default function Home() {
 
   return (
     <>
+
       {loading ? (
         <Loading />
       ) : (
@@ -78,7 +69,7 @@ export default function Home() {
             <CgScrollV />
           </div>
           <MySlider />
-
+         
           <div className="home__service">
             <div className="container">
               <div className="home__service__content">
@@ -92,7 +83,7 @@ export default function Home() {
                 </p>
               </div>
               {/* SERVICE CARDS START */}
-              {serviceCards && <ServiceCards servicecards={serviceCards} />}
+              {serviceCards && <ServiceCards serviceCards={serviceCards} />}
               {error && <div>{error}</div>}
               {/*  */}
             </div>
@@ -121,11 +112,11 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
               </div>
-              {latestWorkCardInHome && (
+              {/* {latestWorkCardInHome && (
                 <LatestWorkCardInHome
                   latestWorkCardInHome={latestWorkCardInHome}
                 />
-              )}
+              )} */}
             </div>
           </div>
 
@@ -182,9 +173,9 @@ export default function Home() {
  
             </div> */}
               <div className="container">
-                <div className="cards-wrapper">
+                {/* <div className="cards-wrapper">
                   {latestNews && <LatestNews latestNews={latestNews} />}
-                </div>
+                </div> */}
                 {/* <article>
                   <div className="article-wrapper">
                     <figure>

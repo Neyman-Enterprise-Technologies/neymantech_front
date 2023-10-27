@@ -42,13 +42,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.4rem;
+  gap: 1rem;
   position: absolute;
-  width: 200px;
-  height: 50px;
+  /* width: 200px; */
+  /* height: 2rem; */
+  padding: 0.5em;
   border-radius: 4rem;
   background-color: #fff;
-  bottom: 100px;
   z-index: 1;
   top: 3rem;
   left: 50%;
@@ -61,6 +61,7 @@
 }
 
 .teamSection .team-container__teamSocialIcon {
+  /* padding: 1rem; */
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 1;
