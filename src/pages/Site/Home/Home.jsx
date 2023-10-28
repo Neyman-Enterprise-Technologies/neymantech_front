@@ -14,7 +14,8 @@ import "./Home.scss";
 import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
 import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
 import { useParams } from "react-router-dom";
-// import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
+import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
+import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const {id} = useParams()
@@ -25,11 +26,9 @@ export default function Home() {
   // const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
   const { data: serviceCards, error } = UseFetch(`${apiUrl}/service_api/services`);
 
-
-
   //*HOME - DIJITAL MARKETING- SECTION-2
   // const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}digitalMarketingSecInHome`);
-  const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}service_api/services_property`);
+  const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}service_api/services`);
 
   //*HOME - WEB DESIGN SECTION- SECTION-3
   // const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
@@ -112,11 +111,11 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
               </div>
-              {/* {latestWorkCardInHome && (
+              {LatestWorkCardInHome && (
                 <LatestWorkCardInHome
                   latestWorkCardInHome={latestWorkCardInHome}
                 />
-              )} */}
+              )}
             </div>
           </div>
 
