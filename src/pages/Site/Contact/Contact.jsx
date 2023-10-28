@@ -1,18 +1,13 @@
-import React from "react";
-import "./Contact.scss";
-import "./Contact.scss";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { BsFillTelephoneFill } from "react-icons/Bs";
 import { MdOutlineMarkEmailRead } from "react-icons/Md";
-import { SlLocationPin } from "react-icons/Sl";
-import { BiChevronRight } from "react-icons/Bi";
 import { FaAngleRight } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
-import { BsFillTelephoneFill, BsPhone } from "react-icons/Bs";
 import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import UseFetch from "../../../UseFetch";
-import { Toaster } from "react-hot-toast";
-import toast from "react-hot-toast";
+import "./Contact.scss";
 
 const contactCardsIconsObj = {
   MdOutlineMarkEmailRead: <MdOutlineMarkEmailRead className="contactIcon" />,
@@ -52,6 +47,8 @@ export default function Contact() {
       setService("");
       setMessage("");
       toast.success("your message was successfully sent");
+    }else{
+      toast.error("This didn't work. ")
     }
   };
 
