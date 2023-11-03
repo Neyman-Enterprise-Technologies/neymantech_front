@@ -147,7 +147,7 @@ export default function Contact() {
                   <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
                 </div>
                 <div className="right">
-                  <Toaster position="center" />
+                  <Toaster position="top-center" />
                   <form onSubmit={handleSubmit}>
                     <div className="inputs">
                       <input
