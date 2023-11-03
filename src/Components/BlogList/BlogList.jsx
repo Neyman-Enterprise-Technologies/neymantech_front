@@ -1,15 +1,14 @@
-import Pagination from "../Pagination/Pagination";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import UseFetch from "../../UseFetch";
+import Pagination from "../Pagination/Pagination";
 
 const BlogList = ({ filteredBlogs }) => {
   const [loading, setLoading] = useState(false);
 
   const apiUrl = import.meta.env.VITE_API_URL;
   //  const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
-  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
+  // const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/`);
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,25 +27,25 @@ const BlogList = ({ filteredBlogs }) => {
   },[filteredBlogs])
   
   useEffect(() => {
-    const fetchPosts = async () => {
-      // const res = await axios.get(`${apiUrl}blogs`);
-      const res = await axios.get(`${apiUrl}blog_api/blog/`);
+    // const fetchPosts = async () => {
+    //   // const res = await axios.get(`${apiUrl}blogs`);
+    //   const res = await axios.get(`${apiUrl}blog_api/blog/`);
 
-      setPosts(res.data);
-    };
-    fetchPosts();
+    //   setPosts(res.data);
+    // };
+    // fetchPosts();
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
-  }, []);
+  }, [apiUrl]);
 
   return (
     <>
       <div className="cards-container">
         {currentPosts.map((blog) => (
-          <Link to={`/blogs/${blog.id}`} key={blog.id}>
+          <Link to={`/blogs/${blog.slug}`} key={blog.id}>
             <div className="card" key={blog.id}>
               <div className="cardImgContainer">
                 {/* r */}
