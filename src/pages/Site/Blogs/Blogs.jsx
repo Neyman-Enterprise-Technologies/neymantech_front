@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Blogs.scss";
 
 import Loading from "../../../Components/Loading/Loading";
-import { AiOutlineSearch } from "react-icons/Ai";
+import { AiOutlineSearch } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 import BlogList from "../../../Components/BlogList/BlogList";
@@ -27,9 +27,14 @@ export default function Blogs() {
   const filteredBlogs = blogs
     ? blogs.filter((blog) =>
         blog.title.toLowerCase().includes(search.toLowerCase())||
-        blog.blog_category.name.toLowerCase().includes(search.toLowerCase())
+        blog.blog_category.name.toLowerCase().includes(search.toLowerCase())||
+        (blog.tag &&
+          blog.tag.some((t) => t.name.toLowerCase().includes(search.toLowerCase())))
+        
       )
     : [];
+
+  
 
     //SEARCH  CARD  BY TITLE END
   
@@ -97,7 +102,7 @@ export default function Blogs() {
                 {blogs && (
                   <div className="recent-posts-container">
                     <h2>Recent Posts</h2>
-                    <Link to={`/blogs/${blogs.id}`}>
+                  
                       {filteredBlogs.map((blog) => (
                         <div className="post-details" key={blog.id}>
                           <div className="details-img">
@@ -111,7 +116,7 @@ export default function Blogs() {
                           </div>
                         </div>
                       ))}
-                    </Link>
+               
                   </div>
                 )}
 
@@ -134,15 +139,14 @@ export default function Blogs() {
                 <div className="tags-container">
                   <h2 className="title">Tags</h2>
                   <div className="tags">
-                    {blogs &&
-                      blogs.map(({ tag }) =>
-                        tag.map(({ name, id }) => (
-                          <Link key={id}>
-                            {" "}
-                            <p>{name}</p>
-                          </Link>
-                        ))
-                      )}
+                  {blogs &&
+              [...new Set(blogs.flatMap((blog) => blog.tag.map((t) => t.name)))].map(
+                (name, index) => (
+                  <Link key={index}>
+                    <p onClick={() => setSearch(name)}>{name}</p>
+                  </Link>
+                )
+              )}
                   </div>
                 </div>
               </div>
