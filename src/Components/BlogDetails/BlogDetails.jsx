@@ -7,6 +7,7 @@ import UseFetch from "../../UseFetch";
 import Loading from "../../Components/Loading/Loading";
 import "./BlogDetails.scss";
 import { AiOutlineSearch } from "react-icons/ai";
+import { motion } from "framer-motion"
 
 const BlogDetails = () => {
   const { slug } = useParams();
@@ -38,7 +39,9 @@ const BlogDetails = () => {
       {loading ? (
         <Loading />
       ) : (
-        <section className="blogDetails">
+        <motion.section  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }} className="blogDetails">
           {/* BlogDetails Component start */}
 
           {error && <div>{error}</div>}
@@ -153,7 +156,7 @@ const BlogDetails = () => {
               </div>
             </div>
           )}
-        </section>
+        </motion.section>
       )}
     </>
   );
