@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import PriceCard from "../../../Components/PriceCard/PriceCard";
 import UseFetch from "../../../UseFetch";
+import { motion } from "framer-motion"
 import "./Price.scss";
 
 export default function Price() {
@@ -25,7 +26,9 @@ export default function Price() {
       {loading ? (
         <Loading />
       ) : (
-        <>
+        <motion.div  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }}>
           {/*       headerLink start */}
           <div className="priceHeader">
             <div className="container">
@@ -70,7 +73,7 @@ export default function Price() {
                 />
               ))}
           </div>
-        </>
+        </motion.div>
       )}
     </>
   );

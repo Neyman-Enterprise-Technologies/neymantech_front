@@ -1,46 +1,52 @@
 import React, { useEffect, useState } from "react";
 
 import { CgScrollV } from "react-icons/Cg";
-import {
-  animateScroll as scroll
-  
-} from "react-scroll";
+import { useParams } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 import Carusel from "../../../Components/Carusel/Carusel";
+import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
+import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import ServiceCards from "../../../Components/Home/ServiceCards/ServiceCards";
+import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
 import Loading from "../../../Components/Loading/Loading";
 import MySlider from "../../../Components/MySlider/MySlider";
 import UseFetch from "../../../UseFetch";
+import { motion } from "framer-motion"
 import "./Home.scss";
-import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
-import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
-import { useParams } from "react-router-dom";
 import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
-import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  const {id} = useParams()
-    //*CARUSEL
-    const { data: feedback, error:feedbackError } = UseFetch(`${apiUrl}core_api/feedback/`);
+  const { id } = useParams();
+  //*CARUSEL
+  const { data: feedback, error: feedbackError } = UseFetch(
+    `${apiUrl}core_api/feedback/`
+  );
 
   //*HOME - SERVICECARDS- SECTION-1
   // const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
-  const { data: serviceCards, error } = UseFetch(`${apiUrl}/service_api/services`);
+  const { data: serviceCards, error } = UseFetch(
+    `${apiUrl}/service_api/services`
+  );
 
   //*HOME - DIJITAL MARKETING- SECTION-2
   // const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}digitalMarketingSecInHome`);
-  const { data: digitalMarketingSecInHome } = UseFetch(`${apiUrl}service_api/services`);
+  const { data: digitalMarketingSecInHome } = UseFetch(
+    `${apiUrl}service_api/services`
+  );
 
   //*HOME - WEB DESIGN SECTION- SECTION-3
   // const { data: webDesignSecHome } = UseFetch(`${apiUrl}webDesignSecHome`);
-  const { data: webDesignSecHome } = UseFetch(`${apiUrl}service_api/services_property/${id}`);
+  const { data: webDesignSecHome } = UseFetch(
+    `${apiUrl}service_api/services_property/${id}`
+  );
 
   //*HOME - OUR LATEST WORK -4
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}service_api/last_works/`);
+  const { data: latestWorkCardInHome } = UseFetch(
+    `${apiUrl}service_api/last_works/`
+  );
 
-
-
-  // const { data: latestNews } = UseFetch(`${apiUrl}service_api/last_works/`);
+  const { data: latestNews } = UseFetch(`${apiUrl}blog_api/blog`);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -59,17 +65,21 @@ export default function Home() {
 
   return (
     <>
-
       {loading ? (
         <Loading />
       ) : (
-        <section>
+        <motion.section   initial={{ opacity: 0 }}
+        transition={{duration:0.6}}
+        whileInView={{ opacity: 1 }}>
           <div className="scroll-to-top" onClick={handleScrollToTop}>
             <CgScrollV />
           </div>
           <MySlider />
-         
-          <div className="home__service">
+
+          <div className="home__service"
+          
+          
+          >
             <div className="container">
               <div className="home__service__content">
                 <h2 id="services" className="services" name="services">
@@ -132,144 +142,20 @@ export default function Home() {
               <div className="home__blogs__content">
                 <h2>Latest news</h2>
               </div>
-              {/* <div className='home__blogs__cards'>
-              <div className='home__blogs__cards__card'>
-                <div className='home__blogs__cards__card__img'>
-                  <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1-530x430.jpg'></img>
-                </div>
-                <div className='home__blogs__cards__card__content'>
-                  <h2>How To Use Music To Boost Your Business</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
-                  </p>
-                </div>
-              </div>
-              <div className='home__blogs__cards__card'>
-                <div className='home__blogs__cards__card__img'>
-                  <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1-530x430.jpg'></img>
-                </div>
-                <div className='home__blogs__cards__card__content'>
-                  <h2>How To Use Music To Boost Your Business</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
-                  </p>
-                </div>
-              </div>
-              <div className='home__blogs__cards__card'>
-                <div className='home__blogs__cards__card__img'>
-                  <img src='https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/blog-image-2-1-1-530x430.jpg'></img>
-                </div>
-                <div className='home__blogs__cards__card__content'>
-                  <h2>How To Use Music To Boost Your Business</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, constetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
-                  </p>
-                </div>
-              </div>
- 
-            </div> */}
+
               <div className="container">
-                {/* <div className="cards-wrapper">
-                  {latestNews && <LatestNews latestNews={latestNews} />}
-                </div> */}
-                {/* <article>
-                  <div className="article-wrapper">
-                    <figure>
-                      <img src="/src/images/blog-image1.jpg" alt="" />
-                    </figure>
-                    <div className="article-body">
-                      <h2>How To Use Music To Boost Your Business</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
-                        sed do eiusmod tempor incididunt.
-                      </p>
-                      <Link to="" className="read-more">
-                        Read more{" "}
-                        <span class="sr-only">about this is some title</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="icon"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </article> */}
-                {/* <article>
-                  {latestNews && <LatestNews latestNews={latestNews}/>}
-                  <div className="article-wrapper">
-                    <figure>
-                      <img src="/src/images/blog-image-2.jpg" alt="" />
-                    </figure>
-                    <div className="article-body">
-                      <h2>The Rise Of Marketing and Why You Need It</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
-                        sed do eiusmod tempor incididunt.
-                      </p>
-                      <Link to="" className="read-more">
-                        Read more{" "}
-                        <span class="sr-only">about this is some title</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="icon"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </article> */}
-                {/* <article>
-                  <div className="article-wrapper">
-                    <figure>
-                      <img src="/src/images/blog-image-3.jpg" alt="" />
-                    </figure>
-                    <div className="article-body">
-                      <h2>How To Boost Your Digital Marketing Agency</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, constetur adipiscing elit,
-                        sed do eiusmod tempor incididunt.
-                      </p>
-                      <Link to="" className="read-more">
-                        Read more{" "}
-                        <span class="sr-only">about this is some title</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="icon"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </article> */}
+
+              <div className="cards-wrapper">
+
+              {latestNews&&<LatestNews latestNews={latestNews}/>}
+              </div>
+
+
+
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
       )}
     </>
   );

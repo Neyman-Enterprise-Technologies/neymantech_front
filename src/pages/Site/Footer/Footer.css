@@ -6,7 +6,6 @@
 .footer {
   position: relative;
   background-color: #212529;
-  padding: 3rem 0 0  0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,6 +13,54 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.footer__subscribers {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #4e5e6a;
+}
+
+.footer__input-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__subscribe-content {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__subscribe-content h2 {
+  font-size: 1.2rem;
+}
+
+.footer__subscribe-input {
+  height: 3.5rem;
+  width: 25rem;
+  padding-left: 1rem;
+}
+
+.footer__subscribe-button {
+  background-color: #3535c5;
+  height: 3.5rem;
 }
 
 .footer__top {
@@ -26,6 +73,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 3rem;
+  padding-top: 5rem;
 }
 
 .footer__contactInfoCol {
@@ -388,6 +436,12 @@
 @media (max-width: 768px) {
   .container {
     max-width: 540px !important;
+  }
+  .footer__subscribers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__top {
     -webkit-box-orient: vertical;

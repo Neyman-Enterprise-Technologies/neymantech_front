@@ -4,14 +4,16 @@ import AccordionItem from "../../../Components/AccordionItem/AccordionItem";
 import UseFetch from "../../../UseFetch";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
-
+import { motion } from "framer-motion"
 const Accordion = () => {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: faq } = UseFetch(`${apiUrl}core_api/faq`);
 
   const [curOpen, setCurOpen] = useState(null);
   return (
-    <>
+    <motion.div initial={{ opacity: 0 }}
+    transition={{duration:0.5}}
+    whileInView={{ opacity: 1 }}>
     <div className="accordionHeader">
     <div className="container">
       <div className="accordionTitle">
@@ -45,7 +47,7 @@ const Accordion = () => {
           </AccordionItem>
         ))}
     </div>
-    </>
+    </motion.div>
   );
 };
 

@@ -328,7 +328,7 @@
   gap: 1rem;
   border-bottom: 1px solid #eeeeee;
   padding: 1rem 0;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .blogs .right .recent-posts-container .post-details .details-img {

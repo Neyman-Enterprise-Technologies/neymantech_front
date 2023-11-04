@@ -7,6 +7,7 @@ import { ImLocation } from "react-icons/im";
 import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import UseFetch from "../../../UseFetch";
+import { motion } from "framer-motion"
 import "./Contact.scss";
 
 const contactCardsIconsObj = {
@@ -67,7 +68,9 @@ export default function Contact() {
       {loading ? (
         <Loading />
       ) : (
-        <section>
+        <motion.section  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }}>
           <div className="home__contact">
             {/*   HEADER LINK START  */}
             <div className="projectHeaderLink">
@@ -147,7 +150,7 @@ export default function Contact() {
                   <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
                 </div>
                 <div className="right">
-                  <Toaster position="center" />
+                  <Toaster position="top-center" />
                   <form onSubmit={handleSubmit}>
                     <div className="inputs">
                       <input
@@ -197,7 +200,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
       )}
     </>
   );

@@ -15,6 +15,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
   const getLoader = () => {
     setLoading(true);
     setTimeout(() => {
+      
       setLoading(false);
     }, 1000);
   }

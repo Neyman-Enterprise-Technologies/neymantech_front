@@ -1,3 +1,9 @@
+.partners-header {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5rem;
+}
+
 .itemmm {
   position: relative;
   /* background-color: red; */
@@ -35,8 +41,11 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 2rem;
+  border-radius: 50%;
   pointer-events: none;
+  -webkit-box-shadow: -10px 20px 20px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: -10px 20px 20px 0 rgba(0, 0, 0, 0.5);
+  border: 5px solid #706c6c;
 }
 
 .inner-carousel {

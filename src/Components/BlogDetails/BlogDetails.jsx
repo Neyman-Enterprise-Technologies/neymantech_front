@@ -1,20 +1,27 @@
-import { useParams } from "react-router-dom";
-import UseFetch from "../../UseFetch";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { AiOutlineSearch } from "react-icons/Ai";
 import { FaAngleRight } from "react-icons/fa";
-import { AiOutlineSearch } from "react-icons/Ai";
+import { Link, useParams } from "react-router-dom";
+import UseFetch from "../../UseFetch";
 
 import Loading from "../../Components/Loading/Loading";
 import "./BlogDetails.scss";
+import { AiOutlineSearch } from "react-icons/ai";
+import { motion } from "framer-motion"
 
-const BlogDetails = ({ handleCategoryClick }) => {
-  const { id } = useParams();
+const BlogDetails = () => {
+  const { slug } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
-  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/${id}`);
-  const { data: blog } = UseFetch(`${apiUrl}blog_api/blog/`);
+  const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/${slug}`);
+  const { data: bloges } = UseFetch(`${apiUrl}blog_api/blog`);
+  
 
-  // const { data: blogs, error } = UseFetch(`${apiUrl}blogs/${id}`);
+
+
+
+ 
+
+ 
 
   const [loading, setLoading] = useState(false);
 
@@ -32,7 +39,9 @@ const BlogDetails = ({ handleCategoryClick }) => {
       {loading ? (
         <Loading />
       ) : (
-        <section className="blogDetails">
+        <motion.section  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }} className="blogDetails">
           {/* BlogDetails Component start */}
 
           {error && <div>{error}</div>}
@@ -103,7 +112,8 @@ const BlogDetails = ({ handleCategoryClick }) => {
                     <div className="recent-posts-container">
                       <h2>Recent Posts</h2>
                       {blogs && (
-                        <div className="post-details">
+                       
+                          <div className="post-details">
                           <div className="details-img">
                             <img src={blogs.photo} alt="" />
                           </div>
@@ -114,13 +124,14 @@ const BlogDetails = ({ handleCategoryClick }) => {
                             <p className="title">{blogs.short_descriptions}</p>
                           </div>
                         </div>
+                     
                       )}
                     </div>
 
                     <div className="category-container">
                       <h2 className="title">Categories</h2>
                       <div className="category-list-container">
-                        {blog&&blog.map((_blog) => (
+                        {bloges&&bloges.map((_blog) => (
                           <p key={_blog.blog_category.id}>
                             {_blog.blog_category.name}
                           </p>
@@ -128,20 +139,24 @@ const BlogDetails = ({ handleCategoryClick }) => {
                       </div>
                     </div>
                     <div className="tags-container">
-                      <h2 className="title">Tags</h2>
-                      <div className="tags">
-                      {blog &&
-                      blog.map(({ tag }) =>
-                        tag.map(({ name,id }) => <Link  key={id}> <p>{name}</p></Link>)
-                      )}
-                      </div>
-                    </div>
+                  <h2 className="title">Tags</h2>
+                  <div className="tags">
+                  {bloges &&
+              [...new Set(bloges.flatMap((blog) => blog.tag.map((t) => t.name)))].map(
+                (name, index) => (
+                  <Link key={index}>
+                    <p onClick={() => setSearch(name)}>{name}</p>
+                  </Link>
+                )
+              )}
+                  </div>
+                </div>
                   </div>
                 </div>
               </div>
             </div>
           )}
-        </section>
+        </motion.section>
       )}
     </>
   );
