@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 import BlogList from "../../../Components/BlogList/BlogList";
 import UseFetch from "../../../UseFetch";
-
+import { motion } from "framer-motion"
 // import Pagination from "../../../Components/pagination/pagination";
 
 export default function Blogs() {
@@ -52,7 +52,9 @@ export default function Blogs() {
       {loading ? (
         <Loading />
       ) : (
-        <div>
+        <motion.div  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }}>
           {/* heading start */}
           <div className="blogHeader">
             <div className="container">
@@ -152,7 +154,7 @@ export default function Blogs() {
               </div>
             </section>
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

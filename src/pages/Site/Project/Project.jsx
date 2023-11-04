@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
-import "./Project.scss";
 import Loading from "../../../Components/Loading/Loading";
+import "./Project.scss";
 // import { BiChevronRight } from "react-icons/Bi";
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import UseFetch from "../../../UseFetch";
+import { motion } from "framer-motion"
 // import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  // const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}service_api/last_works/`)
+  const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}service_api/last_works/`)
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -26,7 +28,9 @@ export default function Project() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="projects">
+        <motion.div  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }} className="projects">
           {/*   HEADER LINK START  */}
           <div className="projectHeaderLink">
             <div className="container">
@@ -67,7 +71,7 @@ export default function Project() {
           </div>
 
           {/*  HEADER END */}
-        </div>
+        </motion.div>
       )}
     </>
   );

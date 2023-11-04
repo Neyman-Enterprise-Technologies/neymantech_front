@@ -6,15 +6,48 @@
   position: relative;
 
   background-color: #212529;
-  padding: 3rem 0 0  0;
+
   display: flex;
   flex-direction: column;
+  &__subscribers{
+    padding: 3rem 0;
+display: flex;
+gap: 1rem;
+justify-content: space-between;
+border-bottom: 1px solid #4e5e6a;
+}
+&__input-button-container{
+  display: flex;
+  gap: 1rem;
+}
+&__subscribe-content{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2{
+    font-size: 1.2rem;
+  }
+}
+&__subscribe-input{
+  height: 3.5rem;
+  width: 25rem;
+  padding-left: 1rem;
+}
+&__subscribe-button{
+  background-color: rgb(53, 53, 197);
+  height: 3.5rem;
+
+}
+
+
   &__top {
     margin-bottom: 10rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 3rem;
+    padding-top: 5rem;
   }
   &__contactInfoCol {
     position: relative;
@@ -291,6 +324,9 @@ padding-right: 6rem;
   }
   
 .footer{
+  &__subscribers{
+flex-direction: column;
+}
   &__top{
     flex-direction: column;
     gap: 6rem;

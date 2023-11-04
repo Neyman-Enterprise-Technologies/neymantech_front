@@ -248,6 +248,8 @@
 }
 
 .cardsContainer__notAveilble-icon {
+  position: relative;
+  right: 0.2rem;
   font-size: 2rem;
   color: red;
 }

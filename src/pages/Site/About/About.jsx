@@ -3,11 +3,12 @@ import "./About.scss";
 // import { BiChevronRight } from "react-icons/bi";
 
 import { Link } from "react-router-dom";
-import { AiFillCheckCircle, AiFillCheckSquare } from "react-icons/Ai";
+import { AiFillCheckCircle, AiFillCheckSquare } from "react-icons/ai";
 import Loading from "../../../Components/Loading/Loading";
 import { useEffect, useState } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import Carusel1 from "../../../Components/Carusel1/Carusel1";
+import { motion } from "framer-motion"
 import {
   BsCheckLg,
   BsFillCheckSquareFill,
@@ -17,6 +18,7 @@ import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
 import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
 import Partners from "../../../Components/Partners/Partners";
+
 export default function About() {
   const apiUrl = import.meta.env.VITE_API_URL;
   //*OUR TEAM SECTION-4
@@ -41,7 +43,9 @@ export default function About() {
       {loading ? (
         <Loading />
       ) : (
-        <section>
+        <motion.section initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }}>
           {/* ABOUT HEADER START */}
           <div className="aboutHeader">
             <div className="container">
@@ -206,7 +210,7 @@ export default function About() {
           {/* SECTION-4 END */}
 
           <Partners />
-        </section>
+        </motion.section>
       )}
     </>
   );

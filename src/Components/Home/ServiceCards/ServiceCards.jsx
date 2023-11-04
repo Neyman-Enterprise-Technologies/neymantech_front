@@ -4,7 +4,7 @@ import {BsLaptop} from "react-icons/Bs"
 
 import { TbMessages } from "react-icons/Tb";
 // import UseFetch from "../../../UseFetch";
-import { AiOutlineMobile } from "react-icons/Ai";
+import { AiOutlineMobile } from "react-icons/ai";
 
 const iconComponents = {
 
@@ -19,13 +19,13 @@ const iconComponents = {
 
 const ServiceCards = ({ serviceCards }) => {
 
-const {id} = useParams
+const {slug} = useParams()
 
   return (
     <>
       <div className="home__service__cards">
         {serviceCards&&serviceCards.map((card) => (
-          <Link to={`/services_property/${card.id}`} key={card.id}>
+          <Link to={`/services_property/${card.slug}`} key={card.id}>
             <div className="home__service__cards__card">
               <div className="home__service__cards__card__icon">
                 {iconComponents[card.logo]}
