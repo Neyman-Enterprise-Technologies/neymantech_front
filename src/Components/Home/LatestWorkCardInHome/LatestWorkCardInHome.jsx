@@ -4,6 +4,7 @@ import "./LatestWorkCardInHome.scss";
 import { BiCategory } from "react-icons/Bi";
 import { CiSearch } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa";
+import { motion } from "framer-motion"
 
 const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,7 +63,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
             />
             <div>
               <CiSearch className="category-search-icon" 
-             
+              onClick={() => handleClick(card.services_property.services.title)}
               
               />
             </div>
@@ -71,7 +72,9 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
 
    
         {isModalOpen && (
-        <div className="modal-wrapper">
+        <motion.div  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }} className="modal-wrapper">
           <div className="modal">
             <ul>
               {latestWorkCardInHome.map((card) => (
@@ -81,8 +84,8 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
                   onMouseLeave={handleMouseLeave}
                   onClick={() => handleClick(card.services_property.title)}
                 >
-                  {card.services_property.title}
-                  <FaAngleRight />
+                 {card.services_property.title}
+                  <FaAngleRight className="modal-angle-icon"/>
                   {hoveredItem === card.services_property.title && (
                     <ul className="modal-2">
                       <li className="modal-2-li"
@@ -94,10 +97,12 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
               ))}
             </ul>
           </div>
-        </div>
+        </motion.div>
       )}
       </div>
-      <div className="home__works__cards">
+      <motion.div  initial={{ opacity: 0 }}
+        transition={{duration:0.5}}
+        whileInView={{ opacity: 1 }} className="home__works__cards">
         {filteredWorks &&
           filteredWorks.map((card) => (
             <Link to={card.link_url} key={card.id}>
@@ -110,7 +115,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
               </div>
             </Link>
           ))}
-      </div>
+      </motion.div>
     </>
   );
 };
