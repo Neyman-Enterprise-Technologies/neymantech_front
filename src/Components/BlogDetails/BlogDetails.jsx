@@ -93,7 +93,9 @@ const BlogDetails = () => {
                         <div className="bottom-content">
                           <h2>{blogs.title}</h2>
                           {/* <p>{blogs.description}</p> */}
-                          <p>{blogs.long_descriptions}</p>
+                          {/* <p>{blogs.long_descriptions}</p> */}
+                          <p dangerouslySetInnerHTML={{ __html: blogs.long_descriptions }} />
+                          
                         </div>
                       </div>
                     </div>
@@ -121,7 +123,8 @@ const BlogDetails = () => {
                             <p className="date">
                               {blogs.created_at.slice(0, 10)}
                             </p>
-                            <p className="title">{blogs.short_descriptions}</p>
+                            {/* <p className="title">{blogs.short_descriptions}</p> */}
+                            <p className="title" dangerouslySetInnerHTML={{ __html: blogs.short_descriptions }} />
                           </div>
                         </div>
                      
