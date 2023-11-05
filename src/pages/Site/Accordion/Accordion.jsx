@@ -1,16 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Accordion.scss"
 import AccordionItem from "../../../Components/AccordionItem/AccordionItem";
 import UseFetch from "../../../UseFetch";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
+import Loading from "../../../Components/Loading/Loading";
 import { motion } from "framer-motion"
 const Accordion = () => {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: faq } = UseFetch(`${apiUrl}core_api/faq`);
 
   const [curOpen, setCurOpen] = useState(null);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    window.scrollTo({ top: 0 });
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
   return (
+    <>  
+     {loading ? (
+        <Loading />
+      ) : (
     <motion.div initial={{ opacity: 0 }}
     transition={{duration:0.5}}
     whileInView={{ opacity: 1 }}>
@@ -48,6 +61,8 @@ const Accordion = () => {
         ))}
     </div>
     </motion.div>
+      )}
+    </>
   );
 };
 
