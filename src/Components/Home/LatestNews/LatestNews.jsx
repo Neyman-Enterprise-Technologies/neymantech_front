@@ -12,7 +12,8 @@ const LatestNews = ({ latestNews }) => {
     const cardDate = new Date(card.date);
   
     return cardDate < currentDate && card.is_active;;
-  });
+  }).sort((a, b) => new Date(b.date) - new Date(a.date))
+  .slice(-3); 
 
   
   return (
@@ -21,14 +22,14 @@ const LatestNews = ({ latestNews }) => {
    
  <div className="cards-container">
       {filteredNews.map((card) => (
-        <Link to={`/blogs/${card.slug}`} key={card.id}>
-        <div className="card" key={card.id}>
+        <Link className="card" to={`/blogs/${card.slug}`} key={card.id}>
+        <div  key={card.id}>
           <div className="cardImgContainer">
             <img src={card.photo} />
           </div>
           <div className="bottom-content">
             <h2>{card.title}</h2>
-            <p>{card.short_descriptions}</p>
+          <div dangerouslySetInnerHTML={{ __html: card.short_descriptions }} />
           </div>
         </div>
         </Link>
