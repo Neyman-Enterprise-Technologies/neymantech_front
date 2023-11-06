@@ -6,7 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
+const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -45,8 +45,11 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
 
   return (
     <>
-      {isModalOpen && <div className="overlay" onClick={openModal} />}
-      <div className="modal-section">
+ 
+      {isProjectPage && isModalOpen && <div className="overlay" onClick={openModal} />}
+      {isProjectPage && (
+
+<div className="modal-section">
         <div className="kateqoriya-sec">
           <div className="kateqoriya">
             <div>
@@ -114,6 +117,9 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
           </motion.div>
         )}
       </div>
+
+      )}
+      
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 0.5 }}

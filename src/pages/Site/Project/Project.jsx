@@ -66,6 +66,7 @@ export default function Project() {
               {latestWorkCardInHome && (
                 <LatestWorkCardInHome
                   latestWorkCardInHome={latestWorkCardInHome}
+                  isProjectPage={true}
                 />
               )}
             </div>

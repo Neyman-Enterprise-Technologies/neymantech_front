@@ -352,7 +352,6 @@
 }
 
 .recent-description p {
-  background-color: red;
   line-height: 1.6rem;
   overflow: hidden;
   text-overflow: ellipsis;

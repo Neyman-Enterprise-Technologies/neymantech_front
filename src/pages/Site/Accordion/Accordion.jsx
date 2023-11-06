@@ -40,7 +40,7 @@ const Accordion = () => {
         Home
       </Link>
       <FaAngleRight className="angelIcon" />
-      <Link to="faq">FAQ</Link>
+      <Link className="faqLink" to="faq">FAQ</Link>
     </div>
   </div>
     <div className="accordion">
