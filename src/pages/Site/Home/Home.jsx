@@ -124,6 +124,7 @@ export default function Home() {
               {LatestWorkCardInHome && (
                 <LatestWorkCardInHome
                   latestWorkCardInHome={latestWorkCardInHome}
+                  isProjectPage={false}
                 />
               )}
             </div>
