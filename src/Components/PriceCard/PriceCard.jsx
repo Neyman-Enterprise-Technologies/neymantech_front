@@ -1,6 +1,6 @@
-import { TiTick } from "react-icons/ti";
-import UseFetch from "../../UseFetch";
 import { AiOutlineClose } from "react-icons/ai";
+import { TiTick } from "react-icons/ti";
+import { motion } from "framer-motion";
 
 const PriceCard = ({ title, price, color, period, property, symbol }) => {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -8,7 +8,9 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
  const sorted = [...property].sort((a,c)=> c.is_active - a.is_active )
 
   return (
-    <div className="cardsContainer__card">
+    <motion.div className="cardsContainer__card"  initial={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}
+    whileInView={{ opacity: 1 }}>
       <h2
         style={{ backgroundColor: color }}
         className="cardsContainer__cardHeader"
@@ -36,7 +38,7 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
         ))}
       </div>
     
-    </div>
+    </motion.div>
   );
 };
 
