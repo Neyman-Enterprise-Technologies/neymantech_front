@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loading from "../../../Components/Loading/Loading";
 import "./Project.scss";
 // import { BiChevronRight } from "react-icons/Bi";
+
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
