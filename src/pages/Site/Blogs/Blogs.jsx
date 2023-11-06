@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 import BlogList from "../../../Components/BlogList/BlogList";
 import UseFetch from "../../../UseFetch";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 // import Pagination from "../../../Components/pagination/pagination";
 
 export default function Blogs() {
@@ -16,7 +16,7 @@ export default function Blogs() {
 
   // const { data: blogs, error } = UseFetch(`${apiUrl}blogs`);
 
-//SEEARCH  CARD  BY TITLE START
+  //SEEARCH  CARD  BY TITLE START
 
   const [search, setSearch] = useState("");
 
@@ -24,20 +24,34 @@ export default function Blogs() {
     setSearch(e.target.value);
   };
 
+
+
+
+
+
   const filteredBlogs = blogs
-    ? blogs.filter((blog) =>
-        blog.title.toLowerCase().includes(search.toLowerCase())||
-        blog.blog_category.name.toLowerCase().includes(search.toLowerCase())||
-        (blog.tag &&
-          blog.tag.some((t) => t.name.toLowerCase().includes(search.toLowerCase())))
-        
+    ? blogs.filter(
+        (blog) =>
+          blog.title.toLowerCase().includes(search.toLowerCase()) ||
+          blog.blog_category.name
+            .toLowerCase()
+            .includes(search.toLowerCase()) ||
+          (blog.tag &&
+            blog.tag.some((t) =>
+              t.name.toLowerCase().includes(search.toLowerCase())
+            ))
       )
     : [];
 
-  
+  //SEARCH  CARD  BY TITLE END
+  const currentDate = new Date();
 
-    //SEARCH  CARD  BY TITLE END
+  const filteredbyDate = filteredBlogs.filter((card) => {
+    const cardDate = new Date(card.date);
   
+    return cardDate < currentDate && card.is_active;;
+  });
+
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -52,9 +66,11 @@ export default function Blogs() {
       {loading ? (
         <Loading />
       ) : (
-        <motion.div  initial={{ opacity: 0 }}
-        transition={{duration:0.5}}
-        whileInView={{ opacity: 1 }}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1 }}
+        >
           {/* heading start */}
           <div className="blogHeader">
             <div className="container">
@@ -89,7 +105,7 @@ export default function Blogs() {
                 <div className="search">
                   <div className="input-button-container">
                     <input
-                      onChange={handleSearch} 
+                      onChange={handleSearch}
                       value={search}
                       type="text"
                       placeholder="search..."
@@ -104,21 +120,28 @@ export default function Blogs() {
                 {blogs && (
                   <div className="recent-posts-container">
                     <h2>Recent Posts</h2>
-                  
-                      {filteredBlogs.map((blog) => (
-                        <div className="post-details" key={blog.id}>
-                          <div className="details-img">
-                            <img src={blog.photo} alt="" />
-                          </div>
-                          <div className="description">
-                            <p className="date">
-                              {blog.created_at.slice(0, 10)}
-                            </p>
-                            <p className="title">{blog.short_descriptions}</p>
-                          </div>
+
+                    {filteredbyDate.map((blog) => (
+                      <div className="post-details" key={blog.id}>
+                        <div className="details-img">
+                          <img src={blog.photo} alt="" />
                         </div>
-                      ))}
-               
+                        <div className="description">
+                          <p className="date">
+                          
+                            {new Date(blog.created_at).toLocaleDateString(
+                              "en-US",
+                              {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                              }
+                            )}
+                          </p>
+                          <div dangerouslySetInnerHTML={{ __html: blog.short_descriptions }} />
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 )}
 
@@ -129,9 +152,7 @@ export default function Blogs() {
                       blogs.map((_blog) => (
                         <p
                           key={_blog.blog_category.id}
-                          onClick={() =>
-                            setSearch(_blog.blog_category.name)
-                          }
+                          onClick={() => setSearch(_blog.blog_category.name)}
                         >
                           {_blog.blog_category.name}
                         </p>
@@ -141,14 +162,16 @@ export default function Blogs() {
                 <div className="tags-container">
                   <h2 className="title">Tags</h2>
                   <div className="tags">
-                  {blogs &&
-              [...new Set(blogs.flatMap((blog) => blog.tag.map((t) => t.name)))].map(
-                (name, index) => (
-                  <Link key={index}>
-                    <p onClick={() => setSearch(name)}>{name}</p>
-                  </Link>
-                )
-              )}
+                    {blogs &&
+                      [
+                        ...new Set(
+                          blogs.flatMap((blog) => blog.tag.map((t) => t.name))
+                        ),
+                      ].map((name, index) => (
+                        <Link key={index}>
+                          <p onClick={() => setSearch(name)}>{name}</p>
+                        </Link>
+                      ))}
                   </div>
                 </div>
               </div>

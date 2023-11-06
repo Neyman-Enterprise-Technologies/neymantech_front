@@ -38,8 +38,7 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
           </div>
         ))}
       </div>
-      <div className="cardsContainer__devider"></div>
-      <a className="cardsContainer__link">Get Started</a>
+    
     </div>
   );
 };

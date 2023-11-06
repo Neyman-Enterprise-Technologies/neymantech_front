@@ -11,6 +11,7 @@ body {
 }
 
 .accordion {
+  
   width: 700px;
   margin: 100px auto;
   display: flex;
@@ -31,24 +32,28 @@ body {
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
+  
 }
 
 .number {
   font-size: 24px;
   font-weight: 500;
   color: #ced4da;
+  
 }
 
 .title,
 .icon {
   font-size: 24px;
   font-weight: 500;
+  
 }
 
 .content-box {
   grid-column: 2 / -1;
   padding-bottom: 16px;
   line-height: 1.6;
+  
 }
 
 .content-box ul {
@@ -59,14 +64,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  
 }
 
 /* OPEN STATE */
 .open {
   border-top: 4px solid #087f5b;
+  
 }
 
 .open .number,
 .open .title {
   color: #087f5b;
+  
 }

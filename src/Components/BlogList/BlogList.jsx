@@ -12,7 +12,7 @@ const BlogList = ({ filteredBlogs }) => {
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
+  const postsPerPage = 2;
   
   /*   Get Current posts */
   const indexOfLastPost = currentPage * postsPerPage;
@@ -21,6 +21,18 @@ const BlogList = ({ filteredBlogs }) => {
 
   //Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+
+  const currentDate = new Date();
+  
+
+  const filteredbyDate = filteredBlogs.filter((card) => {
+    const cardDate = new Date(card.date);
+  
+    return cardDate < currentDate && card.is_active;;
+  });
+
+
 
   useEffect(()=>{
       setCurrentPosts(filteredBlogs)
@@ -44,16 +56,17 @@ const BlogList = ({ filteredBlogs }) => {
   return (
     <>
       <div className="cards-container">
-        {currentPosts.map((blog) => (
+        {/* {currentPosts.map((blog) => ( */}
+           {filteredbyDate.map((blog) => (
           <Link to={`/blogs/${blog.slug}`} key={blog.id}>
             <div className="card" key={blog.id}>
               <div className="cardImgContainer">
                 {/* r */}
-                <img src={blog.photo} />
+                <img src={blog.photo} alt={blog.title} />
               </div>
               <div className="bottom-content">
                 <h2>{blog.title}</h2>
-                <p>{blog.short_descriptions}</p>
+                <div dangerouslySetInnerHTML={{ __html: blog.short_descriptions }} />
               </div>
             </div>
           </Link>
