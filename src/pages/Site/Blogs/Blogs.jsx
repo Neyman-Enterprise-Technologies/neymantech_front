@@ -24,11 +24,6 @@ export default function Blogs() {
     setSearch(e.target.value);
   };
 
-
-
-
-
-
   const filteredBlogs = blogs
     ? blogs.filter(
         (blog) =>
@@ -48,10 +43,9 @@ export default function Blogs() {
 
   const filteredbyDate = filteredBlogs.filter((card) => {
     const cardDate = new Date(card.date);
-  
-    return cardDate < currentDate && card.is_active;;
-  });
 
+    return cardDate < currentDate && card.is_active;
+  });
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -128,7 +122,6 @@ export default function Blogs() {
                         </div>
                         <div className="description">
                           <p className="date">
-                          
                             {new Date(blog.created_at).toLocaleDateString(
                               "en-US",
                               {
@@ -138,7 +131,12 @@ export default function Blogs() {
                               }
                             )}
                           </p>
-                          <div className="recent-description" dangerouslySetInnerHTML={{ __html: blog.short_descriptions }} />
+                          <div
+                            className="recent-description"
+                            dangerouslySetInnerHTML={{
+                              __html: blog.short_descriptions,
+                            }}
+                          />
                         </div>
                       </div>
                     ))}
