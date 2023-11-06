@@ -150,7 +150,7 @@ export default function Footer() {
             </div>
             <div className="footer__quickLinks">
               <div className="footer__left">
-                <Link className="footer__footerLinks" to={"/home"}>
+                <Link className="footer__footerLinks" to={"/"}>
                   Home
                 </Link>
                 <Link className="footer__footerLinks" to={"/blogs"}>
@@ -162,9 +162,7 @@ export default function Footer() {
                 <Link className="footer__footerLinks" to={"/project"}>
                   Projects
                 </Link>
-                <Link className="footer__footerLinks" to={"/service"}>
-                  Services
-                </Link>
+           
               </div>
               <div className="footer__right">
                 <Link className="footer__footerLinks" to={"/about"}>
@@ -177,9 +175,7 @@ export default function Footer() {
                 <Link className="footer__footerLinks" to={"/price"}>
                   Pricing
                 </Link>
-                <Link className="footer__footerLinks" to={"#"}>
-                  Subscribers
-                </Link>
+             
                 {/* <Link className='footer__footerLinks' to={'/blogs'}>
                 Services
               </Link> */}
