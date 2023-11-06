@@ -32,6 +32,7 @@ body {
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
+  transition: max-height 1s;
   
 }
 
@@ -53,6 +54,8 @@ body {
   grid-column: 2 / -1;
   padding-bottom: 16px;
   line-height: 1.6;
+  /* background-color: red; */
+
   
 }
 
@@ -77,4 +80,59 @@ body {
 .open .title {
   color: #087f5b;
   
+}
+
+.accordionHeader{
+
+  background-color: #fafafc;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.accordionTitle h2{
+text-align: center;
+padding: 0.9375rem 0rem 0rem 0rem;
+font-size: 2.5rem;
+font-family: "Montserrat", sans-serif;
+}
+
+.accordionTitle span{
+
+  border-bottom: 2px solid #f78da7;
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+
+}
+
+.accordionLinks a{
+  font-size: 1.3rem;
+  color: #0000ff;
+  font-weight: 500;
+  color: #737b9a;
+}
+
+.accordionLinks .angelIcon{
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  color: #737b9a;
+}
+.accordionLinks .faqLink{
+  font-size: 1.3rem;
+  color: #0000ff;
+  font-weight: 500;
+
+
+}
+.accordionLinks{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: fit-content; */
+    gap: 0.5rem;
+}
+.titlee{
+font-weight: 600;
+font-size: 1.5rem;
+color: #737b9a;
 }
