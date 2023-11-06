@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
@@ -8,23 +8,19 @@ import { BiCategory } from "react-icons/Bi";
 import { CiSearch } from "react-icons/ci";
 import { motion } from "framer-motion";
 import "./Price.scss";
-import { useRef } from "react";
+
 
 
 export default function Price() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
-
-  const inputRef = useRef(null); // Add a reference to the search input element
+  const inputRef = useRef(null);
 
   useEffect(() => {
     if (inputRef.current) {
-      inputRef.current.focus(); // Set focus on the input element when the page is refreshed
+      inputRef.current.focus();
     }
   }, []);
-
-
-
 
   const { data: priceCards } = UseFetch(`${apiUrl}service_api/package/`);
   const { data: price } = UseFetch(`${apiUrl}service_api/services_property/`);
@@ -120,6 +116,7 @@ export default function Price() {
                   placeholder="search"
                   onChange={handleSearch}
                   ref={inputRef}
+               
                 />
                 <div>
                   <CiSearch
