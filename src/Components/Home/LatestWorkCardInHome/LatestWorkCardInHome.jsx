@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./LatestWorkCardInHome.scss";
 import { BiCategory } from "react-icons/Bi";
@@ -43,11 +43,22 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
     setIsModalOpen(false);
   };
 
+  const inputRef = useRef(null)
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+  
+
   return (
     <>
  
       {isProjectPage && isModalOpen && <div className="overlay" onClick={openModal} />}
       {isProjectPage && (
+
+
 
 <div className="modal-section">
         <div className="kateqoriya-sec">
@@ -58,7 +69,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
             <p>Kateqoriya seçin</p>
           </div>
           <div className="input-search">
-            <input type="text" placeholder="search" onChange={handleSearch} />
+            <input type="text" placeholder="search" onChange={handleSearch} ref={inputRef} />
             <div>
               <CiSearch
                 className="category-search-icon"
@@ -117,6 +128,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
           </motion.div>
         )}
       </div>
+
 
       )}
       
