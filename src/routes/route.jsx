@@ -36,14 +36,7 @@ export const ROUTES = [
         path: "/services_property/:slug",
         element: <ServiceProperty/>,
       },
-      // {
-      //   path: "/services/:id",
-      //   element: <ServiceProperty/>,
-      // },
-      // {
-      //   path: "/services_property_details/:id",
-      //   element: <ServicePropertyDetails/>,
-      // },
+  
       {
         path: "/price",
         element: <Price />,
