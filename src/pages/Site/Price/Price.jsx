@@ -8,9 +8,23 @@ import { BiCategory } from "react-icons/Bi";
 import { CiSearch } from "react-icons/ci";
 import { motion } from "framer-motion";
 import "./Price.scss";
+import { useRef } from "react";
+
 
 export default function Price() {
   const apiUrl = import.meta.env.VITE_API_URL;
+
+
+  const inputRef = useRef(null); // Add a reference to the search input element
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus(); // Set focus on the input element when the page is refreshed
+    }
+  }, []);
+
+
+
 
   const { data: priceCards } = UseFetch(`${apiUrl}service_api/package/`);
   const { data: price } = UseFetch(`${apiUrl}service_api/services_property/`);
@@ -36,6 +50,9 @@ export default function Price() {
     setIsModalOpen(false);
   };
 
+  
+ 
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -44,6 +61,10 @@ export default function Price() {
       setLoading(false);
     }, 1000);
   }, []);
+
+
+
+
 
   return (
     <>
@@ -98,6 +119,7 @@ export default function Price() {
                   type="text"
                   placeholder="search"
                   onChange={handleSearch}
+                  ref={inputRef}
                 />
                 <div>
                   <CiSearch
