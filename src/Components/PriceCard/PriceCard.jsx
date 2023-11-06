@@ -3,7 +3,7 @@ import { TiTick } from "react-icons/ti";
 import { motion } from "framer-motion";
 
 const PriceCard = ({ title, price, color, period, property, symbol }) => {
-  const apiUrl = import.meta.env.VITE_API_URL;
+
 
  const sorted = [...property].sort((a,c)=> c.is_active - a.is_active )
 
