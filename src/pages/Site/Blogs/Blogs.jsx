@@ -138,7 +138,7 @@ export default function Blogs() {
                               }
                             )}
                           </p>
-                          <div dangerouslySetInnerHTML={{ __html: blog.short_descriptions }} />
+                          <div className="recent-description" dangerouslySetInnerHTML={{ __html: blog.short_descriptions }} />
                         </div>
                       </div>
                     ))}

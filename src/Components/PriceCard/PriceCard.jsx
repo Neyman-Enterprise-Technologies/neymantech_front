@@ -5,10 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 const PriceCard = ({ title, price, color, period, property, symbol }) => {
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  const activeProperties = property.filter((item) => item.is_active);
-  const inactiveProperties = property.filter((item) => !item.is_active);
-
-  const properties = [...activeProperties, ...inactiveProperties];
+ const sorted = [...property].sort((a,c)=> c.is_active - a.is_active )
 
   return (
     <div className="cardsContainer__card">
@@ -27,7 +24,7 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
 
       <div className="cardsContainer__devider"></div>
       <div className="cardsContainer__cardContentContainer">
-        {properties.map((item, index) => (
+        {sorted.map((item, index) => (
           <div className="cardsContainer__itemsContainer" key={index}>
             <p className="cardsContainer__items">{item.property_name}</p>
             {item.is_active ? (

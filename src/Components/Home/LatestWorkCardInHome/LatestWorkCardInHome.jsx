@@ -4,7 +4,7 @@ import "./LatestWorkCardInHome.scss";
 import { BiCategory } from "react-icons/Bi";
 import { CiSearch } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,10 +19,9 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
 
   const openModal = () => {
     setIsModalOpen(!isModalOpen);
- };
+  };
 
   const [search, setSearch] = useState("");
-
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
@@ -39,70 +38,88 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome }) => {
       )
     : [];
 
-    const handleClick = (title) => {
-      setSearch(title);
-      setIsModalOpen(false);
-    };
+  const handleClick = (title) => {
+    setSearch(title);
+    setIsModalOpen(false);
+  };
 
   return (
     <>
-     {isModalOpen && <div className="overlay" onClick={openModal} />}
-      <div  className="modal-section">
-        <div class="kateqoriya-sec">
-          <div class="kateqoriya">
+      {isModalOpen && <div className="overlay" onClick={openModal} />}
+      <div className="modal-section">
+        <div className="kateqoriya-sec">
+          <div className="kateqoriya">
             <div>
-              <BiCategory className="category-icon" onClick={openModal}/>
+              <BiCategory className="category-icon" onClick={openModal} />
             </div>
             <p>Kateqoriya seçin</p>
           </div>
-          <div class="input-search">
-            <input
-              type="text"
-              placeholder="search"
-              onChange={handleSearch}
-            />
+          <div className="input-search">
+            <input type="text" placeholder="search" onChange={handleSearch} />
             <div>
-              <CiSearch className="category-search-icon" 
-              onClick={() => handleClick(card.services_property.services.title)}
-              
+              <CiSearch
+                className="category-search-icon"
+                // onClick={() => handleClick(card.services_property.services.title)}
               />
             </div>
           </div>
         </div>
 
-   
         {isModalOpen && (
-        <motion.div  initial={{ opacity: 0 }}
-        transition={{duration:0.5}}
-        whileInView={{ opacity: 1 }} className="modal-wrapper">
-          <div className="modal">
-            <ul>
-              {latestWorkCardInHome.map((card) => (
+          <motion.div
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            whileInView={{ opacity: 1 }}
+            className="modal-wrapper"
+          >
+            <div className="modal">
+              <ul>
                 <li
-                  key={card.id}
-                  onMouseEnter={() => handleMouseEnter(card.services_property.title)}
+                  onMouseEnter={() =>
+                    handleMouseEnter('')
+                  }
                   onMouseLeave={handleMouseLeave}
-                  onClick={() => handleClick(card.services_property.title)}
+                  onClick={() => handleClick("")}
                 >
-                 {card.services_property.title}
-                  <FaAngleRight className="modal-angle-icon"/>
-                  {hoveredItem === card.services_property.title && (
-                    <ul className="modal-2">
-                      <li className="modal-2-li"
-                     onClick={() => handleClick(card.services_property.services.title)}
-                      >{card.services_property.services.title}</li>
-                    </ul>
-                  )}
+                  All
+                  <FaAngleRight className="modal-angle-icon" />
                 </li>
-              ))}
-            </ul>
-          </div>
-        </motion.div>
-      )}
+                {latestWorkCardInHome.map((card) => (
+                  <li
+                    key={card.id}
+                    onMouseEnter={() =>
+                      handleMouseEnter(card.services_property.title)
+                    }
+                    onMouseLeave={handleMouseLeave}
+                    onClick={() => handleClick(card.services_property.title)}
+                  >
+                    {card.services_property.title}
+                    <FaAngleRight className="modal-angle-icon" />
+                    {hoveredItem === card.services_property.title && (
+                      <ul className="modal-2">
+                        <li
+                          className="modal-2-li"
+                          onClick={() =>
+                            handleClick(card.services_property.services.title)
+                          }
+                        >
+                          {card.services_property.services.title}
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+        )}
       </div>
-      <motion.div  initial={{ opacity: 0 }}
-        transition={{duration:0.5}}
-        whileInView={{ opacity: 1 }} className="home__works__cards">
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1 }}
+        className="home__works__cards"
+      >
         {filteredWorks &&
           filteredWorks.map((card) => (
             <Link to={card.link_url} key={card.id}>
