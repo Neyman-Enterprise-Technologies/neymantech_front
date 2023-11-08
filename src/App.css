@@ -3,6 +3,15 @@
   src: url("../../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
+:root{
+  --textColor:#737b9a;
+  --headerText:#212529;
+  --buttonColor:#0000ff;
+  --buttonHoverColor:#f78da7;
+
+
+}
+
 
 *{
  font-family: "Montserrat";
