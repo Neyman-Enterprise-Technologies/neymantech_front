@@ -14,6 +14,7 @@ import UseFetch from "../../../UseFetch";
 import { motion } from "framer-motion";
 import "./Home.scss";
 import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
+import { FaChevronUp } from "react-icons/fa";
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { id } = useParams();
@@ -98,7 +99,7 @@ export default function Home() {
               }}
               onClick={handleScrollToTop}
             >
-              <CgScrollV />
+              <FaChevronUp className="scroll-icon" />
             </div>
           )}
           <MySlider />
