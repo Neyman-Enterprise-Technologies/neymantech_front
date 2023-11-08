@@ -7,8 +7,10 @@ import { ImLocation } from "react-icons/im";
 import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import UseFetch from "../../../UseFetch";
+import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion"
 import "./Contact.scss";
+import { CgScrollV } from "react-icons/Cg";
 
 const contactCardsIconsObj = {
   MdOutlineMarkEmailRead: <MdOutlineMarkEmailRead className="contactIcon" />,
@@ -20,6 +22,35 @@ export default function Contact() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
   const { data: contact } = UseFetch(`${apiUrl}core_api/contact_card`);
+
+
+
+  const [showIcon, setShowIcon] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowIcon(true);
+    } else {
+      setShowIcon(false);
+    }
+  };
+
+  
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 900,
+      delay: 0,
+      smooth: "easeInOutQuint",
+    });
+    setShowIcon(false);
+  };
+ 
+
+
+
+
+
+
+
 
   /* FORM START */
   const [fullname, setFullname] = useState("");
@@ -57,11 +88,15 @@ export default function Contact() {
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   return (
     <>
@@ -71,6 +106,18 @@ export default function Contact() {
         <motion.section  initial={{ opacity: 0 }}
         transition={{duration:0.5}}
         whileInView={{ opacity: 1 }}>
+          {showIcon && (
+            <div
+              className="scroll-to-top"
+              style={{
+                opacity: showIcon ? 1 : 0,
+                transition: "opacity 0.5s",
+              }}
+              onClick={handleScrollToTop}
+            >
+              <CgScrollV />
+            </div>
+          )}
           <div className="home__contact">
             {/*   HEADER LINK START  */}
             <div className="projectHeaderLink">

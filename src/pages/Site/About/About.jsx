@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import Carusel1 from "../../../Components/Carusel1/Carusel1";
 import { motion } from "framer-motion"
+import { animateScroll as scroll } from "react-scroll";
 import {
   BsCheckLg,
   BsFillCheckSquareFill,
@@ -18,6 +19,7 @@ import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
 import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
 import Partners from "../../../Components/Partners/Partners";
+import { CgScrollV } from "react-icons/Cg";
 
 export default function About() {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -25,19 +27,46 @@ export default function About() {
   // const { data: team, error } = UseFetch("http://localhost:8001/team");
   const { data: team, error } = UseFetch(`${apiUrl}core_api/our_team/`);
 
+
   //*ABOUTSECTION -1
   const { data: aboutSection1 } = UseFetch(
     "http://localhost:8001/aboutSection1"
   );
 
+
+  const [showIcon, setShowIcon] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowIcon(true);
+    } else {
+      setShowIcon(false);
+    }
+  };
+
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 900,
+      delay: 0,
+      smooth: "easeInOutQuint",
+    });
+    setShowIcon(false);
+  };
+ 
+
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
   return (
     <>
       {loading ? (
@@ -46,6 +75,18 @@ export default function About() {
         <motion.section initial={{ opacity: 0 }}
         transition={{duration:0.5}}
         whileInView={{ opacity: 1 }}>
+          {showIcon && (
+            <div
+              className="scroll-to-top"
+              style={{
+                opacity: showIcon ? 1 : 0,
+                transition: "opacity 0.5s",
+              }}
+              onClick={handleScrollToTop}
+            >
+              <CgScrollV />
+            </div>
+          )}
           {/* ABOUT HEADER START */}
           <div className="aboutHeader">
             <div className="container">

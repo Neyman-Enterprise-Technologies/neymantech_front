@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Components/AccordionItem/AccordionItem.scss"
+import "./App.css"
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ROUTES } from './routes/route';
