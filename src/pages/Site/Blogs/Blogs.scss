@@ -123,6 +123,14 @@
   color: #737b9a;
   font-size: 0.8rem;
   font-weight: 500;
+  line-height: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 3.02rem;
+
 }
 .blogs .left a .card:hover {
   box-shadow: 0 3px 20px 0 (rgb(210, 210, 219));
@@ -241,7 +249,7 @@
 }
 .blogs .right .recent-posts-container .post-details .details-img {
   position: relative;
-  width: 30%;
+  width: 5rem;
   height: 5rem;
   /* height: 5rem */
 }
@@ -404,6 +412,7 @@
   .blogs .left a .card .bottom-content h2 {
     font-size: 14px;
   }
+
   .blogs .left a .card .bottom-content p,
   .blogs .left a .card .bottom-content::after {
     font-size: 12px;
