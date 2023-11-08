@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { AiFillCheckCircle, AiFillCheckSquare } from "react-icons/ai";
 import Loading from "../../../Components/Loading/Loading";
 import { useEffect, useState } from "react";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import Carusel1 from "../../../Components/Carusel1/Carusel1";
 import { motion } from "framer-motion"
 import { animateScroll as scroll } from "react-scroll";
@@ -84,7 +84,7 @@ export default function About() {
               }}
               onClick={handleScrollToTop}
             >
-              <CgScrollV />
+              <FaChevronUp className="scroll-icon" />
             </div>
           )}
           {/* ABOUT HEADER START */}

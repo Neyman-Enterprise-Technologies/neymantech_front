@@ -3,7 +3,7 @@ import "./Blogs.scss";
 import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 import { AiOutlineSearch } from "react-icons/ai";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import BlogList from "../../../Components/BlogList/BlogList";
 import Loading from "../../../Components/Loading/Loading";
@@ -100,7 +100,7 @@ useEffect(() => {
               }}
               onClick={handleScrollToTop}
             >
-              <CgScrollV />
+            <FaChevronUp className="scroll-icon" />
             </div>
           )}
           {/* heading start */}
