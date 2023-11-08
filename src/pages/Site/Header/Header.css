@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 header .nav-btn {
-  padding: 5px;
+  /* padding: 5px; */
   cursor: pointer;
   background: transparent;
   border: none;
@@ -112,6 +112,7 @@ nav {
     background-color: var(--mainColor);
     -webkit-transition: 1s;
     transition: 1s;
+    z-index: 999999999999;
   }
   header .responsive_nav {
     -webkit-transform: translateY(100vh);
@@ -124,7 +125,7 @@ nav {
     right: 2rem;
   }
   nav a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=Header.css.map */

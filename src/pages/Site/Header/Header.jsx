@@ -16,13 +16,13 @@ function Navbar() {
           <img src={newlogo} alt="Responsive Image" />
         </Link>
         <nav ref={navRef}>
-          <Link to="/">Home </Link>
-          <Link to="/about">About </Link>
-        
-          <Link to="/project">Projects </Link>
-          <Link to="/price">Price </Link>
-          <Link to="/blogs">Blogs </Link>
-          <Link to="/contact">Contact </Link>
+        <Link to="/" onClick={showNavbar}>Home</Link>
+  <Link to="/about" onClick={showNavbar}>About</Link>
+  <Link to="/project" onClick={showNavbar}>Projects</Link>
+  <Link to="/price" onClick={showNavbar}>Price</Link>
+  <Link to="/blogs" onClick={showNavbar}>Blogs</Link>
+  <Link to="/contact" onClick={showNavbar}>Contact</Link>
+  <Link to="/faq" onClick={showNavbar}>Faq</Link>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>
