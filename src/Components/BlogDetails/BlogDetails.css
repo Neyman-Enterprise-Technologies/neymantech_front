@@ -349,9 +349,35 @@
   /* cursor: pointer; */
 }
 
+.blogDetails .right .recent-posts-container .post-details .description {
+  width: 60%;
+}
+
+.blogDetails .right .recent-posts-container .post-details .description .date,
+.blogDetails .right .recent-posts-container .post-details .description .title {
+  line-height: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 3.02rem;
+}
+
+.blogDetails .right .recent-posts-container .post-details .description .title {
+  color: red;
+  line-height: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 3.02rem;
+}
+
 .blogDetails .right .recent-posts-container .post-details .details-img {
   position: relative;
-  width: 50px;
+  width: 5rem;
   height: 5rem;
 }
 
