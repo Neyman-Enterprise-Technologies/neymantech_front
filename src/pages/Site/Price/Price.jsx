@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import PriceCard from "../../../Components/PriceCard/PriceCard";
@@ -107,7 +107,7 @@ useEffect(() => {
               }}
               onClick={handleScrollToTop}
             >
-              <CgScrollV />
+            <FaChevronUp className="scroll-icon" />
             </div>
           )}
           {/*       headerLink start */}

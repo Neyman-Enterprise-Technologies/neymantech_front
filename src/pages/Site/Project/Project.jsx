@@ -3,19 +3,20 @@ import Loading from "../../../Components/Loading/Loading";
 import "./Project.scss";
 // import { BiChevronRight } from "react-icons/Bi";
 
-import { FaAngleRight } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import UseFetch from "../../../UseFetch";
-import { motion } from "framer-motion"
-import { animateScroll as scroll } from "react-scroll";
-import { CgScrollV } from "react-icons/Cg";
 // import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}service_api/last_works/`)
+  const { data: latestWorkCardInHome } = UseFetch(
+    `${apiUrl}service_api/last_works/`
+  );
 
   const [loading, setLoading] = useState(false);
 
@@ -28,7 +29,6 @@ export default function Project() {
     }
   };
 
-  
   const handleScrollToTop = () => {
     scroll.scrollToTop({
       duration: 900,
@@ -37,8 +37,8 @@ export default function Project() {
     });
     setShowIcon(false);
   };
- 
-useEffect(() => {
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
@@ -50,17 +50,17 @@ useEffect(() => {
     };
   }, []);
 
-  
-
-
   return (
     <>
       {loading ? (
         <Loading />
       ) : (
-        <motion.div  initial={{ opacity: 0 }}
-        transition={{duration:0.5}}
-        whileInView={{ opacity: 1 }} className="projects">
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1 }}
+          className="projects"
+        >
           {showIcon && (
             <div
               className="scroll-to-top"
@@ -70,7 +70,7 @@ useEffect(() => {
               }}
               onClick={handleScrollToTop}
             >
-              <CgScrollV />
+              <FaChevronUp className="scroll-icon" />
             </div>
           )}
           {/*   HEADER LINK START  */}

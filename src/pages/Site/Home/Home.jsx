@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
 
-import { CgScrollV } from "react-icons/Cg";
+import { motion } from "framer-motion";
+import { FaChevronUp } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import Carusel from "../../../Components/Carusel/Carusel";
 import DijitalMarketingSecInHome from "../../../Components/Home/DijitalMarketingSecInHome/DijitalMarketingSecInHome";
+import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import ServiceCards from "../../../Components/Home/ServiceCards/ServiceCards";
 import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
 import Loading from "../../../Components/Loading/Loading";
 import MySlider from "../../../Components/MySlider/MySlider";
 import UseFetch from "../../../UseFetch";
-import { motion } from "framer-motion";
 import "./Home.scss";
-import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
-import { FaChevronUp } from "react-icons/fa";
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { id } = useParams();

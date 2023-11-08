@@ -3,7 +3,7 @@ import "./Accordion.scss";
 import AccordionItem from "../../../Components/AccordionItem/AccordionItem";
 import UseFetch from "../../../UseFetch";
 import { Link } from "react-router-dom";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import Loading from "../../../Components/Loading/Loading";
 import { motion } from "framer-motion";
 import { CgScrollV } from "react-icons/Cg";
@@ -15,7 +15,6 @@ const Accordion = () => {
   const [curOpen, setCurOpen] = useState(null);
   const [loading, setLoading] = useState(false);
 
-
   const [showIcon, setShowIcon] = useState(false);
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -25,7 +24,6 @@ const Accordion = () => {
     }
   };
 
-  
   const handleScrollToTop = () => {
     scroll.scrollToTop({
       duration: 900,
@@ -34,8 +32,8 @@ const Accordion = () => {
     });
     setShowIcon(false);
   };
- 
-useEffect(() => {
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
@@ -47,8 +45,6 @@ useEffect(() => {
     };
   }, []);
 
-
- 
   return (
     <>
       {loading ? (
@@ -59,18 +55,18 @@ useEffect(() => {
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1 }}
         >
-            {showIcon && (
-    <div
-      className="scroll-to-top"
-      style={{
-        opacity: showIcon ? 1 : 0,
-        transition: "opacity 0.5s",
-      }}
-      onClick={handleScrollToTop}
-    >
-      <CgScrollV />
-    </div>
-  )}
+          {showIcon && (
+            <div
+              className="scroll-to-top"
+              style={{
+                opacity: showIcon ? 1 : 0,
+                transition: "opacity 0.5s",
+              }}
+              onClick={handleScrollToTop}
+            >
+              <FaChevronUp className="scroll-icon" />
+            </div>
+          )}
           <div className="accordionHeader">
             <div className="container">
               <div className="accordionTitle">

@@ -1,16 +1,15 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { BsFillTelephoneFill } from "react-icons/Bs";
 import { MdOutlineMarkEmailRead } from "react-icons/Md";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 import Loading from "../../../Components/Loading/Loading";
 import UseFetch from "../../../UseFetch";
-import { animateScroll as scroll } from "react-scroll";
-import { motion } from "framer-motion"
 import "./Contact.scss";
-import { CgScrollV } from "react-icons/Cg";
 
 const contactCardsIconsObj = {
   MdOutlineMarkEmailRead: <MdOutlineMarkEmailRead className="contactIcon" />,
@@ -23,8 +22,6 @@ export default function Contact() {
 
   const { data: contact } = UseFetch(`${apiUrl}core_api/contact_card`);
 
-
-
   const [showIcon, setShowIcon] = useState(false);
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -34,7 +31,6 @@ export default function Contact() {
     }
   };
 
-  
   const handleScrollToTop = () => {
     scroll.scrollToTop({
       duration: 900,
@@ -43,14 +39,6 @@ export default function Contact() {
     });
     setShowIcon(false);
   };
- 
-
-
-
-
-
-
-
 
   /* FORM START */
   const [fullname, setFullname] = useState("");
@@ -79,8 +67,8 @@ export default function Contact() {
       setService("");
       setMessage("");
       toast.success("your message was successfully sent");
-    }else{
-      toast.error("This didn't work. ")
+    } else {
+      toast.error("This didn't work. ");
     }
   };
 
@@ -103,9 +91,11 @@ export default function Contact() {
       {loading ? (
         <Loading />
       ) : (
-        <motion.section  initial={{ opacity: 0 }}
-        transition={{duration:0.5}}
-        whileInView={{ opacity: 1 }}>
+        <motion.section
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1 }}
+        >
           {showIcon && (
             <div
               className="scroll-to-top"
@@ -115,7 +105,7 @@ export default function Contact() {
               }}
               onClick={handleScrollToTop}
             >
-              <CgScrollV />
+              <FaChevronUp className="scroll-icon" />
             </div>
           )}
           <div className="home__contact">

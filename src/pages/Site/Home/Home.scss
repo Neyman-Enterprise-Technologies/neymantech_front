@@ -721,28 +721,7 @@ border-radius: 0;
   }
 }
 
-.scroll-to-top {
-  position: fixed;
-  
-  z-index: 9999;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  background-color: var(--buttonColor);
- font-size: 10px;
-  color: #fff;
 
-  transition: opacity 0.3s ease-in-out;
- 
-  /* opacity: 0.1; */
-}
-.scroll-icon{
-  font-size: 20px;
-}
-
-.scroll-to-top:hover {
-  opacity: 0.8;
-}
 /* home blogs  component start  */
 article {
   --img-scale: 1.001;
