@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./Blogs.scss";
-
-import Loading from "../../../Components/Loading/Loading";
-import { AiOutlineSearch } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import { FaAngleRight } from "react-icons/fa";
-import BlogList from "../../../Components/BlogList/BlogList";
-import UseFetch from "../../../UseFetch";
+import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
-// import Pagination from "../../../Components/pagination/pagination";
+import { AiOutlineSearch } from "react-icons/ai";
+import { FaAngleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import BlogList from "../../../Components/BlogList/BlogList";
+import Loading from "../../../Components/Loading/Loading";
+import UseFetch from "../../../UseFetch";
+import { CgScrollV } from "react-icons/Cg";
+
 
 export default function Blogs() {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -47,13 +48,38 @@ export default function Blogs() {
     return cardDate < currentDate && card.is_active;
   });
 
+
   const [loading, setLoading] = useState(false);
-  useEffect(() => {
+
+  const [showIcon, setShowIcon] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowIcon(true);
+    } else {
+      setShowIcon(false);
+    }
+  };
+
+  
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 900,
+      delay: 0,
+      smooth: "easeInOutQuint",
+    });
+    setShowIcon(false);
+  };
+ 
+useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   return (
     <>
@@ -65,6 +91,18 @@ export default function Blogs() {
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1 }}
         >
+          {showIcon && (
+            <div
+              className="scroll-to-top"
+              style={{
+                opacity: showIcon ? 1 : 0,
+                transition: "opacity 0.5s",
+              }}
+              onClick={handleScrollToTop}
+            >
+              <CgScrollV />
+            </div>
+          )}
           {/* heading start */}
           <div className="blogHeader">
             <div className="container">
@@ -175,6 +213,7 @@ export default function Blogs() {
               </div>
             </section>
           </div>
+         
         </motion.div>
       )}
     </>

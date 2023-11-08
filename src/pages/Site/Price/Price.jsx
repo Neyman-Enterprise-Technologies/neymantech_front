@@ -8,10 +8,15 @@ import { BiCategory } from "react-icons/Bi";
 import { CiSearch } from "react-icons/ci";
 import { motion } from "framer-motion";
 import "./Price.scss";
+import { CgScrollV } from "react-icons/Cg";
+import { animateScroll as scroll } from "react-scroll";
 
 
 
 export default function Price() {
+  const [loading, setLoading] = useState(false);
+
+
   const apiUrl = import.meta.env.VITE_API_URL;
 
   const inputRef = useRef(null);
@@ -49,15 +54,36 @@ export default function Price() {
   
  
 
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
+  const [showIcon, setShowIcon] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowIcon(true);
+    } else {
+      setShowIcon(false);
+    }
+  };
+
+  
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 900,
+      delay: 0,
+      smooth: "easeInOutQuint",
+    });
+    setShowIcon(false);
+  };
+ 
+useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-
 
 
 
@@ -72,6 +98,18 @@ export default function Price() {
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1 }}
         >
+          {showIcon && (
+            <div
+              className="scroll-to-top"
+              style={{
+                opacity: showIcon ? 1 : 0,
+                transition: "opacity 0.5s",
+              }}
+              onClick={handleScrollToTop}
+            >
+              <CgScrollV />
+            </div>
+          )}
           {/*       headerLink start */}
           <div className="priceHeader">
             <div className="container">

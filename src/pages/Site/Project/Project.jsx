@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import UseFetch from "../../../UseFetch";
 import { motion } from "framer-motion"
+import { animateScroll as scroll } from "react-scroll";
+import { CgScrollV } from "react-icons/Cg";
 // import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
 export default function Project() {
@@ -16,13 +18,40 @@ export default function Project() {
   const {data:latestWorkCardInHome} = UseFetch(`${apiUrl}service_api/last_works/`)
 
   const [loading, setLoading] = useState(false);
-  useEffect(() => {
+
+  const [showIcon, setShowIcon] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowIcon(true);
+    } else {
+      setShowIcon(false);
+    }
+  };
+
+  
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 900,
+      delay: 0,
+      smooth: "easeInOutQuint",
+    });
+    setShowIcon(false);
+  };
+ 
+useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  
+
 
   return (
     <>
@@ -32,6 +61,18 @@ export default function Project() {
         <motion.div  initial={{ opacity: 0 }}
         transition={{duration:0.5}}
         whileInView={{ opacity: 1 }} className="projects">
+          {showIcon && (
+            <div
+              className="scroll-to-top"
+              style={{
+                opacity: showIcon ? 1 : 0,
+                transition: "opacity 0.5s",
+              }}
+              onClick={handleScrollToTop}
+            >
+              <CgScrollV />
+            </div>
+          )}
           {/*   HEADER LINK START  */}
           <div className="projectHeaderLink">
             <div className="container">

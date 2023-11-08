@@ -727,12 +727,12 @@ border-radius: 0;
   color: #fff;
   padding: 10px 15px;
   transition: opacity 0.3s ease-in-out;
+  opacity: 1;
 }
 
 .scroll-to-top:hover {
   opacity: 0.8;
 }
-
 /* home blogs  component start  */
 article {
   --img-scale: 1.001;

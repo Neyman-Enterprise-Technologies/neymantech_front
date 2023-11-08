@@ -11,7 +11,7 @@ import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesig
 import Loading from "../../../Components/Loading/Loading";
 import MySlider from "../../../Components/MySlider/MySlider";
 import UseFetch from "../../../UseFetch";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import "./Home.scss";
 import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 export default function Home() {
@@ -48,38 +48,62 @@ export default function Home() {
 
   const { data: latestNews } = UseFetch(`${apiUrl}blog_api/blog`);
   const [loading, setLoading] = useState(false);
+
+  const [showIcon, setShowIcon] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowIcon(true);
+    } else {
+      setShowIcon(false);
+    }
+  };
+
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 900,
+      delay: 0,
+      smooth: "easeInOutQuint",
+    });
+    setShowIcon(false);
+  };
+
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-  const handleScrollToTop = () => {
-    scroll.scrollToTop();
-  };
-  const [showIcon, setShowIcon] = useState(false);
-  const handleIconClick = () => {
-    setShowIcon(false);
-  };
 
   return (
     <>
       {loading ? (
         <Loading />
       ) : (
-        <motion.section   initial={{ opacity: 0 }}
-        transition={{duration:0.6}}
-        whileInView={{ opacity: 1 }}>
-          <div className="scroll-to-top" onClick={handleScrollToTop}>
-            <CgScrollV />
-          </div>
+        <motion.section
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.6 }}
+          whileInView={{ opacity: 1 }}
+        >
+          {showIcon && (
+            <div
+              className="scroll-to-top"
+              style={{
+                opacity: showIcon ? 1 : 0,
+                transition: "opacity 0.5s",
+              }}
+              onClick={handleScrollToTop}
+            >
+              <CgScrollV />
+            </div>
+          )}
           <MySlider />
 
-          <div className="home__service"
-          
-          
-          >
+          <div className="home__service">
             <div className="container">
               <div className="home__service__content">
                 <h2 id="services" className="services" name="services">
@@ -145,14 +169,9 @@ export default function Home() {
               </div>
 
               <div className="container">
-
-              <div className="cards-wrapper">
-
-              {latestNews&&<LatestNews latestNews={latestNews}/>}
-              </div>
-
-
-
+                <div className="cards-wrapper">
+                  {latestNews && <LatestNews latestNews={latestNews} />}
+                </div>
               </div>
             </div>
           </div>
