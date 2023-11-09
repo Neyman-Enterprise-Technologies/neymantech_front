@@ -36,24 +36,45 @@ header {
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: var(--mainColor);
-  color: var(--textColor);
+  /* background-color: var(--mainColor); */
+  background-color: #f1f1f1;
+  /* color: var(--textColor); */
   z-index: 0;
 
 }
 
 nav a {
   margin: 0 1rem;
-  color: var(--textColor);
+  /* color: var(--textColor); */
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 900;
-
+  padding: 0.5em 0;
+  position: relative;
 }
 
-nav a:hover {
-  color: var(--secondaryColor);
+nav a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  transition: width 0.3s, left 0.3s;
+  border-radius: 3px;
+}
 
+nav a:not(.active):hover::after {
+  width: 100%;
+  left: 0;
+}
+nav a.active{
+  /* height: 1px; */
+  text-decoration: none;
+  /* padding: 0.5em 0; */
+  border-bottom: 2px solid var(--secondaryColor);
 }
 
 header .nav-btn {

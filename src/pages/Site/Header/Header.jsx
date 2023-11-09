@@ -2,9 +2,11 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.scss";
 import newlogo from "../../../images/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function Navbar() {
 	const navRef = useRef();
+
+  
 
 	const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
@@ -12,17 +14,17 @@ function Navbar() {
 
 	return (
 		<header>
-			    <Link to="/" className="logo-img">
+			    <NavLink to="/" className="logo-img">
           <img src={newlogo} alt="Responsive Image" />
-        </Link>
+        </NavLink>
         <nav ref={navRef}>
-        <Link to="/" onClick={showNavbar}>Home</Link>
-  <Link to="/about" onClick={showNavbar}>About</Link>
-  <Link to="/project" onClick={showNavbar}>Projects</Link>
-  <Link to="/price" onClick={showNavbar}>Price</Link>
-  <Link to="/blogs" onClick={showNavbar}>Blogs</Link>
-  <Link to="/contact" onClick={showNavbar}>Contact</Link>
-  <Link to="/faq" onClick={showNavbar}>Faq</Link>
+        <NavLink to="/" onClick={showNavbar}>Home</NavLink>
+  <NavLink to="/about" onClick={showNavbar}>About</NavLink>
+  <NavLink to="/project" onClick={showNavbar}>Projects</NavLink>
+  <NavLink to="/price" onClick={showNavbar}>Price</NavLink>
+  <NavLink to="/blogs" onClick={showNavbar}>Blogs</NavLink>
+  <NavLink to="/contact" onClick={showNavbar}>Contact</NavLink>
+  <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes className="navbar-open-icon" />
           </button>
