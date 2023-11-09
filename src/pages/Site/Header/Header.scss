@@ -11,7 +11,7 @@
 }
 
 .logo-img {
-  width: 15%;
+  width: 16%;
   height: 100%;
   color: white;
   margin-right: 15rem;
@@ -37,10 +37,13 @@ header {
   height: 80px;
   padding: 0 2rem;
   /* background-color: var(--mainColor); */
-  background-color: #dcdcdc;
+  background-color: #f2f2f2;
   /* color: var(--textColor); */
-  z-index: 0;
+  z-index: 5;
   color: #29335c;
+  position: sticky;
+  top: 0;
+
 
 }
 
@@ -79,7 +82,7 @@ nav a:not(.active):hover::after {
 }
 nav a.active{
 position: relative;
-top: 0.8px;
+top: 0.7px;
   /* height: 1px; */
   text-decoration: none;
   /* padding: 0.5em 0; */
@@ -154,6 +157,7 @@ nav {
   }
   header .responsive_nav a{
     color: white;
+    font-size: 3rem;
   }
 
   nav .nav-close-btn {

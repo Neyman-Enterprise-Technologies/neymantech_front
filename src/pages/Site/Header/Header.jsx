@@ -24,7 +24,7 @@ function Navbar() {
   <NavLink to="/price" onClick={showNavbar}>Price</NavLink>
   <NavLink to="/blogs" onClick={showNavbar}>Blogs</NavLink>
   <NavLink to="/contact" onClick={showNavbar}>Contact</NavLink>
-  <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink>
+  {/* <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink> */}
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes className="navbar-open-icon" />
           </button>
