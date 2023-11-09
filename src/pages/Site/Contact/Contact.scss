@@ -135,7 +135,7 @@
 
 .faqSection-2 .section-2-content .right form .inputs input {
   font-size: 1.5rem;
-  padding: 1.5rem;
+  padding: 0.5rem;
   width: 100%;
   outline: none;
   opacity: 0.4;
@@ -192,7 +192,72 @@ button:hover::before {
   .container {
     max-width: 540px !important;
   }
+  .contactCardContainer{
+    justify-content: center;
+  }
   .contactCardContainer .card {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-inline: auto;
+ 
+  }
+
+ 
+  .faqSection-2 .section-2-content{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .faqSection-2 .section-2-content .right form{
     width: 100%;
   }
+  .faqSection-2 .section-2-content .right form .inputs{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer__subscribers{
+    display: flex;
+  gap: 1.5rem;
+    flex-direction: column;
+
+ 
+  }
+  .faqSection-2 .section-2-content .left{
+    width: 100%;
+    height: 300px;
+  }
+  .footer__subscribe-content{
+    gap: 2rem;
+    align-content: center;
+  }
+
 }
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90% !important;
+    /* background-color: red; */
+  }
+  .contactCardContainer{
+    justify-content: center;
+  }
+  .contactCardContainer .card {
+    /* position: absolute; */
+    width: 60%;
+
+  }
+  .faqSection-2 .section-2-content{
+    align-items: center;
+  }
+  .faqSection-2 .section-2-content .left{
+    width: 100%;
+   height: 200px;
+  }
+  .faqSection-2 .section-2-content .right form .inputs{
+    flex-direction: column;
+  }
+  .faqSection-2 .section-2-content{
+   flex-direction: column;
+  }
+}
+
