@@ -93,6 +93,7 @@ useEffect(() => {
       {loading ? (
         <Loading />
       ) : (
+        <div className="container">
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -222,6 +223,7 @@ useEffect(() => {
                 ))}
           </div>
         </motion.div>
+        </div>
       )}
     </>
   );

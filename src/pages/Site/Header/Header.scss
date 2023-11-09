@@ -11,7 +11,7 @@
 }
 
 .logo-img {
-  width: 15%;
+  width: 16%;
   height: 100%;
   color: white;
   margin-right: 15rem;
@@ -36,47 +36,100 @@ header {
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: var(--mainColor);
-  color: var(--textColor);
-  z-index: 0;
+  /* background-color: var(--mainColor); */
+  background-color: #f2f2f2;
+  /* color: var(--textColor); */
+  z-index: 5;
+  color: #29335c;
+  position: sticky;
+  top: 0;
+
+
 }
 
 nav a {
   margin: 0 1rem;
-  color: var(--textColor);
+  /* color: var(--textColor); */
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 900;
+  padding: 0.5em 0;
+  position: relative;
+  
 }
 
-nav a:hover {
-  color: var(--secondaryColor);
+
+nav a::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  transition: width 0s, left 0s;
+  border-radius: 3px;
+  
+}
+
+nav a:not(.active):hover::after {
+  width: 100%;
+  left: 0;
+ transition: width 0.3s, left 0.3s;
+
+}
+nav a.active{
+position: relative;
+top: 0.7px;
+  /* height: 1px; */
+  text-decoration: none;
+  /* padding: 0.5em 0; */
+  border-bottom: 2px solid var(--secondaryColor);
+
+
 }
 
 header .nav-btn {
   /* padding: 5px; */
+
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
-  color: var(--textColor);
+  /* color: var(--textColor); */
+  /* color: #29335c; */
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
+
+
+
 }
 
 header div,
 nav {
   display: flex;
   align-items: center;
+	
 }
 
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+    color: var(--mainColor);
+		
+		
+		
   }
-
+.nav-close-open{
+	font-size: 3rem;
+}
+.navbar-open-icon{
+	font-size: 3rem;
+}
   header nav {
     position: fixed;
     top: -100vh;
@@ -91,20 +144,34 @@ nav {
     background-color: var(--mainColor);
     transition: 1s;
     z-index: 999999999999;
+		
+		
   }
 
   header .responsive_nav {
     transform: translateY(100vh);
     z-index: 99999999;
+    color: white;
+		
+		
+  }
+  header .responsive_nav a{
+    color: white;
+    font-size: 3rem;
   }
 
   nav .nav-close-btn {
+	
     position: absolute;
     top: 2rem;
     right: 2rem;
+    color: #eee;
+		
+		
   }
 
   nav a {
-    font-size: 2rem;
+    font-size: rem;
+		
   }
 }

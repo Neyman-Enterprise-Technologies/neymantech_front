@@ -12,7 +12,7 @@
 }
 
 .logo-img {
-  width: 15%;
+  width: 16%;
   height: 100%;
   color: white;
   margin-right: 15rem;
@@ -88,6 +88,12 @@ nav {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+  }
+  .nav-close-open {
+    font-size: 3rem;
+  }
+  .navbar-open-icon {
+    font-size: 3rem;
   }
   header nav {
     position: fixed;
