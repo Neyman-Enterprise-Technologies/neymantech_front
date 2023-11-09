@@ -119,7 +119,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width: 420px;
+    /* width: 420px; */
+    width: calc(33% - 6px );
     
     background-color: #fff;
    
@@ -197,7 +198,7 @@
     font-size: 1.2rem;
     color: var(--TextColor);
     font-family: "Overpass";
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0.625rem;
   line-height: 2rem;
     font-weight: 500;
@@ -263,6 +264,8 @@
   }
   .cardsContainer {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 
     &__card {
       transition: 0.5s all;
@@ -271,7 +274,8 @@
       flex-direction: column;
       align-items: center;
       /* width: 30rem; */
-      width: 300px;
+      /* width: 300px; */
+     
 
       background-color: #fff;
       border: 1px solid #ddd;
