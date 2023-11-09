@@ -1,16 +1,40 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  font-family: "Overpass";
+  src: url("../src/Fonts/Overpass\,Syne/Overpass-Regular.ttf")
 }
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Syne:wght@500&display=swap'); */
 
 :root{
-  --textColor:#737b9a;
+  --TextColor:#737b9a;
   --headerText:#212529;
   --buttonColor:#0000ff;
   --buttonHoverColor:#f78da7;
 
 
 }
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0.1;
+    top: 200px;
+  }
+  50% {
+    opacity: 0.3;
+    top: 300px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 500px;
+  }
+  100% {
+    opacity: 0.8;
+    top: 600px;
+  }
+}
+
+
+
 .scroll-to-top {
   position: fixed;
   
