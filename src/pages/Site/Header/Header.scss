@@ -39,6 +39,7 @@ header {
   background-color: var(--mainColor);
   color: var(--textColor);
   z-index: 0;
+
 }
 
 nav a {
@@ -47,10 +48,12 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 900;
+
 }
 
 nav a:hover {
   color: var(--secondaryColor);
+
 }
 
 header .nav-btn {
@@ -63,20 +66,31 @@ header .nav-btn {
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
+
+
 }
 
 header div,
 nav {
   display: flex;
   align-items: center;
+	
 }
 
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+		
+		
+		
   }
-
+.nav-close-open{
+	font-size: 3rem;
+}
+.navbar-open-icon{
+	font-size: 3rem;
+}
   header nav {
     position: fixed;
     top: -100vh;
@@ -91,20 +105,28 @@ nav {
     background-color: var(--mainColor);
     transition: 1s;
     z-index: 999999999999;
+		
+		
   }
 
   header .responsive_nav {
     transform: translateY(100vh);
     z-index: 99999999;
+		
+		
   }
 
   nav .nav-close-btn {
+	
     position: absolute;
     top: 2rem;
     right: 2rem;
+		
+		
   }
 
   nav a {
     font-size: 2rem;
+		
   }
 }

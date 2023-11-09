@@ -24,13 +24,13 @@ function Navbar() {
   <Link to="/contact" onClick={showNavbar}>Contact</Link>
   <Link to="/faq" onClick={showNavbar}>Faq</Link>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-            <FaTimes />
+            <FaTimes className="navbar-open-icon" />
           </button>
         </nav>
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>
-				<FaBars />
+				<FaBars className="nav-close-open" />
 			</button>
           {/* <div className="langSelect">
           <select name="languages" id="languages">

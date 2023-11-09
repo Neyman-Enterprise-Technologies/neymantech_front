@@ -89,6 +89,12 @@ nav {
     visibility: visible;
     opacity: 1;
   }
+  .nav-close-open {
+    font-size: 3rem;
+  }
+  .navbar-open-icon {
+    font-size: 3rem;
+  }
   header nav {
     position: fixed;
     top: -100vh;
