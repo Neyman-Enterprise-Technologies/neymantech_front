@@ -9,43 +9,41 @@
 
   display: flex;
   flex-direction: column;
-  &__subscribers{
+  &__subscribers {
     padding: 3rem 0;
-display: flex;
-gap: 1rem;
-justify-content: space-between;
-border-bottom: 1px solid #4e5e6a;
-}
-&__input-button-container{
-  display: flex;
-  gap: 1rem;
-}
-&__subscribe-content{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  h2{
-    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #4e5e6a;
   }
-  p{
-    letter-spacing:0.6px;
+  &__input-button-container {
+    display: flex;
+    gap: 1rem;
   }
-}
-&__subscribe-input{
-  height: 3.5rem;
-  width: 25rem;
-  padding-left: 1rem;
-}
-&__subscribe-button{
-
-  background-color: rgb(53, 53, 197);
-  height: 3.5rem;
-
-
-
-}
-
+  &__subscribe-content {
+  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+      font-family: "Overpass";
+      font-size: 1.2rem;
+    }
+    p {
+      font-family: "Overpass";
+      letter-spacing: 0.6px;
+    }
+  }
+  &__subscribe-input {
+    height: 3.5rem;
+    width: 25rem;
+    padding-left: 1rem;
+  }
+  &__subscribe-button {
+    background-color: rgb(53, 53, 197);
+    height: 3.5rem;
+  }
 
   &__top {
     margin-bottom: 10rem;
@@ -66,6 +64,8 @@ border-bottom: 1px solid #4e5e6a;
 
     h2 {
       text-align: start;
+      font-family: "Overpass";
+      color: red;
       font-size: 1.5rem;
       color: white;
       margin-bottom: 0.8rem;
@@ -116,7 +116,7 @@ border-bottom: 1px solid #4e5e6a;
     background-color: #4e5e6a;
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 5rem;
       height: 1px;
       background-color: white;
@@ -149,12 +149,12 @@ border-bottom: 1px solid #4e5e6a;
     position: relative;
     display: flex;
     justify-content: center;
-     /* height: 1.875rem; */
-    width: 100%;
-padding-right: 6rem;
-    gap: 3px;
+    /* height: 1.875rem; */
+    /* width: 100%; */
+    /* padding-right: 6rem; */
+    gap: 30px;
   }
-  
+
   &__socialIcon {
     font-size: 2rem;
   }
@@ -165,7 +165,7 @@ padding-right: 6rem;
   }
 
   &__quickLinksContainer {
-    
+   
     padding: 0.625rem 0;
     width: 25%;
     position: relative;
@@ -177,6 +177,7 @@ padding-right: 6rem;
     position: relative;
     width: 100%;
     h2 {
+      font-family: "Overpass";
       font-size: 1.5rem;
       color: white;
       margin-bottom: 0.8rem;
@@ -203,6 +204,7 @@ padding-right: 6rem;
     gap: 2rem;
   }
   &__footerLinks {
+    font-family: "Overpass";
     transition: all 0.2s;
     color: #e4e4e4;
     font-size: 1.4rem;
@@ -282,164 +284,205 @@ padding-right: 6rem;
     font-size: 1.5rem;
   }
 }
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+  .footer {
+    &__socialMediaContainer {
+      gap: 30px;
+    }
+  }
+}
 
 @media (max-width: 992px) {
   .container {
     max-width: 720px !important;
   }
-  .footer{
-    &__top{
+  .footer {
+    &__top {
       margin-bottom: 5rem;
     }
-    &__contactContainer{
-      a{
+    &__contactContainer {
+      a {
         font-size: 1.4rem;
       }
-    
-
     }
-     &__galleries{
+    &__galleries {
       height: 15rem;
- 
     }
-    &__left{
+    &__left {
       width: 60%;
-    
     }
-    &__right{
+    &__right {
       width: 40%;
-     
     }
-     &__socialMediaContainer{
-     width: 100%;
-     
-      padding-right: 3rem;
-   }
-   
+    &__socialMediaContainer {
+      /* width: 100%; */
+gap: 20px;
+      /* padding-right: 3rem; */
+    }
   }
-
-
 }
 
-
-
-@media(max-width:768px){
- 
-  .container{
-   max-width: 540px !important;
-  }
-  
-.footer{
-  &__subscribers{
-flex-direction: column;
-}
-  &__top{
-    flex-direction: column;
-    gap: 6rem;
-  }
-  &__headerandBorderBottom{
-   margin-bottom: 2rem;
-   }
- &__headerandBorderBottom{
-  h2{
-   
-    font-size: 2.5rem;
-  }
- }
- &__bottomUnderscore{
-margin-bottom: 2rem;
- }
- &__bottomUnderscore{
- h2{
-  font-size: 2.5rem;
- }
- }
- &__phoneInfo{
-  p{
-    font-size: 1.5rem;
-  }
-  a{
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .container {
+    max-width: 200px !important;
   }
  
-
- }
-
- 
- &__contactInfoCol{
-width: 100%;
-
-  }
-  &__quickLinksContainer{
-    width: 100%;
- 
-    a{
-      font-size: 2rem;
+  .footer {
+    /* background-color: red; */
+    &__subscribers {
+      flex-direction: column;
+      gap: 2rem;
     }
+    &__top {
+      flex-direction: column;
+      gap: 6rem;
     }
-    &__left{
+    &__headerandBorderBottom {
+      margin-bottom: 2rem;
+    }
+    &__headerandBorderBottom {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    &__bottomUnderscore {
+      margin-bottom: 2rem;
+    }
+    &__bottomUnderscore {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    &__phoneInfo {
+      p {
+        font-size: 1.5rem;
+      }
+      a {
+        font-size: 2rem;
+      }
+    }
+
+    &__contactInfoCol {
+      width: 100%;
+    }
+    &__quickLinksContainer {
+      width: 100%;
+
+      a {
+        font-size: 2rem;
+      }
+    }
+    &__left {
       width: 30%;
-    
     }
-    &__right{
+    &__right {
       width: 70%;
-  
     }
-    &__galleries{
+    &__galleries {
       height: 50rem;
- 
     }
-    &__galleryContainer{
+    &__galleryContainer {
       width: 100%;
     }
+
+    &__bottom {
+      width: 100%;
+    }
+
+    &__copyrightLeft {
+      width: fit-content;
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+    &__copyrightRight {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+    &__socialMediaContainer {
+  gap: 30px;
+      align-content: flex-start;
+    }
+    &__socialMediaLinks {
+      display: inline-block;
+      width: 3.125rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90% !important;
+
+  }
+  .footer {
    
-    &__bottom{
-      width: 100%;
+    &__top {
+      margin-inline:auto;
+      margin-bottom: 5rem;
+      width: 90%;
     }
-    
-  &__copyrightLeft{
-    width: fit-content;
-    font-size: 1.8rem;
-    line-height: 3rem;
-
-  }
-  &__copyrightRight{
-    font-size: 1.8rem;
-    line-height: 3rem;
-  }
-  &__socialMediaContainer{
-    padding-right: 72rem;
- align-content: flex-start;
-   }
-  &__socialMediaLinks{
-    display: inline-block;
-    width: 3.125rem;
-  }
-
-}
-
-
-}
-
-  @media(max-width:576px){
-    .container{
-     max-width: 90% !important;
+    &__contactContainer {
+      a {
+        font-size: 1.4rem;
+      }
     }
-    .footer{
+    &__galleries {
+      height: 15rem;
+    }
+    /* &__left {
+      width: 60%;
 
-      &__left{
-        width: 25%;
+    }
+    &__right {
+      width: 40%;
+    } */
+    /* &__socialMediaContainer {
+
      
-      }
-      &__right{
-        width: 75%;
-      
-      }
-      &__socialMediaContainer{
-        padding-right: 70rem;
-      }
+    } */
+    &__copyright{
+      width: 90%;
+      margin-inline: auto;
     }
-    
-   
+    &__subscribers{
+      width: 90%;
+      margin-inline: auto;
     }
-    
+  }
+  .section-3 .left .title, .section-3 .left .header{
+    font-size: 25px;
+  }
+  .footer__socialMediaContainer{
+    padding-right: 63rem;
+    gap: 20px;
+  }
+
+  .section-3 .left .description{
+    font-size: 14px;
+  }
+  .section-3 .left .selected-description{
+    font-size:14px ;
+  }
+  .section-3 .left .title, .section-3 .left .he{
+    font-size: 20px;
+  }
+  .teamSection .teamHeaderContainer p{
+    font-size: 20px;
+  }
+  .teamSection .teamHeaderContainer h2{
+    font-size: 20px;
+  }
+  .section-2 .cardsContainer .card .cardListsContainer{
+    gap: 3rem;
+  }
+  .footer__galleries{
+    height: 45rem;
+  }
+  .home__works__header{
+    width: 90%;
+    margin-inline: auto;
+  }
+}
