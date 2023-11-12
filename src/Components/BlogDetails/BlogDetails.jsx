@@ -36,9 +36,9 @@ const BlogDetails = () => {
   }, []);
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.section  initial={{ opacity: 0 }}
         transition={{duration:0.5}}
         whileInView={{ opacity: 1 }} className="blogDetails">
@@ -113,22 +113,23 @@ const BlogDetails = () => {
                     </div>
                     <div className="recent-posts-container">
                       <h2>Recent Posts</h2>
-                      {blogs && (
-                       
-                          <div className="post-details">
-                          <div className="details-img">
-                            <img src={blogs.photo} alt="" />
-                          </div>
-                          <div className="description">
-                            <p className="date">
-                              {blogs.created_at.slice(0, 10)}
-                            </p>
-                            {/* <p className="title">{blogs.short_descriptions}</p> */}
-                            <p className="title" dangerouslySetInnerHTML={{ __html: blogs.short_descriptions }} />
-                          </div>
-                        </div>
-                     
-                      )}
+                      {bloges && bloges.slice(Math.max(bloges.length - 4, 0)).map((blog) => (
+
+<div className="post-details">
+<div className="details-img">
+  <img src={blog.photo} alt="" />
+</div>
+<div className="description">
+  <p className="date">
+    {blogs.created_at.slice(0, 10)}
+  </p>
+  {/* <p className="title">{blogs.short_descriptions}</p> */}
+  <p className="title" dangerouslySetInnerHTML={{ __html: blog.short_descriptions }} />
+</div>
+</div>
+
+
+                      ))}
                     </div>
 
                     <div className="category-container">
@@ -160,7 +161,7 @@ const BlogDetails = () => {
             </div>
           )}
         </motion.section>
-      )}
+      {/* )} */}
     </>
   );
 };
