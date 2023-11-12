@@ -124,6 +124,7 @@
 }
 
 .firstSection .contentOfTitle {
+
   font-size: 1.5rem;
 }
 
@@ -148,9 +149,9 @@
 
 .firstSection__description {
   padding-right: 10rem;
-  color: #737b9a;
+  color: var(--TextColor);
   line-height: 1.6rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding-right: 0;
 }

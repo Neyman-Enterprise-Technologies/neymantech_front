@@ -26,9 +26,9 @@ export default function ServiceProperty() {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.div  initial={{ opacity: 0 }}
         transition={{duration:0.5}}
         whileInView={{ opacity: 1 }} className="service">
@@ -84,9 +84,13 @@ export default function ServiceProperty() {
                   <div className="firstSection__textContent">
                     <p className="firstSection__header">{""}</p>
                     <p className="firstSection__title">{detail.title}</p>
-                    <p className="firstSection__description">
+          
+                
+                  <p className="firstSection__description">
                       {detail.description}
                     </p>
+              
+            
 
                     {detail.service_property_detail.map((s) => (
                       <div className="TitleContainer" key={s.id}>
@@ -110,7 +114,7 @@ export default function ServiceProperty() {
           </div>
           {/* first section end */}
         </motion.div>
-      )}
+      {/* )} */}
     </>
   );
 }
