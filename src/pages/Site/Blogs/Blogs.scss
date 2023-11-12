@@ -102,7 +102,7 @@
   transition: 0.4s all;
 }
 .blogs .left a .card .cardImgContainer {
-  height: 200px;
+  height: 16rem;
 }
 .blogs .left a .card .cardImgContainer img {
   width: 100%;
@@ -189,7 +189,7 @@
   transition: all 1s, opacity 0.7s;
   color: #0000ff;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* right start */
@@ -317,8 +317,8 @@
 }
 .blogs .right .category-container p {
   position: relative;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   display: block;
   margin-left: 1.5rem;
   margin-bottom: 0.7rem;
@@ -335,7 +335,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.4rem;
+  top: 0.1rem;
   left: -2.5rem;
 }
 .blogs .right .category-container .title {

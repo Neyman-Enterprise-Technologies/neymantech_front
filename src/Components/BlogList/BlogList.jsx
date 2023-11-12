@@ -68,6 +68,7 @@ const BlogList = ({ filteredBlogs }) => {
                 <h2>{blog.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: blog.short_descriptions }} />
               </div>
+             
             </div>
           </Link>
         ))}
