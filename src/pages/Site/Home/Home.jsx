@@ -10,7 +10,7 @@ import LatestNews from "../../../Components/Home/LatestNews/LatestNews";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import ServiceCards from "../../../Components/Home/ServiceCards/ServiceCards";
 import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesignSecHome";
-import Loading from "../../../Components/Loading/Loading";
+// import Loading from "../../../Components/Loading/Loading";
 import MySlider from "../../../Components/MySlider/MySlider";
 import UseFetch from "../../../UseFetch";
 import "./Home.scss";
@@ -79,14 +79,17 @@ export default function Home() {
     };
   }, []);
 
+
+
+
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.section
           initial={{ opacity: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1 }}
         >
           {showIcon && (
@@ -103,7 +106,7 @@ export default function Home() {
           )}
           <MySlider />
 
-          <div className="home__service">
+          <div className="home__service" name="services">
             <div className="container">
               <div className="home__service__content">
                 <h2 id="services" className="services" name="services">
@@ -176,7 +179,7 @@ export default function Home() {
             </div>
           </div>
         </motion.section>
-      )}
+      {/* )} */}
     </>
   );
 }
