@@ -153,6 +153,16 @@
           transform: scale(1.2) rotate(5deg);
 }
 
+.blogs .left a .card .bottom-content {
+  line-height: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 7rem;
+}
+
 .blogs .left a .card .bottom-content h2 {
   font-size: 1rem;
 }
@@ -164,9 +174,14 @@
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
   margin-bottom: 0.625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
-.blogs .left a .card .bottom-content p {
+/* .blogs .left a .card .bottom-content p {
   color: #737b9a;
   font-size: 0.8rem;
   font-weight: 500;
@@ -177,8 +192,8 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   max-height: 3.02rem;
-}
 
+} */
 .blogs .left a .card:hover {
   -webkit-box-shadow: 0 3px 20px 0 #d2d2db;
           box-shadow: 0 3px 20px 0 #d2d2db;
