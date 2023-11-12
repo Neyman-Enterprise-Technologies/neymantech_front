@@ -52,9 +52,9 @@ export default function Project() {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -115,7 +115,7 @@ export default function Project() {
 
           {/*  HEADER END */}
         </motion.div>
-      )}
+      {/* )} */}
     </>
   );
 }
