@@ -83,9 +83,9 @@ useEffect(() => {
   }, []);
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -153,7 +153,7 @@ useEffect(() => {
                   <div className="recent-posts-container">
                     <h2>Recent Posts</h2>
 
-                    {filteredbyDate.map((blog) => (
+                    {filteredbyDate.slice(Math.max(filteredbyDate.length - 4, 0)).map((blog) => (
                       <div className="post-details" key={blog.id}>
                         <div className="details-img">
                           <img src={blog.photo} alt="" />
@@ -215,7 +215,7 @@ useEffect(() => {
           </div>
          
         </motion.div>
-      )}
+      {/* )} */}
     </>
   );
 }
