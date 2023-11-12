@@ -66,6 +66,7 @@
   /* font-family: "Montserrat", sans-serif; */
 }
 .projectHeader .projectTitle {
+  font-family: "Overpass";
   padding: 0.9375rem 0rem 0rem 0rem;
   font-size: 2.5rem;
 margin-bottom: 10px;
@@ -183,3 +184,53 @@ margin-bottom: 10px;
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .project-cards-container {
+    &__card {
+      width: 33rem;
+      height: 39.25rem;
+    }
+    &__description {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    &__heading{
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+max-width:200px ;
+  }
+ .modal-section{
+  background-color: red;
+  width: 200px;
+  margin-inline: auto;
+ }
+ .kateqoriya-sec{
+  background-color: yellow;
+  width: 200px;
+  margin-inline: auto;
+ }
+ .modal-section{
+  background-color: yellow;
+  width: 200px;
+  margin-inline: auto;
+ }
+ .kateqoriya{
+  background-color: yellow;
+  width: 200px;
+  margin-inline: auto;
+ }
+
+  
+  
+}
+
+
+
+
