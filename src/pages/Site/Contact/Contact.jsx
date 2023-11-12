@@ -88,9 +88,9 @@ export default function Contact() {
   }, []);
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.section
           initial={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -238,7 +238,7 @@ export default function Contact() {
             </div>
           </div>
         </motion.section>
-      )}
+      {/* )} */}
     </>
   );
 }
