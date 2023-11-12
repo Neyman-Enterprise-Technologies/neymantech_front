@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Loading from "../../../Components/Loading/Loading";
+// import Loading from "../../../Components/Loading/Loading";
 import PriceCard from "../../../Components/PriceCard/PriceCard";
 import UseFetch from "../../../UseFetch";
 import { BiCategory } from "react-icons/Bi";
@@ -90,10 +90,10 @@ useEffect(() => {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
-        <div className="container">
+      ) : ( */}
+       
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -141,7 +141,7 @@ useEffect(() => {
           {/*    header end*/}
 
           {isModalOpen && <div className="overlay" onClick={openModal} />}
-          <div className="modal-section">
+          {/* <div className="modal-section">
             <div className="kateqoriya-sec">
               <div className="kateqoriya">
                 <div>
@@ -198,9 +198,10 @@ useEffect(() => {
                 </div>
               </motion.div>
             )}
-          </div>
+          </div> */}
 
-          <div className="cardsContainer">
+         <div className="container">
+         <div className="cardsContainer">
             {priceCards &&
               priceCards
                 .filter((priceCard) => {
@@ -222,9 +223,10 @@ useEffect(() => {
                   />
                 ))}
           </div>
+         </div>
         </motion.div>
-        </div>
-      )}
+     
+      {/* )} */}
     </>
   );
 }
