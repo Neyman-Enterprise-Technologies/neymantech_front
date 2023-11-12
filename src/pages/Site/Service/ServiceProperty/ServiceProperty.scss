@@ -156,16 +156,24 @@
 
 @media screen and (max-width: 992px) {
   .container {
-    max-width: 720px !important;
+    max-width: 720px!important;
   }
+
   .firstSection {
-    flex-direction: column-reverse;
-    padding-bottom: 5rem;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+    padding-bottom: 15rem;
+
     gap: 2rem;
     width: 100%;
     &__textContent {
       width: 100%;
+      gap: 4rem;
+
+   
+
     }
+    
 
     &__header {
       text-align: center;
@@ -186,8 +194,54 @@
     }
     &__imgContainer {
       width: 100%;
+      order: -1;
     }
   }
+  .firstSection__title{
+    font-size: 3rem;
+    text-align: left;
+  }
+  .firstSection__description,
+  .firstSection .contentOfTitle{
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  .firstSection .titleContainerTitle h2{
+    font-size: 2.5rem;
+  }
+ 
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px!important;
+  
+  }
+ .firstSection{
+  padding-bottom: 25rem;
+ }
+}
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90%!important;
+  
+  }
+  .firstSection__title{
+    font-size: 3.5rem;
+    text-align: left;
+  }
+ .firstSection{
+  padding-bottom: 25rem;
+ }
+ .firstSection__description,
+ .firstSection .contentOfTitle{
+   font-size: 2.5rem;
+   line-height: 3rem;
+ }
+ .firstSection .titleContainerTitle h2{
+  font-size: 3rem;
+}
 }
 
 /* R end */
