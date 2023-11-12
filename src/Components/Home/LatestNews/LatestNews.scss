@@ -2,21 +2,22 @@
   /* background-color: red; */
 
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
   gap: 10px;
-  align-self: flex-start;
 }
 
 .cards-wrapper .cards-container .card {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  width: 390px;
+  width: calc(33.3% - 6.6px);
+  height: 100%;
   /* align-self: flex-start; */
   border: 1px solid #ddd;
   overflow: hidden;
   transition: 0.4s all;
+  border-radius: 0.5rem;
 }
 /* .cards-wrapper .cards-container .card .cardImgContainer {
   height: 200px;
@@ -32,17 +33,42 @@
 }
 .cards-wrapper .cards-container .card .bottom-content h2 {
   font-size: 1.2rem;
+  font-family: "Overpass";
+  
+}
+.cards-wrapper .cards-container .card .bottom-content{
+  line-height: 1.6rem;
+ 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  
+  /* max-height: 17rem; */
 }
 
 .cards-wrapper .cards-container .card .bottom-content h2,
 .cards-wrapper .cards-container .card .bottom-content p {
   transition: transform 0.5s;
   margin-bottom: 0.625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+ 
+  /* max-height: 7rem; */
+  
+
+
 }
 .cards-wrapper .cards-container .card .bottom-content p {
   color: #737b9a;
   font-size: 1rem;
   font-weight: 500;
+  
+  
 }
 .cards-wrapper .cards-container .card:hover {
   box-shadow: 0 3px 20px 0 (rgb(210, 210, 219));
@@ -104,10 +130,11 @@
   .container {
     max-width: 720px !important;
   }
+  .cards-wrapper .cards-container{
+    justify-content: flex-start;
+  }
   .cards-wrapper .cards-container .card {
-    /* background-color: red; */
-
-    width: 100%;
+   width: calc(50% - 5px);
   }
   .cards-wrapper .cards-container .card .bottom-content h2 {
     font-size: 2rem;
@@ -115,6 +142,34 @@
   .cards-wrapper .cards-container .card .bottom-content p {
     font-size: 1.5rem;
   }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .cards-wrapper .cards-container{
+    flex-direction: column;
+  }
+  .cards-wrapper .cards-container .card{
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90% !important;
+ 
+  }
+  .cards-wrapper .cards-container .card {
+    width: 100%;
+   }
+   .cards-wrapper .cards-container{
+    width: 90%;
+    margin-inline: auto;
+   }
+
 }
 
 
