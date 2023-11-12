@@ -420,7 +420,7 @@ gap: 20px;
   .footer {
    
     &__top {
-      margin-inline:auto;
+      /* margin-inline:auto; */
       margin-bottom: 5rem;
       width: 90%;
     }
@@ -449,7 +449,7 @@ gap: 20px;
     }
     &__subscribers{
       width: 90%;
-      margin-inline: auto;
+   
     }
   }
   .section-3 .left .title, .section-3 .left .header{
