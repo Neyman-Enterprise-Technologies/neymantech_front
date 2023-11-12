@@ -21,8 +21,6 @@
   opacity: 0.8;
 }
 
-
-
 .container {
   max-width: 1320px;
   width: 100%;
@@ -82,7 +80,7 @@
   display: flex;
   justify-content: space-between;
   gap: 4rem;
-  padding: 5rem 0 ;
+  padding: 5rem 0;
 }
 
 .section-1 .left {
@@ -116,7 +114,7 @@
   margin-top: 2rem;
 }
 .section-1 .right .description {
-  padding-right: 10rem;
+  /* padding-right: 10rem; */
   color: #737b9a;
   line-height: 1.6rem;
   font-size: 1rem;
@@ -175,17 +173,18 @@
 /** ABOUT SECTION-2 START*/
 .section-2 {
   width: 100%;
+
 }
 .section-2 .cardsContainer {
   display: flex;
-  justify-content: space-between;
+
   padding: 5rem 0;
-  gap: 2rem;
+  gap: 1rem;
 }
 .section-2 .cardsContainer .card {
-  width: 33%;
+  width: calc(33% - 1.1rem);
   display: flex;
-  gap: 2rem;
+  gap: 32px;
   flex-direction: column;
 }
 .section-2 .cardsContainer .card .devider {
@@ -222,7 +221,8 @@
 }
 
 .section-2 .cardsContainer .card .cardList p {
-  font-size: 1.2rem;
+  font-family: "Overpass";
+  font-size: 19.2px;
   width: 100%;
   color: black;
   font-weight: 500;
@@ -235,12 +235,14 @@
 }
 
 .section-2 .cardsContainer .card h2 {
+  font-family: "Montserrat";
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 .section-2 .cardsContainer .card .description {
+  font-family: "Overpass";
   font-size: 1.1rem;
-  color: #737b9a;
+  color: var(--TextColor);
   padding-right: 0.5rem;
   line-height: 2.5rem;
   font-weight: 500;
@@ -253,7 +255,10 @@
 .section-3 {
   display: flex;
   width: 100%;
-  padding: 5rem 0 ;
+  padding: 5rem 0;
+  align-items: center;
+
+  gap: 30px;
 }
 
 /* left start */
@@ -262,25 +267,30 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+ 
   gap: 2rem;
 }
 .section-3 .left .title {
   font-size: 1.5rem;
   color: blue;
   font-weight: 500;
+  font-family: "Overpass";
   width: 100%;
 }
 .section-3 .left .header {
   font-size: 2rem;
   width: 100%;
   padding-right: 10rem;
+
+  font-family: "Overpass";
 }
 .section-3 .left .description {
-  padding-right: 10rem;
+  /* padding-right: 10rem; */
   color: #737b9a;
-  line-height: 1.6rem;
+  line-height: 2.5rem;
   font-size: 1.2rem;
   font-weight: 500;
+  font-family: "Overpass";
 }
 .section-3 .left .selected-title-container {
   display: flex;
@@ -294,14 +304,17 @@
 }
 .section-3 .left .selected-title-container .selected-title {
   position: relative;
+  font-family: "Overpass";
   font-size: 1.5rem;
   width: 100%;
 }
 
 .section-3 .left .selected-description {
-  padding-right: 10rem;
+  text-align: start;
+  /* padding-right: 10rem; */
+  font-family: "Overpass";
   color: #737b9a;
-  line-height: 1.6rem;
+  line-height: 2.5rem;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -310,10 +323,12 @@
 /* right start */
 .section-3 .right {
   width: 50%;
+  align-self: flex-end;
 }
 .section-3 .right img {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* right end */
@@ -348,21 +363,24 @@
   }
 }
 
-@media screen and (max-width:1200px){
-  .container{
+@media screen and (max-width: 1200px) {
+  .container {
     max-width: 960px;
     /* background-color: yellow; */
-
+  }
+  .section-2 .cardsContainer .card .cardList p {
+    font-size: 16px;
   }
 
-  .team-container{
+  .team-container {
     justify-content: center;
-   justify-content: center;
-
-
+  }
+  .section-3 .left .header {
+    font-size: 2rem;
+    width: 100%;
+    /* padding-right: 10rem; */
   }
 }
-
 
 /* Responsive design   for 992  */
 
@@ -370,6 +388,9 @@
   .container {
     max-width: 720px !important;
   }
+  /* .section-2 .cardsContainer .card{
+    width:20% ;
+  } */
 
   /* media992- section-1 start */
   .section-1 {
@@ -413,6 +434,23 @@
     justify-content: center;
     width: fit-content;
   }
+  .section-2 .cardsContainer .card .cardListContainer .cardList p {
+    font-size: 15px;
+
+    width: 100%;
+    color: black;
+    font-weight: 500;
+  }
+  .section-3 .left .selected-title-container .selected-title {
+    font-size: 18px !important;
+  }
+
+  /* .section-2 .cardsContainer {
+ 
+    justify-content: space-between;
+flex-direction: column;
+  } */
+
   /* media992- section-3 end */
 }
 
@@ -422,14 +460,13 @@
   .container {
     max-width: 540px !important;
   }
- 
 
   .section-2 .cardsContainer {
-   flex-direction: column;
+    flex-direction: column;
     width: 100%;
-    gap: 6rem;
+    /* gap: 6rem; */
   }
-  .section-2 .cardsContainer .card{
+  .section-2 .cardsContainer .card {
     width: 100%;
   }
   .section-2 .cardsContainer .card .description {
@@ -437,4 +474,36 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90% !important;
+  }
 
+  .section-2 .cardsContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section-2 .cardsContainer .card {
+    width: 100%;
+  }
+  .section-2 .cardsContainer .card .description {
+    width: 100%;
+  }
+  .section-3 .left .selected-title-container .selected-title {
+    font-size: 15px;
+  }
+
+  .section-2 .cardsContainer .card {
+    width: 90%;
+  }
+  .home__service__cards{
+    width: 90%;
+  }
+  .digital-marketing-container .left_right-container{
+    width: 90%;
+    margin-inline: auto;
+  }
+  .home__works__cards{
+    width: 90%;
+  }
+}
