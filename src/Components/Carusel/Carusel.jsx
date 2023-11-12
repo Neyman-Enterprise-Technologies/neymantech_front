@@ -6,7 +6,8 @@ import "./Carusel.scss";
 
 const Carusel = ({ feedback }) => {
   return (
-    <div>
+   <div className="container">
+     <div>
       <Swiper
         spaceBetween={30}
         navigation={{
@@ -74,6 +75,7 @@ const Carusel = ({ feedback }) => {
         initialSlide={3}
       ></Swiper>
     </div>
+   </div>
   );
 };
 
