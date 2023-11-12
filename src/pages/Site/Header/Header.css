@@ -43,32 +43,67 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
+  height: 6.875rem;
   padding: 0 2rem;
-  background-color: var(--mainColor);
-  color: var(--textColor);
-  z-index: 0;
+  background-color: #ebebeb;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  /* color: var(--textColor); */
+  z-index: 5;
+  color: #29335c;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
   margin: 0 1rem;
-  color: var(--textColor);
+  /* color: var(--textColor); */
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 900;
+  font-family: "Overpass";
+  padding: 0.5em 0;
+  position: relative;
+  color: #29335c;
 }
 
-nav a:hover {
-  color: var(--secondaryColor);
+nav a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.6px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  -webkit-transition: width 0s, left 0s;
+  transition: width 0s, left 0s;
+  border-radius: 3px;
+}
+
+nav a:not(.active):hover::after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s, left 0.3s;
+  transition: width 0.3s, left 0.3s;
+}
+
+nav a.active {
+  position: relative;
+  top: 1px;
+  /* height: 1px; */
+  text-decoration: none;
+  border-bottom: 2px solid var(--secondaryColor);
 }
 
 header .nav-btn {
-  /* padding: 5px; */
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
-  color: var(--textColor);
+  /* color: var(--textColor); */
+  /* color: #29335c; */
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
@@ -84,10 +119,46 @@ nav {
           align-items: center;
 }
 
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .header {
+    width: 90%;
+  }
+  /* .header p{
+      font-size: 1.8rem;
+      line-height: 3rem;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .header {
+    width: 90%;
+  }
+  .header p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    height: 40px;
+  }
+  .logo-img img {
+    width: 80px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+    color: var(--mainColor);
   }
   .nav-close-open {
     font-size: 3rem;
@@ -124,14 +195,20 @@ nav {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
     z-index: 99999999;
+    color: white;
+  }
+  header .responsive_nav a {
+    color: white;
+    font-size: 3rem;
   }
   nav .nav-close-btn {
     position: absolute;
     top: 2rem;
     right: 2rem;
+    color: #eee;
   }
   nav a {
-    font-size: 2rem;
+    font-size: rem;
   }
 }
 /*# sourceMappingURL=Header.css.map */
