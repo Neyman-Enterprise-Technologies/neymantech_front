@@ -176,6 +176,7 @@
 
           & p {
             font-size: 1em;
+            font-weight: 600;
             font-family: "Overpass";
             color: #000;
           }
@@ -882,6 +883,7 @@ article:has(:hover, :focus) {
     &__cards {
       justify-content: center;
       &__card {
+       
         width: 23.5rem;
         height: 30rem;
 
@@ -896,6 +898,7 @@ article:has(:hover, :focus) {
         }
       }
     }
+    
   }
 
   /* digital marketing media max-992px end */
