@@ -69,9 +69,9 @@ export default function About() {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.section initial={{ opacity: 0 }}
         transition={{duration:0.5}}
         whileInView={{ opacity: 1 }}>
@@ -252,7 +252,7 @@ export default function About() {
 
           <Partners />
         </motion.section>
-      )}
+      {/* )} */}
     </>
   );
 }

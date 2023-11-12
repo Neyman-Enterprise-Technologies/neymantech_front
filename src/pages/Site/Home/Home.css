@@ -228,6 +228,8 @@
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p {
   font-size: 0.8em;
+  font-size: "Montserrat";
+  color: #000;
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon {
@@ -479,21 +481,21 @@
   width: 60%;
   margin: auto;
   text-align: center;
-  /* font-family: "Montserrat", sans-serif; */
 }
 
 .home__service__content h2 {
   padding: 0.9375rem 0rem 0rem 0rem;
+  font-family: "Montserrat";
   font-size: 2.5rem;
-  /* font-family: "Montserrat", sans-serif; */
+  margin-bottom: 1rem;
 }
 
 .home__service__content p {
-  color: #737b73;
-  font-size: 1.125rem;
+  color: var(--TextColor);
+  font-family: "Overpass";
+  font-size: 1.3rem;
   padding: 0.625rem;
-  /* font-family: "Montserrat", sans-serif; */
-  line-height: 1.6rem;
+  line-height: 2rem;
   font-weight: 500;
 }
 
@@ -577,7 +579,7 @@
 .home__service__cards__card h3 {
   text-align: center;
   padding: 0.625rem;
-  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.5rem;
   color: black;
@@ -585,10 +587,13 @@
 
 .home__service__cards__card p {
   padding: 0.5rem 1rem;
-  color: #737b73;
   font-size: 1.2rem;
   line-height: 1.6;
   text-align: center;
+  font-family: "Overpass";
+  color: var(--TextColor);
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 .button-href {
@@ -637,15 +642,18 @@
 }
 
 .home__works__header h2 {
+  font-family: "Montserrat";
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .home__works__header p {
-  /* text-align: center; */
-  font-size: 1.125rem;
-  color: #737b9a;
-  /* width: 50%; */
+  color: var(--TextColor);
+  font-family: "Overpass";
+  font-size: 1.3rem;
+  padding: 0.625rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 .home__works__content {
@@ -682,7 +690,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1.85rem;
+  gap: 1rem;
   padding: 5rem 0;
 }
 
@@ -693,6 +701,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 1rem;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -700,8 +709,8 @@
           box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  width: 350px;
-  height: 33rem;
+  width: 29.8rem;
+  height: 37rem;
   position: relative;
   text-align: center;
 }
@@ -745,6 +754,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem;
 }
 
 .home__works__cards__card:hover {
@@ -772,6 +782,7 @@
   transition: 0.5s all;
   opacity: 0.2;
   cursor: pointer;
+  border-radius: 1rem;
 }
 
 .home__works__cards__card:hover::before {
@@ -1029,8 +1040,8 @@ article:has(:hover, :focus) img {
             justify-content: center;
   }
   .home__works__cards__card {
-    width: 33rem;
-    height: 38rem;
+    width: 26rem;
+    height: 35rem;
   }
 }
 
@@ -1054,8 +1065,8 @@ article:has(:hover, :focus) img {
             justify-content: center;
   }
   .home__works__cards__card {
-    width: 33rem;
-    height: 39.25rem;
+    width: 23.5rem;
+    height: 30rem;
   }
   .home__works__cards__card .info .description {
     font-size: 2rem;
@@ -1064,65 +1075,6 @@ article:has(:hover, :focus) img {
   .home__works__cards__card .info .heading {
     font-size: 1.5rem;
   }
-  /* digital marketing media max-992px start */
-  /* .digital-marketing-container {
-    position: relative;
-    flex-direction: column;
-    margin-bottom: 5rem;
-    width: 100%;
-  }
-  .digital-marketing-container .right {
-    width: 100%;
-    height: 450px;
-  }
-
-  .digital-marketing-container .right img {
-    position: absolute;
-    object-fit: scale-down;
-    width: 100%;
-  }
-
-  .digital-marketing-container .left {
-    width: 100%;
-    margin-bottom: 70px;
-  }
-
-  .marketing-cards-container {
-    position: relative;
-    width: 100%;
-    gap: 50px;
-  }
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .left-cards-container
-    .card,
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .right-cards-container
-    .card {
-    padding: 1.5rem;
-    transition: ease-out 0.2s;
-    box-shadow: inset 0 0 0 0 #0000ff;
-  }
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .left-cards-container
-    .card:hover,
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .right-cards-container
-    .card:hover {
-    box-shadow: inset 38rem 0 0 0 #0000ff;
-    transition: ease-out 0.5s;
-  }
-
-  .digital-marketing-container .left .top-container p {
-    width: 100ch;
-  } */
   /* digital marketing media max-992px end */
   /* Web Design Development section  media max-992 start */
   .web-design-section {
@@ -1163,6 +1115,9 @@ article:has(:hover, :focus) img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .digital-marketing-container .left_right-container {
+    gap: 30px;
+  }
   .digital-marketing-container
 .left
 .marketing-cards-container
@@ -1201,10 +1156,16 @@ p {
     width: 100%;
   }
   .digital-marketing-container .left .top-container h2 {
+    font-family: "Montserrat";
     font-size: 2.5rem;
   }
   .digital-marketing-container .left .top-container p {
-    font-size: 1.5rem;
+    color: var(--TextColor);
+    font-family: "Overpass";
+    font-size: 2rem;
+    padding: 0.625rem;
+    line-height: 2rem;
+    font-weight: 500;
   }
   .alternate-layout {
     -webkit-box-orient: vertical;
@@ -1217,6 +1178,9 @@ p {
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
   }
+  .home__service__cards {
+    gap: 20px;
+  }
   .home__service__cards__card {
     width: 100%;
     height: 20rem;
@@ -1228,22 +1192,94 @@ p {
   .home__service__cards__card h3 {
     font-size: 2.5rem;
   }
-  .home__service__cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 2rem;
+  .home__works__cards {
+    /* background-color: red; */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home__works__cards a {
+    width: 100%;
+    /* background-color: blue; */
   }
   .home__works__cards__card {
-    /* width: 50%; */
-    height: 45rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .home__works__header p {
+    font-size: 2rem;
+    line-height: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 98% !important;
-    /* background-color: yellow; */
+    max-width: 400px !important;
+    /* background-color: green; */
+  }
+  .home__works__cards {
+    /* background-color: red; */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .home__works__cards__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .section-2 .cardsContainer .card .cardListsContainer {
+    gap: 4rem;
+  }
+  .section-2 .cardsContainer {
+    gap: 10rem;
+  }
+  .home__service__content p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .home__service__content {
+    width: 90%;
+  }
+  .left-cards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card {
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 8px;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p {
+    font-size: 2rem;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon {
+    font-size: 2rem;
+  }
+  .left_right-container .left {
+    gap: 3rem;
   }
 }
 /*# sourceMappingURL=Home.css.map */

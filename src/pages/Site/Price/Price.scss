@@ -70,9 +70,11 @@
   /* font-family: "Montserrat", sans-serif; */
 }
 .header h2 {
+  font-family: "Overpass";
   padding: 0.9375rem 0rem 0rem 0rem;
   font-size: 2.5rem;
   margin-bottom: 10px;
+
   /* font-family: "Montserrat", sans-serif; */
 }
 .header p {
@@ -294,13 +296,13 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 30px;
+    gap: 10px;
     &__card {
       transition: 0.5s all;
-      display: flex;
-
-      flex-direction: column;
-      align-items: center;
+      /* display: flex; */
+width: calc(33.3% - 7px);
+      /* flex-direction: column; */
+      /* align-items: center; */
       /* width: 30rem; */
 
       background-color: #fff;
@@ -320,31 +322,85 @@
   .cardsContainer {
     /* width: 100%; */
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+align-items: center;
+justify-content: flex-start;
 
     &__card {
-      width: 250px;
-
-      /* width: 30rem; */
+      width: calc(50% - 5px );
+      
     }
+    &__items{
+      font-size: 15px;
+      /* margin-bottom: 1.5rem; */
+    }
+    &__itemsContainer{
+margin-bottom: 2rem;
+    }
+    &__tick-icon{
+      font-size: 3.5rem;
+    }
+   &__notAveilble-icon{
+    font-size: 3.5rem;
+    position: relative;
+
+   }
+   &__cardContentContainer{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+   }
   }
 }
 
 @media screen and (max-width: 576px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
   .cardsContainer {
-    /* width: 100%; */
+  
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    gap: 5rem;
+  
 
     &__card {
-      width: 200px;
+      width: 90%;
+     
 
-      /* width: 30rem; */
     }
+  &__period, &__exchangeRate{
+    font-size: 2rem;
+  }
+   &__cardContentContainer{
+   
+    padding: 5rem;
+   }
+   &__itemsContainer{
+    align-items: center;
+   }
+   &__items{
+    font-size: 3rem;
+  
+   }
+   &__itemsContainer{
+    margin-bottom: 3rem;
+   }
+
+   &__cardHeader{
+    padding: 4rem 0;
+    font-size: 3rem;
+   }
+   &__price{
+    font-size: 7rem;
+   }
+   &__tick-icon{
+    font-size: 5rem;
+  }
+ &__notAveilble-icon{
+  font-size:4rem;
+  position: relative;
+  left: -4px;
+ }
   }
 }
+

@@ -78,7 +78,7 @@
 /* HEADER START */
 .projectHeader {
   padding: 4rem 0 0 0;
-  width: 40%;
+  width: 55%;
   margin: auto;
   text-align: center;
   /* font-family: "Montserrat", sans-serif; */
@@ -87,14 +87,16 @@
 .projectHeader .projectTitle {
   padding: 0.9375rem 0rem 0rem 0rem;
   font-size: 2.5rem;
-  /* font-family: "Montserrat", sans-serif; */
+  margin-bottom: 10px;
 }
 
 .projectHeader .description {
-  color: #737b73;
-  font-size: 1.125rem;
+  color: var(--TextColor);
+  font-family: "Overpass";
+  font-size: 1.3rem;
   padding: 0.625rem;
-  /* font-family: "Montserrat", sans-serif; */
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 /* HEADER END */
@@ -229,6 +231,49 @@
   }
   .project-cards-container__heading {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .project-cards-container__card {
+    width: 33rem;
+    height: 39.25rem;
+  }
+  .project-cards-container__description {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .project-cards-container__heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 200px;
+  }
+  .modal-section {
+    background-color: red;
+    width: 200px;
+    margin-inline: auto;
+  }
+  .kateqoriya-sec {
+    background-color: yellow;
+    width: 200px;
+    margin-inline: auto;
+  }
+  .modal-section {
+    background-color: yellow;
+    width: 200px;
+    margin-inline: auto;
+  }
+  .kateqoriya {
+    background-color: yellow;
+    width: 200px;
+    margin-inline: auto;
   }
 }
 /*# sourceMappingURL=Project.css.map */

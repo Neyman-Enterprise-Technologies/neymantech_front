@@ -115,8 +115,12 @@
 }
 
 .faqSection-2 .faqTitleBottom .faqDescription {
+  color: var(--TextColor);
+  font-family: "Overpass";
   font-size: 1.3rem;
-  color: gray;
+  padding: 0.625rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 .faqSection-2 .section-2-content {
@@ -133,7 +137,7 @@
 }
 
 .faqSection-2 .section-2-content .left {
-  width: 37%;
+  width: 45%;
   position: relative;
 }
 
@@ -146,7 +150,7 @@
 }
 
 .faqSection-2 .section-2-content .right {
-  width: 63%;
+  width: 55%;
 }
 
 .faqSection-2 .section-2-content .right form {
@@ -179,55 +183,63 @@
   resize: none;
   outline: none;
   padding: 1.5rem;
-  opacity: 0.4;
+  font-size: 1.5rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
 }
 
 .faqSection-2 .section-2-content .right form textarea::-webkit-input-placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form textarea:-ms-input-placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form textarea::-ms-input-placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form textarea::placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form .inputs input {
   font-size: 1.5rem;
-  padding: 1.5rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
   width: 100%;
   outline: none;
-  opacity: 0.4;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
 }
 
 .faqSection-2 .section-2-content .right form .inputs input::-webkit-input-placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form .inputs input:-ms-input-placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form .inputs input::-ms-input-placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form .inputs input::placeholder {
   font-size: 1.2rem;
-  font-weight: 500;
+  opacity: 0.8;
 }
 
 /* BUTTON ANIMATION START */
@@ -283,8 +295,95 @@ button:hover::before {
   .container {
     max-width: 540px !important;
   }
+  .contactCardContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .contactCardContainer .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+    margin-inline: auto;
+  }
+  .faqSection-2 .section-2-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .faqSection-2 .section-2-content .right form {
+    width: 100%;
+  }
+  .faqSection-2 .section-2-content .right form .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .footer__subscribers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .faqSection-2 .section-2-content .left {
+    width: 100%;
+    height: 300px;
+  }
+  .footer__subscribe-content {
+    gap: 2rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90% !important;
+  }
+  .contactCardContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactCardContainer .card {
+    /* position: absolute; */
+    width: 60%;
+  }
+  .faqSection-2 .section-2-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .faqSection-2 .section-2-content .left {
+    width: 100%;
+    height: 200px;
+  }
+  .faqSection-2 .section-2-content .right form .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .faqSection-2 .section-2-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=Contact.css.map */

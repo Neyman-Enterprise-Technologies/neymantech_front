@@ -29,7 +29,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5rem 0;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .teamSection .team-container__socialContainer {
@@ -75,7 +75,7 @@
 
 .teamSection .team-container__cardContainer {
   position: relative;
-  width: 410px;
+  width: calc(33.3% - 1.4rem);
   -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
   -webkit-transition: -webkit-transform 0.4s;
@@ -83,6 +83,7 @@
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   cursor: pointer;
+  border-radius: 0.6rem;
 }
 
 .teamSection .team-container__cardContainer:hover {
@@ -120,7 +121,8 @@
 .teamSection .team-container__profile-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 30rem;
+  /* border-radius: 1rem; */
   overflow: hidden;
 }
 
@@ -132,6 +134,7 @@
   height: 100%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-radius: 0.6rem 0.6rem 0 0;
 }
 
 .teamSection .team-container__profile-details {
@@ -148,6 +151,7 @@
   padding: 20px 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-radius: 0 0 0.6rem 0.6rem;
 }
 
 .teamSection .team-container__name {
@@ -161,5 +165,153 @@
   font-size: 1.3rem;
   color: blue;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  /* .teamSection .team-container{
+
+
+}  */
+  /* .section-2 .cardsContainer{
+  gap: 5rem;
+} */
+  /* .section-2 .cardsContainer .card{
+  width: 100%;
+
+} */
+  .section-2 .cardsContainer .card h2 {
+    font-size: 20px;
+  }
+  .section-2 .cardsContainer .card .description {
+    font-size: 16px;
+  }
+  .section-2 .cardsContainer .card .cardList p {
+    font-size: 15px;
+  }
+  .section-3 .left .selected-title-container .selected-title {
+    font-size: 25px;
+  }
+  .section-3 .left .selected-description {
+    font-size: 16px;
+  }
+  .section-3 .left .description {
+    font-size: 16px;
+    padding-bottom: 1.5rem;
+  }
+  .section-3 .left .selected-title-container .tick-icon {
+    font-size: 30px;
+  }
+  .teamSection .team-container__profile-container {
+    height: 250px;
+  }
+  .teamSection .team-container__profile-details {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .teamSection .team-container {
+    width: 100%;
+    gap: 6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .teamSection .team-container__cardContainer {
+    width: 100%;
+  }
+  .teamSection .team-container__profile-container {
+    /* width: 800px; */
+    height: 800px;
+  }
+  /* .team-container__cardContainer{
+    width: 800px;
+  } */
+  /* .team-container__cardContainer{
+    width: 800px;
+   
+  } */
+  .teamSection .team-container__profile-details {
+    padding: 40px 0;
+  }
+  .teamSection .team-container__name {
+    font-size: 25px;
+  }
+  .teamSection .team-container__job {
+    font-size: 18px;
+  }
+  .teamSection .team-container__profile-details {
+    gap: 2rem;
+  }
+  .section-3 .left .header {
+    font-size: 20px;
+  }
+  .section-2 .cardsContainer .card .description {
+    line-height: 25px;
+  }
+  .section-2 .cardsContainer {
+    gap: 50px;
+  }
+  .teamSection .teamHeaderContainer p {
+    font-size: 20px;
+  }
+  .teamSection .teamHeaderContainer h2 {
+    font-size: 20px;
+  }
+  .section-2 .cardsContainer .card {
+    gap: 20px;
+  }
+  .section-3 .left .description {
+    line-height: 25px;
+  }
+  .section-3 .left .selected-description {
+    line-height: 25px;
+    text-align: start;
+  }
+  .section-3 .left .title {
+    font-size: 20px;
+  }
+  .section-2 .cardsContainer .card .cardList p {
+    font-size: 15px;
+  }
+  .section-2 .cardsContainer .card .cardListsContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 200px !important;
+  }
+  .section-3 {
+    margin-inline: auto;
+  }
+  .section-3 .left, .section-3 .right {
+    margin-inline: auto;
+    width: 90%;
+  }
+  .teamSection .team-container {
+    width: 90%;
+    margin-inline: auto;
+  }
+  .teamSection .team-container__profile-container {
+    height: 80rem;
+  }
+  .teamSection .team-container__profile-details {
+    padding: 3rem 0;
+  }
 }
 /*# sourceMappingURL=Team.css.map */
