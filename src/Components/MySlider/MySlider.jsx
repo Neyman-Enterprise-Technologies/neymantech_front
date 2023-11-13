@@ -6,13 +6,22 @@ import "./MySlider.scss";
 import { Link } from "react-router-dom";
 import { Pagination } from "swiper/modules";
 import UseFetch from "../../UseFetch";
+import { motion } from "framer-motion"
+
+
+
 function MySlider() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: slider } = UseFetch(`${apiUrl}core_api/slider`);
 
   const sliderRef = useRef(null);
   return (
-    <div className="slider-container">
+    <motion.div className="slider-container"
+    whileHover={{ scale: 1 }}
+  whileTap={{ scale: 1.1 }}
+  drag="x"
+  dragConstraints={{ left: 0, right: 0 }}
+   >
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -48,7 +57,7 @@ function MySlider() {
             </SwiperSlide>
           ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 }
 
