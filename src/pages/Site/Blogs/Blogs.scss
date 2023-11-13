@@ -27,7 +27,7 @@
   text-align: center;
 }
 .blogTitle h2 {
-  font-family: "Overpass";
+
   display: inline-block;
   font-size: 2.5rem;
 }
@@ -102,7 +102,7 @@
   transition: 0.4s all;
 }
 .blogs .left a .card .cardImgContainer {
-  height: 200px;
+  height: 16rem;
 }
 .blogs .left a .card .cardImgContainer img {
   width: 100%;
@@ -131,7 +131,7 @@
 
 .blogs .left a .card .bottom-content h2,
 .blogs .left a .card .bottom-content p {
-  font-family: "Overpass";
+
   transition: transform 0.5s;
   margin-bottom: 0.625rem;
   overflow: hidden;
@@ -189,7 +189,7 @@
   transition: all 1s, opacity 0.7s;
   color: #0000ff;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* right start */
@@ -297,7 +297,7 @@
 }
 
 .blogs .right .recent-posts-container .post-details .description .date {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
 .blogs .right .recent-posts-container .post-details .description .title {
@@ -317,8 +317,8 @@
 }
 .blogs .right .category-container p {
   position: relative;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   display: block;
   margin-left: 1.5rem;
   margin-bottom: 0.7rem;
@@ -335,7 +335,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.4rem;
+  top: 0.1rem;
   left: -2.5rem;
 }
 .blogs .right .category-container .title {

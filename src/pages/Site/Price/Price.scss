@@ -1,20 +1,14 @@
-/* @font-face {
-  font-family: "Montserrat";
-  src: url("../../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
-} */
+
 .container {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  /* background-color: red; */
+
 }
 
-* {
-  /* font-family: "Montserrat"; */
-  box-sizing: border-box;
-}
 
-/* price HeaderLink start */
+
+
 
 .priceHeader {
   background-color: #fafafc;
@@ -67,19 +61,19 @@
   width: 55%;
   margin: auto;
   text-align: center;
-  /* font-family: "Montserrat", sans-serif; */
+ 
 }
 .header h2 {
-  font-family: "Overpass";
+
   padding: 0.9375rem 0rem 0rem 0rem;
   font-size: 2.5rem;
   margin-bottom: 10px;
 
-  /* font-family: "Montserrat", sans-serif; */
+ 
 }
 .header p {
   color: var(--TextColor);
-    font-family: "Overpass";
+
     font-size: 1.3rem;
     padding: 0.625rem;
   line-height: 2rem;
@@ -106,7 +100,7 @@
   }
   &__period,
   &__exchangeRate {
-    font-family: "Overpass";
+
     color: #737b9a;
     font-weight: 600;
   }
@@ -143,7 +137,7 @@
     background-color: blue;
     color: white;
 
-    font-family: "Overpass";
+
   
   }
   .secondHeader {
@@ -199,7 +193,7 @@
     color: #737b9a;
     font-size: 1.2rem;
     color: var(--TextColor);
-    font-family: "Overpass";
+    
     font-size: 1.5rem;
     padding: 0.625rem;
   line-height: 2rem;

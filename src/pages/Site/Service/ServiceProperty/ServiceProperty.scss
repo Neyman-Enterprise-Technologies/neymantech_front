@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Overpass";
+
 }
 .container {
   max-width: 1320px;
@@ -26,7 +26,7 @@
 }
 .serviceTitle h2 {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 .serviceLinks {
   display: flex;
@@ -37,7 +37,7 @@
 }
 
 .serviceLinks a {
-  font-size: 1.3rem;
+  font-size: 20.8px;
   color: #0000ff;
   font-weight: 500;
 }
@@ -87,7 +87,7 @@
   }
   .contentOfTitle {
     font-size: 1.2rem;
-    line-height:1.5rem;
+    line-height:2rem;
     color: var(--TextColor);
   }
   .titleContainerTitle h2 {
@@ -113,7 +113,7 @@
 
 
     color: #737b9a;
-    line-height: 1.5rem;
+    line-height: 2rem;
     font-size: 1.2rem;
 
     font-weight: 500;
@@ -198,16 +198,16 @@
     }
   }
   .firstSection__title{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
   }
   .firstSection__description,
   .firstSection .contentOfTitle{
-    font-size: 2rem;
-    line-height: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .firstSection .titleContainerTitle h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
  
 }
@@ -218,6 +218,11 @@
   }
  .firstSection{
   padding-bottom: 25rem;
+ }
+ .firstSection__description,
+ .firstSection .contentOfTitle{
+   font-size: 1.8rem;
+   line-height: 3rem;
  }
 }
 
@@ -236,11 +241,16 @@
  }
  .firstSection__description,
  .firstSection .contentOfTitle{
-   font-size: 2.5rem;
-   line-height: 3rem;
+   font-size: 2rem;
+   line-height: 4rem;
  }
  .firstSection .titleContainerTitle h2{
   font-size: 3rem;
+}
+.firstSection__description,
+.firstSection .contentOfTitle{
+ 
+  line-height: 3.5rem;
 }
 }
 

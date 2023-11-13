@@ -1,14 +1,37 @@
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
   font-family: "Overpass";
-  src: url("../src/Fonts/Overpass\,Syne/Overpass-Regular.ttf")
+  src: url("../src/Fonts/Overpass\,Syne/Overpass-Regular.ttf"),
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Syne:wght@500&display=swap'); */
-*{
-  font-family: "Overpass"; 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../src/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../src/Fonts/loto/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../src/Fonts/loto/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../src/Fonts/loto/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/Fonts/loto/Roboto-Regular.ttf");
+}
 
+* {
+
+  /* font-family: "Montserrat"; */
+  /* font-family: "Poppins";  */
+  /* font-family: "Lato";  */
+  /* font-family: "Raleway";  */
+  font-family: "Overpass";
+  /* font-family: "Roboto";  */
 }
 :root{
   --TextColor:#737b9a;
@@ -63,9 +86,7 @@
   opacity: 0.8;
 }
 
-*{
- font-family: "Montserrat";
-}
+
 
 .logo {
   height: 6em;
