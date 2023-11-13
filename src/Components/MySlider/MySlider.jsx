@@ -18,7 +18,7 @@ function MySlider() {
   return (
     <motion.div className="slider-container"
     whileHover={{ scale: 1 }}
-  whileTap={{ scale: 1.1 }}
+  whileTap={{ scale: 1.07 }}
   drag="x"
   dragConstraints={{ left: 0, right: 0 }}
    >
