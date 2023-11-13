@@ -39,13 +39,7 @@ const BlogList = ({ filteredBlogs }) => {
   },[filteredBlogs])
   
   useEffect(() => {
-    // const fetchPosts = async () => {
-    //   // const res = await axios.get(`${apiUrl}blogs`);
-    //   const res = await axios.get(`${apiUrl}blog_api/blog/`);
-
-    //   setPosts(res.data);
-    // };
-    // fetchPosts();
+   
     setLoading(true);
     window.scrollTo({ top: 0 });
     setTimeout(() => {
