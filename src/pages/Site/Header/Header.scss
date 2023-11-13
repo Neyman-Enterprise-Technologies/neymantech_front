@@ -1,13 +1,10 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
-}
 
 * {
-  font-family: "Montserrat";
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 .logo-img {
@@ -53,7 +50,7 @@ nav a {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 900;
-  font-family: "Overpass";
+
   padding: 0.5em 0;
   position: relative;
   color: #29335c;

@@ -221,7 +221,7 @@
 }
 
 .section-2 .cardsContainer .card .cardList p {
-  font-family: "Overpass";
+
   font-size: 19.2px;
   width: 100%;
   color: black;
@@ -235,12 +235,12 @@
 }
 
 .section-2 .cardsContainer .card h2 {
-  font-family: "Montserrat";
+
   width: 100%;
   font-size: 20px;
 }
 .section-2 .cardsContainer .card .description {
-  font-family: "Overpass";
+
   font-size: 1.1rem;
   color: var(--TextColor);
   padding-right: 0.5rem;
@@ -274,7 +274,7 @@
   font-size: 1.5rem;
   color: blue;
   font-weight: 500;
-  font-family: "Overpass";
+
   width: 100%;
 }
 .section-3 .left .header {
@@ -282,7 +282,6 @@
   width: 100%;
   padding-right: 10rem;
 
-  font-family: "Overpass";
 }
 .section-3 .left .description {
   /* padding-right: 10rem; */
@@ -290,7 +289,7 @@
   line-height: 2.5rem;
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: "Overpass";
+
 }
 .section-3 .left .selected-title-container {
   display: flex;
@@ -304,7 +303,7 @@
 }
 .section-3 .left .selected-title-container .selected-title {
   position: relative;
-  font-family: "Overpass";
+ 
   font-size: 1.5rem;
   width: 100%;
 }
@@ -312,7 +311,7 @@
 .section-3 .left .selected-description {
   text-align: start;
   /* padding-right: 10rem; */
-  font-family: "Overpass";
+
   color: #737b9a;
   line-height: 2.5rem;
   font-size: 1.2rem;

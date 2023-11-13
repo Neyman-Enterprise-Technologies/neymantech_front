@@ -139,7 +139,7 @@ export default function Contact() {
                     <h2 className="title">Email Here</h2>
 
                     <div className="descriptionContainer">
-                      <p className="contact-type">{contact[0].email}</p>
+                      {/* <p className="contact-type">{contact[0].email}</p> */}
                       {/* <p className="phoneNumber"></p> */}
                     </div>
                   </div>
@@ -151,7 +151,7 @@ export default function Contact() {
                     <h2 className="title">Location</h2>
 
                     <div className="descriptionContainer">
-                      <p className="contact-type">{contact[0].location}</p>
+                      {/* <p className="contact-type">{contact[0].location}</p> */}
                       {/* <p className="phoneNumber"></p> */}
                     </div>
                   </div>
@@ -163,7 +163,7 @@ export default function Contact() {
                     <h2 className="title">Phone Here</h2>
 
                     <div className="descriptionContainer">
-                      <p className="contact-type">{contact[0].phone}</p>
+                      {/* <p className="contact-type">{contact[0].phone}</p> */}
                       {/* <p className="phoneNumber"></p> */}
                     </div>
                   </div>
