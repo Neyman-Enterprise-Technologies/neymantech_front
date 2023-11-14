@@ -17,7 +17,7 @@ import {
 } from "react-icons/Bs";
 import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
-import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
+// import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
 import Partners from "../../../Components/Partners/Partners";
 import { CgScrollV } from "react-icons/Cg";
 
@@ -88,16 +88,16 @@ export default function About() {
             </div>
           )}
           {/* ABOUT HEADER START */}
-          <div className="aboutHeader">
+          <div className="linkHeader">
             <div className="container">
-              <div className="aboutTitle">
+              <div className="linkTitle">
                 <h2>
                   Ab<span>o</span>ut
                 </h2>
               </div>
             </div>
-            <div className="aboutLinks">
-              <Link to="/home" className="aboutLink">
+            <div className="linkLinks">
+              <Link to="/home" className="linkLink">
                 Home
               </Link>
               <FaAngleRight className="angleIcon" />
