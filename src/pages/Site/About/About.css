@@ -459,7 +459,7 @@
 }
 
 .aboutCardsContainer__list {
-  background-color: red;
+ 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,9 +468,7 @@
           justify-content: space-between;
 }
 
-.aboutCardsContainer__list .listIcon {
-  background-color: red;
-}
+
 
 @media screen and (max-width: 1200px) {
   .container {
