@@ -10,50 +10,6 @@
 
 
 
-.priceHeader {
-  background-color: #fafafc;
-  padding: 10rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.priceTitle {
-  text-align: center;
-}
-
-.priceTitle h2 {
-  display: inline-block;
-  font-size: 2.5rem;
-}
-.priceLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: fit-content; */
-  gap: 0.5rem;
-}
-
-.priceLinks a {
-  font-size: 1.3rem;
-  color: #0000ff;
-  font-weight: 500;
-}
-.priceLinks .priceLink {
-  color: #737b9a;
-}
-
-.priceLinks .angleIcon {
-  font-size: 1.5rem;
-  margin-top: 0.1rem;
-  color: #737b9a;
-}
-.priceTitle span {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-}
-
-/* price HeaderLink */
 
 /* header start */
 .header {
@@ -66,17 +22,15 @@
 .header h2 {
 
   padding: 0.9375rem 0rem 0rem 0rem;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+margin-bottom: 1rem;
 
  
 }
 .header p {
   color: var(--TextColor);
-
-    font-size: 1.3rem;
-    padding: 0.625rem;
-  line-height: 2rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 /* header end */
