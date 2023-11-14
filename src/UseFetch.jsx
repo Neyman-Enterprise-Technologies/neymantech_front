@@ -14,7 +14,7 @@ const UseFetch = (url) => {
       })
       .then((data) => {
         setData(data);
-        console.log(data);
+   
 
         setError(null);
       })
