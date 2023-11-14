@@ -8,14 +8,14 @@
 }
 .teamSection .teamHeaderContainer p {
 
-  margin-bottom: 2rem;
   font-size: 1.5rem;
-  color: blue;
-  font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--blueText);
+    font-weight: 500;
 }
 .teamSection .teamHeaderContainer h2 {
 
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .teamSection .team-container {
   position: relative;
@@ -33,8 +33,6 @@
     align-items: center;
     gap: 1rem;
     position: absolute;
-    /* width: 200px; */
-    /* height: 2rem; */
     padding: 0.5em;
     border-radius: 4rem;
     background-color: #fff;
@@ -98,9 +96,7 @@
     position: relative;
     width: 100%;
     height: 30rem;
-    /* border-radius: 1rem; */
-
-    overflow: hidden;
+ overflow: hidden;
 
     img {
       position: absolute;
@@ -146,17 +142,7 @@
     max-width: 720px !important;
   }
 
-  /* .teamSection .team-container{
-
-
-}  */
-  /* .section-2 .cardsContainer{
-  gap: 5rem;
-} */
-  /* .section-2 .cardsContainer .card{
-  width: 100%;
-
-} */
+  
   .section-2 .cardsContainer .card h2 {
     font-size: 20px;
   }
