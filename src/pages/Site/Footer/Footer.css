@@ -454,9 +454,7 @@
   .container {
     max-width: 200px !important;
   }
-  .footer {
-    /* background-color: red; */
-  }
+  
   .footer__subscribers {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -539,19 +537,7 @@
   .container {
     max-width: 90% !important;
   }
-  .footer {
-    /* &__left {
-      width: 60%;
 
-    }
-    &__right {
-      width: 40%;
-    } */
-    /* &__socialMediaContainer {
-
-     
-    } */
-  }
   .footer__top {
     margin-inline: auto;
     margin-bottom: 5rem;
