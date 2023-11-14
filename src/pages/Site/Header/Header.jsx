@@ -2,18 +2,19 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.scss";
 import newlogo from "../../../images/logo.png";
-import { NavLink,useNavigate } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { NavLink } from "react-router-dom";
+
+
 function Navbar() {
   const navRef = useRef();
-  const navigate = useNavigate();
+
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
    
   };
 
-  return (
+return (
     <header>
       <NavLink to="/" className="logo-img">
         <img src={newlogo} alt="Responsive Image" />
@@ -31,16 +32,10 @@ function Navbar() {
         <NavLink to="/price" onClick={showNavbar}>
           Price
         </NavLink>
-        <ScrollLink
-          to="services" 
-          smooth={true}
-          duration={500}
-          // onClick={showNavbar}
-          onClick={showNavbar}
-          
-        >
-          Service
-        </ScrollLink>
+        <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+          Serv
+        </NavLink>
+     
 
         <NavLink to="/blogs" onClick={showNavbar}>
           Blogs
