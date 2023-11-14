@@ -65,15 +65,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+
   padding: 5rem 0 0 0;
 }
 .faqSection-2 .faqTitleBottom .about-description {
-  color: blue;
   font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--blueText);
+    font-weight: 500;
 }
 .faqSection-2 .faqTitleBottom h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .faqSection-2 .faqTitleBottom .faqDescription {
