@@ -104,20 +104,20 @@ useEffect(() => {
             </div>
           )}
           {/* heading start */}
-          <div className="blogHeader">
+          <div className="linkHeader">
             <div className="container">
-              <div className="blogTitle">
+              <div className="linkTitle">
                 <h2>
-                  B<span className="blogTitleSpan">lo</span>g
+                  Bl<span>o</span>gs
                 </h2>
               </div>
             </div>
-            <div className="blogLinks">
-              <Link to="/home" className="blogLink">
+            <div className="linkLinks">
+              <Link to="/home" className="linkLink">
                 Home
               </Link>
               <FaAngleRight className="angleIcon" />
-              <Link to="blog">Blog</Link>
+              <Link to="about">Blogs</Link>
             </div>
           </div>
           {/* heading end */}
