@@ -1,7 +1,6 @@
-
 @font-face {
   font-family: "Overpass";
-  src: url("../src/Fonts/Overpass\,Syne/Overpass-Regular.ttf"),
+  src: url("../src/Fonts/Overpass\,Syne/Overpass-Regular.ttf");
 }
 @font-face {
   font-family: "Montserrat";
@@ -25,7 +24,6 @@
 }
 
 * {
-
   /* font-family: "Montserrat"; */
   /* font-family: "Poppins";  */
   /* font-family: "Lato";  */
@@ -33,13 +31,13 @@
   font-family: "Overpass";
   /* font-family: "Roboto";  */
 }
-:root{
-  --TextColor:#737b9a;
-  --headerText:#212529;
-  --buttonColor:#0000ff;
-  --buttonHoverColor:#f78da7;
-
-
+:root {
+  --TextColor: #7d839e;
+  --TextLinkColor: #2547c0;
+  --headerText: #212529;
+  --blueText: #0000ff;
+  --buttonHoverColor: #f78da7;
+  --TextWithDarkBg: #f5f5f5;
 }
 @keyframes scrollAnimation {
   0% {
@@ -60,33 +58,29 @@
   }
 }
 
-
-
 .scroll-to-top {
   position: fixed;
-  
+
   z-index: 9999;
 
   bottom: 20px;
   right: 20px;
   cursor: pointer;
   background-color: var(--buttonColor);
- font-size: 10px;
+  font-size: 10px;
   color: #fff;
 
   transition: opacity 0.3s ease-in-out;
- 
+
   /* opacity: 0.1; */
 }
-.scroll-icon{
+.scroll-icon {
   font-size: 2rem;
 }
 
 .scroll-to-top:hover {
   opacity: 0.8;
 }
-
-
 
 .logo {
   height: 6em;
@@ -123,3 +117,69 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* PAGES HEADERlINKS */
+.linkHeader {
+  background-color: #fafafc;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.linkTitle {
+  text-align: center;
+}
+.linkTitle h2,
+.linkTitle span,
+.linkTitle div
+{
+  font-size: 2.5rem;
+}
+.linkLinks a,
+.linkLinks .angleIcon{
+  font-size: 1.6rem;
+  color: red;
+}
+
+
+
+.linkTitle h2 {
+  display: inline-block;
+}
+.linkLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: fit-content; */
+  gap: 0.5rem;
+}
+
+.linkLinks a {
+
+  color: #0000ff;
+  font-weight: 500;
+}
+.linkLinks .linkLink {
+  color: #737b9a;
+}
+
+.linkLinks .angleIcon {
+
+  color: #737b9a;
+}
+.linkTitle span {
+  border-bottom: 2px solid #f78da7;
+  padding-bottom: 1.2rem;
+}
+
+/* this belongs to serviceProperty only */
+.linkTitle div {
+  display: inline;
+  
+  padding-bottom: 1.2rem;
+}
+/* this belongs to serviceProperty only */
+
+/* PAGES HEADERlINKS */
+
