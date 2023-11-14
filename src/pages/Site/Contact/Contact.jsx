@@ -110,22 +110,22 @@ export default function Contact() {
           )}
           <div className="home__contact">
             {/*   HEADER LINK START  */}
-            <div className="projectHeaderLink">
-              <div className="container">
-                <div className="projectTitle">
-                  <h2>
-                    Con<span>t</span>act
-                  </h2>
-                </div>
-              </div>
-              <div className="projectLinks">
-                <Link to="/home" className="projectLink">
-                  Home
-                </Link>
-                <FaAngleRight className="angleIcon" />
-                <Link to="contact">Contact</Link>
+            <div className="linkHeader">
+            <div className="container">
+              <div className="linkTitle">
+                <h2>
+                  Con<span>t</span>act
+                </h2>
               </div>
             </div>
+            <div className="linkLinks">
+              <Link to="/home" className="linkLink">
+                Home
+              </Link>
+              <FaAngleRight className="angleIcon" />
+              <Link to="about">Contact</Link>
+            </div>
+          </div>
             {/*  HEADER LINK END  */}
 
             <div className="container">
