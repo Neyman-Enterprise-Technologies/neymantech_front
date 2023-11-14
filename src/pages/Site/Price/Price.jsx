@@ -112,16 +112,16 @@ useEffect(() => {
             </div>
           )}
           {/*       headerLink start */}
-          <div className="priceHeader">
+          <div className="linkHeader">
             <div className="container">
-              <div className="priceTitle">
+              <div className="linkTitle">
                 <h2>
                   Pri<span>c</span>ing
                 </h2>
               </div>
             </div>
-            <div className="priceLinks">
-              <Link to="/home" className="priceLink">
+            <div className="linkLinks">
+              <Link to="/home" className="linkLink">
                 Home
               </Link>
               <FaAngleRight className="angleIcon" />
