@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- 
 }
 .container {
   max-width: 1320px;
@@ -11,59 +10,7 @@
 }
 
 /* heading start */
-.blogHeader {
-  background-color: #f6f6f6;
-  padding: 10rem 0;
-  display: flex;
-  flex-direction: column;
 
-  gap: 3rem;
-}
-.blogTitle {
-  text-align: center;
-}
-
-.blogTitle {
-  text-align: center;
-}
-.blogTitle h2 {
-
-  display: inline-block;
-  font-size: 2.5rem;
-}
-.blogLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: fit-content; */
-  gap: 0.5rem;
-}
-
-.blogLinks a {
-  font-size: 1.3rem;
-  color: #0000ff;
-  font-weight: 500;
-}
-.blogLinks .blogLink {
-  color: #737b9a;
-}
-
-.blogLinks .angleIcon {
-  font-size: 1.5rem;
-  margin-top: 0.1rem;
-  color: #737b9a;
-}
-.blogTitle .blogTitleSpan {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-}
-/* .blogTitle span {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-} */
-/* heading end */
 
 /* blogs */
 .blogs {
@@ -102,7 +49,7 @@
   transition: 0.4s all;
 }
 .blogs .left a .card .cardImgContainer {
-  height: 16rem;
+  height: 20rem;
 }
 .blogs .left a .card .cardImgContainer img {
   width: 100%;
@@ -113,7 +60,7 @@
 .blogs .left a .card:hover .cardImgContainer img {
   transform: scale(1.2) rotate(5deg);
 }
-.blogs .left a .card .bottom-content{
+.blogs .left a .card .bottom-content {
   line-height: 1.6rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -125,13 +72,10 @@
 
 .blogs .left a .card .bottom-content h2 {
   font-size: 1rem;
-  
-
 }
 
 .blogs .left a .card .bottom-content h2,
 .blogs .left a .card .bottom-content p {
-
   transition: transform 0.5s;
   margin-bottom: 0.625rem;
   overflow: hidden;
@@ -212,7 +156,7 @@
 }
 .blogs .right .search .input-button-container input {
   width: 100%;
-  padding: 9px;
+  padding: 10px;
   outline: none;
 }
 .blogs .right .search .input-button-container .search-icon-container {
@@ -428,7 +372,7 @@
 
   .blogs .left a .card .bottom-content {
     width: 100%;
-    padding: 1.5rem 1.3rem;
+    padding: 2.5rem 1.3rem 7rem 1.5rem;
   }
   .blogs .left a .card .bottom-content h2 {
     font-size: 14px;
@@ -440,7 +384,7 @@
   }
 
   .blogs .right .recent-posts-container .post-details .description {
-    width: 100%;
+    /* width: 100%; */
     align-self: flex-start;
     padding-top: 0.8rem;
   }
@@ -457,11 +401,11 @@
     padding: 3rem;
   }
   .blogs .right .search .input-button-container input::placeholder {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .blogs .right .recent-posts-container .post-details .description .date {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
   }
   .blogs .right .recent-posts-container .post-details .description .title {
     font-size: 1.5rem;
@@ -480,6 +424,10 @@
   }
   .blogs .right .category-container {
     padding: 3rem;
+  }
+
+  .recent-description p {
+    font-size: 2rem;
   }
   .blogs .right .category-container .title {
     padding-bottom: 3rem;
