@@ -655,6 +655,7 @@ border-radius: 0;
     padding: 4.375rem;
     max-width: 93.75rem;
     margin: 0 auto;
+  
 
     &__card {
       position: relative;
@@ -702,7 +703,7 @@ border-radius: 0;
   padding-top: 3rem;
 
   &__content {
-    padding: 30px 20px 10px 20px;
+  padding: 3rem 0;
     width: 40%;
     margin: auto;
     text-align: center;
@@ -963,15 +964,15 @@ article:has(:hover, :focus) {
     width: 100%;
   }
   .digital-marketing-container .left .top-container h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
 
     font-size: 2rem;
     padding: 0.625rem;
-    line-height: 2rem;
-    font-weight: 500;
+    line-height: 3.5rem;
+    font-weight: 100;
   }
 
   .alternate-layout {
@@ -983,19 +984,35 @@ article:has(:hover, :focus) {
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
     &__cards {
+      width: 100%;
+  
       gap: 20px;
       &__card {
+
         width: 100%;
         /* height: 20rem; */
-        padding: 0 3rem;
+        padding: 3rem;
 
         p {
           font-size: 1.5rem;
         }
         h3 {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
       }
+    }
+    .home__service__cards__card__icon{
+  
+      width: 6rem;
+      height: 6rem;
+      
+    }
+    .home__service__cards__card__icon .icon1{
+      width: 60%;
+      height: 60%;
+    }
+    .home__service__cards__card__icon .badge {
+font-size: 3rem;
     }
   }
   .home__works__cards {

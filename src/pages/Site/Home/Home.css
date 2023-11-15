@@ -872,16 +872,17 @@ border-radius: 0;
 
 .home__feedback {
   background-color: #f9f9fc;
-  padding: 4px 0px 20px 0px;
+
   width: 100%;
-  padding-top: 3rem;
+
 }
 
 .home__feedback__content {
-  padding: 30px 20px 10px 20px;
+
   width: 40%;
   margin: auto;
   text-align: center;
+
 }
 
 .home__feedback__content h2 {
