@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { motion } from "framer-motion";
 import { FaChevronUp } from "react-icons/fa";
@@ -25,7 +25,7 @@ export default function Home() {
   //*HOME - SERVICECARDS- SECTION-1
   // const { data: serviceCards, error } = UseFetch(`${apiUrl}serviceCards`);
   const { data: serviceCards, error } = UseFetch(
-    `${apiUrl}/service_api/services`
+    `${apiUrl}service_api/services`
   );
 
   //*HOME - DIJITAL MARKETING- SECTION-2
@@ -79,106 +79,102 @@ export default function Home() {
     };
   }, []);
 
-
-
-
   return (
     <>
       {/* {loading ? (
         <Loading />
       ) : ( */}
-        <motion.section
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1 }}
-        >
-          {showIcon && (
-            <div
-              className="scroll-to-top"
-              style={{
-                opacity: showIcon ? 1 : 0,
-                transition: "opacity 0.5s",
-              }}
-              onClick={handleScrollToTop}
-            >
-              <FaChevronUp className="scroll-icon" />
-            </div>
-          )}
-          <MySlider />
-
-          <div className="home__service" name="services">
-            <div className="container">
-              <div className="home__service__content">
-                <h2 id="services" className="services" name="services">
-                  {" "}
-                  Our Services
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
-              </div>
-              {/* SERVICE CARDS START */}
-              {serviceCards && <ServiceCards serviceCards={serviceCards} />}
-              {error && <div>{error}</div>}
-              {/*  */}
-            </div>
+      <motion.section
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1 }}
+      >
+        {showIcon && (
+          <div
+            className="scroll-to-top"
+            style={{
+              opacity: showIcon ? 1 : 0,
+              transition: "opacity 0.5s",
+            }}
+            onClick={handleScrollToTop}
+          >
+            <FaChevronUp className="scroll-icon" />
           </div>
+        )}
+        <MySlider />
 
-          <div className="container" id="cards">
-            {digitalMarketingSecInHome && (
-              <DijitalMarketingSecInHome
-                digitalMarketingSecInHome={digitalMarketingSecInHome}
+        <div className="home__service" name="services">
+          <div className="container">
+            <div className="home__service__content">
+              <h2 id="services" className="services" name="services">
+                {" "}
+                Our Services
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+            {/* SERVICE CARDS START */}
+            {serviceCards && <ServiceCards serviceCards={serviceCards} />}
+            {error && <div>{error}</div>}
+          </div>
+        </div>
+
+        <div className="container" id="cards">
+          {digitalMarketingSecInHome && (
+            <DijitalMarketingSecInHome
+              digitalMarketingSecInHome={digitalMarketingSecInHome}
+            />
+          )}
+        </div>
+
+        <div className="container">
+          {webDesignSecHome && (
+            <WebDesignSecHome webDesignSecHome={webDesignSecHome} />
+          )}
+        </div>
+
+        <div className="container">
+          <div className="home__works">
+            <div className="home__works__header">
+              <h2>Our latest works</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+            {LatestWorkCardInHome && (
+              <LatestWorkCardInHome
+                latestWorkCardInHome={latestWorkCardInHome}
+                isProjectPage={false}
               />
             )}
           </div>
+        </div>
 
+        <div className="home__feedback">
+          <div className="home__feedback__content">
+            <p>TESTIMONIALS</p>
+            <h2>Some lovely feedback from our clients</h2>
+          </div>
+          {feedback && <Carusel feedback={feedback} />}
+        </div>
+
+        <div className="home__blogs">
           <div className="container">
-            {webDesignSecHome && (
-              <WebDesignSecHome webDesignSecHome={webDesignSecHome} />
-            )}
-          </div>
-
-          <div className="container">
-            <div className="home__works">
-              <div className="home__works__header">
-                <h2>Our latest works</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
-              </div>
-              {LatestWorkCardInHome && (
-                <LatestWorkCardInHome
-                  latestWorkCardInHome={latestWorkCardInHome}
-                  isProjectPage={false}
-                />
-              )}
+            <div className="home__blogs__content">
+              <h2>Latest news</h2>
             </div>
-          </div>
 
-          <div className="home__feedback">
-            <div className="home__feedback__content">
-              <p>Testinomials</p>
-              <h2>Some lovely feedback from our clients</h2>
-            </div>
-            {feedback && <Carusel feedback={feedback} />}
-          </div>
-
-          <div className="home__blogs">
             <div className="container">
-              <div className="home__blogs__content">
-                <h2>Latest news</h2>
-              </div>
-
-              <div className="container">
-                <div className="cards-wrapper">
-                  {latestNews && <LatestNews latestNews={latestNews} />}
-                </div>
+              <div className="cards-wrapper">
+                {latestNews && <LatestNews latestNews={latestNews} />}
               </div>
             </div>
           </div>
-        </motion.section>
+        </div>
+      </motion.section>
       {/* )} */}
     </>
   );

@@ -485,14 +485,14 @@
 
 .home__service__content h2 {
   padding: 0.9375rem 0rem 0rem 0rem;
-  font-family: "Montserrat";
-  font-size: 2.5rem;
+  /* font-family: "Montserrat"; */
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .home__service__content p {
   color: var(--TextColor);
-  font-family: "Overpass";
+  /* font-family: "Overpass"; */
   font-size: 1.3rem;
   padding: 0.625rem;
   line-height: 2rem;
@@ -638,7 +638,7 @@
 
 .home__works__header {
   text-align: center;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .home__works__header h2 {
@@ -872,16 +872,17 @@ border-radius: 0;
 
 .home__feedback {
   background-color: #f9f9fc;
-  padding: 4px 0px 20px 0px;
+
   width: 100%;
-  padding-top: 3rem;
+
 }
 
 .home__feedback__content {
-  padding: 30px 20px 10px 20px;
+
   width: 40%;
   margin: auto;
   text-align: center;
+
 }
 
 .home__feedback__content h2 {

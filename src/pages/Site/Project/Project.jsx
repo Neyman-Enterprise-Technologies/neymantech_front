@@ -74,16 +74,16 @@ export default function Project() {
             </div>
           )}
           {/*   HEADER LINK START  */}
-          <div className="projectHeaderLink">
+          <div className="linkHeader">
             <div className="container">
-              <div className="projectTitle">
+              <div className="linkTitle">
                 <h2>
-                  Pro<span>je</span>cts
+                  Proj<span>e</span>cts
                 </h2>
               </div>
             </div>
-            <div className="projectLinks">
-              <Link to="/home" className="projectLink">
+            <div className="linkLinks">
+              <Link to="/home" className="linkLink">
                 Home
               </Link>
               <FaAngleRight className="angleIcon" />

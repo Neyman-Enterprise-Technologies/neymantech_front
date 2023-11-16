@@ -47,9 +47,9 @@ const Accordion = () => {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -67,22 +67,20 @@ const Accordion = () => {
               <FaChevronUp className="scroll-icon" />
             </div>
           )}
-          <div className="accordionHeader">
+        <div className="linkHeader">
             <div className="container">
-              <div className="accordionTitle">
+              <div className="linkTitle">
                 <h2>
-                  F<span>A</span>Q
+                  F<span>a</span>Q
                 </h2>
               </div>
             </div>
-            <div className="accordionLinks">
-              <Link to="/home" className="homeLink">
+            <div className="linkLinks">
+              <Link to="/home" className="linkLink">
                 Home
               </Link>
-              <FaAngleRight className="angelIcon" />
-              <Link className="faqLink" to="faq">
-                FAQ
-              </Link>
+              <FaAngleRight className="angleIcon" />
+              <Link to="about">Faq</Link>
             </div>
           </div>
           <div className="accordion">
@@ -101,7 +99,7 @@ const Accordion = () => {
               ))}
           </div>
         </motion.div>
-      )}
+      {/* )} */}
     </>
   );
 };

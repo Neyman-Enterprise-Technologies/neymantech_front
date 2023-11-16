@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- 
 }
 .container {
   max-width: 1320px;
@@ -11,59 +10,6 @@
 }
 
 /* heading start */
-.blogHeader {
-  background-color: #f6f6f6;
-  padding: 10rem 0;
-  display: flex;
-  flex-direction: column;
-
-  gap: 3rem;
-}
-.blogTitle {
-  text-align: center;
-}
-
-.blogTitle {
-  text-align: center;
-}
-.blogTitle h2 {
-
-  display: inline-block;
-  font-size: 2.5rem;
-}
-.blogLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: fit-content; */
-  gap: 0.5rem;
-}
-
-.blogLinks a {
-  font-size: 1.3rem;
-  color: #0000ff;
-  font-weight: 500;
-}
-.blogLinks .blogLink {
-  color: #737b9a;
-}
-
-.blogLinks .angleIcon {
-  font-size: 1.5rem;
-  margin-top: 0.1rem;
-  color: #737b9a;
-}
-.blogTitle .blogTitleSpan {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-}
-/* .blogTitle span {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-} */
-/* heading end */
 
 /* blogs */
 .blogs {
@@ -75,7 +21,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 78%;
   gap: 1rem;
 }
 .blogs .left .cards-container {
@@ -102,7 +48,7 @@
   transition: 0.4s all;
 }
 .blogs .left a .card .cardImgContainer {
-  height: 16rem;
+  height: 15rem;
 }
 .blogs .left a .card .cardImgContainer img {
   width: 100%;
@@ -113,7 +59,8 @@
 .blogs .left a .card:hover .cardImgContainer img {
   transform: scale(1.2) rotate(5deg);
 }
-.blogs .left a .card .bottom-content{
+.blogs .left a .card .bottom-content {
+  background-color: #fff;
   line-height: 1.6rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -125,13 +72,10 @@
 
 .blogs .left a .card .bottom-content h2 {
   font-size: 1rem;
-  
-
 }
 
 .blogs .left a .card .bottom-content h2,
 .blogs .left a .card .bottom-content p {
-
   transition: transform 0.5s;
   margin-bottom: 0.625rem;
   overflow: hidden;
@@ -140,19 +84,9 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-/* .blogs .left a .card .bottom-content p {
-  color: #737b9a;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1.6rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  max-height: 3.02rem;
-
-} */
+.blogs .left a .card .bottom-content p {
+  color: var(--TextColor);
+}
 .blogs .left a .card:hover {
   box-shadow: 0 3px 20px 0 (rgb(210, 210, 219));
 }
@@ -171,11 +105,11 @@
   transition: all 0.8s;
 }
 .blogs .left a .card .bottom-content {
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   transition: transform 0.7s;
   position: relative;
   z-index: 1;
-  background-color: #fff;
+
   color: #010211;
 }
 .blogs .left a .card .bottom-content::after {
@@ -196,7 +130,7 @@
 .blogs .right {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 22%;
   gap: 2rem;
 }
 .blogs .right .search {
@@ -212,7 +146,7 @@
 }
 .blogs .right .search .input-button-container input {
   width: 100%;
-  padding: 9px;
+  padding: 10px;
   outline: none;
 }
 .blogs .right .search .input-button-container .search-icon-container {
@@ -285,7 +219,7 @@
   width: 60%;
 }
 .recent-description p {
-  line-height: 1.6rem;
+  line-height: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -301,7 +235,7 @@
   margin-bottom: 0.5rem;
 }
 .blogs .right .recent-posts-container .post-details .description .title {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.01rem;
 }
@@ -335,7 +269,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.1rem;
+
   left: -2.5rem;
 }
 .blogs .right .category-container .title {
@@ -373,10 +307,10 @@
   display: block;
   padding: 0.5rem;
   border: 1px solid #eeeeee;
-  width: fit-content;
+  /* width: fit-content; */
   font-weight: 600;
   transition: 0.5s;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 .blogs .right .tags-container .tags p:hover {
   background-color: #0000ff;
@@ -389,11 +323,24 @@
   .container {
     max-width: 960px !important;
   }
+  .blogs .left a .card .cardImgContainer {
+    height: 10rem;
+  }
+  .blogs .left a .card .bottom-content {
+    padding: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .container {
     max-width: 720px !important;
+  }
+  .blogs .left a .card .cardImgContainer {
+    height: 25rem;
+  }
+
+  .blogs .left a .card .bottom-content {
+    padding: 1.5rem;
   }
   .blogs {
     flex-direction: column;
@@ -404,6 +351,7 @@
   }
   .blogs .left .cards-container {
     width: 100%;
+    justify-content: flex-start;
   }
 
   .blogs .left a {
@@ -416,31 +364,24 @@
     width: fit-content;
     font-weight: 600;
 
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
-  /* .blogs .left a .card {
-    width: calc(100% / 2.05);
-  } */
   .blogs .right {
     width: 100%;
   }
 
-  .blogs .left a .card .bottom-content {
-    width: 100%;
-    padding: 1.5rem 1.3rem;
-  }
   .blogs .left a .card .bottom-content h2 {
-    font-size: 14px;
+    font-size: 2rem;
   }
 
   .blogs .left a .card .bottom-content p,
   .blogs .left a .card .bottom-content::after {
-    font-size: 12px;
+    font-size: 1.5rem;
   }
 
   .blogs .right .recent-posts-container .post-details .description {
-    width: 100%;
+    /* width: 100%; */
     align-self: flex-start;
     padding-top: 0.8rem;
   }
@@ -457,11 +398,11 @@
     padding: 3rem;
   }
   .blogs .right .search .input-button-container input::placeholder {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .blogs .right .recent-posts-container .post-details .description .date {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
   }
   .blogs .right .recent-posts-container .post-details .description .title {
     font-size: 1.5rem;
@@ -469,6 +410,7 @@
 
   .blogs .right .recent-posts-container .post-details {
     padding: 3rem 0;
+    gap: 3rem;
   }
   .blogs .right .recent-posts-container h2 {
     font-size: 2rem;
@@ -481,20 +423,25 @@
   .blogs .right .category-container {
     padding: 3rem;
   }
+
+  .recent-description p {
+    font-size: 2rem;
+  }
   .blogs .right .category-container .title {
     padding-bottom: 3rem;
     font-size: 2rem;
   }
 
   .blogs .right .category-container p {
-    font-size: 1.6rem;
-    margin-left: 50px;
+    font-size: 1.5rem;
+    margin-left: 3.125rem;
+    margin-bottom: 1.2rem;
   }
   .blogs .right .category-container p::before {
     width: 1rem;
     height: 1rem;
-    top: 0.5rem;
-    left: -50px;
+    top: 0rem;
+    left: -3.125rem;
   }
   .blogs .right .tags-container {
     flex-wrap: wrap;
@@ -509,7 +456,53 @@
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
   }
+  .blogs .right .category-container .category-list-container {
+    padding: 3rem 0;
+  }
 }
+
+/* @media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .blogs {
+    flex-direction: column;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogs .left .cards-container a {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .blogs .left .cards-container a .card {
+    width: 100%;
+ 
+  
+  }
+  .post-details .recent-description p{
+  
+    font-size: 1.8rem;
+  }
+
+  .blogs .left a .card .cardImgContainer{
+    height: 30rem;
+  }
+ 
+  .blogs .right .recent-posts-container .post-details .description .title {
+    width: 100%;
+  }
+  .blogs .left a .card .bottom-content {
+  
+    width: 100%;
+}
+
+  .blogs .right .category-container p {
+    font-size: 1.5rem;
+  }
+ 
+} */
 
 @media screen and (max-width: 768px) {
   .container {
@@ -529,20 +522,32 @@
   .blogs .left .cards-container a .card {
     width: 100%;
   }
-  .blogs .left .card a .cardImgContainer {
-    height: 300px;
+  .post-details .recent-description p {
+    font-size: 1.8rem;
   }
+
+  .blogs .left a .card .cardImgContainer {
+    height: 30rem;
+  }
+
   .blogs .right .recent-posts-container .post-details .description .title {
     width: 100%;
   }
   .blogs .left a .card .bottom-content {
     width: 100%;
-    padding: 2rem 1rem;
   }
+
   .blogs .right .category-container p {
     font-size: 1.5rem;
   }
   .blogs .right .category-container p::before {
-    top: 0.4rem;
+    top: 0;
   }
+
+  .blogs .right .category-container .category-list-container {
+    padding: 3rem 0rem;
+  }
+  /* .blogs .right .category-container p::before{
+    top: 0.1rem;
+  } */
 }
