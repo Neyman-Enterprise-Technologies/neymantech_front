@@ -17,41 +17,9 @@
 } */
 
 /* heading start */
-.blogDetails-container{
-  display: flex;
-  flex-direction: column;
-}
-.blogDetailsHeader {
-  background-color: #f6f6f6;
 
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.blogDetailsHeader .blogTitle {
-  text-align: center;
-}
 
-.blogDetailsHeader .blogTitle {
-  text-align: center;
-}
-.blogDetailsHeader .blogTitle h2 {
-  display: inline-block;
-  font-size: 2.5rem;
-}
-.blogDetailsHeader .blogLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: fit-content; */
-  gap: 0.5rem;
-}
 
- .linkLinks p {
-  font-size: 30px;
-  color: #0000ff;
-  font-weight: 500;
-}
 
 /* heading end */
 
