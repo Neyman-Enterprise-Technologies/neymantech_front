@@ -4,7 +4,7 @@ import { FaAngleRight } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import UseFetch from "../../UseFetch";
 
-import Loading from "../../Components/Loading/Loading";
+// import Loading from "../../Components/Loading/Loading";
 import "./BlogDetails.scss";
 import { AiOutlineSearch } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -48,7 +48,7 @@ useEffect(() => {
               <div className="linkHeader">
                 <div className="linkTitle">
                   <h2>
-                    {/* The Rise Of Marketin<span>g</span>And Why You Need It */}
+                 
                     {blogs.title.split("").map((char, index) => (
                       <div
                         key={index}
@@ -65,15 +65,15 @@ useEffect(() => {
                 </div>
 
                 <div className="linkLinks">
-                  <Link to="/home" className="linkLink">
+                  <Link to="#" className="linkLink">
                     Home
                   </Link>
                   <FaAngleRight className="angleIcon" />
-                  <Link to="blog" className="linkLink">
+                  <Link to="#" className="linkLink">
                     Blogs
                   </Link>
                   <FaAngleRight className="angleIcon" />
-                  <p>{blogs.title}</p>
+                  <Link>{blogs.title}</Link>
                 </div>
               </div>
         
@@ -138,7 +138,7 @@ useEffect(() => {
 
                               
                               </p>
-                              {/* <p className="title">{blogs.short_descriptions}</p> */}
+                         
                               <p
                                 className="title"
                                 dangerouslySetInnerHTML={{
