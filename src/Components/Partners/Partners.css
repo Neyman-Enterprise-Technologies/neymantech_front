@@ -23,9 +23,12 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  min-height: 18rem;
-  min-width: 18rem;
-  padding: 40px;
+  margin-left: 15px;
+  height: 120px;
+  width: 120px;
+  /* min-height: 18rem;
+  min-width: 18rem; */
+  /* padding: 40px; */
 }
 
 .itemmm .companyName {
@@ -50,7 +53,7 @@
   pointer-events: none;
   -webkit-box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.5);
           box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.5);
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .inner-carousel {
