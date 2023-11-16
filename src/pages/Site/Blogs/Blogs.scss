@@ -22,7 +22,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 78%;
   gap: 1rem;
 }
 .blogs .left .cards-container {
@@ -134,7 +134,7 @@
 .blogs .right {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 22%;
   gap: 2rem;
 }
 .blogs .right .search {
@@ -223,7 +223,7 @@
   width: 60%;
 }
 .recent-description p {
-  line-height: 1.6rem;
+  line-height: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -273,7 +273,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.1rem;
+
   left: -2.5rem;
 }
 .blogs .right .category-container .title {
@@ -311,7 +311,7 @@
   display: block;
   padding: 0.5rem;
   border: 1px solid #eeeeee;
-  width: fit-content;
+  /* width: fit-content; */
   font-weight: 600;
   transition: 0.5s;
   font-size: 1rem;
@@ -438,8 +438,9 @@
   }
 
   .blogs .right .category-container p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-left: 3.125rem;
+    margin-bottom: 1.2rem;
   }
   .blogs .right .category-container p::before {
     width: 1rem;
