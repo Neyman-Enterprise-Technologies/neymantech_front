@@ -922,7 +922,8 @@ article:has(:hover, :focus) {
 }
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 540px !important;
+    max-width: 540px!important;
+   
   }
   .project-cards-container {
     flex-direction: column;
@@ -975,12 +976,12 @@ article:has(:hover, :focus) {
     width: 100%;
   }
   .digital-marketing-container .left .top-container h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0.625rem;
     line-height: 3.5rem;
     font-weight: 100;
@@ -989,6 +990,23 @@ article:has(:hover, :focus) {
   .alternate-layout {
     flex-direction: column-reverse;
   }
+
+
+  .cards-wrapper .cards-container .card .bottom-content{
+    padding: 3rem 2rem;
+    line-height: 3.5rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content h2{
+    font-size: 3rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content p{
+    font-size: 2rem;
+   
+  }
+  .cards-wrapper .cards-container .card .bottom-content:after{
+    font-size: 2rem;
+  }
+
 
   .home__service {
     background-color: #f9f9fc;
@@ -1021,6 +1039,10 @@ article:has(:hover, :focus) {
         }
       }
     }
+
+
+  
+
     .home__service__cards__card__icon{
   
       width: 6rem;
@@ -1055,14 +1077,36 @@ font-size: 3rem;
     font-size: 2rem;
     line-height: 20px;
   }
+  .home__service__content{
+  width: 100%;  
+  }
+  .home__service__content p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .home__service__content h2{
+    font-size: 3.5rem;
+  }
+  .home__works__header h2{
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+  }
+  .home__works__header p{
+    font-size: 2rem;
+  }
+  .home__feedback__content p{
+    font-size: 3rem;
+    padding-bottom: 3rem;
+
+      }
 }
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 400px !important;
-    /* background-color: green; */
+    max-width: 100% !important;
+ 
   }
   .home__works__cards {
-    /* background-color: red; */
+
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
@@ -1072,6 +1116,7 @@ font-size: 3rem;
       width: 90%;
       margin-inline: auto;
     }
+  
   }
   .section-2 .cardsContainer .card .cardListsContainer {
     gap: 4rem;
@@ -1083,6 +1128,10 @@ font-size: 3rem;
     font-size: 2rem;
     line-height: 3rem;
   }
+  .digital-marketing-container .left .top-container p {
+    color: var(--TextColor);
+    font-size: 2.5rem;
+ }
   .home__service__content {
     width: 90%;
   }
@@ -1096,11 +1145,14 @@ font-size: 3rem;
     .left-cards-container
     .card {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 
     gap: 2rem;
     align-items: center;
     margin-bottom: 8px;
+  }
+  .digital-marketing-container .left .top-container h2 {
+    font-size: 3.5rem;
   }
 
   .digital-marketing-container
@@ -1109,7 +1161,7 @@ font-size: 3rem;
     .left-cards-container
     .card
     p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .digital-marketing-container
     .left
@@ -1117,9 +1169,62 @@ font-size: 3rem;
     .left-cards-container
     .card
     .card-icon {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .left_right-container .left {
     gap: 3rem;
   }
+  .home__service__content p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .home__service__content h2{
+    font-size: 3.5rem;
+  }
+  .home__service__cards__card h3{
+    font-size: 3rem;
+  }
+  .home__service__cards__card p{
+    font-size: 2.3rem;
+  }
+  .home__service__cards__card{
+    gap: 3rem;
+  }
+  .home__works__header h2{
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+  }
+  .home__works__header p{
+    font-size: 2.5rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content{
+    padding: 3rem 2rem;
+    line-height: 3.5rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content h2{
+    font-size: 3.5rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content p{
+    font-size: 2.5rem;
+   
+  }
+  .cards-wrapper .cards-container .card .bottom-content:after{
+    font-size: 2rem;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon{
+    position: relative;
+    top: -0.2rem;
+  }
+  .home__feedback__content{
+    width: 100%;
+  }
+  
+  .home__feedback__content h2{
+    font-size: 3.5rem;
+ 
+  }
+  .home__blogs__content h2{
+    font-size: 3.5rem ;
+  }
+ 
 }
