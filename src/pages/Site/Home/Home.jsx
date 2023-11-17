@@ -44,7 +44,10 @@ export default function Home() {
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
   const { data: latestWorkCardInHome } = UseFetch(
     `${apiUrl}service_api/last_works/`
+    
   );
+  console.log(latestWorkCardInHome)
+
 
   const { data: latestNews } = UseFetch(`${apiUrl}blog_api/blog`);
   const [loading, setLoading] = useState(false);
