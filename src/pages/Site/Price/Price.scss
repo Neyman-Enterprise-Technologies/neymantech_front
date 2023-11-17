@@ -224,6 +224,11 @@
 
       overflow: auto;
     }
+    &__cardHeader {
+    padding: 1.5rem 0;
+      font-size: 1.5rem;
+ 
+    }
 
     .cardsContainer__items {
       padding: 0.5rem 0;
@@ -250,6 +255,22 @@
 
       overflow: auto;
     }
+    &__items {
+    
+      font-size: 1.7rem;
+  
+  
+    }
+    &__period,
+    &__exchangeRate {
+      font-size: 1.3rem;
+     
+    }
+    &__cardHeader {
+      padding: 2rem 0;
+        font-size: 2rem;
+   
+      }
 
     &__card {
       transition: 0.5s all;
@@ -261,6 +282,9 @@
       border-radius: 5px;
       overflow: hidden;
       padding-bottom: 1.5rem;
+    }
+    &__price {
+      font-size: 2.5rem;
     }
   }
 }
