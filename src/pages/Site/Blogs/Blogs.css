@@ -12,74 +12,6 @@
 }
 
 /* heading start */
-.blogHeader {
-  background-color: #f6f6f6;
-  padding: 10rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 3rem;
-}
-
-.blogTitle {
-  text-align: center;
-}
-
-.blogTitle {
-  text-align: center;
-}
-
-.blogTitle h2 {
-  display: inline-block;
-  font-size: 2.5rem;
-}
-
-.blogLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* width: fit-content; */
-  gap: 0.5rem;
-}
-
-.blogLinks a {
-  font-size: 1.3rem;
-  color: #0000ff;
-  font-weight: 500;
-}
-
-.blogLinks .blogLink {
-  color: #737b9a;
-}
-
-.blogLinks .angleIcon {
-  font-size: 1.5rem;
-  margin-top: 0.1rem;
-  color: #737b9a;
-}
-
-.blogTitle .blogTitleSpan {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-}
-
-/* .blogTitle span {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-} */
-/* heading end */
 /* blogs */
 .blogs {
   display: -webkit-box;
@@ -98,7 +30,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  width: 78%;
   gap: 1rem;
 }
 
@@ -134,7 +66,7 @@
 }
 
 .blogs .left a .card .cardImgContainer {
-  height: 200px;
+  height: 15rem;
 }
 
 .blogs .left a .card .cardImgContainer img {
@@ -154,6 +86,7 @@
 }
 
 .blogs .left a .card .bottom-content {
+  background-color: #fff;
   line-height: 1.6rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -173,7 +106,6 @@
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  margin-bottom: 0.625rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -181,19 +113,10 @@
   -webkit-box-orient: vertical;
 }
 
-/* .blogs .left a .card .bottom-content p {
-  color: #737b9a;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1.6rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  max-height: 3.02rem;
+.blogs .left a .card .bottom-content p {
+  color: var(--TextColor);
+}
 
-} */
 .blogs .left a .card:hover {
   -webkit-box-shadow: 0 3px 20px 0 #d2d2db;
           box-shadow: 0 3px 20px 0 #d2d2db;
@@ -219,14 +142,13 @@
 }
 
 .blogs .left a .card .bottom-content {
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
   -webkit-transition: -webkit-transform 0.7s;
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
   position: relative;
   z-index: 1;
-  background-color: #fff;
   color: #010211;
 }
 
@@ -243,7 +165,7 @@
   transition: all 1s, opacity 0.7s;
   color: #0000ff;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* right start */
@@ -255,7 +177,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
+  width: 22%;
   gap: 2rem;
 }
 
@@ -276,7 +198,7 @@
 
 .blogs .right .search .input-button-container input {
   width: 100%;
-  padding: 9px;
+  padding: 10px;
   outline: none;
 }
 
@@ -337,13 +259,9 @@
 
 .blogs .right .recent-posts-container .post-details {
   position: relative;
-  /* width: 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* width: 100%; */
-  /* height: 100%; */
-  /* height: 8rem; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -357,7 +275,6 @@
   position: relative;
   width: 5rem;
   height: 5rem;
-  /* height: 5rem */
 }
 
 .blogs .right .recent-posts-container .post-details .details-img img {
@@ -374,7 +291,7 @@
 }
 
 .recent-description p {
-  line-height: 1.6rem;
+  line-height: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -386,12 +303,12 @@
 }
 
 .blogs .right .recent-posts-container .post-details .description .date {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
 
 .blogs .right .recent-posts-container .post-details .description .title {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.01rem;
 }
@@ -411,8 +328,8 @@
 
 .blogs .right .category-container p {
   position: relative;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   display: block;
   margin-left: 1.5rem;
   margin-bottom: 0.7rem;
@@ -430,7 +347,6 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.4rem;
   left: -2.5rem;
 }
 
@@ -481,13 +397,11 @@
   display: block;
   padding: 0.5rem;
   border: 1px solid #eeeeee;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  /* width: fit-content; */
   font-weight: 600;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .blogs .right .tags-container .tags p:hover {
@@ -500,11 +414,26 @@
   .container {
     max-width: 960px !important;
   }
+  .blogs .left a .card .cardImgContainer {
+    height: 12rem;
+  }
+  .blogs .left a .card .bottom-content {
+    padding: 1.6rem 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .container {
     max-width: 720px !important;
+  }
+  .blogs .left a .card .cardImgContainer {
+    height: 25rem;
+  }
+  .blogs .left a .card .bottom-content {
+    line-height: 2.5rem;
+    padding-bottom: 7rem;
+    padding-top: 3rem;
   }
   .blogs {
     -webkit-box-orient: vertical;
@@ -519,6 +448,9 @@
   }
   .blogs .left .cards-container {
     width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .blogs .left a {
     width: calc(100% / 2.05);
@@ -531,27 +463,20 @@
     width: -moz-fit-content;
     width: fit-content;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
-  /* .blogs .left a .card {
-    width: calc(100% / 2.05);
-  } */
   .blogs .right {
     width: 100%;
   }
-  .blogs .left a .card .bottom-content {
-    width: 100%;
-    padding: 1.5rem 1.3rem;
-  }
   .blogs .left a .card .bottom-content h2 {
-    font-size: 14px;
+    font-size: 1.8rem;
   }
   .blogs .left a .card .bottom-content p,
   .blogs .left a .card .bottom-content::after {
-    font-size: 12px;
+    font-size: 1.5rem;
   }
   .blogs .right .recent-posts-container .post-details .description {
-    width: 100%;
+    /* width: 100%; */
     -ms-flex-item-align: start;
         align-self: flex-start;
     padding-top: 0.8rem;
@@ -572,26 +497,27 @@
     padding: 3rem;
   }
   .blogs .right .search .input-button-container input::-webkit-input-placeholder {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .blogs .right .search .input-button-container input:-ms-input-placeholder {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .blogs .right .search .input-button-container input::-ms-input-placeholder {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .blogs .right .search .input-button-container input::placeholder {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .blogs .right .recent-posts-container .post-details .description .date {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
   }
   .blogs .right .recent-posts-container .post-details .description .title {
     font-size: 1.5rem;
   }
   .blogs .right .recent-posts-container .post-details {
     padding: 3rem 0;
+    gap: 3rem;
   }
   .blogs .right .recent-posts-container h2 {
     font-size: 2rem;
@@ -603,19 +529,23 @@
   .blogs .right .category-container {
     padding: 3rem;
   }
+  .recent-description p {
+    font-size: 2rem;
+  }
   .blogs .right .category-container .title {
     padding-bottom: 3rem;
     font-size: 2rem;
   }
   .blogs .right .category-container p {
-    font-size: 1.6rem;
-    margin-left: 50px;
+    font-size: 1.5rem;
+    margin-left: 3.125rem;
+    margin-bottom: 1.2rem;
   }
   .blogs .right .category-container p::before {
     width: 1rem;
     height: 1rem;
-    top: 0.5rem;
-    left: -50px;
+    top: 0rem;
+    left: -3.125rem;
   }
   .blogs .right .tags-container {
     -ms-flex-wrap: wrap;
@@ -630,6 +560,9 @@
   .blogs .right .tags-container .tags .link-container a {
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
+  }
+  .blogs .right .category-container .category-list-container {
+    padding: 3rem 0;
   }
 }
 
@@ -659,21 +592,161 @@
   .blogs .left .cards-container a .card {
     width: 100%;
   }
-  .blogs .left .card a .cardImgContainer {
-    height: 300px;
+  .post-details .recent-description p {
+    font-size: 1.8rem;
+  }
+  .blogs .left a .card .cardImgContainer {
+    height: 30rem;
   }
   .blogs .right .recent-posts-container .post-details .description .title {
     width: 100%;
   }
   .blogs .left a .card .bottom-content {
     width: 100%;
-    padding: 2rem 1rem;
   }
   .blogs .right .category-container p {
     font-size: 1.5rem;
   }
   .blogs .right .category-container p::before {
-    top: 0.4rem;
+    top: 0;
+  }
+  .blogs .right .category-container .category-list-container {
+    padding: 3rem 0rem;
+  }
+  .blogs .left a .card .bottom-content {
+    line-height: 3.5rem;
+    padding-left: 2rem;
+    padding-bottom: 10rem;
+    padding-top: 4rem;
+  }
+  .blogs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blogs .left {
+    width: 100%;
+  }
+  .blogs .left .cards-container {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .blogs .left a {
+    width: calc(100% / 2.05);
+  }
+  .blogs .right .tags-container .tags p {
+    display: block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #eeeeee;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogs .left a .card .bottom-content h2 {
+    font-size: 2.5rem;
+  }
+  .blogs .left a .card .bottom-content p,
+  .blogs .left a .card .bottom-content::after {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90% !important;
+  }
+  .blogs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogs .left .cards-container a {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogs .left .cards-container a .card {
+    width: 100%;
+  }
+  .post-details .recent-description p {
+    font-size: 1.8rem;
+  }
+  .blogs .left a .card .cardImgContainer {
+    height: 30rem;
+  }
+  .blogs .right .recent-posts-container .post-details .description .title {
+    width: 100%;
+  }
+  .blogs .left a .card .bottom-content {
+    width: 100%;
+  }
+  .blogs .right .category-container p {
+    font-size: 1.5rem;
+  }
+  .blogs .right .category-container p::before {
+    top: 0;
+  }
+  .blogs .right .category-container .category-list-container {
+    padding: 3rem 0rem;
+  }
+  .blogs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blogs .left {
+    width: 100%;
+  }
+  .blogs .left .cards-container {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .blogs .left a {
+    width: calc(100% / 2.05);
+  }
+  .blogs .right .tags-container .tags p {
+    display: block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #eeeeee;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogs .left a .card .bottom-content h2 {
+    font-size: 2.5rem;
+  }
+  .blogs .left a .card .bottom-content p,
+  .blogs .left a .card .bottom-content::after {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=Blogs.css.map */

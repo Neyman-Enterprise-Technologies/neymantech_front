@@ -4,7 +4,7 @@
 }
 
 .partners-header {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   padding: 5rem;
 }
@@ -23,12 +23,18 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
+<<<<<<< HEAD
+  min-height: 15rem;
+  min-width: 15rem;
+  padding: 20px;
+=======
   margin-left: 15px;
   height: 120px;
   width: 120px;
   /* min-height: 18rem;
   min-width: 18rem; */
   /* padding: 40px; */
+>>>>>>> 51676a43026ccccf4ab568cfafcb63aca77b5a36
 }
 
 .itemmm .companyName {
@@ -67,7 +73,7 @@
   cursor: -webkit-grab;
   cursor: grab;
   overflow: hidden;
-  padding: 0 0 3rem  0;
+  padding: 0 0 3rem 0;
   /* margin: 0 10%; */
   /* background-color: orange; */
 }

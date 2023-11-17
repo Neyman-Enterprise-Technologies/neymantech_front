@@ -44,7 +44,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .digital-marketing-container .alternate-layout.left {
@@ -65,7 +65,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
-  width: 60%;
+  width: 50%;
   /* background-color: red; */
 }
 
@@ -89,12 +89,10 @@
 }
 
 .digital-marketing-container .left .top-container p {
-  color: #737b9a;
-  line-height: 1.6rem;
-  font-size: 1rem;
-  font-weight: 900;
-  /* padding-right: 2rem; */
-  /* width: 31rem; */
+  color: var(--TextColor);
+  line-height: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .digital-marketing-container .left .top-container .readMore-btn {
@@ -213,6 +211,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f8faff;
   color: #737b73;
   padding: 1.5rem 1rem;
@@ -227,14 +228,14 @@
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p {
-  font-size: 0.8em;
-  font-size: "Montserrat";
+  font-size: 1em;
+  font-weight: 600;
   color: #000;
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon {
   color: #0000ff;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .digital-marketing-container .left .marketing-cards-container .left-cards-container .card:hover {
@@ -262,8 +263,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  /* filter: brightness(0.5); */
 }
 
 /* digital marketing style end */
@@ -485,29 +485,26 @@
 
 .home__service__content h2 {
   padding: 0.9375rem 0rem 0rem 0rem;
-  /* font-family: "Montserrat"; */
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .home__service__content p {
   color: var(--TextColor);
-  /* font-family: "Overpass"; */
-  font-size: 1.3rem;
-  padding: 0.625rem;
   line-height: 2rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
 .home__service__cards {
-  /* padding: 1.875rem 5.625rem; */
   width: 100%;
+  /* height: 30rem; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -535,22 +532,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 30rem;
-  height: 20rem;
+  height: 100%;
+  /* height: 20rem; */
   background-color: white;
   border-radius: 0.4375rem;
-  padding: 0.5rem;
+  padding: 2rem;
 }
 
 .home__service__cards__card__icon {
@@ -579,21 +578,27 @@
 .home__service__cards__card h3 {
   text-align: center;
   padding: 0.625rem;
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.5rem;
   color: black;
 }
 
 .home__service__cards__card p {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
+  /* height: 10rem; */
+  /* background-color: red; */
   font-size: 1.2rem;
   line-height: 1.6;
   text-align: center;
-  font-family: "Overpass";
   color: var(--TextColor);
-  line-height: 2rem;
   font-weight: 500;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 10rem;
 }
 
 .button-href {
@@ -638,20 +643,18 @@
 
 .home__works__header {
   text-align: center;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .home__works__header h2 {
-  font-family: "Montserrat";
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.9375rem 0rem 0rem 0rem;
 }
 
 .home__works__header p {
   color: var(--TextColor);
-  font-family: "Overpass";
-  font-size: 1.3rem;
-  padding: 0.625rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   font-weight: 500;
 }
@@ -664,16 +667,13 @@
 
 .home__works__content h2 {
   color: black;
-  /* padding: 15px 0px 0px 0px; */
   font-size: 2rem;
-  /* font-family: "Montserrat", sans-serif; */
 }
 
 .home__works__content p {
   color: #737b9a;
   font-size: 1.125rem;
   padding: 0.625rem;
-  /* font-family: "Montserrat", sans-serif; */
 }
 
 .home__works__cards {
@@ -808,9 +808,8 @@ border-radius: 0;
 }
 
 .home__blogs__content h2 {
-  padding: 15px 0px 0px 0px;
-  font-size: 2.5rem;
-  /* font-family: "Montserrat", sans-serif; */
+  /* padding: 15px 0px 0px 0px; */
+  font-size: 2rem;
 }
 
 .home__blogs__cards {
@@ -860,43 +859,38 @@ border-radius: 0;
 
 .home__blogs__cards__card__content h2 {
   padding: 1.25rem 1.875rem;
-  /* font-family: "Montserrat", sans-serif; */
 }
 
 .home__blogs__cards__card__content p {
   color: #737b73;
   padding: 0.625rem 1.875rem;
-  /* font-family: "Montserrat", sans-serif; */
   font-size: 1.125rem;
 }
 
 .home__feedback {
   background-color: #f9f9fc;
-
+  padding: 4px 0px 20px 0px;
   width: 100%;
-
+  padding-top: 3rem;
 }
 
 .home__feedback__content {
-
+  padding: 3rem 0;
   width: 40%;
   margin: auto;
   text-align: center;
-
 }
 
 .home__feedback__content h2 {
-  padding: 15px 0px 70px 0px;
-  font-size: 2.5rem;
-  /* font-family: "Montserrat", sans-serif; */
+  /* padding: 15px 0px 70px 0px; */
+  font-size: 2rem;
 }
 
 .home__feedback__content p {
-  color: #737b73;
-  font-size: 2rem;
-  color: #0000ff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--blueText);
   font-weight: 500;
-  /* font-family: "Montserrat", sans-serif; */
 }
 
 /* home blogs  component start  */
@@ -1033,7 +1027,7 @@ article:has(:hover, :focus) img {
   }
   .home__service__cards__card {
     width: 25.7rem;
-    height: 20rem;
+    /* height: 20rem; */
   }
   .home__works__cards {
     -webkit-box-pack: center;
@@ -1058,7 +1052,7 @@ article:has(:hover, :focus) img {
   }
   .home__service__cards__card {
     width: 35.5rem;
-    height: 20rem;
+    /* height: 20rem; */
   }
   .home__works__cards {
     -webkit-box-pack: center;
@@ -1157,16 +1151,14 @@ p {
     width: 100%;
   }
   .digital-marketing-container .left .top-container h2 {
-    font-family: "Montserrat";
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
-    font-family: "Overpass";
     font-size: 2rem;
     padding: 0.625rem;
-    line-height: 2rem;
-    font-weight: 500;
+    line-height: 3.5rem;
+    font-weight: 100;
   }
   .alternate-layout {
     -webkit-box-orient: vertical;
@@ -1180,18 +1172,37 @@ p {
     width: 100%;
   }
   .home__service__cards {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
-  .home__service__cards__card {
+  .home__service__cards a {
     width: 100%;
-    height: 20rem;
-    padding: 0 3rem;
+  }
+  .home__service__cards__card {
+    width: 100% !important;
+    /* height: 20rem; */
+    padding: 3rem;
   }
   .home__service__cards__card p {
     font-size: 1.5rem;
   }
   .home__service__cards__card h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .home__service .home__service__cards__card__icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .home__service .home__service__cards__card__icon .icon1 {
+    width: 60%;
+    height: 60%;
+  }
+  .home__service .home__service__cards__card__icon .badge {
+    font-size: 3rem;
   }
   .home__works__cards {
     /* background-color: red; */
@@ -1264,7 +1275,11 @@ p {
             flex-direction: column;
     width: 100%;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card {
+  .digital-marketing-container
+.left
+.marketing-cards-container
+.left-cards-container
+.card {
     width: 100%;
     padding: 1rem;
     gap: 2rem;
@@ -1273,10 +1288,20 @@ p {
             align-items: center;
     margin-bottom: 8px;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p {
+  .digital-marketing-container
+.left
+.marketing-cards-container
+.left-cards-container
+.card
+p {
     font-size: 2rem;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon {
+  .digital-marketing-container
+.left
+.marketing-cards-container
+.left-cards-container
+.card
+.card-icon {
     font-size: 2rem;
   }
   .left_right-container .left {

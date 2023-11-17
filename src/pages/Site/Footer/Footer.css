@@ -99,8 +99,6 @@
 
 .footer__contactInfoCol h2 {
   text-align: start;
-  font-family: "Overpass";
-  color: red;
   font-size: 1.5rem;
   color: white;
   margin-bottom: 0.8rem;
@@ -260,7 +258,6 @@
 }
 
 .footer__bottomUnderscore h2 {
-
   font-size: 1.5rem;
   color: white;
   margin-bottom: 0.8rem;
@@ -448,13 +445,32 @@
     gap: 20px;
     /* padding-right: 3rem; */
   }
+  .footer__subscribers {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__subscribe-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__subscribe-content p {
+    line-height: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 200px !important;
+    max-width: 540px !important;
   }
-  
+  .footer {
+    /* background-color: red; */
+  }
   .footer__subscribers {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -531,17 +547,38 @@
     display: inline-block;
     width: 3.125rem;
   }
+  .footer__subscribe-content h2 {
+    font-size: 1.8rem;
+  }
+  .footer__subscribe-content p {
+    font-size: 1.5rem;
+  }
+  .footer__iconContainer {
+    width: unset;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .container {
     max-width: 90% !important;
   }
+  .footer {
+    /* &__left {
+      width: 60%;
 
+    }
+    &__right {
+      width: 40%;
+    } */
+    /* &__socialMediaContainer {
+
+     
+    } */
+  }
   .footer__top {
-    margin-inline: auto;
+    /* margin-inline:auto; */
     margin-bottom: 5rem;
-    width: 90%;
+    width: 70% !important;
   }
   .footer__contactContainer a {
     font-size: 1.4rem;
@@ -555,7 +592,6 @@
   }
   .footer__subscribers {
     width: 90%;
-    margin-inline: auto;
   }
   .section-3 .left .title, .section-3 .left .header {
     font-size: 25px;
