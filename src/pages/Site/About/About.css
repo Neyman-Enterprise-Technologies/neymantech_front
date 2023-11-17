@@ -30,68 +30,6 @@
 }
 
 /* header links start */
-.aboutHeader {
-  background-color: #fafafc;
-  padding: 10rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 3rem;
-}
-
-.aboutTitle {
-  text-align: center;
-}
-
-.aboutTitle {
-  text-align: center;
-}
-
-.aboutTitle h2 {
-  display: inline-block;
-  font-size: 2.5rem;
-}
-
-.aboutLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* width: fit-content; */
-  gap: 0.5rem;
-}
-
-.aboutLinks a {
-  font-size: 1.3rem;
-  color: #0000ff;
-  font-weight: 500;
-}
-
-.aboutLinks .aboutLink {
-  color: #737b9a;
-}
-
-.aboutLinks .angleIcon {
-  font-size: 1.5rem;
-  margin-top: 0.1rem;
-  color: #737b9a;
-}
-
-.aboutTitle span {
-  border-bottom: 2px solid #f78da7;
-  font-size: 2.5rem;
-  padding-bottom: 1.2rem;
-}
-
 /* header links end */
 /* section 1 start*/
 .section-1 {
@@ -316,14 +254,12 @@
 }
 
 .section-2 .cardsContainer .card h2 {
-  font-family: "Montserrat";
   width: 100%;
   font-size: 20px;
 }
 
 .section-2 .cardsContainer .card .description {
-  font-family: "Overpass";
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--TextColor);
   padding-right: 0.5rem;
   line-height: 2.5rem;
@@ -371,11 +307,12 @@
   padding-right: 10rem;
 }
 
-.section-3 .left .description {
-  /* padding-right: 10rem; */
-  color: #737b9a;
+.section-3 .left .description,
+.section-3 .left .selected-description {
+  text-align: start;
+  color: var(--TextColor);
   line-height: 2.5rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -403,11 +340,6 @@
 
 .section-3 .left .selected-description {
   text-align: start;
-  /* padding-right: 10rem; */
-  color: #737b9a;
-  line-height: 2.5rem;
-  font-size: 1.2rem;
-  font-weight: 500;
 }
 
 /* left end */
@@ -459,7 +391,6 @@
 }
 
 .aboutCardsContainer__list {
- 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,8 +398,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-
 
 @media screen and (max-width: 1200px) {
   .container {
