@@ -291,7 +291,7 @@
       font-size: 2.8rem;
     }
     &__items {
-      font-size: 15px;
+      font-size: 2rem;
       padding: 2rem 0;
       /* margin-bottom: 1.5rem; */
     }
@@ -341,47 +341,59 @@
   }
   .cardsContainer {
 
+    &__cardContentContainer {
+      height: 32rem;
+      padding: 2rem 1rem;
+    }
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    /* gap: 5rem; */
+  }
+ 
+
+  /* .cardsContainer {
+
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    gap: 5rem;
 
     &__exchangeRate,
     &__period {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+    }
+    &__itemsContainer {
+      margin-bottom: 4rem 0;
+      padding: 4rem 0;
+      gap: 3rem;
     }
     &__card {
       width: 100%;
       border-radius: 10px;
     }
     &__cardHeader {
-      font-size: 8rem ;
+      font-size: 5rem;
+      padding: 5rem 0;
     }
     &__price {
-      font-size: 2.8rem;
+      font-size:5rem;
     }
     &__items {
-      /* font-size: 30px; */
-      padding: 5rem 0;
-      background-color: red;
-      /* margin-bottom: 1.5rem; */
-    }
-    &__itemsContainer {
-      margin-bottom: 2.5rem 0;
-      padding: 4rem 0;
-    }
-    &__tick-icon {
-      font-size: 3.5rem;
-    }
+      font-size: 3rem;
+  
+}
+  
+
     &__notAveilble-icon {
       font-size: 3.5rem;
-      position: relative;
+    
     }
     &__cardContentContainer {
       height: 250px;
       padding: 2rem 1rem;
     }
     &__cardContentContainer::-webkit-scrollbar {
-      width: 1.5rem;
+      width: 4rem;
     }
 
     &__cardContentContainer::-webkit-scrollbar-track {
@@ -401,14 +413,6 @@
     }
   }
   .cardsContainer .cardsContainer__pricePeriodContainer {
-    padding: 2rem;
-  
-
-  
- 
-
-  
-  
-    
-  }
+    padding: 5rem;
+  } */
 }
