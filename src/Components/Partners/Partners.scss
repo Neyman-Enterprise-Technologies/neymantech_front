@@ -8,16 +8,19 @@
 }
 .itemmm {
   position: relative;
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  min-height: 15rem;
-  min-width: 15rem;
-  padding: 20px;
+ /* background-color: red; */
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+  min-height: 18rem;
+  min-width: 18rem;
+  padding: 40px;
+
+
 }
-.itemmm .companyName {
+.itemmm .companyName{
+
   position: absolute;
   bottom: 0;
   font-size: 1rem;
@@ -31,11 +34,11 @@
 }
 .itemmm img {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
-  border-radius: 50%;
+  /* // border-radius: 50%; */
   pointer-events: none;
-  box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: -10px 10px 20px 0  rgba(0,0,0,0.5); 
   border: 2px solid white;
 }
 .inner-carousel {
@@ -54,18 +57,16 @@
   .container {
     max-width: 720px !important;
   }
-  .itemmm {
-    width: 18rem;
-    height: 18rem;
-    padding: 20px;
+  .itemmm{
+width: 18rem;
+height: 18rem;
+padding: 20px;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
     max-width: 540px !important;
   }
-
-  .itemmm {
-    padding: 0;
-  }
+ 
+ 
 }
