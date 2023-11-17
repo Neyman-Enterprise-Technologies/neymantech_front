@@ -168,6 +168,7 @@ useEffect(() => {
 
             {isModalOpen && (
               
+
               <motion.div
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
