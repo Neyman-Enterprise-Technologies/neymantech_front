@@ -58,7 +58,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
       )}
       {isProjectPage && (
         <div className="container">
-          {/* <div className="modal-section">
+          <div className="modal-section">
             <div className="kateqoriya-sec">
               <div className="kateqoriya">
                 <div>
@@ -132,7 +132,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
                 </div>
               </motion.div>
             )}
-          </div> */}
+          </div>
         </div>
       )}
 
