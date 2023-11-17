@@ -345,7 +345,8 @@ gap: 20px;
   .footer {
     /* background-color: red; */
     &__subscribers {
-      flex-direction: column;
+      /* flex-direction: column; */
+      display: flex;
       gap: 2rem;
     }
     &__top {
