@@ -141,7 +141,7 @@ useEffect(() => {
           {/*    header end*/}
 
           {isModalOpen && <div className="overlay" onClick={openModal} />}
-          <div className="modal-section">
+          {/* <div className="modal-section">
             <div className="kateqoriya-sec">
               <div className="kateqoriya">
                 <div>
@@ -200,7 +200,7 @@ useEffect(() => {
                 </div>
               </motion.div>
             )}
-          </div>
+          </div> */}
 
          <div className="container">
          <div className="cardsContainer">
