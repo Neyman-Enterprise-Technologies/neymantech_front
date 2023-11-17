@@ -28,12 +28,13 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
       <div className="cardsContainer__cardContentContainer">
         {sorted.map((item, index) => (
           <div className="cardsContainer__itemsContainer" key={index}>
-            <p className="cardsContainer__items">{item.property_name}</p>
+          
             {item.is_active ? (
               <TiTick className="cardsContainer__tick-icon" />
             ) : (
               <AiOutlineClose className="cardsContainer__notAveilble-icon" />
             )}
+              <p className="cardsContainer__items">{item.property_name}</p>
           </div>
         ))}
       </div>

@@ -11,19 +11,16 @@
   font-style: italic;
   line-height: 1.6;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   margin-left: 20px;
 }
 
 .Slider__div span {
   color: #0000FF;
   padding: 5px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .Slider__div h3 {
   padding: 5px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .Slider__div img {
