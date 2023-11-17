@@ -59,7 +59,7 @@ export default function Price() {
     if (window.scrollY > 100) {
       setShowIcon(true);
     } else {
-      setShowIcon(false);
+      setShowIcon(false); 
     }
   };
 
