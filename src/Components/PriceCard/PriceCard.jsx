@@ -22,8 +22,7 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
         <p className="cardsContainer__exchangeRate">{symbol}</p>
         <span className="cardsContainer__price">{price}</span>
         <p className="cardsContainer__period">/ {period}</p>
-        <p className="cardsContainer__period">/ {period}</p>
-        <p className="cardsContainer__period">/ {period}</p>
+       
       </div>
 
       <div className="cardsContainer__devider"></div>

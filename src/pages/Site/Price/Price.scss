@@ -17,10 +17,11 @@
   margin-bottom: 1rem;
 }
 .header p {
+  
   color: var(--TextColor);
   line-height: 2rem;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 500; 
 }
 /* header end */
 
@@ -146,7 +147,7 @@
     /* max-height: 3.02rem; */
 
     width: 100%;
-    color: var(--TextColor);
+    color: var(--TextColor); 
     letter-spacing: -0.05rem;
     white-space: nowrap;
     font-size: 1.2rem;
@@ -224,6 +225,11 @@
 
       overflow: auto;
     }
+    &__cardHeader {
+    padding: 1.5rem 0;
+      font-size: 1.5rem;
+ 
+    }
 
     .cardsContainer__items {
       padding: 0.5rem 0;
@@ -250,6 +256,22 @@
 
       overflow: auto;
     }
+    &__items {
+    
+      font-size: 1.7rem;
+  
+  
+    }
+    &__period,
+    &__exchangeRate {
+      font-size: 1.3rem;
+     
+    }
+    &__cardHeader {
+      padding: 2rem 0;
+        font-size: 2rem;
+   
+      }
 
     &__card {
       transition: 0.5s all;
@@ -262,6 +284,14 @@
       overflow: hidden;
       padding-bottom: 1.5rem;
     }
+    &__price {
+      font-size: 2.5rem;
+    }
+  }
+  .header p{
+    display: inline-block;
+    text-align: center;
+   width: 60%;
   }
 }
 
@@ -291,7 +321,7 @@
       font-size: 2.8rem;
     }
     &__items {
-      font-size: 15px;
+      font-size: 2rem;
       padding: 2rem 0;
       /* margin-bottom: 1.5rem; */
     }
@@ -333,6 +363,15 @@
   .cardsContainer .cardsContainer__pricePeriodContainer {
     padding: 2rem;
   }
+  .header p{
+    display: inline-block;
+    text-align: center;
+   width: 80%;
+  }
+  .kateqoriya-sec{
+    height:5rem;
+    background-color: red;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -341,47 +380,60 @@
   }
   .cardsContainer {
 
+    &__cardContentContainer {
+      height: 32rem;
+      padding: 2rem 1rem;
+    }
+  
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    /* gap: 5rem; */
+  }
+ 
+
+  /* .cardsContainer {
+
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    gap: 5rem;
 
     &__exchangeRate,
     &__period {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+    }
+    &__itemsContainer {
+      margin-bottom: 4rem 0;
+      padding: 4rem 0;
+      gap: 3rem;
     }
     &__card {
       width: 100%;
       border-radius: 10px;
     }
     &__cardHeader {
-      font-size: 8rem ;
+      font-size: 5rem;
+      padding: 5rem 0;
     }
     &__price {
-      font-size: 2.8rem;
+      font-size:5rem;
     }
     &__items {
-      /* font-size: 30px; */
-      padding: 5rem 0;
-      background-color: red;
-      /* margin-bottom: 1.5rem; */
-    }
-    &__itemsContainer {
-      margin-bottom: 2.5rem 0;
-      padding: 4rem 0;
-    }
-    &__tick-icon {
-      font-size: 3.5rem;
-    }
+      font-size: 3rem;
+  
+}
+  
+
     &__notAveilble-icon {
       font-size: 3.5rem;
-      position: relative;
+    
     }
     &__cardContentContainer {
       height: 250px;
       padding: 2rem 1rem;
     }
     &__cardContentContainer::-webkit-scrollbar {
-      width: 1.5rem;
+      width: 4rem;
     }
 
     &__cardContentContainer::-webkit-scrollbar-track {
@@ -401,14 +453,6 @@
     }
   }
   .cardsContainer .cardsContainer__pricePeriodContainer {
-    padding: 2rem;
-  
-
-  
- 
-
-  
-  
-    
-  }
+    padding: 5rem;
+  } */
 }

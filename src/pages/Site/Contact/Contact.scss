@@ -65,14 +65,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-gap: 3rem;
+  gap: 3rem;
   padding: 5rem 0 0 0;
 }
 .faqSection-2 .faqTitleBottom .about-description {
   font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--blueText);
-    font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--blueText);
+  font-weight: 500;
 }
 .faqSection-2 .faqTitleBottom h2 {
   font-size: 2rem;
@@ -80,11 +80,11 @@ gap: 3rem;
 
 .faqSection-2 .faqTitleBottom .faqDescription {
   color: var(--TextColor);
-text-align: center;
-    font-size: 1.3rem;
-    padding: 0.625rem;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0.625rem;
   line-height: 2rem;
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .faqSection-2 .section-2-content {
@@ -92,20 +92,18 @@ text-align: center;
   padding-bottom: 4rem;
   display: flex;
   justify-content: space-between;
-  /* gap: 2rem; */
+  gap: 2rem;
   width: 100%;
 }
 .faqSection-2 .section-2-content .left {
   width: 50%;
   position: relative;
-
 }
 .faqSection-2 .section-2-content .left img {
   width: 100%;
   height: 100%;
   position: absolute;
   object-fit: contain;
-
 }
 .faqSection-2 .section-2-content .right {
   width: 100%;
@@ -122,7 +120,6 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-
 }
 .faqSection-2 .section-2-content .right form textarea {
   font-size: 1.5rem;
@@ -136,14 +133,13 @@ text-align: center;
   border-radius: 0.5rem;
   width: 100%;
   outline: none;
-  border: 1px solid rgba(0,0,0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 
   /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
- 
 }
 .faqSection-2 .section-2-content .right form textarea::placeholder {
   font-size: 1.2rem;
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .faqSection-2 .section-2-content .right form .inputs input {
@@ -152,14 +148,13 @@ opacity: 0.8;
   border-radius: 0.5rem;
   width: 100%;
   outline: none;
-  border: 1px solid rgba(0,0,0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 
   /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
-
 }
 .faqSection-2 .section-2-content .right form .inputs input::placeholder {
   font-size: 1.2rem;
- opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* BUTTON ANIMATION START */
@@ -209,7 +204,7 @@ button:hover::before {
   .container {
     max-width: 540px !important;
   }
-  .contactCardContainer{
+  .contactCardContainer {
     justify-content: center;
   }
   .contactCardContainer .card {
@@ -217,104 +212,130 @@ button:hover::before {
     justify-content: center;
     width: 100%;
     margin-inline: auto;
- 
   }
-  .faqSection-2 .faqTitleBottom .faqDescription{
+  .faqSection-2 .faqTitleBottom .faqDescription {
     font-size: 1.8rem;
     line-height: 2.5rem;
   }
-  .faqSection-2 .faqTitleBottom .about-description{
+  .faqSection-2 .faqTitleBottom .about-description {
     font-size: 2rem;
   }
-  .faqSection-2 .faqTitleBottom h2{
+  .faqSection-2 .faqTitleBottom h2 {
     font-size: 2.5rem;
   }
 
- 
-  .faqSection-2 .section-2-content{
+  .faqSection-2 .section-2-content {
     flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 3rem;
   }
-  .faqSection-2 .section-2-content .right form{
+  .faqSection-2 .section-2-content .right form {
     width: 100%;
   }
-  .faqSection-2 .section-2-content .right form .inputs{
+  .faqSection-2 .section-2-content .right form .inputs {
     flex-direction: column;
     gap: 2rem;
   }
   .faqSection-2 .section-2-content .right form .inputs input,
-  .faqSection-2 .section-2-content .right form textarea{
+  .faqSection-2 .section-2-content .right form textarea {
     padding: 2rem;
   }
   .faqSection-2 .section-2-content .right form .inputs input::placeholder,
-  .faqSection-2 .section-2-content .right form textarea::placeholder{
+  .faqSection-2 .section-2-content .right form textarea::placeholder {
     font-size: 1.8rem;
   }
- 
-  .footer__subscribers{
-    display: flex;
-  gap: 1.5rem;
-    flex-direction: column;
 
- 
-  }
-  .faqSection-2 .section-2-content .left{
+  .faqSection-2 .section-2-content .left {
     width: 100%;
     height: 300px;
   }
-  .footer__subscribe-content{
+  .footer__subscribe-content {
     gap: 2rem;
     align-content: center;
   }
-  .contactCardContainer .card .icon-container .contactIcon{
+  .contactCardContainer .card .icon-container .contactIcon {
     width: 40%;
     height: 40%;
   }
-  .contactCardContainer{
+  .contactCardContainer {
     gap: 2.5rem;
   }
-  .contactCardContainer .card .title{
+  .contactCardContainer .card .title {
     font-size: 2rem;
   }
-  .contactCardContainer .card .icon-container{
+  .contactCardContainer .card .icon-container {
     width: 6rem;
     height: 6rem;
   }
-
 }
 @media screen and (max-width: 576px) {
   .container {
     max-width: 90% !important;
- 
   }
-  .contactCardContainer{
+  .contactCardContainer {
     justify-content: center;
-    padding: 0 10rem;
+    /* padding: 0 11rem; */
     margin: 3rem 0;
-   
-   
-   
   }
-  
- 
-  .faqSection-2 .section-2-content{
+
+  .faqSection-2 .section-2-content {
     align-items: center;
   }
-  .faqSection-2 .section-2-content .left{
+  .faqSection-2 .section-2-content .left {
     width: 100%;
-   height: 200px;
+    height: 200px;
   }
- 
-  .faqSection-2 .section-2-content .right form .inputs{
+
+  .faqSection-2 .section-2-content .right form .inputs {
     flex-direction: column;
   }
-  .faqSection-2 .section-2-content{
-   flex-direction: column;
-   gap: 3rem;
+  .faqSection-2 .section-2-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .contactCardContainer .card {
+    padding: 4rem 0;
   }
 
+  .contactCardContainer .card .icon-container {
+    width: 8rem;
+    height: 8rem;
+  }
+  .contactCardContainer .card .title {
+    font-size: 3rem;
+  }
+  .faqSection-2 .faqTitleBottom .about-description {
+    font-size: 3rem;
+  }
+  .faqSection-2 .faqTitleBottom h2 {
+    font-size: 3.5rem;
+  }
+  .faqSection-2 .faqTitleBottom .faqDescription {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .faqSection-2 .section-2-content .right form .inputs input {
+    padding: 2.5rem;
+  }
+  .faqSection-2 .section-2-content .right form textarea {
+    padding: 4rem 2.5rem;
+  }
 
+  .faqSection-2 .section-2-content .right form .inputs input::placeholder,
+  .faqSection-2 .section-2-content .right form textarea::placeholder {
+    font-size: 2.5rem;
+  }
+  button {
+    font-size: 0.9rem;
+    width: 15rem;
+    height: 6rem;
+    padding: 0.9375rem 1.875rem;
+  }
+  button span {
+    font-size: 1.5rem;
+  }
+  .contactCardContainer .card:hover {
+    transform: translateY(-6px);
+  }
 }
-

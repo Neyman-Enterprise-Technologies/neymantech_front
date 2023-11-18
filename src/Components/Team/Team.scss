@@ -1,24 +1,18 @@
-
-
-
 .teamSection .teamHeaderContainer {
   text-align: center;
   padding: 5rem 0;
-
 }
 .teamSection .teamHeaderContainer p {
-
   font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--blueText);
-    font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--blueText);
+  font-weight: 500;
 }
 .teamSection .teamHeaderContainer h2 {
-
   font-size: 2rem;
 }
 .teamSection .team-container {
-  position: relative;
+
   display: flex;
   width: 100%;
   justify-content: center;
@@ -26,7 +20,7 @@
   flex-wrap: wrap;
   padding: 5rem 0;
   gap: 2rem;
-  
+
   &__socialContainer {
     display: flex;
     justify-content: center;
@@ -63,7 +57,7 @@
     transition: transform 0.4s;
     cursor: pointer;
     border-radius: 0.6rem;
- 
+
     &:hover {
       transform: translateY(-10px);
     }
@@ -81,7 +75,6 @@
       }
       &:hover .team-container__name,
       &:hover .team-container__job {
-    
         color: white;
       }
       &:hover .team-container__profile-container {
@@ -96,7 +89,9 @@
     position: relative;
     width: 100%;
     height: 30rem;
- overflow: hidden;
+    overflow: hidden;
+    background-color: rgb(2, 0, 0);
+    border-radius: 1rem 1rem 0 0;
 
     img {
       position: absolute;
@@ -104,7 +99,7 @@
       width: 100%;
       height: 100%;
       transition: all 0.5s;
-      border-radius: 0.6rem 0.6rem 0 0 ;
+      border-radius: 1rem 1rem 0 0;
     }
   }
   &__profile-details {
@@ -118,17 +113,21 @@
     border-radius: 0 0 0.6rem 0.6rem;
   }
   &__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 600;
-
   }
   &__job {
     text-align: center;
     font-size: 1.3rem;
     color: blue;
     font-weight: 500;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
@@ -142,7 +141,6 @@
     max-width: 720px !important;
   }
 
-  
   .section-2 .cardsContainer .card h2 {
     font-size: 20px;
   }
@@ -181,99 +179,56 @@
   }
   .teamSection .team-container {
     width: 100%;
-gap: 6rem;
-    flex-direction: column;
-   &__cardContainer{
-     width: 100%;
-  }
-}
-  .teamSection .team-container__profile-container {
-    /* width: 800px; */
-    height: 800px;
-  }
-  /* .team-container__cardContainer{
-    width: 800px;
-  } */
-  /* .team-container__cardContainer{
-    width: 800px;
-   
-  } */
-  .teamSection .team-container__profile-details {
-    padding: 40px 0;
-  }
-  .teamSection .team-container__name{
-    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
 
-
-  }
-  .teamSection .team-container__job{
-    font-size: 18px;
-  }
-  .teamSection .team-container__profile-details{
     gap: 2rem;
   }
- 
-  
-  .section-3 .left .header{
-    font-size: 20px;
-  }
 
-  .section-2 .cardsContainer .card .description {
-    line-height: 25px;
-  }
-  .section-2 .cardsContainer{
-    gap: 50px;
-  }
-  .teamSection .teamHeaderContainer p{
-    font-size: 20px;
-  }
-  .teamSection .teamHeaderContainer h2{
-    font-size: 20px;
-  }
-  .section-2 .cardsContainer .card {
-    gap: 20px;
-  }
-  
-  .section-3 .left .description {
-    line-height: 25px;
-  }
-  .section-3 .left .selected-description {
-    line-height: 25px;
-    text-align: start;
-  }
-  .section-3 .left .title {
-    font-size: 20px;
-  }
-
-  .section-2 .cardsContainer .card .cardList p {
-    font-size: 15px;
-  }
-  .section-2 .cardsContainer .card .cardListsContainer{
-    gap: 20px;
+  .teamSection .team-container__cardContainer {
+    width: calc(50% - 1rem);
   }
 }
 @media screen and (max-width: 576px) {
   .container {
-
-    max-width: 200px !important;
+    max-width: 100% !important;
   }
-  .section-3{
+  .section-3 {
     margin-inline: auto;
   }
-  .section-3 .left, .section-3 .right{
+  .section-3 .left,
+  .section-3 .right {
     margin-inline: auto;
     width: 90%;
   }
-  .teamSection .team-container{
-    width: 90%;
+  .teamSection .team-container {
+    width: 100%;
     margin-inline: auto;
+    gap: 12rem;
   }
-  .teamSection .team-container__profile-container{
-    height: 80rem;
+  .teamSection .team-container__cardContainer {
+    width: 100%;
+    height:50rem;
+    
   }
-  .teamSection .team-container__profile-details{
+  /* .teamSection .team-container{
+    height: 400px;
+  } */
+ 
+  .teamSection .team-container__profile-details {
     padding: 3rem 0;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  }
+  .teamSection .team-container__name{
+    font-size: 4rem;
+  }
+  .teamSection .team-container__job {
+
+    font-size: 3rem;
+  }
+  .section-2 .cardsContainer .card .description {
+    line-height: 4rem;
   }
 
-  
+ 
 }
