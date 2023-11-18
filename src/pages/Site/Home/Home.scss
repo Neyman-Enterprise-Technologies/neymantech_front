@@ -1127,7 +1127,7 @@ font-size: 3rem;
 
     &__card {
       flex-direction: column;
-      width: 90%;
+
       margin-inline: auto;
     }
   
@@ -1147,11 +1147,13 @@ font-size: 3rem;
     font-size: 2.5rem;
  }
   .home__service__content {
-    width: 90%;
+    width: 100%;
   }
   .left-cards-container {
-    flex-direction: column;
-    width: 100%;
+    /* flex-direction: column; */
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
   }
   .digital-marketing-container
     .left
@@ -1202,6 +1204,7 @@ font-size: 3rem;
     font-size: 2.3rem;
   }
   .home__service__cards__card{
+ 
     gap: 3rem;
   }
   .home__works__header h2{
@@ -1224,6 +1227,9 @@ font-size: 3rem;
   }
   .cards-wrapper .cards-container .card .bottom-content:after{
     font-size: 2rem;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card{
+    width: calc(50% - 0.5rem);
   }
   .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon{
     position: relative;
