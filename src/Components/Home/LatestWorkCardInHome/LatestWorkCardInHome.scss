@@ -57,6 +57,7 @@
 }
 
 .kateqoriya-sec {
+  position: relative;
   display: flex;
 justify-content: center;
   height: 4rem;
@@ -67,7 +68,7 @@ justify-content: center;
 }
 
 .kateqoriya {
-
+width: 100%;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -85,7 +86,7 @@ background-color:#f2f2f2;
 .kateqoriya p {
 
   color: #484b5e;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .kateqoriya-sec input {
@@ -111,13 +112,15 @@ background-color:#f2f2f2;
 }
 
 .input-search input {
+  font-size: 2rem;
   outline: none;
-  width: 350px;
+  width: 100%;
+  height: 100%;
   background-color: #f7f3f3;
 }
 .input-search input::placeholder {
  
-  font-size: 14px;
+  font-size: 2rem;
 
 }
 .input-search img {
@@ -147,7 +150,7 @@ z-index: 1;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(3, 12, 34, 0.8) ;
   z-index: 1; 
   /* backdrop-filter: blur(2px); */
 }
@@ -157,18 +160,50 @@ z-index: 1;
   margin-top: 10px;
 margin-inline: auto;
   position: relative;
- display: flex;
-padding: 20px;
+padding: 4rem;
+overflow: hidden;
+
 border-radius: 2rem;
 /* width: 100%;  */
 z-index: 999999999;
-background-color: rgba(255, 255, 255, 0.1);
+background-color: rgba(8, 28, 78, 0.2);
+overflow-y: scroll;
+
+    height: 319px;
+  
 
 
 
 }
+
+
+.modal-wrapper::-webkit-scrollbar {
+  width: 3em;
+}
+
+.modal-wrapper::-webkit-scrollbar-track {
+  background-color: #fbfbfb;
+  border-radius: 2rem;
+}
+
+.modal-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #a6c5cd);
+  border-radius: 16px;
+}
+.modal-wrapper::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #839fa6);
+}
+
+.modal-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+
+
+
 .modal ul{
+
  list-style-type: none;
+
  
 }
 .modal ul li{
@@ -176,9 +211,9 @@ background-color: rgba(255, 255, 255, 0.1);
 position: relative;
 padding: 10px 25px;
 margin-bottom: 5px;
-background-color: rgba(255, 255, 255, 0.5);
+background-color: rgba(255, 255, 255, 0.8);
 color: blck;
-font-size: 1.3rem;
+font-size: 2rem;
 font-weight: 500;
 border-radius: 5px;
 display:flex;
@@ -192,7 +227,7 @@ font-weight: 600;
 }
 
 .modal ul li .modal-angle-icon{
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .modal-2{
   position: absolute;
