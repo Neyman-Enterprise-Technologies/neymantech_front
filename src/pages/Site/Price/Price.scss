@@ -17,6 +17,7 @@
   margin-bottom: 1rem;
 }
 .header p {
+  
   color: var(--TextColor);
   line-height: 2rem;
   font-size: 1.4rem;
@@ -287,6 +288,11 @@
       font-size: 2.5rem;
     }
   }
+  .header p{
+    display: inline-block;
+    text-align: center;
+   width: 60%;
+  }
 }
 
 /* cards container end */
@@ -357,6 +363,15 @@
   .cardsContainer .cardsContainer__pricePeriodContainer {
     padding: 2rem;
   }
+  .header p{
+    display: inline-block;
+    text-align: center;
+   width: 80%;
+  }
+  .kateqoriya-sec{
+    height:5rem;
+    background-color: red;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -369,6 +384,7 @@
       height: 32rem;
       padding: 2rem 1rem;
     }
+  
     /* align-items: center; */
     /* justify-content: flex-start; */
     /* gap: 5rem; */
