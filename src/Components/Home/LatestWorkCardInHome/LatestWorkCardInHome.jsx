@@ -7,6 +7,7 @@ import { FaAngleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
+  console.log(latestWorkCardInHome);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -28,15 +29,10 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
   };
   const filteredWorks = latestWorkCardInHome
     ? latestWorkCardInHome.filter(
-        (work) =>
-          work.services_property.title
-            .toLowerCase()
-            .includes(search.toLowerCase()) ||
-          work.services_property.services.title
-            .toLowerCase()
-            .includes(search.toLowerCase())
-      )
-    : [];
+        (work) =>work.company_name.toLowerCase().includes(search.toLowerCase()) ||
+          work.company_name.toLowerCase().includes(search.toLowerCase())): [];
+  console.log(latestWorkCardInHome);
+  console.log(filteredWorks);
 
   const handleClick = (title) => {
     setSearch(title);
@@ -58,7 +54,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
       )}
       {isProjectPage && (
         <div className="container">
-          {/* <div className="modal-section">
+          <div className="modal-section">
             <div className="kateqoriya-sec">
               <div className="kateqoriya">
                 <div>
@@ -132,33 +128,31 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
                 </div>
               </motion.div>
             )}
-          </div> */}
+          </div>
         </div>
       )}
 
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1 }}
-          className="home__works__cards"
-        >
-          {filteredWorks &&
-            filteredWorks.map((card) => (
-              <Link to={card.link_url} key={card.id}>
-                <div className="container" key={card.id}>
-                  <div className="home__works__cards__card">
-                    <img src={card.photo} alt={card.company_name} />
-                    <div className="info">
-                      <p className="heading">{card.company_name}</p>
-                      <p className="description">{card.services_category}</p>
-                    </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1 }}
+        className="home__works__cards"
+      >
+        {filteredWorks &&
+          filteredWorks.map((card) => (
+            <Link to={card.link_url} key={card.id}>
+              <div className="container" key={card.id}>
+                <div className="home__works__cards__card">
+                  <img src={card.photo} alt={card.company_name} />
+                  <div className="info">
+                    <p className="heading">{card.company_name}</p>
+                    <p className="description">{card.services_category}</p>
                   </div>
                 </div>
-              </Link>
-            ))}
-        </motion.div>
-      </div>
+              </div>
+            </Link>
+          ))}
+      </motion.div>
     </>
   );
 };
