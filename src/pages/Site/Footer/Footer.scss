@@ -475,9 +475,7 @@ gap: 20px;
    
     }
   }
-  .section-3 .left .title, .section-3 .left .header{
-    font-size: 25px;
-  }
+
   .footer__socialMediaContainer{
     padding-right: 63rem;
     gap: 20px;
@@ -489,8 +487,11 @@ gap: 20px;
   .section-3 .left .selected-description{
     font-size:14px ;
   }
-  .section-3 .left .title, .section-3 .left .he{
-    font-size: 20px;
+ 
+  
+  .section-3 .left .title, .section-3 .left .header,
+  .section-3 .left .title, .section-3 .left .title{
+    font-size: 3rem;
   }
   .teamSection .teamHeaderContainer p{
     font-size: 20px;
@@ -508,4 +509,51 @@ gap: 20px;
     width: 90%;
     margin-inline: auto;
   }
+  .footer__headerandBorderBottom h2,
+  .footer__bottomUnderscore h2{
+    font-size: 3.5rem;
+  }
+  .footer__phoneInfo p,
+  .footer__contactContainer a{
+    font-size: 2rem;
+  }
+  .footer__socialMediaLinks{
+    font-size: 3rem;
+  }
+  .footer__socialIcon{
+    font-size: 3rem;
+  }
+  .footer__phoneIcon {
+font-size: 3rem;
+}
+.footer__quickLinksContainer a{
+  font-size: 2.5rem;
+}
+.footer__subscribe-content h2{
+  font-size: 2rem;
+}
+.footer__subscribe-content p{
+  font-size: 2rem;
+}
+.footer__subscribe-input{
+  height: 4rem;
+}
+.footer__subscribe-input::placeholder{
+  font-size: 1.5rem;
+}
+
+.footer__subscribe-button{
+  height: 4rem;
+  font-size: 1.5rem;
+}
+.footer__copyrightLeft{
+  font-size: 2rem;
+}
+.footer__copyrightRight{
+  font-size: 2rem;
+}
+.footer__copyright{
+  margin-inline: unset;
+}
+
 }
