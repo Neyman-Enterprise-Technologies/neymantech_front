@@ -33,6 +33,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 :root {
   --TextColor: #7d839e;
@@ -42,7 +43,7 @@
   --buttonHoverColor: #f78da7;
   --TextWithDarkBg: #f5f5f5;
 }
-/* @keyframes scrollAnimation {
+@keyframes scrollAnimation {
   0% {
     opacity: 0.1;
     top: 200px;
@@ -59,7 +60,7 @@
     opacity: 0.8;
     top: 600px;
   }
-} */
+}
 
 .scroll-to-top {
   position: fixed;
