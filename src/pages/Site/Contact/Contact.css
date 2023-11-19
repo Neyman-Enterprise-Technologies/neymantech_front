@@ -400,7 +400,7 @@ button:hover::before {
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 90% !important;
+    max-width: 100% !important;
   }
   .contactCardContainer {
     -webkit-box-pack: center;

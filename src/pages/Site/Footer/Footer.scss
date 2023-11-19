@@ -1,7 +1,4 @@
-.container {
-  max-width: 1320px;
-  width: 100%;
-}
+
 .footer {
   position: relative;
 
@@ -149,9 +146,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    /* height: 1.875rem; */
-    /* width: 100%; */
-    /* padding-right: 6rem; */
+ 
     gap: 30px;
   }
 
@@ -285,9 +280,7 @@
   }
 }
 @media (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
+  
   .footer {
     &__socialMediaContainer {
       gap: 30px;
@@ -296,9 +289,7 @@
 }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
+
   .footer {
     &__top {
       margin-bottom: 5rem;
@@ -318,9 +309,9 @@
       width: 40%;
     }
     &__socialMediaContainer {
-      /* width: 100%; */
+
 gap: 20px;
-      /* padding-right: 3rem; */
+    
     }
     
   }
@@ -338,14 +329,12 @@ gap: 20px;
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
+ 
  
   .footer {
-    /* background-color: red; */
+
     &__subscribers {
-      /* flex-direction: column; */
+ 
       display: flex;
       gap: 2rem;
     }
@@ -436,14 +425,11 @@ gap: 20px;
 }
 
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 90%!important;
-
-  }
+ 
   .footer {
    
     &__top {
-      /* margin-inline:auto; */
+
       margin-bottom: 5rem;
       width: 70%!important;
     }
@@ -455,25 +441,7 @@ gap: 20px;
     &__galleries {
       height: 15rem;
     }
-    /* &__left {
-      width: 60%;
-
-    }
-    &__right {
-      width: 40%;
-    } */
-    /* &__socialMediaContainer {
-
-     
-    } */
-    &__copyright{
-      width: 90%;
-      margin-inline: auto;
-    }
-    &__subscribers{
-      width: 90%;
    
-    }
   }
 
   .footer__socialMediaContainer{
@@ -506,9 +474,10 @@ gap: 20px;
     height: 45rem;
   }
   .home__works__header{
-    width: 90%;
+    /* width: 90%; */
     margin-inline: auto;
   }
+
   .footer__headerandBorderBottom h2,
   .footer__bottomUnderscore h2{
     font-size: 3.5rem;

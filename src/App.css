@@ -30,6 +30,10 @@
   /* font-family: "Raleway";  */
   font-family: "Overpass";
   /* font-family: "Roboto";  */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 :root {
   --TextColor: #7d839e;
@@ -206,6 +210,7 @@
 @media screen and (max-width: 576px) {
   .container {
     max-width: 90% !important;
+
   }
   .linkLinks a,
 .linkLinks .angleIcon{
@@ -219,5 +224,11 @@
   font-size: 3.5rem;
 }
 
+}
+@media screen and (max-width: 430px) {
+  .container {
+    max-width: 85% !important;
+  
+  }
 }
 

@@ -663,7 +663,7 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 90% !important;
+    max-width: 100% !important;
   }
   .blogs {
     -webkit-box-orient: vertical;

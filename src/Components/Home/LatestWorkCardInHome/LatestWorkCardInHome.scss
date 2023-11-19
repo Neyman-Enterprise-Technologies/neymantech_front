@@ -156,7 +156,7 @@ z-index: 1;
 }
 
 .modal-wrapper {
-  width: 100%;
+  width: 50%;
   margin-top: 10px;
 margin-inline: auto;
   position: relative;
@@ -168,8 +168,7 @@ border-radius: 2rem;
 z-index: 999999999;
 background-color: rgba(8, 28, 78, 0.2);
 overflow-y: scroll;
-
-    height: 319px;
+height: 40rem;
   
 
 
@@ -249,57 +248,28 @@ width: 200px;
 .category-icon {
   font-size: 20px;
 }
-/* @media screen and (max-width: 576px) {
-  .container {
-max-width:80% ;
-  }
- .modal-section{
-  background-color: red;
-  width: 200px;
-  margin-inline: auto;
- }
- .kateqoriya-sec{
-  background-color: yellow;
-  width: 200px;
-  margin-inline: auto;
- }
- .modal-section{
-  background-color: yellow;
-  width: 200px;
-  margin-inline: auto;
- }
- .kateqoriya{
-  background-color: yellow;
-  width: 200px;
-  margin-inline: auto;
- }
 
-  
-  
-} */
 
 @media screen and (max-width: 576px) {
-  .container {
-max-width:200px ;
-  }
+ 
  .modal-section{
 
   width: 200px;
   margin-inline: auto;
  }
  .kateqoriya-sec{
-  background-color: yellow;
-  width: 200px;
+
+  /* width: 200px; */
   margin-inline: auto;
  }
  .modal-section{
-  background-color: yellow;
-  width: 200px;
+
+  /* width: 200px; */
   margin-inline: auto;
  }
  .kateqoriya{
-  background-color: yellow;
-  width: 200px;
+
+  /* width: 200px; */
   margin-inline: auto;
  }
 

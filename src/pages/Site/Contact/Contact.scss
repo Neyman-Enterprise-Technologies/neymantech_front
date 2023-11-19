@@ -3,11 +3,7 @@
   padding: 0;
   text-decoration: none;
 }
-.container {
-  max-width: 1320px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 .contactCardContainer {
   gap: 1rem;
@@ -201,9 +197,7 @@ button:hover::before {
 /* BUTTON ANIMATION START */
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
+ 
   .contactCardContainer {
     justify-content: center;
   }
@@ -270,9 +264,7 @@ button:hover::before {
   }
 }
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 90% !important;
-  }
+
   .contactCardContainer {
     justify-content: center;
     /* padding: 0 11rem; */
@@ -284,6 +276,74 @@ button:hover::before {
   }
   .faqSection-2 .section-2-content .left {
     width: 100%;
+    height: 200px;
+  }
+
+  .faqSection-2 .section-2-content .right form .inputs {
+    flex-direction: column;
+  }
+  .faqSection-2 .section-2-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .contactCardContainer .card {
+    padding: 4rem 0;
+  }
+
+  .contactCardContainer .card .icon-container {
+    width: 8rem;
+    height: 8rem;
+  }
+  .contactCardContainer .card .title {
+    font-size: 3rem;
+  }
+  .faqSection-2 .faqTitleBottom .about-description {
+    font-size: 3rem;
+  }
+  .faqSection-2 .faqTitleBottom h2 {
+    font-size: 3.5rem;
+  }
+  .faqSection-2 .faqTitleBottom .faqDescription {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .faqSection-2 .section-2-content .right form .inputs input {
+    padding: 2.5rem;
+  }
+  .faqSection-2 .section-2-content .right form textarea {
+    padding: 4rem 2.5rem;
+  }
+
+  .faqSection-2 .section-2-content .right form .inputs input::placeholder,
+  .faqSection-2 .section-2-content .right form textarea::placeholder {
+    font-size: 2.5rem;
+  }
+  button {
+    font-size: 0.9rem;
+    width: 15rem;
+    height: 6rem;
+    padding: 0.9375rem 1.875rem;
+  }
+  button span {
+    font-size: 1.5rem;
+  }
+  .contactCardContainer .card:hover {
+    transform: translateY(-6px);
+  }
+}
+@media screen and (max-width: 430px) {
+ 
+  .contactCardContainer {
+    justify-content: center;
+    /* padding: 0 11rem; */
+    margin: 3rem 0;
+  }
+
+  .faqSection-2 .section-2-content {
+    align-items: center;
+  }
+  .faqSection-2 .section-2-content .left {
+    /* width: 100%; */
     height: 200px;
   }
 

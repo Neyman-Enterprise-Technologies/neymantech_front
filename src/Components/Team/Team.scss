@@ -131,15 +131,8 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
-}
+
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
 
   .section-2 .cardsContainer .card h2 {
     font-size: 20px;
@@ -174,9 +167,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
+ 
   .teamSection .team-container {
     width: 100%;
     display: flex;
@@ -190,16 +181,14 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 100% !important;
-  }
+ 
   .section-3 {
     margin-inline: auto;
   }
   .section-3 .left,
   .section-3 .right {
     margin-inline: auto;
-    width: 90%;
+    width: 100%;
   }
   .teamSection .team-container {
     width: 100%;

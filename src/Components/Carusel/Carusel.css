@@ -156,7 +156,7 @@
     max-width: 540px !important;
   }
   .Slider {
-    width: 90% !important;
+    width: 100% !important;
     height: 35rem;
   }
   .Slider__feedbackContainer {
@@ -186,7 +186,7 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 100% !important;
+    max-width: 90% !important;
   }
   .Slider {
     /* width: 100% !important; */

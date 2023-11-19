@@ -558,7 +558,7 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 90%!important;
+    max-width: 100%!important;
   }
   
   .footer__top {
@@ -573,11 +573,11 @@
     height: 15rem;
   }
   .footer__copyright {
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
   }
   .footer__subscribers {
-    width: 90%;
+    width: 100%;
   }
   .section-3 .left .title, .section-3 .left .header {
     font-size: 25px;

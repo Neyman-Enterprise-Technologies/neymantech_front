@@ -1,12 +1,9 @@
 .cards-wrapper .cards-container {
-  /* background-color: red; */
-
   display: flex;
   /* justify-content: center; */
   flex-wrap: wrap;
   gap: 10px;
 }
-
 
 .cards-wrapper .cards-container .card {
   padding: 0;
@@ -21,7 +18,7 @@
   transition: 0.4s all;
   border-radius: 0.5rem;
 }
-.cards-wrapper .cards-container .card  .cardImgContainer{
+.cards-wrapper .cards-container .card .cardImgContainer {
   height: 20rem;
 }
 .cards-wrapper .cards-container .card .cardImgContainer img {
@@ -35,18 +32,16 @@
 }
 .cards-wrapper .cards-container .card .bottom-content h2 {
   font-size: 1.2rem;
-
-  
 }
-.cards-wrapper .cards-container .card .bottom-content{
+.cards-wrapper .cards-container .card .bottom-content {
   /* line-height: 1.6rem; */
- 
+
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  
+
   /* max-height: 17rem; */
 }
 
@@ -59,18 +54,13 @@
   white-space: nowrap;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
- 
+
   /* max-height: 7rem; */
-  
-
-
 }
 .cards-wrapper .cards-container .card .bottom-content p {
   color: #737b9a;
   font-size: 1rem;
   font-weight: 500;
-  
-  
 }
 .cards-wrapper .cards-container .card:hover {
   box-shadow: 0 3px 20px 0 (rgb(210, 210, 219));
@@ -112,12 +102,7 @@
   font-size: 1rem;
 }
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
   .cards-wrapper .cards-container {
-
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -129,14 +114,11 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
-  .cards-wrapper .cards-container{
+  .cards-wrapper .cards-container {
     justify-content: flex-start;
   }
   .cards-wrapper .cards-container .card {
-   width: calc(50% - 5px);
+    width: calc(50% - 5px);
   }
   .cards-wrapper .cards-container .card .bottom-content h2 {
     font-size: 2rem;
@@ -146,42 +128,19 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
-  .cards-wrapper .cards-container{
+  .cards-wrapper .cards-container {
     flex-direction: column;
-  }
-  .cards-wrapper .cards-container .card{
-    width: 100%;
-  }
-  .cards-wrapper .cards-container .card .cardImgContainer {
-height: 30rem;
-}
-}
-
-
-
-/* @media screen and (max-width: 576px) {
-  .container {
-    max-width: 50% !important;
- 
- 
   }
   .cards-wrapper .cards-container .card {
     width: 100%;
-   }
-   .cards-wrapper .cards-container{
-    width: 100%;
-    margin-inline: auto;
-   }
+  }
+  .cards-wrapper .cards-container .card .cardImgContainer {
+    height: 50rem;
+  }
+}
 
-} */
-
-
-
-
-
-
-
-
+@media screen and (max-width: 576px) {
+  .cards-wrapper .cards-container {
+    background-color: red;
+  }
+}
