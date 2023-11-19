@@ -280,17 +280,17 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 200px !important;
+    max-width: 100% !important;
   }
   .section-3 {
     margin-inline: auto;
   }
   .section-3 .left, .section-3 .right {
     margin-inline: auto;
-    width: 90%;
+    width: 100%;
   }
   .teamSection .team-container {
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
   }
   .teamSection .team-container__profile-container {

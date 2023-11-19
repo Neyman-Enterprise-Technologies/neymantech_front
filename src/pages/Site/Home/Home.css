@@ -1052,7 +1052,7 @@ article:has(:hover, :focus) img {
   }
   .home__service__cards__card {
     width: 35.5rem;
-    /* height: 20rem; */
+
   }
   .home__works__cards {
     -webkit-box-pack: center;
@@ -1233,7 +1233,7 @@ p {
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 400px !important;
+    max-width: 100% !important;
     /* background-color: green; */
   }
   .home__works__cards {
@@ -1252,7 +1252,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
   }
   .section-2 .cardsContainer .card .cardListsContainer {
@@ -1266,7 +1266,7 @@ p {
     line-height: 3rem;
   }
   .home__service__content {
-    width: 90%;
+    width: 100%;
   }
   .left-cards-container {
     -webkit-box-orient: vertical;

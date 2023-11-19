@@ -515,7 +515,7 @@ flex-direction: column;
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 90% !important;
+    max-width: 100% !important;
   }
   .section-2 .cardsContainer {
     -webkit-box-orient: vertical;
@@ -534,17 +534,17 @@ flex-direction: column;
     font-size: 15px;
   }
   .section-2 .cardsContainer .card {
-    width: 90%;
+    width: 100%;
   }
   .home__service__cards {
-    width: 90%;
+    width: 100%;
   }
   .digital-marketing-container .left_right-container {
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
   }
   .home__works__cards {
-    width: 90%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=About.css.map */

@@ -117,7 +117,7 @@ useEffect(() => {
                       bloges
                         .slice(Math.max(bloges.length - 4, 0))
                         .map((blog) => (
-                          <Link to={`/blogs/${blog.slug}`}>
+                          <Link to={`/blogs/${blog.slug}`} key={blog.id}>
                           <div className="post-details">
                             <div className="details-img">
                               <img src={blog.photo} alt="" />

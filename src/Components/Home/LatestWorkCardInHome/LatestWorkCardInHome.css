@@ -276,7 +276,7 @@ max-width:80% ;
   
   
 } */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .container {
     max-width: 200px;
   }
@@ -299,5 +299,5 @@ max-width:80% ;
     width: 200px;
     margin-inline: auto;
   }
-}
+} */
 /*# sourceMappingURL=LatestWorkCardInHome.css.map */

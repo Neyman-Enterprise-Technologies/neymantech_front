@@ -1,8 +1,4 @@
-.container {
-  max-width: 1320px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 /* header start */
 .header {
@@ -212,9 +208,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
+
   .cardsContainer {
     width: 100%;
     display: flex;
@@ -244,9 +238,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
+
   .cardsContainer {
     width: 100%;
     justify-content: flex-start;
@@ -297,9 +289,7 @@
 
 /* cards container end */
 @media screen and (max-width: 768px) {
-  .container {
-    width: 540px !important;
-  }
+ 
   .cardsContainer {
 
     flex-wrap: wrap;
@@ -375,9 +365,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .container {
-    width: 100% !important;
-  }
+  
   .cardsContainer {
 
     &__cardContentContainer {
@@ -385,74 +373,6 @@
       padding: 2rem 1rem;
     }
   
-    /* align-items: center; */
-    /* justify-content: flex-start; */
-    /* gap: 5rem; */
-  }
- 
-
-  /* .cardsContainer {
-
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5rem;
-
-    &__exchangeRate,
-    &__period {
-      font-size: 2.5rem;
-    }
-    &__itemsContainer {
-      margin-bottom: 4rem 0;
-      padding: 4rem 0;
-      gap: 3rem;
-    }
-    &__card {
-      width: 100%;
-      border-radius: 10px;
-    }
-    &__cardHeader {
-      font-size: 5rem;
-      padding: 5rem 0;
-    }
-    &__price {
-      font-size:5rem;
-    }
-    &__items {
-      font-size: 3rem;
-  
-}
-  
-
-    &__notAveilble-icon {
-      font-size: 3.5rem;
     
-    }
-    &__cardContentContainer {
-      height: 250px;
-      padding: 2rem 1rem;
-    }
-    &__cardContentContainer::-webkit-scrollbar {
-      width: 4rem;
-    }
-
-    &__cardContentContainer::-webkit-scrollbar-track {
-      background-color: #fbfbfb;
-    }
-
-    &__cardContentContainer::-webkit-scrollbar-thumb {
-      background: linear-gradient(transparent, #a6c5cd);
-      border-radius: 16px;
-    }
-    &__cardContentContainer::-webkit-scrollbar-thumb:hover {
-      background: linear-gradient(transparent, #839fa6);
-    }
-
-    &__cardContentContainer::-webkit-scrollbar-thumb:hover {
-      background-color: #ffffff;
-    }
   }
-  .cardsContainer .cardsContainer__pricePeriodContainer {
-    padding: 5rem;
-  } */
 }

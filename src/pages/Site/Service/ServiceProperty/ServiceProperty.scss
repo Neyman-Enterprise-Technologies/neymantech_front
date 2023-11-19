@@ -1,14 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 
-}
-.container {
-  max-width: 1320px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 /* heading start */
 .serviceHeader {
   background-color: #f6f6f6;
@@ -155,9 +146,7 @@
 /* first section end */
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px!important;
-  }
+ 
 
   .firstSection {
     /* flex-direction: column-reverse; */
@@ -212,10 +201,7 @@
  
 }
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px!important;
-  
-  }
+ 
  .firstSection{
   padding-bottom: 25rem;
  }
@@ -228,10 +214,7 @@
 
 
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 90%!important;
-  
-  }
+ 
   .firstSection__title{
     font-size: 3.5rem;
     text-align: left;
