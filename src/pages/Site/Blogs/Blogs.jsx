@@ -154,29 +154,31 @@ useEffect(() => {
                     <h2>Recent Posts</h2>
 
                     {filteredbyDate.slice(Math.max(filteredbyDate.length - 4, 0)).map((blog) => (
-                      <div className="post-details" key={blog.id}>
-                        <div className="details-img">
-                          <img src={blog.photo} alt="" />
-                        </div>
-                        <div className="description">
-                          <p className="date">
-                            {new Date(blog.created_at).toLocaleDateString(
-                              "en-US",
-                              {
-                                year: "numeric",
-                                month: "long",
-                                day: "numeric",
-                              }
-                            )}
-                          </p>
-                          <div
-                            className="recent-description"
-                            dangerouslySetInnerHTML={{
-                              __html: blog.short_descriptions,
-                            }}
-                          />
-                        </div>
-                      </div>
+                      <Link to={`/blogs/${blog.slug}`} key={blog.id}>
+                    <div className="post-details" key={blog.id}>
+                    <div className="details-img">
+                      <img src={blog.photo} alt="" />
+                    </div>
+                    <div className="description">
+                      <p className="date">
+                        {new Date(blog.created_at).toLocaleDateString(
+                          "en-US",
+                          {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                          }
+                        )}
+                      </p>
+                      <div
+                        className="recent-description"
+                        dangerouslySetInnerHTML={{
+                          __html: blog.short_descriptions,
+                        }}
+                      />
+                    </div>
+                  </div>
+                  </Link>
                     ))}
                   </div>
                 )}
