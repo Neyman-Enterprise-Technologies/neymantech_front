@@ -579,28 +579,18 @@
   .footer__subscribers {
     width: 100%;
   }
-  .section-3 .left .title, .section-3 .left .header {
-    font-size: 25px;
-  }
+ 
   .footer__socialMediaContainer {
     padding-right: 63rem;
     gap: 20px;
   }
-  .section-3 .left .description {
-    font-size: 14px;
-  }
-  .section-3 .left .selected-description {
-    font-size: 14px;
-  }
+ 
+  
   .section-3 .left .title, .section-3 .left .he {
     font-size: 20px;
   }
-  .teamSection .teamHeaderContainer p {
-    font-size: 20px;
-  }
-  .teamSection .teamHeaderContainer h2 {
-    font-size: 20px;
-  }
+ 
+ 
   .section-2 .cardsContainer .card .cardListsContainer {
     gap: 3rem;
   }

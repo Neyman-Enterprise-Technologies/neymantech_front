@@ -18,7 +18,8 @@ const Partners = () => {
   return (
     <>
     <h2 className="partners-header">Our Loving Clients</h2>
-    <div className="partners">
+  <div className="container">
+  <div className="partners">
       <motion.div
         ref={carousel}
         className="carousel"
@@ -41,6 +42,7 @@ const Partners = () => {
         </motion.div>
       </motion.div>
     </div>
+  </div>
     </>
   );
 };

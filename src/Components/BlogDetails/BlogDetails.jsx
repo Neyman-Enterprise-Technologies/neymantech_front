@@ -65,11 +65,11 @@ useEffect(() => {
                 </div>
 
                 <div className="linkLinks">
-                  <Link to="#" className="linkLink">
+                  <Link to="/" className="linkLink">
                     Home
                   </Link>
                   <FaAngleRight className="angleIcon" />
-                  <Link to="#" className="linkLink">
+                  <Link to="/blogs" className="linkLink">
                     Blogs
                   </Link>
                   <FaAngleRight className="angleIcon" />

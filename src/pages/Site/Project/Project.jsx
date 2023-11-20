@@ -13,9 +13,9 @@ import UseFetch from "../../../UseFetch";
 
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const { data: latestWorkCardInHome } = UseFetch(
-    `${apiUrl}service_api/last_works/`
+  
+  const { data: lastWork } = UseFetch(
+    `${apiUrl}service_api/services/`
   );
 
   const [loading, setLoading] = useState(false);
@@ -82,7 +82,7 @@ export default function Project() {
           </div>
 
           <div className="linkLinks">
-            <Link to="/home" className="linkLink">
+            <Link to="/" className="linkLink">
               Home
             </Link>
             <FaAngleRight className="angleIcon" />
@@ -103,9 +103,9 @@ export default function Project() {
 
         <div className="project-cards-container">
           <div className="container">
-            {latestWorkCardInHome && (
+            {lastWork && (
               <LatestWorkCardInHome
-                latestWorkCardInHome={latestWorkCardInHome}
+                lastWork={lastWork}
                 isProjectPage={true}
               />
             )}

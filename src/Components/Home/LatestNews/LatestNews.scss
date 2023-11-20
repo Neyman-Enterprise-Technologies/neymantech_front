@@ -67,6 +67,7 @@
 }
 .cards-wrapper .cards-container .card:hover .bottom-content h2 {
   color: rgb(27, 27, 141);
+
 }
 .cards-wrapper .cards-container .card:hover .bottom-content::after {
   opacity: 1;
@@ -131,6 +132,19 @@
   .cards-wrapper .cards-container {
     flex-direction: column;
   }
+  .cards-wrapper .cards-container .card .bottom-content {
+    padding: 3rem 2rem;
+    line-height: 3.5rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content h2 {
+    font-size: 2.5rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content p {
+    font-size: 2.5rem;
+  }
+  .cards-wrapper .cards-container .card .bottom-content:after {
+    font-size: 2rem;
+  }
   .cards-wrapper .cards-container .card {
     width: 100%;
   }
@@ -140,7 +154,24 @@
 }
 
 @media screen and (max-width: 576px) {
-  .cards-wrapper .cards-container {
+ 
+  .cards-wrapper{
+    width: 100%;
     background-color: red;
   }
+  .cards-wrapper .cards-container{
+width: 100%;
+  }
+  .cards-wrapper .cards-container .card{
+width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .cards-wrapper .cards-container .card{
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 340px) {
+ 
 }

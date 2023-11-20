@@ -43,10 +43,10 @@ export default function Home() {
   //*HOME - OUR LATEST WORK -4
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
   const { data: latestWorkCardInHome } = UseFetch(
-    `${apiUrl}service_api/last_works/`
+    `${apiUrl}service_api/services/`
     
   );
-  console.log(latestWorkCardInHome)
+
 
 
   const { data: latestNews } = UseFetch(`${apiUrl}blog_api/blog`);
@@ -182,3 +182,4 @@ export default function Home() {
     </>
   );
 }
+

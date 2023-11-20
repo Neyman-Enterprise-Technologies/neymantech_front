@@ -3,7 +3,7 @@
 /* header start */
 .header {
   padding: 4rem 0;
-  width: 55%;
+  /* width: 55%; */
   margin: auto;
   text-align: center;
 }
@@ -103,7 +103,7 @@
   }
 
   &__cardContentContainer::-webkit-scrollbar {
-    width: 1rem;
+    width: 0.5rem;
   }
 
   &__cardContentContainer::-webkit-scrollbar-track {
@@ -124,12 +124,12 @@
 
   &__itemsContainer {
     display: flex;
-    padding: 0 5px;
+    padding: 0 1rem;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.7rem;
     border-radius: 0.5rem;
-    gap: 0.5rem;
+    gap: 1.5rem;
     background-color: rgba(220, 220, 220, 0.1);
     /* background-color: rgb(255, 249, 249); */
   }
@@ -152,16 +152,16 @@
     font-weight: 500;
   }
   &__tick-icon {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: limegreen;
-    font-weight: 100;
+
   }
   &__notAveilble-icon {
     position: relative;
     /* right: 0.2rem; */
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: red;
-    font-weight: 100;
+ 
   }
   &__link {
     position: relative;
@@ -356,7 +356,8 @@
   .header p{
     display: inline-block;
     text-align: center;
-   width: 80%;
+    font-size: 3rem;
+   /* width: 80%; */
   }
   .kateqoriya-sec{
     height:5rem;
@@ -372,7 +373,23 @@
       height: 32rem;
       padding: 2rem 1rem;
     }
-  
+   
     
   }
+  .header p{
+    font-size: 4rem;
+  }
+ 
+ 
+}
+@media screen and (max-width: 430px) {
+  .header p{
+    font-size: 3rem;
+  }
+  .header h2{
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 340px) {
+ 
 }
