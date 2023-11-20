@@ -42,7 +42,7 @@ export const ROUTES = [
         element: <Price />,
       },
       {
-        path: "/blogs",
+        path: "/blogs/",
         element: <Blogs />,
       },
     
