@@ -22,9 +22,9 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
           <nav className="pagination-container">
             <ul className="pagination">
               {currentPage > 1 && (
@@ -71,7 +71,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
               )}
             </ul>
           </nav>
-      )}
+      {/* )} */}
     </>
   );
 };
