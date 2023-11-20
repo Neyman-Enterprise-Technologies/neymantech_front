@@ -15,7 +15,7 @@ export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
   
   const { data: lastWork } = UseFetch(
-    `${apiUrl}service_api/last_works/`
+    `${apiUrl}service_api/services/`
   );
 
   const [loading, setLoading] = useState(false);
