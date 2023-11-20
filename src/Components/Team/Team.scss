@@ -2,15 +2,8 @@
   text-align: center;
   padding: 5rem 0;
 }
-.teamSection .teamHeaderContainer p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--blueText);
-  font-weight: 500;
-}
-.teamSection .teamHeaderContainer h2 {
-  font-size: 2rem;
-}
+
+
 .teamSection .team-container {
 
   display: flex;
@@ -130,31 +123,41 @@
     white-space: nowrap;
   }
 }
+@media screen and (max-width: 1200px) {
 
-
-@media screen and (max-width: 992px) {
-
-  .section-2 .cardsContainer .card h2 {
-    font-size: 20px;
-  }
-  .section-2 .cardsContainer .card .description {
-    font-size: 16px;
-  }
+ 
+ 
   .section-2 .cardsContainer .card .cardList p {
     font-size: 15px;
   }
 
-  .section-3 .left .selected-title-container .selected-title {
-    font-size: 25px;
+
+
+  
+  .section-3 .left .selected-title-container .tick-icon {
+    font-size: 30px;
+  }
+  .teamSection .team-container__profile-container {
+    height: 300px;
+  }
+  .teamSection .team-container__profile-details {
+    padding: 10px 0;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+ 
+  .section-2 .cardsContainer .card .cardList p {
+    font-size: 15px;
   }
 
-  .section-3 .left .selected-description {
-    font-size: 16px;
-  }
-  .section-3 .left .description {
-    font-size: 16px;
-    padding-bottom: 1.5rem;
-  }
+  
+
+  
+  
   .section-3 .left .selected-title-container .tick-icon {
     font-size: 30px;
   }
@@ -164,6 +167,7 @@
   .teamSection .team-container__profile-details {
     padding: 10px 0;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -179,6 +183,8 @@
   .teamSection .team-container__cardContainer {
     width: calc(50% - 1rem);
   }
+ 
+ 
 }
 @media screen and (max-width: 576px) {
  
@@ -193,11 +199,11 @@
   .teamSection .team-container {
     width: 100%;
     margin-inline: auto;
-    gap: 12rem;
+    gap: 5rem;
   }
   .teamSection .team-container__cardContainer {
     width: 100%;
-    height:50rem;
+
     
   }
   /* .teamSection .team-container{
@@ -215,9 +221,16 @@
 
     font-size: 3rem;
   }
-  .section-2 .cardsContainer .card .description {
-    line-height: 4rem;
-  }
+ 
+
+ 
+}
+
+@media screen and (max-width: 430px) {
+
+ 
+}
+@media screen and (max-width: 340px) {
 
  
 }

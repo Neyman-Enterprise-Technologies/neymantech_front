@@ -3,16 +3,9 @@
   padding: 5rem 0;
 }
 
-.teamSection .teamHeaderContainer p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--blueText);
-  font-weight: 500;
-}
 
-.teamSection .teamHeaderContainer h2 {
-  font-size: 2rem;
-}
+
+
 
 .teamSection .team-container {
   position: relative;
@@ -174,25 +167,13 @@
   .container {
     max-width: 720px !important;
   }
-  .section-2 .cardsContainer .card h2 {
-    font-size: 20px;
-  }
-  .section-2 .cardsContainer .card .description {
-    font-size: 16px;
-  }
+  
+
   .section-2 .cardsContainer .card .cardList p {
     font-size: 15px;
   }
-  .section-3 .left .selected-title-container .selected-title {
-    font-size: 25px;
-  }
-  .section-3 .left .selected-description {
-    font-size: 16px;
-  }
-  .section-3 .left .description {
-    font-size: 16px;
-    padding-bottom: 1.5rem;
-  }
+ 
+ 
   .section-3 .left .selected-title-container .tick-icon {
     font-size: 30px;
   }
@@ -245,28 +226,16 @@
   .section-3 .left .header {
     font-size: 20px;
   }
-  .section-2 .cardsContainer .card .description {
-    line-height: 25px;
-  }
+  
   .section-2 .cardsContainer {
     gap: 50px;
   }
-  .teamSection .teamHeaderContainer p {
-    font-size: 20px;
-  }
-  .teamSection .teamHeaderContainer h2 {
-    font-size: 20px;
-  }
+  
+  
   .section-2 .cardsContainer .card {
     gap: 20px;
   }
-  .section-3 .left .description {
-    line-height: 25px;
-  }
-  .section-3 .left .selected-description {
-    line-height: 25px;
-    text-align: start;
-  }
+ 
   .section-3 .left .title {
     font-size: 20px;
   }
