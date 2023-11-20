@@ -231,4 +231,10 @@
   
   }
 }
+@media screen and (max-width: 340px) {
+  .container {
+    max-width: 85% !important;
+  
+  }
+}
 
