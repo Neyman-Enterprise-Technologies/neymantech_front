@@ -59,24 +59,22 @@
 .kateqoriya-sec {
   position: relative;
   display: flex;
-justify-content: center;
+  justify-content: center;
   height: 4rem;
   /* border: 1px solid #8e9c8e; */
   border-radius: 20px;
   /* padding: 0 15px; */
-  
 }
 
 .kateqoriya {
-width: 100%;
+  width: 100%;
   padding: 0 20px;
   display: flex;
   align-items: center;
   border-right: 1px solid #ccd8cc;
   border-radius: 7px 0 0 7px;
   gap: 20px;
-background-color:#f2f2f2;
-
+  background-color: #f2f2f2;
 }
 
 .kateqoriya img {
@@ -84,19 +82,16 @@ background-color:#f2f2f2;
 }
 
 .kateqoriya p {
-
   color: #484b5e;
   font-size: 2rem;
 }
 
 .kateqoriya-sec input {
-
   border: none;
-
 }
 
 .input-search {
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -104,11 +99,10 @@ background-color:#f2f2f2;
   border-radius: 0 7px 7px 0;
   display: flex;
   align-items: center;
- 
-
 }
-.category-icon{
+.category-icon {
   cursor: pointer;
+ 
 }
 
 .input-search input {
@@ -119,13 +113,10 @@ background-color:#f2f2f2;
   background-color: #f7f3f3;
 }
 .input-search input::placeholder {
- 
   font-size: 2rem;
-
 }
 .input-search img {
   width: 25px;
-
 }
 .secilenler {
   width: 110px;
@@ -133,16 +124,14 @@ background-color:#f2f2f2;
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
 
 .secilenler img {
   width: 18px;
   margin-left: 25px;
 }
-.modal-section{
-z-index: 1;
-
+.modal-section {
+  z-index: 1;
 }
 .overlay {
   position: fixed;
@@ -150,39 +139,35 @@ z-index: 1;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(3, 12, 34, 0.8) ;
-  z-index: 1; 
-  /* backdrop-filter: blur(2px); */
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 .modal-wrapper {
   width: 50%;
   margin-top: 10px;
-margin-inline: auto;
+  margin-inline: auto;
   position: relative;
-padding: 4rem;
-overflow: hidden;
+  padding: 4rem;
 
-border-radius: 2rem;
-/* width: 100%;  */
-z-index: 999999999;
-background-color: rgba(8, 28, 78, 0.2);
-overflow-y: scroll;
-height: 40rem;
-  
+  border-radius: 2rem;
 
+  z-index: 999999999;
+  background-color: rgba(95, 122, 202, 0.2);
 
+  overflow-y: scroll;
 
+  height: 40rem;
 }
 
-
 .modal-wrapper::-webkit-scrollbar {
-  width: 3em;
+  width: 1.5em;
+  padding: 3rem;
 }
 
 .modal-wrapper::-webkit-scrollbar-track {
   background-color: #fbfbfb;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .modal-wrapper::-webkit-scrollbar-thumb {
@@ -197,84 +182,62 @@ height: 40rem;
   background-color: #ffffff;
 }
 
-
-
-.modal ul{
-
- list-style-type: none;
-
- 
+.modal ul {
+  list-style-type: none;
 }
-.modal ul li{
+.modal ul li {
   cursor: pointer;
-position: relative;
-padding: 10px 25px;
-margin-bottom: 5px;
-background-color: rgba(255, 255, 255, 0.8);
-color: blck;
-font-size: 2rem;
-font-weight: 500;
-border-radius: 5px;
-display:flex;
-justify-content: space-between;
-align-items: center;
-gap: 1rem;
-font-weight: 600;
-
-
-
+  position: relative;
+  padding: 10px 25px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: blck;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
 }
 
-.modal ul li .modal-angle-icon{
+.modal ul li .modal-angle-icon {
   font-size: 2rem;
 }
-.modal-2{
+.modal-2 {
   position: absolute;
- top: 0;
-  left:100%;
- height: 300px;
+  top: 0;
+  left: 100%;
+  height: 300px;
 
-/* background-color:rgba(0, 0, 0, 0.5); */
-
-
+  /* background-color:rgba(0, 0, 0, 0.5); */
 }
-.modal-2-li{
-width: 200px;
-
+.modal-2-li {
+  width: 200px;
 }
 .category-search-icon {
-  font-size: 30px;
+  font-size: 3rem;
 }
 .category-icon {
-  font-size: 20px;
+  font-size: 3rem;
 }
-
 
 @media screen and (max-width: 576px) {
- 
- .modal-section{
-
-  width: 200px;
-  margin-inline: auto;
- }
- .kateqoriya-sec{
-
-  /* width: 200px; */
-  margin-inline: auto;
- }
- .modal-section{
-
-  /* width: 200px; */
-  margin-inline: auto;
- }
- .kateqoriya{
-
-  /* width: 200px; */
-  margin-inline: auto;
- }
-
-  
-  
+  .modal-section {
+    width: 200px;
+    margin-inline: auto;
+  }
+  .kateqoriya-sec {
+    /* width: 200px; */
+    margin-inline: auto;
+  }
+  .modal-section {
+    /* width: 200px; */
+    margin-inline: auto;
+  }
+  .kateqoriya {
+    /* width: 200px; */
+    margin-inline: auto;
+  }
 }
-
-
