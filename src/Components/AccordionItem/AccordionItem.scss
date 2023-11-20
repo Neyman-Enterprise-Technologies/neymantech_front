@@ -11,7 +11,7 @@ body {
 }
 
 .accordion {
-  width: 700px;
+  width: 80%;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ body {
 
 }
 
-.itemm {
+.accordion .itemm {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 10px 24px;
   padding-right: 48px;
@@ -39,9 +39,10 @@ display: grid;
   color: #ced4da;
 }
 
-.titlee,
-.iconn {
-  font-size: 14px;
+.accordion .titlee,
+.accordion .iconn {
+
+  font-size: 2rem;
   font-weight: 800;
 }
 .iconn{
