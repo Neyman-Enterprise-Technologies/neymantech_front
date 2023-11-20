@@ -119,7 +119,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="linkLinks">
-              <Link to="/home" className="linkLink">
+              <Link to="/" className="linkLink">
                 Home
               </Link>
               <FaAngleRight className="angleIcon" />
