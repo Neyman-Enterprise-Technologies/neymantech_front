@@ -449,24 +449,13 @@ gap: 20px;
     gap: 20px;
   }
 
-  .section-3 .left .description{
-    font-size: 14px;
-  }
-  .section-3 .left .selected-description{
-    font-size:14px ;
-  }
+
+ 
  
   
-  .section-3 .left .title, .section-3 .left .header,
-  .section-3 .left .title, .section-3 .left .title{
-    font-size: 3rem;
-  }
-  .teamSection .teamHeaderContainer p{
-    font-size: 20px;
-  }
-  .teamSection .teamHeaderContainer h2{
-    font-size: 20px;
-  }
+ 
+  
+
   .section-2 .cardsContainer .card .cardListsContainer{
     gap: 3rem;
   }
@@ -524,5 +513,11 @@ font-size: 3rem;
 .footer__copyright{
   margin-inline: unset;
 }
+
+}
+@media screen and (max-width: 430px) {
+
+}
+@media screen and (max-width: 576px) {
 
 }
