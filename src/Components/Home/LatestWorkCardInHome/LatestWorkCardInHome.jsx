@@ -6,7 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
+const LatestWorkCardInHome = ({ latestWorkCardInHome,lastWork, isProjectPage }) => {
   console.log(latestWorkCardInHome);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -27,12 +27,18 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-  const filteredWorks = latestWorkCardInHome
-    ? latestWorkCardInHome.filter(
-        (work) =>work.company_name.toLowerCase().includes(search.toLowerCase()) ||
-          work.company_name.toLowerCase().includes(search.toLowerCase())): [];
-  console.log(latestWorkCardInHome);
-  console.log(filteredWorks);
+  const filteredLastWorks = lastWork
+    ? lastWork.filter(
+        (work) => work.company_name.toLowerCase().includes(search.toLowerCase())) :[]
+        // ||
+        //   work.service_details.title.toLowerCase().includes(search.toLowerCase())): [];
+
+  // const filteredWorks = latestWorkCardInHome ? latestWorkCardInHome.filter(
+  //   (work) => work.title.toLowerCase().includes(search.toLowerCase()) ||
+  //           work.service_details.map((card) => (card.title.toLowerCase().includes(search.toLocaleLowerCase())
+  //           ))):[]
+          
+
 
   const handleClick = (title) => {
     setSearch(title);
@@ -108,20 +114,20 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
                       >
                         {card.services_property.title}
                         <FaAngleRight className="modal-angle-icon" />
-                        {hoveredItem === card.services_property.title && (
+                        {/* {hoveredItem === card.services_property.title && (
                           <ul className="modal-2">
                             <li
                               className="modal-2-li"
                               onClick={() =>
                                 handleClick(
-                                  card.services_property.services.title
+                                  card.services_property.services
                                 )
                               }
                             >
-                              {card.services_property.services.title}
+                              {card.services_property.services}
                             </li>
                           </ul>
-                        )}
+                        )} */}
                       </li>
                     ))}
                   </ul>
@@ -138,10 +144,14 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
         whileInView={{ opacity: 1 }}
         className="home__works__cards"
       >
-        {filteredWorks &&
-          filteredWorks.map((card) => (
+        {filteredLastWorks &&
+          filteredLastWorks.map((card) => (
+            
             <Link to={card.link_url} key={card.id}>
+              
               <div className="container" key={card.id}>
+                
+
                 <div className="home__works__cards__card">
                   <img src={card.photo} alt={card.company_name} />
                   <div className="info">
