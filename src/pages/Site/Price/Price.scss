@@ -3,7 +3,7 @@
 /* header start */
 .header {
   padding: 4rem 0;
-  width: 55%;
+  /* width: 55%; */
   margin: auto;
   text-align: center;
 }
@@ -103,7 +103,7 @@
   }
 
   &__cardContentContainer::-webkit-scrollbar {
-    width: 1rem;
+    width: 0.5rem;
   }
 
   &__cardContentContainer::-webkit-scrollbar-track {
@@ -356,7 +356,8 @@
   .header p{
     display: inline-block;
     text-align: center;
-   width: 80%;
+    font-size: 3rem;
+   /* width: 80%; */
   }
   .kateqoriya-sec{
     height:5rem;
@@ -372,7 +373,23 @@
       height: 32rem;
       padding: 2rem 1rem;
     }
-  
+   
     
   }
+  .header p{
+    font-size: 4rem;
+  }
+ 
+ 
+}
+@media screen and (max-width: 430px) {
+  .header p{
+    font-size: 3rem;
+  }
+  .header h2{
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 340px) {
+ 
 }
