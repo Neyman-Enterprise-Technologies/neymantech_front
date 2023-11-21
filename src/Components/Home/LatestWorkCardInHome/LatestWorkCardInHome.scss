@@ -59,31 +59,33 @@
 .kateqoriya-sec {
   position: relative;
   display: flex;
+  width: 50%;
   justify-content: center;
-  height: 4rem;
+  height: 3rem;
+  margin-inline: auto;
   /* border: 1px solid #8e9c8e; */
-  border-radius: 20px;
+  border-radius: 1.25rem;
   /* padding: 0 15px; */
 }
 
 .kateqoriya {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   display: flex;
   align-items: center;
   border-right: 1px solid #ccd8cc;
-  border-radius: 7px 0 0 7px;
-  gap: 20px;
+  border-radius: 0.4375rem 0 0 0.4375rem;
+  gap: 1.25rem;
   background-color: #f2f2f2;
 }
 
 .kateqoriya img {
-  width: 15px;
+  width: 0.9375rem;
 }
 
 .kateqoriya p {
   color: #484b5e;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .kateqoriya-sec input {
@@ -94,32 +96,33 @@
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   gap: 10px;
-  border-radius: 0 7px 7px 0;
+  border-radius: 0 0.4375rem 0.4375rem 0;
   display: flex;
   align-items: center;
 }
 .category-icon {
   cursor: pointer;
+  font-size: 1.5rem;
  
 }
 
 .input-search input {
-  font-size: 2rem;
+  font-size: 1.2rem;
   outline: none;
   width: 100%;
   height: 100%;
   background-color: #f7f3f3;
 }
 .input-search input::placeholder {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .input-search img {
-  width: 25px;
+  width: 1.5625rem;
 }
 .secilenler {
-  width: 110px;
+  width: 6.875rem;
   height: 25px;
   display: flex;
   align-items: center;
@@ -139,29 +142,34 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(52, 62, 104, 0.8);
   z-index: 1;
+  filter: brightness(100%) blur(1px);
 }
 
 .modal-wrapper {
-  width: 50%;
-  margin-top: 10px;
+  width: 40%;
+
+  /* margin-top: 10px; */
   margin-inline: auto;
   position: relative;
-  padding: 4rem;
+  padding: 2rem;
 
-  border-radius: 2rem;
 
-  z-index: 999999999;
-  background-color: rgba(95, 122, 202, 0.2);
+  border-radius: 10px;
+
+  z-index: 1;
+  background-color: rgba(9, 24, 68, 0.5);
 
   overflow-y: scroll;
 
-  height: 40rem;
+  height: 20rem;
+  scroll-behavior: smooth;
 }
 
+
 .modal-wrapper::-webkit-scrollbar {
-  width: 1.5em;
+  width:5px;
   padding: 3rem;
 }
 
@@ -184,26 +192,40 @@
 
 .modal ul {
   list-style-type: none;
+  margin: 20px;
+ 
 }
 .modal ul li {
+  width: 60%;
   cursor: pointer;
   position: relative;
-  padding: 10px 25px;
+  padding: 0.5rem 2rem;
   margin-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   color: blck;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 500;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  font-weight: 600;
+  font-weight: 400;
+  transition: background-color 0.3s;
 }
 
+
+
+
+
+
+
+
+
+
 .modal ul li .modal-angle-icon {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  color: rgb(93, 179, 93);
 }
 .modal-2 {
   position: absolute;
@@ -217,11 +239,9 @@
   width: 200px;
 }
 .category-search-icon {
-  font-size: 3rem;
+  font-size: 2rem;
 }
-.category-icon {
-  font-size: 3rem;
-}
+
 
 @media screen and (max-width: 576px) {
   .modal-section {
