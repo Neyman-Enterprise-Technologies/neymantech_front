@@ -27,9 +27,9 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome,lastWork, isProjectPage }) 
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-  const filteredLastWorks = lastWork
-    ? lastWork.filter(
-        (work) => work.company_name.toLowerCase().includes(search.toLowerCase())) :[]
+  // const filteredLastWorks = lastWork
+  //   ? lastWork.filter(
+  //       (work) => work.company_name.toLowerCase().includes(search.toLowerCase())) :[]
         // ||
         //   work.service_details.title.toLowerCase().includes(search.toLowerCase())): [];
 
@@ -37,6 +37,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome,lastWork, isProjectPage }) 
   //   (work) => work.title.toLowerCase().includes(search.toLowerCase()) ||
   //           work.service_details.map((card) => (card.title.toLowerCase().includes(search.toLocaleLowerCase())
   //           ))):[]
+  //           console.log(filteredWorks)
           
 
 
@@ -101,33 +102,33 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome,lastWork, isProjectPage }) 
                       All
                       <FaAngleRight className="modal-angle-icon" />
                     </li>
-                    {latestWorkCardInHome.map((card) => (
+                    {lastWork.map((card) => (
                       <li
                         key={card.id}
                         onMouseEnter={() =>
-                          handleMouseEnter(card.services_property.title)
+                          handleMouseEnter(card.title)
                         }
                         onMouseLeave={handleMouseLeave}
                         onClick={() =>
-                          handleClick(card.services_property.title)
+                          handleClick(card.title)
                         }
                       >
-                        {card.services_property.title}
+                        {card.title}
                         <FaAngleRight className="modal-angle-icon" />
-                        {/* {hoveredItem === card.services_property.title && (
+                        {hoveredItem === card.service_details.title && (
                           <ul className="modal-2">
                             <li
                               className="modal-2-li"
                               onClick={() =>
                                 handleClick(
-                                  card.services_property.services
+                                  card.service_details.title
                                 )
                               }
                             >
-                              {card.services_property.services}
+                              {card.service_details.title}
                             </li>
                           </ul>
-                        )} */}
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -144,8 +145,8 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome,lastWork, isProjectPage }) 
         whileInView={{ opacity: 1 }}
         className="home__works__cards"
       >
-        {filteredLastWorks &&
-          filteredLastWorks.map((card) => (
+        {lastWork &&
+          lastWork.map((card) => (
             
             <Link to={card.link_url} key={card.id}>
               
