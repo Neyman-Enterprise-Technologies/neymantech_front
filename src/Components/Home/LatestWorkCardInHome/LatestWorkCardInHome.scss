@@ -142,16 +142,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(52, 62, 104, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
-  filter: brightness(100%) blur(1px);
+
+
+  overflow: hidden!important;
+
+ 
 }
 
 .modal-wrapper {
-  width: 40%;
-
-  /* margin-top: 10px; */
-  margin-inline: auto;
+  top: 2rem ;
+  width: 50%;
+margin-inline: auto;
   position: relative;
   padding: 2rem;
 
@@ -163,8 +166,9 @@
 
   overflow-y: scroll;
 
-  height: 20rem;
+  height: 70vh;
   scroll-behavior: smooth;
+
 }
 
 
@@ -191,12 +195,13 @@
 }
 
 .modal ul {
+
   list-style-type: none;
   margin: 20px;
  
 }
 .modal ul li {
-  width: 60%;
+  width: 70%;
   cursor: pointer;
   position: relative;
   padding: 0.5rem 2rem;
