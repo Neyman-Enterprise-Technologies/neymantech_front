@@ -142,7 +142,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+ 
+  background-color: white;
   z-index: 1;
 
 
@@ -173,8 +174,8 @@ margin-inline: auto;
 
 
 .modal-wrapper::-webkit-scrollbar {
-  width:5px;
-  padding: 3rem;
+  width:10px;
+
 }
 
 .modal-wrapper::-webkit-scrollbar-track {
@@ -201,14 +202,15 @@ margin-inline: auto;
  
 }
 .modal ul li {
-  width: 70%;
+  margin-inline: auto;
+  width: 90%;
   cursor: pointer;
   position: relative;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   margin-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   color: blck;
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: 500;
   border-radius: 5px;
   display: flex;
@@ -219,17 +221,8 @@ margin-inline: auto;
   transition: background-color 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
 .modal ul li .modal-angle-icon {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: rgb(93, 179, 93);
 }
 .modal-2 {
