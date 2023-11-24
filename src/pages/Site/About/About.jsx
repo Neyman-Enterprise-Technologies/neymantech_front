@@ -233,34 +233,39 @@ export default function About() {
           <section className="section-3">
             <div className="left">
               <p className="title">Niyə bizi seçməlisiniz?</p>
-            
+
               <p className="description">
                 Neyman Enterprise Technologies'i seçmək üçün bir neçə əsas
                 səbəb:
-                <br />
+              </p>
+              <p className="description">
                 1. **İnnovativ Rəqəmsal Həllər:** <br /> Biz, müştərilərimizə
                 innovativ və yaradıcı rəqəmsal çözümlər təqdim edirik. İş
                 həllərimiz, müştərilərimizin müasir dijital dünyada öne
                 çıxmağını təmin edir.
-                <br />
+              </p>
+              <p className="description">
                 2. **Müştəri Memnuniyyəti:** <br /> Müştəri memnuniyyəti bizim
                 üçün ən əhəmiyyətli prioritetdir. Müştərilərimizin tələblərini
                 anlamağa çalışır, şəxsi və effektiv xidmətlər təklif edirik.
-                <br />
+              </p>
+              <p className="description">
                 3. **Texnologiyalarda Təcrübə:** <br /> Biz, texnologiyalardakı
                 son yenilikləri müştərilərimizin üstünə tətbiq etməklə onların
                 müasir və müstəqil qalmağını təmin edirik.
-                <br />
+              </p>
+              <p className="description">
                 4. **Sürətli və Təhlükəsiz Implementasiya:** <br />{" "}
                 Proseslərimizi sürətli və təhlükəsiz şəkildə implement etmək
                 üçün nailiyyətə çatmağa çalışır, müştərilərimizə ən yaxşı
                 keyfiyyət təmin etmək üçün fəaliyyət göstəririk.
-                <br />
+              </p>
+              <p className="description">
                 5. **Əməkdaşlıq və İtmiş Komanda:** <br /> Bizim komandamız,
                 müştərilərimizlə yaxın əməkdaşlıq edərək onların müstəqil
                 dijital hədəflərinə nail olmağında kömək edir.
-                <br />
-                <br />
+              </p>
+              <p className="description">
                 Neyman Enterprise Technologies, müştərilərinin dijital inkşafını
                 dəstəkləmək və müasir rəqəmsal sahədə lider mövqedə olmağa nail
                 etmək üçün mükəmməl bir təhlükəsizdir.
@@ -290,15 +295,9 @@ export default function About() {
             </div>
           </section>
         </div>
-        {/* SECTION-3 END */}
-
-        {/* SECTION-3 END */}
-        {/* SECTION-4 START */}
 
         {error && <div>{error}</div>}
         {team && <Team team={team} />}
-
-        {/* SECTION-4 END */}
 
         <Partners />
       </motion.section>
