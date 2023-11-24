@@ -16,6 +16,7 @@ function Navbar() {
 
 return (
     <header>
+   
       <NavLink to="/" className="logo-img">
         <img src={newlogo} alt="Responsive Image" />
       </NavLink>
@@ -23,7 +24,7 @@ return (
         <NavLink to="/" onClick={showNavbar}>
           Home
         </NavLink>
-        <NavLink to="/about" onClick={showNavbar}>
+         <NavLink to="/about" onClick={showNavbar}>
           About
         </NavLink>
         <NavLink to="/project" onClick={showNavbar}>
@@ -33,7 +34,7 @@ return (
           Price
         </NavLink>
         <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
-          Serv
+          Service
         </NavLink>
      
 
@@ -58,6 +59,7 @@ return (
             <option value="türkçe">TR</option>
           </select>
         </div> */}
+      
     </header>
   );
 }
