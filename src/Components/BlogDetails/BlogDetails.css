@@ -6,7 +6,6 @@
 }
 
 .blogDetails {
-  
   width: 100%;
 }
 
@@ -45,7 +44,6 @@
 }
 
 .blogDetails .left .cards-container {
-  /* background-color: red; */
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,7 +67,6 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
-  /* align-self: flex-start; */
   border: 1px solid #ddd;
   overflow: hidden;
   -webkit-transition: 0.4s all;
@@ -78,7 +75,6 @@
 
 .blogDetails .left .card .cardImgContainer {
   height: 500px;
-
 }
 
 .blogDetails .left .card .cardImgContainer img {
@@ -92,9 +88,6 @@
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-/* .blogDetails .left .card:hover .cardImgContainer img {
-  transform: scale(1.2) rotate(5deg);
-} */
 .blogDetails .left .card .bottom-content h2 {
   font-size: 1.5rem;
 }
@@ -115,7 +108,6 @@
   padding: 1rem 0;
   line-height: 2rem;
 }
-
 
 .blogDetails .left .card .bottom-content {
   padding: 1.5rem 1rem;
@@ -242,13 +234,12 @@
   gap: 1rem;
   border-bottom: 1px solid #eeeeee;
   padding: 1rem 0;
- 
+  /* cursor: pointer; */
 }
 
 .blogDetails .right .recent-posts-container .post-details .description {
   width: 60%;
 }
-
 
 .blogDetails .right .recent-posts-container .post-details .description .title {
   line-height: 1.6rem;
@@ -279,8 +270,16 @@
   margin-bottom: 0.5rem;
 }
 
-.blogDetails .right .recent-posts-container .post-details .description .title p {
- 
+.blogDetails
+.right
+.recent-posts-container
+.post-details
+.description
+.title
+p {
+  /* font-size: 1rem; */
+  /* font-weight: 600; */
+  /* letter-spacing: -0.01rem;  */
   line-height: 1.6rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -387,13 +386,12 @@
 
 /* right end */
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
-  .blogDetails .left .card .bottom-content h2, .blogDetails .left .card .bottom-content p {
+  .blogDetails .left .card .bottom-content h2,
+  .blogDetails .left .card .bottom-content p {
     font-size: 2rem;
   }
-  .blogDetails .left .card .bottom-content p, .blogDetails .left .card .bottom-content::after {
+  .blogDetails .left .card .bottom-content p,
+  .blogDetails .left .card .bottom-content::after {
     margin-bottom: 1rem;
     padding: 1.5rem 0;
     font-size: 1.5rem;
@@ -416,9 +414,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
   .right-left-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -439,9 +434,6 @@
   .blogDetails .left .cards-container {
     width: 100%;
   }
-  /* .blogDetails .left a .card {
-    width: calc(100% / 2.05);
-  } */
   .blogDetails .right {
     width: 100%;
   }
@@ -462,9 +454,8 @@
   .blogDetails .left .card .bottom-content h4 {
     font-size: 1.5rem;
   }
- 
   .blogDetails .right .recent-posts-container .post-details .description {
-
+    /* width: 100%; */
     color: var(--TextColor);
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -504,7 +495,13 @@
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-  .blogDetails .right .recent-posts-container .post-details .description .title p {
+  .blogDetails
+.right
+.recent-posts-container
+.post-details
+.description
+.title
+p {
     font-size: 1.5rem;
   }
   .blogDetails .right .recent-posts-container .post-details {
@@ -531,7 +528,7 @@
   .blogDetails .right .category-container p::before {
     width: 1rem;
     height: 1rem;
-   
+    /* top: 0.5rem; */
     left: -50px;
   }
   .blogDetails .right .tags-container {
@@ -554,9 +551,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
   .blogDetails {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -582,7 +576,12 @@
   .blogDetails .left .card a .cardImgContainer {
     height: 300px;
   }
-  .blogDetails .right .recent-posts-container .post-details .description .title {
+  .blogDetails
+.right
+.recent-posts-container
+.post-details
+.description
+.title {
     width: 100%;
   }
   .blogDetails .left .card .bottom-content {
@@ -597,13 +596,175 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
-}
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 100% !important;
+  .blogDetails .right .search .input-button-container input {
+    font-size: 15px;
+  }
+  .blogDetails .right .search .input-button-container input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .blogDetails .right .search .input-button-container input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .blogDetails .right .search .input-button-container input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .blogDetails .right .search .input-button-container input::placeholder {
+    font-size: 15px;
+  }
+  .blogs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogs .left .cards-container a {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogs .left .cards-container a .card {
+    width: 100%;
+  }
+  .post-details .recent-description p {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .blogs .left a .card .cardImgContainer {
+    height: 40rem;
+  }
+  .blogs .right .recent-posts-container .post-details .description .title {
+    width: 100%;
+  }
+  .blogs .left a .card .bottom-content {
+    width: 100%;
+    padding-bottom: 13rem;
+    line-height: 4.5rem;
+  }
+  .blogDetails .right .category-container p {
+    font-size: 2.5rem;
+    margin-left: 7rem;
+    margin-bottom: 2.5rem;
+  }
+  .blogDetails .right .category-container p::before {
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    left: -7rem;
+  }
+  .blogs .right .category-container .category-list-container {
+    padding: 3rem 0rem;
+  }
+  .blogs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blogs .left {
+    width: 100%;
+  }
+  .blogs .left .cards-container {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .blogs .left a {
+    width: calc(100% / 2.05);
+  }
+  .blogs .right .tags-container .tags p {
+    display: block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #eeeeee;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  .blogs .right .search .input-button-container input {
+    /* padding: 15px; */
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input::placeholder {
+    font-size: 15px;
+  }
+  .blogDetails .right .search .input-button-container .search-icon-container {
+    width: 6rem;
+  }
+  .blogs .right {
+    width: 100%;
+  }
+  .blogDetails
+.right
+.search
+.input-button-container
+.search-icon-container
+.search-icon {
+    font-size: 3rem;
+  }
+  .blogs .left a .card .bottom-content h2 {
+    font-size: 3.5rem;
+  }
+  .blogs .left a .card .bottom-content p,
+  .blogs .left a .card .bottom-content::after {
+    font-size: 2.5rem;
+  }
+  .blogDetails .right .tags-container .title {
+    font-size: 3rem;
+  }
+  .blogDetails .right .category-container .title {
+    padding-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .blogs .right .tags-container .title {
+    font-size: 3rem;
+  }
+  .blogDetails .right .recent-posts-container h2 {
+    font-size: 3rem;
+  }
+  .blogDetails .right .recent-posts-container .post-details .details-img {
+    width: 17rem;
+    height: 12rem;
+  }
+  .blogDetails .right .recent-posts-container .post-details .description .date {
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+  }
+  .blogDetails
+.right
+.recent-posts-container
+.post-details
+.description
+.title
+p {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .blogDetails .right .tags-container .tags p {
+    padding: 1rem 1.5rem;
+    border: 1px solid #eeeeee;
+    font-size: 2.5rem;
   }
 }
+/*# sourceMappingURL=BlogDetails.css.map */
