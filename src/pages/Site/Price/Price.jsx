@@ -117,7 +117,7 @@ useEffect(() => {
        
               <div className="linkTitle">
                 <h2>
-                  Pri<span>c</span>ing
+                  Qiy<span>m</span>ətlər
                 </h2>
               </div>
            
@@ -133,11 +133,11 @@ useEffect(() => {
 
           {/*    header start */}
           <div className="header">
-            <h2>Choose your best plan</h2>
-            <p>
+            <h2>Sizə uyğun qiyməti seçin</h2>
+            {/* <p>
               Real innovations and a positive customer experience are the heart
               of successful communication. No fake products and services.
-            </p>
+            </p> */}
           </div>
           {/*    header end*/}
 
@@ -184,7 +184,7 @@ useEffect(() => {
                       onMouseLeave={handleMouseLeave}
                       onClick={() => handleClick('')}
                     >
-                      All
+                      Butun
                       {/* <FaAngleRight className="modal-angle-icon" /> */}
                     </li>
                     {price &&
