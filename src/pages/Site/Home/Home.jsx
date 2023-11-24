@@ -106,11 +106,10 @@ export default function Home() {
           <div className="home__service__content">
             <h2 id="services" className="services" name="services">
               {" "}
-              Our Services
+              Xidmətlər
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+            Neyman Enterprise Technologies şirkəti olaraq sizə xidmətlərimizi təklif etməkdən məmnunuq.
             </p>
           </div>
           {/* SERVICE CARDS START */}
@@ -133,10 +132,9 @@ export default function Home() {
 
         <div className="home__works container">
           <div className="home__works__header">
-            <h2>Our latest works</h2>
+            <h2>Son işlərimiz</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+            Müxtəlif şirkətlər üçün yaratdığımız son işləri sizlərə göstərməkdə məmnun olarıq. 
             </p>
           </div>
           {LatestWorkCardInHome && (
@@ -149,8 +147,8 @@ export default function Home() {
 
         <div className="home__feedback">
           <div className="home__feedback__content">
-            <p>TESTIMONIALS</p>
-            <h2>Some lovely feedback from our clients</h2>
+            <p>Rəylər</p>
+            <h2>Müştərilərimizin bizim üçün verdiyi rəylər</h2>
           </div>
 
           {feedback && <Carusel feedback={feedback} />}
@@ -158,7 +156,7 @@ export default function Home() {
 
         <div className="home__blogs">
           <div className="home__blogs__content">
-            <h2>Latest news</h2>
+            <h2>Son bloqlar</h2>
           </div>
 
           <div className="cards-wrapper">
