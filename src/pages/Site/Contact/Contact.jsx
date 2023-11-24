@@ -108,16 +108,16 @@ export default function Contact() {
               <FaChevronUp className="scroll-icon" />
             </div>
           )}
-          <div className="home__contact">
+   
             {/*   HEADER LINK START  */}
             <div className="linkHeader">
-            <div className="container">
+      
               <div className="linkTitle">
                 <h2>
                   Con<span>t</span>act
                 </h2>
               </div>
-            </div>
+          
             <div className="linkLinks">
               <Link to="/" className="linkLink">
                 Home
@@ -128,8 +128,9 @@ export default function Contact() {
           </div>
             {/*  HEADER LINK END  */}
 
-            <div className="container">
-              {contact && (
+         
+        <div className="container">
+        {contact && (
                 <div className="contactCardContainer">
                   <div className="card">
                     <div className="icon-container">
@@ -169,9 +170,8 @@ export default function Contact() {
                   </div>
                 </div>
               )}
-            </div>
-          </div>
-          <div className="container">
+   
+      
             <div className="faqSection-2">
               <div className="faqTitleBottom">
                 <p className="about-description">Contact Us</p>
@@ -236,7 +236,9 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
+
+        </div>
+      
         </motion.section>
       {/* )} */}
     </>
