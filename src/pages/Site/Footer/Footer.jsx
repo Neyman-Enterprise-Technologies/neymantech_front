@@ -239,7 +239,7 @@ export default function Footer() {
           <div className="footer__bottomDevider"></div>
           <div className="footer__copyright">
             <p className="footer__copyrightLeft">
-              Copyright 2023 . Bütün hüquqlar Neyman Enterprise Technologies şirkəti tərəfindən qorunur
+              Copyright 2023. Bütün hüquqlar Neyman Enterprise Technologies şirkəti tərəfindən qorunur
             </p>
             <p className="footer__copyrightRight">
               Terms & Conditions | Privacy Policy
