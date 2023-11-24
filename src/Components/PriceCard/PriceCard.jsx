@@ -1,6 +1,10 @@
-import { AiOutlineClose } from "react-icons/ai";
-import { TiTick } from "react-icons/ti";
+
+import { faCheck, faX, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+
+
+
 
 const PriceCard = ({ title, price, color, period, property, symbol }) => {
 
@@ -31,9 +35,17 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
           <div className="cardsContainer__itemsContainer" key={index}>
           
             {item.is_active ? (
-              <TiTick className="cardsContainer__tick-icon" />
+              <div className="cardsContainer__check-icon-container">
+           <FontAwesomeIcon icon={faCheck} fade className="cardsContainer__tick-icon" />
+           </div>
             ) : (
-              <AiOutlineClose className="cardsContainer__notAveilble-icon" />
+              // <AiOutlineClose className="cardsContainer__notAveilble-icon" />
+            
+              // <FontAwesomeIcon icon={faXmark} className="cardsContainer__notAveilble-icon"/>
+              <div className="cardsContainer__check-icon-container">
+              <FontAwesomeIcon icon={faX} className="cardsContainer__notAveilble-icon" />
+              </div>
+              // <FontAwesomeIcon icon={faXmark} className="cardsContainer__notAveilble-icon" />
             )}
               <p className="cardsContainer__items">{item.property_name}</p>
           </div>
