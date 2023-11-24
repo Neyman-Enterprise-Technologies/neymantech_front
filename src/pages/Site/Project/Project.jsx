@@ -80,16 +80,16 @@ export default function Project() {
         <div className="linkHeader">
           <div className="linkTitle">
             <h2>
-              Proj<span>e</span>cts
+              Işlə<span>r</span>imiz
             </h2>
           </div>
 
           <div className="linkLinks">
             <Link to="/" className="linkLink">
-              Home
+            Ana səhifə
             </Link>
             <FaAngleRight className="angleIcon" />
-            <Link to="about">Projects</Link>
+            <Link to="about"> İşlərimiz</Link>
           </div>
         </div>
         {/*  HEADER LINK END  */}
