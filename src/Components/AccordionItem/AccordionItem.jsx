@@ -10,14 +10,14 @@ const AccordionItem = ({ num, title, children,onOpen, curOpen }) => {
   };
 
   return (
-    <div className="container">
+    <>
     <div className={`itemm ${isOpen ? "open" : ""}`} onClick={handleToggle}>
       <p className="number">{num < 9 ? `0${num + 1}` : num + 1}</p>
       <p className="titlee">{title}</p>
       <p className="iconn">{isOpen ? "-" : "+"}</p>
       {isOpen && <div className="content-box">{children}</div>}
     </div>
-    </div>
+    </>
   );
 };
 
