@@ -108,16 +108,16 @@ useEffect(() => {
             <div className="container">
               <div className="linkTitle">
                 <h2>
-                  Bl<span>o</span>gs
+                  Bloq
                 </h2>
               </div>
             </div>
             <div className="linkLinks">
               <Link to="/" className="linkLink">
-                Home
+                Ana səhifə
               </Link>
               <FaAngleRight className="angleIcon" />
-              <Link to="about">Blogs</Link>
+              <Link to="about">Bloq</Link>
             </div>
           </div>
           {/* heading end */}
@@ -140,7 +140,7 @@ useEffect(() => {
                       onChange={handleSearch}
                       value={search}
                       type="text"
-                      placeholder="search..."
+                      placeholder="bloq axtar..."
                     />
 
                     <div className="search-icon-container">
@@ -151,7 +151,7 @@ useEffect(() => {
 
                 {blogs && (
                   <div className="recent-posts-container">
-                    <h2>Recent Posts</h2>
+                    <h2>Son postlar</h2>
 
                     {filteredbyDate.slice(Math.max(filteredbyDate.length - 4, 0)).map((blog) => (
                       <Link to={`/blogs/${blog.slug}`} key={blog.id}>
@@ -198,7 +198,7 @@ useEffect(() => {
                   </div>
                 </div>
                 <div className="tags-container">
-                  <h2 className="title">Tags</h2>
+                  <h2 className="title">Teq</h2>
                   <div className="tags">
                     {blogs &&
                       [

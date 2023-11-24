@@ -25,10 +25,10 @@
 
 * {
   /* font-family: "Montserrat"; */
-  /* font-family: "Poppins";  */
+  font-family: "Poppins"; 
   /* font-family: "Lato";  */
   /* font-family: "Raleway";  */
-  font-family: "Overpass";
+  /* font-family: "Overpass"; */
   /* font-family: "Roboto";  */
   margin: 0;
   padding: 0;
@@ -126,10 +126,10 @@
 /* PAGES HEADERlINKS */
 .linkHeader {
   background-color: #fafafc;
-  padding: 10rem 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 2rem;
 }
 .linkTitle {
   text-align: center;

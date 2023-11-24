@@ -66,9 +66,9 @@ export default function Contact() {
       setInputPhone("");
       setService("");
       setMessage("");
-      toast.success("your message was successfully sent");
+      toast.success("Mesajınız uğurla göndərildi!");
     } else {
-      toast.error("This didn't work. ");
+      toast.error("Düzgün işləmir. ");
     }
   };
 
@@ -114,16 +114,16 @@ export default function Contact() {
             <div className="container">
               <div className="linkTitle">
                 <h2>
-                  Con<span>t</span>act
+                  Əlaqə
                 </h2>
               </div>
             </div>
             <div className="linkLinks">
               <Link to="/" className="linkLink">
-                Home
+                Ana səhifə
               </Link>
               <FaAngleRight className="angleIcon" />
-              <Link to="about">Contact</Link>
+              <Link to="about">Əlaqə</Link>
             </div>
           </div>
             {/*  HEADER LINK END  */}
@@ -136,7 +136,7 @@ export default function Contact() {
                       {/* {contactCardsIconsObj[icon]} */}
                       <MdOutlineMarkEmailRead className="contactIcon" />
                     </div>
-                    <h2 className="title">Email Here</h2>
+                    <h2 className="title">E-poçta</h2>
 
                     <div className="descriptionContainer">
                       {/* <p className="contact-type">{contact[0].email}</p> */}
@@ -148,7 +148,7 @@ export default function Contact() {
                       {/* {contactCardsIconsObj[icon]} */}
                       <ImLocation className="contactIcon" />
                     </div>
-                    <h2 className="title">Location</h2>
+                    <h2 className="title">Konum</h2>
 
                     <div className="descriptionContainer">
                       {/* <p className="contact-type">{contact[0].location}</p> */}
@@ -160,7 +160,7 @@ export default function Contact() {
                       {/* {contactCardsIconsObj[icon]} */}
                       <BsFillTelephoneFill className="contactIcon" />
                     </div>
-                    <h2 className="title">Phone Here</h2>
+                    <h2 className="title">Telfon nömrəsi</h2>
 
                     <div className="descriptionContainer">
                       {/* <p className="contact-type">{contact[0].phone}</p> */}
@@ -174,13 +174,9 @@ export default function Contact() {
           <div className="container">
             <div className="faqSection-2">
               <div className="faqTitleBottom">
-                <p className="about-description">Contact Us</p>
-                <h2>Do you have any questions?</h2>
-                <p className="faqDescription">
-                  Real innovations and a positive customer experience are the
-                  heart of successful communication. No fake products and
-                  services.
-                </p>
+                <p className="about-description">Əlaqə</p>
+                <h2>Suallarını bizə göndərə bilərsən.</h2>
+                
               </div>
               <div className="section-2-content">
                 <div className="left">
@@ -230,7 +226,7 @@ export default function Contact() {
                       onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                     <button>
-                      <span>SEND MESSAGE</span>
+                      <span>Mesajı göndər</span>
                     </button>
                   </form>
                 </div>

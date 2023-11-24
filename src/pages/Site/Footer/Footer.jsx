@@ -46,9 +46,9 @@ export default function Footer() {
       <div className="container">
         <div className="footer__subscribers">
           <div className="footer__subscribe-content">
-            <h2>KNOW IT ALL FIRST !</h2>
+            <h2>Haqqımızda</h2>
             <p>
-              Never Miss Anything From Multikard By Signing Up To Our Newsletter
+            "Neyman Enterprise Technologies şirkəti 2022'ci il yanvarın 1'dən fəaliyyət göstərən startap komandasıdır.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function Footer() {
               className="footer__subscribe-input"
             />
             <button onClick={handleClick} className="footer__subscribe-button">
-              SUBSCRIBE
+              Abonə ol
             </button>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__contactInfoCol">
             <div className="footer__headerandBorderBottom">
-              <h2>Contact info</h2>
+              <h2>Bizimlə əlaqə</h2>
               <div className="footer__devider"></div>
             </div>
             <div className="footer__contactContainer">
@@ -81,8 +81,8 @@ export default function Footer() {
                 />
               </div>
               <div className="footer__phoneInfo">
-                <p>MON TO FRI : 10:00AM – 06:00PM</p>
-                <Link to="tel:+994 0000000">+994 00000000</Link>
+                <p>7/24 aktiv </p>
+                <Link to="tel:+994 0000000">+994 51 573 86 74 </Link>
               </div>
             </div>
             <div className="footer__contactContainer">
@@ -93,8 +93,8 @@ export default function Footer() {
                 />
               </div>
               <div className="footer__phoneInfo">
-                <p>DO YOU HAVE A QUESTION?</p>
-                <Link to="#">hello@varn.com</Link>
+                <p>E-poçtamız</p>
+                <Link to="#">info.neyman.e.t@gmail.com</Link>
               </div>
             </div>
             <div className="footer__contactContainer">
@@ -108,7 +108,7 @@ export default function Footer() {
               {/*    FOOTER SOCIAL MEDIA ICONS */}
 
               <div className="footer__phoneInfo">
-                <p>SOCIAL NETWORK</p>
+                <p>Sosial şəbəkələr</p>
                 <div className="footer__socialMediaContainer">
                   <Link
                     className="footer__socialMediaLinks"
@@ -145,35 +145,35 @@ export default function Footer() {
           </div>
           <div className="footer__quickLinksContainer">
             <div className="footer__bottomUnderscore">
-              <h2>Quick Links</h2>
+              <h2>Sayt xəritəsi</h2>
               <div className="footer__devider"></div>
             </div>
             <div className="footer__quickLinks">
               <div className="footer__left">
                 <Link className="footer__footerLinks" to={"/"}>
-                  Home
+                  Ana səhifə
                 </Link>
                 <Link className="footer__footerLinks" to={"/blogs"}>
-                  Blogs
+                  Bloq
                 </Link>
                 <Link className="footer__footerLinks" to={"/faq"}>
                   FAQ
                 </Link>
                 <Link className="footer__footerLinks" to={"/project"}>
-                  Projects
+                  İşlərimiz
                 </Link>
            
               </div>
               <div className="footer__right">
                 <Link className="footer__footerLinks" to={"/about"}>
-                  About
+                  Haqqımızda
                 </Link>
                 <Link className="footer__footerLinks" to={"/contact"}>
-                  Contact
+                  Əlaqə
                 </Link>
 
                 <Link className="footer__footerLinks" to={"/price"}>
-                  Pricing
+                  Qiymətlər
                 </Link>
              
                 {/* <Link className='footer__footerLinks' to={'/blogs'}>
@@ -184,7 +184,7 @@ export default function Footer() {
           </div>
           <div className="footer__galleryContainer">
             <div className="footer__bottomUnderscore">
-              <h2>Gallery</h2>
+              <h2>Qalareya</h2>
               <div className="footer__devider"></div>
             </div>
             <div className="footer__galleries">
@@ -237,7 +237,7 @@ export default function Footer() {
           <div className="footer__bottomDevider"></div>
           <div className="footer__copyright">
             <p className="footer__copyrightLeft">
-              Copyright 2022 . All rights reserved
+              Copyright 2023 . Bütün hüquqlar Neyman Enterprise Technologies şirkəti tərəfindən qorunur
             </p>
             <p className="footer__copyrightRight">
               Terms & Conditions | Privacy Policy

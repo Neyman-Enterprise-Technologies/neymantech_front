@@ -71,16 +71,16 @@ const Accordion = () => {
             <div className="container">
               <div className="linkTitle">
                 <h2>
-                  F<span>a</span>Q
+                Ən çox verilən suallar
                 </h2>
               </div>
             </div>
             <div className="linkLinks">
               <Link to="/" className="linkLink">
-                Home
+                Ana səhifə
               </Link>
               <FaAngleRight className="angleIcon" />
-              <Link to="about">Faq</Link>
+              <Link to="about">Ən çox verilən suallar</Link>
             </div>
           </div>
           <div className="accordion">

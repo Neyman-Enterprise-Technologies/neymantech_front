@@ -116,28 +116,29 @@ useEffect(() => {
             <div className="container">
               <div className="linkTitle">
                 <h2>
-                  Pri<span>c</span>ing
-                </h2>
+                  Qiymətlər
+                </h2> <br /><br />
+              <h3 >Sizə uyğun qiyməti seçin</h3>
               </div>
             </div>
             <div className="linkLinks">
               <Link to="/" className="linkLink">
-                Home
+                Ana səhifə
               </Link>
               <FaAngleRight className="angleIcon" />
-              <Link to="about">Pricing</Link>
+              <Link to="about">Qiymətlər</Link>
             </div>
           </div>
           {/*      headerLink end */}
 
           {/*    header start */}
-          <div className="header">
-            <h2>Choose your best plan</h2>
+          {/* <div className="header">
+            <h2>Sizə uyğun qiyməti seçin</h2>
             <p>
               Real innovations and a positive customer experience are the heart
               of successful communication. No fake products and services.
             </p>
-          </div>
+          </div> */}
           {/*    header end*/}
 
           {isModalOpen && <div className="overlay" onClick={openModal} />}

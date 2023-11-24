@@ -77,27 +77,26 @@ export default function Project() {
         <div className="linkHeader">
           <div className="linkTitle">
             <h2>
-              Proj<span>e</span>cts
+              İşlərimiz
             </h2>
           </div>
 
           <div className="linkLinks">
             <Link to="/" className="linkLink">
-              Home
+              Ana səhifə
             </Link>
             <FaAngleRight className="angleIcon" />
-            <Link to="about">Projects</Link>
+            <Link to="about">İşlərimiz</Link>
           </div>
         </div>
         {/*  HEADER LINK END  */}
         {/*  HEADER START */}
-        <div className="projectHeader">
-          <h2 className="projectTitle">Our latest works</h2>
+        {/* <div className="projectHeader">
+          <h2 className="projectTitle">İşlərimiz</h2>
           <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
+            Şirkətlər üçün etdiyimiz işləri buradan daha detaylı görə bilərsiniz.
           </p>
-        </div>
+        </div> */}
 
         {/*  CARDS CONTAINER START */}
 
