@@ -7,6 +7,7 @@ const Partners = () => {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: partners } = UseFetch(`${apiUrl}core_api/collaborator/`);
 
+
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
@@ -16,34 +17,34 @@ const Partners = () => {
   }, []);
 
   return (
-    <>
-    <h2 className="partners-header">Our Loving Clients</h2>
-  <div className="container">
-  <div className="partners">
-      <motion.div
-        ref={carousel}
-        className="carousel"
-        whileTap={{ cursor: "grabbing" }}
-      >
-        <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          className="inner-carousel"
-        >
-          {partners &&
-            partners.map(({ name, logo }) => (
-              <motion.div className="itemmm" key={name}>
-                <img src={logo} alt="" />
-              
-              </motion.div>
-            ))}
-
-          
-        </motion.div>
-      </motion.div>
+    <div className="container">
+      <h2 className="partners-header">Our Loving Clients</h2>
+    
+        <div className="partners">
+          <motion.div
+            ref={carousel}
+            className="carousel"
+            whileTap={{ cursor: "grabbing" }}
+          >
+            <motion.div
+              drag="x"
+              dragConstraints={{ right: 0, left: -width }}
+              className="inner-carousel"
+            >
+              {partners &&
+                partners.map(({ name, logo }) => (
+           
+                  <motion.div className="itemmm" key={name}>
+                    <img src={logo} alt="" />
+                 
+                
+                  </motion.div>
+                ))}
+            </motion.div>
+          </motion.div>
+        </div>
+ 
     </div>
-  </div>
-    </>
   );
 };
 
