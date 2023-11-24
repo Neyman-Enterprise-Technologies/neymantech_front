@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-
 import { motion } from "framer-motion";
 import { FaChevronUp } from "react-icons/fa";
 import { useParams } from "react-router-dom";
@@ -43,11 +42,8 @@ export default function Home() {
   //*HOME - OUR LATEST WORK -4
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
   const { data: latestWorkCardInHome } = UseFetch(
-    `${apiUrl}service_api/services/`
-    
+    `${apiUrl}service_api/last_works/`
   );
-
-
 
   const { data: latestNews } = UseFetch(`${apiUrl}blog_api/blog`);
   const [loading, setLoading] = useState(false);
@@ -107,24 +103,23 @@ export default function Home() {
         <MySlider />
 
         <div className="home__service" name="services">
-          <div className="container">
-            <div className="home__service__content">
-              <h2 id="services" className="services" name="services">
-                {" "}
-                Our Services
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
-            </div>
-            {/* SERVICE CARDS START */}
-            {serviceCards && <ServiceCards serviceCards={serviceCards} />}
-            {error && <div>{error}</div>}
+          <div className="home__service__content">
+            <h2 id="services" className="services" name="services">
+              {" "}
+              Our Services
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
           </div>
+          {/* SERVICE CARDS START */}
+
+          {serviceCards && <ServiceCards serviceCards={serviceCards} />}
+          {error && <div>{error}</div>}
         </div>
 
-        <div className="container" id="cards">
+        <div id="cards">
           {digitalMarketingSecInHome && (
             <DijitalMarketingSecInHome
               digitalMarketingSecInHome={digitalMarketingSecInHome}
@@ -132,28 +127,24 @@ export default function Home() {
           )}
         </div>
 
-        <div className="container">
-          {webDesignSecHome && (
-            <WebDesignSecHome webDesignSecHome={webDesignSecHome} />
-          )}
-        </div>
+        {webDesignSecHome && (
+          <WebDesignSecHome webDesignSecHome={webDesignSecHome} />
+        )}
 
-        <div className="container">
-          <div className="home__works">
-            <div className="home__works__header">
-              <h2>Our latest works</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
-            </div>
-            {LatestWorkCardInHome && (
-              <LatestWorkCardInHome
-                latestWorkCardInHome={latestWorkCardInHome}
-                isProjectPage={false}
-              />
-            )}
+        <div className="home__works container">
+          <div className="home__works__header">
+            <h2>Our latest works</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
           </div>
+          {LatestWorkCardInHome && (
+            <LatestWorkCardInHome
+              latestWorkCardInHome={latestWorkCardInHome}
+              isProjectPage={false}
+            />
+          )}
         </div>
 
         <div className="home__feedback">
@@ -161,20 +152,17 @@ export default function Home() {
             <p>TESTIMONIALS</p>
             <h2>Some lovely feedback from our clients</h2>
           </div>
+
           {feedback && <Carusel feedback={feedback} />}
         </div>
 
         <div className="home__blogs">
-          <div className="container">
-            <div className="home__blogs__content">
-              <h2>Latest news</h2>
-            </div>
+          <div className="home__blogs__content">
+            <h2>Latest news</h2>
+          </div>
 
-            <div className="container">
-              <div className="cards-wrapper">
-                {latestNews && <LatestNews latestNews={latestNews} />}
-              </div>
-            </div>
+          <div className="cards-wrapper">
+            {latestNews && <LatestNews latestNews={latestNews} />}
           </div>
         </div>
       </motion.section>
@@ -182,4 +170,3 @@ export default function Home() {
     </>
   );
 }
-
