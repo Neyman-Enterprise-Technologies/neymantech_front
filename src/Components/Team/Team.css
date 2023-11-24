@@ -3,12 +3,18 @@
   padding: 5rem 0;
 }
 
+.teamSection .teamHeaderContainer p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--blueText);
+  font-weight: 500;
+}
 
-
-
+.teamSection .teamHeaderContainer h2 {
+  font-size: 2rem;
+}
 
 .teamSection .team-container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +120,8 @@
   width: 100%;
   height: 30rem;
   overflow: hidden;
+  background-color: #020000;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .teamSection .team-container__profile-container img {
@@ -124,7 +132,7 @@
   height: 100%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border-radius: 0.6rem 0.6rem 0 0;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .teamSection .team-container__profile-details {
@@ -145,6 +153,9 @@
 }
 
 .teamSection .team-container__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
@@ -155,25 +166,27 @@
   font-size: 1.3rem;
   color: blue;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
+  .section-2 .cardsContainer .card .cardList p {
+    font-size: 15px;
+  }
+  .section-3 .left .selected-title-container .tick-icon {
+    font-size: 30px;
+  }
+  .teamSection .team-container__profile-container {
+    height: 300px;
+  }
+  .teamSection .team-container__profile-details {
+    padding: 10px 0;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
-  
-
-  .section-2 .cardsContainer .card .cardList p {
-    font-size: 15px;
-  }
- 
- 
   .section-3 .left .selected-title-container .tick-icon {
     font-size: 30px;
   }
@@ -186,87 +199,50 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
   .teamSection .team-container {
     width: 100%;
-    gap: 6rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .teamSection .team-container__cardContainer {
-    width: 100%;
-  }
-  .teamSection .team-container__profile-container {
-    /* width: 800px; */
-    height: 800px;
-  }
-  /* .team-container__cardContainer{
-    width: 800px;
-  } */
-  /* .team-container__cardContainer{
-    width: 800px;
-   
-  } */
-  .teamSection .team-container__profile-details {
-    padding: 40px 0;
-  }
-  .teamSection .team-container__name {
-    font-size: 25px;
-  }
-  .teamSection .team-container__job {
-    font-size: 18px;
-  }
-  .teamSection .team-container__profile-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 2rem;
   }
-  .section-3 .left .header {
-    font-size: 20px;
-  }
-  
-  .section-2 .cardsContainer {
-    gap: 50px;
-  }
-  
-  
-  .section-2 .cardsContainer .card {
-    gap: 20px;
-  }
- 
-  .section-3 .left .title {
-    font-size: 20px;
-  }
-  .section-2 .cardsContainer .card .cardList p {
-    font-size: 15px;
-  }
-  .section-2 .cardsContainer .card .cardListsContainer {
-    gap: 20px;
+  .teamSection .team-container__cardContainer {
+    width: calc(50% - 1rem);
   }
 }
 
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 100% !important;
-  }
   .section-3 {
     margin-inline: auto;
   }
-  .section-3 .left, .section-3 .right {
+  .section-3 .left,
+  .section-3 .right {
     margin-inline: auto;
     width: 100%;
   }
   .teamSection .team-container {
     width: 100%;
     margin-inline: auto;
+    gap: 5rem;
   }
-  .teamSection .team-container__profile-container {
-    height: 80rem;
+  .teamSection .team-container__cardContainer {
+    width: 100%;
   }
+  /* .teamSection .team-container{
+    height: 400px;
+  } */
   .teamSection .team-container__profile-details {
     padding: 3rem 0;
+    -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  }
+  .teamSection .team-container__name {
+    font-size: 4rem;
+  }
+  .teamSection .team-container__job {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=Team.css.map */

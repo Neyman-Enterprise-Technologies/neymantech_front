@@ -22,8 +22,9 @@ const ServiceCards = ({ serviceCards }) => {
   const { slug } = useParams();
 
   return (
-    <>
-      <div className="home__service__cards">
+    
+
+      <div className="home__service__cards container">
 
         {serviceCards &&
           serviceCards.map((card) => (
@@ -48,7 +49,8 @@ const ServiceCards = ({ serviceCards }) => {
         
           ))}
       </div>
-    </>
+
+    
   );
 };
 

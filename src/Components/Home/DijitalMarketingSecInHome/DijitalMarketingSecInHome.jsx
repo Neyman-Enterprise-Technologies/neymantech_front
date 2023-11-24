@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const DijitalMarketingSecInHome = ({ digitalMarketingSecInHome }) => {
   return (
-    <div className="digital-marketing-container">
+    <div className="digital-marketing-container container">
       {digitalMarketingSecInHome &&
         digitalMarketingSecInHome.map((services,index) => (
           <div className={`left_right-container ${index % 2 === 0 ? 'alternate-layout' : ''}`} key={services.id}>

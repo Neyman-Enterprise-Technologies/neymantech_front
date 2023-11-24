@@ -68,13 +68,13 @@ const Accordion = () => {
             </div>
           )}
         <div className="linkHeader">
-            <div className="container">
+          
               <div className="linkTitle">
                 <h2>
                   F<span>a</span>Q
                 </h2>
               </div>
-            </div>
+          
             <div className="linkLinks">
               <Link to="/" className="linkLink">
                 Home
@@ -83,7 +83,7 @@ const Accordion = () => {
               <Link to="about">Faq</Link>
             </div>
           </div>
-          <div className="accordion">
+          <div className="accordion container">
             {faq &&
               faq.map((item, i) => (
                 <AccordionItem

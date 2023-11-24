@@ -74,6 +74,7 @@ export default function Price() {
   };
  
 useEffect(() => {
+  
     window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
@@ -113,13 +114,13 @@ useEffect(() => {
           )}
           {/*       headerLink start */}
           <div className="linkHeader">
-            <div className="container">
+       
               <div className="linkTitle">
                 <h2>
                   Pri<span>c</span>ing
                 </h2>
               </div>
-            </div>
+           
             <div className="linkLinks">
               <Link to="/" className="linkLink">
                 Home
@@ -140,9 +141,10 @@ useEffect(() => {
           </div>
           {/*    header end*/}
 
-          {isModalOpen && <div className="overlay" onClick={openModal} />}
-          <div className="container">
-          <div className="modal-section">
+          {isModalOpen && <div className="overlay" onClick={openModal}  />}
+      
+         <div className="container">
+         <div className="modal-section">
             <div className="kateqoriya-sec">
               <div className="kateqoriya">
                 <div>
@@ -177,13 +179,13 @@ useEffect(() => {
                 className="modal-wrapper"
               >
                 <div className="modal">
-                  <ul>
+                  <ul className="scroll-modal">
                     <li
                       onMouseLeave={handleMouseLeave}
                       onClick={() => handleClick('')}
                     >
                       All
-                      <FaAngleRight className="modal-angle-icon" />
+                      {/* <FaAngleRight className="modal-angle-icon" /> */}
                     </li>
                     {price &&
                       price.map((card) => (
@@ -194,7 +196,7 @@ useEffect(() => {
                           onClick={() => handleClick(card.id)}
                         >
                           {card.title}
-                          <FaAngleRight className="modal-angle-icon" />
+                          {/* <FaAngleRight className="modal-angle-icon" /> */}
                         </li>
                       ))}
                   </ul>
@@ -202,9 +204,9 @@ useEffect(() => {
               </motion.div>
             )}
           </div>
-          </div>
+          
 
-         <div className="container">
+    
          <div className="cardsContainer">
             {priceCards &&
               priceCards
@@ -227,7 +229,9 @@ useEffect(() => {
                   />
                 ))}
           </div>
+
          </div>
+     
         </motion.div>
      
       {/* )} */}
