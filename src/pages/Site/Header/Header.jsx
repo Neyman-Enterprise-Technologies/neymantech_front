@@ -22,27 +22,27 @@ return (
       </NavLink>
       <nav ref={navRef}>
         <NavLink to="/" onClick={showNavbar}>
-          Home
+        Anasəhifə
         </NavLink>
          <NavLink to="/about" onClick={showNavbar}>
-          About
+         Haqqımızda
         </NavLink>
         <NavLink to="/project" onClick={showNavbar}>
-          Projects
+        İşlərimiz
         </NavLink>
         <NavLink to="/price" onClick={showNavbar}>
-          Price
+        Qiymətlər
         </NavLink>
         <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
-          Service
+        Xidmətlər
         </NavLink>
      
 
         <NavLink to="/blogs" onClick={showNavbar}>
-          Blogs
+        Bloq
         </NavLink>
         <NavLink to="/contact" onClick={showNavbar}>
-          Contact
+        Əlaqə
         </NavLink>
         {/* <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink> */}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
