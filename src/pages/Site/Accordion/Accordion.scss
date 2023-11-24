@@ -4,18 +4,21 @@
   box-sizing: border-box;
 }
 
-body {
-  color: #343a40;
-  line-height: 1;
-}
+
+
+
 
 .accordion {
-  width: 700px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 100px auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
 
 .item {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -24,8 +27,7 @@ body {
   cursor: pointer;
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;
-
-  display: grid;
+display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;
   row-gap: 32px;
@@ -34,23 +36,43 @@ body {
 }
 
 .number {
-  font-size: 24px;
-  font-weight: 500;
-  color: #ced4da;
+  font-size: 30px;
+  font-weight: 800;
+ color: var(--TextColor);
+ opacity: 0.5;
 }
 
-.title,
-.icon {
-  font-size: 24px;
-  font-weight: 500;
+
+
+.accordion .iconn{
+font-size: 30px;
 }
+
+   
+.iconn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 70px;
+
+  /* padding: 10px; */
+  background-color: #0000ff;
+  opacity: 0.8;
+
+  color: white;
+}
+
+
 
 .content-box {
-  word-wrap: break-word;
   grid-column: 2 / -1;
   padding-bottom: 16px;
+
   line-height: 1.6;
-  /* background-color: red; */
+  font-size: 20px;
+  color: var(--TextColor);
+  text-align: justify;
 }
 
 .content-box ul {
@@ -63,6 +85,9 @@ body {
   gap: 12px;
 }
 
+
+
+
 /* OPEN STATE */
 .open {
   border-top: 4px solid #087f5b;
@@ -70,7 +95,8 @@ body {
 
 .open .number,
 .open .title {
-  color: #087f5b;
+  color: #0000ff;
+
 }
 
 /* PAGELINKS START */
@@ -97,6 +123,21 @@ body {
   border-bottom: 2px solid #f78da7;
 padding-bottom: 1.2rem;
 }
+.accordion .itemm {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 15px 24px;
+  padding-right: 48px;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+
+ 
+}
 
 .accordionLinks a {
   color: #0000ff;
@@ -121,7 +162,145 @@ padding-bottom: 1.2rem;
 }
 .titlee {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 25px;
  color: var(--TextColor);
  font-weight: 500;
 }
+@media screen and (max-width: 1200px) {
+
+}
+  @media screen and (max-width: 992px) {
+
+  }
+    @media screen and (max-width: 768px) {
+      .content-box {
+  
+        padding-bottom: 16px;
+     
+        font-size: 16px;
+        color: var(--TextColor);
+        text-align: justify;
+      }
+      .titlee {
+
+        font-size: 20px;
+ 
+
+      }
+
+      accordion .itemm {
+      
+        padding: 10px 24px;
+        padding-right: 36px;
+   
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        display: grid;
+   
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
+    }
+    .iconn {
+    
+      width: 40px;
+      height: 50px;
+
+   
+
+
+  }
+  .number {
+    font-size: 20px;
+ 
+}
+}
+      @media screen and (max-width: 576px) {
+        .accordion {
+          width: 100%;
+     
+          margin: 100px auto;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+      }
+      .accordion .itemm {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        padding: 5px 24px;
+        padding-right:20px;
+        cursor: pointer;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        display: grid;
+      
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
+    }
+    .iconn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 6rem;
+      /* padding: 10px; */
+      background-color: #0000ff;
+      opacity: 0.8;
+      color: white;
+  }
+
+    .titlee {
+      font-weight: 600;
+      font-size: 3rem;
+      color: var(--TextColor);
+      font-weight: 500;
+    
+      }
+      .content-box {
+        grid-column: 2 / -1;
+        padding-bottom: 16px;
+      
+        line-height: 1.6;
+        font-size: 3rem;
+        color: var(--TextColor);
+        text-align: justify;
+      }
+      .accordion {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .accordion .iconn {
+      font-size: 3rem;
+  }
+  .number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--TextColor);
+    opacity: 0.5;
+}
+    }
+      @media screen and (max-width: 430px) {
+
+      }
+      @media screen and (max-width: 340px) {
+        
+      }
+
+
+    
+      
+   
+      
+      
+      
+  
+      
+      
+      
+    
+    
