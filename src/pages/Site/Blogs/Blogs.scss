@@ -553,7 +553,8 @@
     width: 100%;
   }
   .post-details .recent-description p {
-    font-size: 1.8rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   .blogs .left a .card .cardImgContainer {
@@ -563,15 +564,30 @@
   .blogs .right .recent-posts-container .post-details .description .title {
     width: 100%;
   }
+  .blogs .right .recent-posts-container h2{
+    font-size: 3rem;
+  }
   .blogs .left a .card .bottom-content {
     width: 100%;
+   padding-bottom: 13rem;
+   line-height: 4.5rem;
+   
   }
+ 
 
   .blogs .right .category-container p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-left: 7rem;
+    margin-bottom: 2.5rem;
+   
   }
   .blogs .right .category-container p::before {
     top: 0;
+    width: 2rem;
+    height: 2rem;
+    left: -7rem;
+   
+    
   }
 
   .blogs .right .category-container .category-list-container {
@@ -600,19 +616,49 @@
     width: fit-content;
     font-weight: 600;
 
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
-
+  .blogs .right .search .input-button-container input{
+    /* padding: 15px; */
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input::placeholder{
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container .search-icon-container{
+  width: 6rem;
+  }
   .blogs .right {
     width: 100%;
   }
+  .blogs .right .search .input-button-container .search-icon-container .search-icon{
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+  }
 
   .blogs .left a .card .bottom-content h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .blogs .left a .card .bottom-content p,
   .blogs .left a .card .bottom-content::after {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
+  .blogs .right .recent-posts-container .post-details .description .date{
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+  }
+  .blogs .right .recent-posts-container .post-details .details-img {
+    width: 17rem;
+    height: 12rem;
+  }
+  .blogs .right .category-container .title{
+    padding-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .blogs .right .tags-container .title{
+    font-size: 3rem;
+  }
+  
 }
