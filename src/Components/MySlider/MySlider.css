@@ -1,7 +1,3 @@
-.container {
-  max-width: 1320px !important;
-  width: 100%;
-}
 
 .slider1 {
   width: 100%;
@@ -18,7 +14,8 @@
 .slider1__content {
   position: absolute;
   padding-right: 35rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+ sans-serif;
 }
 
 .slider1__content h1 {

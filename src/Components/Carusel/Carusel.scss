@@ -1,64 +1,58 @@
 .mySwiper {
   width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px 80px 20px 80px; */
 }
 .swiper-slide {
   background-color: rgb(241, 243, 253) !important;
 }
 .Slider {
-  /* background-color: green; */
-  width: 25rem !important;
-  height: 24rem;
-  /* padding: 50px 60px 10px 0px; */
-  background-color: #ffff;
+background-color: #ffff;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+border-radius: 5px;
   &__feedbackContainer {
-    /* background-color: yellow; */
-    display: flex;
+   display: flex;
     flex-direction: column;
-    /* overflow-wrap: break-word; */
+padding: 2.5rem 0px 2.5rem 1.25rem;
     gap: 1rem;
     height: 100%;
-
-    /* line-height: 5rem; */
-    overflow: hidden;
+overflow: hidden;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
-    /* -webkit-line-clamp: 1; */
-    -webkit-box-orient: vertical;
-    /* max-height: 3.02rem; */
+-webkit-box-orient: vertical;
   }
   &__feedback {
-    height: 70%;
-    overflow: hidden;
+    height: 80%;
 
+    overflow: hidden;
+padding-right: 4.375rem;
     display: block;
     color: var(--TextColor);
     font-style: italic;
     line-height: 1.6;
     font-size: 1rem;
-    padding-left: 1rem;
+
     line-height: 1.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
+
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    /* max-height: 3.02rem; */
   }
 
   &__avatarAndInfo {
     display: flex;
-    height: 30%;
-    /* background-color: rgb(109, 94, 94); */
+    height: 20%;
+    width: 100%;
+
+
     align-items: center;
     gap: 1.25rem;
-    padding-left: 1rem;
 
     .avatar-container {
-      /* background-color: yellow; */
       position: relative;
-      /* height: 100%; */
+
       height: 4rem;
       width: 4rem;
       img {
@@ -83,8 +77,6 @@
   .nameAndPosition .name {
     font-size: 1.5rem;
     font-weight: 600;
-    /* overflow: hidden; */
-    /* color: var(--TextColor); */
   }
 }
 
@@ -92,45 +84,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   /* padding: 20px 80px 20px 80px; */
 }
 
+.Slider {
+  width: 33.3% !important;
 
+  height: 26rem;
 
-  .Slider {
-    width: 60% !important;
-    height: 26rem;
+  &__feedback {
+    font-size: 1.4rem;
 
-    &__feedback {
-      font-size: 1.4rem;
+    line-height: 2rem;
+  }
 
-      line-height: 2rem;
-    }
-
-    &__avatarAndInfo {
-      .avatar-container {
-        height: 4.5rem;
-        width: 4.5rem;
-      }
-    }
-
-    .nameAndPosition .position {
-      font-size: 1.4rem;
-      color: var(--blueText);
-    }
-    .nameAndPosition .name {
-      font-size: 1.5rem;
+  &__avatarAndInfo {
+    .avatar-container {
+      height: 4.5rem;
+      width: 4.5rem;
     }
   }
 
+  .nameAndPosition .position {
+    font-size: 1.4rem;
+    color: var(--blueText);
+  }
+  .nameAndPosition .name {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  
+}
+@media screen and (max-width: 992px) {
+}
 
 @media screen and (max-width: 768px) {
-
   .Slider {
-
-    width: 90%!important;
+    width: 100% !important;
     height: 35rem;
     &__feedbackContainer {
       gap: 3.2rem;
@@ -158,20 +151,17 @@
   }
 }
 @media screen and (max-width: 576px) {
- 
+  
   .Slider {
-
-    /* width: 100% !important; */
-    height: 40rem;
+    width: 50% !important;
+    height: 35rem;
     &__feedbackContainer {
-      gap: 2rem;
-    
-     /* margin:unset!important */
+      gap: 3.2rem;
     }
     &__feedback {
       font-size: 1.8rem;
       padding-left: 2rem;
-      line-height: 2.8rem;
+      line-height: 2.6rem;
     }
     &__avatarAndInfo {
       gap: 2rem;
@@ -189,4 +179,5 @@
       font-size: 2rem;
     }
   }
-}
+  }
+

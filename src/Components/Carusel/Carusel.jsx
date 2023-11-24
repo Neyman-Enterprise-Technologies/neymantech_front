@@ -6,29 +6,29 @@ import "./Carusel.scss";
 
 const Carusel = ({ feedback }) => {
   return (
-    <div className="container">
-      <div>
+   
+      <div className="container">
         <Swiper
           spaceBetween={30}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          className="mySwiper"
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
+          // navigation={{
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // }}
+          // className="mySwiper"
+          // breakpoints={{
+          //   640: {
+          //     slidesPerView: 1,
+          //     spaceBetween: 20,
+          //   },
+          //   768: {
+          //     slidesPerView: 2,
+          //     spaceBetween: 40,
+          //   },
+          //   1440: {
+          //     slidesPerView: 3,
+          //     spaceBetween: 50,
+          //   },
+          // }}
         >
           {feedback.map(({ avatar, fullname, id, position, feedback }) => (
             <SwiperSlide className="Slider" key={id}>
@@ -55,25 +55,25 @@ const Carusel = ({ feedback }) => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          className="mySwiper"
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
+          // className="mySwiper"
+          // breakpoints={{
+          //   640: {
+          //     slidesPerView: 1,
+          //     spaceBetween: 20,
+          //   },
+          //   768: {
+          //     slidesPerView: 2,
+          //     spaceBetween: 40,
+          //   },
+          //   1024: {
+          //     slidesPerView: 3,
+          //     spaceBetween: 50,
+          //   },
+          // }}
           initialSlide={3}
         ></Swiper>
       </div>
-    </div>
+ 
   );
 };
 

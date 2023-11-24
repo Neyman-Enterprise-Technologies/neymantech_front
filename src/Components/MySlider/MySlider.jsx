@@ -16,12 +16,15 @@ function MySlider() {
 
   const sliderRef = useRef(null);
   return (
-    <motion.div className="slider-container"
+   
+  
+       <motion.div className="slider-container"
     whileHover={{ scale: 1 }}
   whileTap={{ scale: 1.07 }}
   drag="x"
   dragConstraints={{ left: 0, right: 0 }}
    >
+     
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -41,7 +44,6 @@ function MySlider() {
                   alt="Slide 1"
                 />
 
-                <div className="container">
                   <div className="slider1__content">
                     <h1>{slider_header}</h1>
                     <p className="">
@@ -52,12 +54,15 @@ function MySlider() {
                       {/* <button>Get Started</button> */}
                     </Link>
                   </div>
-                </div>
+            
               </div>
             </SwiperSlide>
           ))}
       </Swiper>
+    
     </motion.div>
+
+    
   );
 }
 

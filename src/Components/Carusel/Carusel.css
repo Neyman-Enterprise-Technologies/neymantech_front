@@ -1,5 +1,15 @@
 .mySwiper {
   width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* padding: 20px 80px 20px 80px; */
 }
 
 .swiper-slide {
@@ -7,10 +17,6 @@
 }
 
 .Slider {
-  /* background-color: green; */
-  width: 25rem !important;
-  height: 24rem;
-  /* padding: 50px 60px 10px 0px; */
   background-color: #ffff;
   -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -18,59 +24,49 @@
 }
 
 .Slider__feedbackContainer {
-  /* background-color: yellow; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  /* overflow-wrap: break-word; */
+  padding: 2.5rem 0px 2.5rem 1.25rem;
   gap: 1rem;
   height: 100%;
-  /* line-height: 5rem; */
   overflow: hidden;
   text-overflow: ellipsis;
-  /* white-space: nowrap; */
-  /* -webkit-line-clamp: 1; */
   -webkit-box-orient: vertical;
-  /* max-height: 3.02rem; */
 }
 
 .Slider__feedback {
-  height: 70%;
+  height: 80%;
   overflow: hidden;
+  padding-right: 4.375rem;
   display: block;
   color: var(--TextColor);
   font-style: italic;
   line-height: 1.6;
   font-size: 1rem;
-  padding-left: 1rem;
   line-height: 1.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* white-space: nowrap; */
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  /* max-height: 3.02rem; */
 }
 
 .Slider__avatarAndInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 30%;
-  /* background-color: rgb(109, 94, 94); */
+  height: 20%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 1.25rem;
-  padding-left: 1rem;
 }
 
 .Slider__avatarAndInfo .avatar-container {
-  /* background-color: yellow; */
   position: relative;
-  /* height: 100%; */
   height: 4rem;
   width: 4rem;
 }
@@ -101,8 +97,6 @@
 .Slider .nameAndPosition .name {
   font-size: 1.5rem;
   font-weight: 600;
-  /* overflow: hidden; */
-  /* color: var(--TextColor); */
 }
 
 .mySwiper {
@@ -115,46 +109,36 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   /* padding: 20px 80px 20px 80px; */
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
+.Slider {
+  width: 33.3% !important;
+  height: 26rem;
 }
 
-@media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
-  .Slider {
-    width: 60% !important;
-    height: 26rem;
-  }
-  .Slider__feedback {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-  .Slider__avatarAndInfo .avatar-container {
-    height: 4.5rem;
-    width: 4.5rem;
-  }
-  .Slider .nameAndPosition .position {
-    font-size: 1.4rem;
-    color: var(--blueText);
-  }
-  .Slider .nameAndPosition .name {
-    font-size: 1.5rem;
-  }
+.Slider__feedback {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.Slider__avatarAndInfo .avatar-container {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.Slider .nameAndPosition .position {
+  font-size: 1.4rem;
+  color: var(--blueText);
+}
+
+.Slider .nameAndPosition .name {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
   .Slider {
     width: 100% !important;
     height: 35rem;
@@ -185,21 +169,17 @@
 }
 
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 90% !important;
-  }
   .Slider {
-    /* width: 100% !important; */
-    height: 40rem;
+    width: 50% !important;
+    height: 35rem;
   }
   .Slider__feedbackContainer {
-    gap: 2rem;
-    /* margin:unset!important */
+    gap: 3.2rem;
   }
   .Slider__feedback {
     font-size: 1.8rem;
     padding-left: 2rem;
-    line-height: 2.8rem;
+    line-height: 2.6rem;
   }
   .Slider__avatarAndInfo {
     gap: 2rem;
