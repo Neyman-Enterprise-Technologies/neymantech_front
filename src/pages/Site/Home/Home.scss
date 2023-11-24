@@ -81,7 +81,7 @@
         top: 0;
         width: 0px;
         height: 0px;
-        background: orange;
+
 
         transition: width 0.5s, height 0.5s;
       }
@@ -164,7 +164,7 @@
           transition: ease-out 0.2s;
 
           & p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 600;
 
             color: #000;
@@ -541,15 +541,15 @@
 
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     border-radius: 1rem;
     /* padding: 5rem 0; */
-    padding-bottom: 5rem;
+    padding: 4rem 0;
     a{
-      width: calc(33.3% - 0.65rem);
+      width: calc(24.8% - 0.65rem);
     }
     &__card {
       position: absolute;
@@ -561,7 +561,7 @@
       box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
       transition: 0.5s ease-in-out;
     
-      height: 37rem;
+      height: 30rem;
       position: relative;
       text-align: center;
       & .info {
@@ -819,6 +819,10 @@ article:has(:hover, :focus) {
 
 
 @media screen and (max-width: 1200px) {
+
+
+
+
  
 
   .home__service {
@@ -834,7 +838,7 @@ article:has(:hover, :focus) {
       justify-content: center;
       &__card {
     
-        height: 35rem;
+        height: 25rem;
       }
     }
   }
@@ -849,10 +853,13 @@ article:has(:hover, :focus) {
   }
   .home__works {
     &__cards {
+      a{
+        width: calc(50% - 0.65rem);
+      }
       justify-content: center;
       &__card {
       
-        height: 30rem;
+        height: 35rem;
 
         & .info {
           & .description {
@@ -961,19 +968,7 @@ article:has(:hover, :focus) {
     flex-direction: column-reverse;
   }
 
-  .cards-wrapper .cards-container .card .bottom-content {
-    padding: 3rem 2rem;
-    line-height: 3.5rem;
-  }
-  .cards-wrapper .cards-container .card .bottom-content h2 {
-    font-size: 3rem;
-  }
-  .cards-wrapper .cards-container .card .bottom-content p {
-    font-size: 2rem;
-  }
-  .cards-wrapper .cards-container .card .bottom-content:after {
-    font-size: 2rem;
-  }
+  
 
   .home__service {
     background-color: #f9f9fc;
@@ -1021,11 +1016,17 @@ article:has(:hover, :focus) {
   }
   .home__service__content h2 {
     font-size: 3.5rem;
+
   }
+
 
   .home__feedback__content p {
     font-size: 3rem;
     padding-bottom: 3rem;
+  }
+  .home__feedback__content h2{
+    font-size: 3.5rem;
+    line-height: 4rem;
   }
 
 
@@ -1060,22 +1061,7 @@ gap: 4rem;
 }
 @media screen and (max-width:576px) {
  
-
-
-
-
-
-
-  
-  .cards-wrapper .cards-container{
-    width: 100%!important;
-
-  }
-  .cards-wrapper .cards-container .card{
-    background-color: blue;
-  }
-
-  .home__works__cards {
+.home__works__cards {
 
     flex-wrap: wrap;
     flex-direction: column;
@@ -1151,7 +1137,7 @@ a{
   }
   .home__service__content p {
     font-size: 2.5rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
   .home__service__content h2 {
     font-size: 3.5rem;
@@ -1175,19 +1161,7 @@ width: 100%!important;
   .home__works__header p {
     font-size: 2.5rem;
   }
-  .cards-wrapper .cards-container .card .bottom-content {
-    padding: 3rem 2rem;
-    line-height: 3.5rem;
-  }
-  .cards-wrapper .cards-container .card .bottom-content h2 {
-    font-size: 3.5rem;
-  }
-  .cards-wrapper .cards-container .card .bottom-content p {
-    font-size: 2.5rem;
-  }
-  .cards-wrapper .cards-container .card .bottom-content:after {
-    font-size: 2rem;
-  }
+
   .digital-marketing-container
     .left
     .marketing-cards-container
@@ -1211,7 +1185,63 @@ width: 100%!important;
   .home__feedback__content h2 {
     font-size: 3.5rem;
   }
-  .home__blogs__content h2 {
+  
+}
+
+
+@media screen and (max-width:576px) {
+  
+}
+@media screen and (max-width:430px) {
+  .home__service__content h2{
+    font-size: 4rem;
+  }
+  .home__service .home__service__cards__card__icon{
+
+    width: 9rem;
+    height: 9rem;
+    
+  }
+  .home__service .home__service__cards__card__icon .badge{
+    top: -1.5rem;
+    right: -2rem;
+    font-size: 4.5rem;
+  }
+  .home__service .home__service__cards__card__icon .icon1{
+   
+    width: 70%;
+    height: 70%;
+  }
+
+  .home__service__content p{
+    font-size: 3rem;
+  }
+  .home__service__cards__card h3{
     font-size: 3.5rem;
   }
+  .home__service__cards__card p{
+    font-size: 3rem;
+  }
+  .digital-marketing-container .left .top-container p{
+    font-size: 2.5rem;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+    font-size: 2.7rem;
+  }
+  .home__works__header p{
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width:340px) {
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+    font-size: 2.8rem;
+  }
+  .digital-marketing-container .left .top-container p{
+    font-size: 3rem;
+  }
+  .home__service__cards__card{
+    width: 100%;
+  }
+  
 }

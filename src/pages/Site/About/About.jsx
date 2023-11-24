@@ -89,13 +89,13 @@ export default function About() {
           )}
           {/* ABOUT HEADER START */}
           <div className="linkHeader">
-            <div className="container">
+         
               <div className="linkTitle">
                 <h2>
                   Haqqımızda
                 </h2>
               </div>
-            </div>
+          
             <div className="linkLinks">
               <Link to="/" className="linkLink">
                 Ana səhifə
@@ -107,14 +107,15 @@ export default function About() {
           {/* ABOUT HEADER END */}
 
           {/* SECTION-1 START */}
-          <div className="container">
+          {/* <div className="container">
             {aboutSection1 && <AboutSection1 aboutSection1={aboutSection1} />}
-          </div>
+          </div> */}
           {/* SECTION-1 END */}
 
           {/* SECTION-2 START  */}
+     
           <div className="container">
-            <section className="section-2">
+          <section className="section-2">
               <div className="cardsContainer">
                 <div className="card">
                   <h2>Haqqımızda</h2>
@@ -159,11 +160,11 @@ Neyman Enterprise Technologies, müştərilərimizlə güclü bir əməkdaşlıq
                 </div>
               </div>
             </section>
-          </div>
+      
           {/* SECTION-2 END  */}
 
           {/* SECTION-3 START */}
-          <div className="container">
+         
             <section className="section-3">
               <div className="left">
                 <p className="title">Niyə bizi seçməlisiniz?</p>
@@ -192,15 +193,17 @@ Neyman Enterprise Technologies, müştərilərinin dijital inkşafını dəstək
                 />
               </div>
             </section>
-            {/* SECTION-3 END */}
+
           </div>
+            {/* SECTION-3 END */}
+      
           {/* SECTION-3 END */}
           {/* SECTION-4 START */}
 
-          <div className="container">
+     
             {error && <div>{error}</div>}
             {team && <Team team={team} />}
-          </div>
+      
           {/* SECTION-4 END */}
 
           <Partners />

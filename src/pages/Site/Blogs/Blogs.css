@@ -1,16 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1320px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* heading start */
 /* blogs */
 .blogs {
@@ -97,7 +84,7 @@
 }
 
 .blogs .left a .card .bottom-content h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .blogs .left a .card .bottom-content h2,
@@ -115,6 +102,7 @@
 
 .blogs .left a .card .bottom-content p {
   color: var(--TextColor);
+  font-size: 1.2rem;
 }
 
 .blogs .left a .card:hover {
@@ -411,9 +399,6 @@
 
 /* right end */
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
   .blogs .left a .card .cardImgContainer {
     height: 12rem;
   }
@@ -424,9 +409,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
   .blogs .left a .card .cardImgContainer {
     height: 25rem;
   }
@@ -567,9 +549,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
   .blogs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -662,9 +641,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  .container {
-    max-width: 100% !important;
-  }
   .blogs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -688,22 +664,33 @@
     width: 100%;
   }
   .post-details .recent-description p {
-    font-size: 1.8rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .blogs .left a .card .cardImgContainer {
-    height: 30rem;
+    height: 40rem;
   }
   .blogs .right .recent-posts-container .post-details .description .title {
     width: 100%;
   }
+  .blogs .right .recent-posts-container h2 {
+    font-size: 3rem;
+  }
   .blogs .left a .card .bottom-content {
     width: 100%;
+    padding-bottom: 13rem;
+    line-height: 4.5rem;
   }
   .blogs .right .category-container p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-left: 7rem;
+    margin-bottom: 2.5rem;
   }
   .blogs .right .category-container p::before {
     top: 0;
+    width: 2rem;
+    height: 2rem;
+    left: -7rem;
   }
   .blogs .right .category-container .category-list-container {
     padding: 3rem 0rem;
@@ -736,17 +723,56 @@
     width: -moz-fit-content;
     width: fit-content;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  .blogs .right .search .input-button-container input {
+    /* padding: 15px; */
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container input::placeholder {
+    font-size: 15px;
+  }
+  .blogs .right .search .input-button-container .search-icon-container {
+    width: 6rem;
   }
   .blogs .right {
     width: 100%;
   }
+  .blogs .right .search .input-button-container .search-icon-container .search-icon {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+  }
   .blogs .left a .card .bottom-content h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .blogs .left a .card .bottom-content p,
   .blogs .left a .card .bottom-content::after {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  .blogs .right .recent-posts-container .post-details .description .date {
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+  }
+  .blogs .right .recent-posts-container .post-details .details-img {
+    width: 17rem;
+    height: 12rem;
+  }
+  .blogs .right .category-container .title {
+    padding-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .blogs .right .tags-container .title {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=Blogs.css.map */

@@ -16,6 +16,7 @@ function Navbar() {
 
 return (
     <header>
+   
       <NavLink to="/" className="logo-img">
         <img src={newlogo} alt="Responsive Image" />
       </NavLink>
@@ -23,6 +24,7 @@ return (
         <NavLink to="/" onClick={showNavbar}>
           Ana səhifə
         </NavLink>
+<<<<<<< HEAD
         <NavLink to="/about" onClick={showNavbar}>
           Haqqımızda
         </NavLink>
@@ -37,6 +39,19 @@ return (
         </NavLink>
         <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
           Komandamız
+=======
+         <NavLink to="/about" onClick={showNavbar}>
+          About
+        </NavLink>
+        <NavLink to="/project" onClick={showNavbar}>
+          Projects
+        </NavLink>
+        <NavLink to="/price" onClick={showNavbar}>
+          Price
+        </NavLink>
+        <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+          Service
+>>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
         </NavLink>
         <NavLink to="/blogs" onClick={showNavbar}>
           Bloq
@@ -59,6 +74,7 @@ return (
             <option value="türkçe">TR</option>
           </select>
         </div> */}
+      
     </header>
   );
 }

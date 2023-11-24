@@ -9,14 +9,17 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import UseFetch from "../../../UseFetch";
+
 // import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
   
-  const { data: lastWork } = UseFetch(
-    `${apiUrl}service_api/services/`
+  const { data: latestWorkCardInHome } = UseFetch(
+    `${apiUrl}service_api/last_works/`
   );
+
+
 
   const [loading, setLoading] = useState(false);
 
@@ -101,19 +104,21 @@ export default function Project() {
         {/*  CARDS CONTAINER START */}
 
         <div className="project-cards-container">
-          <div className="container">
-            {lastWork && (
+         
+            {latestWorkCardInHome && (
               <LatestWorkCardInHome
-                lastWork={lastWork}
+               
+                latestWorkCardInHome={latestWorkCardInHome}
                 isProjectPage={true}
               />
             )}
-          </div>
+         
         </div>
 
         {/*  HEADER END */}
       </motion.div>
       {/* )} */}
+     
     </>
   );
 }

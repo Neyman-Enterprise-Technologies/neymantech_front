@@ -82,7 +82,7 @@ useEffect(() => {
     };
   }, []);
   return (
-    <>
+ <>
       {/* {loading ? (
         <Loading />
       ) : ( */}
@@ -105,12 +105,12 @@ useEffect(() => {
           )}
           {/* heading start */}
           <div className="linkHeader">
-            <div className="container">
+           
               <div className="linkTitle">
                 <h2>
                   Bloq
                 </h2>
-              </div>
+             
             </div>
             <div className="linkLinks">
               <Link to="/" className="linkLink">
@@ -122,8 +122,8 @@ useEffect(() => {
           </div>
           {/* heading end */}
 
-          <div className="container">
-            <section className="blogs">
+      
+            <section className="blogs container">
               <div className="left">
                 {/* BlogList Component start */}
 
@@ -214,10 +214,11 @@ useEffect(() => {
                 </div>
               </div>
             </section>
-          </div>
+        
          
         </motion.div>
       {/* )} */}
-    </>
+        </>
+    
   );
 }

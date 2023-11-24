@@ -1,10 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .logo-img {
   width: 16%;
   height: 100%;
@@ -37,13 +30,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 6.875rem;
+  height: 8rem;
   padding: 0 2rem;
   background-color: #ebebeb;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   /* color: var(--textColor); */
-  z-index: 5;
+  z-index: 999999999;
   color: #29335c;
   position: -webkit-sticky;
   position: sticky;
@@ -113,24 +106,14 @@ nav {
 }
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
+  header {
+    height: 9rem;
   }
-  .header {
-    width: 90%;
-  }
-  /* .header p{
-      font-size: 1.8rem;
-      line-height: 3rem;
-    } */
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
-  .header {
-    width: 90%;
+  header {
+    height: 9rem;
   }
   .header p {
     font-size: 1.8rem;
@@ -138,16 +121,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 576px) {
-  header {
-    height: 40px;
-  }
-  .logo-img img {
-    width: 80px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 991px) {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
@@ -200,8 +174,54 @@ nav {
     right: 2rem;
     color: #eee;
   }
-  nav a {
-    font-size: rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav-close-open {
+    font-size: 5rem;
+  }
+  header {
+    height: 12rem;
+  }
+  .logo-img img {
+    width: 20rem;
+  }
+  header .responsive_nav a {
+    color: white;
+    font-size: 4.5rem;
+  }
+  nav .nav-close-btn {
+    position: absolute;
+    font-size: 30rem;
+    top: 5rem;
+    right: 2rem;
+    color: #eee;
+  }
+  .navbar-open-icon {
+    font-size: 4.5rem;
+  }
+  .category-search-icon {
+    font-size: 4rem;
+  }
+  .header p {
+    font-size: 2.5rem;
+    width: 100%;
+    line-height: 4rem;
   }
 }
+
+/* @media only screen and (max-width: 340px) {
+    .nav-close-open {
+      font-size: 6rem;
+    
+  }
+  header{
+    height: 13rem;
+  
+  }
+  .logo-img img{
+    width: 23rem;
+  }
+     
+    } */
 /*# sourceMappingURL=Header.css.map */

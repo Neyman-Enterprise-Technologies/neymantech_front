@@ -68,13 +68,13 @@ const Accordion = () => {
             </div>
           )}
         <div className="linkHeader">
-            <div className="container">
+          
               <div className="linkTitle">
                 <h2>
                 Ən çox verilən suallar
                 </h2>
               </div>
-            </div>
+          
             <div className="linkLinks">
               <Link to="/" className="linkLink">
                 Ana səhifə
@@ -83,7 +83,7 @@ const Accordion = () => {
               <Link to="about">Ən çox verilən suallar</Link>
             </div>
           </div>
-          <div className="accordion">
+          <div className="accordion container">
             {faq &&
               faq.map((item, i) => (
                 <AccordionItem

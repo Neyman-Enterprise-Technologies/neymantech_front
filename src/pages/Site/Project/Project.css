@@ -1,21 +1,6 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1320px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* PROJECT CARDS START */
 .project-cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -138,18 +123,12 @@
 
 /* PROJECT CARDS END */
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
   .project-cards-container__card {
     height: 37rem;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px !important;
-  }
   .project-cards-container__card {
     width: 33rem;
     height: 39.25rem;
@@ -164,9 +143,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px !important;
-  }
   .project-cards-container__card {
     width: 33rem;
     height: 39.25rem;
@@ -178,5 +154,79 @@
   .project-cards-container__heading {
     font-size: 1.5rem;
   }
+  .kateqoriya {
+    gap: 3rem;
+  }
+  .kateqoriya-sec {
+    width: 100%;
+    height: 5rem;
+  }
+  .category-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .kateqoriya p {
+    font-size: 2rem;
+  }
+  .input-search input {
+    font-size: 2rem;
+  }
+  .input-search input::-webkit-input-placeholder {
+    font-size: 2rem;
+  }
+  .input-search input:-ms-input-placeholder {
+    font-size: 2rem;
+  }
+  .input-search input::-ms-input-placeholder {
+    font-size: 2rem;
+  }
+  .input-search input::placeholder {
+    font-size: 2rem;
+  }
+  .category-search-icon {
+    font-size: 3rem;
+  }
 }
 
+@media screen and (max-width: 576px) {
+  .modal-section {
+    width: 100%;
+  }
+  .modal-section {
+    width: 100%;
+    margin-inline: auto;
+  }
+  .projectTitle {
+    font-size: 3.5rem;
+  }
+  .projectHeader .description {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .category-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .kateqoriya p {
+    font-size: 3rem;
+  }
+  .input-search input {
+    font-size: 3rem;
+  }
+  .input-search input::-webkit-input-placeholder {
+    font-size: 3rem;
+  }
+  .input-search input:-ms-input-placeholder {
+    font-size: 3rem;
+  }
+  .input-search input::-ms-input-placeholder {
+    font-size: 3rem;
+  }
+  .input-search input::placeholder {
+    font-size: 3rem;
+  }
+  .kateqoriya-sec {
+    height: 6rem;
+  }
+}
+/*# sourceMappingURL=Project.css.map */
