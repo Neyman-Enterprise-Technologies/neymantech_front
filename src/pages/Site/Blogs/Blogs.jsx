@@ -107,9 +107,9 @@ useEffect(() => {
           <div className="linkHeader">
            
               <div className="linkTitle">
-                <h2>
-                  Bloq
-                </h2>
+              <h2>
+                    Bl<span>o</span>q
+                  </h2>
              
             </div>
             <div className="linkLinks">
