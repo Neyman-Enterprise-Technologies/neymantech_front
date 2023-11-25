@@ -1,5 +1,5 @@
 import React from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast , {Toaster} from "react-hot-toast";
 import { Link } from "react-router-dom";
 import "./Footer.scss";
 
@@ -35,8 +35,9 @@ export default function Footer() {
       });
       setEmail("");
       toast.success("You have successfully subscribed");
-    } else {
-      toast.error("Did not work. Please type your email");
+    
+    }else{
+      toast.error("Did not work. Please type your email")
     }
   };
 
@@ -47,6 +48,7 @@ export default function Footer() {
           <div className="footer__subscribe-content">
             <h2>Haqqımızda</h2>
             <p>
+
               "Neyman Enterprise Technologies" şirkəti 2022'ci il yanvarın 1'dən
               fəaliyyət göstərən startap komandasıdır.
             </p>
@@ -65,6 +67,7 @@ export default function Footer() {
               Abonə ol
             </button>
             
+
           </div>
 
         
@@ -234,10 +237,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
    
 
     <div className="container">
     <div className="footer__bottom">
+
           <div className="footer__bottomDevider"></div>
           <div className="footer__copyright">
             <p className="footer__copyrightLeft">
@@ -250,8 +255,10 @@ export default function Footer() {
         </div>
       </div>
     </div>
+
    
     
     
   );
+
 }

@@ -34,8 +34,9 @@ export default function ServiceProperty() {
         className="service"
       >
         {/* heading start */}
-
         <div className="linkHeader">
+
+
 
           <div className="container">
             <div className="linkTitle">
@@ -63,17 +64,18 @@ export default function ServiceProperty() {
             <FaAngleRight className="angleIcon" />
             <Link to="service">{serviceProperty && serviceProperty.title}</Link>
 
+
           </div>
           </div>
         
 
        
 
+
         {/* heading end */}
 
         {/* first section start*/}
-
-        <div className="serviceProperty-container container">
+        <div className="container">
           {serviceProperty &&
             serviceProperty.service_details.map((detail, index) => (
               <div
@@ -116,6 +118,7 @@ export default function ServiceProperty() {
               </div>
             ))}
         </div>
+
         </div>
 
         {/* first section end */}
