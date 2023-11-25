@@ -60,14 +60,14 @@ const LatestWorkCardInHome = ({
       )}
       {isProjectPage && (
         <div className="modal-section">
-          <div className="kateqoriya-sec">
+          
             <div className="kateqoriya">
               <div>
                 <BiCategory className="category-icon" onClick={openModal} />
               </div>
               <p>Kateqoriya seçin</p>
             </div>
-            <div className="input-search">
+            {/* <div className="input-search">
               <input
                 type="text"
                 placeholder="search"
@@ -80,8 +80,8 @@ const LatestWorkCardInHome = ({
                   // onClick={() => handleClick(card.services_property.services.title)}
                 />
               </div>
-            </div>
-          </div>
+            </div> */}
+        
 
           {isModalOpen && (
             <motion.div
