@@ -68,6 +68,7 @@ export default function About() {
       {/* {loading ? (
         <Loading />
       ) : ( */}
+
       <motion.section
         initial={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
@@ -91,6 +92,7 @@ export default function About() {
             <h2>
               Haqq<span>ım</span>ızda
             </h2>
+
           </div>
 
           <div className="linkLinks">
@@ -113,6 +115,7 @@ export default function About() {
 
         <div className="container">
           <section className="section-2">
+
             <div className="cardsContainer">
               <div className="card">
                 <h2>Haqqımızda</h2>
@@ -222,6 +225,7 @@ export default function About() {
                       <p>Your brand, promoted</p>
                     </div>
                   </div> */}
+
               </div>
             </div>
           </section>
@@ -229,6 +233,7 @@ export default function About() {
           {/* SECTION-2 END  */}
 
           {/* SECTION-3 START */}
+
 
           <section className="section-3">
             <div className="left">
@@ -273,6 +278,7 @@ export default function About() {
               {/* <div className="selected-title-container">
                 <BsCheckLg className="tick-icon" />
                 <h2 className="selected-title"> Core Development</h2>
+
               </div>
               <p className="selected-description">
                 No fake products and services. The customer is king, their lives

@@ -22,8 +22,26 @@ return (
       </NavLink>
       <nav ref={navRef}>
         <NavLink to="/" onClick={showNavbar}>
+
         Anasəhifə
+
         </NavLink>
+
+        <NavLink to="/about" onClick={showNavbar}>
+          Haqqımızda
+        </NavLink>
+        <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+          Xidmətlər
+        </NavLink>
+        <NavLink to="/project" onClick={showNavbar}>
+          İşlərimiz
+        </NavLink>
+        <NavLink to="/price" onClick={showNavbar}>
+          Qiymətlər
+        </NavLink>
+        <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+          Komandamız
+
          <NavLink to="/about" onClick={showNavbar}>
          Haqqımızda
         </NavLink>
@@ -34,15 +52,17 @@ return (
         Qiymətlər
         </NavLink>
         <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
-        Xidmətlər
-        </NavLink>
-     
 
+        Xidmətlər
+
+        </NavLink>
         <NavLink to="/blogs" onClick={showNavbar}>
+
         Bloq
         </NavLink>
         <NavLink to="/contact" onClick={showNavbar}>
         Əlaqə
+
         </NavLink>
         {/* <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink> */}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>

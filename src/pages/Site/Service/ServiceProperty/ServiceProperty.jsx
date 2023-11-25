@@ -36,6 +36,33 @@ export default function ServiceProperty() {
         {/* heading start */}
 
         <div className="linkHeader">
+<<<<<<< HEAD
+          <div className="container">
+            <div className="linkTitle">
+              <h2>
+                {serviceProperty &&
+                  serviceProperty.title.split("").map((char, index) => (
+                    <div
+                      key={index}
+                      style={
+                        index === Math.floor(serviceProperty.title.length / 2)
+                          ? { borderBottom: "2px solid #f78da7" }
+                          : {}
+                      }
+                    >
+                      {char}
+                    </div>
+                  ))}
+              </h2>
+            </div>
+          </div>
+          <div className="linkLinks">
+            <Link to="/home" className="linkLink">
+              Ana səhifə
+            </Link>
+            <FaAngleRight className="angleIcon" />
+            <Link to="service">{serviceProperty && serviceProperty.title}</Link>
+=======
           <div className="linkTitle">
             <h2>
               {serviceProperty &&
@@ -52,6 +79,7 @@ export default function ServiceProperty() {
                   </div>
                 ))}
             </h2>
+>>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
           </div>
         
         <div className="linkLinks">

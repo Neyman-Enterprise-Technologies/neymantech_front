@@ -66,9 +66,9 @@ export default function Contact() {
       setInputPhone("");
       setService("");
       setMessage("");
-      toast.success("your message was successfully sent");
+      toast.success("Mesajınız uğurla göndərildi!");
     } else {
-      toast.error("This didn't work. ");
+      toast.error("Düzgün işləmir. ");
     }
   };
 
@@ -91,6 +91,7 @@ export default function Contact() {
       {/* {loading ? (
         <Loading />
       ) : ( */}
+
       <motion.section
         initial={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
@@ -123,11 +124,13 @@ export default function Contact() {
             </Link>
             <FaAngleRight className="angleIcon" />
             <Link to="about">Əlaqə</Link>
+
           </div>
         </div>
         {/*  HEADER LINK END  */}
 
         <div className="container">
+
           {contact && (
             <div className="contactCardContainer">
               <div className="card">
@@ -141,12 +144,14 @@ export default function Contact() {
                   {/* <p className="contact-type">{contact[0].email}</p> */}
                   {/* <p className="phoneNumber"></p> */}
                 </div>
+
               </div>
               <div className="card">
                 <div className="icon-container">
                   {/* {contactCardsIconsObj[icon]} */}
                   <ImLocation className="contactIcon" />
                 </div>
+
                 <h2 className="title">Konum</h2>
 
                 <div className="descriptionContainer">
@@ -164,6 +169,7 @@ export default function Contact() {
                 <div className="descriptionContainer">
                   {/* <p className="contact-type">{contact[0].phone}</p> */}
                   {/* <p className="phoneNumber"></p> */}
+
                 </div>
               </div>
             </div>
