@@ -103,6 +103,21 @@ export default function Home() {
         <MySlider />
 
         <div className="home__service" name="services">
+<<<<<<< HEAD
+          <div className="container">
+            <div className="home__service__content">
+              <h2 id="services" className="services" name="services">
+                {" "}
+                Xidmətlər
+              </h2>
+              <p>
+              Neyman Enterprise Technologies şirkəti olaraq sizə xidmətlərimizi təklif etməkdən məmnunuq.
+              </p>
+            </div>
+            {/* SERVICE CARDS START */}
+            {serviceCards && <ServiceCards serviceCards={serviceCards} />}
+            {error && <div>{error}</div>}
+=======
           <div className="home__service__content">
             <h2 id="services" className="services" name="services">
               {" "}
@@ -111,6 +126,7 @@ export default function Home() {
             <p>
             Neyman Enterprise Technologies şirkəti olaraq sizə xidmətlərimizi təklif etməkdən məmnunuq.
             </p>
+>>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
           </div>
           {/* SERVICE CARDS START */}
 
@@ -130,12 +146,29 @@ export default function Home() {
           <WebDesignSecHome webDesignSecHome={webDesignSecHome} />
         )}
 
+<<<<<<< HEAD
+        <div className="container">
+          <div className="home__works">
+            <div className="home__works__header">
+              <h2>Son işlərimiz</h2>
+              {/* <p>
+                Müxtəlif şirkətlər üçün yaratdığımız son işləri sizlərə göstərməkdə məmnun olarıq. 
+              </p> */}
+            </div>
+            {LatestWorkCardInHome && (
+              <LatestWorkCardInHome
+                latestWorkCardInHome={latestWorkCardInHome}
+                isProjectPage={false}
+              />
+            )}
+=======
         <div className="home__works container">
           <div className="home__works__header">
             <h2>Son işlərimiz</h2>
             <p>
             Müxtəlif şirkətlər üçün yaratdığımız son işləri sizlərə göstərməkdə məmnun olarıq. 
             </p>
+>>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
           </div>
           {LatestWorkCardInHome && (
             <LatestWorkCardInHome
@@ -155,9 +188,16 @@ export default function Home() {
         </div>
 
         <div className="home__blogs">
+<<<<<<< HEAD
+          <div className="container">
+            <div className="home__blogs__content">
+              <h2>Son bloqlar</h2>
+            </div>
+=======
           <div className="home__blogs__content">
             <h2>Son bloqlar</h2>
           </div>
+>>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
 
           <div className="cards-wrapper">
             {latestNews && <LatestNews latestNews={latestNews} />}

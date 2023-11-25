@@ -117,21 +117,24 @@ useEffect(() => {
        
               <div className="linkTitle">
                 <h2>
+
                   Qiy<span>m</span>ətlər
                 </h2>
+
               </div>
            
             <div className="linkLinks">
               <Link to="/" className="linkLink">
-                Home
+                Ana səhifə
               </Link>
               <FaAngleRight className="angleIcon" />
-              <Link to="about">Pricing</Link>
+              <Link to="about">Qiymətlər</Link>
             </div>
           </div>
           {/*      headerLink end */}
 
           {/*    header start */}
+
           <div className="header">
             <h2>Sizə uyğun qiyməti seçin</h2>
             {/* <p>
@@ -139,6 +142,7 @@ useEffect(() => {
               of successful communication. No fake products and services.
             </p> */}
           </div>
+
           {/*    header end*/}
 
           {isModalOpen && <div className="overlay" onClick={openModal}  />}
