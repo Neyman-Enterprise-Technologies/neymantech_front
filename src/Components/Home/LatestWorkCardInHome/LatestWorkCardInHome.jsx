@@ -6,9 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const LatestWorkCardInHome = ({
-  latestWorkCardInHome,isProjectPage,
-}) => {
+const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -60,14 +58,14 @@ const LatestWorkCardInHome = ({
       )}
       {isProjectPage && (
         <div className="modal-section">
-          <div className="kateqoriya-sec">
-            <div className="kateqoriya">
-              <div>
-                <BiCategory className="category-icon" onClick={openModal} />
-              </div>
-              <p>Kateqoriya seçin</p>
+         
+          <div className="kateqoriya">
+            <div>
+              <BiCategory className="category-icon" onClick={openModal} />
             </div>
-            <div className="input-search">
+            <p>Kateqoriya seçin</p>
+          </div>
+          {/* <div className="input-search">
               <input
                 type="text"
                 placeholder="search"
@@ -80,8 +78,7 @@ const LatestWorkCardInHome = ({
                   // onClick={() => handleClick(card.services_property.services.title)}
                 />
               </div>
-            </div>
-          </div>
+            </div> */}
 
           {isModalOpen && (
             <motion.div

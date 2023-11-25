@@ -11,11 +11,8 @@ import "./Price.scss";
 import { CgScrollV } from "react-icons/Cg";
 import { animateScroll as scroll } from "react-scroll";
 
-
-
 export default function Price() {
   const [loading, setLoading] = useState(false);
-
 
   const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -32,7 +29,7 @@ export default function Price() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-   const handleMouseLeave = () => {
+  const handleMouseLeave = () => {
     setHoveredItem(null);
   };
 
@@ -51,19 +48,15 @@ export default function Price() {
     setIsModalOpen(false);
   };
 
-  
- 
-
   const [showIcon, setShowIcon] = useState(false);
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setShowIcon(true);
     } else {
-      setShowIcon(false); 
+      setShowIcon(false);
     }
   };
 
-  
   const handleScrollToTop = () => {
     scroll.scrollToTop({
       duration: 900,
@@ -72,9 +65,8 @@ export default function Price() {
     });
     setShowIcon(false);
   };
- 
-useEffect(() => {
-  
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     setLoading(true);
     window.scrollTo({ top: 0 });
@@ -86,52 +78,48 @@ useEffect(() => {
     };
   }, []);
 
-
-
-
   return (
     <>
       {/* {loading ? (
         <Loading />
       ) : ( */}
-       
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1 }}
-        >
-          {showIcon && (
-            <div
-              className="scroll-to-top"
-              style={{
-                opacity: showIcon ? 1 : 0,
-                transition: "opacity 0.5s",
-              }}
-              onClick={handleScrollToTop}
-            >
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1 }}
+      >
+        {showIcon && (
+          <div
+            className="scroll-to-top"
+            style={{
+              opacity: showIcon ? 1 : 0,
+              transition: "opacity 0.5s",
+            }}
+            onClick={handleScrollToTop}
+          >
             <FaChevronUp className="scroll-icon" />
-            </div>
-          )}
-          {/*       headerLink start */}
-          <div className="linkHeader">
-       
-              <div className="linkTitle">
-                <h2>
-
-                  Qiy<span>m</span>ətlər
-                </h2>
-
-              </div>
-           
-            <div className="linkLinks">
-              <Link to="/" className="linkLink">
-                Ana səhifə
-              </Link>
-              <FaAngleRight className="angleIcon" />
-              <Link to="about">Qiymətlər</Link>
-            </div>
           </div>
-          {/*      headerLink end */}
+        )}
+        {/*       headerLink start */}
+        <div className="linkHeader">
+          <div className="linkTitle">
+            <h2>
+
+              Qiy<span>m</span>ətlər
+            </h2>
+
+          </div>
+
+          <div className="linkLinks">
+            <Link to="/" className="linkLink">
+              Ana səhifə
+            </Link>
+            <FaAngleRight className="angleIcon" />
+            <Link to="about">Qiymətlər</Link>
+          </div>
+        </div>
+        {/*      headerLink end */}
 
           {/*    header start */}
 
@@ -145,37 +133,18 @@ useEffect(() => {
 
           {/*    header end*/}
 
-          {isModalOpen && <div className="overlay" onClick={openModal}  />}
-      
-         <div className="container">
-         <div className="modal-section">
-            <div className="kateqoriya-sec">
-              <div className="kateqoriya">
-                <div>
-                  <BiCategory className="category-icon" onClick={openModal} />
-                </div>
-                <p>Kateqoriya seçin</p>
+        {isModalOpen && <div className="overlay" onClick={openModal} />}
+
+        <div className="container">
+          <div className="modal-section">
+            <div className="kateqoriya">
+              <div>
+                <BiCategory className="category-icon" onClick={openModal} />
               </div>
-              <div className="input-search">
-                <input
-                  type="text"
-                  placeholder="search"
-                  onChange={handleSearch}
-                  ref={inputRef}
-               
-                />
-                <div>
-                  <CiSearch
-                    className="category-search-icon"
-                    onClick={() => handleClick(card.services_property.title)}
-                  />
-                </div>
-              </div>
+              <p>Kateqoriya seçin</p>
             </div>
 
             {isModalOpen && (
-              
-
               <motion.div
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
@@ -186,7 +155,7 @@ useEffect(() => {
                   <ul className="scroll-modal">
                     <li
                       onMouseLeave={handleMouseLeave}
-                      onClick={() => handleClick('')}
+                      onClick={() => handleClick("")}
                     >
                       Butun
                       {/* <FaAngleRight className="modal-angle-icon" /> */}
@@ -208,10 +177,8 @@ useEffect(() => {
               </motion.div>
             )}
           </div>
-          
 
-    
-         <div className="cardsContainer">
+          <div className="cardsContainer">
             {priceCards &&
               priceCards
                 .filter((priceCard) => {
@@ -233,11 +200,9 @@ useEffect(() => {
                   />
                 ))}
           </div>
+        </div>
+      </motion.div>
 
-         </div>
-     
-        </motion.div>
-     
       {/* )} */}
     </>
   );

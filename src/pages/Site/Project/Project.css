@@ -154,20 +154,13 @@
   .project-cards-container__heading {
     font-size: 1.5rem;
   }
-  .kateqoriya {
-    gap: 3rem;
-  }
-  .kateqoriya-sec {
-    width: 100%;
-    height: 5rem;
-  }
+ 
+  
   .category-icon {
     width: 2.5rem;
     height: 2.5rem;
   }
-  .kateqoriya p {
-    font-size: 2rem;
-  }
+  
   .input-search input {
     font-size: 2rem;
   }
@@ -225,8 +218,6 @@
   .input-search input::placeholder {
     font-size: 3rem;
   }
-  .kateqoriya-sec {
-    height: 6rem;
-  }
+  
 }
 /*# sourceMappingURL=Project.css.map */
