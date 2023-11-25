@@ -115,19 +115,20 @@
 /* PAGES HEADERlINKS */
 .linkHeader {
   background-color: #fafafc;
-  padding: 2rem 0;
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .linkTitle {
   text-align: center;
+
 }
 .linkTitle h2,
 .linkTitle span,
 .linkTitle div
 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .linkLinks a,
 .linkLinks .angleIcon{
@@ -187,6 +188,7 @@
   max-width: 1140px !important;
   margin: 0 auto;
    /* background-color: green; */
+ 
 
   }
  }
