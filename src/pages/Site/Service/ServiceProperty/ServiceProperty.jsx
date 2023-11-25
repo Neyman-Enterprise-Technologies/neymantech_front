@@ -34,9 +34,7 @@ export default function ServiceProperty() {
         className="service"
       >
         {/* heading start */}
-
         <div className="linkHeader">
-<<<<<<< HEAD
           <div className="container">
             <div className="linkTitle">
               <h2>
@@ -62,40 +60,12 @@ export default function ServiceProperty() {
             </Link>
             <FaAngleRight className="angleIcon" />
             <Link to="service">{serviceProperty && serviceProperty.title}</Link>
-=======
-          <div className="linkTitle">
-            <h2>
-              {serviceProperty &&
-                serviceProperty.title.split("").map((char, index) => (
-                  <div
-                    key={index}
-                    style={
-                      index === Math.floor(serviceProperty.title.length / 2)
-                        ? { borderBottom: "2px solid #f78da7" }
-                        : {}
-                    }
-                  >
-                    {char}
-                  </div>
-                ))}
-            </h2>
->>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
           </div>
-        
-        <div className="linkLinks">
-          <Link to="/home" className="linkLink">
-          Ana səhifə
-          </Link>
-          <FaAngleRight className="angleIcon" />
-          <Link to="service">{serviceProperty && serviceProperty.title}</Link>
         </div>
-        </div>
-
         {/* heading end */}
 
         {/* first section start*/}
-
-        <div className="serviceProperty-container container">
+        <div className="container">
           {serviceProperty &&
             serviceProperty.service_details.map((detail, index) => (
               <div
@@ -138,7 +108,6 @@ export default function ServiceProperty() {
               </div>
             ))}
         </div>
-
         {/* first section end */}
       </motion.div>
       {/* )} */}
