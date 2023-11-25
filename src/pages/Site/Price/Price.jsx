@@ -117,9 +117,10 @@ useEffect(() => {
        
               <div className="linkTitle">
                 <h2>
-                  Qiymətlər
-                </h2> <br /><br />
-              <h3 >Sizə uyğun qiyməti seçin</h3>
+
+                  Qiy<span>m</span>ətlər
+                </h2>
+
               </div>
            
             <div className="linkLinks">
@@ -133,13 +134,15 @@ useEffect(() => {
           {/*      headerLink end */}
 
           {/*    header start */}
-          {/* <div className="header">
+
+          <div className="header">
             <h2>Sizə uyğun qiyməti seçin</h2>
-            <p>
+            {/* <p>
               Real innovations and a positive customer experience are the heart
               of successful communication. No fake products and services.
-            </p>
-          </div> */}
+            </p> */}
+          </div>
+
           {/*    header end*/}
 
           {isModalOpen && <div className="overlay" onClick={openModal}  />}
@@ -185,7 +188,7 @@ useEffect(() => {
                       onMouseLeave={handleMouseLeave}
                       onClick={() => handleClick('')}
                     >
-                      All
+                      Butun
                       {/* <FaAngleRight className="modal-angle-icon" /> */}
                     </li>
                     {price &&

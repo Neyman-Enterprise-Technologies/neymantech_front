@@ -65,11 +65,11 @@ const BlogDetails = () => {
 
               <div className="linkLinks">
                 <Link to="/" className="linkLink">
-                  Home
+                  Ana səhifə
                 </Link>
                 <FaAngleRight className="angleIcon" />
                 <Link to="/blogs" className="linkLink">
-                  Blogs
+                  Bloq
                 </Link>
                 <FaAngleRight className="angleIcon" />
                 <Link>{blogs.title}</Link>

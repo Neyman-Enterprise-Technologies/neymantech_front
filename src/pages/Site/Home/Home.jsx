@@ -121,11 +121,10 @@ export default function Home() {
           <div className="home__service__content">
             <h2 id="services" className="services" name="services">
               {" "}
-              Our Services
+              Xidmətlər
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+            Neyman Enterprise Technologies şirkəti olaraq sizə xidmətlərimizi təklif etməkdən məmnunuq.
             </p>
 >>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
           </div>
@@ -165,10 +164,9 @@ export default function Home() {
 =======
         <div className="home__works container">
           <div className="home__works__header">
-            <h2>Our latest works</h2>
+            <h2>Son işlərimiz</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+            Müxtəlif şirkətlər üçün yaratdığımız son işləri sizlərə göstərməkdə məmnun olarıq. 
             </p>
 >>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
           </div>
@@ -197,7 +195,7 @@ export default function Home() {
             </div>
 =======
           <div className="home__blogs__content">
-            <h2>Latest news</h2>
+            <h2>Son bloqlar</h2>
           </div>
 >>>>>>> 8fea2e9da1d925083d1f4499a7221bff2117674c
 

@@ -91,151 +91,151 @@ export default function Contact() {
       {/* {loading ? (
         <Loading />
       ) : ( */}
-        <motion.section
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1 }}
-        >
-          {showIcon && (
-            <div
-              className="scroll-to-top"
-              style={{
-                opacity: showIcon ? 1 : 0,
-                transition: "opacity 0.5s",
-              }}
-              onClick={handleScrollToTop}
-            >
-              <FaChevronUp className="scroll-icon" />
+
+      <motion.section
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1 }}
+      >
+        {showIcon && (
+          <div
+            className="scroll-to-top"
+            style={{
+              opacity: showIcon ? 1 : 0,
+              transition: "opacity 0.5s",
+            }}
+            onClick={handleScrollToTop}
+          >
+            <FaChevronUp className="scroll-icon" />
+          </div>
+        )}
+
+        {/*   HEADER LINK START  */}
+        <div className="linkHeader">
+          <div className="linkTitle">
+            <h2>
+              Əl<span>a</span>qə
+            </h2>
+          </div>
+
+          <div className="linkLinks">
+            <Link to="/" className="linkLink">
+              Ana səhifə
+            </Link>
+            <FaAngleRight className="angleIcon" />
+            <Link to="about">Əlaqə</Link>
+
+          </div>
+        </div>
+        {/*  HEADER LINK END  */}
+
+        <div className="container">
+
+          {contact && (
+            <div className="contactCardContainer">
+              <div className="card">
+                <div className="icon-container">
+                  {/* {contactCardsIconsObj[icon]} */}
+                  <MdOutlineMarkEmailRead className="contactIcon" />
+                </div>
+                <h2 className="title">E-poçta</h2>
+
+                <div className="descriptionContainer">
+                  {/* <p className="contact-type">{contact[0].email}</p> */}
+                  {/* <p className="phoneNumber"></p> */}
+                </div>
+
+              </div>
+              <div className="card">
+                <div className="icon-container">
+                  {/* {contactCardsIconsObj[icon]} */}
+                  <ImLocation className="contactIcon" />
+                </div>
+
+                <h2 className="title">Konum</h2>
+
+                <div className="descriptionContainer">
+                  {/* <p className="contact-type">{contact[0].location}</p> */}
+                  {/* <p className="phoneNumber"></p> */}
+                </div>
+              </div>
+              <div className="card">
+                <div className="icon-container">
+                  {/* {contactCardsIconsObj[icon]} */}
+                  <BsFillTelephoneFill className="contactIcon" />
+                </div>
+                <h2 className="title">Telfon nömrəsi</h2>
+
+                <div className="descriptionContainer">
+                  {/* <p className="contact-type">{contact[0].phone}</p> */}
+                  {/* <p className="phoneNumber"></p> */}
+
+                </div>
+              </div>
             </div>
           )}
-   
-            {/*   HEADER LINK START  */}
-            <div className="linkHeader">
-      
-              <div className="linkTitle">
-                <h2>
-                  Əlaqə
-                </h2>
+
+          <div className="faqSection-2">
+            <div className="faqTitleBottom">
+              <p className="about-description">Əlaqə</p>
+              <h2>Suallarını bizə göndərə bilərsən.</h2>
+            </div>
+            <div className="section-2-content">
+              <div className="left">
+                <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
               </div>
-          
-            <div className="linkLinks">
-              <Link to="/" className="linkLink">
-                Ana səhifə
-              </Link>
-              <FaAngleRight className="angleIcon" />
-              <Link to="about">Əlaqə</Link>
+              <div className="right">
+                <Toaster position="top-center" />
+                <form onSubmit={handleSubmit}>
+                  <div className="inputs">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      required
+                      value={fullname}
+                      onChange={(e) => setFullname(e.target.value)}
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </div>
+                  <div className="inputs">
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      required
+                      value={phone_number}
+                      onChange={(e) => setInputPhone(e.target.value)}
+                    />
+                    <input
+                      type="Subject"
+                      placeholder="Subject"
+                      required
+                      value={service}
+                      onChange={(e) => setService(e.target.value)}
+                    />
+                  </div>
+                  <textarea
+                    name=""
+                    id=""
+                    required
+                    placeholder="Your Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
+                  <button>
+                    <span>SEND MESSAGE</span>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-            {/*  HEADER LINK END  */}
-
-         
-        <div className="container">
-        {contact && (
-                <div className="contactCardContainer">
-                  <div className="card">
-                    <div className="icon-container">
-                      {/* {contactCardsIconsObj[icon]} */}
-                      <MdOutlineMarkEmailRead className="contactIcon" />
-                    </div>
-                    <h2 className="title">E-poçta</h2>
-
-                    <div className="descriptionContainer">
-                      {/* <p className="contact-type">{contact[0].email}</p> */}
-                      {/* <p className="phoneNumber"></p> */}
-                    </div>
-                  </div>
-                  <div className="card">
-                    <div className="icon-container">
-                      {/* {contactCardsIconsObj[icon]} */}
-                      <ImLocation className="contactIcon" />
-                    </div>
-                    <h2 className="title">Konum</h2>
-
-                    <div className="descriptionContainer">
-                      {/* <p className="contact-type">{contact[0].location}</p> */}
-                      {/* <p className="phoneNumber"></p> */}
-                    </div>
-                  </div>
-                  <div className="card">
-                    <div className="icon-container">
-                      {/* {contactCardsIconsObj[icon]} */}
-                      <BsFillTelephoneFill className="contactIcon" />
-                    </div>
-                    <h2 className="title">Telfon nömrəsi</h2>
-
-                    <div className="descriptionContainer">
-                      {/* <p className="contact-type">{contact[0].phone}</p> */}
-                      {/* <p className="phoneNumber"></p> */}
-                    </div>
-                  </div>
-                </div>
-              )}
-   
-      
-            <div className="faqSection-2">
-              <div className="faqTitleBottom">
-                <p className="about-description">Əlaqə</p>
-                <h2>Suallarını bizə göndərə bilərsən.</h2>
-                
-              </div>
-              <div className="section-2-content">
-                <div className="left">
-                  <img src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/faq-contact-1-1.png" />
-                </div>
-                <div className="right">
-                  <Toaster position="top-center" />
-                  <form onSubmit={handleSubmit}>
-                    <div className="inputs">
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        required
-                        value={fullname}
-                        onChange={(e) => setFullname(e.target.value)}
-                      />
-                      <input
-                        type="email"
-                        placeholder="Email"
-                        required
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                    </div>
-                    <div className="inputs">
-                      <input
-                        type="text"
-                        placeholder="Phone"
-                        required
-                        value={phone_number}
-                        onChange={(e) => setInputPhone(e.target.value)}
-                      />
-                      <input
-                        type="Subject"
-                        placeholder="Subject"
-                        required
-                        value={service}
-                        onChange={(e) => setService(e.target.value)}
-                      />
-                    </div>
-                    <textarea
-                      name=""
-                      id=""
-                      required
-                      placeholder="Your Message"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                    ></textarea>
-                    <button>
-                      <span>Mesajı göndər</span>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-
         </div>
-      
-        </motion.section>
+      </motion.section>
       {/* )} */}
     </>
   );

@@ -84,7 +84,7 @@ export default function ServiceProperty() {
         
         <div className="linkLinks">
           <Link to="/home" className="linkLink">
-            Home
+          Ana səhifə
           </Link>
           <FaAngleRight className="angleIcon" />
           <Link to="service">{serviceProperty && serviceProperty.title}</Link>
