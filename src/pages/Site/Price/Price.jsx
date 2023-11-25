@@ -145,29 +145,15 @@ useEffect(() => {
       
          <div className="container">
          <div className="modal-section">
-            <div className="kateqoriya-sec">
+          
               <div className="kateqoriya">
                 <div>
                   <BiCategory className="category-icon" onClick={openModal} />
                 </div>
                 <p>Kateqoriya seçin</p>
               </div>
-              <div className="input-search">
-                <input
-                  type="text"
-                  placeholder="search"
-                  onChange={handleSearch}
-                  ref={inputRef}
-               
-                />
-                <div>
-                  <CiSearch
-                    className="category-search-icon"
-                    onClick={() => handleClick(card.services_property.title)}
-                  />
-                </div>
-              </div>
-            </div>
+            
+          
 
             {isModalOpen && (
               
