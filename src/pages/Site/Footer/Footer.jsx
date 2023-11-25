@@ -48,12 +48,14 @@ export default function Footer() {
           <div className="footer__subscribe-content">
             <h2>Haqqımızda</h2>
             <p>
-            "Neyman Enterprise Technologies şirkəti 2022'ci il yanvarın 1'dən fəaliyyət göstərən startap komandasıdır.
+
+              "Neyman Enterprise Technologies" şirkəti 2022'ci il yanvarın 1'dən
+              fəaliyyət göstərən startap komandasıdır.
             </p>
           </div>
 
           <div className="footer__input-button-container">
-          <Toaster position="top-center"  />
+            <Toaster position="top-center" />
             <input
               type="text"
               placeholder="Enter your email"
@@ -64,7 +66,11 @@ export default function Footer() {
             <button onClick={handleClick} className="footer__subscribe-button">
               Abonə ol
             </button>
+            
+
           </div>
+
+        
         </div>
 
         <div className="footer__top">
@@ -162,7 +168,6 @@ export default function Footer() {
                 <Link className="footer__footerLinks" to={"/project"}>
                   İşlərimiz
                 </Link>
-           
               </div>
               <div className="footer__right">
                 <Link className="footer__footerLinks" to={"/about"}>
@@ -175,7 +180,7 @@ export default function Footer() {
                 <Link className="footer__footerLinks" to={"/price"}>
                   Qiymətlər
                 </Link>
-             
+
                 {/* <Link className='footer__footerLinks' to={'/blogs'}>
                 Services
               </Link> */}
@@ -232,8 +237,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="footer__bottom">
+
+   
+
+    <div className="container">
+    <div className="footer__bottom">
+
           <div className="footer__bottomDevider"></div>
           <div className="footer__copyright">
             <p className="footer__copyrightLeft">
@@ -247,5 +256,9 @@ export default function Footer() {
       </div>
     </div>
 
-  ) 
+   
+    
+    
+  );
+
 }

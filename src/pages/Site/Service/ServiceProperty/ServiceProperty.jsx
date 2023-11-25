@@ -35,6 +35,9 @@ export default function ServiceProperty() {
       >
         {/* heading start */}
         <div className="linkHeader">
+
+
+
           <div className="container">
             <div className="linkTitle">
               <h2>
@@ -53,15 +56,22 @@ export default function ServiceProperty() {
                   ))}
               </h2>
             </div>
-          </div>
+       
           <div className="linkLinks">
             <Link to="/home" className="linkLink">
               Ana səhifə
             </Link>
             <FaAngleRight className="angleIcon" />
             <Link to="service">{serviceProperty && serviceProperty.title}</Link>
+
+
           </div>
-        </div>
+          </div>
+        
+
+       
+
+
         {/* heading end */}
 
         {/* first section start*/}
@@ -108,6 +118,9 @@ export default function ServiceProperty() {
               </div>
             ))}
         </div>
+
+        </div>
+
         {/* first section end */}
       </motion.div>
       {/* )} */}

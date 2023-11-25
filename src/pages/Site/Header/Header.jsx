@@ -41,21 +41,11 @@ return (
         </NavLink>
         <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
           Komandamız
-
-         <NavLink to="/about" onClick={showNavbar}>
-         Haqqımızda
-        </NavLink>
-        <NavLink to="/project" onClick={showNavbar}>
-        İşlərimiz
-        </NavLink>
-        <NavLink to="/price" onClick={showNavbar}>
-        Qiymətlər
-        </NavLink>
-        <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
-
-        Xidmətlər
-
-        </NavLink>
+          </NavLink>
+        
+     
+        
+     
         <NavLink to="/blogs" onClick={showNavbar}>
 
         Bloq
