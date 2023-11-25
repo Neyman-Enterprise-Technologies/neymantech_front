@@ -58,6 +58,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
       )}
       {isProjectPage && (
         <div className="modal-section">
+         
           <div className="kateqoriya">
             <div>
               <BiCategory className="category-icon" onClick={openModal} />
