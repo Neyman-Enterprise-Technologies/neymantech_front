@@ -17,7 +17,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 78%;
   gap: 1rem;
 }
 .top-header {
@@ -32,9 +32,9 @@
   gap: 10px;
   align-self: flex-start;
 }
-.blogDetails .left {
+/* .blogDetails .left {
   width: 100%;
-}
+} */
 
 .blogDetails .left .card {
   width: 100%;
@@ -100,7 +100,7 @@
 .blogDetails .right {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 22%;
   gap: 2rem;
 }
 .blogDetails .right .search {
@@ -240,7 +240,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background-color: blue;
-  top: 0.1rem;
+  top: 0.35rem;
   left: -2.5rem;
 }
 .blogDetails .right .category-container .title {
@@ -281,19 +281,26 @@
   width: fit-content;
   font-weight: 600;
   transition: 0.5s;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .blogDetails .right .tags-container .tags p:hover {
   background-color: #0000ff;
   color: white;
 }
-
+.blogDetails .left .card .bottom-content h2,
+.blogDetails .left .card .bottom-content h3,
+.blogDetails .left .card .bottom-content h4 {
+  font-size: 2rem;
+}
 /* right end */
 
 @media screen and (max-width: 1200px) {
   .blogDetails .left .card .bottom-content h2,
   .blogDetails .left .card .bottom-content p {
     font-size: 2rem;
+  }
+  .blogDetails .left .card .cardImgContainer{
+    height: 400px;
   }
   .blogDetails .left .card .bottom-content p,
   .blogDetails .left .card .bottom-content::after {
@@ -376,6 +383,7 @@
   .blogDetails .right .recent-posts-container {
     padding: 3rem;
   }
+  
   .blogDetails .right .search .input-button-container input::placeholder {
     font-size: 1.5rem;
   }
@@ -444,6 +452,9 @@
   .blogDetails {
     flex-direction: column;
   }
+  .blogDetails .left .card .cardImgContainer{
+    height: 300px;
+  }
   .blogDetails .right {
     width: 100%;
   }
@@ -474,15 +485,15 @@
     font-size: 1.5rem;
   }
   .blogDetails .right .category-container p::before {
-    top: 0.4rem;
+    top: 0.7rem;
   }
 }
 @media screen and (max-width: 576px) {
   .blogDetails .right .search .input-button-container input {
-    font-size: 15px;
+    font-size: 2.5rem;
   }
   .blogDetails .right .search .input-button-container input::placeholder {
-    font-size: 15px;
+    font-size: 2.5rem;
   }
 
   .blogs {
@@ -504,8 +515,8 @@
     line-height: 3rem;
   }
 
-  .blogs .left a .card .cardImgContainer {
-    height: 40rem;
+  .blogDetails .left .card .cardImgContainer{
+    height: 50rem;
   }
 
   .blogs .right .recent-posts-container .post-details .description .title {
@@ -524,7 +535,7 @@
     margin-bottom: 2.5rem;
   }
   .blogDetails .right .category-container p::before {
-    top: 0;
+    top: 1rem;
     width: 2rem;
     height: 2rem;
     left: -7rem;
@@ -560,10 +571,10 @@
   }
   .blogs .right .search .input-button-container input {
     /* padding: 15px; */
-    font-size: 15px;
+    font-size:2.5rem;
   }
   .blogs .right .search .input-button-container input::placeholder {
-    font-size: 15px;
+    font-size: 2.5rem;
   }
   .blogDetails .right .search .input-button-container .search-icon-container {
     width: 6rem;

@@ -21,19 +21,21 @@
 /* cards container start */
 
 .cardsContainer {
+  justify-content: flex-start;
   padding: 4rem 0;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+flex-wrap: wrap;
   gap: 20px;
   &__pricePeriodContainer {
     position: relative;
+ 
     display: flex;
     align-items: flex-end;
     justify-content: center;
     width: fit-content;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 0;
     gap: 0.5rem;
+
   }
   &__period,
   &__exchangeRate {
@@ -44,6 +46,7 @@
 
   &__cardContainer {
     width: 100%;
+    
   }
   &__card {
     transition: 0.5s all;
@@ -67,9 +70,9 @@
   }
   &__cardHeader {
     width: 100%;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: blue;
     color: white;
   }
@@ -94,7 +97,7 @@
   }
   &__cardContentContainer {
     width: 100%;
-    height: 295px;
+    height: 265px;
     padding: 1rem 0.5rem;
     overflow: auto;
   }
@@ -201,6 +204,17 @@
   &__link:hover::before {
     width: 100%;
   }
+ .kateqoriya{
+  width: 25%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #ccd8cc;
+  border-radius: 5px;
+  gap: 1.25rem;
+  background-color: #f2f2f2;
+ }
+ 
 }
 
 @media screen and (max-width: 1200px) {
@@ -208,12 +222,7 @@
     &__cardContentContainer {
       height: 234px;
     }
-    &__cardHeader {
-      padding: 1.8rem 0;
-      font-size: 1.5rem;
-    }
-
-    .cardsContainer__items {
+.cardsContainer__items {
       padding: 0.5rem 0;
     }
     .cardsContainer__itemsContainer {
@@ -305,7 +314,7 @@
     }
   }
   .cardsContainer .cardsContainer__pricePeriodContainer {
-    padding: 2rem;
+    padding: 1.5rem 0;
   }
   .header p {
     display: inline-block;
@@ -362,7 +371,7 @@
     }
 
     &__cardContentContainer {
-      height: 180px;
+      height: 36.5rem!important;
       padding: 1rem 0.5rem;
     }
 
@@ -444,186 +453,5 @@
   .header h2{
     font-size: 3.5rem;
   }
-}
-/* @media screen and (max-width: 430px) {
-  .cardsContainer {
-    padding: 4rem 0;
-    display: flex;
-
-    flex-wrap: wrap;
-    gap: 5px;
-    &__pricePeriodContainer {
-      gap: 0.5rem;
-    }
-    &__period,
-    &__exchangeRate {
-      font-size: 2.3rem;
-    }
-
-    &__cardContainer {
-      width: 100%;
-    }
-    &__card {
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-
-    }
-    &__card:hover {
-      transform: translateY(-0.625rem);
-      box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
-    }
-    &__cardHeader {
-      width: 100%;
-      padding: 2rem 0;
-      text-align: center;
-      font-size: 4.3rem;
-      background-color: blue;
-      color: white;
-    }
-    .secondHeader {
-      background-color: #f78da7;
-    }
-    .thirdHeader {
-      background-color: orange;
-    }
-
-    &__price {
-      font-size: 4.3rem;
-    }
-
-    &__cardContentContainer {
-      height: 150px;
-      padding: 1rem 0.5rem;
-    }
-
-    &__itemsContainer {
-      padding: 1.8rem 1rem;
-
-      margin-bottom: 0.3rem;
-      border-radius: 0.5rem;
-      gap: 1.5rem;
-    }
-    &__items {
-      letter-spacing: -0.05rem;
-
-      font-size: 3.2rem;
-      padding: 0.6rem 0rem;
-      line-height: 2rem;
-    }
-    &__tick-icon {
-      font-size: 3rem;
-    }
-    &__notAveilble-icon {
-      font-size: 3rem;
-    }
-    &__link {
-      position: relative;
-      display: inline-block;
-
-      color: blue;
-      font-size: 1.2rem;
-      font-weight: 600;
-      padding: 2rem 0 0.5rem 0;
-      cursor: pointer;
-      &--orange-underline {
-        position: relative;
-        display: inline-block;
-        color: orange;
-        font-size: 1.2rem;
-        font-weight: 600;
-        padding: 2rem 0 0.5rem 0;
-        cursor: pointer;
-      }
-      &--pink-underline {
-        position: relative;
-        display: inline-block;
-        color: #ff6289;
-        font-size: 1.2rem;
-        font-weight: 600;
-        padding: 2rem 0 0.5rem 0;
-        cursor: pointer;
-      }
-
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 1px;
-        background-color: blue;
-        transition: width 0.6s;
-      }
-    }
-    &__link:hover::before {
-      width: 100%;
-    }
-  }
-
-  .header p {
-    font-size: 3rem;
-  }
-  .header h2 {
-    font-size: 3.5rem;
-  }
-}
-@media screen and (max-width: 340px) {
-  .cardsContainer {
-    padding: 4rem 0;
-    gap: 5px;
-    &__cardHeader{
-      padding: 4rem 0;
-      font-size: 4rem;
-    }
-    &__card{
-      width: 60%;
-    }
-   
-
-    &__link {
-      position: relative;
-      display: inline-block;
-
-      color: blue;
-      font-size: 1.2rem;
-      font-weight: 600;
-      padding: 2rem 0 0.5rem 0;
-      cursor: pointer;
-      &--orange-underline {
-        position: relative;
-        display: inline-block;
-        color: orange;
-        font-size: 1.2rem;
-        font-weight: 600;
-        padding: 2rem 0 0.5rem 0;
-        cursor: pointer;
-      }
-      &--pink-underline {
-        position: relative;
-        display: inline-block;
-        color: #ff6289;
-        font-size: 1.2rem;
-        font-weight: 600;
-        padding: 2rem 0 0.5rem 0;
-        cursor: pointer;
-      }
-
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 1px;
-        background-color: blue;
-        transition: width 0.6s;
-      }
-    }
-    &__link:hover::before {
-      width: 100%;
-    }
-  }
-      
  
-} */
+}

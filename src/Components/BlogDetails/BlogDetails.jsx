@@ -57,7 +57,7 @@ const BlogDetails = () => {
                           : {}
                       }
                     >
-                      {char}
+                      {char} 
                     </div>
                   ))}
                 </h2>
@@ -68,8 +68,8 @@ const BlogDetails = () => {
                   Ana səhifə
                 </Link>
                 <FaAngleRight className="angleIcon" />
-                <Link to="/blogs" className="linkLink">
-                  Bloq
+                <Link to="/blogs" className="linkLinks">
+                
                 </Link>
                 <FaAngleRight className="angleIcon" />
                 <Link>{blogs.title}</Link>

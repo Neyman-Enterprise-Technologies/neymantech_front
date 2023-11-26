@@ -129,7 +129,7 @@
 .section-2 .cardsContainer .card {
   width: calc(33.3% - 27px);
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   flex-direction: column;
   padding: 0!important;
 }
@@ -394,31 +394,30 @@
     width: 100%;
   }
   .section-2 .cardsContainer .card .description{
-    font-size: 2rem;
+    font-size: 10px!important;
     line-height: 3.2rem;
     
   }
   .section-3 .left .title, .section-3 .left .header, .section-3 .left .selected-description, .section-3 .left .description{
-    font-size: 2.5rem;
+    font-size: 10px;
     line-height: 4rem;
   }
   .section-2 .cardsContainer .card h2{
-    font-size: 2.5rem;
+    font-size: 14px;
   }
   .section-3 .left .header{
     font-size: 3rem;
   }
-  .teamSection .teamHeaderContainer h2{
-    font-size: 4rem;
-  }
-  .teamSection .teamHeaderContainer p{
-    font-size: 2rem;
-  }
+ 
+
   .teamSection .teamHeaderContainer p {
-    font-size: 2rem;
+    font-size: 10px!important;
     margin-bottom: 1rem;
     color: var(--blueText);
     font-weight: 500;
+  }
+  .teamSection .teamHeaderContainer h2{
+    font-size: 14px!important;
   }
   
  

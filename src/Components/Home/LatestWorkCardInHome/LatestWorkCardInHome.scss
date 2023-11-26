@@ -57,19 +57,17 @@
 }
 
 
-
-.kateqoriya {
-
-width: 20%;
+.kateqoriya{
+  width: 25%;
   padding: 1rem;
   display: flex;
   align-items: center;
-
   border-right: 1px solid #ccd8cc;
-border-radius: 5px;
+  border-radius: 5px;
   gap: 1.25rem;
   background-color: #f2f2f2;
 }
+
 
 .kateqoriya img {
   width: 0.9375rem;
@@ -287,4 +285,5 @@ color: rgb(11, 68, 11);
    
   transition: background-color 0.3s;
   }
+  
 }
