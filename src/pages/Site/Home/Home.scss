@@ -6,7 +6,6 @@
   font-size: 1vw;
 }
 
-
 /* digital marketing style start */
 .digital-marketing-container {
   width: 100%;
@@ -81,7 +80,6 @@
         top: 0;
         width: 0px;
         height: 0px;
-
 
         transition: width 0.5s, height 0.5s;
       }
@@ -334,7 +332,6 @@
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.2s;
 
-       
           & .card-icon {
             color: #0000ff;
             font-size: 1.2rem;
@@ -548,21 +545,20 @@
     border-radius: 1rem;
     /* padding: 5rem 0; */
     padding: 4rem 0;
-    a{
+    a {
       width: calc(24.8% - 0.65rem);
-      
     }
     &__card {
       position: absolute;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
       display: flex;
-      
+
       border-radius: 1rem;
 
       align-items: flex-end;
       box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
       transition: 0.5s ease-in-out;
-    
+
       height: 30rem;
       position: relative;
       text-align: center;
@@ -702,11 +698,13 @@ border-radius: 0;
   background-color: #f9f9fc;
   padding: 4px 0px 20px 0px;
   width: 100%;
+
   padding-top: 3rem;
 
   &__content {
     padding: 3rem 0;
     width: 40%;
+
     margin: auto;
     text-align: center;
 
@@ -818,29 +816,19 @@ article:has(:hover, :focus) {
 
 /* home blogs  component end */
 
-
-
 @media screen and (max-width: 1200px) {
-
-
-
-
- 
-
   .home__service {
     background-color: #f9f9fc;
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
-
-   
   }
 
   .home__works {
     &__cards {
       justify-content: center;
       &__card {
-    
         height: 25rem;
+        
       }
     }
   }
@@ -848,19 +836,16 @@ article:has(:hover, :focus) {
 
 /* @media screen and (max-width: 992px) */
 @media screen and (max-width: 992px) {
-
   .home__service {
     background-color: #f9f9fc;
-   
   }
   .home__works {
     &__cards {
-      a{
+      a {
         width: calc(50% - 0.65rem);
       }
       justify-content: center;
       &__card {
-      
         height: 45rem;
 
         & .info {
@@ -904,7 +889,6 @@ article:has(:hover, :focus) {
   }
 }
 @media screen and (max-width: 768px) {
-
   .project-cards-container {
     flex-direction: column;
   }
@@ -970,8 +954,6 @@ article:has(:hover, :focus) {
     flex-direction: column-reverse;
   }
 
-  
-
   .home__service {
     background-color: #f9f9fc;
     padding: 0.25rem 0px 5.625rem 0px;
@@ -1018,20 +1000,16 @@ article:has(:hover, :focus) {
   }
   .home__service__content h2 {
     font-size: 3.5rem;
-
   }
-
 
   .home__feedback__content p {
     font-size: 3rem;
     padding-bottom: 3rem;
   }
-  .home__feedback__content h2{
+  .home__feedback__content h2 {
     font-size: 3.5rem;
     line-height: 4rem;
   }
-
-
 
   .home__works__cards__card .info .heading {
     font-size: 3rem;
@@ -1044,34 +1022,27 @@ article:has(:hover, :focus) {
     line-height: 3rem;
     font-size: 2rem;
   }
-   .home__works__cards {
-
+  .home__works__cards {
     flex-direction: column;
     align-content: center;
-gap: 4rem;
-  
+    gap: 4rem;
   }
-  .home__works__cards__card{
+  .home__works__cards__card {
     height: 50rem;
     width: 100%;
   }
-  .home__works__cards a{
+  .home__works__cards a {
     width: 100%;
-
-
   }
 }
-@media screen and (max-width:576px) {
- 
-.home__works__cards {
-
+@media screen and (max-width: 576px) {
+  .home__works__cards {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-a{
-
-  width: 100%!important;
-}
+    a {
+      width: 100% !important;
+    }
     &__card {
       flex-direction: column;
       width: 100%;
@@ -1153,8 +1124,8 @@ a{
   .home__service__cards__card {
     gap: 3rem;
   }
-  .home__works__cards__card{
-width: 100%!important;
+  .home__works__cards__card {
+    width: 100% !important;
   }
   .home__works__header h2 {
     font-size: 3.5rem;
@@ -1187,63 +1158,66 @@ width: 100%!important;
   .home__feedback__content h2 {
     font-size: 3.5rem;
   }
-  
 }
 
-
-@media screen and (max-width:576px) {
-  
+@media screen and (max-width: 576px) {
 }
-@media screen and (max-width:430px) {
-  .home__service__content h2{
+@media screen and (max-width: 430px) {
+  .home__service__content h2 {
     font-size: 4rem;
   }
-  .home__service .home__service__cards__card__icon{
-
+  .home__service .home__service__cards__card__icon {
     width: 9rem;
     height: 9rem;
-    
   }
-  .home__service .home__service__cards__card__icon .badge{
+  .home__service .home__service__cards__card__icon .badge {
     top: -1.5rem;
     right: -2rem;
     font-size: 4.5rem;
   }
-  .home__service .home__service__cards__card__icon .icon1{
-   
+  .home__service .home__service__cards__card__icon .icon1 {
     width: 70%;
     height: 70%;
   }
 
-  .home__service__content p{
+  .home__service__content p {
     font-size: 3rem;
   }
-  .home__service__cards__card h3{
+  .home__service__cards__card h3 {
     font-size: 3.5rem;
   }
-  .home__service__cards__card p{
+  .home__service__cards__card p {
     font-size: 3rem;
   }
-  .digital-marketing-container .left .top-container p{
+  .digital-marketing-container .left .top-container p {
     font-size: 2.5rem;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card
+    p {
     font-size: 2.7rem;
   }
-  .home__works__header p{
+  .home__works__header p {
     font-size: 3rem;
     line-height: 4rem;
   }
 }
-@media screen and (max-width:340px) {
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+@media screen and (max-width: 340px) {
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card
+    p {
     font-size: 2.8rem;
   }
-  .digital-marketing-container .left .top-container p{
+  .digital-marketing-container .left .top-container p {
     font-size: 3rem;
   }
-  .home__service__cards__card{
+  .home__service__cards__card {
     width: 100%;
   }
-  
 }
