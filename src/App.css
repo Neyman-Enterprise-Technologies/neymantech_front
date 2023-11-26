@@ -212,7 +212,10 @@
     margin: 0 auto;
     /* background-color: blue; */
    }
-
+   .linkHeader {
+  
+    gap: 30px;
+  }
 
    .linkTitle h2,
    .linkTitle span,
@@ -245,12 +248,15 @@
    .linkTitle span,
    .linkTitle div
    {
-     font-size: 4.5rem;
+     font-size:16px;
    }
    .linkLinks a,
 .linkLinks .angleIcon{
-  font-size: 2.8rem;
+  font-size: 12px;
  
+}
+.scroll-icon {
+  font-size: 14px;
 }
 
 

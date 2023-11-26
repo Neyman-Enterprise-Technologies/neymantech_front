@@ -1,185 +1,96 @@
-.mySwiper {
-  width: 100% !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  /* padding: 20px 80px 20px 80px; */
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
+
 .swiper-slide {
-  background-color: rgb(241, 243, 253) !important;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-}
-.Slider {
-/* background-color: #ffff;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-border-radius: 5px; */
-  &__feedbackContainer {
-   display: flex;
-    flex-direction: column;
-padding: 2.5rem 0px 2.5rem 1.25rem;
-    gap: 1rem;
-    height: 100%;
-overflow: hidden;
-    text-overflow: ellipsis;
--webkit-box-orient: vertical;
-  }
-  &__feedback {
-    height: 80%;
-
-    overflow: hidden;
-padding-right: 4.375rem;
-    display: block;
-    color: var(--TextColor);
-    font-style: italic;
-    line-height: 1.6;
-    font-size: 1rem;
-
-    line-height: 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  }
-
-  &__avatarAndInfo {
-    display: flex;
-    height: 20%;
-    width: 100%;
-
-
-    align-items: center;
-    gap: 1.25rem;
-
-    .avatar-container {
-      position: relative;
-
-      height: 4rem;
-      width: 4rem;
-      img {
-        position: absolute;
-
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-      }
-    }
-  }
-  .nameAndPosition {
-    display: flex;
-    flex-direction: column;
-
-    gap: 5px;
-  }
-  .nameAndPosition .position {
-    font-size: 1rem;
-    color: var(--blueText);
-  }
-  .nameAndPosition .name {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-}
-
-.mySwiper {
+  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
-  margin: 0 auto;
-  /* padding: 20px 80px 20px 80px; */
 }
 
-.Slider {
-  width: 33.3% !important;
-height: 26rem;
-
-  &__feedback {
-    font-size: 1.4rem;
-
-    line-height: 2rem;
-  }
-
-  &__avatarAndInfo {
-    .avatar-container {
-      height: 4.5rem;
-      width: 4.5rem;
-    }
-  }
-
-  .nameAndPosition .position {
-    font-size: 1.4rem;
-    color: var(--blueText);
-  }
-  .nameAndPosition .name {
-    font-size: 1.5rem;
-  }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-@media screen and (max-width: 1200px) {
+
+
+.Slider1__feedbackContainer{
+  display: flex;
+  background-color: rgb(234, 250, 250);
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+  border-radius: 5px;
+  padding: 2rem;
+  height: 300px;
+}
+.Slider1__feedback{
+  height: 77%;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--TextColor);
+}
+.Slider1__avatarAndInfo{
+  gap: 2rem ;
+  /* height: 20%; */
+  display: flex;
+  align-items: center;
+}
+.name{
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+.position{
+ color: blue;
+}
+.avatar-container{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.avatar-container img{
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.nameAndPosition{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media(max-width:1200px){
+
+
+}
+  @media(max-width:992px){
+
+
+  }
+  @media(max-width:768px){
+
+
+  }
+   @media(max-width:576px){
+.Slider1__feedback{
   
-}
-@media screen and (max-width: 992px) {
-}
-
-@media screen and (max-width: 768px) {
-  .Slider {
-    width: 100% !important;
-    height: 35rem;
-    &__feedbackContainer {
-      gap: 3.2rem;
-    }
-    &__feedback {
-      font-size: 1.8rem;
-      padding-left: 2rem;
-      line-height: 2.6rem;
-    }
-    &__avatarAndInfo {
-      gap: 2rem;
-      padding-left: 2rem;
-      .avatar-container {
-        height: 8rem;
-        width: 8rem;
-      }
-    }
-    .nameAndPosition .position {
-      font-size: 1.8rem;
-      color: var(--blueText);
-    }
-    .nameAndPosition .name {
-      font-size: 2rem;
-    }
-  }
-}
-@media screen and (max-width: 576px) {
-  
-  .Slider {
-    width: 100% !important;
+  font-size: 14px;
  
-    height: 45rem;
-    &__feedbackContainer {
-      gap: 3.2rem;
-    }
-    &__feedback {
-      font-size: 2.5rem;
-      padding-left: 2rem;
-      line-height: 2.6rem;
-    }
-    &__avatarAndInfo {
-      gap: 2rem;
-      padding-left: 2rem;
-      .avatar-container {
-        height: 8rem;
-        width: 8rem;
-      }
-    }
-    .nameAndPosition .position {
-      font-size: 1.8rem;
-      color: var(--blueText);
-    }
-    .nameAndPosition .name {
-      font-size: 2rem;
-    }
-  }
-  }
+}
 
+   }
