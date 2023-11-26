@@ -45,24 +45,7 @@
 
 
 }
-/* @keyframes scrollAnimation {
-  0% {
-    opacity: 0.1;
-    top: 200px;
-  }
-  50% {
-    opacity: 0.3;
-    top: 300px;
-  }
-  75% {
-    opacity: 0.5;
-    top: 500px;
-  }
-  100% {
-    opacity: 0.8;
-    top: 600px;
-  }
-} */
+
 
 .scroll-to-top {
   position: fixed;
@@ -115,10 +98,10 @@
 /* PAGES HEADERlINKS */
 .linkHeader {
   background-color: #fafafc;
-  padding: 8rem 0;
+  padding: 10rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 40px;
 }
 .linkTitle {
   text-align: center;
@@ -128,11 +111,11 @@
 .linkTitle span,
 .linkTitle div
 {
-  font-size: 2rem;
+  font-size: 20px;
 }
 .linkLinks a,
 .linkLinks .angleIcon{
-  font-size: 1.6rem;
+  font-size: 16px;
   color: red;
 }
 
@@ -212,22 +195,10 @@
     margin: 0 auto;
     /* background-color: blue; */
    }
-   .linkHeader {
   
-    gap: 30px;
-  }
 
-   .linkTitle h2,
-   .linkTitle span,
-   .linkTitle div
-   {
-     font-size: 3.5rem;
-   }
-   .linkLinks a,
-.linkLinks .angleIcon{
-  font-size: 2.2rem;
+  
  
-}
 
 
   }
@@ -248,15 +219,15 @@
    .linkTitle span,
    .linkTitle div
    {
-     font-size:16px;
+     font-size:3.5rem;
    }
    .linkLinks a,
 .linkLinks .angleIcon{
-  font-size: 12px;
+  font-size: 2.5rem;
  
 }
 .scroll-icon {
-  font-size: 14px;
+  font-size: 1.5rem;
 }
 
 
