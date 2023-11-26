@@ -71,7 +71,7 @@ const Accordion = () => {
           
               <div className="linkTitle">
                 <h2>
-                Ən çox verilən suallar
+                Ən çox ve<span>ri</span>lən suallar
                 </h2>
               </div>
           
