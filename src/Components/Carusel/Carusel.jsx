@@ -4,76 +4,75 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Carusel.scss";
 
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "./Carusel.scss";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+
 const Carusel = ({ feedback }) => {
   return (
-   
-      <div className="container">
-        <Swiper
-          spaceBetween={30}
-          // navigation={{
-          //   nextEl: ".swiper-button-next",
-          //   prevEl: ".swiper-button-prev",
-          // }}
-          // className="mySwiper"
-          // breakpoints={{
-          //   640: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 20,
-          //   },
-          //   768: {
-          //     slidesPerView: 2,
-          //     spaceBetween: 40,
-          //   },
-          //   1440: {
-          //     slidesPerView: 3,
-          //     spaceBetween: 50,
-          //   },
-          // }}
-        >
-          {feedback.map(({ avatar, fullname, id, position, feedback }) => (
-            <SwiperSlide className="Slider" key={id}>
-              <div className="Slider__feedbackContainer">
-                <div className="Slider__feedback">{feedback}</div>
-                <div className="Slider__avatarAndInfo">
-                  <div className="avatar-container">
-                    <img src={avatar} alt="Slide 1" />
-                  </div>
-                  <div className="nameAndPosition">
-                    <span className="name">{fullname}</span>
-                    <span className="position">{position}</span>
-                  </div>
+    <div className="container">
+
+<Swiper
+        slidesPerView={1}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          991: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          
+          },
+         
+         
+         
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+      
+     
+
+
+
+
+
+  
+        {feedback.map(({ avatar, fullname, id, position, feedback }) => (
+          <SwiperSlide className="Slider1" key={id}>
+            <div className="Slider1__feedbackContainer">
+              <div className="Slider1__feedback">{feedback}</div>
+              <div className="Slider1__avatarAndInfo">
+                <div className="avatar-container">
+                  <img src={avatar} alt="Slide 1" />
+                </div>
+                <div className="nameAndPosition">
+                  <span className="name">{fullname}</span>
+                  <span className="position">{position}</span>
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        {/* Sonraki üç slayt */}
-        <Swiper
-          spaceBetween={30}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          // className="mySwiper"
-          // breakpoints={{
-          //   640: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 20,
-          //   },
-          //   768: {
-          //     slidesPerView: 2,
-          //     spaceBetween: 40,
-          //   },
-          //   1024: {
-          //     slidesPerView: 3,
-          //     spaceBetween: 50,
-          //   },
-          // }}
-          initialSlide={3}
-        ></Swiper>
-      </div>
- 
+            </div>
+          </SwiperSlide>
+        ))}
+ </Swiper>
+    </div>
   );
 };
 
