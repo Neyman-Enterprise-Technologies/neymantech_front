@@ -39,7 +39,7 @@ return (
         <NavLink to="/price" onClick={showNavbar}>
           Qiymətlər
         </NavLink>
-        <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+        <NavLink to="/about" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
           Komandamız
           </NavLink>
         
