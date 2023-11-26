@@ -2,24 +2,16 @@ import React from "react";
 import "./About.scss";
 // import { BiChevronRight } from "react-icons/bi";
 
-import { Link } from "react-router-dom";
-import { AiFillCheckCircle, AiFillCheckSquare } from "react-icons/ai";
-import Loading from "../../../Components/Loading/Loading";
 import { useEffect, useState } from "react";
 import { FaAngleRight, FaChevronUp } from "react-icons/fa";
-import Carusel1 from "../../../Components/Carusel1/Carusel1";
+import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
-import {
-  BsCheckLg,
-  BsFillCheckSquareFill,
-  BsFillPatchCheckFill,
-} from "react-icons/Bs";
 import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
 // import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
 import Partners from "../../../Components/Partners/Partners";
-import { CgScrollV } from "react-icons/Cg";
 
 export default function About() {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -92,7 +84,6 @@ export default function About() {
             <h2>
               Haqq<span>ım</span>ızda
             </h2>
-
           </div>
 
           <div className="linkLinks">
@@ -115,7 +106,6 @@ export default function About() {
 
         <div className="container">
           <section className="section-2">
-
             <div className="cardsContainer">
               <div className="card">
                 <h2>Haqqımızda</h2>
@@ -225,7 +215,6 @@ export default function About() {
                       <p>Your brand, promoted</p>
                     </div>
                   </div> */}
-
               </div>
             </div>
           </section>
@@ -233,7 +222,6 @@ export default function About() {
           {/* SECTION-2 END  */}
 
           {/* SECTION-3 START */}
-
 
           <section className="section-3">
             <div className="left">
