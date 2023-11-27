@@ -175,13 +175,13 @@ export default function Footer() {
                 <Link className="footer__footerLinks" to={"/about"}>
                   Komandamiz
                 </Link>
-
-              
-              </div>
-              <div className="footer__right">
                 <Link className="footer__footerLinks" to={"/blogs"}>
                   Bloq
                 </Link>
+              
+              </div>
+              <div className="footer__right">
+               
                 <Link className="footer__footerLinks" to={"/contact"}>
                   Əlaqə
                 </Link>
