@@ -117,20 +117,22 @@ export default function About() {
                   Şirkət, müştərilərinin müasir texnologiyalardan və dijital
                   həllərdən maksimum istifadə etmələrini təmin etmək üçün geniş
                   bir xidmət portföyünü təklif edir.
-                  <br />
+                  </p>
+                  <p className="description">
                   **Bizim haqqımızda əsas prinsiplər:**
-                  <br />
-                  1. **İnnovasiya və Yaradıcılıq:** <br />
+             1. **İnnovasiya və Yaradıcılıq:**
                   Müştərilərimizə yaratıcı və innovativ rəqəmsal çözümlər təklif
                   edərək onların dijital sahədə öne çıxmağını təmin etməyə
                   çalışırıq.
-                  <br />
-                  2. **Müştəri Memnuniyyəti:** <br />
+                  </p>
+                  <p className="description">
+                  2. **Müştəri Memnuniyyəti:** 
                   Müştərilərimizin tələblərini anlamağa, ehtiyaclarına cavab
                   verməyə və onların memnuniyyətini əsas qayğımız kimi görməyə
                   nail olmağa çalışırıq.
-                  <br />
-                  3. **Texnologiyalarda Sürətli İnkişaf:** <br />
+                  </p>
+                  <p className="description">
+                  3. **Texnologiyalarda Sürətli İnkişaf:** 
                   Sürətli inkişaf etməyə və texnologiyalardakı son yenilikləri
                   izləyərək müştərilərimizin daima müstəqil və müasir olmalarına
                   kömək edirik. Neyman Enterprise Technologies, müştərilərimizlə
@@ -227,7 +229,7 @@ export default function About() {
             <div className="left">
               <p className="title">Niyə bizi seçməlisiniz?</p>
 
-              <p className="description">
+              <p className="description title-left-text">
                 Neyman Enterprise Technologies'i seçmək üçün bir neçə əsas
                 səbəb:
               </p>
