@@ -577,7 +577,8 @@ padding-bottom: 4rem;
         transition: 0.5s all;
         & .heading {
           color: #fff;
-          font-size: 1rem;
+          font-size: 20px;
+          font-weight: 900;
         }
         & .description {
           font-size: 1.5rem;
@@ -1013,7 +1014,7 @@ article:has(:hover, :focus) {
   }
 
   .home__works__cards__card .info .heading {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .home__works__header h2 {
     font-size: 3.5rem;
@@ -1160,6 +1161,9 @@ justify-content: flex-start;
 
   .home__feedback__content h2 {
     font-size: 3.5rem;
+  }
+  .home__works__cards__card .info .heading{
+    font-size: 3rem;
   }
 }
 
