@@ -1,5 +1,3 @@
-
-
 .scroll-to-top {
   position: fixed;
   z-index: 999999999999;
@@ -118,23 +116,23 @@
 /** ABOUT SECTION-2 START*/
 .section-2 {
   width: 100%;
-
 }
 .section-2 .cardsContainer {
   display: flex;
 
   padding: 5rem 0 0 0;
-  gap: 4rem;
+  gap: 2rem;
 }
 .section-2 .cardsContainer .card {
-  /* width: calc(33.3% - 27px); */
-  display: flex;
-  gap: 1.5rem;
-  flex-direction: column;
-  padding: 0!important;
+  /* width: 90%; */
+
+  gap: 1rem;
+
+  padding: 0 !important;
 }
 .section-2 .cardsContainer .card .devider {
   position: relative;
+  margin-bottom: 1rem;
   width: 100%;
   height: 1px;
   background-color: #eeeeee;
@@ -167,7 +165,6 @@
 }
 
 .section-2 .cardsContainer .card .cardList p {
-
   font-size: 19.2px;
   width: 100%;
   color: black;
@@ -179,28 +176,26 @@
   transition: 0.2s ease;
   color: #bebecd;
 }
-.section-2 .cardsContainer .description{
-  font-size: 18px;
+.section-2 .cardsContainer .description {
+  font-size: 12px;
   color: var(--TextColor);
-  line-height: 2.5rem;
-  padding: 0!important;
-  text-align: justify;
-
+  line-height: 1.8rem;
+  padding: 0 !important;
+  /* text-align: justify; */
 }
 
 .section-2 .cardsContainer .card h2 {
-
+  margin-bottom: 1rem;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
 }
-
 
 /* ABOUT SECTION-2 END */
 
 /* ABOUT SECTION-3 START */
 
 .section-3 {
-  /* display: flex; */
+  display: flex;
   width: 100%;
   padding: 5rem 0;
   align-items: center;
@@ -212,15 +207,14 @@
 .section-3 .left {
   padding-top: 3rem;
   width: 50%;
-  display: flex;
-  flex-direction: column;
- 
-  gap: 10px;
+  /* display: flex;  */
+  /* flex-direction: column; */
 }
 .section-3 .left .title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: blue;
   font-weight: 500;
+  margin-bottom: 1.5rem;
 
   width: 100%;
 }
@@ -228,17 +222,15 @@
   font-size: 2rem;
   width: 100%;
   padding-right: 10rem;
-
 }
 .section-3 .left .description,
-.section-3 .left .selected-description{
+.section-3 .left .selected-description {
   text-align: justify;
+  padding-bottom: 10px;
   color: var(--TextColor);
-  line-height: 2rem;
-  font-size: 14px;
+  line-height: 1.3rem;
+  font-size: 11px;
   font-weight: 500;
-
-
 }
 .section-3 .left .selected-title-container {
   display: flex;
@@ -252,9 +244,13 @@
 }
 .section-3 .left .selected-title-container .selected-title {
   position: relative;
- 
+
   font-size: 1.5rem;
   width: 100%;
+}
+.section-3 .left .title-left-text {
+  color: black;
+  font-size: 14px;
 }
 
 .section-3 .left .selected-description {
@@ -296,19 +292,15 @@
     }
   }
   &__list {
-
     display: flex;
     justify-content: space-between;
-   
   }
 }
 
 @media screen and (max-width: 1200px) {
- 
   .section-2 .cardsContainer .card .cardList p {
     font-size: 1rem;
   }
-  
 
   .team-container {
     justify-content: center;
@@ -316,15 +308,12 @@
   .section-3 .left .header {
     font-size: 2rem;
     width: 100%;
-
   }
 }
 
 /* Responsive design   for 992  */
 
 @media screen and (max-width: 992px) {
- 
-  
   .section-1 {
     flex-direction: column;
   }
@@ -361,10 +350,10 @@
   .section-3 .left .description {
     padding-right: 0;
   }
-  .section-2 .cardsContainer .card .description{
-    font-size: 1.4rem!important;
+  .section-2 .cardsContainer .card .description {
+    font-size: 12px !important;
+   
   }
-  
 
   .section-3 .left .selected-title-container {
     justify-content: center;
@@ -381,93 +370,79 @@
     font-size: 1.125rem;
   }
 
+  @media screen and (max-width: 768px) {
+    .section-2 .cardsContainer {
+      flex-direction: column;
+      width: 100%;
+      /* gap: 6rem; */
+    }
+    .section-2 .cardsContainer .card {
+      width: 100%;
+    }
+    .section-2 .cardsContainer .card .description {
+      font-size: 10px !important;
+      line-height: 3.2rem;
+    }
+    .section-3 .left .title,
+    .section-3 .left .header,
+    .section-3 .left .selected-description,
+    .section-3 .left .description {
+      font-size: 10px;
+      line-height: 4rem;
+    }
+    .section-2 .cardsContainer .card h2 {
+      font-size: 14px;
+    }
+    .section-3 .left .header {
+      font-size: 3rem;
+    }
 
-@media screen and (max-width: 768px) {
+    .teamSection .teamHeaderContainer p {
+      font-size: 10px !important;
+      margin-bottom: 1rem;
+      color: var(--blueText);
+      font-weight: 500;
+    }
+    .teamSection .teamHeaderContainer h2 {
+      font-size: 14px !important;
+    }
+  }
 
+  @media screen and (max-width: 576px) {
+    .section-2 .cardsContainer {
+      flex-direction: column;
+      width: 100%;
+    }
+    .section-2 .cardsContainer .card {
+      width: 100%;
+    }
+    .section-2 .cardsContainer .card .description {
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
 
-  .section-2 .cardsContainer {
-    flex-direction: column;
-    width: 100%;
-    /* gap: 6rem; */
+    .section-3 .left .selected-title-container .selected-title {
+      font-size: 3.5rem;
+    }
+
+    .section-2 .cardsContainer .card {
+      width: 100%;
+    }
+    .home__service__cards {
+      width: 100%;
+    }
+
+    .home__works__cards {
+      width: 100%;
+    }
   }
-  .section-2 .cardsContainer .card {
-    width: 100%;
-  }
-  .section-2 .cardsContainer .card .description{
-    font-size: 10px!important;
-    line-height: 3.2rem;
-    
-  }
-  .section-3 .left .title, .section-3 .left .header, .section-3 .left .selected-description, .section-3 .left .description{
-    font-size: 10px;
-    line-height: 4rem;
-  }
-  .section-2 .cardsContainer .card h2{
-    font-size: 14px;
-  }
-  .section-3 .left .header{
+  .section-2 .cardsContainer .card .description {
     font-size: 3rem;
   }
- 
-
-  .teamSection .teamHeaderContainer p {
-    font-size: 10px!important;
-    margin-bottom: 1rem;
-    color: var(--blueText);
-    font-weight: 500;
+  .section-2 .cardsContainer .card .cardList p {
+    font-size: 3rem;
   }
-  .teamSection .teamHeaderContainer h2{
-    font-size: 14px!important;
-  }
-  
- 
-}
-
-@media screen and (max-width: 576px) {
- 
- 
-  .section-2 .cardsContainer {
-    flex-direction: column;
-    width: 100%;
-  }
-  .section-2 .cardsContainer .card {
-    width: 100%;
-  }
-  .section-2 .cardsContainer .card .description{
-    font-size: 2.5rem;
-    line-height: 4rem;
-  }
-  
-  .section-3 .left .selected-title-container .selected-title {
-    font-size: 3.5rem;
-  }
-
-  .section-2 .cardsContainer .card {
-    width: 100%;
-  }
-  .home__service__cards{
-    width: 100%;
-  }
- 
-  .home__works__cards{
-    width: 100%;
-  }
-}
-.section-2 .cardsContainer .card .description{
-  font-size: 3rem;
-}
-.section-2 .cardsContainer .card .cardList p{
-  font-size: 3rem;
-}
-/* .scroll-to-top{
+  /* .scroll-to-top{
 
 } */
-
 }
-
-
- 
-  
-  
-
-
