@@ -412,9 +412,10 @@
       height: 100%;
       background-color: white;
       border-radius: 0.4375rem;
-      padding: 2rem;
+      padding: 3rem;
 
       &__icon {
+        padding: 1rem 0;
         position: relative;
         width: 4.375rem;
         height: 4.375rem;
@@ -433,13 +434,13 @@
           color: #0000ff;
           font-size: 1.875rem;
           margin-left: 1.25rem;
-          margin-top: 1.25rem;
+          margin-top: 0.3rem;
         }
       }
 
       h3 {
         text-align: center;
-        padding: 0.625rem;
+        padding: 1rem 0;
 
         font-weight: 700;
         font-size: 1.5rem;
@@ -447,7 +448,7 @@
       }
 
       p {
-        padding: 1rem 1rem;
+        padding: 1rem 0;
         /* height: 10rem; */
         /* background-color: red; */
         font-size: 1.2rem;
