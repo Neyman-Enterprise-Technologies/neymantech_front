@@ -54,20 +54,18 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="footer__input-button-container">
             <Toaster position="top-center" />
+          <div className="footer__input-button-container">
             <input
               type="text"
-              placeholder="Enter your email"
+              placeholder="Yeniliklərdən xəbərdar olmaq üçün abonə olun"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="footer__subscribe-input"
             />
-            <button onClick={handleClick} className="footer__subscribe-button">
+            <Link to={"#"} onClick={handleClick} className="footer__subscribe-button">
               Abonə ol
-            </button>
-            
-
+            </Link> 
           </div>
 
         
