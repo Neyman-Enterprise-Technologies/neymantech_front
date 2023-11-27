@@ -17,14 +17,14 @@ const Carusel = ({ feedback }) => {
     <div className="container">
 
 <Swiper
-        slidesPerView={1}
+        slidesPerView={2}
         spaceBetween={10}
         pagination={{
           clickable: true,
         }}
         breakpoints={{
           576: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
