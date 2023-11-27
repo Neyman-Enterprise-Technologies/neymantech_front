@@ -137,7 +137,7 @@ export default function Home() {
         )}
 
 
-        <div className="container">
+       
           <div className="home__works">
             <div className="home__works__header">
               <h2>Son işlərimiz</h2>
@@ -153,7 +153,7 @@ export default function Home() {
               isProjectPage={false}
             />
           )}
-        </div>
+       
 
         <div className="home__feedback">
           <div className="home__feedback__content">
