@@ -47,7 +47,9 @@ const PriceCard = ({ title, price, color, period, property, symbol }) => {
               </div>
               // <FontAwesomeIcon icon={faXmark} className="cardsContainer__notAveilble-icon" />
             )}
-              <p className="cardsContainer__items">{item.property_name}</p>
+             {/* <div style={{backgroundColor:'yellow'}}> */}
+               <p className="cardsContainer__items">{item.property_name}</p>
+               {/* </div> */}
           </div>
         ))}
       </div>
