@@ -20,7 +20,7 @@ const LatestNews = ({ latestNews }) => {
   
 
    
- <div className="cards-container container" >
+ <div className="cards-container" >
       {filteredNews.map((card) => (
         <Link className="card" to={`/blogs/${card.slug}`} key={card.id}>
         <div  key={card.id}>

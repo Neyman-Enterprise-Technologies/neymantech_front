@@ -412,9 +412,10 @@
       height: 100%;
       background-color: white;
       border-radius: 0.4375rem;
-      padding: 2rem;
+      padding: 3rem;
 
       &__icon {
+        padding: 1rem 0;
         position: relative;
         width: 4.375rem;
         height: 4.375rem;
@@ -433,13 +434,13 @@
           color: #0000ff;
           font-size: 1.875rem;
           margin-left: 1.25rem;
-          margin-top: 1.25rem;
+          margin-top: 0.3rem;
         }
       }
 
       h3 {
         text-align: center;
-        padding: 0.625rem;
+        padding: 1rem 0;
 
         font-weight: 700;
         font-size: 1.5rem;
@@ -447,7 +448,7 @@
       }
 
       p {
-        padding: 1rem 1rem;
+        padding: 1rem 0;
         /* height: 10rem; */
         /* background-color: red; */
         font-size: 1.2rem;
@@ -543,10 +544,10 @@
     flex-wrap: wrap;
     gap: 1rem;
     border-radius: 1rem;
-    /* padding: 5rem 0; */
-    padding: 4rem 0;
+padding-bottom: 4rem;
     a {
-      width: calc(24.8% - 0.65rem);
+      width: calc(33.3% - 0.65rem);
+      /* height: 200px; */
     }
     &__card {
       position: absolute;
@@ -559,7 +560,7 @@
       box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
       transition: 0.5s ease-in-out;
 
-      height: 30rem;
+      height: 500px;
       position: relative;
       text-align: center;
       & .info {
@@ -598,7 +599,9 @@
     &__card:hover {
       & .info {
         transform: translateY(-80px);
+     
       }
+     
       transform: translateY(5px);
     }
     &__card::before {
@@ -827,7 +830,7 @@ article:has(:hover, :focus) {
     &__cards {
       justify-content: center;
       &__card {
-        height: 25rem;
+        height: 430px;
         
       }
     }
@@ -841,12 +844,10 @@ article:has(:hover, :focus) {
   }
   .home__works {
     &__cards {
-      a {
-        width: calc(50% - 0.65rem);
-      }
+    
       justify-content: center;
       &__card {
-        height: 45rem;
+        height: 350px   ;
 
         & .info {
           & .description {
@@ -967,7 +968,7 @@ article:has(:hover, :focus) {
       }
       &__card {
         margin-inline: auto;
-        width: 70% !important;
+     
         padding: 3rem;
         p {
           font-size: 1.5rem;
@@ -1023,16 +1024,17 @@ article:has(:hover, :focus) {
     font-size: 2rem;
   }
   .home__works__cards {
-    flex-direction: column;
-    align-content: center;
-    gap: 4rem;
+  
+justify-content: flex-start;
+    gap: 1rem;
   }
   .home__works__cards__card {
-    height: 50rem;
+    /* height: 50rem; */
     width: 100%;
   }
   .home__works__cards a {
-    width: 100%;
+    width: calc(50% - 0.5rem);
+  
   }
 }
 @media screen and (max-width: 576px) {
@@ -1044,11 +1046,12 @@ article:has(:hover, :focus) {
       width: 100% !important;
     }
     &__card {
-      flex-direction: column;
+      /* flex-direction: column; */
       width: 100%;
       margin-inline: auto;
     }
   }
+  
 
   .section-2 .cardsContainer .card .cardListsContainer {
     gap: 4rem;
@@ -1124,9 +1127,9 @@ article:has(:hover, :focus) {
   .home__service__cards__card {
     gap: 3rem;
   }
-  .home__works__cards__card {
+  /* .home__works__cards__card {
     width: 100% !important;
-  }
+  } */
   .home__works__header h2 {
     font-size: 3.5rem;
     padding-bottom: 3rem;
@@ -1160,9 +1163,8 @@ article:has(:hover, :focus) {
   }
 }
 
-@media screen and (max-width: 576px) {
-}
-@media screen and (max-width: 430px) {
+
+/* @media screen and (max-width: 430px) {
   .home__service__content h2 {
     font-size: 4rem;
   }
@@ -1220,4 +1222,4 @@ article:has(:hover, :focus) {
   .home__service__cards__card {
     width: 100%;
   }
-}
+} */
