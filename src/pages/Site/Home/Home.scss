@@ -985,7 +985,7 @@ article:has(:hover, :focus) {
     }
     .home__service__cards__card__icon .icon1 {
       width: 60%;
-      height: 60%;
+      height: 86%;
     }
     .home__service__cards__card__icon .badge {
       font-size: 3rem;
@@ -1164,62 +1164,3 @@ justify-content: flex-start;
 }
 
 
-/* @media screen and (max-width: 430px) {
-  .home__service__content h2 {
-    font-size: 4rem;
-  }
-  .home__service .home__service__cards__card__icon {
-    width: 9rem;
-    height: 9rem;
-  }
-  .home__service .home__service__cards__card__icon .badge {
-    top: -1.5rem;
-    right: -2rem;
-    font-size: 4.5rem;
-  }
-  .home__service .home__service__cards__card__icon .icon1 {
-    width: 70%;
-    height: 70%;
-  }
-
-  .home__service__content p {
-    font-size: 3rem;
-  }
-  .home__service__cards__card h3 {
-    font-size: 3.5rem;
-  }
-  .home__service__cards__card p {
-    font-size: 3rem;
-  }
-  .digital-marketing-container .left .top-container p {
-    font-size: 2.5rem;
-  }
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .left-cards-container
-    .card
-    p {
-    font-size: 2.7rem;
-  }
-  .home__works__header p {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-}
-@media screen and (max-width: 340px) {
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .left-cards-container
-    .card
-    p {
-    font-size: 2.8rem;
-  }
-  .digital-marketing-container .left .top-container p {
-    font-size: 3rem;
-  }
-  .home__service__cards__card {
-    width: 100%;
-  }
-} */
