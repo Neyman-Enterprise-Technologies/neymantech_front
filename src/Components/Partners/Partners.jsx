@@ -18,7 +18,7 @@ const Partners = () => {
 
   return (
     <div className="container">
-      <h2 className="partners-header">Our Loving Clients</h2>
+      <h2 className="partners-header">Bizim sevimli partnerlərimiz</h2>
     
         <div className="partners">
           <motion.div
