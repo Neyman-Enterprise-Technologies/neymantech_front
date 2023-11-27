@@ -159,27 +159,36 @@ export default function Footer() {
                 <Link className="footer__footerLinks" to={"/"}>
                   Ana səhifə
                 </Link>
-                <Link className="footer__footerLinks" to={"/blogs"}>
-                  Bloq
+                <Link className="footer__footerLinks" to={"/about"}>
+                  {/* Bloq */}
+                  Haqqımızda
                 </Link>
-                <Link className="footer__footerLinks" to={"/faq"}>
-                  FAQ
+                <Link className="footer__footerLinks" to={"/"}>
+                  Xidmətlər
                 </Link>
                 <Link className="footer__footerLinks" to={"/project"}>
                   İşlərimiz
                 </Link>
+                <Link className="footer__footerLinks" to={"/price"}>
+                  Qiymətlər
+                </Link>
+                <Link className="footer__footerLinks" to={"/about"}>
+                  Komandamiz
+                </Link>
+
+              
               </div>
               <div className="footer__right">
-                <Link className="footer__footerLinks" to={"/about"}>
-                  Haqqımızda
+                <Link className="footer__footerLinks" to={"/blogs"}>
+                  Bloq
                 </Link>
                 <Link className="footer__footerLinks" to={"/contact"}>
                   Əlaqə
                 </Link>
-
-                <Link className="footer__footerLinks" to={"/price"}>
-                  Qiymətlər
+                <Link className="footer__footerLinks" to={"/faq"}>
+                  FAQ
                 </Link>
+
 
                 {/* <Link className='footer__footerLinks' to={'/blogs'}>
                 Services
@@ -248,9 +257,7 @@ export default function Footer() {
             <p className="footer__copyrightLeft">
               Copyright 2023. Bütün hüquqlar Neyman Enterprise Technologies şirkəti tərəfindən qorunur
             </p>
-            <p className="footer__copyrightRight">
-              Terms & Conditions | Privacy Policy
-            </p>
+            
           </div>
         </div>
       </div>
