@@ -23,8 +23,8 @@ const Team = ({ team }) => {
   return (
     <section className="teamSection container">
       <div className="teamHeaderContainer">
-        <p>OUR TEAM</p>
-        <h2>Meet our awesome team member</h2>
+        <p>Komandamız</p>
+        <h2>Komandamız ilə tanış olun</h2>
       </div>
       <div className="team-container">
         {team.map((member) => (
