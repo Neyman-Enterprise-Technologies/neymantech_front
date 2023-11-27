@@ -363,7 +363,7 @@ gap: 20px;
     }
     &__top {
       flex-direction: column;
-      gap: 6rem;
+      /* gap: 6rem; */
     }
     &__headerandBorderBottom {
       margin-bottom: 2rem;
@@ -395,6 +395,7 @@ gap: 20px;
     }
     &__quickLinksContainer {
       width: 100%;
+  
 
       a {
         font-size: 2rem;
@@ -441,6 +442,7 @@ gap: 20px;
   }
   .footer__subscribe-content p{
     font-size: 1.5rem;
+line-height: 20px!important;
   }
   .footer__iconContainer{
     width: unset;
