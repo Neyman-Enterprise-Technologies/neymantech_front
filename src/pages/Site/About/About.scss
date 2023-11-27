@@ -179,7 +179,7 @@
 .section-2 .cardsContainer .description {
   font-size: 12px;
   color: var(--TextColor);
-  line-height: 1.8rem;
+  line-height: 20px;
   padding: 0 !important;
   /* text-align: justify; */
 }
@@ -349,9 +349,15 @@
   .section-3 .left .selected-description,
   .section-3 .left .description {
     padding-right: 0;
+    line-height: 20px;
+    text-align: left;
+  }
+  .section-3 .left .title{
+    font-size: 20px;
   }
   .section-2 .cardsContainer .card .description {
     font-size: 12px !important;
+    line-height: 25px;
    
   }
 
@@ -381,14 +387,17 @@
     }
     .section-2 .cardsContainer .card .description {
       font-size: 10px !important;
-      line-height: 3.2rem;
+      line-height: 20px;
     }
     .section-3 .left .title,
     .section-3 .left .header,
     .section-3 .left .selected-description,
     .section-3 .left .description {
       font-size: 10px;
-      line-height: 4rem;
+      line-height: 20px;
+    }
+    .section-3 .left .title{
+      font-size: 16px;
     }
     .section-2 .cardsContainer .card h2 {
       font-size: 14px;
