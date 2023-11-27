@@ -26,35 +26,36 @@
 
 .Slider1__feedbackContainer{
   display: flex;
-  background-color: rgb(234, 250, 250);
+  background-color: rgb(233, 237, 255);
   flex-direction: column;
   text-align: left;
-  gap: 15px;
+  gap: 20px;
   border-radius: 5px;
-  padding: 2rem;
+  padding: 40px;
   height: 300px;
 }
 .Slider1__feedback{
-  height: 77%;
+  height: 90%;
   overflow: hidden;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   font-style: italic;
-  color: var(--TextColor);
+ color: black;
 }
 .Slider1__avatarAndInfo{
-  gap: 2rem ;
+  gap: 20px ;
   /* height: 20%; */
   display: flex;
   align-items: center;
 }
 .name{
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   font-weight: 600;
 }
 .position{
  color: blue;
+ font-size: 12px;
 }
 .avatar-container{
   position: relative;
@@ -88,9 +89,31 @@
   }
    @media(max-width:576px){
 .Slider1__feedback{
-  
-  font-size: 14px;
+  padding-right: 50px;
+  font-size: 12px;
  
+}
+.Slider1__feedbackContainer{
+
+  padding:40px;
+
+}
+.Slider1__feedbackContainer{
+  height: 200px;
+  padding: 20px;
+}
+.position{
+  font-size: 2rem;
+}
+.avatar-container{
+  width: 30px;
+  height: 30px;
+}
+.name{
+  font-size: 14px;
+}
+.position{
+  font-size: 10px;
 }
 
    }
