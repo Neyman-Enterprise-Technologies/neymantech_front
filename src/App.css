@@ -169,7 +169,28 @@
   max-width: 1140px !important;
   margin: 0 auto;
    /* background-color: green; */
- 
+   .kateqoriya {
+    margin: 20px 0;
+  width: fit-content;
+  align-items: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #cfccd8;
+    border-radius: 5px;
+    gap: 10px;
+    background-color: rgb(70, 70, 239);
+    cursor: pointer;
+    color: white;
+    
+  }
+  .category-icon{
+    font-size: 1.5rem;
+  }
+  .kateqoriya p{
+    font-size: 1rem;
+  }
 
   }
  }
@@ -203,12 +224,10 @@
    .container{
     max-width: 540px !important;
     margin: 0 auto;
-    /* background-color: blue; */
+  
    }
   
- 
- 
-
+  
 
   }
   @media(max-width:576px){
@@ -217,6 +236,8 @@
     max-width: 90% !important;
     margin: 0 auto;
    }
+  
+ 
    .linkHeader {
     background-color: #fafafc;
     padding: 13rem 0;
