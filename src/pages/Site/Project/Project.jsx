@@ -16,6 +16,9 @@ export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
   
   const { data: latestWorkCardInHome } = UseFetch(
+    `${apiUrl}service_api/services/`
+  );
+  const { data: latestWork } = UseFetch(
     `${apiUrl}service_api/last_works/`
   );
 
@@ -114,6 +117,7 @@ export default function Project() {
                
                 latestWorkCardInHome={latestWorkCardInHome}
                 isProjectPage={true}
+                latestWork={latestWork}
               />
             )}
          
