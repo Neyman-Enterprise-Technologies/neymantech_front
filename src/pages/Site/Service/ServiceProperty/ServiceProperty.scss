@@ -52,6 +52,10 @@
 /* heading end */
 
 /* first section start */
+.firstSection:nth-child(1){
+  margin-top: 5rem;
+
+}
 .firstSection {
   display: flex;
   width: 100%;

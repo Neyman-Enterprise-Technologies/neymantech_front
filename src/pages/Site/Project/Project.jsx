@@ -35,6 +35,14 @@ export default function Project() {
     }
   };
 
+
+  const [search, setSearch] = useState("")
+  const handleClick = (id) => {
+    setSearch(id);
+    setIsModalOpen(false);
+  };
+
+  
   const handleScrollToTop = () => {
     scroll.scrollToTop({
       duration: 900,
