@@ -171,11 +171,11 @@ border-radius: 3px;
     display: flex;
     justify-content: center;
  
-    gap: 30px;
+    gap: 15px;
   }
 
   &__socialIcon {
-    font-size: 2rem;
+    font-size: 16px;
   }
   &__linkdiv {
     position: relative;
@@ -226,7 +226,7 @@ border-radius: 3px;
 
     transition: all 0.2s;
     color: #e4e4e4;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 100%;
     &:hover {
       color: #fa7070;
@@ -314,7 +314,7 @@ border-radius: 3px;
   justify-content: center;
   }
   .footer__subscribe-content p{
-  line-height: 30px;
+  line-height: 25px;
   }
 }
 @media (max-width: 1200px) {
@@ -332,7 +332,7 @@ border-radius: 3px;
    
     &__contactContainer {
       a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
     }
     &__galleries {
@@ -423,10 +423,10 @@ gap: 20px;
       }
     }
     &__left {
-      width: 30%;
+      width: 20%;
     }
     &__right {
-      width: 70%;
+      width:80%;
     }
     &__galleries {
       height: 50rem;
@@ -449,7 +449,7 @@ gap: 20px;
       line-height: 3rem;
     }
     &__socialMediaContainer {
-  gap: 30px;
+  gap: 20px;
       align-content: flex-start;
     }
     &__socialMediaLinks {
@@ -502,7 +502,7 @@ line-height: 20px!important;
 
   .footer__socialMediaContainer{
    
-    gap: 20px;
+    gap: 2  rem;
   }
 
 
@@ -525,7 +525,7 @@ line-height: 20px!important;
 
   .footer__headerandBorderBottom h2,
   .footer__bottomUnderscore h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .footer__phoneInfo p,
   .footer__contactContainer a{
@@ -541,7 +541,7 @@ line-height: 20px!important;
 font-size: 3rem;
 }
 .footer__quickLinksContainer a{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .footer__subscribe-content h2{
   font-size: 2rem;

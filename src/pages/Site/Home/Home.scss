@@ -21,7 +21,7 @@
   & .left_right-container {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
   .alternate-layout {
     &.left {
@@ -143,7 +143,7 @@
         display: flex;
 
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 0.5rem;
 
         & .card {
           width: calc(50% - 0.75rem);
@@ -162,12 +162,14 @@
           transition: ease-out 0.2s;
 
           & p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 600;
+            width: 80%;
 
             color: #000;
           }
           & .card-icon {
+            width: 20%;
             color: #0000ff;
             font-size: 2rem;
           }
@@ -577,7 +579,8 @@ padding-bottom: 4rem;
         transition: 0.5s all;
         & .heading {
           color: #fff;
-          font-size: 1rem;
+          font-size: 20px;
+          font-weight: 900;
         }
         & .description {
           font-size: 1.5rem;
@@ -592,7 +595,7 @@ padding-bottom: 4rem;
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 1rem;
       }
     }
@@ -1013,7 +1016,7 @@ article:has(:hover, :focus) {
   }
 
   .home__works__cards__card .info .heading {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .home__works__header h2 {
     font-size: 3.5rem;
@@ -1160,6 +1163,9 @@ justify-content: flex-start;
 
   .home__feedback__content h2 {
     font-size: 3.5rem;
+  }
+  .home__works__cards__card .info .heading{
+    font-size: 3rem;
   }
 }
 

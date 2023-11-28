@@ -17,29 +17,31 @@ const Carusel = ({ feedback }) => {
     <div className="container">
 
 <Swiper
-        slidesPerView={1}
-        spaceBetween={20}
+        slidesPerView={2}
+        spaceBetween={10}
         pagination={{
           clickable: true,
         }}
         breakpoints={{
           576: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 15,
           },
           991: {
-            slidesPerView: 2,
-            spaceBetween: 15,
+            slidesPerView: 3,
+            spaceBetween: 10,
           },
           1200: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 10,
           
           },
+        
+        
          
          
          
@@ -58,7 +60,7 @@ const Carusel = ({ feedback }) => {
         {feedback.map(({ avatar, fullname, id, position, feedback }) => (
           <SwiperSlide className="Slider1" key={id}>
             <div className="Slider1__feedbackContainer">
-              <div className="Slider1__feedback">{feedback}</div>
+              <div className="Slider1__feedback">" {feedback} "</div>
               <div className="Slider1__avatarAndInfo">
                 <div className="avatar-container">
                   <img src={avatar} alt="Slide 1" />
