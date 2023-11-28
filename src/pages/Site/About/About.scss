@@ -1,19 +1,4 @@
-.scroll-to-top {
-  position: fixed;
-  z-index: 999999999999;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  background-color: #0000ff;
-  color: #fff;
-  padding: 10px 15px;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-}
 
-.scroll-to-top:hover {
-  opacity: 0.8;
-}
 
 /* header links start */
 
@@ -177,7 +162,7 @@
   color: #bebecd;
 }
 .section-2 .cardsContainer .description {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--TextColor);
   line-height: 25px;
   padding: 0 !important;
@@ -349,7 +334,7 @@
   .section-3 .left .selected-description,
   .section-3 .left .description {
     padding-right: 0;
-    line-height: 20px;
+    line-height: 25px;
     text-align: left;
   }
   .section-3 .left .title{
@@ -451,7 +436,5 @@
   .section-2 .cardsContainer .card .cardList p {
     font-size: 3rem;
   }
-  /* .scroll-to-top{
-
-} */
+  
 }

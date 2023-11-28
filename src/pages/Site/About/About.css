@@ -1,20 +1,6 @@
-.scroll-to-top {
-  position: fixed;
-  z-index: 9999;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  background-color: #0000ff;
-  color: #fff;
-  padding: 10px 15px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-}
 
-.scroll-to-top:hover {
-  opacity: 0.8;
-}
+
+
 
 /* header links start */
 /* header links end */
