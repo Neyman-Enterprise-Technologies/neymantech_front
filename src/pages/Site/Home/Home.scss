@@ -21,7 +21,7 @@
   & .left_right-container {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
   }
   .alternate-layout {
     &.left {
@@ -46,7 +46,7 @@
 
       gap: 3rem;
       & h2 {
-        font-size: 2rem;
+        font-size: 3rem;
       }
       & p {
         color: var(--TextColor);
@@ -143,10 +143,10 @@
         display: flex;
 
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 15px;
 
         & .card {
-          width: calc(50% - 0.75rem);
+          width: calc(50% - 7.5px);
           display: flex;
           align-items: center;
 
@@ -389,9 +389,9 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 30px;
     a {
-      width: calc(33.3% - 0.65rem);
+      width: calc(33.3% - 20px);
     }
 
     &__card:hover {
@@ -413,7 +413,7 @@
 
       height: 100%;
       background-color: white;
-      border-radius: 0.4375rem;
+      border-radius: 10px;
       padding: 3rem;
 
       &__icon {
@@ -863,7 +863,9 @@ article:has(:hover, :focus) {
         }
       }
     }
+  
   }
+ 
 
   /* digital marketing media max-992px end */
 
@@ -891,6 +893,13 @@ article:has(:hover, :focus) {
     .card:hover {
     box-shadow: inset 50rem 0 0 0 #0000ff;
   }
+  .digital-marketing-container .left_right-container {
+    gap: 10px;
+  }
+  .digital-marketing-container .left_right-container{
+    gap: 30px;
+  }
+
 }
 @media screen and (max-width: 768px) {
   .project-cards-container {
@@ -914,6 +923,7 @@ article:has(:hover, :focus) {
     .left-cards-container
     .card {
     padding: 2rem;
+  
   }
   .digital-marketing-container
     .left
@@ -927,7 +937,7 @@ article:has(:hover, :focus) {
     .left-cards-container
     .card
     p {
-    font-size: 2rem;
+    font-size: 18px;
   }
 
   .left_right-container {
@@ -1146,7 +1156,7 @@ justify-content: flex-start;
     .marketing-cards-container
     .left-cards-container
     .card {
-    width: calc(50% - 0.5rem);
+    width: calc(50% - 7.5px);
   }
   .digital-marketing-container
     .left
