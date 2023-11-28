@@ -45,7 +45,7 @@
     /* padding: 1rem; */
     transition: all 0.3s;
     opacity: 1;
-    font-size: 16px;
+    font-size: 24px;
     color: rgb(60, 60, 205);
   }
   &__teamSocialIcon:hover {
@@ -140,7 +140,9 @@
     font-size: 15px;
   }
 
-
+  .teamSection .team-container__socialContainer a{
+    font-size:1rem;
+  }
 
   
   .section-3 .left .selected-title-container .tick-icon {
@@ -157,14 +159,7 @@
 
 @media screen and (max-width: 992px) {
 
-
- 
-
-  
-
-  
-  
-  .section-3 .left .selected-title-container .tick-icon {
+.section-3 .left .selected-title-container .tick-icon {
     font-size: 30px;
   }
   .teamSection .team-container__profile-container {
