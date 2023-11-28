@@ -100,7 +100,7 @@ const LatestWorkCardInHome = ({ latestWorkCardInHome, isProjectPage }) => {
                   {latestWorkCardInHome.map((card) => (
                     <li
                       key={card.id}
-                      onMouseEnter={() => handleMouseEnter(card.title)}
+                      // onMouseEnter={() => handleMouseEnter(card.title)}
                       onMouseLeave={handleMouseLeave}
                       onClick={() => handleClick(card.title)}
                     >
