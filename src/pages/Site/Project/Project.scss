@@ -112,18 +112,7 @@
       font-size: 1.5rem;
     }
   }
-  .kateqoriya {
-
-    width: 25%;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-    
-      border-right: 1px solid #ccd8cc;
-    border-radius: 5px;
-      gap: 1.25rem;
-      background-color: #f2f2f2;
-    }
+ 
 }
 @media screen and (max-width: 768px) {
  
@@ -141,16 +130,9 @@
     }
   }
 
-  .category-icon{
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  .kateqoriya{
-    width: 30%;
-  }
-  .kateqoriya p{
-    font-size: 1.8rem;
-  }
+ 
+
+
   .input-search input{
     font-size: 2rem;
   }
@@ -181,19 +163,9 @@ width: 100%;
   font-size: 2.5rem;
   line-height: 3rem;
 }
-.category-icon{
-  width: 4rem;
-    height:4rem;
-}
-.kateqoriya{
-  width: 35%;
 
-  font-size: 2.5rem;
-}
-.kateqoriya p{
-  font-size: 2.5rem;
- 
-}
+
+
 .input-search input{
   font-size: 3rem;
 }
