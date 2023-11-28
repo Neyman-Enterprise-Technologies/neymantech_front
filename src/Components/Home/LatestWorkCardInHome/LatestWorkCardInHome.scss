@@ -56,28 +56,10 @@
   border-radius: 5px;
 }
 
-.kateqoriya {
-  margin-bottom: 20px;
-  width: 18%;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-right: 1px solid #cfccd8;
-  border-radius: 5px;
-  gap: 10px;
-  background-color: #e6e3fb;
-  cursor: pointer;
-}
 
-.kateqoriya img {
-  width: 0.9375rem;
-}
 
-.kateqoriya p {
-  color: #484b5e;
-  font-size: 1.2rem;
-}
+
+
 
 .input-search {
   background-color: #f2f2f2;
@@ -89,10 +71,7 @@
   display: flex;
   align-items: center;
 }
-.category-icon {
-  cursor: pointer;
-  font-size: 1.5rem;
-}
+
 
 .input-search input {
   font-size: 1.2rem;

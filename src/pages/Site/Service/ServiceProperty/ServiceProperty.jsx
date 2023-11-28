@@ -35,10 +35,7 @@ export default function ServiceProperty() {
       >
         {/* heading start */}
         <div className="linkHeader">
-
-
-
-          <div className="container">
+     
             <div className="linkTitle">
               <h2>
                 {serviceProperty &&
@@ -55,71 +52,67 @@ export default function ServiceProperty() {
                     </div>
                   ))}
               </h2>
-            </div>
-       
-          <div className="linkLinks">
-            <Link to="/home" className="linkLink">
-              Ana səhifə
-            </Link>
-            <FaAngleRight className="angleIcon" />
-            <Link to="service">{serviceProperty && serviceProperty.title}</Link>
-
-
-          </div>
-          </div>
-        
-
-       
-
-
-        {/* heading end */}
-
-        {/* first section start*/}
-        <div className="container">
-          {serviceProperty &&
-            serviceProperty.service_details.map((detail, index) => (
-              <div
-                className={`firstSection ${
-                  index % 2 === 0 ? "alternate-layout" : ""
-                }`}
-                key={detail.id}
-              >
-                {index % 2 !== 0 ? (
-                  <div className="firstSection__imgContainer">
-                    <img src={detail.photo} />
-                  </div>
-                ) : null}
-
-                <div className="firstSection__textContent">
-                  <p className="firstSection__header">{""}</p>
-                  <p className="firstSection__title">{detail.title}</p>
-
-                  <p className="firstSection__description">
-                    {detail.description}
-                  </p>
-
-                  {detail.service_property_detail.map((s) => (
-                    <div className="TitleContainer" key={s.id}>
-                      <div className="titleContainerTitle">
-                        <BsCheckLg className="firstSection__list-title-icon" />
-
-                        <h2 className="titleOfTitle">{s.title}</h2>
-                      </div>
-
-                      <p className="contentOfTitle">{s.content}</p>
-                    </div>
-                  ))}
-                </div>
-                {index % 2 === 0 ? (
-                  <div className="firstSection__imgContainer">
-                    <img src={detail.photo} />
-                  </div>
-                ) : null}
               </div>
-            ))}
-        </div>
 
-        </div>
+              <div className="linkLinks">
+                <Link to="/home" className="linkLink">
+                  Ana səhifə
+                </Link>
+                <FaAngleRight className="angleIcon" />
+                <Link to="service">
+                  {serviceProperty && serviceProperty.title}
+                </Link>
+              </div>
+          
+            </div>
+
+          {/* heading end */}
+
+          {/* first section start*/}
+          <div className="container">
+            {serviceProperty &&
+              serviceProperty.service_details.map((detail, index) => (
+                <div
+                  className={`firstSection ${
+                    index % 2 === 0 ? "alternate-layout" : ""
+                  }`}
+                  key={detail.id}
+                >
+                  {index % 2 !== 0 ? (
+                    <div className="firstSection__imgContainer">
+                      <img src={detail.photo} />
+                    </div>
+                  ) : null}
+
+                  <div className="firstSection__textContent">
+                    <p className="firstSection__header">{""}</p>
+                    <p className="firstSection__title">{detail.title}</p>
+
+                    <p className="firstSection__description">
+                      {detail.description}
+                    </p>
+
+                    {detail.service_property_detail.map((s) => (
+                      <div className="TitleContainer" key={s.id}>
+                        <div className="titleContainerTitle">
+                          <BsCheckLg className="firstSection__list-title-icon" />
+
+                          <h2 className="titleOfTitle">{s.title}</h2>
+                        </div>
+
+                        <p className="contentOfTitle">{s.content}</p>
+                      </div>
+                    ))}
+                  </div>
+                  {index % 2 === 0 ? (
+                    <div className="firstSection__imgContainer">
+                      <img src={detail.photo} />
+                    </div>
+                  ) : null}
+                </div>
+              ))}
+          </div>
+    
 
         {/* first section end */}
       </motion.div>
