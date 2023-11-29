@@ -12,48 +12,53 @@ const BlogList = ({ filteredBlogs }) => {
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 2;
+  const postsPerPage = 3;
+
+  const currentDate = new Date();
+  const filteredbyDate = filteredBlogs.filter((card) => {
+    const cardDate = new Date(card.date);
+  return cardDate < currentDate && card.is_active;;
+  });
   
   /*   Get Current posts */
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const [currentPosts, setCurrentPosts]= useState(posts.slice(indexOfFirstPost, indexOfLastPost))
+  const currentPosts = filteredbyDate.slice(indexOfFirstPost, indexOfLastPost);
 
   //Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 
-  const currentDate = new Date();
-  
+ 
 
-  const filteredbyDate = filteredBlogs.filter((card) => {
-    const cardDate = new Date(card.date);
-  
-    return cardDate < currentDate && card.is_active;;
-  });
-
-
-
-  useEffect(()=>{
-      setCurrentPosts(filteredBlogs)
-  },[filteredBlogs])
-  
   useEffect(() => {
-   
     setLoading(true);
-    window.scrollTo({ top: 0 });
+    // window.scrollTo({ top: 500 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
-  }, [apiUrl]);
+  }, [filteredBlogs]);
+
+  // useEffect(()=>{
+  //     setCurrentPosts(filteredBlogs)
+  // },[filteredBlogs])
+  
+  // useEffect(() => {
+   
+  //   setLoading(true);
+  //   window.scrollTo({ top: 0 });
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1000);
+  // }, [apiUrl]);
 
   return (
     <>
       <div className="cards-container">
         {/* {currentPosts.map((blog) => ( */}
-           {filteredbyDate.map((blog) => (
+           {currentPosts.map((blog) => (
           <Link to={`/blogs/${blog.slug}`} key={blog.id}>
-            <div className="card" key={blog.id}>
+            <div className="card">
               <div className="cardImgContainer">
                 {/* r */}
                 <img src={blog.photo} alt={blog.title} />
@@ -69,8 +74,8 @@ const BlogList = ({ filteredBlogs }) => {
       </div>
       <Pagination
         postsPerPage={postsPerPage}
-        totalPosts={posts.length}
-        // totalPosts={filteredBlogs.length}
+        // totalPosts={posts.length}
+        totalPosts={filteredBlogs.length}
         paginate={paginate}
         currentPage={currentPage}
       />
