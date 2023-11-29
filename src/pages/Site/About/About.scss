@@ -341,7 +341,7 @@
     font-size: 20px;
   }
   .section-2 .cardsContainer .card .description {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 25px;
    
   }
@@ -360,6 +360,12 @@
   .section-3 .left .selected-title-container .selected-title {
     font-size: 1.125rem;
   }
+  
+  .section-3 .left .description{
+    font-size: 14px;
+  }
+
+}
 
   @media screen and (max-width: 768px) {
     .section-2 .cardsContainer {
@@ -371,14 +377,13 @@
       width: 100%;
     }
     .section-2 .cardsContainer .card .description {
-      font-size: 10px !important;
-      line-height: 20px;
+    line-height: 25px;
     }
     .section-3 .left .title,
     .section-3 .left .header,
     .section-3 .left .selected-description,
     .section-3 .left .description {
-      font-size: 10px;
+      font-size: 14px;
       line-height: 20px;
     }
     .section-3 .left .title{
@@ -410,10 +415,7 @@
     .section-2 .cardsContainer .card {
       width: 100%;
     }
-    .section-2 .cardsContainer .card .description {
-      font-size: 2.5rem;
-      line-height: 4rem;
-    }
+  
 
     .section-3 .left .selected-title-container .selected-title {
       font-size: 3.5rem;
@@ -429,12 +431,13 @@
     .home__works__cards {
       width: 100%;
     }
+    .section-2 .cardsContainer .card .description {
+      font-size: 3rem;
+    }
+    .section-2 .cardsContainer .card .cardList p {
+      font-size: 3rem;
+    }
   }
-  .section-2 .cardsContainer .card .description {
-    font-size: 3rem;
-  }
-  .section-2 .cardsContainer .card .cardList p {
-    font-size: 3rem;
-  }
+ 
   
-}
+
