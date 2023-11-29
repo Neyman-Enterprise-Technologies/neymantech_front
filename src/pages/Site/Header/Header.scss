@@ -5,7 +5,8 @@
 }
 
 .logo-img {
-
+display: flex;
+align-items: center;
 min-width: 18%;
   height: 100%;
   color: white;
@@ -13,7 +14,7 @@ min-width: 18%;
 }
 .logo-img img {
   /* width: 100%;  */
-  height: 100%;
+  height: 80%;
   object-fit: contain;
   color: white;
 }
@@ -84,6 +85,7 @@ nav a.active {
   text-decoration: none;
 
   border-bottom: 2px solid var(--secondaryColor);
+ 
 }
 
 header .nav-btn {
