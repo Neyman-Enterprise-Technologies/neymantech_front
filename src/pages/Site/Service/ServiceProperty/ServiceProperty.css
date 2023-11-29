@@ -67,6 +67,10 @@
 
 /* heading end */
 /* first section start */
+.firstSection:nth-child(1) {
+  margin-top: 5rem;
+}
+
 .firstSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +95,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   /* justify-content: space-between; */
-  gap: 2rem;
+  gap: 16px;
 }
 
 .firstSection .TitleContainer {
@@ -105,24 +109,14 @@
   gap: 1.5rem;
 }
 
-.firstSection .titleContainerTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-}
-
 .firstSection .contentOfTitle {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 18px;
+  line-height: 32px;
   color: var(--TextColor);
 }
 
 .firstSection .titleContainerTitle h2 {
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 
 .firstSection__header {
@@ -133,9 +127,8 @@
 }
 
 .firstSection__title {
-  font-size: 2rem;
+  font-size: 24px;
   width: 100%;
-  padding-right: 10rem;
   font-weight: 600;
   padding-right: 0;
 }
@@ -145,7 +138,7 @@
   word-wrap: break-word;
   color: #737b9a;
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 500;
   padding-right: 0;
 }
@@ -173,8 +166,10 @@
 }
 
 .firstSection__list-title-icon {
-  font-size: 2rem;
+  font-size: 30px;
   color: #0000ff;
+  float: left;
+  margin-right: 20px;
 }
 
 .firstSection__list-title-description {
@@ -204,12 +199,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 15rem;
-    gap: 2rem;
+    gap: 40px;
     width: 100%;
   }
   .firstSection__textContent {
     width: 100%;
-    gap: 4rem;
+    padding-left: 50px;
   }
   .firstSection__header {
     text-align: center;
@@ -239,7 +234,6 @@
             order: -1;
   }
   .firstSection__title {
-    font-size: 2.5rem;
     text-align: left;
   }
   .firstSection__description,
@@ -248,7 +242,7 @@
     line-height: 2rem;
   }
   .firstSection .titleContainerTitle h2 {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 
