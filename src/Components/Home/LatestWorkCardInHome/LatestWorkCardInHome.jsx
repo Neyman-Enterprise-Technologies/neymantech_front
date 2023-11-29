@@ -126,8 +126,8 @@ const LatestWorkCardInHome = ({
         whileInView={{ opacity: 1 }}
         className="home__works__cards"
       >
-        {latestWork &&
-          latestWork.map((card) => (
+        {latestWorkCardInHome &&
+          latestWorkCardInHome.map((card) => (
             <Link to={card.link_url} key={card.id}>
               <div className="home__works__cards__card" key={card.id}>
                 <img src={card.photo} />
