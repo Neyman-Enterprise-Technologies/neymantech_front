@@ -871,6 +871,9 @@ article:has(:hover, :focus) {
   .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon{
     font-size: 20px;
   }
+  .digital-marketing-container .left .top-container p{
+    font-size: 16px;
+  }
   .home__works {
     &__cards {
     
@@ -992,7 +995,7 @@ article:has(:hover, :focus) {
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
 
-    font-size: 2.5rem;
+font-size: 12px;
     padding: 0.625rem;
     line-height: 3.5rem;
     font-weight: 100;
@@ -1060,7 +1063,7 @@ article:has(:hover, :focus) {
   }
 
   .home__works__cards__card .info .heading {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .home__works__header h2 {
     font-size: 3.5rem;
@@ -1070,11 +1073,11 @@ article:has(:hover, :focus) {
     line-height: 3rem;
     font-size: 2rem;
   }
-  .home__works__cards {
+  /* .home__works__cards {
   
 justify-content: flex-start;
-    gap: 1rem;
-  }
+    gap: 2rem;
+  } */
   .home__works__cards__card {
     /* height: 50rem; */
     width: 100%;
@@ -1110,6 +1113,7 @@ justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    gap: 2rem;
     a {
       width: 100% !important;
     }
@@ -1133,7 +1137,7 @@ justify-content: flex-start;
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
-    font-size: 2.5rem;
+
   }
   .home__service__content {
     width: 100%;
