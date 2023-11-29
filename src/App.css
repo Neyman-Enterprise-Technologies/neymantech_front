@@ -50,7 +50,7 @@
 .scroll-to-top {
   position: fixed;
   z-index: 999999999999;
-  bottom: 20px;
+  bottom: 40px;
   right: 20px;
   cursor: pointer;
   background-color: #0000ff;
@@ -62,7 +62,7 @@
 }
 
 .scroll-icon {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .scroll-to-top:hover {
