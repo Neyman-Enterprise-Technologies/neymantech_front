@@ -2,57 +2,52 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.scss";
 import newlogo from "../../../images/logo.png";
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const navRef = useRef();
 
-
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
-   
   };
 
-return (
+  return (
     <header>
-   
       <NavLink to="/" className="logo-img">
         <img src={newlogo} alt="Responsive Image" />
       </NavLink>
       <nav ref={navRef}>
         <NavLink to="/" onClick={showNavbar}>
-
-        Ana Səhifə
-
+          Ana səhifə
         </NavLink>
 
         <NavLink to="/about" onClick={showNavbar}>
           Haqqımızda
         </NavLink>
-        <NavLink to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+        <Link
+          to="/"
+          onClick={showNavbar} /* onClick={handleScrollToServiceCards} */
+        >
           Xidmətlər
-        </NavLink>
+        </Link>
         <NavLink to="/project" onClick={showNavbar}>
           İşlərimiz
         </NavLink>
         <NavLink to="/price" onClick={showNavbar}>
           Qiymətlər
         </NavLink>
-        <NavLink to="/about" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+        <Link
+          to="/about"
+          onClick={showNavbar} /* onClick={handleScrollToServiceCards} */
+        >
           Komandamız
-          </NavLink>
-        
-     
-        
-     
-        <NavLink to="/blogs" onClick={showNavbar}>
+        </Link>
 
-        Bloq
+        <NavLink to="/blogs" onClick={showNavbar}>
+          Bloq
         </NavLink>
         <NavLink to="/contact" onClick={showNavbar}>
-        Əlaqə
-
+          Əlaqə
         </NavLink>
         {/* <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink> */}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
@@ -69,7 +64,6 @@ return (
             <option value="türkçe">TR</option>
           </select>
         </div> */}
-      
     </header>
   );
 }
