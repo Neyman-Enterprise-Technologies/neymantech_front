@@ -13,14 +13,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 10rem;
   /* background-color: blue; */
   & .left_right-container {
     display: flex;
   }
   & .left_right-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
   }
   .alternate-layout {
@@ -33,7 +33,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+   
+    gap: 28px;
     width: 50%;
 
     /* background-color: red; */
@@ -44,14 +45,14 @@
       display: flex;
       flex-direction: column;
 
-      gap: 3rem;
+      gap: 24px;
       & h2 {
         font-size: 3rem;
       }
       & p {
         color: var(--TextColor);
         line-height: 2rem;
-        font-size: 1.4rem;
+        font-size: 18px;
         font-weight: 500;
       }
 
@@ -162,7 +163,7 @@
           transition: ease-out 0.2s;
 
           & p {
-            font-size: 1.5rem;
+            font-size: 18px;
             font-weight: 600;
             width: 80%;
 
@@ -171,7 +172,7 @@
           & .card-icon {
             width: 20%;
             color: #0000ff;
-            font-size: 2rem;
+            font-size: 24px;
           }
         }
         & .card:hover {
@@ -292,6 +293,7 @@
           border-radius: 0.5rem;
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.2s;
+         
 
           /* & p {
             width: 20ch;
@@ -371,14 +373,14 @@
     h2 {
       padding: 0.9375rem 0rem 0rem 0rem;
 
-      font-size: 2rem;
+      font-size: 32px;
       margin-bottom: 1rem;
     }
 
     p {
       color: var(--TextColor);
       line-height: 2rem;
-      font-size: 1.4rem;
+      font-size: 18px;
       font-weight: 500;
     }
   }
@@ -827,6 +829,18 @@ article:has(:hover, :focus) {
     background-color: #f9f9fc;
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
+    &__cards{
+      gap: 20px;
+      a{
+        width: calc(33.3% - 14px);
+      }
+    }
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+    font-size: 16px;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon{
+    font-size: 22px;
   }
 
   .home__works {
@@ -844,6 +858,18 @@ article:has(:hover, :focus) {
 @media screen and (max-width: 992px) {
   .home__service {
     background-color: #f9f9fc;
+    &__cards{
+      gap: 15px;
+      a{
+        width: calc(33.3% - 10px);
+      }
+    }
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+    font-size: 14px;
+  }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon{
+    font-size: 20px;
   }
   .home__works {
     &__cards {
@@ -908,6 +934,9 @@ article:has(:hover, :focus) {
   .digital-marketing-container .left_right-container {
     gap: 30px;
   }
+  .digital-marketing-container .left .marketing-cards-container .left-cards-container{
+    gap: 1.5rem;
+  }
 
   .digital-marketing-container
     .left
@@ -925,12 +954,7 @@ article:has(:hover, :focus) {
     padding: 2rem;
   
   }
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .left-cards-container
-    .card
-    .card-icon,
+ 
   .digital-marketing-container
     .left
     .marketing-cards-container
@@ -939,21 +963,31 @@ article:has(:hover, :focus) {
     p {
     font-size: 18px;
   }
+  .digital-marketing-container
+  .left
+  .marketing-cards-container
+  .left-cards-container
+  .card
+  .card-icon{
+    font-size:22px ;
+  }
 
   .left_right-container {
     flex-direction: column;
-
-    padding: 5rem 0;
+     padding: 5rem 0;
   }
 
   .left_right-container .left {
     width: 100%;
+    gap: 10px;
   }
   .left_right-container .right {
     width: 100%;
+  }.digital-marketing-container .left .top-container{
+    gap: 10px;
   }
   .digital-marketing-container .left .top-container h2 {
-    font-size: 2.5rem;
+    font-size: 30px;
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
@@ -973,11 +1007,11 @@ article:has(:hover, :focus) {
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
     &__cards {
-      width: 100%;
-      flex-direction: column;
-      gap: 20px;
+     
+      /* flex-direction: column; */
+      gap: 15px;
       a {
-        width: 100%;
+        width: calc(50% - 8px);
       }
       &__card {
         margin-inline: auto;
@@ -1051,6 +1085,27 @@ justify-content: flex-start;
   }
 }
 @media screen and (max-width: 576px) {
+  .home__service {
+    background-color: #f9f9fc;
+    padding: 0.25rem 0px 5.625rem 0px;
+    width: 100%;
+    &__cards {
+     
+      /* flex-direction: column; */
+      gap: 15px;
+      a {
+        width: 100%;
+      }
+      &__card {
+        margin-inline: auto;
+     
+        padding: 3rem;
+             
+      }
+    }
+
+   
+  }
   .home__works__cards {
     flex-wrap: wrap;
     flex-direction: column;
@@ -1088,6 +1143,7 @@ justify-content: flex-start;
     display: flex;
     flex-direction: row;
     width: 100%;
+   
   }
   .digital-marketing-container
     .left
@@ -1099,10 +1155,10 @@ justify-content: flex-start;
 
     gap: 2rem;
     align-items: center;
-    margin-bottom: 8px;
+ 
   }
   .digital-marketing-container .left .top-container h2 {
-    font-size: 3.5rem;
+    font-size: 7rem;
   }
 
   .digital-marketing-container
@@ -1111,7 +1167,7 @@ justify-content: flex-start;
     .left-cards-container
     .card
     p {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .digital-marketing-container
     .left
@@ -1119,7 +1175,7 @@ justify-content: flex-start;
     .left-cards-container
     .card
     .card-icon {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .left_right-container .left {
     gap: 3rem;
@@ -1177,6 +1233,7 @@ justify-content: flex-start;
   .home__works__cards__card .info .heading{
     font-size: 3rem;
   }
+  
 }
 
 
