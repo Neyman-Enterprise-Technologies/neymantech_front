@@ -23,7 +23,7 @@ return (
       <nav ref={navRef}>
         <NavLink to="/" onClick={showNavbar}>
 
-        Anasəhifə
+        Ana Səhifə
 
         </NavLink>
 
