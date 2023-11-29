@@ -11,7 +11,6 @@
 
 .itemmm {
   position: relative;
-  /* background-color: red; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,9 +22,8 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  min-height: 18rem;
-  min-width: 18rem;
-  padding: 40px;
+  min-height: 13rem;
+  min-width: 13rem;
 }
 
 .itemmm .companyName {
@@ -33,7 +31,6 @@
   bottom: 0;
   font-size: 1rem;
   background-color: #cecedd;
-  /* width: 20ch; */
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-weight: 400;
@@ -51,6 +48,7 @@
 }
 
 .inner-carousel {
+  /* background-color: blue; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,36 +60,27 @@
   cursor: grab;
   overflow: hidden;
   padding: 0 0 3rem 0;
-  /* margin: 0 10%; */
-  background-color: orange;
+  /* background-color: orange; */
+}
+
+@media screen and (max-width: 992px) {
+  .itemmm {
+    min-height: 12rem;
+    min-width: 12rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .itemmm {
-    width: 25rem;
-    /* height: 25rem; */
-    padding: unset;
-  }
-  .itemmm img {
-    width: 100%;
-    height: 100%;
+    min-width: 16rem;
+    min-height: 16rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .partners-header {
-    font-size: 20px;
-    text-align: center;
-    padding: 5rem;
-  }
   .itemmm {
-    /* width: 25rem; */
-    /* height: 25rem; */
-    padding: unset;
-  }
-  .itemmm img {
-    width: 100%;
-    height: 100%;
+    min-height: 20rem;
+    min-width: 20rem;
   }
 }
 /*# sourceMappingURL=Partners.css.map */

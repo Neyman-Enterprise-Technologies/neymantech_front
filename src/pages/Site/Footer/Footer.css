@@ -1,12 +1,13 @@
 .footer {
   position: relative;
   background-color: #212529;
-  z-index: 99999;
+  z-index: 9999999;
   /* display: flex;
   flex-direction: column; */
 }
 
 .footer__subscribers {
+  width: 100%;
   padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,10 +23,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  gap: 10px;
 }
 
 .footer__subscribe-content {
+  width: 50%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,23 +49,27 @@
   font-size: 1.2rem;
 }
 
-.footer__subscribe-content p {
-  letter-spacing: 0.6px;
-}
-
 .footer__subscribe-input {
-  height: 3.5rem;
-  /* width: 25rem; */
+  font-size: 1rem;
+  padding: 0.625rem 0;
+  width: 80%;
   padding-left: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }
 
 .footer__subscribe-button {
   background-color: #3535c5;
-  height: 3.5rem;
+  font-size: 1rem;
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 3px;
+  width: 20%;
 }
 
 .footer__top {
-  margin-bottom: 10rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,13 +78,13 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 3rem;
-  padding-top: 5rem;
+  padding: 2rem 0;
 }
 
 .footer__contactInfoCol {
   position: relative;
   padding: 0.625rem 0;
-  width: 25%;
+  /* width: 25%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +125,7 @@
 }
 
 .footer__contactContainer a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   font-weight: 900;
   -webkit-transition: all 0.2s;
@@ -150,7 +160,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 6.25rem;
 }
 
 .footer__devider {
@@ -176,8 +185,9 @@
 }
 
 .footer__phoneIcon {
-  font-size: 3.125rem;
-  color: #fa7070;
+  font-size: 2rem;
+  /* color: #fa7070; */
+  color: #4646ef;
 }
 
 .footer__phoneInfo {
@@ -192,17 +202,18 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .footer__phoneInfo p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   width: 100%;
   color: #e4e4e4;
 }
 
 .footer__phoneInfo a {
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .footer__socialMediaContainer {
@@ -213,11 +224,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .footer__socialIcon {
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 .footer__linkdiv {
@@ -270,7 +281,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .footer__right {
@@ -283,14 +294,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .footer__footerLinks {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #e4e4e4;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   width: 100%;
 }
 
@@ -324,7 +335,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 50%;
   gap: 0.5rem;
 }
 
@@ -384,20 +395,36 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.875rem 0;
+  padding: 3rem 0;
 }
 
 .footer__copyrightLeft {
-  width: 50%;
+  width: 100%;
   color: white;
-  font-size: 1.5rem;
 }
 
 .footer__copyrightRight {
   text-align: right;
   width: 50%;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.footer .footer__subscribers {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 5rem;
+}
+
+.footer .footer__subscribe-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1200px) {
@@ -409,11 +436,8 @@
 }
 
 @media (max-width: 992px) {
-  .footer__top {
-    margin-bottom: 5rem;
-  }
   .footer__contactContainer a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .footer__galleries {
     height: 15rem;
@@ -427,11 +451,6 @@
   .footer__socialMediaContainer {
     gap: 20px;
   }
-  .footer__subscribers {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .footer__subscribe-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -440,9 +459,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .footer__subscribe-content p {
-    line-height: 2rem;
   }
 }
 
@@ -468,7 +484,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 6rem;
+    /* gap: 6rem; */
   }
   .footer__headerandBorderBottom {
     margin-bottom: 2rem;
@@ -498,10 +514,10 @@
     font-size: 2rem;
   }
   .footer__left {
-    width: 30%;
+    width: 20%;
   }
   .footer__right {
-    width: 70%;
+    width: 80%;
   }
   .footer__galleries {
     height: 50rem;
@@ -516,15 +532,15 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 3rem;
   }
   .footer__copyrightRight {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 3rem;
   }
   .footer__socialMediaContainer {
-    gap: 30px;
+    gap: 20px;
     -ms-flex-line-pack: start;
         align-content: flex-start;
   }
@@ -537,9 +553,19 @@
   }
   .footer__subscribe-content p {
     font-size: 1.5rem;
+    line-height: 20px !important;
   }
   .footer__iconContainer {
     width: unset;
+  }
+  .footer__subscribe-input {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .footer__subscribe-button {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
   }
 }
 
@@ -555,7 +581,7 @@
     height: 15rem;
   }
   .footer__socialMediaContainer {
-    gap: 20px;
+    gap: 2  rem;
   }
   .section-2 .cardsContainer .card .cardListsContainer {
     gap: 3rem;
@@ -568,7 +594,7 @@
   }
   .footer__headerandBorderBottom h2,
   .footer__bottomUnderscore h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .footer__phoneInfo p,
   .footer__contactContainer a {
@@ -584,38 +610,21 @@
     font-size: 3rem;
   }
   .footer__quickLinksContainer a {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .footer__subscribe-content h2 {
     font-size: 2rem;
   }
   .footer__subscribe-content p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
   }
-  .footer__subscribe-input {
-    height: 4rem;
-  }
-  .footer__subscribe-input::-webkit-input-placeholder {
-    font-size: 1.5rem;
-  }
-  .footer__subscribe-input:-ms-input-placeholder {
-    font-size: 1.5rem;
-  }
-  .footer__subscribe-input::-ms-input-placeholder {
-    font-size: 1.5rem;
-  }
-  .footer__subscribe-input::placeholder {
-    font-size: 1.5rem;
-  }
-  .footer__subscribe-button {
-    height: 4rem;
-    font-size: 1.5rem;
-  }
+  /* .footer__subscribe-button{
+  height: 4rem;
+  font-size: 1.5rem;
+} */
   .footer__copyrightLeft {
-    font-size: 2rem;
-  }
-  .footer__copyrightRight {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .footer__copyright {
     margin-inline: unset;

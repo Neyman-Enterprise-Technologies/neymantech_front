@@ -1,13 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .logo-img {
-  width: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   color: white;
-  margin-right: 15rem;
 }
 
 .logo-img img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;  */
+  height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
   color: white;
@@ -31,11 +40,12 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 8rem;
-  padding: 0 2rem;
-  background-color: #ebebeb;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  /* color: var(--textColor); */
+  padding: 0 4rem;
+  gap: 4rem;
+  /* background-color: #eeeeee; */
+  background-color: #fafafc;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   z-index: 999999999;
   color: #29335c;
   position: -webkit-sticky;
@@ -43,12 +53,16 @@ header {
   top: 0;
 }
 
-nav a {
-  margin: 0 1rem;
+nav a,
+.navLink {
+  margin: 0 1rem 0 0;
   /* color: var(--textColor); */
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 900;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
   padding: 0.5em 0;
   position: relative;
   color: #29335c;
@@ -78,7 +92,6 @@ nav a:not(.active):hover::after {
 nav a.active {
   position: relative;
   top: 1px;
-  /* height: 1px; */
   text-decoration: none;
   border-bottom: 2px solid var(--secondaryColor);
 }
@@ -166,7 +179,7 @@ nav {
   }
   header .responsive_nav a {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   nav .nav-close-btn {
     position: absolute;
@@ -188,7 +201,7 @@ nav {
   }
   header .responsive_nav a {
     color: white;
-    font-size: 4.5rem;
+    font-size: 16px;
   }
   nav .nav-close-btn {
     position: absolute;

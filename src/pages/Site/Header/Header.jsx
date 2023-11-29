@@ -4,30 +4,33 @@ import "./Header.scss";
 import newlogo from "../../../images/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
+
 function Navbar() {
   const navRef = useRef();
 
+
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
+   
   };
 
-  return (
+return (
     <header>
+   
       <NavLink to="/" className="logo-img">
         <img src={newlogo} alt="Responsive Image" />
       </NavLink>
       <nav ref={navRef}>
         <NavLink to="/" onClick={showNavbar}>
-          Ana səhifə
+
+        Ana səhifə
+
         </NavLink>
 
         <NavLink to="/about" onClick={showNavbar}>
           Haqqımızda
         </NavLink>
-        <Link
-          to="/"
-          onClick={showNavbar} /* onClick={handleScrollToServiceCards} */
-        >
+        <Link to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
           Xidmətlər
         </Link>
         <NavLink to="/project" onClick={showNavbar}>
@@ -36,18 +39,20 @@ function Navbar() {
         <NavLink to="/price" onClick={showNavbar}>
           Qiymətlər
         </NavLink>
-        <Link
-          to="/about"
-          onClick={showNavbar} /* onClick={handleScrollToServiceCards} */
-        >
+        <Link to="/about" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
           Komandamız
-        </Link>
-
+          </Link>
+        
+     
+        
+     
         <NavLink to="/blogs" onClick={showNavbar}>
-          Bloq
+
+        Bloq
         </NavLink>
         <NavLink to="/contact" onClick={showNavbar}>
-          Əlaqə
+        Əlaqə
+
         </NavLink>
         {/* <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink> */}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
@@ -64,6 +69,7 @@ function Navbar() {
             <option value="türkçe">TR</option>
           </select>
         </div> */}
+      
     </header>
   );
 }

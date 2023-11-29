@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+
 import "./Pagination.scss";
-import Loading from "../Loading/Loading";
+
 import { useState } from "react";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
