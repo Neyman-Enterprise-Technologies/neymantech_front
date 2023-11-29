@@ -55,14 +55,14 @@
   cursor: pointer;
   background-color: #0000ff;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .scroll-icon {
-  font-size: 26px;
+  font-size: 15px;
 }
 
 .scroll-to-top:hover {
@@ -208,15 +208,9 @@
     /* background-color: yellow; */
    }
 
-   .scroll-to-top {
- 
-    padding: 10px 14px;
-   
-  }
   
-  .scroll-icon {
-    font-size: 20px;
-  }
+  
+ 
 
 
   }
@@ -256,11 +250,7 @@
   font-size: 2.5rem;
  
 }
-.scroll-to-top {
- 
-  padding: 10px 12px;
- 
-}
+
   
 .scroll-icon {
   font-size: 16px;
