@@ -154,10 +154,6 @@
   .project-cards-container__heading {
     font-size: 1.5rem;
   }
- 
-  
- 
-  
   .input-search input {
     font-size: 2rem;
   }
@@ -193,8 +189,6 @@
     font-size: 2.5rem;
     line-height: 3rem;
   }
- 
- 
   .input-search input {
     font-size: 3rem;
   }
@@ -210,6 +204,5 @@
   .input-search input::placeholder {
     font-size: 3rem;
   }
-  
 }
 /*# sourceMappingURL=Project.css.map */
