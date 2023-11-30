@@ -365,6 +365,7 @@ gap: 20px;
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      padding: 5rem 0;
     }
     &__subscribe-content{
       width: 100%;
@@ -381,7 +382,7 @@ gap: 20px;
     }
     &__headerandBorderBottom {
       h2 {
-        font-size: 2.5rem;
+        font-size: 20px;
       }
     }
     &__bottomUnderscore {
@@ -389,15 +390,15 @@ gap: 20px;
     }
     &__bottomUnderscore {
       h2 {
-        font-size: 2.5rem;
+        font-size: 20px;
       }
     }
     &__phoneInfo {
       p {
-        font-size: 1.5rem;
+        font-size: 14px;
       }
       a {
-        font-size: 2rem;
+        font-size: 16px;
       }
     }
 
@@ -409,7 +410,7 @@ gap: 20px;
   
 
       a {
-        font-size: 2rem;
+        font-size: 16px;
       }
     }
     &__left {
@@ -431,7 +432,7 @@ gap: 20px;
 
     &__copyrightLeft {
       width: fit-content;
-      font-size: 1.5rem;
+      font-size: 14px;
       line-height: 3rem;
     }
     &__copyrightRight {
@@ -449,10 +450,10 @@ gap: 20px;
   }
  
   .footer__subscribe-content h2{
-    font-size: 1.8rem;
+    font-size: 16px;
   }
   .footer__subscribe-content p{
-    font-size: 1.5rem;
+    font-size: 14px;
 line-height: 20px!important;
   }
   .footer__iconContainer{
@@ -460,100 +461,87 @@ line-height: 20px!important;
   }
   .footer__subscribe-input{
     padding: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 16px;
     padding-left: 1.5rem;
   }
   .footer__subscribe-button{
     padding: 1.5rem 0;
-  
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__phoneIcon{
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
- 
-  .footer {
-   
-    &__top {
 
-      margin-bottom: 5rem;
-      /* width: 70%!important; */
-    }
-    &__contactContainer {
-      a {
-        font-size: 1.4rem;
-      }
-    }
-    &__galleries {
-      height: 15rem;
-    }
-   
+  .footer__right{
+    width: 75%;
   }
-
-  .footer__socialMediaContainer{
-   
-    gap: 2  rem;
+  .footer__left{
+    width: 25%;
   }
-
-
- 
- 
-  
- 
-  
-
-  .section-2 .cardsContainer .card .cardListsContainer{
-    gap: 3rem;
+  .footer__quickLinksContainer a{
+    font-size: 3.2rem;
   }
-  .footer__galleries{
-    height: 45rem;
+  .footer__subscribe-content h2{
+    font-size: 3rem;
   }
-  .home__works__header{
-
-    margin-inline: auto;
+  .footer__subscribe-content p{
+    font-size: 2.5rem;
+    line-height: 3.5rem!important;
   }
-
-  .footer__headerandBorderBottom h2,
-  .footer__bottomUnderscore h2{
+  .footer__subscribe-input{
+    font-size: 3rem;
+  }
+  .footer__subscribe-button
+  {
     font-size: 2.5rem;
   }
-  .footer__phoneInfo p,
-  .footer__contactContainer a{
-    font-size: 2rem;
+  .footer__headerandBorderBottom h2{
+    font-size: 4rem;
   }
-  .footer__socialMediaLinks{
+  .footer__contactInfoCol{
+    gap: 4rem;
+  }
+  .footer__quickLinksContainer{
+    gap: 4rem;
+  }
+  .footer__top{
+    gap: 5rem;
+    padding: 5rem 0;
+  }
+  .footer__phoneInfo{
+    gap: 1rem;
+  }
+  .footer__phoneInfo p{
+    font-size: 2.5rem;
+  
+  }
+  .footer__phoneInfo a{
     font-size: 3rem;
   }
   .footer__socialIcon{
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .footer__phoneIcon {
-font-size: 3rem;
-}
-.footer__quickLinksContainer a{
-  font-size: 2rem;
-}
-.footer__subscribe-content h2{
-  font-size: 2rem;
-}
-.footer__subscribe-content p{
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
+    font-size: 4rem;
+  }
+  .footer__contactContainer {
+    gap: 4rem;
+  }
+
+ 
+  .footer__bottomUnderscore h2{
+    font-size: 4rem;
+  }
+  .footer__copyrightLeft{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
 
 
-
-/* .footer__subscribe-button{
-  height: 4rem;
-  font-size: 1.5rem;
-} */
-.footer__copyrightLeft{
-  font-size: 1.8rem;
 }
-
-.footer__copyright{
-  margin-inline: unset;
-}
-
-}
-

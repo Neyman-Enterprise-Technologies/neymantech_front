@@ -490,19 +490,19 @@
     margin-bottom: 2rem;
   }
   .footer__headerandBorderBottom h2 {
-    font-size: 2.5rem;
+    font-size: 24px;
   }
   .footer__bottomUnderscore {
     margin-bottom: 2rem;
   }
   .footer__bottomUnderscore h2 {
-    font-size: 2.5rem;
+    font-size: 24px;
   }
   .footer__phoneInfo p {
-    font-size: 1.5rem;
+    font-size: 14px;
   }
   .footer__phoneInfo a {
-    font-size: 2rem;
+    font-size: 16px;
   }
   .footer__contactInfoCol {
     width: 100%;
@@ -511,7 +511,7 @@
     width: 100%;
   }
   .footer__quickLinksContainer a {
-    font-size: 2rem;
+    font-size: 16px;
   }
   .footer__left {
     width: 20%;
@@ -532,7 +532,7 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 14px;
     line-height: 3rem;
   }
   .footer__copyrightRight {
@@ -549,10 +549,10 @@
     width: 3.125rem;
   }
   .footer__subscribe-content h2 {
-    font-size: 1.8rem;
+    font-size: 16px;
   }
   .footer__subscribe-content p {
-    font-size: 1.5rem;
+    font-size: 14px;
     line-height: 20px !important;
   }
   .footer__iconContainer {
@@ -560,12 +560,15 @@
   }
   .footer__subscribe-input {
     padding: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 16px;
     padding-left: 1.5rem;
   }
   .footer__subscribe-button {
     padding: 1.5rem 0;
     font-size: 1.5rem;
+  }
+  .footer__phoneIcon {
+    font-size: 20px;
   }
 }
 
