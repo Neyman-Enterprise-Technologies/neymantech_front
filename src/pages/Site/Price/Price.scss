@@ -7,7 +7,7 @@
 }
 .header h2 {
   padding: 0.9375rem 0rem 0rem 0rem;
-  font-size: 2rem;
+  font-size: 32px;
   margin-bottom: 1rem;
 }
 .header p {
@@ -264,6 +264,9 @@ flex-wrap: wrap;
     &__items {
       font-size: 1.7rem;
     }
+    .header h2{
+      font-size: 30px;
+    }
     &__period,
     &__exchangeRate {
       font-size: 1.2rem;
@@ -472,7 +475,7 @@ flex-wrap: wrap;
     font-size: 2.5rem;
   }
   .header h2{
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
  
 }
