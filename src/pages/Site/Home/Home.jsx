@@ -155,7 +155,8 @@ export default function Home() {
           )}
        
 
-        <div className="home__feedback">
+      <div className="home__feedback">
+      <div className="container">
           <div className="home__feedback__content">
             <p>Rəylər</p>
             <h2>Müştərilərimizin bizim üçün verdiyi rəylər</h2>
@@ -163,6 +164,7 @@ export default function Home() {
 
           {feedback && <Carusel feedback={feedback} />}
         </div>
+      </div>
 
         <div className="home__blogs">
 
