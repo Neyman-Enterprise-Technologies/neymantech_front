@@ -419,7 +419,7 @@
 
       height: 100%;
       background-color: white;
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 3rem;
 
       &__icon {
@@ -562,7 +562,7 @@ padding-bottom: 4rem;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
       display: flex;
 
-      border-radius: 1rem;
+      border-radius: 5px;
 
       align-items: flex-end;
       box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.5);
@@ -602,7 +602,7 @@ padding-bottom: 4rem;
         width: 100%;
         height: 100%;
         object-fit: contain;
-        border-radius: 1rem;
+        border-radius: 5px;
       }
     }
     &__card:hover {
@@ -620,7 +620,7 @@ padding-bottom: 4rem;
       top: 0;
       left: 0;
       display: block;
-      border-radius: 1rem;
+      border-radius: 5px;
       width: 100%;
       height: 100%;
       background: linear-gradient(to bottom, rgba(4, 7, 84, 0.5), rgb(0, 0, 0));
@@ -1204,7 +1204,7 @@ font-size: 3rem;
     gap: 3rem;
   }
   .home__service__content p {
-    font-size:3rem;
+    font-size:2.8rem;
     line-height: 4rem;
   }
   .home__service__content h2 {
