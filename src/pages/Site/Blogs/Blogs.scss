@@ -34,13 +34,13 @@
   margin: 0;
   cursor: pointer;
 
-  /* align-self: flex-start; */
+  border-radius: 5px;
   border: 1px solid #ddd;
   overflow: hidden;
   transition: 0.4s all;
 }
 .blogs .left a .card .cardImgContainer {
-  height: 15rem;
+  height: 200px;
 }
 .blogs .left a .card .cardImgContainer img {
   width: 100%;
@@ -80,7 +80,7 @@
   font-size: 1.2rem;
 }
 .blogs .left a .card:hover {
-  box-shadow: 0 3px 20px 0 (rgb(210, 210, 219));
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .blogs .left a .card:hover .bottom-content h2 {
   color: rgb(27, 27, 141);
@@ -176,7 +176,7 @@
 .blogs .right .recent-posts-container h2 {
   padding: 1rem 0;
   width: 100%;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #f9f9f9;
   font-size: 1.2rem;
   /* background-color: yellow; */
 }
@@ -309,7 +309,7 @@ top: 0.2rem;
 @media screen and (max-width: 1200px) {
   
   .blogs .left a .card .cardImgContainer {
-    height: 12rem;
+    height: 180px;
   }
   .blogs .left a .card .bottom-content {
     padding: 1.6rem 1rem;

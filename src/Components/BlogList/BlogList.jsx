@@ -12,7 +12,7 @@ const BlogList = ({ filteredBlogs }) => {
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 3;
+  const postsPerPage = 6;
 
   const currentDate = new Date();
   const filteredbyDate = filteredBlogs.filter((card) => {
@@ -20,7 +20,7 @@ const BlogList = ({ filteredBlogs }) => {
   return cardDate < currentDate && card.is_active;;
   });
   
-  /*   Get Current posts */
+/*  Current posts  */
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = filteredbyDate.slice(indexOfFirstPost, indexOfLastPost);
@@ -33,7 +33,7 @@ const BlogList = ({ filteredBlogs }) => {
 
   useEffect(() => {
     setLoading(true);
-    // window.scrollTo({ top: 500 });
+    // window.scrollTo({ top:0 });
     setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -72,13 +72,14 @@ const BlogList = ({ filteredBlogs }) => {
           </Link>
         ))}
       </div>
+      {filteredBlogs.length > postsPerPage && ( 
       <Pagination
         postsPerPage={postsPerPage}
-        // totalPosts={posts.length}
         totalPosts={filteredBlogs.length}
         paginate={paginate}
         currentPage={currentPage}
       />
+    )}
     </>
   );
 };

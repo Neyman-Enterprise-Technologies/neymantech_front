@@ -14,8 +14,8 @@
   display: flex;
   gap: 1rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-bottom: 1px solid #4e5e6a;
 }
 
@@ -24,8 +24,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 50%;
   gap: 10px;
 }
@@ -38,11 +38,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__subscribe-content h2 {
@@ -75,8 +75,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 3rem;
   padding: 2rem 0;
 }
@@ -90,12 +90,12 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 3rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__contactInfoCol h2 {
@@ -115,11 +115,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 2rem;
   width: 100%;
 }
@@ -144,8 +144,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: yellow;
 }
 
@@ -155,11 +155,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer__devider {
@@ -197,11 +197,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 
@@ -222,8 +222,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -246,8 +246,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 3rem;
 }
 
@@ -268,8 +268,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__left {
@@ -279,8 +279,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -292,8 +292,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -315,8 +315,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 0.625rem 0;
   width: 25%;
   gap: 3rem;
@@ -329,11 +329,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 50%;
   gap: 0.5rem;
@@ -347,8 +347,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 0.5rem;
 }
 
@@ -361,7 +361,7 @@
 .footer__galleriesImagesCont img {
   position: absolute;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -393,8 +393,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 3rem 0;
 }
 
@@ -412,8 +412,8 @@
 
 .footer .footer__subscribers {
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   gap: 5rem;
 }
 
@@ -423,8 +423,8 @@
   display: flex;
   gap: 1rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (max-width: 1200px) {
@@ -457,8 +457,8 @@
     display: flex;
     gap: 1rem;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -469,8 +469,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 2rem;
   }
   .footer__subscribe-content {
@@ -482,27 +482,27 @@
   .footer__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     /* gap: 6rem; */
   }
   .footer__headerandBorderBottom {
     margin-bottom: 2rem;
   }
   .footer__headerandBorderBottom h2 {
-    font-size: 2.5rem;
+    font-size: 24px;
   }
   .footer__bottomUnderscore {
     margin-bottom: 2rem;
   }
   .footer__bottomUnderscore h2 {
-    font-size: 2.5rem;
+    font-size: 24px;
   }
   .footer__phoneInfo p {
-    font-size: 1.5rem;
+    font-size: 14px;
   }
   .footer__phoneInfo a {
-    font-size: 2rem;
+    font-size: 16px;
   }
   .footer__contactInfoCol {
     width: 100%;
@@ -511,7 +511,7 @@
     width: 100%;
   }
   .footer__quickLinksContainer a {
-    font-size: 2rem;
+    font-size: 16px;
   }
   .footer__left {
     width: 20%;
@@ -532,7 +532,7 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 14px;
     line-height: 3rem;
   }
   .footer__copyrightRight {
@@ -542,17 +542,17 @@
   .footer__socialMediaContainer {
     gap: 20px;
     -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: flex-start;
   }
   .footer__socialMediaLinks {
     display: inline-block;
     width: 3.125rem;
   }
   .footer__subscribe-content h2 {
-    font-size: 1.8rem;
+    font-size: 16px;
   }
   .footer__subscribe-content p {
-    font-size: 1.5rem;
+    font-size: 14px;
     line-height: 20px !important;
   }
   .footer__iconContainer {
@@ -560,12 +560,15 @@
   }
   .footer__subscribe-input {
     padding: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 16px;
     padding-left: 1.5rem;
   }
   .footer__subscribe-button {
     padding: 1.5rem 0;
     font-size: 1.5rem;
+  }
+  .footer__phoneIcon {
+    font-size: 20px;
   }
 }
 
@@ -581,7 +584,7 @@
     height: 15rem;
   }
   .footer__socialMediaContainer {
-    gap: 2  rem;
+    gap: 2 rem;
   }
   .section-2 .cardsContainer .card .cardListsContainer {
     gap: 3rem;
