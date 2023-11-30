@@ -1,10 +1,9 @@
-
 .footer {
   position: relative;
 
   background-color: #212529;
 
-z-index: 9999999;
+  z-index: 9999999;
   /* display: flex;
   flex-direction: column; */
   &__subscribers {
@@ -18,34 +17,31 @@ z-index: 9999999;
   &__input-button-container {
     display: flex;
     justify-content: space-between;
-  width: 50%;
- 
-  gap: 10px;
- 
+    width: 50%;
+
+    gap: 10px;
   }
   &__subscribe-content {
-  width: 50%;
+    width: 50%;
 
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     h2 {
- 
       font-size: 1.2rem;
     }
-  
   }
   &__subscribe-input {
     font-size: 1rem;
-padding: 0.625rem 0;
-width: 80%;
-padding-left: 1rem;
-outline: none;
-border: none;
-border-radius: 3px;
+    padding: 0.625rem 0;
+    width: 80%;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
   }
- 
+
   &__subscribe-button {
     background-color: rgb(53, 53, 197);
     font-size: 1rem;
@@ -54,14 +50,9 @@ border-radius: 3px;
     text-align: center;
     border-radius: 3px;
     width: 20%;
-  
-  
-    
-
   }
 
   &__top {
-  
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,7 +70,6 @@ border-radius: 3px;
 
     h2 {
       text-align: start;
-   
 
       font-size: 1.5rem;
       color: white;
@@ -121,7 +111,6 @@ border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
- 
   }
 
   &__devider {
@@ -167,7 +156,7 @@ border-radius: 3px;
     position: relative;
     display: flex;
     justify-content: center;
- 
+
     gap: 15px;
   }
 
@@ -181,7 +170,6 @@ border-radius: 3px;
   }
 
   &__quickLinksContainer {
-   
     padding: 0.625rem 0;
     width: 25%;
     position: relative;
@@ -193,7 +181,6 @@ border-radius: 3px;
     position: relative;
     width: 100%;
     h2 {
-
       font-size: 1.5rem;
       color: white;
       margin-bottom: 0.8rem;
@@ -220,7 +207,6 @@ border-radius: 3px;
     gap: 1rem;
   }
   &__footerLinks {
-
     transition: all 0.2s;
     color: #e4e4e4;
     font-size: 1.2rem;
@@ -289,10 +275,8 @@ border-radius: 3px;
     padding: 3rem 0;
   }
   &__copyrightLeft {
-   
     width: 100%;
     color: white;
-
   }
   &__copyrightRight {
     text-align: right;
@@ -300,20 +284,17 @@ border-radius: 3px;
     color: white;
     font-size: 1.2rem;
   }
-  .footer__subscribers{
+  .footer__subscribers {
     align-items: flex-end;
- gap: 5rem;
-
-    }
-  .footer__subscribe-content{
+    gap: 5rem;
+  }
+  .footer__subscribe-content {
     display: flex;
     gap: 1rem;
-  justify-content: center;
+    justify-content: center;
   }
- 
 }
 @media (max-width: 1200px) {
-  
   /* .footer {
     &__socialMediaContainer {
       gap: 30px;
@@ -322,9 +303,7 @@ border-radius: 3px;
 }
 
 @media (max-width: 992px) {
-
   .footer {
-   
     &__contactContainer {
       a {
         font-size: 1.2rem;
@@ -340,37 +319,29 @@ border-radius: 3px;
       width: 40%;
     }
     &__socialMediaContainer {
-
-gap: 20px;
-    
+      gap: 20px;
     }
-    
   }
-  
-  .footer__subscribe-content{
+
+  .footer__subscribe-content {
     display: flex;
     gap: 1rem;
-  justify-content: center;
+    justify-content: center;
   }
-  
 }
 
 @media (max-width: 768px) {
- 
- 
   .footer {
-
     &__subscribers {
- 
       display: flex;
       flex-direction: column;
       gap: 2rem;
       padding: 5rem 0;
     }
-    &__subscribe-content{
+    &__subscribe-content {
       width: 100%;
     }
-    &__input-button-container{
+    &__input-button-container {
       width: 100%;
     }
     &__top {
@@ -407,7 +378,6 @@ gap: 20px;
     }
     &__quickLinksContainer {
       width: 100%;
-  
 
       a {
         font-size: 16px;
@@ -417,7 +387,7 @@ gap: 20px;
       width: 20%;
     }
     &__right {
-      width:80%;
+      width: 80%;
     }
     &__galleries {
       height: 50rem;
@@ -440,7 +410,7 @@ gap: 20px;
       line-height: 3rem;
     }
     &__socialMediaContainer {
-  gap: 20px;
+      gap: 20px;
       align-content: flex-start;
     }
     &__socialMediaLinks {
@@ -448,83 +418,82 @@ gap: 20px;
       width: 3.125rem;
     }
   }
- 
-  .footer__subscribe-content h2{
+
+  .footer__subscribe-content h2 {
     font-size: 16px;
   }
-  .footer__subscribe-content p{
+  .footer__subscribe-content p {
     font-size: 14px;
-line-height: 20px!important;
+    line-height: 20px !important;
   }
-  .footer__iconContainer{
+  .footer__iconContainer {
     width: unset;
   }
-  .footer__subscribe-input{
+  .footer__subscribe-input {
     padding: 1.5rem 0;
     font-size: 16px;
     padding-left: 1.5rem;
   }
-  .footer__subscribe-button{
+  .footer__subscribe-button {
     padding: 1.5rem 0;
-  font-size: 1.5rem;
-  display: flex;
+    font-size: 1.5rem;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  .footer__phoneIcon{
+  .footer__phoneIcon {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
-
-  .footer__right{
+  .footer__right {
     width: 75%;
   }
-  .footer__left{
+
+  .footer__left {
     width: 25%;
   }
-  .footer__quickLinksContainer a{
+  .footer__quickLinksContainer a {
     font-size: 3.2rem;
   }
-  .footer__subscribe-content h2{
+  .footer__subscribe-content h2 {
     font-size: 3rem;
   }
-  .footer__subscribe-content p{
+  .footer__subscribe-content p {
     font-size: 2.5rem;
-    line-height: 3.5rem!important;
+    line-height: 3.5rem !important;
   }
-  .footer__subscribe-input{
+  .footer__subscribe-input {
     font-size: 3rem;
   }
-  .footer__subscribe-button
-  {
+  .footer__subscribe-button {
     font-size: 2.5rem;
   }
-  .footer__headerandBorderBottom h2{
+  .footer__headerandBorderBottom h2 {
     font-size: 4rem;
   }
-  .footer__contactInfoCol{
+  .footer__contactInfoCol {
     gap: 4rem;
   }
-  .footer__quickLinksContainer{
+  .footer__quickLinksContainer {
     gap: 4rem;
   }
-  .footer__top{
+  .footer__top {
     gap: 5rem;
     padding: 5rem 0;
   }
-  .footer__phoneInfo{
+  .footer__phoneInfo {
     gap: 1rem;
   }
-  .footer__phoneInfo p{
+  .footer__phoneInfo p {
     font-size: 2.5rem;
-  
   }
-  .footer__phoneInfo a{
+  .footer__phoneInfo a {
     font-size: 3rem;
   }
-  .footer__socialIcon{
+
+  .footer__socialIcon {
     font-size: 4rem;
   }
   .footer__phoneIcon {
@@ -534,14 +503,11 @@ line-height: 20px!important;
     gap: 4rem;
   }
 
- 
-  .footer__bottomUnderscore h2{
+  .footer__bottomUnderscore h2 {
     font-size: 4rem;
   }
-  .footer__copyrightLeft{
+  .footer__copyrightLeft {
     font-size: 2.5rem;
     line-height: 3.5rem;
   }
-
-
 }
