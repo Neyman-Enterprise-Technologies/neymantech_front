@@ -91,7 +91,7 @@ header {
 
 .navbar a.active {
   position: relative;
-  top: 1px;
+  top: 0.5px;
   text-decoration: none;
   border-bottom: 2px solid var(--secondaryColor);
 }
