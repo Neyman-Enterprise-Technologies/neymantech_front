@@ -4,7 +4,7 @@ import "./Pagination.scss";
 import { useState } from "react";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
-  const [loading, setLoading] = useState(false);
+
 
   const pageNumbers = [];
 
