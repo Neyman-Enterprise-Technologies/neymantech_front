@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .partners-header {
-  font-size: 2rem;
+  font-size: 32px;
   text-align: center;
   padding: 5rem;
 }
@@ -71,6 +71,9 @@
   .itemmm{
     min-height: 20rem;
     min-width: 20rem;
+  }
+  .partners-header{
+    font-size: 5rem;
   }
 
 }

@@ -921,13 +921,10 @@ article:has(:hover, :focus) {
   }
   .web-design-section .right {
     width: 100%;
-    /* padding-top: 30rem; */
+
   }
 
-  /* .web-design-section .right .cards-container .left-cards-container .card,
-  .web-design-section .right .cards-container .right-cards-container .card {
-    padding: 1.5rem 26rem 1.5rem 1.5rem;
-  } */
+  
   .web-design-section .right .cards-container .left-cards-container .card:hover,
   .web-design-section
     .right
@@ -945,6 +942,14 @@ article:has(:hover, :focus) {
   .home__feedback__content h2{
     font-size: 30px;
   }
+  .home__works__header h2 {
+    font-size: 30px;
+
+  }
+  .home__blogs__content h2{
+    font-size: 30px;
+  }
+ 
 
 }
 @media screen and (max-width: 768px) {
@@ -1096,6 +1101,9 @@ font-size: 14px;
   .home__works__cards a {
     width: calc(50% - 0.5rem);
   
+  }
+  .home__blogs__content h2{
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 576px) {
