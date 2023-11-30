@@ -56,33 +56,34 @@
 .firstSection {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 5rem;
   gap: 5rem;
   &__textContent {
     word-wrap: break-word;
-    /* padding: 0 2rem; */
+    padding-top: 2rem;
     width: 50%;
     display: flex;
     flex-direction: column;
 
     /* justify-content: space-between; */
-    gap: 16px;
+    gap: 24px;
   }
   .TitleContainer {
     display: flex;
     flex-direction: column;
 
-    gap: 1.5rem;
+    gap: 24px;
   }
 
   .contentOfTitle {
     font-size: 18px;
-    line-height: 32px;
+    line-height: 30px;
     color: var(--TextColor);
   }
   .titleContainerTitle h2 {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
   }
   &__header {
     font-size: 1.5rem;
@@ -147,6 +148,22 @@
 /* first section end */
 
 @media screen and (max-width: 1200px) {
+  .firstSection .contentOfTitle{
+    font-size: 14px;
+    line-height: 2rem;
+  }
+  .firstSection .titleContainerTitle h2{
+    font-size: 16px;
+  }
+  .firstSection__list-title-icon{
+    margin-right: 10px;
+  }
+  .firstSection .TitleContainer {
+    gap: 18px;
+  }
+  .firstSection__textContent{
+    gap: 18px;
+  }
 }
 @media screen and (max-width: 992px) {
   .firstSection {
@@ -158,7 +175,9 @@
     width: 100%;
     &__textContent {
       width: 100%;
-      padding-left: 50px;
+      padding-left: 4rem;
+      gap: 24px;
+
     }
 
     &__header {
@@ -188,43 +207,63 @@
   }
   .firstSection__description,
   .firstSection .contentOfTitle {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 30px;
   }
-  .firstSection .titleContainerTitle h2 {
+  /* .firstSection .titleContainerTitle h2 {
+    font-size: 20px;
+  } */
+  .firstSection .titleContainerTitle h2{
     font-size: 20px;
   }
+  .firstSection .TitleContainer{
+    gap: 24px;
+  }
+
 }
 @media screen and (max-width: 768px) {
   .firstSection {
-    padding-bottom: 25rem;
+    padding-bottom: 15rem;
   }
   .firstSection__description,
   .firstSection .contentOfTitle {
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 16px;
+    line-height: 4rem;
   }
+  .firstSection__textContent{
+    gap: 20px;
+  }
+  .firstSection .TitleContainer{
+    gap: 14px;
+  }
+  .firstSection .titleContainerTitle h2{
+    font-size: 18px;
+  }
+  
 }
 
 @media screen and (max-width: 576px) {
   .firstSection__title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     text-align: left;
   }
+  .firstSection__textContent{
+    gap: 2em;
+  }
   .firstSection {
-    padding-bottom: 25rem;
+    padding-bottom: 15rem;
   }
   .firstSection__description,
   .firstSection .contentOfTitle {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 4rem;
   }
   .firstSection .titleContainerTitle h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .firstSection__description,
   .firstSection .contentOfTitle {
-    line-height: 3.5rem;
+    line-height: 4.5rem;
   }
 }
 
