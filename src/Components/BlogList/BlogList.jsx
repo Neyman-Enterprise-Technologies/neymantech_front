@@ -12,7 +12,7 @@ const BlogList = ({ filteredBlogs }) => {
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
+  const postsPerPage = 2;
 
   const currentDate = new Date();
   const filteredbyDate = filteredBlogs.filter((card) => {
