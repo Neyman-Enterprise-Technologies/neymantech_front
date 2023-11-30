@@ -20,7 +20,7 @@ return (
       <NavLink to="/" className="logo-img">
         <img src={newlogo} alt="Responsive Image" />
       </NavLink>
-      <nav ref={navRef}>
+      <nav className="navbar" ref={navRef}>
         <NavLink to="/" onClick={showNavbar}>
 
         Ana səhifə
