@@ -483,15 +483,6 @@
   .section-3 .left .header {
     font-size: 3rem;
   }
-  .teamSection .teamHeaderContainer p {
-    font-size: 10px !important;
-    margin-bottom: 1rem;
-    color: var(--blueText);
-    font-weight: 500;
-  }
-  .teamSection .teamHeaderContainer h2 {
-    font-size: 14px !important;
-  }
 }
 
 @media screen and (max-width: 576px) {
