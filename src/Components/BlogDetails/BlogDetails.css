@@ -102,10 +102,19 @@
 
 .blogDetails .left .card .bottom-content p {
   color: #737b9a;
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: 500;
   padding: 1rem 0;
   line-height: 2rem;
+}
+
+.blogDetails .left .card .bottom-content p img {
+  width: 100%;
+}
+
+.blogDetails .left .card .bottom-content p strong {
+  font-size: 16px;
+  color: black;
 }
 
 .blogDetails .left .card .bottom-content {
@@ -116,6 +125,7 @@
   transition: transform 0.7s, -webkit-transform 0.7s;
   position: relative;
   z-index: 1;
+  cursor: auto;
   background-color: #fff;
   color: #010211;
 }
@@ -383,33 +393,35 @@ p {
   color: white;
 }
 
-.blogDetails .left .card .bottom-content h2,
-.blogDetails .left .card .bottom-content h3,
-.blogDetails .left .card .bottom-content h4 {
-  font-size: 2rem;
+.blogDetails .left .card .bottom-content h4,
+.blogDetails .left .card .bottom-content h3 {
+  font-size: 16px;
+}
+
+.blogDetails .left .card .bottom-content h2 {
+  font-size: 30px;
 }
 
 /* right end */
 @media screen and (max-width: 1200px) {
-  .blogDetails .left .card .bottom-content h2,
-  .blogDetails .left .card .bottom-content p {
+  .blogDetails .left .card .bottom-content h2 {
     font-size: 2rem;
   }
   .blogDetails .left .card .cardImgContainer {
     height: 400px;
   }
-  .blogDetails .left .card .bottom-content p,
+  /* .blogDetails .left .card .bottom-content p,
   .blogDetails .left .card .bottom-content::after {
     margin-bottom: 1rem;
     padding: 1.5rem 0;
     font-size: 1.5rem;
     line-height: 2.5rem;
-  }
-  .blogDetails .left .card .bottom-content h2,
+  } */
+  /* .blogDetails .left .card .bottom-content h2,
   .blogDetails .left .card .bottom-content h3,
   .blogDetails .left .card .bottom-content h4 {
     font-size: 2rem;
-  }
+  } */
   .blogDetails .left a {
     font-size: 1.5rem;
   }

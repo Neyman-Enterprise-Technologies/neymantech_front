@@ -16,7 +16,7 @@ export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
   
   const { data: latestWorkCardInHome } = UseFetch(
-    `${apiUrl}service_api/services/`
+    `${apiUrl}service_api/last_works/`
   );
   const { data: latestWork } = UseFetch(
     `${apiUrl}service_api/last_works/`
@@ -109,12 +109,12 @@ export default function Project() {
         </div>
         {/*  HEADER LINK END  */}
         {/*  HEADER START */}
-        {/* <div className="projectHeader">
+        <div className="projectHeader">
           <h2 className="projectTitle">İşlərimiz</h2>
           <p className="description">
             Şirkətlər üçün etdiyimiz işləri buradan daha detaylı görə bilərsiniz.
           </p>
-        </div> */}
+        </div>
 
         {/*  CARDS CONTAINER START */}
 

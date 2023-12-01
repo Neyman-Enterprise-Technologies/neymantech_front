@@ -6,7 +6,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1.875rem;
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
   &__card {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
     display: flex;
@@ -72,17 +72,17 @@
 }
 .projectHeader{
   text-align: center;
-  margin: 5rem 0;
+  margin: 5rem 0 0 0;
 }
 .projectHeader .description{
 
   color: var(--TextColor);
-  line-height: 2rem;
-  font-size: 1.4rem;
+  /* line-height: 2rem; */
+  font-size: 16px;
   font-weight: 500;
 }
 .projectTitle{
-  font-size: 2rem;
+  font-size: 32px;
   margin-bottom: 1rem;
   padding: 0.9375rem 0rem 0rem 0rem;
 }

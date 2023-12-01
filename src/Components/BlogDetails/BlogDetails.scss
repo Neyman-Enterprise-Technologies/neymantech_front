@@ -19,6 +19,8 @@
   flex-direction: column;
   width: 78%;
   gap: 1rem;
+  
+  
 }
 .top-header {
   display: flex;
@@ -57,8 +59,11 @@
 }
 
 .blogDetails .left .card .bottom-content h2 {
-  font-size: 1.5rem;
+  font-size: 30px;
 }
+/* .blogDetails .left .card .bottom-content table tbody td {
+font-size: 16px;
+} */
 
 .blogDetails .left .card .bottom-content h2,
 .blogDetails .left .card .bottom-content p {
@@ -66,11 +71,20 @@
   margin-bottom: 0.625rem;
 }
 .blogDetails .left .card .bottom-content p {
+
   color: #737b9a;
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: 500;
-  padding: 1rem 0;
-  line-height: 2rem;
+
+  line-height: 24px;
+}
+.blogDetails .left .card .bottom-content p img {
+
+  width: 100%;
+}
+.blogDetails .left .card .bottom-content p strong{
+font-size: 16px;
+color: black;
 }
 
 .blogDetails .left .card .bottom-content {
@@ -78,7 +92,7 @@
   transition: transform 0.7s;
   position: relative;
   z-index: 1;
-
+cursor: auto;
   background-color: #fff;
   color: #010211;
 }
@@ -287,33 +301,36 @@
   background-color: #0000ff;
   color: white;
 }
-.blogDetails .left .card .bottom-content h2,
-.blogDetails .left .card .bottom-content h3,
-.blogDetails .left .card .bottom-content h4 {
-  font-size: 2rem;
+.blogDetails .left .card .bottom-content h4,
+.blogDetails .left .card .bottom-content h3
+{
+  font-size: 16px;
+}
+.blogDetails .left .card .bottom-content h2 {
+  font-size: 24px;
 }
 /* right end */
 
 @media screen and (max-width: 1200px) {
-  .blogDetails .left .card .bottom-content h2,
-  .blogDetails .left .card .bottom-content p {
-    font-size: 2rem;
-  }
+  /* .blogDetails .left .card .bottom-content h2
+  {
+    font-size: 30px;
+  } */
   .blogDetails .left .card .cardImgContainer{
     height: 400px;
   }
-  .blogDetails .left .card .bottom-content p,
+  /* .blogDetails .left .card .bottom-content p,
   .blogDetails .left .card .bottom-content::after {
     margin-bottom: 1rem;
     padding: 1.5rem 0;
     font-size: 1.5rem;
     line-height: 2.5rem;
-  }
-  .blogDetails .left .card .bottom-content h2,
+  } */
+  /* .blogDetails .left .card .bottom-content h2,
   .blogDetails .left .card .bottom-content h3,
   .blogDetails .left .card .bottom-content h4 {
     font-size: 2rem;
-  }
+  } */
   .blogDetails .left a {
     font-size: 1.5rem;
   }
@@ -358,9 +375,7 @@
     padding: 1.5rem 1.3rem;
   }
 
-  .blogDetails .left .card .bottom-content h4 {
-    font-size: 1.5rem;
-  }
+ 
 
   .blogDetails .right .recent-posts-container .post-details .description {
     /* width: 100%; */
@@ -591,9 +606,7 @@
     font-size: 3rem;
   }
 
-  .blogs .left a .card .bottom-content h2 {
-    font-size: 3.5rem;
-  }
+  
 
   .blogs .left a .card .bottom-content p,
   .blogs .left a .card .bottom-content::after {
@@ -637,5 +650,22 @@
     border: 1px solid #eeeeee;
 
     font-size: 2.5rem;
+  }
+  .blogDetails .left .card .bottom-content p{
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+  .blogDetails .left .card .bottom-content h2{
+    font-size: 4rem;
+  
+  }
+  .blogDetails .left .card .bottom-content h4{
+    font-size: 3rem;
+  }
+  .blogDetails .left .card .bottom-content h4 strong{
+    font-size: 3rem;
+  }
+  .blogDetails .left .card .bottom-content p strong{
+    font-size: 3rem;
   }
 }
