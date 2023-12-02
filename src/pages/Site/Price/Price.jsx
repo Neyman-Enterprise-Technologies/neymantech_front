@@ -29,9 +29,9 @@ export default function Price() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleMouseLeave = () => {
-    setHoveredItem(null);
-  };
+  // const handleMouseLeave = () => {
+  //   setHoveredItem(null);
+  // };
 
   const openModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -152,7 +152,7 @@ export default function Price() {
                 <div className="modal">
                 <li
                    className="modal-all-prices"
-                      onMouseLeave={handleMouseLeave}
+                      // onMouseLeave={handleMouseLeave}
                       onClick={() => handleClick("")}
                     >
                       Butun paketlər
@@ -165,8 +165,8 @@ export default function Price() {
                         <li
                         className="price-modal-1-li"
                           key={card.id}
-                          onMouseEnter={() => handleMouseEnter(card.title)}
-                          onMouseLeave={handleMouseLeave}
+                          // onMouseEnter={() => handleMouseEnter(card.title)}
+                          // onMouseLeave={handleMouseLeave}
                           onClick={() => handleClick(card.id)}
                         >
                           {card.title}
