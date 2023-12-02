@@ -28,19 +28,11 @@ const ServiceCards = ({ serviceCards }) => {
 
         {serviceCards &&
           serviceCards.map((card) => (
-
-
-          
-              
-         
-        
-            <Link to={`/services_property/${card.slug}`} key={card.id}>
-              
-              <div className="home__service__cards__card">
+<Link to={`/services_property/${card.slug}`} key={card.id}>
+           <div className="home__service__cards__card">
                 <div className="home__service__cards__card__icon">
                   {iconComponents[card.logo]}
-
-                  <BiSolidBadgeCheck className="badge" />
+<BiSolidBadgeCheck className="badge" />
                 </div>
                 <h3>{card.title}</h3>
                 <p>{card.content}</p>
