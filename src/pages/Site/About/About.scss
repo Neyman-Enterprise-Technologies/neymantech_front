@@ -214,7 +214,7 @@
   padding-bottom: 10px;
   color: var(--TextColor);
   line-height: 20px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
 }
 .section-3 .left .selected-title-container {
@@ -294,6 +294,13 @@
     font-size: 2rem;
     width: 100%;
   }
+  .section-3 .left .description,
+.section-3 .left .selected-description {
+  
+  font-size: 12px;
+
+}
+
 }
 
 /* Responsive design   for 992  */
