@@ -1,3 +1,17 @@
+import React, { useRef } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Team.scss";
 import {
@@ -21,14 +35,51 @@ const Team = ({ team }) => {
   // }, []);
 
   return (
-    <section className="teamSection container">
-      <div className="teamHeaderContainer">
-        <p>Komandamız</p>
-        <h2>Komandamız ilə tanış olun</h2>
-      </div>
+    <div className="container">
+
+    <div className="teamHeaderContainer">
+    <p>Komandamız</p>
+    <h2>Komandamız ilə tanış olun</h2>
+  </div>
+
+  <Swiper
+        slidesPerView={2}
+        spaceBetween={5}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+     
       <div className="team-container">
         {team.map((member) => (
-          <div className="team-container__cardContainer" key={member.id}>
+             <SwiperSlide key={member.id}>
+
+           
+          <div className="team-container__cardContainer" >
             <div className="team-container__profile-container">
               {member.github || member.facebook || member.instagram || member.linkedln || member.tweeter ? (
                 <div className="team-container__socialContainer">
@@ -82,9 +133,17 @@ const Team = ({ team }) => {
               <p className="team-container__job">{member.position}</p>
             </div>
           </div>
+          </SwiperSlide>
         ))}
       </div>
-    </section>
+ 
+     
+   
+      </Swiper>
+
+
+    
+      </div>
   );
 };
 
