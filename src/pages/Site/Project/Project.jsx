@@ -9,20 +9,24 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 import UseFetch from "../../../UseFetch";
+import LastThreeProjectCards from "../../../Components/LastThreeProjectCards/LastThreeProjectCards";
 
 // import LatestWorkCardInHome from "../../../Components/Home/LatestWorkCardInHome/LatestWorkCardInHome";
 
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  
+
+  const { data: lastThreeProjectCards } = UseFetch(
+    `${apiUrl}service_api/last_works/`
+  );
+
   const { data: latestWorkCardInHome } = UseFetch(
     `${apiUrl}service_api/last_works/`
   );
-  const { data: latestWork } = UseFetch(
-    `${apiUrl}service_api/last_works/`
-  );
+  const filterProjectByLast3 = lastThreeProjectCards&&lastThreeProjectCards.slice(-3)
+  console.log(filterProjectByLast3)
 
-
+  // const { data: latestWork } = UseFetch(`${apiUrl}service_api/services/`);
 
   const [loading, setLoading] = useState(false);
 
@@ -35,14 +39,12 @@ export default function Project() {
     }
   };
 
-
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
   const handleClick = (id) => {
     setSearch(id);
     setIsModalOpen(false);
   };
 
-  
   const handleScrollToTop = () => {
     scroll.scrollToTop({
       duration: 900,
@@ -70,10 +72,10 @@ export default function Project() {
         <Loading />
       ) : ( */}
       <motion.div
+        className="projects"
         initial={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1 }}
-        className="projects"
       >
         {showIcon && (
           <div
@@ -91,20 +93,16 @@ export default function Project() {
         <div className="linkHeader">
           <div className="linkTitle">
             <h2>
-
               Işlə<span>r</span>imiz
-
             </h2>
           </div>
 
           <div className="linkLinks">
             <Link to="/" className="linkLink">
-
-            Ana səhifə
+              Ana səhifə
             </Link>
             <FaAngleRight className="angleIcon" />
             <Link to="about"> İşlərimiz</Link>
-
           </div>
         </div>
         {/*  HEADER LINK END  */}
@@ -112,29 +110,25 @@ export default function Project() {
         <div className="projectHeader">
           <h2 className="projectTitle">İşlərimiz</h2>
           <p className="description">
-            Şirkətlər üçün etdiyimiz işləri buradan daha detaylı görə bilərsiniz.
+            Şirkətlər üçün etdiyimiz işləri buradan daha detaylı görə
+            bilərsiniz.
           </p>
         </div>
 
         {/*  CARDS CONTAINER START */}
 
-        <div className="project-cards-container">
-         
-            {latestWorkCardInHome && (
-              <LatestWorkCardInHome
-               
-                latestWorkCardInHome={latestWorkCardInHome}
-                isProjectPage={true}
-                latestWork={latestWork}
-              />
-            )}
-         
-        </div>
+        {latestWorkCardInHome && (
+            <LatestWorkCardInHome
+              latestWorkCardInHome={latestWorkCardInHome}
+              lastThreeProjectCards={lastThreeProjectCards}
+              isProjectPage={false}
+            />
+          )}
+       
 
         {/*  HEADER END */}
       </motion.div>
       {/* )} */}
-     
     </>
   );
 }
