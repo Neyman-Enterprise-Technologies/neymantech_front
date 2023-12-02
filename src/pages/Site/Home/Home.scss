@@ -552,7 +552,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     border-radius: 1rem;
-padding-bottom: 4rem;
+padding-bottom: 5rem;
     a {
       width: calc(33.3% - 0.65rem);
     
@@ -850,7 +850,8 @@ article:has(:hover, :focus) {
   .home__works {
     &__cards {
       justify-content: center;
-      padding: 0;
+   padding: 0;
+   padding-bottom: 5rem;
       &__card {
         height: 420px;
         

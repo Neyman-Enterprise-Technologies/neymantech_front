@@ -10,7 +10,14 @@ const LatestWorkCardInHome = ({
   latestWorkCardInHome,
   latestWork,
   isProjectPage,
+
+
 }) => {
+
+
+
+  const [search, setSearch] = useState("");
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -23,13 +30,13 @@ const LatestWorkCardInHome = ({
 
   const openModal = () => {
     setIsModalOpen(!isModalOpen);
+    
   };
   const handleClick = (title) => {
     setIsModalOpen(false);
- };
- 
+    setSearch(title)
+  };
 
- 
   // const filteredLastWorks = lastWork
   //   ? lastWork.filter(
   //       (work) => work.company_name.toLowerCase().includes(search.toLowerCase())) :[]
@@ -42,8 +49,6 @@ const LatestWorkCardInHome = ({
   //           ))):[]
   //           console.log(filteredWorks)
 
- 
-
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -53,19 +58,16 @@ const LatestWorkCardInHome = ({
   }, []);
 
   return (
-    <div className="container">
+  <div className="container">
       {isProjectPage && isModalOpen && (
         <div className="overlay" onClick={openModal} />
       )}
       {isProjectPage && (
         <div className="modal-section">
           <div className="kateqoriya" onClick={openModal}>
-       
-              <BiCategory className="category-icon" />
-            
+            <BiCategory className="category-icon" />
             <p>Kateqoriya seçin</p>
           </div>
-          
 
           {isModalOpen && (
             <motion.div
@@ -75,44 +77,49 @@ const LatestWorkCardInHome = ({
               className="modal-wrapper"
             >
               <div className="modal">
-                <ul>
+                <ul className="modal-1">
                   <li
+                  className="modal-all-prices"
                     onMouseEnter={() => handleMouseEnter("")}
                     onMouseLeave={handleMouseLeave}
                     onClick={() => handleClick("")}
                   >
-                    All
+                    Bütun işlər
                     {/* <FaAngleRight className="modal-angle-icon" /> */}
                   </li>
-                  {/* {latestWorkCardInHome &&
-                    latestWorkCardInHome.service_details.map((card) => (
-                      
-                    ))} */}
-                    {latestWorkCardInHome&&latestWorkCardInHome.map((cards) => cards.service_details.map((card) => (
+                 {latestWork&&
+                    latestWork.map((cards) =>(
                       <li
-                      key={card.id}
-                      onMouseEnter={() => handleMouseEnter(card.title)}
+                      className="modal-1-li"
+                      key={cards.id}
+                      onMouseEnter={() => handleMouseEnter(cards.title)}
                       onMouseLeave={handleMouseLeave}
-                      onClick={() => handleClick(card.title)}
+                      onClick={() => handleClick(cards.title)}
+                      // onClick={() => console.log(cards.title)}
                     >
-                      {card.title}
+                      {cards.title}
 
-                      {/* <FaAngleRight className="modal-angle-icon" /> */}
-                      {/* {hoveredItem === card.title && (
-                      <ul className="modal-2">
-                        {card.service_details.map((i) => (
-                          <li
-                            key={i.id}
-                            className="modal-2-li"
-                            onClick={() => handleClick(i.title)}
-                          >
-                            {i.title}
-                          </li>
-                        ))}
-                      </ul>
-                    )} */}
+                      <FaAngleRight className="modal-angle-icon" />
+                      {hoveredItem === cards.title && (
+                        <ul className="modal-2">
+                          {cards.service_details.map((card) => (
+                            <li
+                              key={card.id}
+                              className="modal-2-li"
+                              onClick={() => handleClick(card.title)}
+                              // onClick={() => console.log(card.title)}
+                              >
+                              {card.title}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
-                    )))}
+                    )
+                   
+                       
+                     
+                    )}
                 </ul>
               </div>
             </motion.div>
@@ -126,7 +133,7 @@ const LatestWorkCardInHome = ({
         whileInView={{ opacity: 1 }}
         className="home__works__cards"
       >
-        {latestWorkCardInHome &&
+        {LatestWorkCardInHome &&
           latestWorkCardInHome.map((card) => (
             <Link to={card.link_url} key={card.id}>
               <div className="home__works__cards__card" key={card.id}>

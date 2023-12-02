@@ -2,6 +2,7 @@
 /* PROJECT CARDS START */
 .project-cards-container {
   /* display: flex; */
+  padding: 0 10rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -72,7 +73,8 @@
 }
 .projectHeader{
   text-align: center;
-  margin: 5rem 0 0 0;
+  /* margin: 5rem 0 0 0; */
+  margin: 5rem 0;
 }
 .projectHeader .description{
 
@@ -145,16 +147,8 @@ font-size: 2rem;
 }
  @media screen and (max-width: 576px) {
 
- .modal-section{
-width: 100%;
-}
- 
- .modal-section{
-  width: 100%;
 
 
-  margin-inline: auto;
- }
 
  .projectTitle{
   font-size: 3.5rem;

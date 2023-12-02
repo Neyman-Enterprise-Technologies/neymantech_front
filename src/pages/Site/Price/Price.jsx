@@ -29,9 +29,9 @@ export default function Price() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleMouseLeave = () => {
-    setHoveredItem(null);
-  };
+  // const handleMouseLeave = () => {
+  //   setHoveredItem(null);
+  // };
 
   const openModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -39,9 +39,7 @@ export default function Price() {
 
   const [search, setSearch] = useState("");
 
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-  };
+
 
   const handleClick = (id) => {
     setSearch(id);
@@ -152,20 +150,23 @@ export default function Price() {
                 className="modal-wrapper"
               >
                 <div className="modal">
-                  <ul className="scroll-modal">
-                    <li
-                      onMouseLeave={handleMouseLeave}
+                <li
+                   className="modal-all-prices"
+                      // onMouseLeave={handleMouseLeave}
                       onClick={() => handleClick("")}
                     >
-                      Butun
+                      Butun paketlər
                       {/* <FaAngleRight className="modal-angle-icon" /> */}
-                    </li>
+                    </li> 
+                  <ul className="price-modal-1">
+                   
                     {price &&
                       price.map((card) => (
                         <li
+                        className="price-modal-1-li"
                           key={card.id}
-                          onMouseEnter={() => handleMouseEnter(card.title)}
-                          onMouseLeave={handleMouseLeave}
+                          // onMouseEnter={() => handleMouseEnter(card.title)}
+                          // onMouseLeave={handleMouseLeave}
                           onClick={() => handleClick(card.id)}
                         >
                           {card.title}

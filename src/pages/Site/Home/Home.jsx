@@ -12,7 +12,9 @@ import WebDesignSecHome from "../../../Components/Home/WebDesignSecHome/WebDesig
 // import Loading from "../../../Components/Loading/Loading";
 import MySlider from "../../../Components/MySlider/MySlider";
 import UseFetch from "../../../UseFetch";
+import LastThreeProjectCards from "../../../Components/LastThreeProjectCards/LastThreeProjectCards";
 import "./Home.scss";
+
 export default function Home() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const { id } = useParams();
@@ -41,9 +43,12 @@ export default function Home() {
 
   //*HOME - OUR LATEST WORK -4
   // const { data: latestWorkCardInHome } = UseFetch(`${apiUrl}latestWorkCardInHome`);
-  const { data: latestWorkCardInHome } = UseFetch(
+
+  const { data: lastThreeProjectCards } = UseFetch(
     `${apiUrl}service_api/last_works/`
   );
+ 
+ const last3Projects = lastThreeProjectCards&&lastThreeProjectCards.slice(-3)
 
   const { data: latestNews } = UseFetch(`${apiUrl}blog_api/blog`);
   const [loading, setLoading] = useState(false);
@@ -103,7 +108,6 @@ export default function Home() {
         <MySlider />
 
         <div className="home__service" name="services">
-
           <div className="container">
             <div className="home__service__content">
               <h2 id="services" className="services" name="services">
@@ -111,17 +115,15 @@ export default function Home() {
                 Xidmətlər
               </h2>
               <p>
-              Neyman Enterprise Technologies şirkəti olaraq sizə xidmətlərimizi təklif etməkdən məmnunuq.
+                Neyman Enterprise Technologies şirkəti olaraq sizə
+                xidmətlərimizi təklif etməkdən məmnunuq.
               </p>
             </div>
             {/* SERVICE CARDS START */}
             {serviceCards && <ServiceCards serviceCards={serviceCards} />}
             {error && <div>{error}</div>}
-
           </div>
           {/* SERVICE CARDS START */}
-
-      
         </div>
 
         <div id="cards">
@@ -136,48 +138,43 @@ export default function Home() {
           <WebDesignSecHome webDesignSecHome={webDesignSecHome} />
         )}
 
-
-       
-          <div className="home__works">
-            <div className="home__works__header">
-              <h2>Son işlərimiz</h2>
-              {/* <p>
+        <div className="home__works">
+          <div className="home__works__header">
+            <h2>Son işlərimiz</h2>
+            {/* <p>
                 Müxtəlif şirkətlər üçün yaratdığımız son işləri sizlərə göstərməkdə məmnun olarıq. 
               </p> */}
-            </div>
-           
           </div>
-          {LatestWorkCardInHome && (
-            <LatestWorkCardInHome
-              latestWorkCardInHome={latestWorkCardInHome}
-              isProjectPage={false}
-            />
-          )}
-       
-
-      <div className="home__feedback">
-      <div className="container">
-          <div className="home__feedback__content">
-            <p>Rəylər</p>
-            <h2>Müştərilərimizin bizim üçün verdiyi rəylər</h2>
-          </div>
-
-          {feedback && <Carusel feedback={feedback} />}
         </div>
-      </div>
+       
+        {last3Projects && (
+          <LastThreeProjectCards
+            // lastThree={lastThree}
+            last3Projects={last3Projects}
+          />
+        )}
+
+        <div className="home__feedback">
+          <div className="container">
+            <div className="home__feedback__content">
+              <p>Rəylər</p>
+              <h2>Müştərilərimizin bizim üçün verdiyi rəylər</h2>
+            </div>
+
+            {feedback && <Carusel feedback={feedback} />}
+          </div>
+        </div>
 
         <div className="home__blogs">
-
           <div className="container">
             <div className="home__blogs__content">
               <h2>Son bloqlar</h2>
             </div>
 
-
-          <div className="cards-wrapper">
-            {latestNews && <LatestNews latestNews={latestNews} />}
+            <div className="cards-wrapper">
+              {latestNews && <LatestNews latestNews={latestNews} />}
+            </div>
           </div>
-        </div>
         </div>
       </motion.section>
       {/* )} */}
