@@ -16,15 +16,16 @@ import LastThreeProjectCards from "../../../Components/LastThreeProjectCards/Las
 export default function Project() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
-  const { data: lastThreeProjectCards } = UseFetch(
-    `${apiUrl}service_api/last_works/`
-  );
 
   const { data: latestWorkCardInHome } = UseFetch(
+    `${apiUrl}service_api/services/`
+  );
+
+  const { data: latestwork } = UseFetch(
     `${apiUrl}service_api/last_works/`
   );
-  const filterProjectByLast3 = lastThreeProjectCards&&lastThreeProjectCards.slice(-3)
-  console.log(filterProjectByLast3)
+ 
+  
 
   // const { data: latestWork } = UseFetch(`${apiUrl}service_api/services/`);
 
@@ -120,8 +121,8 @@ export default function Project() {
         {latestWorkCardInHome && (
             <LatestWorkCardInHome
               latestWorkCardInHome={latestWorkCardInHome}
-              lastThreeProjectCards={lastThreeProjectCards}
-              isProjectPage={false}
+              latestWork={latestwork}
+        
             />
           )}
        
