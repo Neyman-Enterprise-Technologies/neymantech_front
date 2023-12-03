@@ -1,3 +1,6 @@
+// import { useEffect } from "react";
+// import { animateScroll as scroll } from "react-scroll";
+
 import React from "react";
 import "./About.scss";
 // import { BiChevronRight } from "react-icons/bi";
@@ -10,19 +13,27 @@ import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 import Team from "../../../Components/Team/Team";
 import UseFetch from "../../../UseFetch";
-// import AboutSection1 from "../../../Components/AboutSection1/AboutSection1";
+
 import Partners from "../../../Components/Partners/Partners";
 
 export default function About() {
+
+  useEffect(() => {
+    // Scroll to the team-section when the component mounts
+    scroll.scrollTo("team-section", {
+      duration: 900,
+      smooth: "easeInOutQuint",
+    });
+  }, []); // Empty
+
+
   const apiUrl = import.meta.env.VITE_API_URL;
   //*OUR TEAM SECTION-4
   // const { data: team, error } = UseFetch("http://localhost:8001/team");
   const { data: team, error } = UseFetch(`${apiUrl}core_api/our_team/`);
 
-  //*ABOUTSECTION -1
-  const { data: aboutSection1 } = UseFetch(
-    "http://localhost:8001/aboutSection1"
-  );
+
+
 
   const [showIcon, setShowIcon] = useState(false);
   const handleScroll = () => {
