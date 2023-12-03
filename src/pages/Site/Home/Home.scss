@@ -33,7 +33,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-   
+
     gap: 28px;
     width: 50%;
 
@@ -293,7 +293,6 @@
           border-radius: 0.5rem;
           box-shadow: inset 0 0 0 0 #0000ff;
           transition: ease-out 0.2s;
-         
 
           /* & p {
             width: 20ch;
@@ -357,9 +356,8 @@
     }
   }
 }
-.home__works__cards{
+.home__works__cards {
   padding: 0 10rem;
-
 }
 /* web design section styles end */
 
@@ -552,10 +550,9 @@
     flex-wrap: wrap;
     gap: 1rem;
     border-radius: 1rem;
-padding-bottom: 5rem;
+    padding-bottom: 5rem;
     a {
       width: calc(33.3% - 0.65rem);
-    
     }
     &__card {
       position: absolute;
@@ -608,9 +605,8 @@ padding-bottom: 5rem;
     &__card:hover {
       & .info {
         transform: translateY(-80px);
-     
       }
-     
+
       transform: translateY(5px);
     }
     &__card::before {
@@ -648,12 +644,11 @@ border-radius: 0;
 
   &__content {
     padding: 5rem 0.625rem;
-   
+
     margin: auto;
     text-align: center;
 
     h2 {
-   
       font-size: 32px;
     }
   }
@@ -715,18 +710,16 @@ border-radius: 0;
 
   &__content {
     padding: 3rem 0;
-  
 
     margin: auto;
     text-align: center;
 
     h2 {
-    
       font-size: 32px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 1rem;
       color: var(--blueText);
       font-weight: 500;
@@ -833,28 +826,37 @@ article:has(:hover, :focus) {
     background-color: #f9f9fc;
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
-    &__cards{
+    &__cards {
       gap: 20px;
-      a{
+      a {
         width: calc(33.3% - 14px);
       }
     }
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card
+    p {
     font-size: 16px;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon{
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card
+    .card-icon {
     font-size: 22px;
   }
 
   .home__works {
     &__cards {
       justify-content: center;
-   padding: 0;
-   padding-bottom: 5rem;
+      padding: 0;
+      padding-bottom: 5rem;
       &__card {
         height: 420px;
-        
       }
     }
   }
@@ -864,37 +866,46 @@ article:has(:hover, :focus) {
 @media screen and (max-width: 992px) {
   .home__service {
     background-color: #f9f9fc;
-    &__cards{
+    &__cards {
       gap: 15px;
-      a{
+      a {
         width: calc(33.3% - 10px);
       }
     }
   }
-  .home__service__content h2{
+  .home__service__content h2 {
     font-size: 30px;
   }
-  .home__service__content p{
+  .home__service__content p {
     font-size: 14px;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card p{
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card
+    p {
     font-size: 14px;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container .card .card-icon{
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card
+    .card-icon {
     font-size: 20px;
   }
-  .digital-marketing-container .left .top-container p{
+  .digital-marketing-container .left .top-container p {
     font-size: 14px;
   }
-  .digital-marketing-container .left .top-container h2{
+  .digital-marketing-container .left .top-container h2 {
     font-size: 30px;
   }
   .home__works {
     &__cards {
-    
       justify-content: center;
       &__card {
-        height: 330px   ;
+        height: 330px;
 
         & .info {
           & .description {
@@ -907,9 +918,7 @@ article:has(:hover, :focus) {
         }
       }
     }
-  
   }
- 
 
   /* digital marketing media max-992px end */
 
@@ -922,10 +931,8 @@ article:has(:hover, :focus) {
   }
   .web-design-section .right {
     width: 100%;
-
   }
 
-  
   .web-design-section .right .cards-container .left-cards-container .card:hover,
   .web-design-section
     .right
@@ -937,21 +944,18 @@ article:has(:hover, :focus) {
   .digital-marketing-container .left_right-container {
     gap: 10px;
   }
-  .digital-marketing-container .left_right-container{
+  .digital-marketing-container .left_right-container {
     gap: 30px;
   }
-  .home__feedback__content h2{
+  .home__feedback__content h2 {
     font-size: 30px;
   }
   .home__works__header h2 {
     font-size: 30px;
-
   }
-  .home__blogs__content h2{
+  .home__blogs__content h2 {
     font-size: 30px;
   }
- 
-
 }
 @media screen and (max-width: 768px) {
   .project-cards-container {
@@ -960,7 +964,10 @@ article:has(:hover, :focus) {
   .digital-marketing-container .left_right-container {
     gap: 30px;
   }
-  .digital-marketing-container .left .marketing-cards-container .left-cards-container{
+  .digital-marketing-container
+    .left
+    .marketing-cards-container
+    .left-cards-container {
     gap: 1.5rem;
   }
 
@@ -978,9 +985,8 @@ article:has(:hover, :focus) {
     .left-cards-container
     .card {
     padding: 2rem;
-  
   }
- 
+
   .digital-marketing-container
     .left
     .marketing-cards-container
@@ -990,17 +996,17 @@ article:has(:hover, :focus) {
     font-size: 18px;
   }
   .digital-marketing-container
-  .left
-  .marketing-cards-container
-  .left-cards-container
-  .card
-  .card-icon{
-    font-size:22px ;
+    .left
+    .marketing-cards-container
+    .left-cards-container
+    .card
+    .card-icon {
+    font-size: 22px;
   }
 
   .left_right-container {
     flex-direction: column;
-     padding: 5rem 0;
+    padding: 5rem 0;
   }
 
   .left_right-container .left {
@@ -1009,7 +1015,8 @@ article:has(:hover, :focus) {
   }
   .left_right-container .right {
     width: 100%;
-  }.digital-marketing-container .left .top-container{
+  }
+  .digital-marketing-container .left .top-container {
     gap: 10px;
   }
   .digital-marketing-container .left .top-container h2 {
@@ -1018,7 +1025,7 @@ article:has(:hover, :focus) {
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
 
-font-size: 14px;
+    font-size: 14px;
     padding: 0.625rem;
     line-height: 3.5rem;
     font-weight: 100;
@@ -1033,7 +1040,6 @@ font-size: 14px;
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
     &__cards {
-     
       /* flex-direction: column; */
       gap: 15px;
       a {
@@ -1041,7 +1047,7 @@ font-size: 14px;
       }
       &__card {
         margin-inline: auto;
-     
+
         padding: 3rem;
         p {
           font-size: 1.5rem;
@@ -1085,7 +1091,6 @@ font-size: 14px;
     line-height: 4rem;
   }
 
-  
   .home__works__header h2 {
     font-size: 32px;
     margin-bottom: 2rem;
@@ -1101,9 +1106,8 @@ font-size: 14px;
   }
   .home__works__cards a {
     width: calc(50% - 0.5rem);
-  
   }
-  .home__blogs__content h2{
+  .home__blogs__content h2 {
     font-size: 32px;
   }
 }
@@ -1113,7 +1117,6 @@ font-size: 14px;
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
     &__cards {
-     
       /* flex-direction: column; */
       gap: 15px;
       a {
@@ -1121,13 +1124,10 @@ font-size: 14px;
       }
       &__card {
         margin-inline: auto;
-     
+
         padding: 3rem;
-             
       }
     }
-
-   
   }
   .home__works__cards {
     flex-wrap: wrap;
@@ -1143,7 +1143,6 @@ font-size: 14px;
       margin-inline: auto;
     }
   }
-  
 
   .section-2 .cardsContainer .card .cardListsContainer {
     gap: 4rem;
@@ -1157,7 +1156,7 @@ font-size: 14px;
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
-font-size: 3rem;
+    font-size: 3rem;
   }
   .home__service__content {
     width: 100%;
@@ -1167,7 +1166,6 @@ font-size: 3rem;
     display: flex;
     flex-direction: row;
     width: 100%;
-   
   }
   .digital-marketing-container
     .left
@@ -1179,7 +1177,6 @@ font-size: 3rem;
 
     gap: 2rem;
     align-items: center;
- 
   }
   .digital-marketing-container .left .top-container h2 {
     font-size: 5rem;
@@ -1205,7 +1202,7 @@ font-size: 3rem;
     gap: 3rem;
   }
   .home__service__content p {
-    font-size:2.8rem;
+    font-size: 2.8rem;
     line-height: 4rem;
   }
   .home__service__content h2 {
@@ -1220,7 +1217,7 @@ font-size: 3rem;
   .home__service__cards__card {
     gap: 3rem;
   }
- 
+
   .home__works__header h2 {
     font-size: 5rem;
     padding-bottom: 3rem;
@@ -1251,14 +1248,10 @@ font-size: 3rem;
 
   .home__feedback__content h2 {
     font-size: 5rem;
-    line-height:6rem;
+    line-height: 6rem;
   }
-  
 
-  .home__blogs__content h2{
+  .home__blogs__content h2 {
     font-size: 5rem;
   }
-  
 }
-
-

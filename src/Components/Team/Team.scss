@@ -4,6 +4,9 @@
   /* padding: 3rem 0; */
 
 }
+.mySwiper{
+  padding: 4rem 0;
+}
 
 .swiper-slide {
   text-align: center;
@@ -81,7 +84,7 @@
     border-radius: 5px;
     width: 100%;
     border-radius: 8px;
-    background-color: RED;
+
 
     &:hover {
       transform: translateY(-10px);
@@ -144,12 +147,12 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 600;
   }
   &__job {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 16px;
     color: blue;
     font-weight: 500;
     overflow: hidden;
@@ -182,14 +185,7 @@
       /* border-radius: 0 0 0.6rem 0.6rem; */
       
     }
-    &__name {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-    &__job {
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
+    
   }
 }
 
@@ -230,9 +226,11 @@
     width: 100%;
     margin-inline: auto;
     gap: 5rem;
+  
   }
   .teamSection .team-container__cardContainer {
     width: 100%;
+   
   }
   /* .teamSection .team-container{
     height: 400px;
@@ -242,14 +240,23 @@
     padding: 3rem 0;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
   }
-  .teamSection .team-container__name {
+.team-container__name {
     font-size: 4rem;
   }
-  .teamSection .team-container__job {
+ .team-container__job {
     font-size: 3rem;
   }
 
-  .teamSection .teamHeaderContainer h2 {
+.teamHeaderContainer h2 {
     font-size: 5rem;
+  }
+.teamHeaderContainer p {
+    font-size: 3.5rem;
+  }
+  .team-container__profile-container{
+    height: 50rem;
+  }
+  .mySwiper{
+    padding: 8rem 0;
   }
 }

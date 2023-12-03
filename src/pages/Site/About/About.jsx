@@ -17,7 +17,6 @@ import UseFetch from "../../../UseFetch";
 import Partners from "../../../Components/Partners/Partners";
 
 export default function About() {
-
   useEffect(() => {
     // Scroll to the team-section when the component mounts
     scroll.scrollTo("team-section", {
@@ -26,14 +25,10 @@ export default function About() {
     });
   }, []); // Empty
 
-
   const apiUrl = import.meta.env.VITE_API_URL;
   //*OUR TEAM SECTION-4
   // const { data: team, error } = UseFetch("http://localhost:8001/team");
   const { data: team, error } = UseFetch(`${apiUrl}core_api/our_team/`);
-
-
-
 
   const [showIcon, setShowIcon] = useState(false);
   const handleScroll = () => {
@@ -128,26 +123,25 @@ export default function About() {
                   Şirkət, müştərilərinin müasir texnologiyalardan və dijital
                   həllərdən maksimum istifadə etmələrini təmin etmək üçün geniş
                   bir xidmət portföyünü təklif edir.
-                  </p>
-                  <p className="description">
-                  **Bizim haqqımızda əsas prinsiplər:**
-             1. **İnnovasiya və Yaradıcılıq:**
-                  Müştərilərimizə yaratıcı və innovativ rəqəmsal çözümlər təklif
-                  edərək onların dijital sahədə öne çıxmağını təmin etməyə
+                </p>
+                <p className="description">
+                  **Bizim haqqımızda əsas prinsiplər:** 1. **İnnovasiya və
+                  Yaradıcılıq:** Müştərilərimizə yaratıcı və innovativ rəqəmsal
+                  çözümlər təklif edərək onların dijital sahədə öne çıxmağını
+                  təmin etməyə çalışırıq.
+                </p>
+                <p className="description">
+                  2. **Müştəri Memnuniyyəti:** Müştərilərimizin tələblərini
+                  anlamağa, ehtiyaclarına cavab verməyə və onların
+                  memnuniyyətini əsas qayğımız kimi görməyə nail olmağa
                   çalışırıq.
-                  </p>
-                  <p className="description">
-                  2. **Müştəri Memnuniyyəti:** 
-                  Müştərilərimizin tələblərini anlamağa, ehtiyaclarına cavab
-                  verməyə və onların memnuniyyətini əsas qayğımız kimi görməyə
-                  nail olmağa çalışırıq.
-                  </p>
-                  <p className="description">
-                  3. **Texnologiyalarda Sürətli İnkişaf:** 
-                  Sürətli inkişaf etməyə və texnologiyalardakı son yenilikləri
-                  izləyərək müştərilərimizin daima müstəqil və müasir olmalarına
-                  kömək edirik. Neyman Enterprise Technologies, müştərilərimizlə
-                  güclü bir əməkdaşlıq qurmağa və onların rəqəmsal hədəflərinə
+                </p>
+                <p className="description">
+                  3. **Texnologiyalarda Sürətli İnkişaf:** Sürətli inkişaf
+                  etməyə və texnologiyalardakı son yenilikləri izləyərək
+                  müştərilərimizin daima müstəqil və müasir olmalarına kömək
+                  edirik. Neyman Enterprise Technologies, müştərilərimizlə güclü
+                  bir əməkdaşlıq qurmağa və onların rəqəmsal hədəflərinə
                   çatmağına kömək olmağı hədəfləyən şirkətdir.
                 </p>
                 {/* <div className="cardListsContainer">
@@ -237,46 +231,52 @@ export default function About() {
           {/* SECTION-3 START */}
 
           <section className="section-3">
-            <div className="left">
-              <p className="title">Niyə bizi seçməlisiniz?</p>
+            {/* <p className="title">Niyə bizi seçməlisiniz?</p>
 
               <p className="description title-left-text">
                 Neyman Enterprise Technologies'i seçmək üçün bir neçə əsas
                 səbəb:
-              </p>
-              <p className="description">
-                1. **İnnovativ Rəqəmsal Həllər:** <br /> Biz, müştərilərimizə
+              </p> */}
+            <img
+              src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/why-choose-img1-1-1.png"
+              alt=""
+            />    
+         
+            <div className="description">
+              1. **İnnovativ Rəqəmsal Həllər:**  Biz, müştərilərimizə
                 innovativ və yaradıcı rəqəmsal çözümlər təqdim edirik. İş
                 həllərimiz, müştərilərimizin müasir dijital dünyada öne
                 çıxmağını təmin edir.
-              </p>
-              <p className="description">
-                2. **Müştəri Memnuniyyəti:** <br /> Müştəri memnuniyyəti bizim
+            
+             
+                2. **Müştəri Memnuniyyəti:**   Müştəri memnuniyyəti bizim
                 üçün ən əhəmiyyətli prioritetdir. Müştərilərimizin tələblərini
                 anlamağa çalışır, şəxsi və effektiv xidmətlər təklif edirik.
-              </p>
-              <p className="description">
-                3. **Texnologiyalarda Təcrübə:** <br /> Biz, texnologiyalardakı
+         
+              
+                3. **Texnologiyalarda Təcrübə:**   Biz, texnologiyalardakı
                 son yenilikləri müştərilərimizin üstünə tətbiq etməklə onların
                 müasir və müstəqil qalmağını təmin edirik.
-              </p>
-              <p className="description">
-                4. **Sürətli və Təhlükəsiz Implementasiya:** <br />{" "}
+            
+          
+                4. **Sürətli və Təhlükəsiz Implementasiya:**  {" "}
                 Proseslərimizi sürətli və təhlükəsiz şəkildə implement etmək
                 üçün nailiyyətə çatmağa çalışır, müştərilərimizə ən yaxşı
                 keyfiyyət təmin etmək üçün fəaliyyət göstəririk.
-              </p>
-              <p className="description">
-                5. **Əməkdaşlıq və İtmiş Komanda:** <br /> Bizim komandamız,
+            
+          
+                5. **Əməkdaşlıq və İtmiş Komanda:**    Bizim komandamız,
                 müştərilərimizlə yaxın əməkdaşlıq edərək onların müstəqil
                 dijital hədəflərinə nail olmağında kömək edir.
-              </p>
-              <p className="description">
+            
+            
                 Neyman Enterprise Technologies, müştərilərinin dijital inkşafını
                 dəstəkləmək və müasir rəqəmsal sahədə lider mövqedə olmağa nail
                 etmək üçün mükəmməl bir təhlükəsizdir.
-              </p>
-              {/* <div className="selected-title-container">
+             
+            </div>
+            
+            {/* <div className="selected-title-container">
                 <BsCheckLg className="tick-icon" />
                 <h2 className="selected-title"> Core Development</h2>
 
@@ -293,13 +293,6 @@ export default function About() {
                 No fake products and services. The customer is king, their lives
                 and needs are the inspiration.
               </p> */}
-            </div>
-            <div className="right">
-              <img
-                src="https://themes.hibootstrap.com/varn/wp-content/uploads/2020/01/why-choose-img1-1-1.png"
-                alt=""
-              />
-            </div>
           </section>
         </div>
 
