@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const LatestWorkCardInHome = ({
   latestWorkCardInHome,
   latestWork,
-  isProjectPage,
+
 
 
 }) => {
@@ -59,10 +59,10 @@ const LatestWorkCardInHome = ({
 
   return (
   <div className="container">
-      {isProjectPage && isModalOpen && (
+      {isModalOpen && (
         <div className="overlay" onClick={openModal} />
       )}
-      {isProjectPage && (
+      { (
         <div className="modal-section">
           <div className="kateqoriya" onClick={openModal}>
             <BiCategory className="category-icon" />
@@ -87,25 +87,28 @@ const LatestWorkCardInHome = ({
                     Bütun işlər
                     {/* <FaAngleRight className="modal-angle-icon" /> */}
                   </li>
-                 {latestWork&&
-                    latestWork.map((cards) =>(
+                 {latestWorkCardInHome&&
+                    latestWorkCardInHome.map((cards) =>(
+                    cards.service_details.map((card) => (
+
                       <li
                       className="modal-1-li"
-                      key={cards.id}
-                      onMouseEnter={() => handleMouseEnter(cards.title)}
+                      key={card.title}
+                      onMouseEnter={() => handleMouseEnter(card.title)}
                       onMouseLeave={handleMouseLeave}
-                      onClick={() => handleClick(cards.title)}
+                      onClick={() => handleClick(card.title)}
                       // onClick={() => console.log(cards.title)}
                     >
-                      {cards.title}
+                      {card.title}
 
                       <FaAngleRight className="modal-angle-icon" />
-                      {hoveredItem === cards.title && (
+                      {hoveredItem === card.title && (
                         <ul className="modal-2">
-                          {cards.service_details.map((card) => (
+                          {card.service_property_detail.map((card) => (
                             <li
                               key={card.id}
                               className="modal-2-li"
+                           
                               onClick={() => handleClick(card.title)}
                               // onClick={() => console.log(card.title)}
                               >
@@ -115,6 +118,8 @@ const LatestWorkCardInHome = ({
                         </ul>
                       )}
                     </li>
+
+                    ))
                     )
                    
                        
@@ -133,8 +138,8 @@ const LatestWorkCardInHome = ({
         whileInView={{ opacity: 1 }}
         className="home__works__cards"
       >
-        {LatestWorkCardInHome &&
-          latestWorkCardInHome.map((card) => (
+        {latestWork &&
+          latestWork.map((card) => (
             <Link to={card.link_url} key={card.id}>
               <div className="home__works__cards__card" key={card.id}>
                 <img src={card.photo} />
