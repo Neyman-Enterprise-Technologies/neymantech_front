@@ -2,7 +2,9 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.scss";
 import newlogo from "../../../images/logo.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 function Navbar() {
@@ -39,9 +41,9 @@ return (
         <NavLink to="/price" onClick={showNavbar}>
           Qiymətlər
         </NavLink>
-        <Link to="/about" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+        <ScrollLink to="team-section" smooth={true} duration={1500}>
           Komandamız
-          </Link>
+        </ScrollLink>
         
      
         
