@@ -228,7 +228,7 @@ export default function Contact() {
                     onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                   <button>
-                    <span>SEND MESSAGE</span>
+                    <span>Mesaj göndər</span>
                   </button>
                 </form>
               </div>
