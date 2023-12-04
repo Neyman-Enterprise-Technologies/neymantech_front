@@ -49,6 +49,7 @@
 
 .scroll-icon {
   font-size: 25px;
+
  
 }
 
@@ -79,12 +80,14 @@
   opacity: 0; 
   border-radius: 3px;
   transition: all 2s;
+
 }
 
 
 .scroll-to-top:hover {
-  background-color: orange;
+  background-color: #fa7070;
   opacity: 1;
+
  }
 
 
@@ -332,6 +335,7 @@
     transition: opacity 0.3s ease-in-out;
     opacity: 1;
     border-radius: 3px;
+  
   }
 
   .scroll-icon {
