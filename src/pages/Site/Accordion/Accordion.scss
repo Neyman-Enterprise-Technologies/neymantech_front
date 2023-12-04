@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+ 
 }
 
 .item {
@@ -20,13 +21,14 @@
   padding: 20px 24px;
   padding-right: 48px;
   cursor: pointer;
-
+  transition: all 0.9s;
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
   transition: max-height 1s;
+ 
 }
 
 .number {
@@ -34,10 +36,12 @@
   font-weight: 800;
   color: var(--TextColor);
   opacity: 0.5;
+ 
 }
 
 .accordion .iconn {
   font-size: 20px;
+
 }
 
 .iconn {
@@ -63,16 +67,19 @@
   font-size: 14px;
   color: var(--TextColor);
   text-align: justify;
+ 
+
 }
 
 .content-box ul {
   color: #868e96;
   margin-left: 16px;
   margin-top: 16px;
-
+  transition: all 0.9s;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  
 }
 
 /* OPEN STATE */
@@ -80,6 +87,7 @@
 .open .number,
 .open .title {
   color: #0000ff;
+  
 }
 
 /* PAGELINKS START */
@@ -89,6 +97,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  
 }
 .accordionTitle h2,
 .accordionTitle span {
@@ -107,8 +116,8 @@
   padding-bottom: 1.2rem;
 }
 .accordion .itemm {
-  background-color: rgb(250, 250, 255);
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  background-color: rgb(248, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   padding: 5px 15px;
   cursor: pointer;
@@ -118,6 +127,8 @@
   row-gap: 10px;
   align-items: center;
   border-radius: 5px;
+
+
 }
 
 .accordionLinks a {
@@ -141,7 +152,7 @@
   gap: 0.5rem;
 }
 .titlee {
-  font-size: 16px;
+  font-size: 20px;
   color: black;
   font-weight: 500;
   word-wrap: break-word;
