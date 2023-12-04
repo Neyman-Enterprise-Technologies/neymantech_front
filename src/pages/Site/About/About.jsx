@@ -41,11 +41,11 @@ export default function About() {
 
   const handleScrollToTop = () => {
     scroll.scrollToTop({
-      duration: 900,
+      duration: 1500,
       delay: 0,
       smooth: "easeInOutQuint",
     });
-    setShowIcon(false);
+    // setShowIcon(true);
   };
 
   const [loading, setLoading] = useState(false);
@@ -60,6 +60,8 @@ export default function About() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+
 
   return (
     <>
