@@ -56,6 +56,7 @@ width: fit-content!important;
   padding: 0.5em 0;
   position: relative;
   color: #29335c;
+  transition: 0.2s all;
 }
 
 .navbar a::after {
@@ -70,6 +71,7 @@ width: fit-content!important;
   background-color: var(--secondaryColor);
   transition: width 0s, left 0s;
   border-radius: 3px;
+  
 }
 
 .navbar a:not(.active):hover::after {
