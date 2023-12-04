@@ -31,22 +31,25 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
+  height: 6.56rem;
   padding: 0 4rem;
 gap: 4rem;
   /* background-color: #eeeeee; */
   background-color: #fafafc;
+  background-color: rgba(0,0,0,0.7);
 
-
+backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   z-index: 999999999;
   color: #29335c;
+ 
   position: sticky;
   top: 0;
 }
 
 .navbar a,
 .navLink {
+
   margin: 0 1rem 0 0;
   /* color: var(--textColor); */
   text-decoration: none;
@@ -54,10 +57,19 @@ gap: 4rem;
   font-weight: 900;
 width: fit-content!important;
   padding: 0.5em 0;
+  transition: 0.3s all;
+  border-radius: 5px;
+padding: 5px 10px;
   position: relative;
   color: #29335c;
-  transition: 0.2s all;
+  color: white;
+ 
 }
+.navbar a:hover,
+.navLink:hover{
+  background-color: #fa7070;
+}
+
 
 .navbar a::after {
   content: "";
@@ -68,24 +80,26 @@ width: fit-content!important;
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: var(--secondaryColor);
+  background-color: #fa7070;
   transition: width 0s, left 0s;
   border-radius: 3px;
   
 }
 
-.navbar a:not(.active):hover::after {
+/* .navbar a:not(.active):hover::after {
   width: 100%;
   left: 0;
   transition: width 0.3s, left 0.3s;
-}
+} */
 .navbar a.active {
   position: relative;
   top: 0.5px;
-
+color: white;
   text-decoration: none;
-
-  border-bottom: 2px solid var(--secondaryColor);
+padding: 5px 10px;
+border-radius: 5px;
+  /* border-bottom: 2px solid #fa7070; */
+  background-color: #fa7070;
  
 }
 
@@ -111,14 +125,7 @@ header div,
 
 
   
-@media screen and (max-width:992px){
- 
-  header{
-    height: 9rem;
-  
-  }
-  
-  }
+
 @media screen and (max-width:768px){
 
 header{
@@ -135,11 +142,18 @@ height: 9rem;
 
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
+  header{
+    height: 9rem;
+    backdrop-filter: unset; 
+    background-color: #29335c;
+  }
   header .nav-btn {
     visibility: visible;
     opacity: 1;
-    color: var(--mainColor);
+
+    color: white;
+ 
   }
   .nav-close-open {
     font-size: 3rem;
@@ -159,6 +173,7 @@ height: 9rem;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+
     background-color: var(--mainColor);
     transition: 1s;
     z-index: 999999999999;
@@ -168,10 +183,12 @@ height: 9rem;
     transform: translateY(100vh);
     z-index: 99999999;
     color: white;
+
   }
   header .responsive_nav a {
     color: white;
     font-size: 2.5rem;
+
   }
 
   .navbar .nav-close-btn {
