@@ -102,7 +102,7 @@ export default function Contact() {
             className="scroll-to-top"
             style={{
               opacity: showIcon ? 1 : 0,
-              transition: "opacity 0.5s",
+              transition: "all 0.5s",
             }}
             onClick={handleScrollToTop}
           >
