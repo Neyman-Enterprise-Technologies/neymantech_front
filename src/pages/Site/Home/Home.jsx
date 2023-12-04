@@ -47,8 +47,9 @@ export default function Home() {
   const { data: lastThreeProjectCards } = UseFetch(
     `${apiUrl}service_api/last_works/`
   );
- 
- const last3Projects = lastThreeProjectCards&&lastThreeProjectCards.slice(-3)
+
+  const last3Projects =
+    lastThreeProjectCards && lastThreeProjectCards.slice(-3);
 
   const { data: latestNews } = UseFetch(`${apiUrl}blog_api/blog`);
   const [loading, setLoading] = useState(false);
@@ -64,11 +65,11 @@ export default function Home() {
 
   const handleScrollToTop = () => {
     scroll.scrollToTop({
-      duration: 900,
-      delay: 0,
+      duration: 1500,
+      delay: 1,
       smooth: "easeInOutQuint",
     });
-    setShowIcon(false);
+   
   };
 
   useEffect(() => {
@@ -146,7 +147,7 @@ export default function Home() {
               </p> */}
           </div>
         </div>
-       
+
         {last3Projects && (
           <LastThreeProjectCards
             // lastThree={lastThree}

@@ -26,11 +26,11 @@ const Accordion = () => {
 
   const handleScrollToTop = () => {
     scroll.scrollToTop({
-      duration: 900,
+      duration: 1500,
       delay: 0,
       smooth: "easeInOutQuint",
     });
-    setShowIcon(false);
+  
   };
 
   useEffect(() => {
