@@ -76,7 +76,7 @@ const LatestWorkCardInHome = ({
               whileInView={{ opacity: 1 }}
               className="modal-wrapper"
             >
-              <div className="modal">
+              <div className="project-modal">
                 <ul className="modal-1">
                   <li
                   className="modal-all-prices"
