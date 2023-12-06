@@ -63,7 +63,7 @@ export default function Blogs() {
   
   const handleScrollToTop = () => {
     scroll.scrollToTop({
-      duration: 1500,
+      duration: 1000,
       delay: 0,
       smooth: "easeInOutQuint",
     });

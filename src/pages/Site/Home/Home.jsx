@@ -65,8 +65,8 @@ export default function Home() {
 
   const handleScrollToTop = () => {
     scroll.scrollToTop({
-      duration: 1500,
-      delay: 1,
+      duration: 1000,
+      delay: 0,
       smooth: "easeInOutQuint",
     });
    
