@@ -31,12 +31,16 @@ export default function Price() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+
+
+
   // const handleMouseLeave = () => {
   //   setHoveredItem(null);
   // };
 
   const openModal = () => {
     setIsModalOpen(!isModalOpen);
+   
   };
 
   const [search, setSearch] = useState("");
@@ -65,6 +69,13 @@ export default function Price() {
     });
    
   };
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isModalOpen]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -94,7 +105,7 @@ export default function Price() {
             className="scroll-to-top"
             style={{
               opacity: showIcon ? 1 : 0,
-              transition: "opacity 0.5s",
+              transition: "all 0.5s",
             }}
             onClick={handleScrollToTop}
           >
@@ -133,9 +144,9 @@ export default function Price() {
 
           {/*    header end*/}
 
+        <div className="container">
         {isModalOpen && <div className="overlay" onClick={openModal} />}
 
-        <div className="container">
           <div className="modal-section">
             <div className="kateqoriya" onClick={openModal} >
           
@@ -151,7 +162,7 @@ export default function Price() {
                 whileInView={{ opacity: 1 }}
                 className="modal-wrapper"
               >
-                <div className="modal">
+                <div className="price-modal">
                 <li
                    className="modal-all-prices"
                       // onMouseLeave={handleMouseLeave}

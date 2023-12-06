@@ -35,12 +35,12 @@ header {
   padding: 0 4rem;
 gap: 4rem;
   /* background-color: #eeeeee; */
-  background-color: #fafafc;
+  /* background-color: #fafafc; */
   background-color: rgba(0,0,0,0.7);
 
 backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-  z-index: 999999999;
+  z-index: 9999;
   color: #29335c;
  
   position: sticky;
@@ -239,20 +239,7 @@ header .responsive_nav a {
 
   }
 
-  /* @media only screen and (max-width: 340px) {
-    .nav-close-open {
-      font-size: 6rem;
-    
-  }
-  header{
-    height: 13rem;
-  
-  }
-  .logo-img img{
-    width: 23rem;
-  }
-     
-    } */
+
   
 
  

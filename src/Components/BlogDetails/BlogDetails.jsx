@@ -10,6 +10,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const BlogDetails = () => {
+   const [search, setSearch] = useState("");
   const { slug } = useParams();
   const apiUrl = import.meta.env.VITE_API_URL;
   const { data: blogs, error } = UseFetch(`${apiUrl}blog_api/blog/${slug}`);
@@ -146,14 +147,17 @@ const BlogDetails = () => {
                   <div className="category-list-container">
                     {bloges &&
                       bloges.map((_blog) => (
-                        <p key={_blog.blog_category.id}>
+                        <p
+                          key={_blog.blog_category.id}
+                          onClick={() => setSearch(_blog.blog_category.name)}
+                        >
                           {_blog.blog_category.name}
                         </p>
                       ))}
                   </div>
                 </div>
                 <div className="tags-container">
-                  <h2 className="title">Tags</h2>
+                  <h2 className="title">Teq</h2>
                   <div className="tags">
                     {bloges &&
                       [
