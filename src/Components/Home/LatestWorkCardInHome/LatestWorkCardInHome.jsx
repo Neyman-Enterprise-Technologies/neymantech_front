@@ -49,6 +49,17 @@ const LatestWorkCardInHome = ({
   //           ))):[]
   //           console.log(filteredWorks)
 
+// if modal is open  body scroll hidden
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isModalOpen]);
+  // if modal is open  body scroll hidden
+
+
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -77,9 +88,8 @@ const LatestWorkCardInHome = ({
               className="modal-wrapper"
             >
               <div className="project-modal">
-                <ul className="modal-1">
-                  <li
-                  className="modal-all-prices"
+              <li
+                  className="project-modal-all-prices"
                     onMouseEnter={() => handleMouseEnter("")}
                     onMouseLeave={handleMouseLeave}
                     onClick={() => handleClick("")}
@@ -87,6 +97,8 @@ const LatestWorkCardInHome = ({
                     Bütun işlər
                     {/* <FaAngleRight className="modal-angle-icon" /> */}
                   </li>
+                <ul className="modal-1">
+               
                  {latestWorkCardInHome&&
                     latestWorkCardInHome.map((cards) =>(
                     cards.service_details.map((card) => (
@@ -101,7 +113,7 @@ const LatestWorkCardInHome = ({
                     >
                       {card.title}
 
-                      <FaAngleRight className="modal-angle-icon" />
+                      <FaAngleRight className="project-modal-angle-icon" />
                       {hoveredItem === card.title && (
                         <ul className="modal-2">
                           {card.service_property_detail.map((card) => (
