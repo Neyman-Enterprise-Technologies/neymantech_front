@@ -30,7 +30,7 @@
 }
 .section-1 .right .title {
   font-size: 1.5rem;
-  color: blue;
+  color:  var(--mainBlue);
   font-weight: 500;
   width: 100%;
 }
@@ -61,14 +61,14 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  box-shadow: inset 0 0 0 0 #0000ff;
+  box-shadow: inset 0 0 0 0  var(--mainBlue);
   transition: ease-out 0.2s;
   padding: 1rem;
   background-color: #f8faff;
   border-radius: 0.5rem;
 }
 .section-1 .right .cards-container .card:hover {
-  box-shadow: inset 50rem 0 0 0 #0000ff;
+  box-shadow: inset 50rem 0 0 0  var(--mainBlue);
   transition: ease-out 0.8s;
 }
 .section-1 .right .cards-container .card:hover p {
@@ -77,7 +77,7 @@
 .section-1 .right .cards-container .left-cards-container .card .icon-about,
 .section-1 .right .cards-container .right-cards-container .card .icon-about {
   font-size: 2.5rem;
-  color: #0000ff;
+  color:  var(--mainBlue);
 }
 .section-1 .right .cards-container .card:hover .icon-about {
   color: orange;
@@ -127,7 +127,7 @@
   content: "";
   width: 5em;
   height: 1px;
-  background-color: blue;
+  background-color:var(--mainBlue);
 }
 
 .section-2 .cardsContainer .card .cardListsContainer {
@@ -146,7 +146,7 @@
   gap: 1rem;
 }
 .section-2 .cardsContainer .card .cardList:hover .list-icon {
-  color: #0000ff;
+  color:  var(--mainBlue);
 }
 
 .section-2 .cardsContainer .card .cardList p {
@@ -210,79 +210,6 @@ color: var(--TextColor);
 }
 
 
-/* left start */
-/* .section-3 .left {
-  padding-top: 3rem;
-  width: 50%;
-
-} */
-/* .section-3 .left .title {
-  font-size: 1.8rem;
-  color: blue;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-
-  width: 100%;
-}
-.section-3 .left .header {
-  font-size: 2rem;
-  width: 100%;
-  padding-right: 10rem;
-} */
-/* .section-3 .left .description,
-.section-3 .left .selected-description {
-  display: inline;
-  text-align: justify;
-  padding-bottom: 10px;
-  color: var(--TextColor);
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 500;
-} */
-
-  /* .section-3 .left .selected-title-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-  } */
-/* .section-3 .left .selected-title-container .tick-icon {
-  font-size: 2rem;
-  color: #0000ff;
-} */
-/* .section-3 .left .selected-title-container .selected-title {
-  position: relative;
-
-  font-size: 1.5rem;
-  width: 100%;
-} */
-/* .section-3 .left .title-left-text {
-  color: black;
-  font-size: 14px;
-} */
-
-/* .section-3 .left .selected-description {
-  text-align: start;
-} */
-
-/* left end */
-/* right start */
-/* .section-3 .right {
-  width: 400px;
-  height: 400px;
-
-  float: right;
-}
-.section-3 .right img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-} */
-/* .section-3 .description{
-  display: inline;
-} */
-
-/* right end */
 
 /* ABOUT SECTION-3 END */
 
@@ -409,8 +336,7 @@ color: var(--TextColor);
       line-height: 20px;
     }
     .section-3 img {
-      /* width: 600px; */
-      width: 100%;
+     width: 100%;
       height: auto;
     margin: 0 0 20px 20px;
       float: right;

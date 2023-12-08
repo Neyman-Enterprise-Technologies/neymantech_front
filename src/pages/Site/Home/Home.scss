@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 10rem;
-  /* background-color: blue; */
+
   & .left_right-container {
     display: flex;
   }
@@ -37,7 +37,7 @@
     gap: 28px;
     width: 50%;
 
-    /* background-color: red; */
+    
 
     & .top-container {
       /* padding-top: 3rem; */
@@ -62,7 +62,7 @@
         display: inline-flex;
         font-size: 0.9rem;
         padding: 0.9375rem 1.875rem;
-        background-color: #0000ff;
+        background-color: var(--mainBlue);
 
         overflow: hidden;
         color: #fff;
@@ -92,7 +92,7 @@
     }
 
     & .marketing-cards-container {
-      /* background-color: yellow; */
+ 
 
       width: 100%;
       gap: 1rem;
@@ -113,7 +113,7 @@
           font-weight: 700;
           border-radius: 0.5rem;
 
-          box-shadow: inset 0 0 0 0 #0000ff;
+          box-shadow: inset 0 0 0 0 var(--mainBlue);
           transition: ease-out 0.2s;
 
           & p {
@@ -121,14 +121,14 @@
             width: 12ch;
           }
           & .card-icon {
-            color: #0000ff;
+            color: var(--mainBlue);
             font-size: 1rem;
           }
         }
 
         & .card:hover {
-          /* box-shadow: inset 18.75rem 0 0 0 #0000ff; */
-          box-shadow: inset 50rem 0 0 0 #0000ff;
+
+          box-shadow: inset 50rem 0 0 0 var(--mainBlue);
           transition: ease-out 0.7s;
 
           & .card-icon {
@@ -159,7 +159,7 @@
           font-size: 1.1rem;
           font-weight: 700;
           border-radius: 0.5rem;
-          box-shadow: inset 0 0 0 0 #0000ff;
+          box-shadow: inset 0 0 0 0 var(--mainBlue);
           transition: ease-out 0.2s;
 
           & p {
@@ -171,12 +171,12 @@
           }
           & .card-icon {
             width: 20%;
-            color: #0000ff;
+            color: var(--mainBlue);
             font-size: 24px;
           }
         }
         & .card:hover {
-          box-shadow: inset 30rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 var(--mainBlue);
           transition: ease-out 0.5s;
 
           & .card-icon {
@@ -233,7 +233,7 @@
 
       font-size: 0.9rem;
       padding: 0.9375rem 30px;
-      background-color: #0000ff;
+      background-color: var(--mainBlue);
       /* background: #737b73; */
       overflow: hidden;
       color: #fff;
@@ -276,10 +276,8 @@
       & .left-cards-container {
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
-
-        gap: 1rem;
-        /* justify-content: center; */
+gap: 1rem;
+ 
 
         & .card {
           display: flex;
@@ -291,19 +289,19 @@
           font-size: 1.1rem;
           font-weight: 700;
           border-radius: 0.5rem;
-          box-shadow: inset 0 0 0 0 #0000ff;
+          box-shadow: inset 0 0 0 0 var(--mainBlue);
           transition: ease-out 0.2s;
 
           /* & p {
             width: 20ch;
           } */
           & .card-icon {
-            color: #0000ff;
+            color: var(--mainBlue);
             font-size: 1.2rem;
           }
         }
         & .card:hover {
-          box-shadow: inset 30rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 var(--mainBlue);
           transition: ease-out 0.7s;
 
           & .card-icon {
@@ -320,7 +318,7 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        /* background-color: yellow; */
+      
         gap: 1rem;
 
         & .card {
@@ -332,16 +330,16 @@
           font-size: 1.1rem;
           font-weight: 700;
           border-radius: 0.5rem;
-          box-shadow: inset 0 0 0 0 #0000ff;
+          box-shadow: inset 0 0 0 0 var(--mainBlue);
           transition: ease-out 0.2s;
 
           & .card-icon {
-            color: #0000ff;
+            color: var(--mainBlue);
             font-size: 1.2rem;
           }
         }
         & .card:hover {
-          box-shadow: inset 30rem 0 0 0 #0000ff;
+          box-shadow: inset 30rem 0 0 0 var(--mainBlue);
           transition: ease-out 0.7s;
 
           & .card-icon {
@@ -408,14 +406,12 @@
     &__card {
       transition: 0.6s ease;
       display: flex;
-
-      align-items: center;
+align-items: center;
       flex-direction: column;
       gap: 1rem;
       align-items: center;
       justify-content: center;
-
-      height: 100%;
+height: 100%;
       background-color: white;
       border-radius: 5px;
       padding: 3rem;
@@ -425,19 +421,17 @@
         position: relative;
         width: 4.375rem;
         height: 4.375rem;
-        /* background-color: #f9f9fc; */
-        background-color: #ececff;
+  background-color: #ececff;
         border-radius: 50%;
-
-        .badge {
+.badge {
           position: absolute;
           font-size: 1.5rem;
           bottom: 3.3rem;
-          color: #0000ff;
+          color: var(--mainBlue);
         }
 
         .icon1 {
-          color: #0000ff;
+          color: var(--mainBlue);
           font-size: 1.875rem;
           margin-left: 1.25rem;
           margin-top: 0.3rem;
@@ -455,18 +449,13 @@
 
       p {
         padding: 1rem 0;
-        /* height: 10rem; */
-        /* background-color: red; */
-        font-size: 1.2rem;
+       font-size: 1.2rem;
         line-height: 1.6;
         text-align: center;
         color: var(--TextColor);
-
-        font-weight: 500;
-
-        text-align: center;
-
-        overflow: hidden;
+font-weight: 500;
+text-align: center;
+overflow: hidden;
         text-overflow: ellipsis;
         /* white-space: nowrap; */
         -webkit-line-clamp: 1;
@@ -489,8 +478,7 @@
 
 .home__top__cards {
   a {
-    /* border: solid; */
-    display: flex;
+  display: flex;
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
@@ -529,8 +517,7 @@
 
     h2 {
       color: black;
-
-      font-size: 2rem;
+font-size: 2rem;
     }
 
     p {
@@ -593,8 +580,7 @@
 
       & img {
         position: absolute;
-
-        top: 0;
+top: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -611,8 +597,7 @@
     }
     &__card::before {
       content: "";
-
-      position: absolute;
+position: absolute;
       top: 0;
       left: 0;
       display: block;
@@ -939,7 +924,7 @@ article:has(:hover, :focus) {
     .cards-container
     .right-cards-container
     .card:hover {
-    box-shadow: inset 50rem 0 0 0 #0000ff;
+    box-shadow: inset 50rem 0 0 0 var(--mainBlue);
   }
   .digital-marketing-container .left_right-container {
     gap: 10px;
@@ -976,7 +961,7 @@ article:has(:hover, :focus) {
     .marketing-cards-container
     .left-cards-container
     .card:hover {
-    box-shadow: inset 100rem 0 0 0 #0000ff;
+    box-shadow: inset 100rem 0 0 0 var(--mainBlue);
     transition: ease-out 0.9s;
   }
   .digital-marketing-container
@@ -1024,8 +1009,7 @@ article:has(:hover, :focus) {
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
-
-    font-size: 14px;
+font-size: 14px;
     padding: 0.625rem;
     line-height: 3.5rem;
     font-weight: 100;
@@ -1117,7 +1101,7 @@ article:has(:hover, :focus) {
     padding: 0.25rem 0px 5.625rem 0px;
     width: 100%;
     &__cards {
-      /* flex-direction: column; */
+      
       gap: 15px;
       a {
         width: 100%;
@@ -1138,7 +1122,7 @@ article:has(:hover, :focus) {
       width: 100% !important;
     }
     &__card {
-      /* flex-direction: column; */
+     
       width: 100%;
       margin-inline: auto;
     }
@@ -1162,7 +1146,7 @@ article:has(:hover, :focus) {
     width: 100%;
   }
   .left-cards-container {
-    /* flex-direction: column; */
+    
     display: flex;
     flex-direction: row;
     width: 100%;

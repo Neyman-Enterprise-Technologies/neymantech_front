@@ -9,12 +9,12 @@
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
+position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(8px);
 
   z-index: 999999999999;
  
@@ -39,6 +39,7 @@
   z-index: 1;
   scroll-behavior: smooth;
   z-index: 99999999999999;
+
 }
 .price-modal {
   position: relative;
@@ -46,7 +47,8 @@
   height: 59%;
 }
 .modal-all-prices {
-  color: orange;
+  /* color: orange; */
+
   justify-content: flex-end;
   padding: 1rem 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -66,7 +68,13 @@
   left: 0;
   transition: background-color 0.3s;
   transition: all 0.2s;
+  color: white;
+
+  &:hover{
+    color: var(--mainBlue);
+  }
 }
+
 .price-modal .price-modal-1 {
   position: absolute;
   top: 50%;
@@ -93,7 +101,7 @@
 }
 
 .price-modal .price-modal-1::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #212121);
+  background: linear-gradient(transparent, #4e4e4e);
   border-radius: 16px;
 }
 .price-modal .price-modal-1::-webkit-scrollbar-thumb:hover {
@@ -125,17 +133,22 @@
   left: 0;
   transition: background-color 0.3s;
   transition: all 0.2s;
-  color: orange;
+  /* color: orange; */
+  color: var(--TextWithDarkBg);
+
+
+ 
 }
 
 
 .price-modal .price-modal-1-li:hover {
   color: #fff;
+  color: var(--mainBlue);
 }
 /* header start */
 .header {
   padding: 5rem 0 0 0;
-  /* width: 55%; */
+ 
   margin: auto;
   text-align: center;
 }
@@ -205,7 +218,7 @@
     padding: 1.5rem 0;
     text-align: center;
     font-size: 1.8rem;
-    background-color: blue;
+    background-color:  var(--mainBlue);
     color: white;
   }
   .secondHeader {
@@ -321,7 +334,7 @@
     position: relative;
     display: inline-block;
 
-    color: blue;
+    color:  var(--mainBlue);
     font-size: 1.2rem;
     font-weight: 600;
     padding: 2rem 0 0.5rem 0;
@@ -352,7 +365,7 @@
       bottom: 0;
       width: 0;
       height: 1px;
-      background-color: blue;
+      background-color:  var(--mainBlue);
       transition: width 0.6s;
     }
   }
@@ -554,7 +567,7 @@
       position: relative;
       display: inline-block;
 
-      color: blue;
+      color:  var(--mainBlue);
       font-size: 1.2rem;
       font-weight: 600;
       padding: 2rem 0 0.5rem 0;
@@ -585,7 +598,7 @@
         bottom: 0;
         width: 0;
         height: 1px;
-        background-color: blue;
+        background-color:  var(--mainBlue);
         transition: width 0.6s;
       }
     }
