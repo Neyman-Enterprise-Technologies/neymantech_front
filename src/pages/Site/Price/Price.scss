@@ -47,15 +47,15 @@ position: fixed;
   height: 59%;
 }
 .modal-all-prices {
-  /* color: orange; */
+ position: absolute;
 
   justify-content: flex-end;
   padding: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   width: fit-content;
   cursor: pointer;
   position: relative;
-  top: -50px;
+  top: -10px;
   padding-inline: 10px;
   margin-bottom: 1px;
   font-size: 15px;
@@ -76,7 +76,7 @@ position: fixed;
 }
 
 .price-modal .price-modal-1 {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -92,7 +92,7 @@ position: fixed;
   overflow-y: scroll;
 }
 .price-modal .price-modal-1::-webkit-scrollbar {
-  width: 10px;
+  width: 1rem;
 }
 
 .price-modal .price-modal-1::-webkit-scrollbar-track {
@@ -432,6 +432,7 @@ position: fixed;
     text-align: center;
     width: 60%;
   }
+ 
 }
 
 /* cards container end */
@@ -484,6 +485,7 @@ position: fixed;
     font-size: 3rem;
     /* width: 80%; */
   }
+  
 }
 
 @media screen and (max-width: 576px) {
@@ -613,6 +615,10 @@ position: fixed;
     font-size: 5rem;
   }
   .price-modal .price-modal-1-li {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
+  .modal-all-prices{
+    font-size: 2.8rem;
+  }
+ 
 }
