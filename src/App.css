@@ -73,7 +73,7 @@ html::-webkit-scrollbar-track:hover {
   --headerText: #212529;
   --blueText: #0000ff;
   --buttonHoverColor: #f78da7;
-  --TextWithDarkBg: #f5f5f5;
+  --TextWithDarkBg: #d3cccc;
 }
 
 
@@ -165,6 +165,7 @@ html::-webkit-scrollbar-track:hover {
 .linkLinks a,
 .linkLinks .angleIcon {
   font-size: 16px;
+
 }
 
 .linkTitle h2 {

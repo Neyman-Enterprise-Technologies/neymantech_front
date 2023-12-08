@@ -103,6 +103,7 @@
 }
 
 .overlay {
+  background-color: rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -133,25 +134,26 @@
   z-index: 99999999999999;
   /* padding: 2rem 0; */
 }
+
 .project-modal {
   position: relative;
-  width: 50%;
+  width: 60%;
+
   height: 59%;
 
 }
 
 .project-modal .modal-1 {
-position: absolute;
+position: relative;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
 width: 100%;
 height: 100%;
-color: orange;
 padding: 20px;
 list-style-type: none;
  overflow-y: scroll;
-background-color: rgba(0,0,0,0.2);
+background-color: rgba(0,0,0,0.5);
  border-radius: 10px;
 
 }
@@ -187,36 +189,36 @@ background-color: rgba(0,0,0,0.2);
   top: 80px;
 } */
 .project-modal-all-prices{
-  position: fixed!important;
-  top: 13%;
+  position: absolute;
+  top: -10px;
  justify-content: center!important;
- color: orange;
-
-
- cursor: pointer;
+cursor: pointer;
   position: relative;
-  padding: 10px 0;
+  padding: 1rem 0;
   padding-inline: 10px;
-
-  background-color: rgba(0, 0, 0, 0.4);
+width: fit-content;
+  background-color: rgba(0, 0, 0, 0.6);
   font-size: 16px;
   font-weight: 900;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  left: 25%;
-  transition: background-color 0.3s;
+  color: var(--TextWithDarkBg);
+transition: background-color 0.3s;
   transition: all 0.2s;
 }
 
+.project-modal-all-prices:hover{
+  color: white;
+}
 .project-modal .modal-1 li {
   animation: modal linear both;
   animation-timeline: view();
   animation-range: entry 50% cover 20%;
-left: 100%;
+/* left: 100%; */
 width:50%;
+
   cursor: pointer;
   position: relative;
   padding: 10px 0;
@@ -225,29 +227,31 @@ width:50%;
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
   font-weight: 900;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   left: 0;
+ color: var(--TextWithDarkBg);;
   transition: background-color 0.3s;
   transition: all 0.2s;
  
 }
 .project-modal .modal-1-li:hover{
- color: #fff;
+ color: white;
 }
 .project-modal-angle-icon{
   font-size: 18px;
 }
+
 .project-modal .modal-1-li .modal-2 .modal-2-li{
-  color: orange;
+  color: var(--TextWithDarkBg);
   width: fit-content;
   
 }
 .project-modal .modal-1-li .modal-2 .modal-2-li:hover{
-color: white ;
+color: white;
   
 }
 
@@ -258,42 +262,46 @@ color: white ;
 .modal-2 {
   position: absolute;
   width: 100%;
-height: 300px;
+/* background-color: red; */
+/* height: 300px; */
 left: 100%;
  top: -45px;
-
- /* background-color: red; */
- padding: 45px 10px;
-
-
+padding: 45px 10px;
 }
 
-.modal-2-li {
+.modal-2 .modal-2-li {
+ word-wrap: break-word;
   position: absolute;
-  background-color: blue;
 
+width: fit-content;
 
- 
- 
+  color: white;
 } 
 .category-search-icon {
   font-size: 2rem;
 }
+@media screen and (max-width: 1200px){}
+@media screen and (max-width: 992){}
 
 @media screen and (max-width: 768px) {
-  .project-modal .modal-1 li{
-    left: 100%;
-/* margin-left: 25%; */
-/* width: 250px; */
+  .project-modal {
 
-width:70%;
+    width: 80%;
+  
+  
+  }
+  .project-modal .modal-1{
+    width: 100%;
+  }
+  
+  .project-modal .modal-1 li{
+width:50%;
   cursor: pointer;
   position: relative;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   padding-inline: 10px;
-  margin-bottom: 1px;
-  background-color: rgba(57, 58, 57, 0.5);
-  font-size: 13px;
+ font-size: 14px;
+margin-bottom: 3px;
   font-weight: 900;
   border-radius: 10px;
   display: flex;
@@ -304,12 +312,20 @@ width:70%;
   transition: background-color 0.3s;
   transition: all 0.2s;
   }
-  .modal-angle-icon{
-    font-size: 17px;
+  
+  .project-modal-all-prices{
+    font-size: 14px;
   }
+  .project-modal-angle-icon{
+    font-size: 14px;
+  }
+  
 }
 
 @media screen and (max-width: 576px) {
+  .project-modal{
+    width: 95%;
+  }
   .project-modal .modal-1 li{
     left: 100%;
 /* margin-left: 25%; */
@@ -320,11 +336,9 @@ width:70%;
   position: relative;
   padding: 1.5rem 0;
   padding-inline: 1.2rem;
-  margin-bottom: 1px;
-  background-color: rgba(57, 58, 57, 0.5);
-  font-size: 3rem;
+font-size: 3rem;
   font-weight: 900;
-  border-radius: 10px;
+  border-radius: 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -333,10 +347,17 @@ width:70%;
   transition: background-color 0.3s;
   transition: all 0.2s;
   }
-  .modal-angle-icon{
-    font-size: 3rem;
+  .project-modal-angle-icon{
+    font-size: 2.5rem;
   }
   .modal-2-li{
     word-wrap: break-word;
+  }
+  .project-modal-all-prices{
+    font-size: 2.5rem;
+ 
+  }
+  .project-modal-all-prices{
+    font-size: 3rem;
   }
 }
