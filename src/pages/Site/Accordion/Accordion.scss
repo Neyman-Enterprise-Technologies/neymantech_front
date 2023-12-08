@@ -52,10 +52,9 @@
   height: 45px;
   border-radius: 2px;
   /* padding: 10px; */
-  background-color: #0000ff;
+  background-color: var(--mainBlue);
   opacity: 0.8;
-
-  color: white;
+color: white;
 }
 
 .content-box {
@@ -86,7 +85,7 @@
 
 .open .number,
 .open .title {
-  color: #0000ff;
+  color: var(--mainBlue);
   
 }
 
@@ -132,7 +131,7 @@
 }
 
 .accordionLinks a {
-  color: #0000ff;
+  color: var(--mainBlue);
   font-weight: 500;
   color: #737b9a;
 }
@@ -142,7 +141,7 @@
   color: #737b9a;
 }
 .accordionLinks .faqLink {
-  color: #0000ff;
+  color: var(--mainBlue);
   font-weight: 500;
 }
 .accordionLinks {

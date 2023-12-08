@@ -42,7 +42,7 @@
 }
 .contactCardContainer .card .icon-container .contactIcon {
   position: absolute;
-  color: blue;
+  color: var(--mainBlue);
   width: 35%;
   height: 35%;
 }
@@ -168,7 +168,7 @@ button {
   height: 3rem;
   cursor: pointer;
   padding: 0.9375rem 1.875rem;
-  background-color: rgb(53, 53, 197);
+  background-color: var(--mainBlue);
 
   overflow: hidden;
   color: #fff;
