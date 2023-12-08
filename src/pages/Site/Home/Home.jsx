@@ -119,10 +119,12 @@ export default function Home() {
                 Neyman Enterprise Technologies şirkəti olaraq sizə
                 xidmətlərimizi təklif etməkdən məmnunuq.
               </p>
-            </div>
+            </div >
             {/* SERVICE CARDS START */}
+            <div id="service-cards">
             {serviceCards && <ServiceCards serviceCards={serviceCards} />}
             {error && <div>{error}</div>}
+            </div>
           </div>
           {/* SERVICE CARDS START */}
         </div>
