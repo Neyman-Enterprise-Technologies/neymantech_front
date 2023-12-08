@@ -2,39 +2,40 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.scss";
 import newlogo from "../../../images/logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-scroll";
-
+import { useEffect } from "react";
+// import { Link } from "react-scroll";
 
 function Navbar() {
   const navRef = useRef();
 
-
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
-   
   };
+  const { pathname } = useLocation();
 
-return (
+  useEffect(() => {}, [pathname]);
+
+  return (
     <header>
-   
       <NavLink to="/" className="logo-img">
         <img src={newlogo} alt="Responsive Image" />
       </NavLink>
       <nav className="navbar" ref={navRef}>
         <NavLink to="/" onClick={showNavbar}>
-
-        Ana səhifə
-
+          Ana səhifə
         </NavLink>
 
         <NavLink to="/about" onClick={showNavbar}>
           Haqqımızda
         </NavLink>
-        <Link to="/" onClick={showNavbar} /* onClick={handleScrollToServiceCards} */>
+        <ScrollLink
+          to="service-cards" smooth={true} duration={1500}
+          onClick={showNavbar} /* onClick={handleScrollToServiceCards} */
+        >
           Xidmətlər
-        </Link>
+        </ScrollLink>
         <NavLink to="/project" onClick={showNavbar}>
           İşlərimiz
         </NavLink>
@@ -44,17 +45,12 @@ return (
         <ScrollLink to="team-section" smooth={true} duration={1500}>
           Komandamız
         </ScrollLink>
-        
-     
-        
-     
-        <NavLink to="/blogs" onClick={showNavbar}>
 
-        Bloq
+        <NavLink to="/blogs" onClick={showNavbar}>
+          Bloq
         </NavLink>
         <NavLink to="/contact" onClick={showNavbar}>
-        Əlaqə
-
+          Əlaqə
         </NavLink>
         {/* <NavLink to="/faq" onClick={showNavbar}>Faq</NavLink> */}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
@@ -71,7 +67,6 @@ return (
             <option value="türkçe">TR</option>
           </select>
         </div> */}
-      
     </header>
   );
 }
