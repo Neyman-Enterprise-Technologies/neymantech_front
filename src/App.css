@@ -345,17 +345,20 @@ html::-webkit-scrollbar-track:hover {
     padding: 13rem 0;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
   }
   .linkTitle h2,
   .linkTitle span,
   .linkTitle div {
-    font-size: 3.5rem;
+    font-size: clamp(14px, 3vw, 30px);
   }
+ 
+  .linkLinks .linkLink,
   .linkLinks a,
-  .linkLinks .angleIcon {
-    font-size: 2.5rem;
+  .linkLinks .angleIcon{
+    font-size: clamp(12px, 2vw, 20px);
   }
+
 
   .scroll-to-top {
     position: fixed;
