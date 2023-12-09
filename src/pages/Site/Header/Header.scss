@@ -218,25 +218,24 @@ height: 9rem;
   
 }
 header{
-  height: 12rem;
+height: clamp(50px, 10vw, 70px);
 
 }
-.logo-img img{
-  width: 20rem;
-}
+
 header .responsive_nav a {
   color: white;
   font-size: 16px;
+
 }
 .navbar .nav-close-btn {
   position: absolute;
   font-size: 30rem;
-  top: 5rem;
-  right: 2rem;
+  top: -18rem;
+  right: 3rem;
   color: #eee;
 }
 .navbar-open-icon{
-  font-size: 4.5rem;
+  font-size: 5rem;
 
 }
 .category-search-icon{
@@ -247,6 +246,8 @@ header .responsive_nav a {
   width: 100%;
   line-height: 4rem;
 }
+
+
 
 
   }
