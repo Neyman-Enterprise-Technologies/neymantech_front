@@ -1140,7 +1140,7 @@ font-size: 14px;
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
-    font-size: 3rem;
+    font-size: clamp(12px, 3vw, 20px);
   }
   .home__service__content {
     width: 100%;
@@ -1172,7 +1172,7 @@ font-size: 14px;
     .left-cards-container
     .card
     p {
-    font-size: 3rem;
+      font-size: clamp(10px, 4vw, 20px);
   }
   .digital-marketing-container
     .left
@@ -1193,14 +1193,14 @@ font-size: 14px;
     font-size: 5rem;
   }
   .home__service__cards__card h3 {
-    font-size: 3rem;
+    font-size: clamp(12px,3vw,30px);
   }
   .home__service__cards__card p {
-    font-size: 2.3rem;
+    font-size: clamp(12px,3vw,20px);
   }
   .home__service__cards__card {
     gap: 3rem;
-  }
+  } 
 
   .home__works__header h2 {
     font-size: 5rem;
@@ -1232,6 +1232,12 @@ font-size: 14px;
 
   .home__feedback__content h2 {
     font-size: 5rem;
+    line-height: 6rem;
+  }
+  .home__feedback__content p {
+ 
+  font-size:clamp(18px,1vw, 20px) ;
+
     line-height: 6rem;
   }
 
