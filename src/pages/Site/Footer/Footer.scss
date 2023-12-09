@@ -98,7 +98,6 @@
       color: white;
       font-weight: 900;
       transition: all 0.3s;
-     
     }
     &__footerLinks {
       color: #e4e4e4;
@@ -133,8 +132,6 @@
   }
   &__phoneIcon {
     font-size: 2rem;
-
-    /* color: rgb(70, 70, 239); */
     color: var(--mainBlue);
   }
   &__phoneInfo {
@@ -156,17 +153,15 @@
   &__socialMediaContainer {
     position: relative;
     display: flex;
- justify-content: center;
+    justify-content: center;
     gap: 15px;
-
   }
-  &__socialMediaLinks{
- display: flex;
- align-items: center;
- justify-content: center;
-   width: 100%;
-  height: 100%;
-  
+  &__socialMediaLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
 
   &__socialIcon {
@@ -200,6 +195,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
   &__left {
     width: 50%;
@@ -236,9 +232,8 @@
       width: 100%;
     }
   }
-  footer__socialMediaLinks{
+  footer__socialMediaLinks {
     position: absolute;
-   
   }
   &__galleryContainer {
     display: flex;
@@ -460,7 +455,6 @@
     padding-left: 1.5rem;
   }
   .footer__subscribe-button {
-  
     padding: 1.5rem 0;
     font-size: 1.5rem;
     display: flex;
@@ -482,23 +476,29 @@
     gap: 2rem;
   }
   .footer__quickLinksContainer a {
-    font-size: 3.2rem;
+    font-size: clamp(12px, 3vw, 24px);
   }
   .footer__subscribe-content h2 {
     font-size: 3rem;
   }
   .footer__subscribe-content p {
-    font-size: 2.5rem;
-    line-height: 3.5rem !important;
+    font-size: clamp(10px, 3vw, 14px);
+    line-height: 3.7rem !important;
   }
   .footer__subscribe-input {
     font-size: 3rem;
   }
   .footer__subscribe-button {
-    font-size: 2.5rem;
+    font-size: 0.9rem;
+    height: 6rem;
+    padding: 15px 10px;
+    border-radius: 5px;
+  }
+  .footer__subscribe-button span {
+    font-size: clamp(10px, 2vw, 14px);
   }
   .footer__headerandBorderBottom h2 {
-    font-size: 4rem;
+    font-size: clamp(14px, 6vw, 4rem);
   }
   .footer__contactInfoCol {
     gap: 4rem;
@@ -514,10 +514,12 @@
     gap: 1rem;
   }
   .footer__phoneInfo p {
-    font-size: 2.5rem;
+    font-size: clamp(10px, 3vw, 24px);
+    color: red;
   }
   .footer__phoneInfo a {
-    font-size: 3rem;
+    font-size: clamp(12px, 3vw, 26px);
+    color: green;
   }
 
   .footer__socialIcon {
@@ -531,10 +533,22 @@
   }
 
   .footer__bottomUnderscore h2 {
-    font-size: 4rem;
+    font-size: clamp(14px, 6vw, 4rem);
   }
   .footer__copyrightLeft {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: clamp(10px, 3vw, 14px);
+    line-height: 4rem;
+  }
+  .footer__iconContainer {
+    width: clamp(20px, 5vw, 30px);
+    /* width: 40px;
+    height: 40px; */
+  }
+  .footer__phoneIcon {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__socialIcon{
+font-size: clamp(14px,4vw,20px);
   }
 }
