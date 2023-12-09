@@ -65,7 +65,7 @@ const BlogDetails = () => {
               </div>
 
               <div className="linkLinks">
-                <Link to="/" className="linkLink">
+                <Link to="#" className="linkLink">
                   Ana səhifə
                 </Link>
                 {/* <FaAngleRight className="angleIcon" /> */}
