@@ -142,7 +142,7 @@
 }
 
 .faqSection-2 .section-2-content .right form .inputs input {
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 1rem;
   border-radius: 0.2rem;
   width: 100%;
@@ -158,7 +158,7 @@
 
 /* BUTTON ANIMATION START */
 
-button {
+.contact-send {
   position: relative;
   display: flex;
   justify-content: center;
@@ -172,10 +172,10 @@ button {
 
   overflow: hidden;
   color: #fff;
-  border-radius: 0.3rem;
+  border-radius: 5px;
   border: none;
 }
-button span {
+.contact-send span {
   position: relative;
   z-index: 1;
   font-weight: 900;
@@ -323,94 +323,29 @@ button:hover::before {
   }
   .faqSection-2 .section-2-content .right form .inputs input {
     padding: 2.5rem;
+    font-size: clamp(12px, 3vw, 24px);
   }
   .faqSection-2 .section-2-content .right form textarea {
-    padding: 4rem 2.5rem;
+    /* padding: 4rem 2.5rem; */
+    font-size: clamp(12px, 3vw, 24px);
   }
 
   .faqSection-2 .section-2-content .right form .inputs input::placeholder,
   .faqSection-2 .section-2-content .right form textarea::placeholder {
-    font-size: 2.5rem;
+    font-size: clamp(12px, 3vw, 24px);
   }
-  button {
+  .contact-send {
     font-size: 0.9rem;
-    width: 15rem;
+    width: fit-content;
     height: 6rem;
-    padding: 0.9375rem 1.875rem;
+   padding: 15px 10px;
+   border-radius: 5px;
+
   }
-  button span {
-    font-size: 1.5rem;
+  .contact-send span {
+    font-size: clamp(10px, 2vw, 14px);
   }
   .contactCardContainer .card:hover {
     transform: translateY(-6px);
   }
 }
-@media screen and (max-width: 430px) {
- 
-  .contactCardContainer {
-    justify-content: center;
-    /* padding: 0 11rem; */
-    margin: 3rem 0;
-  }
-
-  .faqSection-2 .section-2-content {
-    align-items: center;
-  }
-  .faqSection-2 .section-2-content .left {
-    /* width: 100%; */
-    height: 200px;
-  }
-
-  .faqSection-2 .section-2-content .right form .inputs {
-    flex-direction: column;
-  }
-  .faqSection-2 .section-2-content {
-    flex-direction: column;
-    gap: 3rem;
-  }
-  .contactCardContainer .card {
-    padding: 4rem 0;
-  }
-
-  .contactCardContainer .card .icon-container {
-    width: 8rem;
-    height: 8rem;
-  }
-  .contactCardContainer .card .title {
-    font-size: 3rem;
-  }
-  .faqSection-2 .faqTitleBottom .about-description {
-    font-size: 3rem;
-  }
-  .faqSection-2 .faqTitleBottom h2 {
-    font-size: 3.5rem;
-  }
-  .faqSection-2 .faqTitleBottom .faqDescription {
-    font-size: 2.5rem;
-    line-height: 4rem;
-  }
-  .faqSection-2 .section-2-content .right form .inputs input {
-    padding: 2.5rem;
-  }
-  .faqSection-2 .section-2-content .right form textarea {
-    padding: 4rem 2.5rem;
-  }
-
-  .faqSection-2 .section-2-content .right form .inputs input::placeholder,
-  .faqSection-2 .section-2-content .right form textarea::placeholder {
-    font-size: 2.5rem;
-  }
-  button {
-    font-size: 0.9rem;
-    width: 15rem;
-    height: 6rem;
-    padding: 0.9375rem 1.875rem;
-  }
-  button span {
-    font-size: 1.5rem;
-  }
-  .contactCardContainer .card:hover {
-    transform: translateY(-6px);
-  }
-}
-
