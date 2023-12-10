@@ -379,12 +379,17 @@ cursor: auto;
 
   .blogDetails .right .recent-posts-container .post-details .description {
     /* width: 100%; */
-    color: var(--TextColor);
+
     align-self: flex-start;
     padding-top: 0.8rem;
   }
   .blogDetails .right .tags-container .tags p {
-    font-size: 1.5rem;
+    display: block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #eeeeee;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 10px;
   }
   .blogDetails .right .tags-container .tags {
     flex-direction: row;
@@ -403,8 +408,8 @@ cursor: auto;
     font-size: 1.5rem;
   }
   .blogDetails .right .recent-posts-container .post-details .description .date {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
   }
   .blogDetails
     .right
@@ -413,7 +418,8 @@ cursor: auto;
     .description
     .title
     p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+   line-height: 2rem;
   }
 
   .blogDetails .right .recent-posts-container .post-details {
@@ -467,6 +473,12 @@ cursor: auto;
   .blogDetails {
     flex-direction: column;
   }
+  .blogs .right .search .input-button-container input{
+    font-size: clamp(14px,1vw,25px);
+  }
+  .blogs .right .search .input-button-container input::placeholder{
+    font-size: clamp(14px,1vw,25px);
+  }
   .blogDetails .left .card .cardImgContainer{
     height: 300px;
   }
@@ -497,10 +509,23 @@ cursor: auto;
     padding: 2rem 1rem;
   }
   .blogDetails .right .category-container p {
-    font-size: 1.5rem;
+    font-size: clamp(12px, 1vw, 14px);
+    margin-left: 5rem;
+    margin-bottom: 1.2rem;
   }
   .blogDetails .right .category-container p::before {
+    width: clamp(8px, 1vw, 14px);
+    height: clamp(8px, 1vw, 14px);
     top: 0.3rem;
+    left: -5rem;
+  }
+  .blogDetails .right .tags-container .tags p{
+    display: block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #eeeeee;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -582,7 +607,7 @@ cursor: auto;
     width: fit-content;
     font-weight: 600;
 
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
   .blogs .right .search .input-button-container input {
     /* padding: 15px; */
@@ -592,7 +617,7 @@ cursor: auto;
     font-size: 2.5rem;
   }
   .blogDetails .right .search .input-button-container .search-icon-container {
-    width: 6rem;
+    width: 40px;
   }
   .blogs .right {
     width: 100%;
@@ -603,7 +628,7 @@ cursor: auto;
     .input-button-container
     .search-icon-container
     .search-icon {
-    font-size: 3rem;
+    font-size: 20px;
   }
 
   
