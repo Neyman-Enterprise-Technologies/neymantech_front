@@ -147,7 +147,7 @@
     }
     a {
       width: 100%;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
   &__socialMediaContainer {
@@ -450,19 +450,30 @@
     width: unset;
   }
   .footer__subscribe-input {
-    padding: 1.5rem 0;
-    font-size: 16px;
+  
+    font-size: 14px;
     padding-left: 1.5rem;
   }
   .footer__subscribe-button {
-    padding: 1.5rem 0;
-    font-size: 1.5rem;
+
+   
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  .footer__subscribe-button span{
+    font-size: 2rem;
+  }
+
   .footer__phoneIcon {
     font-size: 20px;
+  }
+  .contact-send{
+    padding: 2rem;
+  }
+  .contact-send span{
+    font-size: 14px;
+
   }
 }
 
