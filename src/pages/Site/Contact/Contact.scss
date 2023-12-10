@@ -43,8 +43,8 @@
 .contactCardContainer .card .icon-container .contactIcon {
   position: absolute;
   color: var(--mainBlue);
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 .contactCardContainer .card .title {
   font-size: 1.5rem;
@@ -120,15 +120,13 @@
   gap: 1rem;
 }
 .faqSection-2 .section-2-content .right form textarea {
-  font-size: 1.2rem;
+  font-size: 1rem;
   height: 15rem;
   width: 100%;
   resize: none;
   outline: none;
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  padding: 0.9rem;
-  border-radius: 0.5rem;
+  padding: 1rem;
+ border-radius: 0.2rem;
   width: 100%;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -136,23 +134,21 @@
   /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
 }
 .faqSection-2 .section-2-content .right form textarea::placeholder {
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.8;
 
 }
 
 .faqSection-2 .section-2-content .right form .inputs input {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem;
   border-radius: 0.2rem;
   width: 100%;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.2);
-
-  /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
 }
 .faqSection-2 .section-2-content .right form .inputs input::placeholder {
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.8;
 }
 
@@ -250,10 +246,12 @@ button:hover::before {
   .faqSection-2 .section-2-content .right form .inputs input,
   .faqSection-2 .section-2-content .right form textarea {
     padding: 1rem;
+
+    font-size: 12px;
   }
   .faqSection-2 .section-2-content .right form .inputs input::placeholder,
   .faqSection-2 .section-2-content .right form textarea::placeholder {
-    font-size: 1.8rem;
+    font-size: 12px;
   }
 
   .faqSection-2 .section-2-content .left {
@@ -318,16 +316,18 @@ button:hover::before {
   }
   .faqSection-2 .section-2-content .right form .inputs input {
     padding: 2.5rem;
-    font-size: clamp(12px, 3vw, 24px);
+    font-size: clamp(12px, 2vw, 22px);
   }
   .faqSection-2 .section-2-content .right form textarea {
     /* padding: 4rem 2.5rem; */
-    font-size: clamp(12px, 3vw, 24px);
+    font-size: clamp(12px, 2vw, 22px);
+    height:25rem;
+    padding: 2.5rem;
   }
 
   .faqSection-2 .section-2-content .right form .inputs input::placeholder,
   .faqSection-2 .section-2-content .right form textarea::placeholder {
-    font-size: clamp(12px, 3vw, 24px);
+    font-size: clamp(12px, 2vw, 22px);
   }
   .contact-send {
     font-size: 0.9rem;

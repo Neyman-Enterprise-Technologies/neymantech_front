@@ -244,7 +244,7 @@
 
 @media screen and (max-width: 576px) {
   .firstSection__title {
-    font-size: 4.5rem;
+    font-size: 5rem;
     text-align: left;
   }
   .firstSection__textContent{
@@ -255,7 +255,7 @@
   }
   .firstSection__description,
   .firstSection .contentOfTitle {
-    font-size: 3rem;
+    font-size: clamp(10px,2vw,14px);
     line-height: 4rem;
   }
   .firstSection .titleContainerTitle h2 {
