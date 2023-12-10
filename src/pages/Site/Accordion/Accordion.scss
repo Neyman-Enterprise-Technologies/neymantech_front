@@ -186,7 +186,11 @@ border-radius: 5px;
   }
 }
 @media screen and (max-width: 768px) {
+  .accordion{
+    width: 100%;
+  }
   .accordion .itemm{
+   
     padding: 7px;
   }
   .content-box{
