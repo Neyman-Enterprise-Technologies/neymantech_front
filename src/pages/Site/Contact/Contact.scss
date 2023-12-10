@@ -321,6 +321,8 @@ button:hover::before {
   .faqSection-2 .section-2-content .right form textarea {
     /* padding: 4rem 2.5rem; */
     font-size: clamp(12px, 3vw, 24px);
+    height:25rem;
+    padding: 2.5rem;
   }
 
   .faqSection-2 .section-2-content .right form .inputs input::placeholder,
