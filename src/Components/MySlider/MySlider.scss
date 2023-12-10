@@ -58,7 +58,7 @@
       position: absolute;
       width: 100%;
       bottom: 0;
-      font-size: 2rem;
+      font-size: clamp(10px,2vw,40px);
     
       color:var(--TextWithDarkBg);
       padding: 3rem 0;

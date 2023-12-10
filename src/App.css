@@ -32,7 +32,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 1vw;
+  width: clamp(12px,2vw,15px);
 
 }
 
@@ -345,17 +345,20 @@ html::-webkit-scrollbar-track:hover {
     padding: 13rem 0;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
   }
   .linkTitle h2,
   .linkTitle span,
   .linkTitle div {
-    font-size: 3.5rem;
+    font-size: clamp(14px, 3vw, 30px);
   }
+ 
+  .linkLinks .linkLink,
   .linkLinks a,
-  .linkLinks .angleIcon {
-    font-size: 2.5rem;
+  .linkLinks .angleIcon{
+    font-size: clamp(12px, 2vw, 20px);
   }
+
 
   .scroll-to-top {
     position: fixed;
@@ -376,14 +379,14 @@ html::-webkit-scrollbar-track:hover {
     font-size: 3rem;
   }
 
-  /* .pagination-container .pagination .page-item {
-    width: 40px;
-    height: 40px;
-  } */
+  .pagination-container .pagination .page-item {
+    width: clamp(25px,6vw,40px);
+    height: clamp(25px,6vw,40px);
+  }
   .pagination-container .pagination .page-item .page-link {
     background-color: white;
 
-    font-size: 12px;
+    font-size: clamp(10px,2vw,25px);
   }
   .kateqoriya {
     margin: 1.25rem 0!important;

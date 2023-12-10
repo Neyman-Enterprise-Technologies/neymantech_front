@@ -155,7 +155,15 @@
 
 @media screen and (max-width: 576px) {
  
-  
+  .cards-wrapper .cards-container .card .bottom-content h2{
+    font-size: clamp(12px,3vw,20px);
+  }
+  .cards-wrapper .cards-container .card .bottom-content p{
+    font-size: clamp(10px,3vw,18px);
+  }
+  .cards-wrapper .cards-container .card .bottom-content:after{
+    font-size: clamp(10px,3vw,14px);
+  }
 }
 
  

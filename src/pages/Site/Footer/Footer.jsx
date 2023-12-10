@@ -64,7 +64,7 @@ export default function Footer() {
               className="footer__subscribe-input"
             />
             <Link to={"#"} onClick={handleClick} className="footer__subscribe-button">
-              Abonə ol
+          <span>Abonə ol</span>
             </Link> 
           </div>
 

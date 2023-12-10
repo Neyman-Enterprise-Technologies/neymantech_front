@@ -1,17 +1,14 @@
-
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
 .logo-img {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
   height: 100%;
   color: white;
-
 }
 .logo-img img {
   /* width: 100%;  */
@@ -33,47 +30,43 @@ header {
   justify-content: space-between;
   height: 6.56rem;
   padding: 0 4rem;
-gap: 4rem;
-/* background-color: rgba(255,255,255,0.3); */
-/* background-color: rgba(0,0,0,0.5); */
-/* background-color: rgba(0,30,15,0.1); */
+  gap: 4rem;
+  /* background-color: rgba(255,255,255,0.3); */
+  /* background-color: rgba(0,0,0,0.5); */
+  /* background-color: rgba(0,30,15,0.1); */
 
-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   z-index: 9999;
-position: sticky;
+  position: sticky;
   top: 0;
 }
 
 .navbar a,
 .navLink {
-
   margin: 0 1rem 0 0;
 
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 900;
-width: fit-content!important;
+  width: fit-content !important;
   padding: 0.5em 0;
   transition: 0.3s all;
   border-radius: 5px;
-padding: 5px 10px;
+  padding: 5px 10px;
   position: relative;
-  color:  var(--mainBlue);
- 
-  /* color: var(--textColor); */
+  color: var(--mainBlue);
 
- 
+  /* color: var(--textColor); */
 }
 .navbar a:hover,
-.navLink:hover{
+.navLink:hover {
   background-color: var(--mainBlue);
   /* background-color: #fff; */
   opacity: 0.9;
   /* color: #29335c; */
-  color:var(--textColor);
+  color: var(--textColor);
 }
-
 
 .navbar a::after {
   content: "";
@@ -87,7 +80,6 @@ padding: 5px 10px;
   background-color: var(--mainBlue);
   transition: width 0s, left 0s;
   border-radius: 3px;
-  
 }
 
 /* .navbar a:not(.active):hover::after {
@@ -97,17 +89,16 @@ padding: 5px 10px;
 } */
 .navbar a.active {
   position: relative;
-color: white;
-text-decoration: none;
-padding: 5px 10px;
-border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
 
   background-color: var(--mainBlue);
- 
 }
 
 header .nav-btn {
-cursor: pointer;
+  cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
@@ -124,30 +115,25 @@ header div,
   align-items: center;
 }
 
-
 @media only screen and (max-width: 992px) {
-  header{
+  header {
     height: 9rem;
-    backdrop-filter: unset; 
-    background-color:rgba(255,255,255, 1);
+    backdrop-filter: unset;
+    background-color: rgba(255, 255, 255, 1);
     /* backdrop-filter: blur(10px); */
   }
   header .nav-btn {
     visibility: visible;
     opacity: 1;
-color: white;
- 
+    color: white;
   }
   .nav-close-open {
     font-size: 3rem;
     color: var(--mainBlue);
-
   }
   .navbar-open-icon {
     font-size: 3rem;
     /* color: var(--mainBlue); */
-
- 
   }
   header .navbar {
     position: fixed;
@@ -162,7 +148,7 @@ color: white;
     gap: 1.5rem;
 
     background-color: var(--mainBlue);
-    
+
     transition: 1s;
     z-index: 999999999999;
   }
@@ -171,14 +157,16 @@ color: white;
     transform: translateY(100vh);
     z-index: 99999999;
     color: white;
-
   }
   header .responsive_nav a {
     color: white;
     font-size: 2.5rem;
-
   }
-  header .responsive_nav a:hover{
+  header .responsive_nav a:hover {
+    background-color: #fff;
+    color: var(--mainBlue);
+  }
+  header .responsive_nav a.active {
     background-color: #fff;
     color: var(--mainBlue);
   }
@@ -189,71 +177,47 @@ color: white;
     right: 3.7rem;
     color: #eee;
   }
-
- 
 }
 
-  
+@media screen and (max-width: 768px) {
+  header {
+    height: 9rem;
+  }
 
-@media screen and (max-width:768px){
-
-header{
-
-height: 9rem;
-}
-
-
-  .header p{
+  .header p {
     font-size: 1.8rem;
     line-height: 3rem;
   }
 }
 
-
-
-
 @media only screen and (max-width: 576px) {
   .nav-close-open {
     font-size: 5rem;
-  
-}
-header{
-  height: 12rem;
-
-}
-.logo-img img{
-  width: 20rem;
-}
-header .responsive_nav a {
-  color: white;
-  font-size: 16px;
-}
-.navbar .nav-close-btn {
-  position: absolute;
-  font-size: 30rem;
-  top: 5rem;
-  right: 2rem;
-  color: #eee;
-}
-.navbar-open-icon{
-  font-size: 4.5rem;
-
-}
-.category-search-icon{
-  font-size: 4rem;
-}
-.header p{
-  font-size: 2.5rem;
-  width: 100%;
-  line-height: 4rem;
-}
-
-
+  }
+  header {
+    height: clamp(50px, 10vw, 70px);
   }
 
-
-  
-
- 
-
-
+  header .responsive_nav a {
+    color: white;
+    font-size: 16px;
+  }
+  .navbar .nav-close-btn {
+    position: absolute;
+    font-size: 30rem;
+    top: -17rem;
+    right: 3rem;
+    color: #eee;
+  }
+  .navbar-open-icon {
+    font-size: 5rem;
+  }
+  .category-search-icon {
+    font-size: 4rem;
+  }
+  .header p {
+    font-size: 2.5rem;
+    width: 100%;
+    line-height: 4rem;
+  }
+}

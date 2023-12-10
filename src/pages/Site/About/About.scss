@@ -376,16 +376,20 @@ color: var(--TextColor);
       width: 100%;
     }
     .section-2 .cardsContainer .card .description {
-      font-size: 2.7rem;
-      line-height: 4.5rem;
+      font-size: clamp(12px,1vw,30px);
+    line-height: 20px;
     }
     .section-2 .cardsContainer .card .cardList p {
       font-size: 3rem;
     }
     .section-3 .description{
-      font-size: 2.7rem;
-      line-height: 4.5rem;
+
+      font-size: clamp(12px,1vw,30px);
+      line-height: 20px;
       text-align: justify;
+    }
+    .section-2 .cardsContainer .card .devider {
+    margin-bottom: 10px;
     }
   }
  

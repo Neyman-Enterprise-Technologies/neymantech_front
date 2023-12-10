@@ -234,17 +234,17 @@ z-index: 1;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
   }
 .team-container__name {
-    font-size: 4rem;
+  font-size: clamp(12px, 3vw,4rem);
   }
  .team-container__job {
-    font-size: 3rem;
+    font-size: clamp(10px, 3vw,14px);
   }
 
 .teamHeaderContainer h2 {
     font-size: 5rem;
   }
 .teamHeaderContainer p {
-    font-size: 3.5rem;
+    font-size: clamp(14px, 8vw, 3.5rem);
   }
   .team-container__profile-container{
     height: 50rem;
