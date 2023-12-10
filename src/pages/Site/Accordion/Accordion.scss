@@ -161,6 +161,9 @@ color: white;
 @media screen and (max-width: 992px) {
   .accordion .itemm{
     padding: 10px 10px;
+  column-gap: 10px;
+    row-gap: 5px;
+border-radius: 5px;
   }
   .titlee {
     font-size: 14px;
@@ -186,6 +189,20 @@ color: white;
   .accordion .itemm{
     padding: 7px;
   }
+  .content-box{
+    padding-right: 27px;
+  }
+  .iconn {
+    width: 20px;
+    height: 35px;
+   
+  }
 }
 @media screen and (max-width: 576px) {
+  .titlee{
+    font-size: clamp(12px,2vw,20px);
+  }
+  .content-box{
+    padding-right: 27px;
+  }
 }
