@@ -144,10 +144,7 @@ width: 100%;
   width: 4rem;
   transition: all 0.5s;
 }
-.blogs .right .search .input-button-container .search-icon-container:hover {
-  cursor: pointer;
-  background-color: #f78da7;
-}
+
 .blogs
   .right
   .search
@@ -343,7 +340,7 @@ flex-wrap: wrap;
     width: fit-content;
     font-weight: 600;
 
-    font-size: 1.5rem;
+    font-size: 10px;
   }
 
   .blogs .right {
@@ -375,6 +372,25 @@ flex-wrap: wrap;
   }
   .blogs .right .recent-posts-container {
     padding: 3rem;
+  }
+
+  .blogs .right .search .input-button-container .search-icon-container {
+
+    /* width: clamp(12px,5vw,40px); */
+    width: 40px;
+
+  }
+  
+  .blogs
+    .right
+    .search
+    .input-button-container
+    .search-icon-container
+    .search-icon {
+
+    /* font-size: clamp(12px,3vw,30px); */
+    font-size: 20px;
+
   }
   .blogs .right .search .input-button-container input{
     font-size: 1.5rem;
@@ -415,15 +431,15 @@ flex-wrap: wrap;
   }
 
   .blogs .right .category-container p {
-    font-size: 1.5rem;
-    margin-left: 3.125rem;
+    font-size: clamp(12px, 1vw, 14px);
+    margin-left: 5rem;
     margin-bottom: 1.2rem;
   }
   .blogs .right .category-container p::before {
-    width: 1rem;
-    height: 1rem;
+    width: clamp(8px,1vw,14px);
+    height: clamp(8px,1vw,14px);
     top: 0.3rem;
-    left: -3.125rem;
+    left: -5rem;
   }
   .blogs .right .tags-container {
     flex-wrap: wrap;
@@ -474,9 +490,6 @@ flex-wrap: wrap;
     width: 100%;
   }
 
-  .blogs .right .category-container p {
-    font-size: 1.5rem;
-  }
 
 
   .blogs .right .category-container .category-list-container {
@@ -512,7 +525,7 @@ flex-wrap: wrap;
     width: fit-content;
     font-weight: 600;
 
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .blogs .right {
@@ -526,6 +539,12 @@ flex-wrap: wrap;
   .blogs .left a .card .bottom-content p,
   .blogs .left a .card .bottom-content::after {
     font-size: 2rem;
+  }
+  .blogs .right .search .input-button-container input{
+    font-size: clamp(14px,1vw,25px);
+  }
+  .blogs .right .search .input-button-container input::placeholder{
+    font-size: clamp(14px,1vw,25px);
   }
 }
 
@@ -570,19 +589,19 @@ flex-wrap: wrap;
  
 
   .blogs .right .category-container p {
-    font-size: 3rem;
+
     margin-left: 7rem;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
    
   }
-  .blogs .right .category-container p::before {
+  /* .blogs .right .category-container p::before {
     top: 0.4rem;
     width: 2rem;
     height: 2rem;
     left: -7rem;
    
     
-  }
+  } */
 
   .blogs .right .category-container .category-list-container {
     padding: 3rem 0rem;
@@ -604,13 +623,14 @@ flex-wrap: wrap;
     width: calc(100% / 2.05);
   }
   .blogs .right .tags-container .tags p {
+    font-size: clamp(10px,3vw,12px);
     display: block;
     padding: 1rem 1.5rem;
     border: 1px solid #eeeeee;
     width: fit-content;
     font-weight: 600;
 
-    font-size: 2.5rem;
+
   }
   .blogs .right .search .input-button-container input{
     /* padding: 15px; */
@@ -619,26 +639,21 @@ flex-wrap: wrap;
   .blogs .right .search .input-button-container input::placeholder{
     font-size: 15px;
   }
-  .blogs .right .search .input-button-container .search-icon-container{
-  width: 6rem;
-  }
+ 
   .blogs .right {
     width: 100%;
   }
-  .blogs .right .search .input-button-container .search-icon-container .search-icon{
-    color: white;
-    font-size: 3rem;
-    cursor: pointer;
-  }
+  
 
   .blogs .left a .card .bottom-content h2 {
-    font-size: 3.5rem;
+    font-size: clamp(10px,4vw,24px);
+    line-height: 5rem;
+  }
+  .blogs .left a .card .bottom-content p, .blogs .left a .card .bottom-content::after{
+    font-size: clamp(10px,3vw,40px)!important;
   }
 
-  .blogs .left a .card .bottom-content p,
-  .blogs .left a .card .bottom-content::after {
-    font-size: 2.5rem;
-  }
+
   .blogs .right .recent-posts-container .post-details .description .date{
     font-size: 3rem;
     margin-bottom: 1.6rem;
