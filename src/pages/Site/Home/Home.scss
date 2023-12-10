@@ -1200,7 +1200,13 @@ font-size: 14px;
   }
   .home__service__cards__card {
     gap: 3rem;
+  
   } 
+  .home__service .home__service__cards__card__icon .icon1 {
+    width: 75%;
+    height: 87%;
+}
+
 
   .home__works__header h2 {
     font-size: 5rem;
@@ -1208,6 +1214,10 @@ font-size: 14px;
   }
   .home__works__header p {
     font-size: 2.5rem;
+  }
+  .home__service .home__service__cards__card__icon {
+    width: 10rem;
+    height: 10rem;
   }
 
   .digital-marketing-container
@@ -1244,4 +1254,11 @@ font-size: 14px;
   .home__blogs__content h2 {
     font-size: 5rem;
   }
+  .home__service .home__service__cards__card__icon .badge{
+    font-size: 4rem;
+    top: 0;
+  }
+  /* .home__service .home__service__cards__card{
+   
+  } */
 }
