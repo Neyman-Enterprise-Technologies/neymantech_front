@@ -14,7 +14,7 @@
   gap: 1rem;
 }
 .blogs .left .cards-container {
-width: 100%;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -118,7 +118,7 @@ width: 100%;
 .blogs .right {
   display: flex;
   flex-direction: column;
-  width: 22%;
+  width: 18%;
   gap: 2rem;
 }
 .blogs .right .search {
@@ -326,7 +326,7 @@ flex-wrap: wrap;
     width: 100%;
   }
   .blogs .left .cards-container {
-    width: 100%;
+   
     justify-content: flex-start;
   }
 
