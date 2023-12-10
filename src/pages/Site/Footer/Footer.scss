@@ -472,7 +472,7 @@
     padding: 2rem;
   }
   .contact-send span{
-    font-size: 14px;
+    font-size: clamp(10px, 2vw,14px);
 
   }
 }
