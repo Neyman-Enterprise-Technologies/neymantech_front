@@ -1133,8 +1133,9 @@ color: var(--mainBlue);
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
-    font-size: clamp(12px, 3vw, 14px);
-    line-height: 30px;
+    font-size: clamp(10px, 3vw, 14px);
+
+
   }
   .home__service__content {
     width: 100%;
@@ -1165,7 +1166,9 @@ color: var(--mainBlue);
     .left-cards-container
     .card
     p {
-    font-size: clamp(10px, 4vw, 14px);
+    font-size: clamp(10px, 3vw, 14px);
+
+
   }
   .digital-marketing-container
     .left
@@ -1173,14 +1176,15 @@ color: var(--mainBlue);
     .left-cards-container
     .card
     .card-icon {
-    font-size: 4rem;
+    font-size: clamp(20px, 3vw, 40px);
   }
   .left_right-container .left {
     gap: 3rem;
   }
   .home__service__content p {
     font-size: clamp(10px, 2vw, 30px);
-    line-height: 5rem;
+    /* line-height: 5rem; */
+
   }
   .home__service__content h2 {
     font-size: 5rem;
