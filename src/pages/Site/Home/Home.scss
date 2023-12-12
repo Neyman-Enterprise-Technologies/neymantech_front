@@ -49,7 +49,7 @@
       }
       & p {
         color: var(--TextColor);
-        line-height: 2rem;
+        line-height: 30px;
         font-size: 16px;
         font-weight: 500;
       }
@@ -136,7 +136,6 @@
       }
       & .left-cards-container {
         display: flex;
-
         flex-wrap: wrap;
         gap: 15px;
 
@@ -149,7 +148,7 @@
 
           color: #737b73;
           padding: 1rem;
-          gap: 1rem;
+          gap: 10px;
           font-size: 1.1rem;
           font-weight: 700;
           border-radius: 5px;
@@ -157,16 +156,16 @@
           transition: ease-out 0.2s;
 
           & p {
-            font-size: 18px;
-            font-weight: 600;
-            width: 80%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 90%;
 
             color: #000;
           }
           & .card-icon {
-            width: 20%;
+            width: 10%;
             color: var(--mainBlue);
-            font-size: 24px;
+            font-size: 20px;
           }
         }
         & .card:hover {
@@ -397,63 +396,68 @@
     }
 
     &__card {
-      transition: 0.6s ease;
       display: flex;
-      align-items: center;
       flex-direction: column;
+      justify-content: center;
+      transition: 0.6s ease;
       gap: 1rem;
       align-items: center;
       justify-content: center;
       height: 100%;
       background-color: white;
-      border-radius: 5px;
-      padding: 3rem;
+      border-radius: 7px;
+      padding: 2.2rem;
 
       &__icon {
-        padding: 1rem 0;
+        margin: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
-        width: 4.375rem;
-        height: 4.375rem;
+        width: 50px;
+        height: 50px;
         background-color: #ececff;
         border-radius: 50%;
         .badge {
           position: absolute;
-          font-size: 1.5rem;
-          bottom: 3.3rem;
+          right: -20%;
+          top: -20%;
+          font-size: 25px;
+
           color: var(--mainBlue);
         }
 
         .icon1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70%;
+          height: 70%;
           color: var(--mainBlue);
-          font-size: 1.875rem;
-          margin-left: 1.25rem;
-          margin-top: 0.3rem;
         }
       }
 
       h3 {
         text-align: center;
-        padding: 1rem 0;
-
-        font-weight: 700;
-        font-size: 1.5rem;
+        font-weight: 900;
+        font-size: 1.6rem;
         color: black;
       }
 
       p {
-        padding: 1rem 0;
+        padding: 0 1.2rem;
         font-size: 1.2rem;
-        line-height: 1.6;
+        line-height: 2;
         text-align: center;
         color: var(--TextColor);
-        font-weight: 500;
+        font-weight: 600;
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
         /* white-space: nowrap; */
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
-        max-height: 10rem;
+        max-height: 7rem;
       }
     }
   }
@@ -816,10 +820,7 @@ article:has(:hover, :focus) {
     .marketing-cards-container
     .left-cards-container
     .card
-    p {
-    font-size: 16px;
-  }
-  .digital-marketing-container
+    .digital-marketing-container
     .left
     .marketing-cards-container
     .left-cards-container
@@ -845,7 +846,17 @@ article:has(:hover, :focus) {
   .home__service {
     background-color: #f9f9fc;
     &__cards {
+      &__card {
+        &__icon {
+          width: 40px;
+          height: 40px;
+          .badge {
+            font-size: 20px;
+          }
+        }
+      }
       gap: 15px;
+
       a {
         width: calc(33.3% - 10px);
       }
@@ -863,18 +874,12 @@ article:has(:hover, :focus) {
     .left-cards-container
     .card
     p {
-    font-size: 14px;
+    font-size: 12px;
   }
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .left-cards-container
-    .card
-    .card-icon {
-    font-size: 20px;
-  }
+
   .digital-marketing-container .left .top-container p {
     font-size: 14px;
+    line-height: 24px;
   }
   .digital-marketing-container .left .top-container h2 {
     font-size: 30px;
@@ -971,15 +976,7 @@ article:has(:hover, :focus) {
     .left-cards-container
     .card
     p {
-    font-size: 18px;
-  }
-  .digital-marketing-container
-    .left
-    .marketing-cards-container
-    .left-cards-container
-    .card
-    .card-icon {
-    font-size: 22px;
+    font-size: 14px;
   }
 
   .left_right-container {
@@ -1004,8 +1001,6 @@ article:has(:hover, :focus) {
     color: var(--TextColor);
     font-size: 14px;
     padding: 0.625rem;
-    line-height: 3.5rem;
-    font-weight: 100;
   }
 
   .alternate-layout {
@@ -1027,7 +1022,8 @@ article:has(:hover, :focus) {
 
         padding: 3rem;
         p {
-          font-size: 1.5rem;
+          font-size: 12px;
+          max-height: 70px;
         }
         h3 {
           font-size: 2rem;
@@ -1036,16 +1032,23 @@ article:has(:hover, :focus) {
     }
 
     .home__service__cards__card__icon {
-      width: 6rem;
-      height: 6rem;
+      width: 50px;
+      height: 50px;
+    }
+    .home__service__cards__card__icon .badge{
+      position: absolute;
+      right: -20%;
+      top: -20%;
+      font-size: 25px;
+color: var(--mainBlue);
     }
     .home__service__cards__card__icon .icon1 {
+      font-size: 24px;
       width: 60%;
       height: 86%;
     }
-    .home__service__cards__card__icon .badge {
-      font-size: 3rem;
-    }
+  
+   
   }
 
   .home__service__content {
@@ -1100,7 +1103,6 @@ article:has(:hover, :focus) {
       }
       &__card {
         margin-inline: auto;
-
         padding: 3rem;
       }
     }
@@ -1131,7 +1133,9 @@ article:has(:hover, :focus) {
   }
   .digital-marketing-container .left .top-container p {
     color: var(--TextColor);
-    font-size: clamp(12px, 3vw, 20px);
+    font-size: clamp(10px, 3vw, 14px);
+
+
   }
   .home__service__content {
     width: 100%;
@@ -1162,7 +1166,9 @@ article:has(:hover, :focus) {
     .left-cards-container
     .card
     p {
-    font-size: clamp(10px, 4vw, 18px);
+    font-size: clamp(10px, 3vw, 14px);
+
+
   }
   .digital-marketing-container
     .left
@@ -1170,14 +1176,15 @@ article:has(:hover, :focus) {
     .left-cards-container
     .card
     .card-icon {
-    font-size: 4rem;
+    font-size: clamp(20px, 3vw, 40px);
   }
   .left_right-container .left {
     gap: 3rem;
   }
   .home__service__content p {
     font-size: clamp(10px, 2vw, 30px);
-    line-height: 5rem;
+    /* line-height: 5rem; */
+
   }
   .home__service__content h2 {
     font-size: 5rem;
@@ -1191,10 +1198,10 @@ article:has(:hover, :focus) {
   .home__service__cards__card {
     gap: 3rem;
   }
-  .home__service .home__service__cards__card__icon .icon1 {
-    width: 75%;
-    height: 87%;
+  .home__service__cards__card p {
+    max-height: 100px;
   }
+
 
   .home__works__header h2 {
     font-size: 5rem;
@@ -1204,9 +1211,14 @@ article:has(:hover, :focus) {
     font-size: 2.5rem;
   }
   .home__service .home__service__cards__card__icon {
-    width: clamp(32px, 7vw, 50px);
-    height: clamp(32px, 7vw, 50px);
+    width: clamp(40px, 9vw, 50px);
+    height: clamp(40px, 9vw, 50px);
   }
+  .home__service .home__service__cards__card__icon .badge {
+    font-size: clamp(20px, 5vw, 25px);
+    right: -20%;
+    top: -20%;
+}
 
   .digital-marketing-container
     .left
@@ -1215,6 +1227,7 @@ article:has(:hover, :focus) {
     .card {
     width: calc(50% - 7.5px);
   }
+
   .digital-marketing-container
     .left
     .marketing-cards-container
@@ -1241,11 +1254,7 @@ article:has(:hover, :focus) {
   .home__blogs__content h2 {
     font-size: 5rem;
   }
-  .home__service .home__service__cards__card__icon .badge {
-    font-size: clamp(12px, 5vw, 14px);
-    top: -5px;
-    left: 25px;
-  }
+
   .contactCardContainer {
     width: 60%;
     margin: 0 auto;
