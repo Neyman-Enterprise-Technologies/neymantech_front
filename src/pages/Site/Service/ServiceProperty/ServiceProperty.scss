@@ -82,7 +82,7 @@
     color: var(--TextColor);
   }
   .titleContainerTitle h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
   &__header {
@@ -153,7 +153,8 @@
     line-height: 2rem;
   }
   .firstSection .titleContainerTitle h2{
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 2rem;
   }
   .firstSection__list-title-icon{
     margin-right: 10px;
@@ -215,13 +216,20 @@
   } */
   .firstSection .titleContainerTitle h2{
     font-size: 20px;
+    line-height: 30px;
   }
   .firstSection .TitleContainer{
     gap: 24px;
   }
+  .firstSection__list-title-icon{
+    font-size: 35px;
+  }
 
 }
 @media screen and (max-width: 768px) {
+  .firstSection__list-title-icon{
+    font-size: 30px;
+  }
   .firstSection {
     padding-bottom: 15rem;
   }
@@ -238,11 +246,15 @@
   }
   .firstSection .titleContainerTitle h2{
     font-size: 18px;
+    line-height: 4rem;
   }
   
 }
 
 @media screen and (max-width: 576px) {
+  .firstSection__list-title-icon{
+    font-size: clamp(20px, 5vw, 40px);
+  }
   .firstSection__title {
     font-size: 5rem;
     text-align: left;
@@ -255,15 +267,16 @@
   }
   .firstSection__description,
   .firstSection .contentOfTitle {
-    font-size: clamp(10px,2vw,14px);
+    font-size: clamp(12px,2vw,14px);
     line-height: 4rem;
   }
   .firstSection .titleContainerTitle h2 {
-    font-size: 3.5rem;
+    line-height: clamp(20px, 2vw, 4.5rem) ;
+    font-size: clamp(12px,2vw,14px);
   }
   .firstSection__description,
   .firstSection .contentOfTitle {
-    line-height: 4.5rem;
+    line-height: clamp(20px, 2vw, 4.5rem) ;
   }
 }
 
