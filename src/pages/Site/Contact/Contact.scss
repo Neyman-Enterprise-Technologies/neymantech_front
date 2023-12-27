@@ -47,7 +47,7 @@
   height: 40%;
 }
 .contactCardContainer .card .title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -121,7 +121,7 @@
   gap: 1rem;
 }
 .faqSection-2 .section-2-content .right form textarea {
-  font-size: 1rem;
+  font-size: 1.2rem;
   height: 15rem;
   width: 100%;
   resize: none;
@@ -135,13 +135,13 @@
   /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
 }
 .faqSection-2 .section-2-content .right form textarea::placeholder {
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0.8;
 
 }
 
 .faqSection-2 .section-2-content .right form .inputs input {
-  font-size: 1rem;
+  font-size: 1.52rem;
   padding: 1rem;
   border-radius: 0.2rem;
   width: 100%;
@@ -149,7 +149,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .faqSection-2 .section-2-content .right form .inputs input::placeholder {
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0.8;
 }
 
@@ -270,16 +270,21 @@ button:hover::before {
     gap: 2.5rem;
   }
   .contactCardContainer .card .title {
-    font-size: 2rem;
+    font-size: 20px;
   }
   .contactCardContainer .card .icon-container {
-    width: clamp(40px,6vw,40px);
-   height: clamp(40px,6vw,40px);
+    width: clamp(40px,6vw,60px);
+   height: clamp(40px,6vw,60px);
   }
   .contactCardContainer .card .descriptionContainer .contact-type {
  
     font-size: 16px;
   
+  }
+  .contactCardContainer .card .icon-container .contactIcon {
+
+    width: 50%;
+    height: 50%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -358,5 +363,14 @@ button:hover::before {
  
     font-size: clamp(10px, 3vw , 16px);
   
+  }
+  .contactCardContainer .card .icon-container {
+    width: clamp(30px,6vw,60px);
+   height: clamp(30px,6vw,60px);
+  }
+  .contactCardContainer .card .icon-container .contactIcon {
+
+    width: clamp(30%, 3vw, 50%);
+    height:  clamp(30%, 3vw, 50%);
   }
 }
