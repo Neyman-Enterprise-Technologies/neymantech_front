@@ -108,19 +108,21 @@ export default function About() {
                   bir xidmət portföyünü təklif edir.
                 </p>
                 <p className="description">
-                  **Bizim haqqımızda əsas prinsiplər:** 1. **İnnovasiya və
-                  Yaradıcılıq:** Müştərilərimizə yaratıcı və innovativ rəqəmsal
+                  **Bizim haqqımızda əsas prinsiplər:<br/>
+                  1.**İnnovasiya və
+                  Yaradıcılıq:<br/>** Müştərilərimizə yaratıcı və innovativ rəqəmsal
                   çözümlər təklif edərək onların dijital sahədə öne çıxmağını
                   təmin etməyə çalışırıq.
                 </p>
                 <p className="description">
-                  2. **Müştəri Memnuniyyəti:** Müştərilərimizin tələblərini
+                <br/>
+                  2. **Müştəri Memnuniyyəti:<br/>** Müştərilərimizin tələblərini
                   anlamağa, ehtiyaclarına cavab verməyə və onların
                   memnuniyyətini əsas qayğımız kimi görməyə nail olmağa
                   çalışırıq.
                 </p>
                 <p className="description">
-                  3. **Texnologiyalarda Sürətli İnkişaf:** Sürətli inkişaf
+                  3.**Texnologiyalarda Sürətli İnkişaf:<br/>** Sürətli inkişaf
                   etməyə və texnologiyalardakı son yenilikləri izləyərək
                   müştərilərimizin daima müstəqil və müasir olmalarına kömək
                   edirik. Neyman Enterprise Technologies, müştərilərimizlə güclü
@@ -169,19 +171,19 @@ export default function About() {
             />
 
             <div className="description">
-              1. **İnnovativ Rəqəmsal Həllər:** Biz, müştərilərimizə innovativ
+              1. **İnnovativ Rəqəmsal Həllər:<br/>** Biz, müştərilərimizə innovativ
               və yaradıcı rəqəmsal çözümlər təqdim edirik. İş həllərimiz,
-              müştərilərimizin müasir dijital dünyada öne çıxmağını təmin edir.
-              2. **Müştəri Memnuniyyəti:** Müştəri memnuniyyəti bizim üçün ən
+              müştərilərimizin müasir dijital dünyada öne çıxmağını təmin edir.<br/>
+              2. **Müştəri Memnuniyyəti:<br/>** Müştəri memnuniyyəti bizim üçün ən
               əhəmiyyətli prioritetdir. Müştərilərimizin tələblərini anlamağa
-              çalışır, şəxsi və effektiv xidmətlər təklif edirik. 3.
-              **Texnologiyalarda Təcrübə:** Biz, texnologiyalardakı son
+              çalışır, şəxsi və effektiv xidmətlər təklif edirik. <br/>3.
+              **Texnologiyalarda Təcrübə:<br/>** Biz, texnologiyalardakı son
               yenilikləri müştərilərimizin üstünə tətbiq etməklə onların müasir
-              və müstəqil qalmağını təmin edirik. 4. **Sürətli və Təhlükəsiz
-              Implementasiya:** Proseslərimizi sürətli və təhlükəsiz şəkildə
+              və müstəqil qalmağını təmin edirik.<br/> 4.**Sürətli və Təhlükəsiz
+              Implementasiya:<br/>** Proseslərimizi sürətli və təhlükəsiz şəkildə
               implement etmək üçün nailiyyətə çatmağa çalışır, müştərilərimizə
-              ən yaxşı keyfiyyət təmin etmək üçün fəaliyyət göstəririk. 5.
-              **Əməkdaşlıq və İtmiş Komanda:** Bizim komandamız,
+              ən yaxşı keyfiyyət təmin etmək üçün fəaliyyət göstəririk.<br/> 5.
+              **Əməkdaşlıq və İtmiş Komanda:<br/>** Bizim komandamız,
               müştərilərimizlə yaxın əməkdaşlıq edərək onların müstəqil dijital
               hədəflərinə nail olmağında kömək edir. Neyman Enterprise
               Technologies, müştərilərinin dijital inkşafını dəstəkləmək və
