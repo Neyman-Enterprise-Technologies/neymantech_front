@@ -136,10 +136,7 @@ export default function Price() {
 
           <div className="header">
             <h2>Sizə uyğun qiyməti seçin</h2>
-            {/* <p>
-              Real innovations and a positive customer experience are the heart
-              of successful communication. No fake products and services.
-            </p> */}
+           
           </div>
 
           {/*    header end*/}

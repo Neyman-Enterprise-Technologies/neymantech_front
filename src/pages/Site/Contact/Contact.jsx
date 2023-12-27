@@ -21,6 +21,7 @@ export default function Contact() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
   const { data: contact } = UseFetch(`${apiUrl}core_api/contact_card`);
+  console.log(contact)
 
   const [showIcon, setShowIcon] = useState(false);
   const handleScroll = () => {
@@ -141,7 +142,7 @@ export default function Contact() {
                 <h2 className="title">E-poçta</h2>
 
                 <div className="descriptionContainer">
-                  {/* <p className="contact-type">{contact[0].email}</p> */}
+                  <p className="contact-type">{contact[0].email}</p>
                   {/* <p className="phoneNumber"></p> */}
                 </div>
 
@@ -155,8 +156,8 @@ export default function Contact() {
                 <h2 className="title">Konum</h2>
 
                 <div className="descriptionContainer">
-                  {/* <p className="contact-type">{contact[0].location}</p> */}
-                  {/* <p className="phoneNumber"></p> */}
+                  <p className="contact-type">{contact[0].location}</p>
+                  {/* <p className="phoneNumber">{contact[0].phone}</p> */}
                 </div>
               </div>
               <div className="card">
@@ -167,7 +168,7 @@ export default function Contact() {
                 <h2 className="title">Telfon nömrəsi</h2>
 
                 <div className="descriptionContainer">
-                  {/* <p className="contact-type">{contact[0].phone}</p> */}
+                  <p className="contact-type">{contact[0].phone}</p>
                   {/* <p className="phoneNumber"></p> */}
 
                 </div>
