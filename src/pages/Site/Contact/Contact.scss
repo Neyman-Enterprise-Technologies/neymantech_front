@@ -47,7 +47,7 @@
   height: 40%;
 }
 .contactCardContainer .card .title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -270,16 +270,21 @@ button:hover::before {
     gap: 2.5rem;
   }
   .contactCardContainer .card .title {
-    font-size: 2rem;
+    font-size: 20px;
   }
   .contactCardContainer .card .icon-container {
-    width: clamp(40px,6vw,40px);
-   height: clamp(40px,6vw,40px);
+    width: clamp(40px,6vw,60px);
+   height: clamp(40px,6vw,60px);
   }
   .contactCardContainer .card .descriptionContainer .contact-type {
  
     font-size: 16px;
   
+  }
+  .contactCardContainer .card .icon-container .contactIcon {
+
+    width: 50%;
+    height: 50%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -358,5 +363,14 @@ button:hover::before {
  
     font-size: clamp(10px, 3vw , 16px);
   
+  }
+  .contactCardContainer .card .icon-container {
+    width: clamp(30px,6vw,60px);
+   height: clamp(30px,6vw,60px);
+  }
+  .contactCardContainer .card .icon-container .contactIcon {
+
+    width: clamp(30%, 3vw, 50%);
+    height:  clamp(30%, 3vw, 50%);
   }
 }
