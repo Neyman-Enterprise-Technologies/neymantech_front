@@ -55,11 +55,11 @@ html::-webkit-scrollbar-track:hover {
 }
 
 * {
-  /* font-family: "Montserrat"; */
+  font-family: "Montserrat";
   /* font-family: "Poppins";  */
   /* font-family: "Lato";  */
   /* font-family: "Raleway";  */
-  font-family: "Overpass";
+  /* font-family: "Overpass"; */
   /* font-family: "Roboto";  */
 
   padding: 0;
